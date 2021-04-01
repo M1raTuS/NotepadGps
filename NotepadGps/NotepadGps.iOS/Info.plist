@@ -34,5 +34,14 @@
     <string>NotepadGps</string>
     <key>XSAppIconAssets</key>
     <string>Assets.xcassets/AppIcon.appiconset</string>
+  
+  <!-- Added for maps-->
+  <key>NSLocationAlwaysUsageDescription</key>
+  <string>Can we use your location at all times?</string>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>Can we use your location when you app is being used?</string>
+  <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+  <string>Can we use your location at all times?</string>
+  
 </dict>
 </plist>

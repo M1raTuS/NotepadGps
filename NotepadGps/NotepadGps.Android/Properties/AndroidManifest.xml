@@ -1,6 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.notepadgps">
-    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
-    <application android:label="NotepadGps.Android" android:theme="@style/MainTheme"></application>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.companyname.NotepadGps" android:installLocation="auto" android:versionCode="1" android:versionName="1.0">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="29" />
+  
+  <!-- Added for maps-->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  
+  
+  <application android:label="NotepadGps.Android">
+
+    <!-- Put your Google Maps V2 API Key here. -->
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyApdJg8Wg4pWWhJ2TZXJ3Ke_rf0d1OjdFw" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+
+    <!-- Added for maps-->
+    <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+  </application>
+
+
+
 </manifest>

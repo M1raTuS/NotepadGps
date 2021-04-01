@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotepadGps.View.SignUpView">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="40" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="55"/>
+            <RowDefinition Height="55" />
+            <RowDefinition Height="55" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+
+        <Entry Grid.Row="3"
+               Grid.Column="1"
+               Placeholder="Name" 
+               Text="{Binding Name}"/>
+
+        <Entry Grid.Row="4"
+               Grid.Column="1"
+               Placeholder="Email" 
+               Text="{Binding Email}" 
+               IsPassword="True"/>
+
+        <Entry Grid.Row="5"
+               Grid.Column="1"
+               Placeholder="Password" 
+               Text="{Binding Password}" 
+               IsPassword="True"/>
+
+        <Button Grid.Row="10"
+                Grid.Column="1"
+                BackgroundColor="DarkOrange" 
+                Text="SignUp" 
+                Command="{Binding AddCommand}" 
+                IsEnabled="{Binding ButtonEnabled}"/>
+
+    </Grid>
+</ContentPage>
