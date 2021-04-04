@@ -1,4 +1,5 @@
 ﻿using NotepadGps.Models;
+using Prism;
 using Prism.Mvvm;
 using Prism.Navigation;
 using System;
@@ -6,7 +7,7 @@ using System.Collections.ObjectModel;
 
 namespace NotepadGps.ViewModel
 {
-    public class BaseViewModel : BindableBase, IInitialize, INavigationAware, IDisposable
+    public class BaseViewModel : BindableBase, IInitialize, INavigationAware, IDisposable, IActiveAware
     {
         public UserModel _user;
         public MapPinModel _mapPin;
@@ -25,12 +26,13 @@ namespace NotepadGps.ViewModel
 
 
         private ObservableCollection<MapPinModel> mapPin;
+
         public ObservableCollection<MapPinModel> MapPin
         {
             get => mapPin;
             set => SetProperty(ref mapPin, value);
         }
-
+        
         #endregion
         public void Dispose()
         {
@@ -49,6 +51,23 @@ namespace NotepadGps.ViewModel
         public virtual void OnNavigatedTo(INavigationParameters parameters)
         {
             
+        }
+
+
+        public event EventHandler IsActiveChanged;
+        private bool _isActive;
+        public bool IsActive
+        {
+            get => _isActive;
+            set
+            {
+                SetProperty(ref _isActive, value, RaiseIsActiveChanged);
+            }
+        }
+
+        protected virtual void RaiseIsActiveChanged()
+        {
+            IsActiveChanged?.Invoke(this, EventArgs.Empty);
         }
     }
 }

@@ -23,7 +23,6 @@ namespace NotepadGps.ViewModel
             _navigationService = navigationService;
             _profile = profile;
 
-
             User = new ObservableCollection<UserModel>();
         }
 
@@ -113,9 +112,6 @@ namespace NotepadGps.ViewModel
         {
             var _user = await _profile.GetAllUserListAsync();
              User = new ObservableCollection<UserModel>(_user);
-
-            //var _user = await _repository.GetAllAsync<UserModel>();
-            // User = new ObservableCollection<UserModel>(_user);
         }
 
         #endregion

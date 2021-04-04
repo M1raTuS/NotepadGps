@@ -42,10 +42,9 @@ namespace NotepadGps.Behaviours
                 {
                     Label = source.Title,
                     Address = source.Description,
-                    Type = PinType.Place,
+                    Type = PinType.SearchResult,
                     Position = new Position(source.Latitude, source.Longitude)
                 };
-
                 pin.Clicked += ClickedPinMapToCommand;
                 return pin;
             }).ToArray();
@@ -60,9 +59,7 @@ namespace NotepadGps.Behaviours
             var pin = sender as Pin;
             if (pin == null) return;
             var bindableLocation = ItemsSource.FirstOrDefault(x => x.Title == pin.Label);
-
-            bindableLocation.ToString();
-            //bindableLocation?.ActionCommand?.Execute(pin);
+            
         }
     }
 }

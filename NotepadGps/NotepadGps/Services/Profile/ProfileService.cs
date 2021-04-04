@@ -48,7 +48,7 @@ namespace NotepadGps.Services.Profile
         {
             var mapPin = new List<MapPinModel>();
             var Id = _settingsService.CurrentUser;
-            var list = await _repository.FindAsync<MapPinModel>(c => c.Id == Id);
+            var list = await _repository.FindAsync<MapPinModel>(c => c.UserId == Id);
             if (list.Count > 0)
             {
                 mapPin.AddRange(list);
@@ -59,7 +59,7 @@ namespace NotepadGps.Services.Profile
         {
             var mapPin = new List<MapPinModel>();
             var Id = _settingsService.CurrentUser;
-            var list =  _repository.Find<MapPinModel>(c => c.Id == Id);
+            var list =  _repository.Find<MapPinModel>(c => c.UserId == Id);
             if (list.Count > 0)
             {
                 mapPin.AddRange(list);

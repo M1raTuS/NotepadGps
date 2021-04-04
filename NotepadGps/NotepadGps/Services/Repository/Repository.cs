@@ -27,16 +27,16 @@ namespace NotepadGps.Services.Repository
             });
         }
 
-        public async Task<int> DeleteAsync<T>(T entity) where T :  new()
+        public async Task<int> DeleteAsync<T>(T entity) where T : IEntityBase, new()
         {
             return await _database.Value.DeleteAsync(entity);
         }
 
-        public async Task<List<T>> GetAllAsync<T>() where T :  new()
+        public async Task<List<T>> GetAllAsync<T>() where T : IEntityBase, new()
         {
             return await _database.Value.Table<T>().ToListAsync();
         }
-        public List<T> GetAll<T>() where T : new()
+        public List<T> GetAll<T>() where T : IEntityBase, new()
         {
             return _database.Value.Table<T>().ToListAsync().Result;
         }
@@ -46,20 +46,20 @@ namespace NotepadGps.Services.Repository
             return await _database.Value.Table<T>().FirstOrDefaultAsync(c => c.Id == id);
         }
 
-        public async Task<int> InsertAsync<T>(T entity) where T :  new()
+        public async Task<int> InsertAsync<T>(T entity) where T : IEntityBase, new()
         {
             return await _database.Value.InsertAsync(entity);
         }
 
-        public async Task<int> UpdateAsync<T>(T entity) where T : new()
+        public async Task<int> UpdateAsync<T>(T entity) where T : IEntityBase, new()
         {
             return await _database.Value.UpdateAsync(entity);
         }
-        public async Task<List<T>> FindAsync<T>(Expression<Func<T, bool>> pred) where T : class,  new()
+        public async Task<List<T>> FindAsync<T>(Expression<Func<T, bool>> pred) where T : class, IEntityBase, new()
         {
             return await _database.Value.Table<T>().Where(pred).ToListAsync();
         }
-        public List<T> Find<T>(Expression<Func<T, bool>> pred) where T : class, new()
+        public List<T> Find<T>(Expression<Func<T, bool>> pred) where T : class, IEntityBase, new()
         {
             return _database.Value.Table<T>().Where(pred).ToListAsync().Result;
         }

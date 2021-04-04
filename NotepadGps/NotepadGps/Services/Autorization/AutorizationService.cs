@@ -1,9 +1,17 @@
-﻿using NotepadGps.ViewModel;
+﻿using NotepadGps.Services.Settings;
+using NotepadGps.ViewModel;
 
 namespace NotepadGps.Services.Autorization
 {
     public class AutorizationService : BaseViewModel, IAutorizationService
     {
+        private readonly ISettingsService _settings;
+        public AutorizationService(ISettingsService settings)
+        {
+            _settings = settings;
+
+            _getCurrentId = _settings.CurrentUser;
+        }
         private int _getCurrentId;
         public int GetCurrentId
         {

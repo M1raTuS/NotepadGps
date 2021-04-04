@@ -61,7 +61,7 @@ namespace NotepadGps.ViewModel
             var mapPin = _profile.GetMapPinListById();
             MapPin = new ObservableCollection<MapPinModel>(mapPin);
         }
-        
+
 
         #endregion
 
@@ -86,10 +86,7 @@ namespace NotepadGps.ViewModel
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            if (parameters.TryGetValue(nameof(UserModel), out UserModel user))
-            {
-                Load();
-            }
+            Load();
         }
 
         #endregion

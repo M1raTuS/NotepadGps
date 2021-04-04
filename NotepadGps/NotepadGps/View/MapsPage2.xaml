@@ -9,11 +9,36 @@
     <ContentPage.Content>
         <StackLayout>
             <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="80" />
+                </Grid.ColumnDefinitions>
+
+                <SearchBar x:Name="Search"
+                           CancelButtonColor="Blue"
+                           TextColor="Blue"
+                           Placeholder="Search"
+                           Grid.Row="0"
+                           Grid.Column="0"/>
+
+                <Button Grid.Row="0"
+                        Grid.Column="1"
+                        HorizontalOptions="End"
+                        Text="Find"
+                        Command="{Binding FindPinCommand}"/>
+                
                 <ListView x:Name="MapPinListView"
                           ItemsSource="{Binding MapPin}"
                           SelectedItem="{Binding SelectedItem}"
                           IsEnabled="{Binding ListEnabled}"
-                          HasUnevenRows="True">
+                          HasUnevenRows="True"
+                          SelectionMode="None"
+                          Grid.Row="1"
+                          Grid.ColumnSpan="2">
                     <ListView.Behaviors>
                         <b:EventToCommandBehavior EventName="ItemTapped"
                                               Command="{Binding SelectedCommand}"
@@ -26,13 +51,13 @@
                                     <StackLayout Orientation="Horizontal">
                                         <StackLayout VerticalOptions="Center" Margin="20,20">
                                             <Label Text="{Binding Title}" 
-                                               FontSize="Medium" />
+                                                   FontSize="Medium" />
                                             <Label Text="{Binding Latitude}" 
-                                               FontSize="Medium" />
+                                                   FontSize="Medium" />
                                             <Label Text="{Binding Longitude}" 
-                                               FontSize="Medium" />
+                                                   FontSize="Medium" />
                                             <Label Text="{Binding Description}" 
-                                               FontSize="Medium" />
+                                                   FontSize="Medium" />
                                         </StackLayout>
                                     </StackLayout>
                                 </ViewCell.View>
@@ -42,22 +67,26 @@
                 </ListView>
                 
                 <Label Text="NoMapPins" 
-                   IsVisible="{Binding LabelVisible}"
-                   FontSize="30" 
-                   HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="CenterAndExpand"
-                   TextColor="Red"/>
+                       IsVisible="{Binding LabelVisible}"
+                       FontSize="30" 
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="Red"
+                       Grid.Row="1"
+                       Grid.ColumnSpan="2"/>
 
                 <Button HorizontalOptions="End"
-                    VerticalOptions="End"
-                    Command="{Binding AddMapPinFloatingButtonCommand}" 
-                    CornerRadius="100"
-                    BorderWidth="10"
-                    Padding="0 , 32"
-                    Margin="30,30"
-                    BorderColor="Blue"
-                    BackgroundColor="Red"
-                    Text="Add"/>
+                        VerticalOptions="End"
+                        Command="{Binding AddMapPinFloatingButtonCommand}" 
+                        CornerRadius="100"
+                        BorderWidth="10"
+                        Padding="0 , 32"
+                        Margin="30,30"
+                        BorderColor="Blue"
+                        BackgroundColor="Red"
+                        Text="Add"
+                        Grid.Row="1"
+                        Grid.ColumnSpan="2"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>

@@ -3,6 +3,7 @@ using NotepadGps.Models;
 using NotepadGps.Services.Profile;
 using NotepadGps.Services.Settings;
 using Prism.Navigation;
+using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Windows.Input;
@@ -13,8 +14,6 @@ namespace NotepadGps.ViewModel
 {
     public class MapsPage1ViewModel : BaseViewModel
     {
-        //public ObservableCollection<MapPinModel> Locations { get; set; }
-
         private readonly INavigationService _navigationService;
         private readonly IProfileService _profile;
         private readonly ISettingsService _settingsService;
@@ -30,38 +29,6 @@ namespace NotepadGps.ViewModel
             Load();
         }
 
-        private Position position;
-        public Position Position
-        {
-            get => position;
-            set => SetProperty(ref position, value);
-        }
-        private string address;
-        public string Address
-        {
-            get => address;
-            set => SetProperty(ref address, value);
-        }
-        private string label;
-        public string Label
-        {
-            get => label;
-            set => SetProperty(ref label, value);
-        }
-
-        private async void Add()
-        {
-            var location = new MapPinModel
-            {
-                Id = _settingsService.CurrentUser,
-                Title = "MyLocation",
-                Description = "Hi",
-                Latitude = 48.5230845,
-                Longitude = 35.0585175,
-            };
-
-            await _profile.SaveMapPinAsync(location);
-        }
         private void Load()
         {
             var mapPin = _profile.GetMapPinListById();
@@ -98,7 +65,11 @@ namespace NotepadGps.ViewModel
             base.OnNavigatedTo(parameters);
         }
 
-
+        protected override void RaiseIsActiveChanged()
+        {
+            base.RaiseIsActiveChanged();
+            Load();
+        }
     }
 }
 
