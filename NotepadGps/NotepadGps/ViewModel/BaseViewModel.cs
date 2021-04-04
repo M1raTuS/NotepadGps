@@ -9,7 +9,7 @@ namespace NotepadGps.ViewModel
     public class BaseViewModel : BindableBase, IInitialize, INavigationAware, IDisposable
     {
         public UserModel _user;
-        public ProfileModel _profile;
+        public MapPinModel _mapPin;
 
 
         public ObservableCollection<UserModel> User;
@@ -24,11 +24,11 @@ namespace NotepadGps.ViewModel
         }
 
 
-        private ObservableCollection<ProfileModel> profile;
-        public ObservableCollection<ProfileModel> Profile
+        private ObservableCollection<MapPinModel> mapPin;
+        public ObservableCollection<MapPinModel> MapPin
         {
-            get => profile;
-            set => SetProperty(ref profile, value);
+            get => mapPin;
+            set => SetProperty(ref mapPin, value);
         }
 
         #endregion

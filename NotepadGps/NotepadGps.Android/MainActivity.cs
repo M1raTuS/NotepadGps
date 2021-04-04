@@ -30,6 +30,8 @@ namespace NotepadGps.Droid
 
             //Add maps
             Xamarin.FormsMaps.Init(this, savedInstanceState);
+            //Add
+            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
@@ -54,6 +56,10 @@ namespace NotepadGps.Droid
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
         {
+            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
             if (requestCode == RequestLocationId)
             {
                 if ((grantResults.Length == 1) && (grantResults[0] == (int)Permission.Granted))

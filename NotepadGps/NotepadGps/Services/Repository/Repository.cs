@@ -21,7 +21,7 @@ namespace NotepadGps.Services.Repository
                 var database = new SQLiteAsyncConnection(path);
 
                 database.CreateTableAsync<UserModel>().Wait();
-                database.CreateTableAsync<ProfileModel>().Wait();
+                database.CreateTableAsync<MapPinModel>().Wait();
 
                 return database;
             });
@@ -35,6 +35,10 @@ namespace NotepadGps.Services.Repository
         public async Task<List<T>> GetAllAsync<T>() where T :  new()
         {
             return await _database.Value.Table<T>().ToListAsync();
+        }
+        public List<T> GetAll<T>() where T : new()
+        {
+            return _database.Value.Table<T>().ToListAsync().Result;
         }
 
         public async Task<T> GetOneAsync<T>(int id) where T : IEntityBase, new()
@@ -54,6 +58,10 @@ namespace NotepadGps.Services.Repository
         public async Task<List<T>> FindAsync<T>(Expression<Func<T, bool>> pred) where T : class,  new()
         {
             return await _database.Value.Table<T>().Where(pred).ToListAsync();
+        }
+        public List<T> Find<T>(Expression<Func<T, bool>> pred) where T : class, new()
+        {
+            return _database.Value.Table<T>().Where(pred).ToListAsync().Result;
         }
 
     }

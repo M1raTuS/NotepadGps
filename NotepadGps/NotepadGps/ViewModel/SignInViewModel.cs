@@ -1,5 +1,6 @@
 ﻿using Acr.UserDialogs;
 using NotepadGps.Models;
+using NotepadGps.Services.Autentification;
 using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Profile;
 using NotepadGps.View;
@@ -17,14 +18,17 @@ namespace NotepadGps.ViewModel
         private readonly INavigationService _navigationService;
         private readonly IAutorizationService _autorization;
         private readonly IProfileService _profileService;
+        private readonly IAutentificationService _autentification;
 
         public SignInViewModel(INavigationService navigationService,
                                IAutorizationService autorization,
-                               IProfileService profileService)
+                               IProfileService profileService,
+                               IAutentificationService autentification)
         {
             _navigationService = navigationService;
             _autorization = autorization;
             _profileService = profileService;
+            _autentification = autentification;
         }
 
 
@@ -60,8 +64,8 @@ namespace NotepadGps.ViewModel
 
         private async void SignInUser()
         {
-            var result = CheckDb(Email, Password);
-            if (result)
+            _autentification.Authorizate(Email, Password);
+            if (_autorization.IsAutorized)
             {
                 await _navigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(MainListView)}");
             }
@@ -82,19 +86,6 @@ namespace NotepadGps.ViewModel
             if (!String.IsNullOrEmpty(Email) && !String.IsNullOrEmpty(Password))
             {
                 return true;
-            }
-            return false;
-        }
-
-        private bool CheckDb(string email, string password)
-        {
-            foreach (var item in User)
-            {
-                if (item.Email == email.ToString() && item.Password == password.ToString())
-                {
-                    _autorization.GetCurrentId = item.Id;
-                    return true;
-                }
             }
             return false;
         }

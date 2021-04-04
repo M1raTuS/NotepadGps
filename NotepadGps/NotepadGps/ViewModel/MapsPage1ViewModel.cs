@@ -1,4 +1,11 @@
-﻿using System.Windows.Input;
+﻿using Acr.UserDialogs;
+using NotepadGps.Models;
+using NotepadGps.Services.Profile;
+using NotepadGps.Services.Settings;
+using Prism.Navigation;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
+using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 
@@ -6,19 +13,92 @@ namespace NotepadGps.ViewModel
 {
     public class MapsPage1ViewModel : BaseViewModel
     {
+        //public ObservableCollection<MapPinModel> Locations { get; set; }
+
+        private readonly INavigationService _navigationService;
+        private readonly IProfileService _profile;
+        private readonly ISettingsService _settingsService;
+
+        public MapsPage1ViewModel(INavigationService navigationService,
+                                  IProfileService profile,
+                                  ISettingsService settingsService)
+        {
+            _navigationService = navigationService;
+            _profile = profile;
+            _settingsService = settingsService;
+
+            Load();
+        }
+
+        private Position position;
+        public Position Position
+        {
+            get => position;
+            set => SetProperty(ref position, value);
+        }
+        private string address;
+        public string Address
+        {
+            get => address;
+            set => SetProperty(ref address, value);
+        }
+        private string label;
+        public string Label
+        {
+            get => label;
+            set => SetProperty(ref label, value);
+        }
+
+        private async void Add()
+        {
+            var location = new MapPinModel
+            {
+                Id = _settingsService.CurrentUser,
+                Title = "MyLocation",
+                Description = "Hi",
+                Latitude = 48.5230845,
+                Longitude = 35.0585175,
+            };
+
+            await _profile.SaveMapPinAsync(location);
+        }
+        private void Load()
+        {
+            var mapPin = _profile.GetMapPinListById();
+            MapPin = new ObservableCollection<MapPinModel>(mapPin);
+        }
+
         public ICommand OnMapClicked => new Command(MapClicked);
 
+        public void PinSelected(object param)
+        {
+            var pin = param as Pin;
+
+            if (pin != null)
+            {
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    UserDialogs.Instance.Alert(pin.Label);
+                });
+            }
+        }
 
         private void MapClicked()
         {
-            Map map = new Map();
+            var map = new Map();
             map.MapClicked += OnMapClickeded;
         }
         void OnMapClickeded(object sender, MapClickedEventArgs e)
         {
-            System.Diagnostics.Debug.WriteLine($"MapClick: {e.Position.Latitude}, {e.Position.Longitude}");
+            Debug.WriteLine($"MapClick: {e.Position.Latitude}, {e.Position.Longitude}");
         }
 
-        
+        public override void OnNavigatedTo(INavigationParameters parameters)
+        {
+            base.OnNavigatedTo(parameters);
+        }
+
+
     }
 }
+

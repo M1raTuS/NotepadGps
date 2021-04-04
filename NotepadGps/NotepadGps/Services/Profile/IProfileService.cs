@@ -7,11 +7,14 @@ namespace NotepadGps.Services.Profile
 
     public interface IProfileService
     {
-        Task<List<ProfileModel>> GetProfileListByIdAsync();
+        Task<List<MapPinModel>> GetMapPinListByIdAsync();
+        Task<List<UserModel>> GetUserListByIdAsync();
         Task<List<UserModel>> GetAllUserListAsync();
-        Task SaveProfileAsync(ProfileModel profile);
-        Task UpdateProfileAsync(ProfileModel profile);
-        Task DeleteProfileAsync(ProfileModel profile); 
-        Task SaveUserAsync(UserModel user); 
+        Task SaveMapPinAsync(MapPinModel mapPin);
+        Task UpdateMapPinAsync(MapPinModel mapPin);
+        Task DeleteMapPinAsync(MapPinModel mapPin); 
+        Task SaveUserAsync(UserModel user);
+        List<UserModel> GetAllUserList();
+        List<MapPinModel> GetMapPinListById();
     }
 }

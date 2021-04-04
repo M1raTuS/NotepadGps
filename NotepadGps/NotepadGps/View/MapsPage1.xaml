@@ -4,47 +4,29 @@
              x:Class="NotepadGps.View.MapsPage1"    
              Title="MapsPage 1"
              xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:behaviours="clr-namespace:NotepadGps.Behaviours;assembly=NotepadGps"
              xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"  
              mvvm:ViewModelLocator.AutowireViewModel="True">
 
     <ContentPage.Content>
         <StackLayout>
-            <SearchBar></SearchBar>
+            <SearchBar x:Name="Search"
+                       CancelButtonColor="Blue"
+                       TextColor="Blue"
+                       Placeholder="Search"
+                       Text="{Binding FindPin}"
+                       SearchCommand="{Binding FindPinCommand}">
+            </SearchBar>
             <Grid VerticalOptions="FillAndExpand">
                 <map:Map x:Name="map"
                          MapType="Street" 
-                     HasZoomEnabled="True" 
-                     HasScrollEnabled="True" 
-                     IsShowingUser="True" 
-                     MoveToLastRegionOnLayoutChange="True" >
-                    <x:Arguments>
-                        <map:MapSpan>
-                            <x:Arguments>
-                                <map:Position>
-                                    <x:Arguments>
-                                        <x:Double>48.5130845</x:Double>
-                                        <x:Double>35.0581175</x:Double>
-                                    </x:Arguments>
-                                </map:Position>
-                                <x:Double>0.01</x:Double>
-                                <x:Double>0.01</x:Double>
-                            </x:Arguments>
-                        </map:MapSpan>
-                    </x:Arguments>
-                    <map:Map.Pins>
-                        <map:Pin Label="Santa Cruz"
-                                 Address="The city with a boardwalk"
-                                 Type="Place">
-                            <map:Pin.Position>
-                                <map:Position>
-                                    <x:Arguments>
-                                        <x:Double>48.5130845</x:Double>
-                                        <x:Double>35.0581175</x:Double>
-                                    </x:Arguments>
-                                </map:Position>
-                            </map:Pin.Position>
-                        </map:Pin>
-                    </map:Map.Pins>
+                         HasZoomEnabled="True" 
+                         HasScrollEnabled="True" 
+                         IsShowingUser="True" 
+                         MoveToLastRegionOnLayoutChange="True">
+                    <map:Map.Behaviors>
+                        <behaviours:BindableMapBehavior ItemsSource="{Binding MapPin}" />
+                    </map:Map.Behaviors>
                 </map:Map>
             </Grid>
         </StackLayout>

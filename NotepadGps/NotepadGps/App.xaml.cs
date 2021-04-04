@@ -1,6 +1,8 @@
-﻿using NotepadGps.Services.Autorization;
+﻿using NotepadGps.Services.Autentification;
+using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Profile;
 using NotepadGps.Services.Repository;
+using NotepadGps.Services.Settings;
 using NotepadGps.View;
 using NotepadGps.ViewModel;
 using Prism.Ioc;
@@ -11,6 +13,7 @@ namespace NotepadGps
 {
     public partial class App : PrismApplication
     {
+        private ISettingsService settingsService;
         public App()
         {
 
@@ -21,9 +24,11 @@ namespace NotepadGps
 
             //Services
             containerRegistry.RegisterInstance<IRepository>(Container.Resolve<Repository>());
+            containerRegistry.RegisterInstance<ISettingsService>(Container.Resolve<SettingsService>());
             containerRegistry.RegisterInstance<IAutorizationService>(Container.Resolve<AutorizationService>());
             containerRegistry.RegisterInstance<IProfileService>(Container.Resolve<ProfileService>());
-
+            containerRegistry.RegisterInstance<IAutentificationService>(Container.Resolve<AutentificationService>());
+            
 
             //Navigation
             containerRegistry.RegisterForNavigation<NavigationPage>();
@@ -31,16 +36,25 @@ namespace NotepadGps
             containerRegistry.RegisterForNavigation<SignUpView, SignUpViewModel>();
             containerRegistry.RegisterForNavigation<MainListView, MainListViewModel>();
             containerRegistry.RegisterForNavigation<MapsPage1,MapsPage1ViewModel>();
-            containerRegistry.RegisterForNavigation<MapsPage2>();
+            containerRegistry.RegisterForNavigation<MapsPage2,MapsPage2ViewModel>();
+            containerRegistry.RegisterForNavigation<AddEditMapPinView, AddEditMapPinViewModel>();
 
         }
 
         protected override void OnInitialized()
         {
-            InitializeComponent();
+            //InitializeComponent();
+            settingsService = Container.Resolve<ISettingsService>();
 
-           //NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(MainListView)}");
-            NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(SignInView)}");
+            if (settingsService.CurrentUser != -1)
+            {
+                NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(MainListView)}");
+            }
+            else
+            {
+                NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(SignInView)}");
+            }
+            
         }
 
         protected override void OnStart()
