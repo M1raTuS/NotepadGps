@@ -23,7 +23,8 @@
                            TextColor="Blue"
                            Placeholder="Search"
                            Grid.Row="0"
-                           Grid.Column="0"/>
+                           Grid.Column="0"
+                           Text="{Binding SearchPin}"/>
 
                 <Button Grid.Row="0"
                         Grid.Column="1"

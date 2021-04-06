@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:num="clr-namespace:NotepadGps.Behaviour;assembly=NotepadGps"
              xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:behaviours="clr-namespace:NotepadGps.Behaviour;assembly=NotepadGps"
              x:Class="NotepadGps.View.AddEditMapPinView">
 
     <Grid BackgroundColor="{DynamicResource BackgroundColor}">
@@ -32,21 +34,39 @@
 
         <Entry Grid.Row="2"
                Grid.Column="1"
-               Text="{Binding Latitude}"
-               Placeholder="Latitude"/>
+               Text="{Binding Latitude, StringFormat='{0:###.#######}'}"
+               Placeholder="Latitude"
+               Keyboard="Numeric"/>
+
         <Entry Grid.Row="3"
                Grid.Column="1"
-               Text="{Binding Longitude}"
-               Placeholder="Longitude"/>
+               Text="{Binding Longitude, StringFormat='{0:###.#######}'}"
+               Placeholder="Longitude"
+               Keyboard="Numeric">
+            <Entry.Behaviors>
+                <num:NumericValidationBehavior/>
+            </Entry.Behaviors>
+        </Entry>
 
-        <Editor Grid.Row="4" 
-                Grid.RowSpan="3"
-                Grid.Column="1"
-                BackgroundColor="Gray"
-                Placeholder="Description"
-                HeightRequest="120"
-                MaxLength="120"
-                Text="{Binding Description}"/>
+            <Editor Grid.Row="4" 
+                    Grid.RowSpan="2"
+                    Grid.Column="1"
+                    BackgroundColor="Gray"
+                    Placeholder="Description"
+                    HeightRequest="120"
+                    MaxLength="120"
+                    Text="{Binding Description}"/>
+        
+        <CheckBox Grid.Row="5" 
+                  Grid.RowSpan="3"
+                  Grid.Column="1"
+                  IsChecked="{Binding Chosen}"/>
+        
+        <Label Grid.Row="6" 
+               Grid.Column="1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Text="IsChosen?"/>
 
         <map:Map Grid.Row="7" 
                  Grid.RowSpan="4"
@@ -55,9 +75,16 @@
                  MapType="Street" 
                  HasZoomEnabled="True" 
                  HasScrollEnabled="True" 
-                 IsShowingUser="True" 
-                 MoveToLastRegionOnLayoutChange="True">
+                 IsShowingUser="True">
+            <map:Map.Behaviors>
+                <behaviours:BindableMapBehavior ItemsSource="{Binding MapPin}" />
+                <behaviours:EventToCommandBehavior EventName="MapClicked" 
+                                                   Command="{Binding OnMapClicked}"/>
+
+            </map:Map.Behaviors>
         </map:Map>
+        
+        
         <Button Grid.Row="11"
                 BackgroundColor="Red"
                 Grid.Column="1"

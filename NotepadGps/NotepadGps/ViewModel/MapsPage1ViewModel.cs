@@ -3,7 +3,6 @@ using NotepadGps.Models;
 using NotepadGps.Services.Profile;
 using NotepadGps.Services.Settings;
 using Prism.Navigation;
-using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Windows.Input;
@@ -25,6 +24,7 @@ namespace NotepadGps.ViewModel
             _navigationService = navigationService;
             _profile = profile;
             _settingsService = settingsService;
+
 
             Load();
         }

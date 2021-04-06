@@ -1,12 +1,9 @@
 ﻿using NotepadGps.Models;
 using NotepadGps.Services.Profile;
-using NotepadGps.Services.Repository;
 using Prism.Navigation;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -111,7 +108,7 @@ namespace NotepadGps.ViewModel
         public async override void OnNavigatedTo(INavigationParameters parameters)
         {
             var _user = await _profile.GetAllUserListAsync();
-             User = new ObservableCollection<UserModel>(_user);
+            User = new ObservableCollection<UserModel>(_user);
         }
 
         #endregion

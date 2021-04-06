@@ -2,8 +2,11 @@
 using NotepadGps.Services.Profile;
 using NotepadGps.View;
 using Prism.Navigation;
+using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
+using System.Linq;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -25,8 +28,15 @@ namespace NotepadGps.ViewModel
 
         #region -Public properties-
 
-        private MapPinModel _selectedItem;
-        public MapPinModel SelectedItem
+        private ObservableCollection<MapPinModel> _mapPins;
+        public ObservableCollection<MapPinModel> MapPins
+        {
+            get => _mapPins;
+            set => SetProperty(ref _mapPins, value);
+        }
+
+        private ObservableCollection<MapPinModel> _selectedItem;
+        public ObservableCollection<MapPinModel> SelectedItem
         {
             get => _selectedItem;
             set => SetProperty(ref _selectedItem, value);
@@ -46,7 +56,16 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _listEnabled, value);
         }
 
+        private string _searchPin;
+        public string SearchPin
+        {
+            get => _searchPin;
+            set => SetProperty(ref _searchPin, value);
+        }
+
         public ICommand AddMapPinFloatingButtonCommand => new Command(AddMapPinFloatingButton);
+        public ICommand FindPinCommand => new Command(FindPin);
+
 
         #endregion
 
@@ -56,6 +75,30 @@ namespace NotepadGps.ViewModel
         {
             await _navigationService.NavigateAsync(nameof(AddEditMapPinView));
         }
+
+        private void FindPin()
+        {
+            if (SelectedItem == null)
+            {
+                SelectedItem = new ObservableCollection<MapPinModel>(MapPin);
+            }
+            else
+            {
+                MapPin = new ObservableCollection<MapPinModel>(SelectedItem);
+            }
+            
+            try
+            {
+                var pin = MapPin.Where(x => x.Latitude.ToString() == SearchPin || x.Longitude.ToString() == SearchPin || x.Description == SearchPin);
+                MapPin = new ObservableCollection<MapPinModel>(pin);
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e);   
+            }
+            
+        }
+
         private void Load()
         {
             var mapPin = _profile.GetMapPinListById();
@@ -80,6 +123,13 @@ namespace NotepadGps.ViewModel
                 {
                     LabelVisible = true;
                     ListEnabled = false;
+                }
+            }
+            if (args.PropertyName == nameof(SearchPin))
+            {
+                if (SearchPin.Length == 0)
+                {
+                    Load();
                 }
             }
         }

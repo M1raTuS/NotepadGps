@@ -6,10 +6,10 @@ using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 
-namespace NotepadGps.Behaviours
+namespace NotepadGps.Behaviour
 {
     [Obsolete]
-    public class BindableMapBehavior : BindableBehavior<Map>
+    public class BindableMapBehavior : BehaviorBase<Map>
     {
         public static readonly BindableProperty ItemsSourceProperty = BindableProperty.Create<BindableMapBehavior, IEnumerable<MapPinModel>>(
             p => p.ItemsSource, null, BindingMode.Default, null, ItemsSourceChanged);
@@ -29,7 +29,7 @@ namespace NotepadGps.Behaviours
 
         private void SynchronizePins()
         {
-            var map = LinkedElement;
+            var map = AssociatedObject;
             for (int pinIndex = map.Pins.Count - 1; pinIndex >= 0; pinIndex--)
             {
                 map.Pins[pinIndex].Clicked -= ClickedPinMapToCommand;
@@ -38,19 +38,32 @@ namespace NotepadGps.Behaviours
 
             var pins = ItemsSource.Select(source =>
             {
-                var pin = new Pin
+                if (source.Chosen)
                 {
-                    Label = source.Title,
-                    Address = source.Description,
-                    Type = PinType.SearchResult,
-                    Position = new Position(source.Latitude, source.Longitude)
-                };
-                pin.Clicked += ClickedPinMapToCommand;
-                return pin;
+
+                    var pin = new Pin
+                    {
+                        Label = source.Title,
+                        Address = source.Description,
+                        Type = PinType.SearchResult,
+                        Position = new Position(source.Latitude, source.Longitude)
+                    };
+                    pin.Clicked += ClickedPinMapToCommand;
+                    return pin;
+                }
+                else
+                {
+                    return null;
+                }
             }).ToArray();
 
             foreach (var pin in pins)
-                map.Pins.Add(pin);
+            {
+                if (pin != null)
+                {
+                    map.Pins.Add(pin);
+                }
+            }
 
         }
 
@@ -59,7 +72,7 @@ namespace NotepadGps.Behaviours
             var pin = sender as Pin;
             if (pin == null) return;
             var bindableLocation = ItemsSource.FirstOrDefault(x => x.Title == pin.Label);
-            
+
         }
     }
 }

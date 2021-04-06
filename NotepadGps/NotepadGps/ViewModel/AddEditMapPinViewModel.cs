@@ -5,9 +5,14 @@ using NotepadGps.Services.Profile;
 using NotepadGps.Services.Repository;
 using Prism.Navigation;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
+using System.Linq;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
+using Xamarin.Forms.Maps;
 
 namespace NotepadGps.ViewModel
 {
@@ -26,58 +31,60 @@ namespace NotepadGps.ViewModel
             _profile = profile;
         }
 
-        #region -Property-
+        #region -Public Properties-
 
         public ICommand AddButtonCommand => new Command(SaveCommand);
 
 
-        private MapPinModel _mapPinModel;
-        public MapPinModel mapPinModel
-        {
-            get => _mapPinModel;
-            set => SetProperty(ref _mapPinModel, value);
-        }
         private int _id;
-
         public int Id
         {
             get => _id;
             set => SetProperty(ref _id, value);
         }
-        private string _title;
 
+        private string _title;
         public string Title
         {
             get => _title;
             set => SetProperty(ref _title, value);
         }
 
-        private double _longitude;
-
-        public double Longitude
+        private string _longitude;
+        public string Longitude
         {
             get => _longitude;
             set => SetProperty(ref _longitude, value);
         }
 
-        private double _latitude;
-
-        public double Latitude
+        private string _latitude;
+        public string Latitude
         {
             get => _latitude;
             set => SetProperty(ref _latitude, value);
         }
-        private string _description;
 
+        private bool _chosen;
+        public bool Chosen
+        {
+            get => _chosen;
+            set => SetProperty(ref _chosen, value);
+
+        }
+
+        private string _description;
         public string Description
         {
             get => _description;
             set => SetProperty(ref _description, value);
 
         }
+
+
         #endregion
 
         #region -Methods-
+
 
         private async void SaveCommand()
         {
@@ -90,8 +97,9 @@ namespace NotepadGps.ViewModel
                         Id = Id,
                         UserId = _autorization.GetCurrentId,
                         Title = Title,
-                        Longitude = Longitude,
-                        Latitude = Latitude,
+                        Longitude = Convert.ToDouble(Longitude),
+                        Latitude = Convert.ToDouble(Latitude),
+                        Chosen = Chosen,
                         Description = Description
                     };
 
@@ -112,7 +120,7 @@ namespace NotepadGps.ViewModel
 
         private bool CanSave()
         {
-            if (!String.IsNullOrEmpty(Title) && !Double.IsNaN(Longitude) && !Double.IsNaN(Latitude))
+            if (!String.IsNullOrEmpty(Title) && !String.IsNullOrEmpty(Longitude) && !String.IsNullOrEmpty(Latitude))
             {
                 return true;
             }
@@ -127,7 +135,7 @@ namespace NotepadGps.ViewModel
             base.OnNavigatedTo(parameters);
             if (parameters.TryGetValue(nameof(MapPinModel), out MapPinModel mapPin))
             {
-                mapPinModel = mapPin;
+                //mapPinModel = mapPin;
             }
         }
 
@@ -136,5 +144,34 @@ namespace NotepadGps.ViewModel
             base.OnPropertyChanged(args);
         }
         #endregion
+        public ICommand OnMapClicked => new Command(MapClicked);
+
+        private async void MapClicked()
+        {
+
+            var location = await Geolocation.GetLastKnownLocationAsync();
+            if (location == null)
+            {
+                location = await Geolocation.GetLocationAsync(new GeolocationRequest
+            {
+                DesiredAccuracy=GeolocationAccuracy.Medium,
+                Timeout = TimeSpan.FromSeconds(30)
+            });
+            }
+
+           var fg = location.Latitude;
+           var jh = location.Longitude;
+
+
+            Position pos = new Position();
+            Xamarin.Forms.Maps.Map m = new Xamarin.Forms.Maps.Map();
+           var td = m.X;
+           var q = pos.Latitude;
+           var t = pos.Longitude;
+        }
+        public class TapEventArgs : EventArgs
+        {
+            public Position Position { get; set; }
+        }
     }
 }

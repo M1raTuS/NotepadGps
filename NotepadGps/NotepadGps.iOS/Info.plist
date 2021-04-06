@@ -36,6 +36,7 @@
     <string>Assets.xcassets/AppIcon.appiconset</string>
   
   <!-- Added for maps-->
+  
   <key>NSLocationAlwaysUsageDescription</key>
   <string>Can we use your location at all times?</string>
   <key>NSLocationWhenInUseUsageDescription</key>

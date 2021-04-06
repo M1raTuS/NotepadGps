@@ -6,8 +6,6 @@ using Xamarin.Forms.Maps;
 
 public class BindableMap : Map
 {
-
-
     public BindableMap()
     {
         PinsSource = new ObservableCollection<Pin>();

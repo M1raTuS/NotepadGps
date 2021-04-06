@@ -4,7 +4,7 @@
              x:Class="NotepadGps.View.MapsPage1"    
              Title="MapsPage 1"
              xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
-             xmlns:behaviours="clr-namespace:NotepadGps.Behaviours;assembly=NotepadGps"
+             xmlns:behaviours="clr-namespace:NotepadGps.Behaviour;assembly=NotepadGps"
              xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"  
              mvvm:ViewModelLocator.AutowireViewModel="True">
 
@@ -22,8 +22,7 @@
                          MapType="Street" 
                          HasZoomEnabled="True" 
                          HasScrollEnabled="True" 
-                         IsShowingUser="True" 
-                         MoveToLastRegionOnLayoutChange="True">
+                         IsShowingUser="True">
                     <map:Map.Behaviors>
                         <behaviours:BindableMapBehavior ItemsSource="{Binding MapPin}" />
                     </map:Map.Behaviors>
