@@ -2866,3755 +2866,6 @@ namespace NotepadGps.Droid
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_type = global::NotepadGps.Droid.Resource.Styleable.GradientColor_android_type;
 			global::Xamarin.Essentials.Resource.Xml.image_share_filepaths = global::NotepadGps.Droid.Resource.Xml.image_share_filepaths;
 			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::NotepadGps.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.abc_fade_in = global::NotepadGps.Droid.Resource.Animation.abc_fade_in;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.abc_fade_out = global::NotepadGps.Droid.Resource.Animation.abc_fade_out;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::NotepadGps.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.abc_popup_enter = global::NotepadGps.Droid.Resource.Animation.abc_popup_enter;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.abc_popup_exit = global::NotepadGps.Droid.Resource.Animation.abc_popup_exit;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.abc_shrink_fade_out_from_bottom = global::NotepadGps.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.abc_slide_in_bottom = global::NotepadGps.Droid.Resource.Animation.abc_slide_in_bottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.abc_slide_in_top = global::NotepadGps.Droid.Resource.Animation.abc_slide_in_top;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.abc_slide_out_bottom = global::NotepadGps.Droid.Resource.Animation.abc_slide_out_bottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.abc_slide_out_top = global::NotepadGps.Droid.Resource.Animation.abc_slide_out_top;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.abc_tooltip_enter = global::NotepadGps.Droid.Resource.Animation.abc_tooltip_enter;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.abc_tooltip_exit = global::NotepadGps.Droid.Resource.Animation.abc_tooltip_exit;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::NotepadGps.Droid.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::NotepadGps.Droid.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::NotepadGps.Droid.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::NotepadGps.Droid.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::NotepadGps.Droid.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::NotepadGps.Droid.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::NotepadGps.Droid.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::NotepadGps.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::NotepadGps.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::NotepadGps.Droid.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::NotepadGps.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::NotepadGps.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.design_bottom_sheet_slide_in = global::NotepadGps.Droid.Resource.Animation.design_bottom_sheet_slide_in;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.design_bottom_sheet_slide_out = global::NotepadGps.Droid.Resource.Animation.design_bottom_sheet_slide_out;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.design_snackbar_in = global::NotepadGps.Droid.Resource.Animation.design_snackbar_in;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.design_snackbar_out = global::NotepadGps.Droid.Resource.Animation.design_snackbar_out;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.EnterFromLeft = global::NotepadGps.Droid.Resource.Animation.EnterFromLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.EnterFromRight = global::NotepadGps.Droid.Resource.Animation.EnterFromRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.ExitToLeft = global::NotepadGps.Droid.Resource.Animation.ExitToLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.ExitToRight = global::NotepadGps.Droid.Resource.Animation.ExitToRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.fragment_close_enter = global::NotepadGps.Droid.Resource.Animation.fragment_close_enter;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.fragment_close_exit = global::NotepadGps.Droid.Resource.Animation.fragment_close_exit;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.fragment_fade_enter = global::NotepadGps.Droid.Resource.Animation.fragment_fade_enter;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.fragment_fade_exit = global::NotepadGps.Droid.Resource.Animation.fragment_fade_exit;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.fragment_fast_out_extra_slow_in = global::NotepadGps.Droid.Resource.Animation.fragment_fast_out_extra_slow_in;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.fragment_open_enter = global::NotepadGps.Droid.Resource.Animation.fragment_open_enter;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.fragment_open_exit = global::NotepadGps.Droid.Resource.Animation.fragment_open_exit;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.mtrl_bottom_sheet_slide_in = global::NotepadGps.Droid.Resource.Animation.mtrl_bottom_sheet_slide_in;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.mtrl_bottom_sheet_slide_out = global::NotepadGps.Droid.Resource.Animation.mtrl_bottom_sheet_slide_out;
-			global::Xamarin.Forms.Maps.Android.Resource.Animation.mtrl_card_lowers_interpolator = global::NotepadGps.Droid.Resource.Animation.mtrl_card_lowers_interpolator;
-			global::Xamarin.Forms.Maps.Android.Resource.Animator.design_appbar_state_list_animator = global::NotepadGps.Droid.Resource.Animator.design_appbar_state_list_animator;
-			global::Xamarin.Forms.Maps.Android.Resource.Animator.design_fab_hide_motion_spec = global::NotepadGps.Droid.Resource.Animator.design_fab_hide_motion_spec;
-			global::Xamarin.Forms.Maps.Android.Resource.Animator.design_fab_show_motion_spec = global::NotepadGps.Droid.Resource.Animator.design_fab_show_motion_spec;
-			global::Xamarin.Forms.Maps.Android.Resource.Animator.mtrl_btn_state_list_anim = global::NotepadGps.Droid.Resource.Animator.mtrl_btn_state_list_anim;
-			global::Xamarin.Forms.Maps.Android.Resource.Animator.mtrl_btn_unelevated_state_list_anim = global::NotepadGps.Droid.Resource.Animator.mtrl_btn_unelevated_state_list_anim;
-			global::Xamarin.Forms.Maps.Android.Resource.Animator.mtrl_card_state_list_anim = global::NotepadGps.Droid.Resource.Animator.mtrl_card_state_list_anim;
-			global::Xamarin.Forms.Maps.Android.Resource.Animator.mtrl_chip_state_list_anim = global::NotepadGps.Droid.Resource.Animator.mtrl_chip_state_list_anim;
-			global::Xamarin.Forms.Maps.Android.Resource.Animator.mtrl_extended_fab_change_size_motion_spec = global::NotepadGps.Droid.Resource.Animator.mtrl_extended_fab_change_size_motion_spec;
-			global::Xamarin.Forms.Maps.Android.Resource.Animator.mtrl_extended_fab_hide_motion_spec = global::NotepadGps.Droid.Resource.Animator.mtrl_extended_fab_hide_motion_spec;
-			global::Xamarin.Forms.Maps.Android.Resource.Animator.mtrl_extended_fab_show_motion_spec = global::NotepadGps.Droid.Resource.Animator.mtrl_extended_fab_show_motion_spec;
-			global::Xamarin.Forms.Maps.Android.Resource.Animator.mtrl_extended_fab_state_list_animator = global::NotepadGps.Droid.Resource.Animator.mtrl_extended_fab_state_list_animator;
-			global::Xamarin.Forms.Maps.Android.Resource.Animator.mtrl_fab_hide_motion_spec = global::NotepadGps.Droid.Resource.Animator.mtrl_fab_hide_motion_spec;
-			global::Xamarin.Forms.Maps.Android.Resource.Animator.mtrl_fab_show_motion_spec = global::NotepadGps.Droid.Resource.Animator.mtrl_fab_show_motion_spec;
-			global::Xamarin.Forms.Maps.Android.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec = global::NotepadGps.Droid.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec;
-			global::Xamarin.Forms.Maps.Android.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec = global::NotepadGps.Droid.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionBarDivider = global::NotepadGps.Droid.Resource.Attribute.actionBarDivider;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionBarItemBackground = global::NotepadGps.Droid.Resource.Attribute.actionBarItemBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionBarPopupTheme = global::NotepadGps.Droid.Resource.Attribute.actionBarPopupTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionBarSize = global::NotepadGps.Droid.Resource.Attribute.actionBarSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionBarSplitStyle = global::NotepadGps.Droid.Resource.Attribute.actionBarSplitStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionBarStyle = global::NotepadGps.Droid.Resource.Attribute.actionBarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionBarTabBarStyle = global::NotepadGps.Droid.Resource.Attribute.actionBarTabBarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionBarTabStyle = global::NotepadGps.Droid.Resource.Attribute.actionBarTabStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionBarTabTextStyle = global::NotepadGps.Droid.Resource.Attribute.actionBarTabTextStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionBarTheme = global::NotepadGps.Droid.Resource.Attribute.actionBarTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionBarWidgetTheme = global::NotepadGps.Droid.Resource.Attribute.actionBarWidgetTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionButtonStyle = global::NotepadGps.Droid.Resource.Attribute.actionButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionDropDownStyle = global::NotepadGps.Droid.Resource.Attribute.actionDropDownStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionLayout = global::NotepadGps.Droid.Resource.Attribute.actionLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionMenuTextAppearance = global::NotepadGps.Droid.Resource.Attribute.actionMenuTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionMenuTextColor = global::NotepadGps.Droid.Resource.Attribute.actionMenuTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionModeBackground = global::NotepadGps.Droid.Resource.Attribute.actionModeBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionModeCloseButtonStyle = global::NotepadGps.Droid.Resource.Attribute.actionModeCloseButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionModeCloseDrawable = global::NotepadGps.Droid.Resource.Attribute.actionModeCloseDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionModeCopyDrawable = global::NotepadGps.Droid.Resource.Attribute.actionModeCopyDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionModeCutDrawable = global::NotepadGps.Droid.Resource.Attribute.actionModeCutDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionModeFindDrawable = global::NotepadGps.Droid.Resource.Attribute.actionModeFindDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionModePasteDrawable = global::NotepadGps.Droid.Resource.Attribute.actionModePasteDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionModePopupWindowStyle = global::NotepadGps.Droid.Resource.Attribute.actionModePopupWindowStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionModeSelectAllDrawable = global::NotepadGps.Droid.Resource.Attribute.actionModeSelectAllDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionModeShareDrawable = global::NotepadGps.Droid.Resource.Attribute.actionModeShareDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionModeSplitBackground = global::NotepadGps.Droid.Resource.Attribute.actionModeSplitBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionModeStyle = global::NotepadGps.Droid.Resource.Attribute.actionModeStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionModeWebSearchDrawable = global::NotepadGps.Droid.Resource.Attribute.actionModeWebSearchDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionOverflowButtonStyle = global::NotepadGps.Droid.Resource.Attribute.actionOverflowButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionOverflowMenuStyle = global::NotepadGps.Droid.Resource.Attribute.actionOverflowMenuStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionProviderClass = global::NotepadGps.Droid.Resource.Attribute.actionProviderClass;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionTextColorAlpha = global::NotepadGps.Droid.Resource.Attribute.actionTextColorAlpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.actionViewClass = global::NotepadGps.Droid.Resource.Attribute.actionViewClass;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.activityChooserViewStyle = global::NotepadGps.Droid.Resource.Attribute.activityChooserViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.alertDialogButtonGroupStyle = global::NotepadGps.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.alertDialogCenterButtons = global::NotepadGps.Droid.Resource.Attribute.alertDialogCenterButtons;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.alertDialogStyle = global::NotepadGps.Droid.Resource.Attribute.alertDialogStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.alertDialogTheme = global::NotepadGps.Droid.Resource.Attribute.alertDialogTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.allowStacking = global::NotepadGps.Droid.Resource.Attribute.allowStacking;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.alpha = global::NotepadGps.Droid.Resource.Attribute.alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.alphabeticModifiers = global::NotepadGps.Droid.Resource.Attribute.alphabeticModifiers;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.ambientEnabled = global::NotepadGps.Droid.Resource.Attribute.ambientEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.animationMode = global::NotepadGps.Droid.Resource.Attribute.animationMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.appBarLayoutStyle = global::NotepadGps.Droid.Resource.Attribute.appBarLayoutStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.arrowHeadLength = global::NotepadGps.Droid.Resource.Attribute.arrowHeadLength;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.arrowShaftLength = global::NotepadGps.Droid.Resource.Attribute.arrowShaftLength;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.autoCompleteTextViewStyle = global::NotepadGps.Droid.Resource.Attribute.autoCompleteTextViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.autoSizeMaxTextSize = global::NotepadGps.Droid.Resource.Attribute.autoSizeMaxTextSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.autoSizeMinTextSize = global::NotepadGps.Droid.Resource.Attribute.autoSizeMinTextSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.autoSizePresetSizes = global::NotepadGps.Droid.Resource.Attribute.autoSizePresetSizes;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.autoSizeStepGranularity = global::NotepadGps.Droid.Resource.Attribute.autoSizeStepGranularity;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.autoSizeTextType = global::NotepadGps.Droid.Resource.Attribute.autoSizeTextType;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.background = global::NotepadGps.Droid.Resource.Attribute.background;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.backgroundColor = global::NotepadGps.Droid.Resource.Attribute.backgroundColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.backgroundInsetBottom = global::NotepadGps.Droid.Resource.Attribute.backgroundInsetBottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.backgroundInsetEnd = global::NotepadGps.Droid.Resource.Attribute.backgroundInsetEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.backgroundInsetStart = global::NotepadGps.Droid.Resource.Attribute.backgroundInsetStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.backgroundInsetTop = global::NotepadGps.Droid.Resource.Attribute.backgroundInsetTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.backgroundOverlayColorAlpha = global::NotepadGps.Droid.Resource.Attribute.backgroundOverlayColorAlpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.backgroundSplit = global::NotepadGps.Droid.Resource.Attribute.backgroundSplit;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.backgroundStacked = global::NotepadGps.Droid.Resource.Attribute.backgroundStacked;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.backgroundTint = global::NotepadGps.Droid.Resource.Attribute.backgroundTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.backgroundTintMode = global::NotepadGps.Droid.Resource.Attribute.backgroundTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.badgeGravity = global::NotepadGps.Droid.Resource.Attribute.badgeGravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.badgeStyle = global::NotepadGps.Droid.Resource.Attribute.badgeStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.badgeTextColor = global::NotepadGps.Droid.Resource.Attribute.badgeTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.barLength = global::NotepadGps.Droid.Resource.Attribute.barLength;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.behavior_autoHide = global::NotepadGps.Droid.Resource.Attribute.behavior_autoHide;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.behavior_autoShrink = global::NotepadGps.Droid.Resource.Attribute.behavior_autoShrink;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.behavior_draggable = global::NotepadGps.Droid.Resource.Attribute.behavior_draggable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.behavior_expandedOffset = global::NotepadGps.Droid.Resource.Attribute.behavior_expandedOffset;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.behavior_fitToContents = global::NotepadGps.Droid.Resource.Attribute.behavior_fitToContents;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.behavior_halfExpandedRatio = global::NotepadGps.Droid.Resource.Attribute.behavior_halfExpandedRatio;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.behavior_hideable = global::NotepadGps.Droid.Resource.Attribute.behavior_hideable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.behavior_overlapTop = global::NotepadGps.Droid.Resource.Attribute.behavior_overlapTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.behavior_peekHeight = global::NotepadGps.Droid.Resource.Attribute.behavior_peekHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.behavior_saveFlags = global::NotepadGps.Droid.Resource.Attribute.behavior_saveFlags;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.behavior_skipCollapsed = global::NotepadGps.Droid.Resource.Attribute.behavior_skipCollapsed;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.borderlessButtonStyle = global::NotepadGps.Droid.Resource.Attribute.borderlessButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.borderWidth = global::NotepadGps.Droid.Resource.Attribute.borderWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.bottomAppBarStyle = global::NotepadGps.Droid.Resource.Attribute.bottomAppBarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.bottomNavigationStyle = global::NotepadGps.Droid.Resource.Attribute.bottomNavigationStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.bottomSheetDialogTheme = global::NotepadGps.Droid.Resource.Attribute.bottomSheetDialogTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.bottomSheetStyle = global::NotepadGps.Droid.Resource.Attribute.bottomSheetStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.boxBackgroundColor = global::NotepadGps.Droid.Resource.Attribute.boxBackgroundColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.boxBackgroundMode = global::NotepadGps.Droid.Resource.Attribute.boxBackgroundMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.boxCollapsedPaddingTop = global::NotepadGps.Droid.Resource.Attribute.boxCollapsedPaddingTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.boxCornerRadiusBottomEnd = global::NotepadGps.Droid.Resource.Attribute.boxCornerRadiusBottomEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.boxCornerRadiusBottomStart = global::NotepadGps.Droid.Resource.Attribute.boxCornerRadiusBottomStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.boxCornerRadiusTopEnd = global::NotepadGps.Droid.Resource.Attribute.boxCornerRadiusTopEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.boxCornerRadiusTopStart = global::NotepadGps.Droid.Resource.Attribute.boxCornerRadiusTopStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.boxStrokeColor = global::NotepadGps.Droid.Resource.Attribute.boxStrokeColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.boxStrokeErrorColor = global::NotepadGps.Droid.Resource.Attribute.boxStrokeErrorColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.boxStrokeWidth = global::NotepadGps.Droid.Resource.Attribute.boxStrokeWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.boxStrokeWidthFocused = global::NotepadGps.Droid.Resource.Attribute.boxStrokeWidthFocused;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.buttonBarButtonStyle = global::NotepadGps.Droid.Resource.Attribute.buttonBarButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.buttonBarNegativeButtonStyle = global::NotepadGps.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::NotepadGps.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::NotepadGps.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.buttonBarStyle = global::NotepadGps.Droid.Resource.Attribute.buttonBarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.buttonCompat = global::NotepadGps.Droid.Resource.Attribute.buttonCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.buttonGravity = global::NotepadGps.Droid.Resource.Attribute.buttonGravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.buttonIconDimen = global::NotepadGps.Droid.Resource.Attribute.buttonIconDimen;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.buttonPanelSideLayout = global::NotepadGps.Droid.Resource.Attribute.buttonPanelSideLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.buttonSize = global::NotepadGps.Droid.Resource.Attribute.buttonSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.buttonStyle = global::NotepadGps.Droid.Resource.Attribute.buttonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.buttonStyleSmall = global::NotepadGps.Droid.Resource.Attribute.buttonStyleSmall;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.buttonTint = global::NotepadGps.Droid.Resource.Attribute.buttonTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.buttonTintMode = global::NotepadGps.Droid.Resource.Attribute.buttonTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cameraBearing = global::NotepadGps.Droid.Resource.Attribute.cameraBearing;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cameraMaxZoomPreference = global::NotepadGps.Droid.Resource.Attribute.cameraMaxZoomPreference;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cameraMinZoomPreference = global::NotepadGps.Droid.Resource.Attribute.cameraMinZoomPreference;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cameraTargetLat = global::NotepadGps.Droid.Resource.Attribute.cameraTargetLat;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cameraTargetLng = global::NotepadGps.Droid.Resource.Attribute.cameraTargetLng;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cameraTilt = global::NotepadGps.Droid.Resource.Attribute.cameraTilt;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cameraZoom = global::NotepadGps.Droid.Resource.Attribute.cameraZoom;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cardBackgroundColor = global::NotepadGps.Droid.Resource.Attribute.cardBackgroundColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cardCornerRadius = global::NotepadGps.Droid.Resource.Attribute.cardCornerRadius;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cardElevation = global::NotepadGps.Droid.Resource.Attribute.cardElevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cardForegroundColor = global::NotepadGps.Droid.Resource.Attribute.cardForegroundColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cardMaxElevation = global::NotepadGps.Droid.Resource.Attribute.cardMaxElevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cardPreventCornerOverlap = global::NotepadGps.Droid.Resource.Attribute.cardPreventCornerOverlap;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cardUseCompatPadding = global::NotepadGps.Droid.Resource.Attribute.cardUseCompatPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cardViewStyle = global::NotepadGps.Droid.Resource.Attribute.cardViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.checkboxStyle = global::NotepadGps.Droid.Resource.Attribute.checkboxStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.checkedButton = global::NotepadGps.Droid.Resource.Attribute.checkedButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.checkedChip = global::NotepadGps.Droid.Resource.Attribute.checkedChip;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.checkedIcon = global::NotepadGps.Droid.Resource.Attribute.checkedIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.checkedIconEnabled = global::NotepadGps.Droid.Resource.Attribute.checkedIconEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.checkedIconTint = global::NotepadGps.Droid.Resource.Attribute.checkedIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.checkedIconVisible = global::NotepadGps.Droid.Resource.Attribute.checkedIconVisible;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.checkedTextViewStyle = global::NotepadGps.Droid.Resource.Attribute.checkedTextViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipBackgroundColor = global::NotepadGps.Droid.Resource.Attribute.chipBackgroundColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipCornerRadius = global::NotepadGps.Droid.Resource.Attribute.chipCornerRadius;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipEndPadding = global::NotepadGps.Droid.Resource.Attribute.chipEndPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipGroupStyle = global::NotepadGps.Droid.Resource.Attribute.chipGroupStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipIcon = global::NotepadGps.Droid.Resource.Attribute.chipIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipIconEnabled = global::NotepadGps.Droid.Resource.Attribute.chipIconEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipIconSize = global::NotepadGps.Droid.Resource.Attribute.chipIconSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipIconTint = global::NotepadGps.Droid.Resource.Attribute.chipIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipIconVisible = global::NotepadGps.Droid.Resource.Attribute.chipIconVisible;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipMinHeight = global::NotepadGps.Droid.Resource.Attribute.chipMinHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipMinTouchTargetSize = global::NotepadGps.Droid.Resource.Attribute.chipMinTouchTargetSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipSpacing = global::NotepadGps.Droid.Resource.Attribute.chipSpacing;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipSpacingHorizontal = global::NotepadGps.Droid.Resource.Attribute.chipSpacingHorizontal;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipSpacingVertical = global::NotepadGps.Droid.Resource.Attribute.chipSpacingVertical;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipStandaloneStyle = global::NotepadGps.Droid.Resource.Attribute.chipStandaloneStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipStartPadding = global::NotepadGps.Droid.Resource.Attribute.chipStartPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipStrokeColor = global::NotepadGps.Droid.Resource.Attribute.chipStrokeColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipStrokeWidth = global::NotepadGps.Droid.Resource.Attribute.chipStrokeWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipStyle = global::NotepadGps.Droid.Resource.Attribute.chipStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.chipSurfaceColor = global::NotepadGps.Droid.Resource.Attribute.chipSurfaceColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.circleCrop = global::NotepadGps.Droid.Resource.Attribute.circleCrop;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.closeIcon = global::NotepadGps.Droid.Resource.Attribute.closeIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.closeIconEnabled = global::NotepadGps.Droid.Resource.Attribute.closeIconEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.closeIconEndPadding = global::NotepadGps.Droid.Resource.Attribute.closeIconEndPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.closeIconSize = global::NotepadGps.Droid.Resource.Attribute.closeIconSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.closeIconStartPadding = global::NotepadGps.Droid.Resource.Attribute.closeIconStartPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.closeIconTint = global::NotepadGps.Droid.Resource.Attribute.closeIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.closeIconVisible = global::NotepadGps.Droid.Resource.Attribute.closeIconVisible;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.closeItemLayout = global::NotepadGps.Droid.Resource.Attribute.closeItemLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.collapseContentDescription = global::NotepadGps.Droid.Resource.Attribute.collapseContentDescription;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.collapsedTitleGravity = global::NotepadGps.Droid.Resource.Attribute.collapsedTitleGravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.collapsedTitleTextAppearance = global::NotepadGps.Droid.Resource.Attribute.collapsedTitleTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.collapseIcon = global::NotepadGps.Droid.Resource.Attribute.collapseIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.collectionViewStyle = global::NotepadGps.Droid.Resource.Attribute.collectionViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.color = global::NotepadGps.Droid.Resource.Attribute.color;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorAccent = global::NotepadGps.Droid.Resource.Attribute.colorAccent;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorBackgroundFloating = global::NotepadGps.Droid.Resource.Attribute.colorBackgroundFloating;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorButtonNormal = global::NotepadGps.Droid.Resource.Attribute.colorButtonNormal;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorControlActivated = global::NotepadGps.Droid.Resource.Attribute.colorControlActivated;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorControlHighlight = global::NotepadGps.Droid.Resource.Attribute.colorControlHighlight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorControlNormal = global::NotepadGps.Droid.Resource.Attribute.colorControlNormal;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorError = global::NotepadGps.Droid.Resource.Attribute.colorError;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorOnBackground = global::NotepadGps.Droid.Resource.Attribute.colorOnBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorOnError = global::NotepadGps.Droid.Resource.Attribute.colorOnError;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorOnPrimary = global::NotepadGps.Droid.Resource.Attribute.colorOnPrimary;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorOnPrimarySurface = global::NotepadGps.Droid.Resource.Attribute.colorOnPrimarySurface;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorOnSecondary = global::NotepadGps.Droid.Resource.Attribute.colorOnSecondary;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorOnSurface = global::NotepadGps.Droid.Resource.Attribute.colorOnSurface;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorPrimary = global::NotepadGps.Droid.Resource.Attribute.colorPrimary;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorPrimaryDark = global::NotepadGps.Droid.Resource.Attribute.colorPrimaryDark;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorPrimarySurface = global::NotepadGps.Droid.Resource.Attribute.colorPrimarySurface;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorPrimaryVariant = global::NotepadGps.Droid.Resource.Attribute.colorPrimaryVariant;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorScheme = global::NotepadGps.Droid.Resource.Attribute.colorScheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorSecondary = global::NotepadGps.Droid.Resource.Attribute.colorSecondary;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorSecondaryVariant = global::NotepadGps.Droid.Resource.Attribute.colorSecondaryVariant;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorSurface = global::NotepadGps.Droid.Resource.Attribute.colorSurface;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.colorSwitchThumbNormal = global::NotepadGps.Droid.Resource.Attribute.colorSwitchThumbNormal;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.commitIcon = global::NotepadGps.Droid.Resource.Attribute.commitIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.contentDescription = global::NotepadGps.Droid.Resource.Attribute.contentDescription;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.contentInsetEnd = global::NotepadGps.Droid.Resource.Attribute.contentInsetEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.contentInsetEndWithActions = global::NotepadGps.Droid.Resource.Attribute.contentInsetEndWithActions;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.contentInsetLeft = global::NotepadGps.Droid.Resource.Attribute.contentInsetLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.contentInsetRight = global::NotepadGps.Droid.Resource.Attribute.contentInsetRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.contentInsetStart = global::NotepadGps.Droid.Resource.Attribute.contentInsetStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.contentInsetStartWithNavigation = global::NotepadGps.Droid.Resource.Attribute.contentInsetStartWithNavigation;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.contentPadding = global::NotepadGps.Droid.Resource.Attribute.contentPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.contentPaddingBottom = global::NotepadGps.Droid.Resource.Attribute.contentPaddingBottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.contentPaddingLeft = global::NotepadGps.Droid.Resource.Attribute.contentPaddingLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.contentPaddingRight = global::NotepadGps.Droid.Resource.Attribute.contentPaddingRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.contentPaddingTop = global::NotepadGps.Droid.Resource.Attribute.contentPaddingTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.contentScrim = global::NotepadGps.Droid.Resource.Attribute.contentScrim;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.controlBackground = global::NotepadGps.Droid.Resource.Attribute.controlBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.coordinatorLayoutStyle = global::NotepadGps.Droid.Resource.Attribute.coordinatorLayoutStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cornerFamily = global::NotepadGps.Droid.Resource.Attribute.cornerFamily;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cornerFamilyBottomLeft = global::NotepadGps.Droid.Resource.Attribute.cornerFamilyBottomLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cornerFamilyBottomRight = global::NotepadGps.Droid.Resource.Attribute.cornerFamilyBottomRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cornerFamilyTopLeft = global::NotepadGps.Droid.Resource.Attribute.cornerFamilyTopLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cornerFamilyTopRight = global::NotepadGps.Droid.Resource.Attribute.cornerFamilyTopRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cornerRadius = global::NotepadGps.Droid.Resource.Attribute.cornerRadius;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cornerSize = global::NotepadGps.Droid.Resource.Attribute.cornerSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cornerSizeBottomLeft = global::NotepadGps.Droid.Resource.Attribute.cornerSizeBottomLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cornerSizeBottomRight = global::NotepadGps.Droid.Resource.Attribute.cornerSizeBottomRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cornerSizeTopLeft = global::NotepadGps.Droid.Resource.Attribute.cornerSizeTopLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.cornerSizeTopRight = global::NotepadGps.Droid.Resource.Attribute.cornerSizeTopRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.counterEnabled = global::NotepadGps.Droid.Resource.Attribute.counterEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.counterMaxLength = global::NotepadGps.Droid.Resource.Attribute.counterMaxLength;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.counterOverflowTextAppearance = global::NotepadGps.Droid.Resource.Attribute.counterOverflowTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.counterOverflowTextColor = global::NotepadGps.Droid.Resource.Attribute.counterOverflowTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.counterTextAppearance = global::NotepadGps.Droid.Resource.Attribute.counterTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.counterTextColor = global::NotepadGps.Droid.Resource.Attribute.counterTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.customNavigationLayout = global::NotepadGps.Droid.Resource.Attribute.customNavigationLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.dayInvalidStyle = global::NotepadGps.Droid.Resource.Attribute.dayInvalidStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.daySelectedStyle = global::NotepadGps.Droid.Resource.Attribute.daySelectedStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.dayStyle = global::NotepadGps.Droid.Resource.Attribute.dayStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.dayTodayStyle = global::NotepadGps.Droid.Resource.Attribute.dayTodayStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.defaultQueryHint = global::NotepadGps.Droid.Resource.Attribute.defaultQueryHint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.dialogCornerRadius = global::NotepadGps.Droid.Resource.Attribute.dialogCornerRadius;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.dialogPreferredPadding = global::NotepadGps.Droid.Resource.Attribute.dialogPreferredPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.dialogTheme = global::NotepadGps.Droid.Resource.Attribute.dialogTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.displayOptions = global::NotepadGps.Droid.Resource.Attribute.displayOptions;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.divider = global::NotepadGps.Droid.Resource.Attribute.divider;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.dividerHorizontal = global::NotepadGps.Droid.Resource.Attribute.dividerHorizontal;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.dividerPadding = global::NotepadGps.Droid.Resource.Attribute.dividerPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.dividerVertical = global::NotepadGps.Droid.Resource.Attribute.dividerVertical;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.drawableBottomCompat = global::NotepadGps.Droid.Resource.Attribute.drawableBottomCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.drawableEndCompat = global::NotepadGps.Droid.Resource.Attribute.drawableEndCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.drawableLeftCompat = global::NotepadGps.Droid.Resource.Attribute.drawableLeftCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.drawableRightCompat = global::NotepadGps.Droid.Resource.Attribute.drawableRightCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.drawableSize = global::NotepadGps.Droid.Resource.Attribute.drawableSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.drawableStartCompat = global::NotepadGps.Droid.Resource.Attribute.drawableStartCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.drawableTint = global::NotepadGps.Droid.Resource.Attribute.drawableTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.drawableTintMode = global::NotepadGps.Droid.Resource.Attribute.drawableTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.drawableTopCompat = global::NotepadGps.Droid.Resource.Attribute.drawableTopCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.drawerArrowStyle = global::NotepadGps.Droid.Resource.Attribute.drawerArrowStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.drawerLayoutStyle = global::NotepadGps.Droid.Resource.Attribute.drawerLayoutStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::NotepadGps.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.dropDownListViewStyle = global::NotepadGps.Droid.Resource.Attribute.dropDownListViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.editTextBackground = global::NotepadGps.Droid.Resource.Attribute.editTextBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.editTextColor = global::NotepadGps.Droid.Resource.Attribute.editTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.editTextStyle = global::NotepadGps.Droid.Resource.Attribute.editTextStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.elevation = global::NotepadGps.Droid.Resource.Attribute.elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.elevationOverlayColor = global::NotepadGps.Droid.Resource.Attribute.elevationOverlayColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.elevationOverlayEnabled = global::NotepadGps.Droid.Resource.Attribute.elevationOverlayEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.endIconCheckable = global::NotepadGps.Droid.Resource.Attribute.endIconCheckable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.endIconContentDescription = global::NotepadGps.Droid.Resource.Attribute.endIconContentDescription;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.endIconDrawable = global::NotepadGps.Droid.Resource.Attribute.endIconDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.endIconMode = global::NotepadGps.Droid.Resource.Attribute.endIconMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.endIconTint = global::NotepadGps.Droid.Resource.Attribute.endIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.endIconTintMode = global::NotepadGps.Droid.Resource.Attribute.endIconTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.enforceMaterialTheme = global::NotepadGps.Droid.Resource.Attribute.enforceMaterialTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.enforceTextAppearance = global::NotepadGps.Droid.Resource.Attribute.enforceTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.ensureMinTouchTargetSize = global::NotepadGps.Droid.Resource.Attribute.ensureMinTouchTargetSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.errorContentDescription = global::NotepadGps.Droid.Resource.Attribute.errorContentDescription;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.errorEnabled = global::NotepadGps.Droid.Resource.Attribute.errorEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.errorIconDrawable = global::NotepadGps.Droid.Resource.Attribute.errorIconDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.errorIconTint = global::NotepadGps.Droid.Resource.Attribute.errorIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.errorIconTintMode = global::NotepadGps.Droid.Resource.Attribute.errorIconTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.errorTextAppearance = global::NotepadGps.Droid.Resource.Attribute.errorTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.errorTextColor = global::NotepadGps.Droid.Resource.Attribute.errorTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::NotepadGps.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.expanded = global::NotepadGps.Droid.Resource.Attribute.expanded;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.expandedTitleGravity = global::NotepadGps.Droid.Resource.Attribute.expandedTitleGravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.expandedTitleMargin = global::NotepadGps.Droid.Resource.Attribute.expandedTitleMargin;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.expandedTitleMarginBottom = global::NotepadGps.Droid.Resource.Attribute.expandedTitleMarginBottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.expandedTitleMarginEnd = global::NotepadGps.Droid.Resource.Attribute.expandedTitleMarginEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.expandedTitleMarginStart = global::NotepadGps.Droid.Resource.Attribute.expandedTitleMarginStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.expandedTitleMarginTop = global::NotepadGps.Droid.Resource.Attribute.expandedTitleMarginTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.expandedTitleTextAppearance = global::NotepadGps.Droid.Resource.Attribute.expandedTitleTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.extendedFloatingActionButtonStyle = global::NotepadGps.Droid.Resource.Attribute.extendedFloatingActionButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.extendMotionSpec = global::NotepadGps.Droid.Resource.Attribute.extendMotionSpec;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fabAlignmentMode = global::NotepadGps.Droid.Resource.Attribute.fabAlignmentMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fabAnimationMode = global::NotepadGps.Droid.Resource.Attribute.fabAnimationMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fabCradleMargin = global::NotepadGps.Droid.Resource.Attribute.fabCradleMargin;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fabCradleRoundedCornerRadius = global::NotepadGps.Droid.Resource.Attribute.fabCradleRoundedCornerRadius;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fabCradleVerticalOffset = global::NotepadGps.Droid.Resource.Attribute.fabCradleVerticalOffset;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fabCustomSize = global::NotepadGps.Droid.Resource.Attribute.fabCustomSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fabSize = global::NotepadGps.Droid.Resource.Attribute.fabSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fastScrollEnabled = global::NotepadGps.Droid.Resource.Attribute.fastScrollEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::NotepadGps.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::NotepadGps.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fastScrollVerticalThumbDrawable = global::NotepadGps.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fastScrollVerticalTrackDrawable = global::NotepadGps.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.firstBaselineToTopHeight = global::NotepadGps.Droid.Resource.Attribute.firstBaselineToTopHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.floatingActionButtonStyle = global::NotepadGps.Droid.Resource.Attribute.floatingActionButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.font = global::NotepadGps.Droid.Resource.Attribute.font;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fontFamily = global::NotepadGps.Droid.Resource.Attribute.fontFamily;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fontProviderAuthority = global::NotepadGps.Droid.Resource.Attribute.fontProviderAuthority;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fontProviderCerts = global::NotepadGps.Droid.Resource.Attribute.fontProviderCerts;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fontProviderFetchStrategy = global::NotepadGps.Droid.Resource.Attribute.fontProviderFetchStrategy;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fontProviderFetchTimeout = global::NotepadGps.Droid.Resource.Attribute.fontProviderFetchTimeout;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fontProviderPackage = global::NotepadGps.Droid.Resource.Attribute.fontProviderPackage;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fontProviderQuery = global::NotepadGps.Droid.Resource.Attribute.fontProviderQuery;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fontStyle = global::NotepadGps.Droid.Resource.Attribute.fontStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fontVariationSettings = global::NotepadGps.Droid.Resource.Attribute.fontVariationSettings;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.fontWeight = global::NotepadGps.Droid.Resource.Attribute.fontWeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.foregroundInsidePadding = global::NotepadGps.Droid.Resource.Attribute.foregroundInsidePadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.gapBetweenBars = global::NotepadGps.Droid.Resource.Attribute.gapBetweenBars;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.gestureInsetBottomIgnored = global::NotepadGps.Droid.Resource.Attribute.gestureInsetBottomIgnored;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.goIcon = global::NotepadGps.Droid.Resource.Attribute.goIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.haloColor = global::NotepadGps.Droid.Resource.Attribute.haloColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.haloRadius = global::NotepadGps.Droid.Resource.Attribute.haloRadius;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.headerLayout = global::NotepadGps.Droid.Resource.Attribute.headerLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.height = global::NotepadGps.Droid.Resource.Attribute.height;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.helperText = global::NotepadGps.Droid.Resource.Attribute.helperText;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.helperTextEnabled = global::NotepadGps.Droid.Resource.Attribute.helperTextEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.helperTextTextAppearance = global::NotepadGps.Droid.Resource.Attribute.helperTextTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.helperTextTextColor = global::NotepadGps.Droid.Resource.Attribute.helperTextTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.hideMotionSpec = global::NotepadGps.Droid.Resource.Attribute.hideMotionSpec;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.hideOnContentScroll = global::NotepadGps.Droid.Resource.Attribute.hideOnContentScroll;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.hideOnScroll = global::NotepadGps.Droid.Resource.Attribute.hideOnScroll;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.hintAnimationEnabled = global::NotepadGps.Droid.Resource.Attribute.hintAnimationEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.hintEnabled = global::NotepadGps.Droid.Resource.Attribute.hintEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.hintTextAppearance = global::NotepadGps.Droid.Resource.Attribute.hintTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.hintTextColor = global::NotepadGps.Droid.Resource.Attribute.hintTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.homeAsUpIndicator = global::NotepadGps.Droid.Resource.Attribute.homeAsUpIndicator;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.homeLayout = global::NotepadGps.Droid.Resource.Attribute.homeLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.horizontalOffset = global::NotepadGps.Droid.Resource.Attribute.horizontalOffset;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.hoveredFocusedTranslationZ = global::NotepadGps.Droid.Resource.Attribute.hoveredFocusedTranslationZ;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.icon = global::NotepadGps.Droid.Resource.Attribute.icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.iconEndPadding = global::NotepadGps.Droid.Resource.Attribute.iconEndPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.iconGravity = global::NotepadGps.Droid.Resource.Attribute.iconGravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.iconifiedByDefault = global::NotepadGps.Droid.Resource.Attribute.iconifiedByDefault;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.iconPadding = global::NotepadGps.Droid.Resource.Attribute.iconPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.iconSize = global::NotepadGps.Droid.Resource.Attribute.iconSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.iconStartPadding = global::NotepadGps.Droid.Resource.Attribute.iconStartPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.iconTint = global::NotepadGps.Droid.Resource.Attribute.iconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.iconTintMode = global::NotepadGps.Droid.Resource.Attribute.iconTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.imageAspectRatio = global::NotepadGps.Droid.Resource.Attribute.imageAspectRatio;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.imageAspectRatioAdjust = global::NotepadGps.Droid.Resource.Attribute.imageAspectRatioAdjust;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.imageButtonStyle = global::NotepadGps.Droid.Resource.Attribute.imageButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.indeterminateProgressStyle = global::NotepadGps.Droid.Resource.Attribute.indeterminateProgressStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.initialActivityCount = global::NotepadGps.Droid.Resource.Attribute.initialActivityCount;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.insetForeground = global::NotepadGps.Droid.Resource.Attribute.insetForeground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.isLightTheme = global::NotepadGps.Droid.Resource.Attribute.isLightTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.isMaterialTheme = global::NotepadGps.Droid.Resource.Attribute.isMaterialTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemBackground = global::NotepadGps.Droid.Resource.Attribute.itemBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemFillColor = global::NotepadGps.Droid.Resource.Attribute.itemFillColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemHorizontalPadding = global::NotepadGps.Droid.Resource.Attribute.itemHorizontalPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemHorizontalTranslationEnabled = global::NotepadGps.Droid.Resource.Attribute.itemHorizontalTranslationEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemIconPadding = global::NotepadGps.Droid.Resource.Attribute.itemIconPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemIconSize = global::NotepadGps.Droid.Resource.Attribute.itemIconSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemIconTint = global::NotepadGps.Droid.Resource.Attribute.itemIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemMaxLines = global::NotepadGps.Droid.Resource.Attribute.itemMaxLines;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemPadding = global::NotepadGps.Droid.Resource.Attribute.itemPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemRippleColor = global::NotepadGps.Droid.Resource.Attribute.itemRippleColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemShapeAppearance = global::NotepadGps.Droid.Resource.Attribute.itemShapeAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemShapeAppearanceOverlay = global::NotepadGps.Droid.Resource.Attribute.itemShapeAppearanceOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemShapeFillColor = global::NotepadGps.Droid.Resource.Attribute.itemShapeFillColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemShapeInsetBottom = global::NotepadGps.Droid.Resource.Attribute.itemShapeInsetBottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemShapeInsetEnd = global::NotepadGps.Droid.Resource.Attribute.itemShapeInsetEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemShapeInsetStart = global::NotepadGps.Droid.Resource.Attribute.itemShapeInsetStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemShapeInsetTop = global::NotepadGps.Droid.Resource.Attribute.itemShapeInsetTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemSpacing = global::NotepadGps.Droid.Resource.Attribute.itemSpacing;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemStrokeColor = global::NotepadGps.Droid.Resource.Attribute.itemStrokeColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemStrokeWidth = global::NotepadGps.Droid.Resource.Attribute.itemStrokeWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemTextAppearance = global::NotepadGps.Droid.Resource.Attribute.itemTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemTextAppearanceActive = global::NotepadGps.Droid.Resource.Attribute.itemTextAppearanceActive;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemTextAppearanceInactive = global::NotepadGps.Droid.Resource.Attribute.itemTextAppearanceInactive;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.itemTextColor = global::NotepadGps.Droid.Resource.Attribute.itemTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.keylines = global::NotepadGps.Droid.Resource.Attribute.keylines;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.labelBehavior = global::NotepadGps.Droid.Resource.Attribute.labelBehavior;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.labelStyle = global::NotepadGps.Droid.Resource.Attribute.labelStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.labelVisibilityMode = global::NotepadGps.Droid.Resource.Attribute.labelVisibilityMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.lastBaselineToBottomHeight = global::NotepadGps.Droid.Resource.Attribute.lastBaselineToBottomHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.latLngBoundsNorthEastLatitude = global::NotepadGps.Droid.Resource.Attribute.latLngBoundsNorthEastLatitude;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.latLngBoundsNorthEastLongitude = global::NotepadGps.Droid.Resource.Attribute.latLngBoundsNorthEastLongitude;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.latLngBoundsSouthWestLatitude = global::NotepadGps.Droid.Resource.Attribute.latLngBoundsSouthWestLatitude;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.latLngBoundsSouthWestLongitude = global::NotepadGps.Droid.Resource.Attribute.latLngBoundsSouthWestLongitude;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.layout = global::NotepadGps.Droid.Resource.Attribute.layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.layoutManager = global::NotepadGps.Droid.Resource.Attribute.layoutManager;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.layout_anchor = global::NotepadGps.Droid.Resource.Attribute.layout_anchor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.layout_anchorGravity = global::NotepadGps.Droid.Resource.Attribute.layout_anchorGravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.layout_behavior = global::NotepadGps.Droid.Resource.Attribute.layout_behavior;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.layout_collapseMode = global::NotepadGps.Droid.Resource.Attribute.layout_collapseMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.layout_collapseParallaxMultiplier = global::NotepadGps.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.layout_dodgeInsetEdges = global::NotepadGps.Droid.Resource.Attribute.layout_dodgeInsetEdges;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.layout_insetEdge = global::NotepadGps.Droid.Resource.Attribute.layout_insetEdge;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.layout_keyline = global::NotepadGps.Droid.Resource.Attribute.layout_keyline;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.layout_scrollFlags = global::NotepadGps.Droid.Resource.Attribute.layout_scrollFlags;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.layout_scrollInterpolator = global::NotepadGps.Droid.Resource.Attribute.layout_scrollInterpolator;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.liftOnScroll = global::NotepadGps.Droid.Resource.Attribute.liftOnScroll;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.liftOnScrollTargetViewId = global::NotepadGps.Droid.Resource.Attribute.liftOnScrollTargetViewId;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.lineHeight = global::NotepadGps.Droid.Resource.Attribute.lineHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.lineSpacing = global::NotepadGps.Droid.Resource.Attribute.lineSpacing;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::NotepadGps.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::NotepadGps.Droid.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::NotepadGps.Droid.Resource.Attribute.listChoiceIndicatorSingleAnimated;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.listDividerAlertDialog = global::NotepadGps.Droid.Resource.Attribute.listDividerAlertDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.listItemLayout = global::NotepadGps.Droid.Resource.Attribute.listItemLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.listLayout = global::NotepadGps.Droid.Resource.Attribute.listLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.listMenuViewStyle = global::NotepadGps.Droid.Resource.Attribute.listMenuViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.listPopupWindowStyle = global::NotepadGps.Droid.Resource.Attribute.listPopupWindowStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.listPreferredItemHeight = global::NotepadGps.Droid.Resource.Attribute.listPreferredItemHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.listPreferredItemHeightLarge = global::NotepadGps.Droid.Resource.Attribute.listPreferredItemHeightLarge;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.listPreferredItemHeightSmall = global::NotepadGps.Droid.Resource.Attribute.listPreferredItemHeightSmall;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.listPreferredItemPaddingEnd = global::NotepadGps.Droid.Resource.Attribute.listPreferredItemPaddingEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::NotepadGps.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.listPreferredItemPaddingRight = global::NotepadGps.Droid.Resource.Attribute.listPreferredItemPaddingRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.listPreferredItemPaddingStart = global::NotepadGps.Droid.Resource.Attribute.listPreferredItemPaddingStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.liteMode = global::NotepadGps.Droid.Resource.Attribute.liteMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.logo = global::NotepadGps.Droid.Resource.Attribute.logo;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.logoDescription = global::NotepadGps.Droid.Resource.Attribute.logoDescription;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.mapType = global::NotepadGps.Droid.Resource.Attribute.mapType;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialAlertDialogBodyTextStyle = global::NotepadGps.Droid.Resource.Attribute.materialAlertDialogBodyTextStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialAlertDialogTheme = global::NotepadGps.Droid.Resource.Attribute.materialAlertDialogTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialAlertDialogTitleIconStyle = global::NotepadGps.Droid.Resource.Attribute.materialAlertDialogTitleIconStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialAlertDialogTitlePanelStyle = global::NotepadGps.Droid.Resource.Attribute.materialAlertDialogTitlePanelStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialAlertDialogTitleTextStyle = global::NotepadGps.Droid.Resource.Attribute.materialAlertDialogTitleTextStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialButtonOutlinedStyle = global::NotepadGps.Droid.Resource.Attribute.materialButtonOutlinedStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialButtonStyle = global::NotepadGps.Droid.Resource.Attribute.materialButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialButtonToggleGroupStyle = global::NotepadGps.Droid.Resource.Attribute.materialButtonToggleGroupStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialCalendarDay = global::NotepadGps.Droid.Resource.Attribute.materialCalendarDay;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialCalendarFullscreenTheme = global::NotepadGps.Droid.Resource.Attribute.materialCalendarFullscreenTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialCalendarHeaderConfirmButton = global::NotepadGps.Droid.Resource.Attribute.materialCalendarHeaderConfirmButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialCalendarHeaderDivider = global::NotepadGps.Droid.Resource.Attribute.materialCalendarHeaderDivider;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialCalendarHeaderLayout = global::NotepadGps.Droid.Resource.Attribute.materialCalendarHeaderLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialCalendarHeaderSelection = global::NotepadGps.Droid.Resource.Attribute.materialCalendarHeaderSelection;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialCalendarHeaderTitle = global::NotepadGps.Droid.Resource.Attribute.materialCalendarHeaderTitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialCalendarHeaderToggleButton = global::NotepadGps.Droid.Resource.Attribute.materialCalendarHeaderToggleButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialCalendarStyle = global::NotepadGps.Droid.Resource.Attribute.materialCalendarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialCalendarTheme = global::NotepadGps.Droid.Resource.Attribute.materialCalendarTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialCardViewStyle = global::NotepadGps.Droid.Resource.Attribute.materialCardViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.materialThemeOverlay = global::NotepadGps.Droid.Resource.Attribute.materialThemeOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.maxActionInlineWidth = global::NotepadGps.Droid.Resource.Attribute.maxActionInlineWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.maxButtonHeight = global::NotepadGps.Droid.Resource.Attribute.maxButtonHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.maxCharacterCount = global::NotepadGps.Droid.Resource.Attribute.maxCharacterCount;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.maxImageSize = global::NotepadGps.Droid.Resource.Attribute.maxImageSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.maxLines = global::NotepadGps.Droid.Resource.Attribute.maxLines;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.measureWithLargestChild = global::NotepadGps.Droid.Resource.Attribute.measureWithLargestChild;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.menu = global::NotepadGps.Droid.Resource.Attribute.menu;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.minTouchTargetSize = global::NotepadGps.Droid.Resource.Attribute.minTouchTargetSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.multiChoiceItemLayout = global::NotepadGps.Droid.Resource.Attribute.multiChoiceItemLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.navigationContentDescription = global::NotepadGps.Droid.Resource.Attribute.navigationContentDescription;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.navigationIcon = global::NotepadGps.Droid.Resource.Attribute.navigationIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.navigationMode = global::NotepadGps.Droid.Resource.Attribute.navigationMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.navigationViewStyle = global::NotepadGps.Droid.Resource.Attribute.navigationViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.number = global::NotepadGps.Droid.Resource.Attribute.number;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.numericModifiers = global::NotepadGps.Droid.Resource.Attribute.numericModifiers;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.overlapAnchor = global::NotepadGps.Droid.Resource.Attribute.overlapAnchor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.paddingBottomNoButtons = global::NotepadGps.Droid.Resource.Attribute.paddingBottomNoButtons;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.paddingBottomSystemWindowInsets = global::NotepadGps.Droid.Resource.Attribute.paddingBottomSystemWindowInsets;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.paddingEnd = global::NotepadGps.Droid.Resource.Attribute.paddingEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.paddingLeftSystemWindowInsets = global::NotepadGps.Droid.Resource.Attribute.paddingLeftSystemWindowInsets;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.paddingRightSystemWindowInsets = global::NotepadGps.Droid.Resource.Attribute.paddingRightSystemWindowInsets;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.paddingStart = global::NotepadGps.Droid.Resource.Attribute.paddingStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.paddingTopNoTitle = global::NotepadGps.Droid.Resource.Attribute.paddingTopNoTitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.panelBackground = global::NotepadGps.Droid.Resource.Attribute.panelBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.panelMenuListTheme = global::NotepadGps.Droid.Resource.Attribute.panelMenuListTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.panelMenuListWidth = global::NotepadGps.Droid.Resource.Attribute.panelMenuListWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.passwordToggleContentDescription = global::NotepadGps.Droid.Resource.Attribute.passwordToggleContentDescription;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.passwordToggleDrawable = global::NotepadGps.Droid.Resource.Attribute.passwordToggleDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.passwordToggleEnabled = global::NotepadGps.Droid.Resource.Attribute.passwordToggleEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.passwordToggleTint = global::NotepadGps.Droid.Resource.Attribute.passwordToggleTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.passwordToggleTintMode = global::NotepadGps.Droid.Resource.Attribute.passwordToggleTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.placeholderText = global::NotepadGps.Droid.Resource.Attribute.placeholderText;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.placeholderTextAppearance = global::NotepadGps.Droid.Resource.Attribute.placeholderTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.placeholderTextColor = global::NotepadGps.Droid.Resource.Attribute.placeholderTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.popupMenuBackground = global::NotepadGps.Droid.Resource.Attribute.popupMenuBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.popupMenuStyle = global::NotepadGps.Droid.Resource.Attribute.popupMenuStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.popupTheme = global::NotepadGps.Droid.Resource.Attribute.popupTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.popupWindowStyle = global::NotepadGps.Droid.Resource.Attribute.popupWindowStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.prefixText = global::NotepadGps.Droid.Resource.Attribute.prefixText;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.prefixTextAppearance = global::NotepadGps.Droid.Resource.Attribute.prefixTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.prefixTextColor = global::NotepadGps.Droid.Resource.Attribute.prefixTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.preserveIconSpacing = global::NotepadGps.Droid.Resource.Attribute.preserveIconSpacing;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.pressedTranslationZ = global::NotepadGps.Droid.Resource.Attribute.pressedTranslationZ;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.progressBarPadding = global::NotepadGps.Droid.Resource.Attribute.progressBarPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.progressBarStyle = global::NotepadGps.Droid.Resource.Attribute.progressBarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.queryBackground = global::NotepadGps.Droid.Resource.Attribute.queryBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.queryHint = global::NotepadGps.Droid.Resource.Attribute.queryHint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.radioButtonStyle = global::NotepadGps.Droid.Resource.Attribute.radioButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.rangeFillColor = global::NotepadGps.Droid.Resource.Attribute.rangeFillColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.ratingBarStyle = global::NotepadGps.Droid.Resource.Attribute.ratingBarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.ratingBarStyleIndicator = global::NotepadGps.Droid.Resource.Attribute.ratingBarStyleIndicator;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.ratingBarStyleSmall = global::NotepadGps.Droid.Resource.Attribute.ratingBarStyleSmall;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.recyclerViewStyle = global::NotepadGps.Droid.Resource.Attribute.recyclerViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.reverseLayout = global::NotepadGps.Droid.Resource.Attribute.reverseLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.rippleColor = global::NotepadGps.Droid.Resource.Attribute.rippleColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.scopeUris = global::NotepadGps.Droid.Resource.Attribute.scopeUris;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.scrimAnimationDuration = global::NotepadGps.Droid.Resource.Attribute.scrimAnimationDuration;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.scrimBackground = global::NotepadGps.Droid.Resource.Attribute.scrimBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.scrimVisibleHeightTrigger = global::NotepadGps.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.scrollViewStyle = global::NotepadGps.Droid.Resource.Attribute.scrollViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.searchHintIcon = global::NotepadGps.Droid.Resource.Attribute.searchHintIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.searchIcon = global::NotepadGps.Droid.Resource.Attribute.searchIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.searchViewStyle = global::NotepadGps.Droid.Resource.Attribute.searchViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.seekBarStyle = global::NotepadGps.Droid.Resource.Attribute.seekBarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.selectableItemBackground = global::NotepadGps.Droid.Resource.Attribute.selectableItemBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::NotepadGps.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.selectionRequired = global::NotepadGps.Droid.Resource.Attribute.selectionRequired;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.shapeAppearance = global::NotepadGps.Droid.Resource.Attribute.shapeAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.shapeAppearanceLargeComponent = global::NotepadGps.Droid.Resource.Attribute.shapeAppearanceLargeComponent;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.shapeAppearanceMediumComponent = global::NotepadGps.Droid.Resource.Attribute.shapeAppearanceMediumComponent;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.shapeAppearanceOverlay = global::NotepadGps.Droid.Resource.Attribute.shapeAppearanceOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.shapeAppearanceSmallComponent = global::NotepadGps.Droid.Resource.Attribute.shapeAppearanceSmallComponent;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.showAsAction = global::NotepadGps.Droid.Resource.Attribute.showAsAction;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.showDividers = global::NotepadGps.Droid.Resource.Attribute.showDividers;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.showMotionSpec = global::NotepadGps.Droid.Resource.Attribute.showMotionSpec;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.showText = global::NotepadGps.Droid.Resource.Attribute.showText;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.showTitle = global::NotepadGps.Droid.Resource.Attribute.showTitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.shrinkMotionSpec = global::NotepadGps.Droid.Resource.Attribute.shrinkMotionSpec;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.singleChoiceItemLayout = global::NotepadGps.Droid.Resource.Attribute.singleChoiceItemLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.singleLine = global::NotepadGps.Droid.Resource.Attribute.singleLine;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.singleSelection = global::NotepadGps.Droid.Resource.Attribute.singleSelection;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.sliderStyle = global::NotepadGps.Droid.Resource.Attribute.sliderStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.snackbarButtonStyle = global::NotepadGps.Droid.Resource.Attribute.snackbarButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.snackbarStyle = global::NotepadGps.Droid.Resource.Attribute.snackbarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.snackbarTextViewStyle = global::NotepadGps.Droid.Resource.Attribute.snackbarTextViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.spanCount = global::NotepadGps.Droid.Resource.Attribute.spanCount;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.spinBars = global::NotepadGps.Droid.Resource.Attribute.spinBars;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.spinnerDropDownItemStyle = global::NotepadGps.Droid.Resource.Attribute.spinnerDropDownItemStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.spinnerStyle = global::NotepadGps.Droid.Resource.Attribute.spinnerStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.splitTrack = global::NotepadGps.Droid.Resource.Attribute.splitTrack;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.srcCompat = global::NotepadGps.Droid.Resource.Attribute.srcCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.stackFromEnd = global::NotepadGps.Droid.Resource.Attribute.stackFromEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.startIconCheckable = global::NotepadGps.Droid.Resource.Attribute.startIconCheckable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.startIconContentDescription = global::NotepadGps.Droid.Resource.Attribute.startIconContentDescription;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.startIconDrawable = global::NotepadGps.Droid.Resource.Attribute.startIconDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.startIconTint = global::NotepadGps.Droid.Resource.Attribute.startIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.startIconTintMode = global::NotepadGps.Droid.Resource.Attribute.startIconTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.state_above_anchor = global::NotepadGps.Droid.Resource.Attribute.state_above_anchor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.state_collapsed = global::NotepadGps.Droid.Resource.Attribute.state_collapsed;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.state_collapsible = global::NotepadGps.Droid.Resource.Attribute.state_collapsible;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.state_dragged = global::NotepadGps.Droid.Resource.Attribute.state_dragged;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.state_liftable = global::NotepadGps.Droid.Resource.Attribute.state_liftable;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.state_lifted = global::NotepadGps.Droid.Resource.Attribute.state_lifted;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.statusBarBackground = global::NotepadGps.Droid.Resource.Attribute.statusBarBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.statusBarForeground = global::NotepadGps.Droid.Resource.Attribute.statusBarForeground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.statusBarScrim = global::NotepadGps.Droid.Resource.Attribute.statusBarScrim;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.strokeColor = global::NotepadGps.Droid.Resource.Attribute.strokeColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.strokeWidth = global::NotepadGps.Droid.Resource.Attribute.strokeWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.subMenuArrow = global::NotepadGps.Droid.Resource.Attribute.subMenuArrow;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.submitBackground = global::NotepadGps.Droid.Resource.Attribute.submitBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.subtitle = global::NotepadGps.Droid.Resource.Attribute.subtitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.subtitleTextAppearance = global::NotepadGps.Droid.Resource.Attribute.subtitleTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.subtitleTextColor = global::NotepadGps.Droid.Resource.Attribute.subtitleTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.subtitleTextStyle = global::NotepadGps.Droid.Resource.Attribute.subtitleTextStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.suffixText = global::NotepadGps.Droid.Resource.Attribute.suffixText;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.suffixTextAppearance = global::NotepadGps.Droid.Resource.Attribute.suffixTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.suffixTextColor = global::NotepadGps.Droid.Resource.Attribute.suffixTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.suggestionRowLayout = global::NotepadGps.Droid.Resource.Attribute.suggestionRowLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.swipeRefreshLayoutProgressSpinnerBackgroundColor = global::NotepadGps.Droid.Resource.Attribute.swipeRefreshLayoutProgressSpinnerBackgroundColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.switchMinWidth = global::NotepadGps.Droid.Resource.Attribute.switchMinWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.switchPadding = global::NotepadGps.Droid.Resource.Attribute.switchPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.switchStyle = global::NotepadGps.Droid.Resource.Attribute.switchStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.switchTextAppearance = global::NotepadGps.Droid.Resource.Attribute.switchTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabBackground = global::NotepadGps.Droid.Resource.Attribute.tabBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabContentStart = global::NotepadGps.Droid.Resource.Attribute.tabContentStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabGravity = global::NotepadGps.Droid.Resource.Attribute.tabGravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabIconTint = global::NotepadGps.Droid.Resource.Attribute.tabIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabIconTintMode = global::NotepadGps.Droid.Resource.Attribute.tabIconTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabIndicator = global::NotepadGps.Droid.Resource.Attribute.tabIndicator;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabIndicatorAnimationDuration = global::NotepadGps.Droid.Resource.Attribute.tabIndicatorAnimationDuration;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabIndicatorColor = global::NotepadGps.Droid.Resource.Attribute.tabIndicatorColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabIndicatorFullWidth = global::NotepadGps.Droid.Resource.Attribute.tabIndicatorFullWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabIndicatorGravity = global::NotepadGps.Droid.Resource.Attribute.tabIndicatorGravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabIndicatorHeight = global::NotepadGps.Droid.Resource.Attribute.tabIndicatorHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabInlineLabel = global::NotepadGps.Droid.Resource.Attribute.tabInlineLabel;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabMaxWidth = global::NotepadGps.Droid.Resource.Attribute.tabMaxWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabMinWidth = global::NotepadGps.Droid.Resource.Attribute.tabMinWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabMode = global::NotepadGps.Droid.Resource.Attribute.tabMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabPadding = global::NotepadGps.Droid.Resource.Attribute.tabPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabPaddingBottom = global::NotepadGps.Droid.Resource.Attribute.tabPaddingBottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabPaddingEnd = global::NotepadGps.Droid.Resource.Attribute.tabPaddingEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabPaddingStart = global::NotepadGps.Droid.Resource.Attribute.tabPaddingStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabPaddingTop = global::NotepadGps.Droid.Resource.Attribute.tabPaddingTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabRippleColor = global::NotepadGps.Droid.Resource.Attribute.tabRippleColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabSelectedTextColor = global::NotepadGps.Droid.Resource.Attribute.tabSelectedTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabStyle = global::NotepadGps.Droid.Resource.Attribute.tabStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabTextAppearance = global::NotepadGps.Droid.Resource.Attribute.tabTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabTextColor = global::NotepadGps.Droid.Resource.Attribute.tabTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tabUnboundedRipple = global::NotepadGps.Droid.Resource.Attribute.tabUnboundedRipple;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAllCaps = global::NotepadGps.Droid.Resource.Attribute.textAllCaps;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceBody1 = global::NotepadGps.Droid.Resource.Attribute.textAppearanceBody1;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceBody2 = global::NotepadGps.Droid.Resource.Attribute.textAppearanceBody2;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceButton = global::NotepadGps.Droid.Resource.Attribute.textAppearanceButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceCaption = global::NotepadGps.Droid.Resource.Attribute.textAppearanceCaption;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceHeadline1 = global::NotepadGps.Droid.Resource.Attribute.textAppearanceHeadline1;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceHeadline2 = global::NotepadGps.Droid.Resource.Attribute.textAppearanceHeadline2;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceHeadline3 = global::NotepadGps.Droid.Resource.Attribute.textAppearanceHeadline3;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceHeadline4 = global::NotepadGps.Droid.Resource.Attribute.textAppearanceHeadline4;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceHeadline5 = global::NotepadGps.Droid.Resource.Attribute.textAppearanceHeadline5;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceHeadline6 = global::NotepadGps.Droid.Resource.Attribute.textAppearanceHeadline6;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceLargePopupMenu = global::NotepadGps.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceLineHeightEnabled = global::NotepadGps.Droid.Resource.Attribute.textAppearanceLineHeightEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceListItem = global::NotepadGps.Droid.Resource.Attribute.textAppearanceListItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceListItemSecondary = global::NotepadGps.Droid.Resource.Attribute.textAppearanceListItemSecondary;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceListItemSmall = global::NotepadGps.Droid.Resource.Attribute.textAppearanceListItemSmall;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceOverline = global::NotepadGps.Droid.Resource.Attribute.textAppearanceOverline;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearancePopupMenuHeader = global::NotepadGps.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceSearchResultSubtitle = global::NotepadGps.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::NotepadGps.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::NotepadGps.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceSubtitle1 = global::NotepadGps.Droid.Resource.Attribute.textAppearanceSubtitle1;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textAppearanceSubtitle2 = global::NotepadGps.Droid.Resource.Attribute.textAppearanceSubtitle2;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textColorAlertDialogListItem = global::NotepadGps.Droid.Resource.Attribute.textColorAlertDialogListItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textColorSearchUrl = global::NotepadGps.Droid.Resource.Attribute.textColorSearchUrl;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textEndPadding = global::NotepadGps.Droid.Resource.Attribute.textEndPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textInputLayoutFocusedRectEnabled = global::NotepadGps.Droid.Resource.Attribute.textInputLayoutFocusedRectEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textInputStyle = global::NotepadGps.Droid.Resource.Attribute.textInputStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textLocale = global::NotepadGps.Droid.Resource.Attribute.textLocale;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.textStartPadding = global::NotepadGps.Droid.Resource.Attribute.textStartPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.theme = global::NotepadGps.Droid.Resource.Attribute.theme;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.themeLineHeight = global::NotepadGps.Droid.Resource.Attribute.themeLineHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.thickness = global::NotepadGps.Droid.Resource.Attribute.thickness;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.thumbColor = global::NotepadGps.Droid.Resource.Attribute.thumbColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.thumbElevation = global::NotepadGps.Droid.Resource.Attribute.thumbElevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.thumbRadius = global::NotepadGps.Droid.Resource.Attribute.thumbRadius;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.thumbTextPadding = global::NotepadGps.Droid.Resource.Attribute.thumbTextPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.thumbTint = global::NotepadGps.Droid.Resource.Attribute.thumbTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.thumbTintMode = global::NotepadGps.Droid.Resource.Attribute.thumbTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tickColor = global::NotepadGps.Droid.Resource.Attribute.tickColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tickColorActive = global::NotepadGps.Droid.Resource.Attribute.tickColorActive;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tickColorInactive = global::NotepadGps.Droid.Resource.Attribute.tickColorInactive;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tickMark = global::NotepadGps.Droid.Resource.Attribute.tickMark;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tickMarkTint = global::NotepadGps.Droid.Resource.Attribute.tickMarkTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tickMarkTintMode = global::NotepadGps.Droid.Resource.Attribute.tickMarkTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tint = global::NotepadGps.Droid.Resource.Attribute.tint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tintMode = global::NotepadGps.Droid.Resource.Attribute.tintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.title = global::NotepadGps.Droid.Resource.Attribute.title;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.titleEnabled = global::NotepadGps.Droid.Resource.Attribute.titleEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.titleMargin = global::NotepadGps.Droid.Resource.Attribute.titleMargin;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.titleMarginBottom = global::NotepadGps.Droid.Resource.Attribute.titleMarginBottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.titleMarginEnd = global::NotepadGps.Droid.Resource.Attribute.titleMarginEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.titleMargins = global::NotepadGps.Droid.Resource.Attribute.titleMargins;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.titleMarginStart = global::NotepadGps.Droid.Resource.Attribute.titleMarginStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.titleMarginTop = global::NotepadGps.Droid.Resource.Attribute.titleMarginTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.titleTextAppearance = global::NotepadGps.Droid.Resource.Attribute.titleTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.titleTextColor = global::NotepadGps.Droid.Resource.Attribute.titleTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.titleTextStyle = global::NotepadGps.Droid.Resource.Attribute.titleTextStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.toolbarId = global::NotepadGps.Droid.Resource.Attribute.toolbarId;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.toolbarNavigationButtonStyle = global::NotepadGps.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.toolbarStyle = global::NotepadGps.Droid.Resource.Attribute.toolbarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tooltipForegroundColor = global::NotepadGps.Droid.Resource.Attribute.tooltipForegroundColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tooltipFrameBackground = global::NotepadGps.Droid.Resource.Attribute.tooltipFrameBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tooltipStyle = global::NotepadGps.Droid.Resource.Attribute.tooltipStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.tooltipText = global::NotepadGps.Droid.Resource.Attribute.tooltipText;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.track = global::NotepadGps.Droid.Resource.Attribute.track;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.trackColor = global::NotepadGps.Droid.Resource.Attribute.trackColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.trackColorActive = global::NotepadGps.Droid.Resource.Attribute.trackColorActive;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.trackColorInactive = global::NotepadGps.Droid.Resource.Attribute.trackColorInactive;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.trackHeight = global::NotepadGps.Droid.Resource.Attribute.trackHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.trackTint = global::NotepadGps.Droid.Resource.Attribute.trackTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.trackTintMode = global::NotepadGps.Droid.Resource.Attribute.trackTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.transitionShapeAppearance = global::NotepadGps.Droid.Resource.Attribute.transitionShapeAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.ttcIndex = global::NotepadGps.Droid.Resource.Attribute.ttcIndex;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.uiCompass = global::NotepadGps.Droid.Resource.Attribute.uiCompass;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.uiMapToolbar = global::NotepadGps.Droid.Resource.Attribute.uiMapToolbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.uiRotateGestures = global::NotepadGps.Droid.Resource.Attribute.uiRotateGestures;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.uiScrollGestures = global::NotepadGps.Droid.Resource.Attribute.uiScrollGestures;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.uiScrollGesturesDuringRotateOrZoom = global::NotepadGps.Droid.Resource.Attribute.uiScrollGesturesDuringRotateOrZoom;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.uiTiltGestures = global::NotepadGps.Droid.Resource.Attribute.uiTiltGestures;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.uiZoomControls = global::NotepadGps.Droid.Resource.Attribute.uiZoomControls;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.uiZoomGestures = global::NotepadGps.Droid.Resource.Attribute.uiZoomGestures;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.useCompatPadding = global::NotepadGps.Droid.Resource.Attribute.useCompatPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.useMaterialThemeColors = global::NotepadGps.Droid.Resource.Attribute.useMaterialThemeColors;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.useViewLifecycle = global::NotepadGps.Droid.Resource.Attribute.useViewLifecycle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.values = global::NotepadGps.Droid.Resource.Attribute.values;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.verticalOffset = global::NotepadGps.Droid.Resource.Attribute.verticalOffset;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.viewInflaterClass = global::NotepadGps.Droid.Resource.Attribute.viewInflaterClass;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.voiceIcon = global::NotepadGps.Droid.Resource.Attribute.voiceIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.windowActionBar = global::NotepadGps.Droid.Resource.Attribute.windowActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.windowActionBarOverlay = global::NotepadGps.Droid.Resource.Attribute.windowActionBarOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.windowActionModeOverlay = global::NotepadGps.Droid.Resource.Attribute.windowActionModeOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.windowFixedHeightMajor = global::NotepadGps.Droid.Resource.Attribute.windowFixedHeightMajor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.windowFixedHeightMinor = global::NotepadGps.Droid.Resource.Attribute.windowFixedHeightMinor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.windowFixedWidthMajor = global::NotepadGps.Droid.Resource.Attribute.windowFixedWidthMajor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.windowFixedWidthMinor = global::NotepadGps.Droid.Resource.Attribute.windowFixedWidthMinor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.windowMinWidthMajor = global::NotepadGps.Droid.Resource.Attribute.windowMinWidthMajor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.windowMinWidthMinor = global::NotepadGps.Droid.Resource.Attribute.windowMinWidthMinor;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.windowNoTitle = global::NotepadGps.Droid.Resource.Attribute.windowNoTitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.yearSelectedStyle = global::NotepadGps.Droid.Resource.Attribute.yearSelectedStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.yearStyle = global::NotepadGps.Droid.Resource.Attribute.yearStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.yearTodayStyle = global::NotepadGps.Droid.Resource.Attribute.yearTodayStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Attribute.zOrderOnTop = global::NotepadGps.Droid.Resource.Attribute.zOrderOnTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::NotepadGps.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
-			global::Xamarin.Forms.Maps.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::NotepadGps.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
-			global::Xamarin.Forms.Maps.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::NotepadGps.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::Xamarin.Forms.Maps.Android.Resource.Boolean.mtrl_btn_textappearance_all_caps = global::NotepadGps.Droid.Resource.Boolean.mtrl_btn_textappearance_all_caps;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::NotepadGps.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::NotepadGps.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::NotepadGps.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_btn_colored_text_material = global::NotepadGps.Droid.Resource.Color.abc_btn_colored_text_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_color_highlight_material = global::NotepadGps.Droid.Resource.Color.abc_color_highlight_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_decor_view_status_guard = global::NotepadGps.Droid.Resource.Color.abc_decor_view_status_guard;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_decor_view_status_guard_light = global::NotepadGps.Droid.Resource.Color.abc_decor_view_status_guard_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_hint_foreground_material_dark = global::NotepadGps.Droid.Resource.Color.abc_hint_foreground_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_hint_foreground_material_light = global::NotepadGps.Droid.Resource.Color.abc_hint_foreground_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::NotepadGps.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::NotepadGps.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_primary_text_material_dark = global::NotepadGps.Droid.Resource.Color.abc_primary_text_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_primary_text_material_light = global::NotepadGps.Droid.Resource.Color.abc_primary_text_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_search_url_text = global::NotepadGps.Droid.Resource.Color.abc_search_url_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_search_url_text_normal = global::NotepadGps.Droid.Resource.Color.abc_search_url_text_normal;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_search_url_text_pressed = global::NotepadGps.Droid.Resource.Color.abc_search_url_text_pressed;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_search_url_text_selected = global::NotepadGps.Droid.Resource.Color.abc_search_url_text_selected;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_secondary_text_material_dark = global::NotepadGps.Droid.Resource.Color.abc_secondary_text_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_secondary_text_material_light = global::NotepadGps.Droid.Resource.Color.abc_secondary_text_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_tint_btn_checkable = global::NotepadGps.Droid.Resource.Color.abc_tint_btn_checkable;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_tint_default = global::NotepadGps.Droid.Resource.Color.abc_tint_default;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_tint_edittext = global::NotepadGps.Droid.Resource.Color.abc_tint_edittext;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_tint_seek_thumb = global::NotepadGps.Droid.Resource.Color.abc_tint_seek_thumb;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_tint_spinner = global::NotepadGps.Droid.Resource.Color.abc_tint_spinner;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.abc_tint_switch_track = global::NotepadGps.Droid.Resource.Color.abc_tint_switch_track;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.accent_material_dark = global::NotepadGps.Droid.Resource.Color.accent_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.accent_material_light = global::NotepadGps.Droid.Resource.Color.accent_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.androidx_core_ripple_material_light = global::NotepadGps.Droid.Resource.Color.androidx_core_ripple_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.androidx_core_secondary_text_default_material_light = global::NotepadGps.Droid.Resource.Color.androidx_core_secondary_text_default_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.background_floating_material_dark = global::NotepadGps.Droid.Resource.Color.background_floating_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.background_floating_material_light = global::NotepadGps.Droid.Resource.Color.background_floating_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.background_material_dark = global::NotepadGps.Droid.Resource.Color.background_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.background_material_light = global::NotepadGps.Droid.Resource.Color.background_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.bright_foreground_disabled_material_dark = global::NotepadGps.Droid.Resource.Color.bright_foreground_disabled_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.bright_foreground_disabled_material_light = global::NotepadGps.Droid.Resource.Color.bright_foreground_disabled_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.bright_foreground_inverse_material_dark = global::NotepadGps.Droid.Resource.Color.bright_foreground_inverse_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.bright_foreground_inverse_material_light = global::NotepadGps.Droid.Resource.Color.bright_foreground_inverse_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.bright_foreground_material_dark = global::NotepadGps.Droid.Resource.Color.bright_foreground_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.bright_foreground_material_light = global::NotepadGps.Droid.Resource.Color.bright_foreground_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.button_material_dark = global::NotepadGps.Droid.Resource.Color.button_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.button_material_light = global::NotepadGps.Droid.Resource.Color.button_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.cardview_dark_background = global::NotepadGps.Droid.Resource.Color.cardview_dark_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.cardview_light_background = global::NotepadGps.Droid.Resource.Color.cardview_light_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.cardview_shadow_end_color = global::NotepadGps.Droid.Resource.Color.cardview_shadow_end_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.cardview_shadow_start_color = global::NotepadGps.Droid.Resource.Color.cardview_shadow_start_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.checkbox_themeable_attribute_color = global::NotepadGps.Droid.Resource.Color.checkbox_themeable_attribute_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.common_google_signin_btn_text_dark = global::NotepadGps.Droid.Resource.Color.common_google_signin_btn_text_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.common_google_signin_btn_text_dark_default = global::NotepadGps.Droid.Resource.Color.common_google_signin_btn_text_dark_default;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.common_google_signin_btn_text_dark_disabled = global::NotepadGps.Droid.Resource.Color.common_google_signin_btn_text_dark_disabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.common_google_signin_btn_text_dark_focused = global::NotepadGps.Droid.Resource.Color.common_google_signin_btn_text_dark_focused;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.common_google_signin_btn_text_dark_pressed = global::NotepadGps.Droid.Resource.Color.common_google_signin_btn_text_dark_pressed;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.common_google_signin_btn_text_light = global::NotepadGps.Droid.Resource.Color.common_google_signin_btn_text_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.common_google_signin_btn_text_light_default = global::NotepadGps.Droid.Resource.Color.common_google_signin_btn_text_light_default;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.common_google_signin_btn_text_light_disabled = global::NotepadGps.Droid.Resource.Color.common_google_signin_btn_text_light_disabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.common_google_signin_btn_text_light_focused = global::NotepadGps.Droid.Resource.Color.common_google_signin_btn_text_light_focused;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.common_google_signin_btn_text_light_pressed = global::NotepadGps.Droid.Resource.Color.common_google_signin_btn_text_light_pressed;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.common_google_signin_btn_tint = global::NotepadGps.Droid.Resource.Color.common_google_signin_btn_tint;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_bottom_navigation_shadow_color = global::NotepadGps.Droid.Resource.Color.design_bottom_navigation_shadow_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_box_stroke_color = global::NotepadGps.Droid.Resource.Color.design_box_stroke_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_dark_default_color_background = global::NotepadGps.Droid.Resource.Color.design_dark_default_color_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_dark_default_color_error = global::NotepadGps.Droid.Resource.Color.design_dark_default_color_error;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_dark_default_color_on_background = global::NotepadGps.Droid.Resource.Color.design_dark_default_color_on_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_dark_default_color_on_error = global::NotepadGps.Droid.Resource.Color.design_dark_default_color_on_error;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_dark_default_color_on_primary = global::NotepadGps.Droid.Resource.Color.design_dark_default_color_on_primary;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_dark_default_color_on_secondary = global::NotepadGps.Droid.Resource.Color.design_dark_default_color_on_secondary;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_dark_default_color_on_surface = global::NotepadGps.Droid.Resource.Color.design_dark_default_color_on_surface;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_dark_default_color_primary = global::NotepadGps.Droid.Resource.Color.design_dark_default_color_primary;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_dark_default_color_primary_dark = global::NotepadGps.Droid.Resource.Color.design_dark_default_color_primary_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_dark_default_color_primary_variant = global::NotepadGps.Droid.Resource.Color.design_dark_default_color_primary_variant;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_dark_default_color_secondary = global::NotepadGps.Droid.Resource.Color.design_dark_default_color_secondary;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_dark_default_color_secondary_variant = global::NotepadGps.Droid.Resource.Color.design_dark_default_color_secondary_variant;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_dark_default_color_surface = global::NotepadGps.Droid.Resource.Color.design_dark_default_color_surface;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_default_color_background = global::NotepadGps.Droid.Resource.Color.design_default_color_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_default_color_error = global::NotepadGps.Droid.Resource.Color.design_default_color_error;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_default_color_on_background = global::NotepadGps.Droid.Resource.Color.design_default_color_on_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_default_color_on_error = global::NotepadGps.Droid.Resource.Color.design_default_color_on_error;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_default_color_on_primary = global::NotepadGps.Droid.Resource.Color.design_default_color_on_primary;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_default_color_on_secondary = global::NotepadGps.Droid.Resource.Color.design_default_color_on_secondary;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_default_color_on_surface = global::NotepadGps.Droid.Resource.Color.design_default_color_on_surface;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_default_color_primary = global::NotepadGps.Droid.Resource.Color.design_default_color_primary;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_default_color_primary_dark = global::NotepadGps.Droid.Resource.Color.design_default_color_primary_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_default_color_primary_variant = global::NotepadGps.Droid.Resource.Color.design_default_color_primary_variant;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_default_color_secondary = global::NotepadGps.Droid.Resource.Color.design_default_color_secondary;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_default_color_secondary_variant = global::NotepadGps.Droid.Resource.Color.design_default_color_secondary_variant;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_default_color_surface = global::NotepadGps.Droid.Resource.Color.design_default_color_surface;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_error = global::NotepadGps.Droid.Resource.Color.design_error;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_fab_shadow_end_color = global::NotepadGps.Droid.Resource.Color.design_fab_shadow_end_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_fab_shadow_mid_color = global::NotepadGps.Droid.Resource.Color.design_fab_shadow_mid_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_fab_shadow_start_color = global::NotepadGps.Droid.Resource.Color.design_fab_shadow_start_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_fab_stroke_end_inner_color = global::NotepadGps.Droid.Resource.Color.design_fab_stroke_end_inner_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_fab_stroke_end_outer_color = global::NotepadGps.Droid.Resource.Color.design_fab_stroke_end_outer_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_fab_stroke_top_inner_color = global::NotepadGps.Droid.Resource.Color.design_fab_stroke_top_inner_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_fab_stroke_top_outer_color = global::NotepadGps.Droid.Resource.Color.design_fab_stroke_top_outer_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_icon_tint = global::NotepadGps.Droid.Resource.Color.design_icon_tint;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.design_snackbar_background_color = global::NotepadGps.Droid.Resource.Color.design_snackbar_background_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.dim_foreground_disabled_material_dark = global::NotepadGps.Droid.Resource.Color.dim_foreground_disabled_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.dim_foreground_disabled_material_light = global::NotepadGps.Droid.Resource.Color.dim_foreground_disabled_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.dim_foreground_material_dark = global::NotepadGps.Droid.Resource.Color.dim_foreground_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.dim_foreground_material_light = global::NotepadGps.Droid.Resource.Color.dim_foreground_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.error_color_material_dark = global::NotepadGps.Droid.Resource.Color.error_color_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.error_color_material_light = global::NotepadGps.Droid.Resource.Color.error_color_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.foreground_material_dark = global::NotepadGps.Droid.Resource.Color.foreground_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.foreground_material_light = global::NotepadGps.Droid.Resource.Color.foreground_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.highlighted_text_material_dark = global::NotepadGps.Droid.Resource.Color.highlighted_text_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.highlighted_text_material_light = global::NotepadGps.Droid.Resource.Color.highlighted_text_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_blue_grey_800 = global::NotepadGps.Droid.Resource.Color.material_blue_grey_800;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_blue_grey_900 = global::NotepadGps.Droid.Resource.Color.material_blue_grey_900;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_blue_grey_950 = global::NotepadGps.Droid.Resource.Color.material_blue_grey_950;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_deep_teal_200 = global::NotepadGps.Droid.Resource.Color.material_deep_teal_200;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_deep_teal_500 = global::NotepadGps.Droid.Resource.Color.material_deep_teal_500;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_grey_100 = global::NotepadGps.Droid.Resource.Color.material_grey_100;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_grey_300 = global::NotepadGps.Droid.Resource.Color.material_grey_300;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_grey_50 = global::NotepadGps.Droid.Resource.Color.material_grey_50;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_grey_600 = global::NotepadGps.Droid.Resource.Color.material_grey_600;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_grey_800 = global::NotepadGps.Droid.Resource.Color.material_grey_800;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_grey_850 = global::NotepadGps.Droid.Resource.Color.material_grey_850;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_grey_900 = global::NotepadGps.Droid.Resource.Color.material_grey_900;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_on_background_disabled = global::NotepadGps.Droid.Resource.Color.material_on_background_disabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_on_background_emphasis_high_type = global::NotepadGps.Droid.Resource.Color.material_on_background_emphasis_high_type;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_on_background_emphasis_medium = global::NotepadGps.Droid.Resource.Color.material_on_background_emphasis_medium;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_on_primary_disabled = global::NotepadGps.Droid.Resource.Color.material_on_primary_disabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_on_primary_emphasis_high_type = global::NotepadGps.Droid.Resource.Color.material_on_primary_emphasis_high_type;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_on_primary_emphasis_medium = global::NotepadGps.Droid.Resource.Color.material_on_primary_emphasis_medium;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_on_surface_disabled = global::NotepadGps.Droid.Resource.Color.material_on_surface_disabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_on_surface_emphasis_high_type = global::NotepadGps.Droid.Resource.Color.material_on_surface_emphasis_high_type;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_on_surface_emphasis_medium = global::NotepadGps.Droid.Resource.Color.material_on_surface_emphasis_medium;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_on_surface_stroke = global::NotepadGps.Droid.Resource.Color.material_on_surface_stroke;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_slider_active_tick_marks_color = global::NotepadGps.Droid.Resource.Color.material_slider_active_tick_marks_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_slider_active_track_color = global::NotepadGps.Droid.Resource.Color.material_slider_active_track_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_slider_halo_color = global::NotepadGps.Droid.Resource.Color.material_slider_halo_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_slider_inactive_tick_marks_color = global::NotepadGps.Droid.Resource.Color.material_slider_inactive_tick_marks_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_slider_inactive_track_color = global::NotepadGps.Droid.Resource.Color.material_slider_inactive_track_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.material_slider_thumb_color = global::NotepadGps.Droid.Resource.Color.material_slider_thumb_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_bottom_nav_colored_item_tint = global::NotepadGps.Droid.Resource.Color.mtrl_bottom_nav_colored_item_tint;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_bottom_nav_colored_ripple_color = global::NotepadGps.Droid.Resource.Color.mtrl_bottom_nav_colored_ripple_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_bottom_nav_item_tint = global::NotepadGps.Droid.Resource.Color.mtrl_bottom_nav_item_tint;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_bottom_nav_ripple_color = global::NotepadGps.Droid.Resource.Color.mtrl_bottom_nav_ripple_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_btn_bg_color_selector = global::NotepadGps.Droid.Resource.Color.mtrl_btn_bg_color_selector;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_btn_ripple_color = global::NotepadGps.Droid.Resource.Color.mtrl_btn_ripple_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_btn_stroke_color_selector = global::NotepadGps.Droid.Resource.Color.mtrl_btn_stroke_color_selector;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_btn_text_btn_bg_color_selector = global::NotepadGps.Droid.Resource.Color.mtrl_btn_text_btn_bg_color_selector;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_btn_text_btn_ripple_color = global::NotepadGps.Droid.Resource.Color.mtrl_btn_text_btn_ripple_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_btn_text_color_disabled = global::NotepadGps.Droid.Resource.Color.mtrl_btn_text_color_disabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_btn_text_color_selector = global::NotepadGps.Droid.Resource.Color.mtrl_btn_text_color_selector;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_btn_transparent_bg_color = global::NotepadGps.Droid.Resource.Color.mtrl_btn_transparent_bg_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_calendar_item_stroke_color = global::NotepadGps.Droid.Resource.Color.mtrl_calendar_item_stroke_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_calendar_selected_range = global::NotepadGps.Droid.Resource.Color.mtrl_calendar_selected_range;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_card_view_foreground = global::NotepadGps.Droid.Resource.Color.mtrl_card_view_foreground;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_card_view_ripple = global::NotepadGps.Droid.Resource.Color.mtrl_card_view_ripple;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_chip_background_color = global::NotepadGps.Droid.Resource.Color.mtrl_chip_background_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_chip_close_icon_tint = global::NotepadGps.Droid.Resource.Color.mtrl_chip_close_icon_tint;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_chip_ripple_color = global::NotepadGps.Droid.Resource.Color.mtrl_chip_ripple_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_chip_surface_color = global::NotepadGps.Droid.Resource.Color.mtrl_chip_surface_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_chip_text_color = global::NotepadGps.Droid.Resource.Color.mtrl_chip_text_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_choice_chip_background_color = global::NotepadGps.Droid.Resource.Color.mtrl_choice_chip_background_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_choice_chip_ripple_color = global::NotepadGps.Droid.Resource.Color.mtrl_choice_chip_ripple_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_choice_chip_text_color = global::NotepadGps.Droid.Resource.Color.mtrl_choice_chip_text_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_error = global::NotepadGps.Droid.Resource.Color.mtrl_error;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_fab_bg_color_selector = global::NotepadGps.Droid.Resource.Color.mtrl_fab_bg_color_selector;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_fab_icon_text_color_selector = global::NotepadGps.Droid.Resource.Color.mtrl_fab_icon_text_color_selector;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_fab_ripple_color = global::NotepadGps.Droid.Resource.Color.mtrl_fab_ripple_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_filled_background_color = global::NotepadGps.Droid.Resource.Color.mtrl_filled_background_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_filled_icon_tint = global::NotepadGps.Droid.Resource.Color.mtrl_filled_icon_tint;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_filled_stroke_color = global::NotepadGps.Droid.Resource.Color.mtrl_filled_stroke_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_indicator_text_color = global::NotepadGps.Droid.Resource.Color.mtrl_indicator_text_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_navigation_item_background_color = global::NotepadGps.Droid.Resource.Color.mtrl_navigation_item_background_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_navigation_item_icon_tint = global::NotepadGps.Droid.Resource.Color.mtrl_navigation_item_icon_tint;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_navigation_item_text_color = global::NotepadGps.Droid.Resource.Color.mtrl_navigation_item_text_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_on_primary_text_btn_text_color_selector = global::NotepadGps.Droid.Resource.Color.mtrl_on_primary_text_btn_text_color_selector;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_outlined_icon_tint = global::NotepadGps.Droid.Resource.Color.mtrl_outlined_icon_tint;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_outlined_stroke_color = global::NotepadGps.Droid.Resource.Color.mtrl_outlined_stroke_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_popupmenu_overlay_color = global::NotepadGps.Droid.Resource.Color.mtrl_popupmenu_overlay_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_scrim_color = global::NotepadGps.Droid.Resource.Color.mtrl_scrim_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_tabs_colored_ripple_color = global::NotepadGps.Droid.Resource.Color.mtrl_tabs_colored_ripple_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_tabs_icon_color_selector = global::NotepadGps.Droid.Resource.Color.mtrl_tabs_icon_color_selector;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_tabs_icon_color_selector_colored = global::NotepadGps.Droid.Resource.Color.mtrl_tabs_icon_color_selector_colored;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_tabs_legacy_text_color_selector = global::NotepadGps.Droid.Resource.Color.mtrl_tabs_legacy_text_color_selector;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_tabs_ripple_color = global::NotepadGps.Droid.Resource.Color.mtrl_tabs_ripple_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_textinput_default_box_stroke_color = global::NotepadGps.Droid.Resource.Color.mtrl_textinput_default_box_stroke_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_textinput_disabled_color = global::NotepadGps.Droid.Resource.Color.mtrl_textinput_disabled_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_textinput_filled_box_default_background_color = global::NotepadGps.Droid.Resource.Color.mtrl_textinput_filled_box_default_background_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_textinput_focused_box_stroke_color = global::NotepadGps.Droid.Resource.Color.mtrl_textinput_focused_box_stroke_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_textinput_hovered_box_stroke_color = global::NotepadGps.Droid.Resource.Color.mtrl_textinput_hovered_box_stroke_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.mtrl_text_btn_text_color_selector = global::NotepadGps.Droid.Resource.Color.mtrl_text_btn_text_color_selector;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.notification_action_color_filter = global::NotepadGps.Droid.Resource.Color.notification_action_color_filter;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.notification_icon_bg_color = global::NotepadGps.Droid.Resource.Color.notification_icon_bg_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.notification_material_background_media_default_color = global::NotepadGps.Droid.Resource.Color.notification_material_background_media_default_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.primary_dark_material_dark = global::NotepadGps.Droid.Resource.Color.primary_dark_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.primary_dark_material_light = global::NotepadGps.Droid.Resource.Color.primary_dark_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.primary_material_dark = global::NotepadGps.Droid.Resource.Color.primary_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.primary_material_light = global::NotepadGps.Droid.Resource.Color.primary_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.primary_text_default_material_dark = global::NotepadGps.Droid.Resource.Color.primary_text_default_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.primary_text_default_material_light = global::NotepadGps.Droid.Resource.Color.primary_text_default_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.primary_text_disabled_material_dark = global::NotepadGps.Droid.Resource.Color.primary_text_disabled_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.primary_text_disabled_material_light = global::NotepadGps.Droid.Resource.Color.primary_text_disabled_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.radiobutton_themeable_attribute_color = global::NotepadGps.Droid.Resource.Color.radiobutton_themeable_attribute_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.ripple_material_dark = global::NotepadGps.Droid.Resource.Color.ripple_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.ripple_material_light = global::NotepadGps.Droid.Resource.Color.ripple_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.secondary_text_default_material_dark = global::NotepadGps.Droid.Resource.Color.secondary_text_default_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.secondary_text_default_material_light = global::NotepadGps.Droid.Resource.Color.secondary_text_default_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.secondary_text_disabled_material_dark = global::NotepadGps.Droid.Resource.Color.secondary_text_disabled_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.secondary_text_disabled_material_light = global::NotepadGps.Droid.Resource.Color.secondary_text_disabled_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.switch_thumb_disabled_material_dark = global::NotepadGps.Droid.Resource.Color.switch_thumb_disabled_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.switch_thumb_disabled_material_light = global::NotepadGps.Droid.Resource.Color.switch_thumb_disabled_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.switch_thumb_material_dark = global::NotepadGps.Droid.Resource.Color.switch_thumb_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.switch_thumb_material_light = global::NotepadGps.Droid.Resource.Color.switch_thumb_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.switch_thumb_normal_material_dark = global::NotepadGps.Droid.Resource.Color.switch_thumb_normal_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.switch_thumb_normal_material_light = global::NotepadGps.Droid.Resource.Color.switch_thumb_normal_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.test_mtrl_calendar_day = global::NotepadGps.Droid.Resource.Color.test_mtrl_calendar_day;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.test_mtrl_calendar_day_selected = global::NotepadGps.Droid.Resource.Color.test_mtrl_calendar_day_selected;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.tooltip_background_dark = global::NotepadGps.Droid.Resource.Color.tooltip_background_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Color.tooltip_background_light = global::NotepadGps.Droid.Resource.Color.tooltip_background_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::NotepadGps.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::NotepadGps.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_action_bar_default_height_material = global::NotepadGps.Droid.Resource.Dimension.abc_action_bar_default_height_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_action_bar_default_padding_end_material = global::NotepadGps.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_action_bar_default_padding_start_material = global::NotepadGps.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_action_bar_elevation_material = global::NotepadGps.Droid.Resource.Dimension.abc_action_bar_elevation_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::NotepadGps.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::NotepadGps.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::NotepadGps.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::NotepadGps.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::NotepadGps.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::NotepadGps.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::NotepadGps.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_action_button_min_height_material = global::NotepadGps.Droid.Resource.Dimension.abc_action_button_min_height_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_action_button_min_width_material = global::NotepadGps.Droid.Resource.Dimension.abc_action_button_min_width_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_action_button_min_width_overflow_material = global::NotepadGps.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_alert_dialog_button_bar_height = global::NotepadGps.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_alert_dialog_button_dimen = global::NotepadGps.Droid.Resource.Dimension.abc_alert_dialog_button_dimen;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_button_inset_horizontal_material = global::NotepadGps.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_button_inset_vertical_material = global::NotepadGps.Droid.Resource.Dimension.abc_button_inset_vertical_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_button_padding_horizontal_material = global::NotepadGps.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_button_padding_vertical_material = global::NotepadGps.Droid.Resource.Dimension.abc_button_padding_vertical_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::NotepadGps.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_config_prefDialogWidth = global::NotepadGps.Droid.Resource.Dimension.abc_config_prefDialogWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_control_corner_material = global::NotepadGps.Droid.Resource.Dimension.abc_control_corner_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_control_inset_material = global::NotepadGps.Droid.Resource.Dimension.abc_control_inset_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_control_padding_material = global::NotepadGps.Droid.Resource.Dimension.abc_control_padding_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_dialog_corner_radius_material = global::NotepadGps.Droid.Resource.Dimension.abc_dialog_corner_radius_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_dialog_fixed_height_major = global::NotepadGps.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_dialog_fixed_height_minor = global::NotepadGps.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_dialog_fixed_width_major = global::NotepadGps.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_dialog_fixed_width_minor = global::NotepadGps.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::NotepadGps.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::NotepadGps.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_dialog_min_width_major = global::NotepadGps.Droid.Resource.Dimension.abc_dialog_min_width_major;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_dialog_min_width_minor = global::NotepadGps.Droid.Resource.Dimension.abc_dialog_min_width_minor;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_dialog_padding_material = global::NotepadGps.Droid.Resource.Dimension.abc_dialog_padding_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_dialog_padding_top_material = global::NotepadGps.Droid.Resource.Dimension.abc_dialog_padding_top_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_dialog_title_divider_material = global::NotepadGps.Droid.Resource.Dimension.abc_dialog_title_divider_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_disabled_alpha_material_dark = global::NotepadGps.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_disabled_alpha_material_light = global::NotepadGps.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_dropdownitem_icon_width = global::NotepadGps.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_dropdownitem_text_padding_left = global::NotepadGps.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_dropdownitem_text_padding_right = global::NotepadGps.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_edit_text_inset_bottom_material = global::NotepadGps.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::NotepadGps.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::NotepadGps.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_floating_window_z = global::NotepadGps.Droid.Resource.Dimension.abc_floating_window_z;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_list_item_height_large_material = global::NotepadGps.Droid.Resource.Dimension.abc_list_item_height_large_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_list_item_height_material = global::NotepadGps.Droid.Resource.Dimension.abc_list_item_height_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_list_item_height_small_material = global::NotepadGps.Droid.Resource.Dimension.abc_list_item_height_small_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::NotepadGps.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_panel_menu_list_width = global::NotepadGps.Droid.Resource.Dimension.abc_panel_menu_list_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_progress_bar_height_material = global::NotepadGps.Droid.Resource.Dimension.abc_progress_bar_height_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_search_view_preferred_height = global::NotepadGps.Droid.Resource.Dimension.abc_search_view_preferred_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_search_view_preferred_width = global::NotepadGps.Droid.Resource.Dimension.abc_search_view_preferred_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_seekbar_track_background_height_material = global::NotepadGps.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_seekbar_track_progress_height_material = global::NotepadGps.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_select_dialog_padding_start_material = global::NotepadGps.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_switch_padding = global::NotepadGps.Droid.Resource.Dimension.abc_switch_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_body_1_material = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_body_1_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_body_2_material = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_body_2_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_button_material = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_button_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_caption_material = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_caption_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_display_1_material = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_display_1_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_display_2_material = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_display_2_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_display_3_material = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_display_3_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_display_4_material = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_display_4_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_headline_material = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_headline_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_large_material = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_large_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_medium_material = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_medium_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_menu_header_material = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_menu_header_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_menu_material = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_menu_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_small_material = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_small_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_subhead_material = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_subhead_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_title_material = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_title_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.abc_text_size_title_material_toolbar = global::NotepadGps.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.action_bar_size = global::NotepadGps.Droid.Resource.Dimension.action_bar_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.appcompat_dialog_background_inset = global::NotepadGps.Droid.Resource.Dimension.appcompat_dialog_background_inset;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.cardview_compat_inset_shadow = global::NotepadGps.Droid.Resource.Dimension.cardview_compat_inset_shadow;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.cardview_default_elevation = global::NotepadGps.Droid.Resource.Dimension.cardview_default_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.cardview_default_radius = global::NotepadGps.Droid.Resource.Dimension.cardview_default_radius;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.compat_button_inset_horizontal_material = global::NotepadGps.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.compat_button_inset_vertical_material = global::NotepadGps.Droid.Resource.Dimension.compat_button_inset_vertical_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.compat_button_padding_horizontal_material = global::NotepadGps.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.compat_button_padding_vertical_material = global::NotepadGps.Droid.Resource.Dimension.compat_button_padding_vertical_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.compat_control_corner_material = global::NotepadGps.Droid.Resource.Dimension.compat_control_corner_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.compat_notification_large_icon_max_height = global::NotepadGps.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.compat_notification_large_icon_max_width = global::NotepadGps.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.default_dimension = global::NotepadGps.Droid.Resource.Dimension.default_dimension;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.def_drawer_elevation = global::NotepadGps.Droid.Resource.Dimension.def_drawer_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_appbar_elevation = global::NotepadGps.Droid.Resource.Dimension.design_appbar_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::NotepadGps.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_bottom_navigation_active_item_min_width = global::NotepadGps.Droid.Resource.Dimension.design_bottom_navigation_active_item_min_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_bottom_navigation_active_text_size = global::NotepadGps.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_bottom_navigation_elevation = global::NotepadGps.Droid.Resource.Dimension.design_bottom_navigation_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_bottom_navigation_height = global::NotepadGps.Droid.Resource.Dimension.design_bottom_navigation_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_bottom_navigation_icon_size = global::NotepadGps.Droid.Resource.Dimension.design_bottom_navigation_icon_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_bottom_navigation_item_max_width = global::NotepadGps.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_bottom_navigation_item_min_width = global::NotepadGps.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_bottom_navigation_margin = global::NotepadGps.Droid.Resource.Dimension.design_bottom_navigation_margin;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_bottom_navigation_shadow_height = global::NotepadGps.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_bottom_navigation_text_size = global::NotepadGps.Droid.Resource.Dimension.design_bottom_navigation_text_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_bottom_sheet_elevation = global::NotepadGps.Droid.Resource.Dimension.design_bottom_sheet_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_bottom_sheet_modal_elevation = global::NotepadGps.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_bottom_sheet_peek_height_min = global::NotepadGps.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_fab_border_width = global::NotepadGps.Droid.Resource.Dimension.design_fab_border_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_fab_elevation = global::NotepadGps.Droid.Resource.Dimension.design_fab_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_fab_image_size = global::NotepadGps.Droid.Resource.Dimension.design_fab_image_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_fab_size_mini = global::NotepadGps.Droid.Resource.Dimension.design_fab_size_mini;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_fab_size_normal = global::NotepadGps.Droid.Resource.Dimension.design_fab_size_normal;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_fab_translation_z_hovered_focused = global::NotepadGps.Droid.Resource.Dimension.design_fab_translation_z_hovered_focused;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_fab_translation_z_pressed = global::NotepadGps.Droid.Resource.Dimension.design_fab_translation_z_pressed;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_navigation_elevation = global::NotepadGps.Droid.Resource.Dimension.design_navigation_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_navigation_icon_padding = global::NotepadGps.Droid.Resource.Dimension.design_navigation_icon_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_navigation_icon_size = global::NotepadGps.Droid.Resource.Dimension.design_navigation_icon_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_navigation_item_horizontal_padding = global::NotepadGps.Droid.Resource.Dimension.design_navigation_item_horizontal_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_navigation_item_icon_padding = global::NotepadGps.Droid.Resource.Dimension.design_navigation_item_icon_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_navigation_max_width = global::NotepadGps.Droid.Resource.Dimension.design_navigation_max_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_navigation_padding_bottom = global::NotepadGps.Droid.Resource.Dimension.design_navigation_padding_bottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_navigation_separator_vertical_padding = global::NotepadGps.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_snackbar_action_inline_max_width = global::NotepadGps.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_snackbar_action_text_color_alpha = global::NotepadGps.Droid.Resource.Dimension.design_snackbar_action_text_color_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_snackbar_background_corner_radius = global::NotepadGps.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_snackbar_elevation = global::NotepadGps.Droid.Resource.Dimension.design_snackbar_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::NotepadGps.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_snackbar_max_width = global::NotepadGps.Droid.Resource.Dimension.design_snackbar_max_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_snackbar_min_width = global::NotepadGps.Droid.Resource.Dimension.design_snackbar_min_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_snackbar_padding_horizontal = global::NotepadGps.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_snackbar_padding_vertical = global::NotepadGps.Droid.Resource.Dimension.design_snackbar_padding_vertical;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::NotepadGps.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_snackbar_text_size = global::NotepadGps.Droid.Resource.Dimension.design_snackbar_text_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_tab_max_width = global::NotepadGps.Droid.Resource.Dimension.design_tab_max_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_tab_scrollable_min_width = global::NotepadGps.Droid.Resource.Dimension.design_tab_scrollable_min_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_tab_text_size = global::NotepadGps.Droid.Resource.Dimension.design_tab_text_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_tab_text_size_2line = global::NotepadGps.Droid.Resource.Dimension.design_tab_text_size_2line;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.design_textinput_caption_translate_y = global::NotepadGps.Droid.Resource.Dimension.design_textinput_caption_translate_y;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.disabled_alpha_material_dark = global::NotepadGps.Droid.Resource.Dimension.disabled_alpha_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.disabled_alpha_material_light = global::NotepadGps.Droid.Resource.Dimension.disabled_alpha_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.fastscroll_default_thickness = global::NotepadGps.Droid.Resource.Dimension.fastscroll_default_thickness;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.fastscroll_margin = global::NotepadGps.Droid.Resource.Dimension.fastscroll_margin;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.fastscroll_minimum_range = global::NotepadGps.Droid.Resource.Dimension.fastscroll_minimum_range;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.highlight_alpha_material_colored = global::NotepadGps.Droid.Resource.Dimension.highlight_alpha_material_colored;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.highlight_alpha_material_dark = global::NotepadGps.Droid.Resource.Dimension.highlight_alpha_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.highlight_alpha_material_light = global::NotepadGps.Droid.Resource.Dimension.highlight_alpha_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.hint_alpha_material_dark = global::NotepadGps.Droid.Resource.Dimension.hint_alpha_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.hint_alpha_material_light = global::NotepadGps.Droid.Resource.Dimension.hint_alpha_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.hint_pressed_alpha_material_dark = global::NotepadGps.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.hint_pressed_alpha_material_light = global::NotepadGps.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::NotepadGps.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::NotepadGps.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::NotepadGps.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.material_emphasis_disabled = global::NotepadGps.Droid.Resource.Dimension.material_emphasis_disabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.material_emphasis_high_type = global::NotepadGps.Droid.Resource.Dimension.material_emphasis_high_type;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.material_emphasis_medium = global::NotepadGps.Droid.Resource.Dimension.material_emphasis_medium;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.material_text_view_test_line_height = global::NotepadGps.Droid.Resource.Dimension.material_text_view_test_line_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.material_text_view_test_line_height_override = global::NotepadGps.Droid.Resource.Dimension.material_text_view_test_line_height_override;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_alert_dialog_background_inset_bottom = global::NotepadGps.Droid.Resource.Dimension.mtrl_alert_dialog_background_inset_bottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_alert_dialog_background_inset_end = global::NotepadGps.Droid.Resource.Dimension.mtrl_alert_dialog_background_inset_end;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_alert_dialog_background_inset_start = global::NotepadGps.Droid.Resource.Dimension.mtrl_alert_dialog_background_inset_start;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_alert_dialog_background_inset_top = global::NotepadGps.Droid.Resource.Dimension.mtrl_alert_dialog_background_inset_top;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_alert_dialog_picker_background_inset = global::NotepadGps.Droid.Resource.Dimension.mtrl_alert_dialog_picker_background_inset;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_badge_horizontal_edge_offset = global::NotepadGps.Droid.Resource.Dimension.mtrl_badge_horizontal_edge_offset;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_badge_long_text_horizontal_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_badge_long_text_horizontal_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_badge_radius = global::NotepadGps.Droid.Resource.Dimension.mtrl_badge_radius;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_badge_text_horizontal_edge_offset = global::NotepadGps.Droid.Resource.Dimension.mtrl_badge_text_horizontal_edge_offset;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_badge_text_size = global::NotepadGps.Droid.Resource.Dimension.mtrl_badge_text_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_badge_with_text_radius = global::NotepadGps.Droid.Resource.Dimension.mtrl_badge_with_text_radius;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode = global::NotepadGps.Droid.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_bottomappbar_fab_bottom_margin = global::NotepadGps.Droid.Resource.Dimension.mtrl_bottomappbar_fab_bottom_margin;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin = global::NotepadGps.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius = global::NotepadGps.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset = global::NotepadGps.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_bottomappbar_height = global::NotepadGps.Droid.Resource.Dimension.mtrl_bottomappbar_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_corner_radius = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_corner_radius;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_dialog_btn_min_width = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_dialog_btn_min_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_disabled_elevation = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_disabled_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_disabled_z = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_disabled_z;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_elevation = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_focused_z = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_focused_z;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_hovered_z = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_hovered_z;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_icon_btn_padding_left = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_icon_btn_padding_left;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_icon_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_icon_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_inset = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_inset;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_letter_spacing = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_letter_spacing;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_padding_bottom = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_padding_bottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_padding_left = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_padding_left;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_padding_right = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_padding_right;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_padding_top = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_padding_top;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_pressed_z = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_pressed_z;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_stroke_size = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_stroke_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_text_btn_icon_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_text_btn_icon_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_text_btn_padding_left = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_left;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_text_btn_padding_right = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_right;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_text_size = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_text_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_btn_z = global::NotepadGps.Droid.Resource.Dimension.mtrl_btn_z;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_action_height = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_action_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_action_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_action_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_bottom_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_bottom_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_content_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_content_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_days_of_week_height = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_days_of_week_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_day_corner = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_day_corner;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_day_height = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_day_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_day_horizontal_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_day_horizontal_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_day_today_stroke = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_day_today_stroke;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_day_vertical_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_day_vertical_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_day_width = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_day_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_dialog_background_inset = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_dialog_background_inset;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_header_content_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_header_content_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_header_content_padding_fullscreen = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_header_content_padding_fullscreen;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_header_divider_thickness = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_header_divider_thickness;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_header_height = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_header_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_header_height_fullscreen = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_header_height_fullscreen;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_header_selection_line_height = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_header_selection_line_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_header_text_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_header_text_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_header_toggle_margin_bottom = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_header_toggle_margin_bottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_header_toggle_margin_top = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_header_toggle_margin_top;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_landscape_header_width = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_landscape_header_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_maximum_default_fullscreen_minor_axis = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_maximum_default_fullscreen_minor_axis;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_month_horizontal_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_month_horizontal_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_month_vertical_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_month_vertical_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_navigation_bottom_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_navigation_bottom_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_navigation_height = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_navigation_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_navigation_top_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_navigation_top_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_pre_l_text_clip_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_pre_l_text_clip_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_selection_baseline_to_top_fullscreen = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_selection_baseline_to_top_fullscreen;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_selection_text_baseline_to_bottom = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_selection_text_baseline_to_bottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_selection_text_baseline_to_bottom_fullscreen = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_selection_text_baseline_to_bottom_fullscreen;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_selection_text_baseline_to_top = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_selection_text_baseline_to_top;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_text_input_padding_top = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_text_input_padding_top;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_title_baseline_to_top = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_title_baseline_to_top;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_title_baseline_to_top_fullscreen = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_title_baseline_to_top_fullscreen;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_year_corner = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_year_corner;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_year_height = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_year_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_year_horizontal_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_year_horizontal_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_year_vertical_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_year_vertical_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_calendar_year_width = global::NotepadGps.Droid.Resource.Dimension.mtrl_calendar_year_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_card_checked_icon_margin = global::NotepadGps.Droid.Resource.Dimension.mtrl_card_checked_icon_margin;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_card_checked_icon_size = global::NotepadGps.Droid.Resource.Dimension.mtrl_card_checked_icon_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_card_corner_radius = global::NotepadGps.Droid.Resource.Dimension.mtrl_card_corner_radius;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_card_dragged_z = global::NotepadGps.Droid.Resource.Dimension.mtrl_card_dragged_z;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_card_elevation = global::NotepadGps.Droid.Resource.Dimension.mtrl_card_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_card_spacing = global::NotepadGps.Droid.Resource.Dimension.mtrl_card_spacing;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_chip_pressed_translation_z = global::NotepadGps.Droid.Resource.Dimension.mtrl_chip_pressed_translation_z;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_chip_text_size = global::NotepadGps.Droid.Resource.Dimension.mtrl_chip_text_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_edittext_rectangle_top_offset = global::NotepadGps.Droid.Resource.Dimension.mtrl_edittext_rectangle_top_offset;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_exposed_dropdown_menu_popup_elevation = global::NotepadGps.Droid.Resource.Dimension.mtrl_exposed_dropdown_menu_popup_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_exposed_dropdown_menu_popup_vertical_offset = global::NotepadGps.Droid.Resource.Dimension.mtrl_exposed_dropdown_menu_popup_vertical_offset;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_exposed_dropdown_menu_popup_vertical_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_exposed_dropdown_menu_popup_vertical_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_extended_fab_bottom_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_extended_fab_bottom_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_extended_fab_corner_radius = global::NotepadGps.Droid.Resource.Dimension.mtrl_extended_fab_corner_radius;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_extended_fab_disabled_elevation = global::NotepadGps.Droid.Resource.Dimension.mtrl_extended_fab_disabled_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_extended_fab_disabled_translation_z = global::NotepadGps.Droid.Resource.Dimension.mtrl_extended_fab_disabled_translation_z;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_extended_fab_elevation = global::NotepadGps.Droid.Resource.Dimension.mtrl_extended_fab_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_extended_fab_end_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_extended_fab_end_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_extended_fab_end_padding_icon = global::NotepadGps.Droid.Resource.Dimension.mtrl_extended_fab_end_padding_icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_extended_fab_icon_size = global::NotepadGps.Droid.Resource.Dimension.mtrl_extended_fab_icon_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_extended_fab_icon_text_spacing = global::NotepadGps.Droid.Resource.Dimension.mtrl_extended_fab_icon_text_spacing;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_extended_fab_min_height = global::NotepadGps.Droid.Resource.Dimension.mtrl_extended_fab_min_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_extended_fab_min_width = global::NotepadGps.Droid.Resource.Dimension.mtrl_extended_fab_min_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_extended_fab_start_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_extended_fab_start_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_extended_fab_start_padding_icon = global::NotepadGps.Droid.Resource.Dimension.mtrl_extended_fab_start_padding_icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_extended_fab_top_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_extended_fab_top_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_extended_fab_translation_z_base = global::NotepadGps.Droid.Resource.Dimension.mtrl_extended_fab_translation_z_base;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_extended_fab_translation_z_hovered_focused = global::NotepadGps.Droid.Resource.Dimension.mtrl_extended_fab_translation_z_hovered_focused;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_extended_fab_translation_z_pressed = global::NotepadGps.Droid.Resource.Dimension.mtrl_extended_fab_translation_z_pressed;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_fab_elevation = global::NotepadGps.Droid.Resource.Dimension.mtrl_fab_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_fab_min_touch_target = global::NotepadGps.Droid.Resource.Dimension.mtrl_fab_min_touch_target;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_fab_translation_z_hovered_focused = global::NotepadGps.Droid.Resource.Dimension.mtrl_fab_translation_z_hovered_focused;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_fab_translation_z_pressed = global::NotepadGps.Droid.Resource.Dimension.mtrl_fab_translation_z_pressed;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_high_ripple_default_alpha = global::NotepadGps.Droid.Resource.Dimension.mtrl_high_ripple_default_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_high_ripple_focused_alpha = global::NotepadGps.Droid.Resource.Dimension.mtrl_high_ripple_focused_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_high_ripple_hovered_alpha = global::NotepadGps.Droid.Resource.Dimension.mtrl_high_ripple_hovered_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_high_ripple_pressed_alpha = global::NotepadGps.Droid.Resource.Dimension.mtrl_high_ripple_pressed_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_large_touch_target = global::NotepadGps.Droid.Resource.Dimension.mtrl_large_touch_target;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_low_ripple_default_alpha = global::NotepadGps.Droid.Resource.Dimension.mtrl_low_ripple_default_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_low_ripple_focused_alpha = global::NotepadGps.Droid.Resource.Dimension.mtrl_low_ripple_focused_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_low_ripple_hovered_alpha = global::NotepadGps.Droid.Resource.Dimension.mtrl_low_ripple_hovered_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_low_ripple_pressed_alpha = global::NotepadGps.Droid.Resource.Dimension.mtrl_low_ripple_pressed_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_min_touch_target_size = global::NotepadGps.Droid.Resource.Dimension.mtrl_min_touch_target_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_navigation_elevation = global::NotepadGps.Droid.Resource.Dimension.mtrl_navigation_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_navigation_item_horizontal_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_navigation_item_horizontal_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_navigation_item_icon_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_navigation_item_icon_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_navigation_item_icon_size = global::NotepadGps.Droid.Resource.Dimension.mtrl_navigation_item_icon_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_navigation_item_shape_horizontal_margin = global::NotepadGps.Droid.Resource.Dimension.mtrl_navigation_item_shape_horizontal_margin;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_navigation_item_shape_vertical_margin = global::NotepadGps.Droid.Resource.Dimension.mtrl_navigation_item_shape_vertical_margin;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_shape_corner_size_large_component = global::NotepadGps.Droid.Resource.Dimension.mtrl_shape_corner_size_large_component;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_shape_corner_size_medium_component = global::NotepadGps.Droid.Resource.Dimension.mtrl_shape_corner_size_medium_component;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_shape_corner_size_small_component = global::NotepadGps.Droid.Resource.Dimension.mtrl_shape_corner_size_small_component;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_slider_halo_radius = global::NotepadGps.Droid.Resource.Dimension.mtrl_slider_halo_radius;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_slider_label_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_slider_label_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_slider_label_radius = global::NotepadGps.Droid.Resource.Dimension.mtrl_slider_label_radius;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_slider_label_square_side = global::NotepadGps.Droid.Resource.Dimension.mtrl_slider_label_square_side;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_slider_thumb_elevation = global::NotepadGps.Droid.Resource.Dimension.mtrl_slider_thumb_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_slider_thumb_radius = global::NotepadGps.Droid.Resource.Dimension.mtrl_slider_thumb_radius;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_slider_track_height = global::NotepadGps.Droid.Resource.Dimension.mtrl_slider_track_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_slider_track_side_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_slider_track_side_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_slider_track_top = global::NotepadGps.Droid.Resource.Dimension.mtrl_slider_track_top;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_slider_widget_height = global::NotepadGps.Droid.Resource.Dimension.mtrl_slider_widget_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_snackbar_action_text_color_alpha = global::NotepadGps.Droid.Resource.Dimension.mtrl_snackbar_action_text_color_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_snackbar_background_corner_radius = global::NotepadGps.Droid.Resource.Dimension.mtrl_snackbar_background_corner_radius;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_snackbar_background_overlay_color_alpha = global::NotepadGps.Droid.Resource.Dimension.mtrl_snackbar_background_overlay_color_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_snackbar_margin = global::NotepadGps.Droid.Resource.Dimension.mtrl_snackbar_margin;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_switch_thumb_elevation = global::NotepadGps.Droid.Resource.Dimension.mtrl_switch_thumb_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_textinput_box_corner_radius_medium = global::NotepadGps.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_medium;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_textinput_box_corner_radius_small = global::NotepadGps.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_small;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_textinput_box_label_cutout_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_textinput_box_label_cutout_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_textinput_box_stroke_width_default = global::NotepadGps.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_default;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_textinput_box_stroke_width_focused = global::NotepadGps.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_focused;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_textinput_counter_margin_start = global::NotepadGps.Droid.Resource.Dimension.mtrl_textinput_counter_margin_start;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_textinput_end_icon_margin_start = global::NotepadGps.Droid.Resource.Dimension.mtrl_textinput_end_icon_margin_start;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_textinput_start_icon_margin_end = global::NotepadGps.Droid.Resource.Dimension.mtrl_textinput_start_icon_margin_end;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_toolbar_default_height = global::NotepadGps.Droid.Resource.Dimension.mtrl_toolbar_default_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_tooltip_arrowSize = global::NotepadGps.Droid.Resource.Dimension.mtrl_tooltip_arrowSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_tooltip_cornerSize = global::NotepadGps.Droid.Resource.Dimension.mtrl_tooltip_cornerSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_tooltip_minHeight = global::NotepadGps.Droid.Resource.Dimension.mtrl_tooltip_minHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_tooltip_minWidth = global::NotepadGps.Droid.Resource.Dimension.mtrl_tooltip_minWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_tooltip_padding = global::NotepadGps.Droid.Resource.Dimension.mtrl_tooltip_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.mtrl_transition_shared_axis_slide_distance = global::NotepadGps.Droid.Resource.Dimension.mtrl_transition_shared_axis_slide_distance;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.notification_action_icon_size = global::NotepadGps.Droid.Resource.Dimension.notification_action_icon_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.notification_action_text_size = global::NotepadGps.Droid.Resource.Dimension.notification_action_text_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.notification_big_circle_margin = global::NotepadGps.Droid.Resource.Dimension.notification_big_circle_margin;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.notification_content_margin_start = global::NotepadGps.Droid.Resource.Dimension.notification_content_margin_start;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.notification_large_icon_height = global::NotepadGps.Droid.Resource.Dimension.notification_large_icon_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.notification_large_icon_width = global::NotepadGps.Droid.Resource.Dimension.notification_large_icon_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.notification_main_column_padding_top = global::NotepadGps.Droid.Resource.Dimension.notification_main_column_padding_top;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.notification_media_narrow_margin = global::NotepadGps.Droid.Resource.Dimension.notification_media_narrow_margin;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.notification_right_icon_size = global::NotepadGps.Droid.Resource.Dimension.notification_right_icon_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.notification_right_side_padding_top = global::NotepadGps.Droid.Resource.Dimension.notification_right_side_padding_top;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.notification_small_icon_background_padding = global::NotepadGps.Droid.Resource.Dimension.notification_small_icon_background_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.notification_small_icon_size_as_large = global::NotepadGps.Droid.Resource.Dimension.notification_small_icon_size_as_large;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.notification_subtext_size = global::NotepadGps.Droid.Resource.Dimension.notification_subtext_size;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.notification_top_pad = global::NotepadGps.Droid.Resource.Dimension.notification_top_pad;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.notification_top_pad_large_text = global::NotepadGps.Droid.Resource.Dimension.notification_top_pad_large_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.test_mtrl_calendar_day_cornerSize = global::NotepadGps.Droid.Resource.Dimension.test_mtrl_calendar_day_cornerSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.tooltip_corner_radius = global::NotepadGps.Droid.Resource.Dimension.tooltip_corner_radius;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.tooltip_horizontal_padding = global::NotepadGps.Droid.Resource.Dimension.tooltip_horizontal_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.tooltip_margin = global::NotepadGps.Droid.Resource.Dimension.tooltip_margin;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::NotepadGps.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.tooltip_precise_anchor_threshold = global::NotepadGps.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.tooltip_vertical_padding = global::NotepadGps.Droid.Resource.Dimension.tooltip_vertical_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.tooltip_y_offset_non_touch = global::NotepadGps.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
-			global::Xamarin.Forms.Maps.Android.Resource.Dimension.tooltip_y_offset_touch = global::NotepadGps.Droid.Resource.Dimension.tooltip_y_offset_touch;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_action_bar_item_background_material = global::NotepadGps.Droid.Resource.Drawable.abc_action_bar_item_background_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_btn_borderless_material = global::NotepadGps.Droid.Resource.Drawable.abc_btn_borderless_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_btn_check_material = global::NotepadGps.Droid.Resource.Drawable.abc_btn_check_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_btn_check_material_anim = global::NotepadGps.Droid.Resource.Drawable.abc_btn_check_material_anim;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::NotepadGps.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::NotepadGps.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_btn_colored_material = global::NotepadGps.Droid.Resource.Drawable.abc_btn_colored_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::NotepadGps.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_btn_radio_material = global::NotepadGps.Droid.Resource.Drawable.abc_btn_radio_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_btn_radio_material_anim = global::NotepadGps.Droid.Resource.Drawable.abc_btn_radio_material_anim;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::NotepadGps.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::NotepadGps.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::NotepadGps.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::NotepadGps.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_cab_background_internal_bg = global::NotepadGps.Droid.Resource.Drawable.abc_cab_background_internal_bg;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_cab_background_top_material = global::NotepadGps.Droid.Resource.Drawable.abc_cab_background_top_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_control_background_material = global::NotepadGps.Droid.Resource.Drawable.abc_control_background_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_dialog_material_background = global::NotepadGps.Droid.Resource.Drawable.abc_dialog_material_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_edit_text_material = global::NotepadGps.Droid.Resource.Drawable.abc_edit_text_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_ab_back_material = global::NotepadGps.Droid.Resource.Drawable.abc_ic_ab_back_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::NotepadGps.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_clear_material = global::NotepadGps.Droid.Resource.Drawable.abc_ic_clear_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_go_search_api_material = global::NotepadGps.Droid.Resource.Drawable.abc_ic_go_search_api_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_menu_overflow_material = global::NotepadGps.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_search_api_material = global::NotepadGps.Droid.Resource.Drawable.abc_ic_search_api_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_star_black_16dp = global::NotepadGps.Droid.Resource.Drawable.abc_ic_star_black_16dp;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_star_black_36dp = global::NotepadGps.Droid.Resource.Drawable.abc_ic_star_black_36dp;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_star_black_48dp = global::NotepadGps.Droid.Resource.Drawable.abc_ic_star_black_48dp;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_star_half_black_16dp = global::NotepadGps.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_star_half_black_36dp = global::NotepadGps.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_star_half_black_48dp = global::NotepadGps.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ic_voice_search_api_material = global::NotepadGps.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_item_background_holo_dark = global::NotepadGps.Droid.Resource.Drawable.abc_item_background_holo_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_item_background_holo_light = global::NotepadGps.Droid.Resource.Drawable.abc_item_background_holo_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_list_divider_material = global::NotepadGps.Droid.Resource.Drawable.abc_list_divider_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_list_divider_mtrl_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_list_focused_holo = global::NotepadGps.Droid.Resource.Drawable.abc_list_focused_holo;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_list_longpressed_holo = global::NotepadGps.Droid.Resource.Drawable.abc_list_longpressed_holo;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_list_pressed_holo_dark = global::NotepadGps.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_list_pressed_holo_light = global::NotepadGps.Droid.Resource.Drawable.abc_list_pressed_holo_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::NotepadGps.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::NotepadGps.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::NotepadGps.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_list_selector_disabled_holo_light = global::NotepadGps.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_list_selector_holo_dark = global::NotepadGps.Droid.Resource.Drawable.abc_list_selector_holo_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_list_selector_holo_light = global::NotepadGps.Droid.Resource.Drawable.abc_list_selector_holo_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::NotepadGps.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_popup_background_mtrl_mult = global::NotepadGps.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ratingbar_indicator_material = global::NotepadGps.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ratingbar_material = global::NotepadGps.Droid.Resource.Drawable.abc_ratingbar_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_ratingbar_small_material = global::NotepadGps.Droid.Resource.Drawable.abc_ratingbar_small_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::NotepadGps.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::NotepadGps.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_seekbar_thumb_material = global::NotepadGps.Droid.Resource.Drawable.abc_seekbar_thumb_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_seekbar_tick_mark_material = global::NotepadGps.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_seekbar_track_material = global::NotepadGps.Droid.Resource.Drawable.abc_seekbar_track_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::NotepadGps.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_switch_thumb_material = global::NotepadGps.Droid.Resource.Drawable.abc_switch_thumb_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_tab_indicator_material = global::NotepadGps.Droid.Resource.Drawable.abc_tab_indicator_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::NotepadGps.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_textfield_search_material = global::NotepadGps.Droid.Resource.Drawable.abc_textfield_search_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_text_cursor_material = global::NotepadGps.Droid.Resource.Drawable.abc_text_cursor_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::NotepadGps.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::NotepadGps.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::NotepadGps.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::NotepadGps.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::NotepadGps.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::NotepadGps.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.abc_vector_test = global::NotepadGps.Droid.Resource.Drawable.abc_vector_test;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.avd_hide_password = global::NotepadGps.Droid.Resource.Drawable.avd_hide_password;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.avd_show_password = global::NotepadGps.Droid.Resource.Drawable.avd_show_password;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.btn_checkbox_checked_mtrl = global::NotepadGps.Droid.Resource.Drawable.btn_checkbox_checked_mtrl;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::NotepadGps.Droid.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::NotepadGps.Droid.Resource.Drawable.btn_checkbox_unchecked_mtrl;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::NotepadGps.Droid.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.btn_radio_off_mtrl = global::NotepadGps.Droid.Resource.Drawable.btn_radio_off_mtrl;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::NotepadGps.Droid.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.btn_radio_on_mtrl = global::NotepadGps.Droid.Resource.Drawable.btn_radio_on_mtrl;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::NotepadGps.Droid.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_full_open_on_phone = global::NotepadGps.Droid.Resource.Drawable.common_full_open_on_phone;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_icon_dark = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_icon_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_icon_dark_focused = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_focused;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_icon_dark_normal = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_normal;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_icon_dark_normal_background = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_icon_dark_normal_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_icon_disabled = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_icon_disabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_icon_light = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_icon_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_icon_light_focused = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_icon_light_focused;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_icon_light_normal = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_icon_light_normal;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_icon_light_normal_background = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_icon_light_normal_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_text_dark = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_text_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_text_dark_focused = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_text_dark_focused;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_text_dark_normal = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_text_dark_normal;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_text_dark_normal_background = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_text_dark_normal_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_text_disabled = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_text_disabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_text_light = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_text_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_text_light_focused = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_text_light_focused;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_text_light_normal = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_text_light_normal;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.common_google_signin_btn_text_light_normal_background = global::NotepadGps.Droid.Resource.Drawable.common_google_signin_btn_text_light_normal_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.design_bottom_navigation_item_background = global::NotepadGps.Droid.Resource.Drawable.design_bottom_navigation_item_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.design_fab_background = global::NotepadGps.Droid.Resource.Drawable.design_fab_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.design_ic_visibility = global::NotepadGps.Droid.Resource.Drawable.design_ic_visibility;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.design_ic_visibility_off = global::NotepadGps.Droid.Resource.Drawable.design_ic_visibility_off;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.design_password_eye = global::NotepadGps.Droid.Resource.Drawable.design_password_eye;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.design_snackbar_background = global::NotepadGps.Droid.Resource.Drawable.design_snackbar_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.googleg_disabled_color_18 = global::NotepadGps.Droid.Resource.Drawable.googleg_disabled_color_18;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.googleg_standard_color_18 = global::NotepadGps.Droid.Resource.Drawable.googleg_standard_color_18;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.ic_mtrl_checked_circle = global::NotepadGps.Droid.Resource.Drawable.ic_mtrl_checked_circle;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.ic_mtrl_chip_checked_black = global::NotepadGps.Droid.Resource.Drawable.ic_mtrl_chip_checked_black;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.ic_mtrl_chip_checked_circle = global::NotepadGps.Droid.Resource.Drawable.ic_mtrl_chip_checked_circle;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.ic_mtrl_chip_close_circle = global::NotepadGps.Droid.Resource.Drawable.ic_mtrl_chip_close_circle;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.material_ic_calendar_black_24dp = global::NotepadGps.Droid.Resource.Drawable.material_ic_calendar_black_24dp;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.material_ic_clear_black_24dp = global::NotepadGps.Droid.Resource.Drawable.material_ic_clear_black_24dp;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.material_ic_edit_black_24dp = global::NotepadGps.Droid.Resource.Drawable.material_ic_edit_black_24dp;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.material_ic_keyboard_arrow_left_black_24dp = global::NotepadGps.Droid.Resource.Drawable.material_ic_keyboard_arrow_left_black_24dp;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.material_ic_keyboard_arrow_right_black_24dp = global::NotepadGps.Droid.Resource.Drawable.material_ic_keyboard_arrow_right_black_24dp;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.material_ic_menu_arrow_down_black_24dp = global::NotepadGps.Droid.Resource.Drawable.material_ic_menu_arrow_down_black_24dp;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.material_ic_menu_arrow_up_black_24dp = global::NotepadGps.Droid.Resource.Drawable.material_ic_menu_arrow_up_black_24dp;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.mtrl_dialog_background = global::NotepadGps.Droid.Resource.Drawable.mtrl_dialog_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.mtrl_dropdown_arrow = global::NotepadGps.Droid.Resource.Drawable.mtrl_dropdown_arrow;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.mtrl_ic_arrow_drop_down = global::NotepadGps.Droid.Resource.Drawable.mtrl_ic_arrow_drop_down;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.mtrl_ic_arrow_drop_up = global::NotepadGps.Droid.Resource.Drawable.mtrl_ic_arrow_drop_up;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.mtrl_ic_cancel = global::NotepadGps.Droid.Resource.Drawable.mtrl_ic_cancel;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.mtrl_ic_error = global::NotepadGps.Droid.Resource.Drawable.mtrl_ic_error;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.mtrl_popupmenu_background = global::NotepadGps.Droid.Resource.Drawable.mtrl_popupmenu_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.mtrl_popupmenu_background_dark = global::NotepadGps.Droid.Resource.Drawable.mtrl_popupmenu_background_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.mtrl_tabs_default_indicator = global::NotepadGps.Droid.Resource.Drawable.mtrl_tabs_default_indicator;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.navigation_empty_icon = global::NotepadGps.Droid.Resource.Drawable.navigation_empty_icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.notification_action_background = global::NotepadGps.Droid.Resource.Drawable.notification_action_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.notification_bg = global::NotepadGps.Droid.Resource.Drawable.notification_bg;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.notification_bg_low = global::NotepadGps.Droid.Resource.Drawable.notification_bg_low;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.notification_bg_low_normal = global::NotepadGps.Droid.Resource.Drawable.notification_bg_low_normal;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.notification_bg_low_pressed = global::NotepadGps.Droid.Resource.Drawable.notification_bg_low_pressed;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.notification_bg_normal = global::NotepadGps.Droid.Resource.Drawable.notification_bg_normal;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.notification_bg_normal_pressed = global::NotepadGps.Droid.Resource.Drawable.notification_bg_normal_pressed;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.notification_icon_background = global::NotepadGps.Droid.Resource.Drawable.notification_icon_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.notification_template_icon_bg = global::NotepadGps.Droid.Resource.Drawable.notification_template_icon_bg;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.notification_template_icon_low_bg = global::NotepadGps.Droid.Resource.Drawable.notification_template_icon_low_bg;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.notification_tile_bg = global::NotepadGps.Droid.Resource.Drawable.notification_tile_bg;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::NotepadGps.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.test_custom_background = global::NotepadGps.Droid.Resource.Drawable.test_custom_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.tooltip_frame_dark = global::NotepadGps.Droid.Resource.Drawable.tooltip_frame_dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Drawable.tooltip_frame_light = global::NotepadGps.Droid.Resource.Drawable.tooltip_frame_light;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_action_clickable_span = global::NotepadGps.Droid.Resource.Id.accessibility_action_clickable_span;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_0 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_0;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_1 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_1;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_10 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_10;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_11 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_11;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_12 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_12;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_13 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_13;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_14 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_14;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_15 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_15;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_16 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_16;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_17 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_17;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_18 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_18;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_19 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_19;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_2 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_2;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_20 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_20;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_21 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_21;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_22 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_22;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_23 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_23;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_24 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_24;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_25 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_25;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_26 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_26;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_27 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_27;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_28 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_28;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_29 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_29;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_3 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_3;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_30 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_30;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_31 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_31;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_4 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_4;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_5 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_5;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_6 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_6;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_7 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_7;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_8 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_8;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.accessibility_custom_action_9 = global::NotepadGps.Droid.Resource.Id.accessibility_custom_action_9;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action0 = global::NotepadGps.Droid.Resource.Id.action0;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.actions = global::NotepadGps.Droid.Resource.Id.actions;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action_bar = global::NotepadGps.Droid.Resource.Id.action_bar;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action_bar_activity_content = global::NotepadGps.Droid.Resource.Id.action_bar_activity_content;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action_bar_container = global::NotepadGps.Droid.Resource.Id.action_bar_container;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action_bar_root = global::NotepadGps.Droid.Resource.Id.action_bar_root;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action_bar_spinner = global::NotepadGps.Droid.Resource.Id.action_bar_spinner;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action_bar_subtitle = global::NotepadGps.Droid.Resource.Id.action_bar_subtitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action_bar_title = global::NotepadGps.Droid.Resource.Id.action_bar_title;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action_container = global::NotepadGps.Droid.Resource.Id.action_container;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action_context_bar = global::NotepadGps.Droid.Resource.Id.action_context_bar;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action_divider = global::NotepadGps.Droid.Resource.Id.action_divider;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action_image = global::NotepadGps.Droid.Resource.Id.action_image;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action_menu_divider = global::NotepadGps.Droid.Resource.Id.action_menu_divider;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action_menu_presenter = global::NotepadGps.Droid.Resource.Id.action_menu_presenter;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action_mode_bar = global::NotepadGps.Droid.Resource.Id.action_mode_bar;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action_mode_bar_stub = global::NotepadGps.Droid.Resource.Id.action_mode_bar_stub;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action_mode_close_button = global::NotepadGps.Droid.Resource.Id.action_mode_close_button;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.action_text = global::NotepadGps.Droid.Resource.Id.action_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.activity_chooser_view_content = global::NotepadGps.Droid.Resource.Id.activity_chooser_view_content;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.add = global::NotepadGps.Droid.Resource.Id.add;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.adjust_height = global::NotepadGps.Droid.Resource.Id.adjust_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.adjust_width = global::NotepadGps.Droid.Resource.Id.adjust_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.alertTitle = global::NotepadGps.Droid.Resource.Id.alertTitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.all = global::NotepadGps.Droid.Resource.Id.all;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.ALT = global::NotepadGps.Droid.Resource.Id.ALT;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.always = global::NotepadGps.Droid.Resource.Id.always;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.async = global::NotepadGps.Droid.Resource.Id.async;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.auto = global::NotepadGps.Droid.Resource.Id.auto;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.beginning = global::NotepadGps.Droid.Resource.Id.beginning;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.blocking = global::NotepadGps.Droid.Resource.Id.blocking;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.bottom = global::NotepadGps.Droid.Resource.Id.bottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.bottomtab_navarea = global::NotepadGps.Droid.Resource.Id.bottomtab_navarea;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.bottomtab_tabbar = global::NotepadGps.Droid.Resource.Id.bottomtab_tabbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.BOTTOM_END = global::NotepadGps.Droid.Resource.Id.BOTTOM_END;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.BOTTOM_START = global::NotepadGps.Droid.Resource.Id.BOTTOM_START;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.buttonPanel = global::NotepadGps.Droid.Resource.Id.buttonPanel;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.cancel_action = global::NotepadGps.Droid.Resource.Id.cancel_action;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.cancel_button = global::NotepadGps.Droid.Resource.Id.cancel_button;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.center = global::NotepadGps.Droid.Resource.Id.center;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.center_horizontal = global::NotepadGps.Droid.Resource.Id.center_horizontal;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.center_vertical = global::NotepadGps.Droid.Resource.Id.center_vertical;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.checkbox = global::NotepadGps.Droid.Resource.Id.checkbox;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.@checked = global::NotepadGps.Droid.Resource.Id.@checked;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.chip = global::NotepadGps.Droid.Resource.Id.chip;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.chip1 = global::NotepadGps.Droid.Resource.Id.chip1;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.chip2 = global::NotepadGps.Droid.Resource.Id.chip2;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.chip3 = global::NotepadGps.Droid.Resource.Id.chip3;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.chip_group = global::NotepadGps.Droid.Resource.Id.chip_group;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.chronometer = global::NotepadGps.Droid.Resource.Id.chronometer;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.clear_text = global::NotepadGps.Droid.Resource.Id.clear_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.clip_horizontal = global::NotepadGps.Droid.Resource.Id.clip_horizontal;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.clip_vertical = global::NotepadGps.Droid.Resource.Id.clip_vertical;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.collapseActionView = global::NotepadGps.Droid.Resource.Id.collapseActionView;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.confirm_button = global::NotepadGps.Droid.Resource.Id.confirm_button;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.container = global::NotepadGps.Droid.Resource.Id.container;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.content = global::NotepadGps.Droid.Resource.Id.content;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.contentPanel = global::NotepadGps.Droid.Resource.Id.contentPanel;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.coordinator = global::NotepadGps.Droid.Resource.Id.coordinator;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.CTRL = global::NotepadGps.Droid.Resource.Id.CTRL;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.custom = global::NotepadGps.Droid.Resource.Id.custom;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.customPanel = global::NotepadGps.Droid.Resource.Id.customPanel;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.cut = global::NotepadGps.Droid.Resource.Id.cut;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.dark = global::NotepadGps.Droid.Resource.Id.dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.date_picker_actions = global::NotepadGps.Droid.Resource.Id.date_picker_actions;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.decor_content_parent = global::NotepadGps.Droid.Resource.Id.decor_content_parent;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.default_activity_button = global::NotepadGps.Droid.Resource.Id.default_activity_button;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.design_bottom_sheet = global::NotepadGps.Droid.Resource.Id.design_bottom_sheet;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.design_menu_item_action_area = global::NotepadGps.Droid.Resource.Id.design_menu_item_action_area;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.design_menu_item_action_area_stub = global::NotepadGps.Droid.Resource.Id.design_menu_item_action_area_stub;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.design_menu_item_text = global::NotepadGps.Droid.Resource.Id.design_menu_item_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.design_navigation_view = global::NotepadGps.Droid.Resource.Id.design_navigation_view;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.dialog_button = global::NotepadGps.Droid.Resource.Id.dialog_button;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.disableHome = global::NotepadGps.Droid.Resource.Id.disableHome;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.dropdown_menu = global::NotepadGps.Droid.Resource.Id.dropdown_menu;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.edit_query = global::NotepadGps.Droid.Resource.Id.edit_query;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.end = global::NotepadGps.Droid.Resource.Id.end;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.end_padder = global::NotepadGps.Droid.Resource.Id.end_padder;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.enterAlways = global::NotepadGps.Droid.Resource.Id.enterAlways;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.enterAlwaysCollapsed = global::NotepadGps.Droid.Resource.Id.enterAlwaysCollapsed;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.exitUntilCollapsed = global::NotepadGps.Droid.Resource.Id.exitUntilCollapsed;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.expanded_menu = global::NotepadGps.Droid.Resource.Id.expanded_menu;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.expand_activities_button = global::NotepadGps.Droid.Resource.Id.expand_activities_button;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.fade = global::NotepadGps.Droid.Resource.Id.fade;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.fill = global::NotepadGps.Droid.Resource.Id.fill;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.filled = global::NotepadGps.Droid.Resource.Id.filled;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.fill_horizontal = global::NotepadGps.Droid.Resource.Id.fill_horizontal;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.fill_vertical = global::NotepadGps.Droid.Resource.Id.fill_vertical;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.fitToContents = global::NotepadGps.Droid.Resource.Id.fitToContents;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.@fixed = global::NotepadGps.Droid.Resource.Id.@fixed;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.floating = global::NotepadGps.Droid.Resource.Id.floating;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.flyoutcontent_appbar = global::NotepadGps.Droid.Resource.Id.flyoutcontent_appbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.forever = global::NotepadGps.Droid.Resource.Id.forever;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.fragment_container_view_tag = global::NotepadGps.Droid.Resource.Id.fragment_container_view_tag;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.FUNCTION = global::NotepadGps.Droid.Resource.Id.FUNCTION;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.ghost_view = global::NotepadGps.Droid.Resource.Id.ghost_view;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.ghost_view_holder = global::NotepadGps.Droid.Resource.Id.ghost_view_holder;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.gone = global::NotepadGps.Droid.Resource.Id.gone;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.group_divider = global::NotepadGps.Droid.Resource.Id.group_divider;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.hideable = global::NotepadGps.Droid.Resource.Id.hideable;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.home = global::NotepadGps.Droid.Resource.Id.home;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.homeAsUp = global::NotepadGps.Droid.Resource.Id.homeAsUp;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.hybrid = global::NotepadGps.Droid.Resource.Id.hybrid;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.icon = global::NotepadGps.Droid.Resource.Id.icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.icon_group = global::NotepadGps.Droid.Resource.Id.icon_group;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.icon_only = global::NotepadGps.Droid.Resource.Id.icon_only;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.ifRoom = global::NotepadGps.Droid.Resource.Id.ifRoom;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.image = global::NotepadGps.Droid.Resource.Id.image;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.info = global::NotepadGps.Droid.Resource.Id.info;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.italic = global::NotepadGps.Droid.Resource.Id.italic;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.item_touch_helper_previous_elevation = global::NotepadGps.Droid.Resource.Id.item_touch_helper_previous_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.labeled = global::NotepadGps.Droid.Resource.Id.labeled;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.largeLabel = global::NotepadGps.Droid.Resource.Id.largeLabel;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.left = global::NotepadGps.Droid.Resource.Id.left;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.light = global::NotepadGps.Droid.Resource.Id.light;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.line1 = global::NotepadGps.Droid.Resource.Id.line1;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.line3 = global::NotepadGps.Droid.Resource.Id.line3;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.listMode = global::NotepadGps.Droid.Resource.Id.listMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.list_item = global::NotepadGps.Droid.Resource.Id.list_item;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.main_appbar = global::NotepadGps.Droid.Resource.Id.main_appbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.main_tablayout = global::NotepadGps.Droid.Resource.Id.main_tablayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.main_toolbar = global::NotepadGps.Droid.Resource.Id.main_toolbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.main_viewpager = global::NotepadGps.Droid.Resource.Id.main_viewpager;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.masked = global::NotepadGps.Droid.Resource.Id.masked;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.media_actions = global::NotepadGps.Droid.Resource.Id.media_actions;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.media_controller_compat_view_tag = global::NotepadGps.Droid.Resource.Id.media_controller_compat_view_tag;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.message = global::NotepadGps.Droid.Resource.Id.message;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.META = global::NotepadGps.Droid.Resource.Id.META;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.middle = global::NotepadGps.Droid.Resource.Id.middle;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mini = global::NotepadGps.Droid.Resource.Id.mini;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.month_grid = global::NotepadGps.Droid.Resource.Id.month_grid;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.month_navigation_bar = global::NotepadGps.Droid.Resource.Id.month_navigation_bar;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.month_navigation_fragment_toggle = global::NotepadGps.Droid.Resource.Id.month_navigation_fragment_toggle;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.month_navigation_next = global::NotepadGps.Droid.Resource.Id.month_navigation_next;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.month_navigation_previous = global::NotepadGps.Droid.Resource.Id.month_navigation_previous;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.month_title = global::NotepadGps.Droid.Resource.Id.month_title;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_calendar_days_of_week = global::NotepadGps.Droid.Resource.Id.mtrl_calendar_days_of_week;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_calendar_day_selector_frame = global::NotepadGps.Droid.Resource.Id.mtrl_calendar_day_selector_frame;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_calendar_frame = global::NotepadGps.Droid.Resource.Id.mtrl_calendar_frame;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_calendar_main_pane = global::NotepadGps.Droid.Resource.Id.mtrl_calendar_main_pane;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_calendar_months = global::NotepadGps.Droid.Resource.Id.mtrl_calendar_months;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_calendar_selection_frame = global::NotepadGps.Droid.Resource.Id.mtrl_calendar_selection_frame;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_calendar_text_input_frame = global::NotepadGps.Droid.Resource.Id.mtrl_calendar_text_input_frame;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_calendar_year_selector_frame = global::NotepadGps.Droid.Resource.Id.mtrl_calendar_year_selector_frame;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_card_checked_layer_id = global::NotepadGps.Droid.Resource.Id.mtrl_card_checked_layer_id;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_child_content_container = global::NotepadGps.Droid.Resource.Id.mtrl_child_content_container;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_internal_children_alpha_tag = global::NotepadGps.Droid.Resource.Id.mtrl_internal_children_alpha_tag;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_motion_snapshot_view = global::NotepadGps.Droid.Resource.Id.mtrl_motion_snapshot_view;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_picker_fullscreen = global::NotepadGps.Droid.Resource.Id.mtrl_picker_fullscreen;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_picker_header = global::NotepadGps.Droid.Resource.Id.mtrl_picker_header;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_picker_header_selection_text = global::NotepadGps.Droid.Resource.Id.mtrl_picker_header_selection_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_picker_header_title_and_selection = global::NotepadGps.Droid.Resource.Id.mtrl_picker_header_title_and_selection;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_picker_header_toggle = global::NotepadGps.Droid.Resource.Id.mtrl_picker_header_toggle;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_picker_text_input_date = global::NotepadGps.Droid.Resource.Id.mtrl_picker_text_input_date;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_picker_text_input_range_end = global::NotepadGps.Droid.Resource.Id.mtrl_picker_text_input_range_end;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_picker_text_input_range_start = global::NotepadGps.Droid.Resource.Id.mtrl_picker_text_input_range_start;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.mtrl_picker_title_text = global::NotepadGps.Droid.Resource.Id.mtrl_picker_title_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.multiply = global::NotepadGps.Droid.Resource.Id.multiply;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.navigation_header_container = global::NotepadGps.Droid.Resource.Id.navigation_header_container;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.never = global::NotepadGps.Droid.Resource.Id.never;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.none = global::NotepadGps.Droid.Resource.Id.none;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.normal = global::NotepadGps.Droid.Resource.Id.normal;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.noScroll = global::NotepadGps.Droid.Resource.Id.noScroll;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.notification_background = global::NotepadGps.Droid.Resource.Id.notification_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.notification_main_column = global::NotepadGps.Droid.Resource.Id.notification_main_column;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.notification_main_column_container = global::NotepadGps.Droid.Resource.Id.notification_main_column_container;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.off = global::NotepadGps.Droid.Resource.Id.off;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.on = global::NotepadGps.Droid.Resource.Id.on;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.outline = global::NotepadGps.Droid.Resource.Id.outline;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.parallax = global::NotepadGps.Droid.Resource.Id.parallax;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.parentPanel = global::NotepadGps.Droid.Resource.Id.parentPanel;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.parent_matrix = global::NotepadGps.Droid.Resource.Id.parent_matrix;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.password_toggle = global::NotepadGps.Droid.Resource.Id.password_toggle;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.peekHeight = global::NotepadGps.Droid.Resource.Id.peekHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.pin = global::NotepadGps.Droid.Resource.Id.pin;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.progress_circular = global::NotepadGps.Droid.Resource.Id.progress_circular;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.progress_horizontal = global::NotepadGps.Droid.Resource.Id.progress_horizontal;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.radio = global::NotepadGps.Droid.Resource.Id.radio;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.right = global::NotepadGps.Droid.Resource.Id.right;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.right_icon = global::NotepadGps.Droid.Resource.Id.right_icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.right_side = global::NotepadGps.Droid.Resource.Id.right_side;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.rounded = global::NotepadGps.Droid.Resource.Id.rounded;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.row_index_key = global::NotepadGps.Droid.Resource.Id.row_index_key;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.satellite = global::NotepadGps.Droid.Resource.Id.satellite;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.save_non_transition_alpha = global::NotepadGps.Droid.Resource.Id.save_non_transition_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.save_overlay_view = global::NotepadGps.Droid.Resource.Id.save_overlay_view;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.scale = global::NotepadGps.Droid.Resource.Id.scale;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.screen = global::NotepadGps.Droid.Resource.Id.screen;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.scroll = global::NotepadGps.Droid.Resource.Id.scroll;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.scrollable = global::NotepadGps.Droid.Resource.Id.scrollable;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.scrollIndicatorDown = global::NotepadGps.Droid.Resource.Id.scrollIndicatorDown;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.scrollIndicatorUp = global::NotepadGps.Droid.Resource.Id.scrollIndicatorUp;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.scrollView = global::NotepadGps.Droid.Resource.Id.scrollView;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.search_badge = global::NotepadGps.Droid.Resource.Id.search_badge;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.search_bar = global::NotepadGps.Droid.Resource.Id.search_bar;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.search_button = global::NotepadGps.Droid.Resource.Id.search_button;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.search_close_btn = global::NotepadGps.Droid.Resource.Id.search_close_btn;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.search_edit_frame = global::NotepadGps.Droid.Resource.Id.search_edit_frame;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.search_go_btn = global::NotepadGps.Droid.Resource.Id.search_go_btn;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.search_mag_icon = global::NotepadGps.Droid.Resource.Id.search_mag_icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.search_plate = global::NotepadGps.Droid.Resource.Id.search_plate;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.search_src_text = global::NotepadGps.Droid.Resource.Id.search_src_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.search_voice_btn = global::NotepadGps.Droid.Resource.Id.search_voice_btn;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.selected = global::NotepadGps.Droid.Resource.Id.selected;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.select_dialog_listview = global::NotepadGps.Droid.Resource.Id.select_dialog_listview;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.shellcontent_appbar = global::NotepadGps.Droid.Resource.Id.shellcontent_appbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.shellcontent_toolbar = global::NotepadGps.Droid.Resource.Id.shellcontent_toolbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.SHIFT = global::NotepadGps.Droid.Resource.Id.SHIFT;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.shortcut = global::NotepadGps.Droid.Resource.Id.shortcut;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.showCustom = global::NotepadGps.Droid.Resource.Id.showCustom;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.showHome = global::NotepadGps.Droid.Resource.Id.showHome;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.showTitle = global::NotepadGps.Droid.Resource.Id.showTitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.skipCollapsed = global::NotepadGps.Droid.Resource.Id.skipCollapsed;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.slide = global::NotepadGps.Droid.Resource.Id.slide;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.sliding_tabs = global::NotepadGps.Droid.Resource.Id.sliding_tabs;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.smallLabel = global::NotepadGps.Droid.Resource.Id.smallLabel;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.snackbar_action = global::NotepadGps.Droid.Resource.Id.snackbar_action;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.snackbar_text = global::NotepadGps.Droid.Resource.Id.snackbar_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.snap = global::NotepadGps.Droid.Resource.Id.snap;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.snapMargins = global::NotepadGps.Droid.Resource.Id.snapMargins;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.spacer = global::NotepadGps.Droid.Resource.Id.spacer;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.split_action_bar = global::NotepadGps.Droid.Resource.Id.split_action_bar;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.src_atop = global::NotepadGps.Droid.Resource.Id.src_atop;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.src_in = global::NotepadGps.Droid.Resource.Id.src_in;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.src_over = global::NotepadGps.Droid.Resource.Id.src_over;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.standard = global::NotepadGps.Droid.Resource.Id.standard;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.start = global::NotepadGps.Droid.Resource.Id.start;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.status_bar_latest_event_content = global::NotepadGps.Droid.Resource.Id.status_bar_latest_event_content;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.stretch = global::NotepadGps.Droid.Resource.Id.stretch;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.submenuarrow = global::NotepadGps.Droid.Resource.Id.submenuarrow;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.submit_area = global::NotepadGps.Droid.Resource.Id.submit_area;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.SYM = global::NotepadGps.Droid.Resource.Id.SYM;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.tabMode = global::NotepadGps.Droid.Resource.Id.tabMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.tag_accessibility_actions = global::NotepadGps.Droid.Resource.Id.tag_accessibility_actions;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.tag_accessibility_clickable_spans = global::NotepadGps.Droid.Resource.Id.tag_accessibility_clickable_spans;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.tag_accessibility_heading = global::NotepadGps.Droid.Resource.Id.tag_accessibility_heading;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.tag_accessibility_pane_title = global::NotepadGps.Droid.Resource.Id.tag_accessibility_pane_title;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.tag_screen_reader_focusable = global::NotepadGps.Droid.Resource.Id.tag_screen_reader_focusable;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.tag_transition_group = global::NotepadGps.Droid.Resource.Id.tag_transition_group;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.tag_unhandled_key_event_manager = global::NotepadGps.Droid.Resource.Id.tag_unhandled_key_event_manager;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.tag_unhandled_key_listeners = global::NotepadGps.Droid.Resource.Id.tag_unhandled_key_listeners;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.terrain = global::NotepadGps.Droid.Resource.Id.terrain;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.test_checkbox_android_button_tint = global::NotepadGps.Droid.Resource.Id.test_checkbox_android_button_tint;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.test_checkbox_app_button_tint = global::NotepadGps.Droid.Resource.Id.test_checkbox_app_button_tint;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.test_radiobutton_android_button_tint = global::NotepadGps.Droid.Resource.Id.test_radiobutton_android_button_tint;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.test_radiobutton_app_button_tint = global::NotepadGps.Droid.Resource.Id.test_radiobutton_app_button_tint;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.text = global::NotepadGps.Droid.Resource.Id.text;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.text2 = global::NotepadGps.Droid.Resource.Id.text2;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.textEnd = global::NotepadGps.Droid.Resource.Id.textEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.textinput_counter = global::NotepadGps.Droid.Resource.Id.textinput_counter;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.textinput_error = global::NotepadGps.Droid.Resource.Id.textinput_error;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.textinput_helper_text = global::NotepadGps.Droid.Resource.Id.textinput_helper_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.textinput_placeholder = global::NotepadGps.Droid.Resource.Id.textinput_placeholder;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.textinput_prefix_text = global::NotepadGps.Droid.Resource.Id.textinput_prefix_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.textinput_suffix_text = global::NotepadGps.Droid.Resource.Id.textinput_suffix_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.textSpacerNoButtons = global::NotepadGps.Droid.Resource.Id.textSpacerNoButtons;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.textSpacerNoTitle = global::NotepadGps.Droid.Resource.Id.textSpacerNoTitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.textStart = global::NotepadGps.Droid.Resource.Id.textStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.text_input_end_icon = global::NotepadGps.Droid.Resource.Id.text_input_end_icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.text_input_start_icon = global::NotepadGps.Droid.Resource.Id.text_input_start_icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.time = global::NotepadGps.Droid.Resource.Id.time;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.title = global::NotepadGps.Droid.Resource.Id.title;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.titleDividerNoCustom = global::NotepadGps.Droid.Resource.Id.titleDividerNoCustom;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.title_template = global::NotepadGps.Droid.Resource.Id.title_template;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.toolbar = global::NotepadGps.Droid.Resource.Id.toolbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.top = global::NotepadGps.Droid.Resource.Id.top;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.topPanel = global::NotepadGps.Droid.Resource.Id.topPanel;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.TOP_END = global::NotepadGps.Droid.Resource.Id.TOP_END;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.TOP_START = global::NotepadGps.Droid.Resource.Id.TOP_START;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.touch_outside = global::NotepadGps.Droid.Resource.Id.touch_outside;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.transition_current_scene = global::NotepadGps.Droid.Resource.Id.transition_current_scene;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.transition_layout_save = global::NotepadGps.Droid.Resource.Id.transition_layout_save;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.transition_position = global::NotepadGps.Droid.Resource.Id.transition_position;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.transition_scene_layoutid_cache = global::NotepadGps.Droid.Resource.Id.transition_scene_layoutid_cache;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.transition_transform = global::NotepadGps.Droid.Resource.Id.transition_transform;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.@unchecked = global::NotepadGps.Droid.Resource.Id.@unchecked;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.uniform = global::NotepadGps.Droid.Resource.Id.uniform;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.unlabeled = global::NotepadGps.Droid.Resource.Id.unlabeled;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.up = global::NotepadGps.Droid.Resource.Id.up;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.useLogo = global::NotepadGps.Droid.Resource.Id.useLogo;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.view_offset_helper = global::NotepadGps.Droid.Resource.Id.view_offset_helper;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.view_tree_saved_state_registry_owner = global::NotepadGps.Droid.Resource.Id.view_tree_saved_state_registry_owner;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.visible = global::NotepadGps.Droid.Resource.Id.visible;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.visible_removing_fragment_view_tag = global::NotepadGps.Droid.Resource.Id.visible_removing_fragment_view_tag;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.wide = global::NotepadGps.Droid.Resource.Id.wide;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.withinBounds = global::NotepadGps.Droid.Resource.Id.withinBounds;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.withText = global::NotepadGps.Droid.Resource.Id.withText;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.wrap_content = global::NotepadGps.Droid.Resource.Id.wrap_content;
-			global::Xamarin.Forms.Maps.Android.Resource.Id.zero_corner_chip = global::NotepadGps.Droid.Resource.Id.zero_corner_chip;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.abc_config_activityDefaultDur = global::NotepadGps.Droid.Resource.Integer.abc_config_activityDefaultDur;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.abc_config_activityShortDur = global::NotepadGps.Droid.Resource.Integer.abc_config_activityShortDur;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.app_bar_elevation_anim_duration = global::NotepadGps.Droid.Resource.Integer.app_bar_elevation_anim_duration;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.bottom_sheet_slide_duration = global::NotepadGps.Droid.Resource.Integer.bottom_sheet_slide_duration;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.cancel_button_image_alpha = global::NotepadGps.Droid.Resource.Integer.cancel_button_image_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.config_tooltipAnimTime = global::NotepadGps.Droid.Resource.Integer.config_tooltipAnimTime;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.design_snackbar_text_max_lines = global::NotepadGps.Droid.Resource.Integer.design_snackbar_text_max_lines;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.design_tab_indicator_anim_duration_ms = global::NotepadGps.Droid.Resource.Integer.design_tab_indicator_anim_duration_ms;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.google_play_services_version = global::NotepadGps.Droid.Resource.Integer.google_play_services_version;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.hide_password_duration = global::NotepadGps.Droid.Resource.Integer.hide_password_duration;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.mtrl_badge_max_character_count = global::NotepadGps.Droid.Resource.Integer.mtrl_badge_max_character_count;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.mtrl_btn_anim_delay_ms = global::NotepadGps.Droid.Resource.Integer.mtrl_btn_anim_delay_ms;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.mtrl_btn_anim_duration_ms = global::NotepadGps.Droid.Resource.Integer.mtrl_btn_anim_duration_ms;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.mtrl_calendar_header_orientation = global::NotepadGps.Droid.Resource.Integer.mtrl_calendar_header_orientation;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.mtrl_calendar_selection_text_lines = global::NotepadGps.Droid.Resource.Integer.mtrl_calendar_selection_text_lines;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.mtrl_calendar_year_selector_span = global::NotepadGps.Droid.Resource.Integer.mtrl_calendar_year_selector_span;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.mtrl_card_anim_delay_ms = global::NotepadGps.Droid.Resource.Integer.mtrl_card_anim_delay_ms;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.mtrl_card_anim_duration_ms = global::NotepadGps.Droid.Resource.Integer.mtrl_card_anim_duration_ms;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.mtrl_chip_anim_duration = global::NotepadGps.Droid.Resource.Integer.mtrl_chip_anim_duration;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::NotepadGps.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.show_password_duration = global::NotepadGps.Droid.Resource.Integer.show_password_duration;
-			global::Xamarin.Forms.Maps.Android.Resource.Integer.status_bar_notification_info_maxnum = global::NotepadGps.Droid.Resource.Integer.status_bar_notification_info_maxnum;
-			global::Xamarin.Forms.Maps.Android.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::NotepadGps.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
-			global::Xamarin.Forms.Maps.Android.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::NotepadGps.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
-			global::Xamarin.Forms.Maps.Android.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::NotepadGps.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
-			global::Xamarin.Forms.Maps.Android.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::NotepadGps.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
-			global::Xamarin.Forms.Maps.Android.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::NotepadGps.Droid.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
-			global::Xamarin.Forms.Maps.Android.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::NotepadGps.Droid.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
-			global::Xamarin.Forms.Maps.Android.Resource.Interpolator.fast_out_slow_in = global::NotepadGps.Droid.Resource.Interpolator.fast_out_slow_in;
-			global::Xamarin.Forms.Maps.Android.Resource.Interpolator.mtrl_fast_out_linear_in = global::NotepadGps.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
-			global::Xamarin.Forms.Maps.Android.Resource.Interpolator.mtrl_fast_out_slow_in = global::NotepadGps.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
-			global::Xamarin.Forms.Maps.Android.Resource.Interpolator.mtrl_linear = global::NotepadGps.Droid.Resource.Interpolator.mtrl_linear;
-			global::Xamarin.Forms.Maps.Android.Resource.Interpolator.mtrl_linear_out_slow_in = global::NotepadGps.Droid.Resource.Interpolator.mtrl_linear_out_slow_in;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_action_bar_title_item = global::NotepadGps.Droid.Resource.Layout.abc_action_bar_title_item;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_action_bar_up_container = global::NotepadGps.Droid.Resource.Layout.abc_action_bar_up_container;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_action_menu_item_layout = global::NotepadGps.Droid.Resource.Layout.abc_action_menu_item_layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_action_menu_layout = global::NotepadGps.Droid.Resource.Layout.abc_action_menu_layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_action_mode_bar = global::NotepadGps.Droid.Resource.Layout.abc_action_mode_bar;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_action_mode_close_item_material = global::NotepadGps.Droid.Resource.Layout.abc_action_mode_close_item_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_activity_chooser_view = global::NotepadGps.Droid.Resource.Layout.abc_activity_chooser_view;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_activity_chooser_view_list_item = global::NotepadGps.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_alert_dialog_button_bar_material = global::NotepadGps.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_alert_dialog_material = global::NotepadGps.Droid.Resource.Layout.abc_alert_dialog_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_alert_dialog_title_material = global::NotepadGps.Droid.Resource.Layout.abc_alert_dialog_title_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_cascading_menu_item_layout = global::NotepadGps.Droid.Resource.Layout.abc_cascading_menu_item_layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_dialog_title_material = global::NotepadGps.Droid.Resource.Layout.abc_dialog_title_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_expanded_menu_layout = global::NotepadGps.Droid.Resource.Layout.abc_expanded_menu_layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_list_menu_item_checkbox = global::NotepadGps.Droid.Resource.Layout.abc_list_menu_item_checkbox;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_list_menu_item_icon = global::NotepadGps.Droid.Resource.Layout.abc_list_menu_item_icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_list_menu_item_layout = global::NotepadGps.Droid.Resource.Layout.abc_list_menu_item_layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_list_menu_item_radio = global::NotepadGps.Droid.Resource.Layout.abc_list_menu_item_radio;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_popup_menu_header_item_layout = global::NotepadGps.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_popup_menu_item_layout = global::NotepadGps.Droid.Resource.Layout.abc_popup_menu_item_layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_screen_content_include = global::NotepadGps.Droid.Resource.Layout.abc_screen_content_include;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_screen_simple = global::NotepadGps.Droid.Resource.Layout.abc_screen_simple;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_screen_simple_overlay_action_mode = global::NotepadGps.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_screen_toolbar = global::NotepadGps.Droid.Resource.Layout.abc_screen_toolbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::NotepadGps.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_search_view = global::NotepadGps.Droid.Resource.Layout.abc_search_view;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_select_dialog_material = global::NotepadGps.Droid.Resource.Layout.abc_select_dialog_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.abc_tooltip = global::NotepadGps.Droid.Resource.Layout.abc_tooltip;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.BottomTabLayout = global::NotepadGps.Droid.Resource.Layout.BottomTabLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.custom_dialog = global::NotepadGps.Droid.Resource.Layout.custom_dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.design_bottom_navigation_item = global::NotepadGps.Droid.Resource.Layout.design_bottom_navigation_item;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.design_bottom_sheet_dialog = global::NotepadGps.Droid.Resource.Layout.design_bottom_sheet_dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.design_layout_snackbar = global::NotepadGps.Droid.Resource.Layout.design_layout_snackbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.design_layout_snackbar_include = global::NotepadGps.Droid.Resource.Layout.design_layout_snackbar_include;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.design_layout_tab_icon = global::NotepadGps.Droid.Resource.Layout.design_layout_tab_icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.design_layout_tab_text = global::NotepadGps.Droid.Resource.Layout.design_layout_tab_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.design_menu_item_action_area = global::NotepadGps.Droid.Resource.Layout.design_menu_item_action_area;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.design_navigation_item = global::NotepadGps.Droid.Resource.Layout.design_navigation_item;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.design_navigation_item_header = global::NotepadGps.Droid.Resource.Layout.design_navigation_item_header;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.design_navigation_item_separator = global::NotepadGps.Droid.Resource.Layout.design_navigation_item_separator;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.design_navigation_item_subheader = global::NotepadGps.Droid.Resource.Layout.design_navigation_item_subheader;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.design_navigation_menu = global::NotepadGps.Droid.Resource.Layout.design_navigation_menu;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.design_navigation_menu_item = global::NotepadGps.Droid.Resource.Layout.design_navigation_menu_item;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.design_text_input_end_icon = global::NotepadGps.Droid.Resource.Layout.design_text_input_end_icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.design_text_input_start_icon = global::NotepadGps.Droid.Resource.Layout.design_text_input_start_icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.FallbackTabbarDoNotUse = global::NotepadGps.Droid.Resource.Layout.FallbackTabbarDoNotUse;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.FallbackToolbarDoNotUse = global::NotepadGps.Droid.Resource.Layout.FallbackToolbarDoNotUse;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.FlyoutContent = global::NotepadGps.Droid.Resource.Layout.FlyoutContent;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_alert_dialog = global::NotepadGps.Droid.Resource.Layout.mtrl_alert_dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_alert_dialog_actions = global::NotepadGps.Droid.Resource.Layout.mtrl_alert_dialog_actions;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_alert_dialog_title = global::NotepadGps.Droid.Resource.Layout.mtrl_alert_dialog_title;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_alert_select_dialog_item = global::NotepadGps.Droid.Resource.Layout.mtrl_alert_select_dialog_item;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_alert_select_dialog_multichoice = global::NotepadGps.Droid.Resource.Layout.mtrl_alert_select_dialog_multichoice;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_alert_select_dialog_singlechoice = global::NotepadGps.Droid.Resource.Layout.mtrl_alert_select_dialog_singlechoice;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_calendar_day = global::NotepadGps.Droid.Resource.Layout.mtrl_calendar_day;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_calendar_days_of_week = global::NotepadGps.Droid.Resource.Layout.mtrl_calendar_days_of_week;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_calendar_day_of_week = global::NotepadGps.Droid.Resource.Layout.mtrl_calendar_day_of_week;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_calendar_horizontal = global::NotepadGps.Droid.Resource.Layout.mtrl_calendar_horizontal;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_calendar_month = global::NotepadGps.Droid.Resource.Layout.mtrl_calendar_month;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_calendar_months = global::NotepadGps.Droid.Resource.Layout.mtrl_calendar_months;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_calendar_month_labeled = global::NotepadGps.Droid.Resource.Layout.mtrl_calendar_month_labeled;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_calendar_month_navigation = global::NotepadGps.Droid.Resource.Layout.mtrl_calendar_month_navigation;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_calendar_vertical = global::NotepadGps.Droid.Resource.Layout.mtrl_calendar_vertical;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_calendar_year = global::NotepadGps.Droid.Resource.Layout.mtrl_calendar_year;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_layout_snackbar = global::NotepadGps.Droid.Resource.Layout.mtrl_layout_snackbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_layout_snackbar_include = global::NotepadGps.Droid.Resource.Layout.mtrl_layout_snackbar_include;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_picker_actions = global::NotepadGps.Droid.Resource.Layout.mtrl_picker_actions;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_picker_dialog = global::NotepadGps.Droid.Resource.Layout.mtrl_picker_dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_picker_fullscreen = global::NotepadGps.Droid.Resource.Layout.mtrl_picker_fullscreen;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_picker_header_dialog = global::NotepadGps.Droid.Resource.Layout.mtrl_picker_header_dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_picker_header_fullscreen = global::NotepadGps.Droid.Resource.Layout.mtrl_picker_header_fullscreen;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_picker_header_selection_text = global::NotepadGps.Droid.Resource.Layout.mtrl_picker_header_selection_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_picker_header_title_text = global::NotepadGps.Droid.Resource.Layout.mtrl_picker_header_title_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_picker_header_toggle = global::NotepadGps.Droid.Resource.Layout.mtrl_picker_header_toggle;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_picker_text_input_date = global::NotepadGps.Droid.Resource.Layout.mtrl_picker_text_input_date;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.mtrl_picker_text_input_date_range = global::NotepadGps.Droid.Resource.Layout.mtrl_picker_text_input_date_range;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.notification_action = global::NotepadGps.Droid.Resource.Layout.notification_action;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.notification_action_tombstone = global::NotepadGps.Droid.Resource.Layout.notification_action_tombstone;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.notification_media_action = global::NotepadGps.Droid.Resource.Layout.notification_media_action;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.notification_media_cancel_action = global::NotepadGps.Droid.Resource.Layout.notification_media_cancel_action;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.notification_template_big_media = global::NotepadGps.Droid.Resource.Layout.notification_template_big_media;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.notification_template_big_media_custom = global::NotepadGps.Droid.Resource.Layout.notification_template_big_media_custom;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.notification_template_big_media_narrow = global::NotepadGps.Droid.Resource.Layout.notification_template_big_media_narrow;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.notification_template_big_media_narrow_custom = global::NotepadGps.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.notification_template_custom_big = global::NotepadGps.Droid.Resource.Layout.notification_template_custom_big;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.notification_template_icon_group = global::NotepadGps.Droid.Resource.Layout.notification_template_icon_group;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.notification_template_lines_media = global::NotepadGps.Droid.Resource.Layout.notification_template_lines_media;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.notification_template_media = global::NotepadGps.Droid.Resource.Layout.notification_template_media;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.notification_template_media_custom = global::NotepadGps.Droid.Resource.Layout.notification_template_media_custom;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.notification_template_part_chronometer = global::NotepadGps.Droid.Resource.Layout.notification_template_part_chronometer;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.notification_template_part_time = global::NotepadGps.Droid.Resource.Layout.notification_template_part_time;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.RootLayout = global::NotepadGps.Droid.Resource.Layout.RootLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.select_dialog_item_material = global::NotepadGps.Droid.Resource.Layout.select_dialog_item_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.select_dialog_multichoice_material = global::NotepadGps.Droid.Resource.Layout.select_dialog_multichoice_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.select_dialog_singlechoice_material = global::NotepadGps.Droid.Resource.Layout.select_dialog_singlechoice_material;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.ShellContent = global::NotepadGps.Droid.Resource.Layout.ShellContent;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::NotepadGps.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.Tabbar = global::NotepadGps.Droid.Resource.Layout.Tabbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.test_action_chip = global::NotepadGps.Droid.Resource.Layout.test_action_chip;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.test_chip_zero_corner_radius = global::NotepadGps.Droid.Resource.Layout.test_chip_zero_corner_radius;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.test_design_checkbox = global::NotepadGps.Droid.Resource.Layout.test_design_checkbox;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.test_design_radiobutton = global::NotepadGps.Droid.Resource.Layout.test_design_radiobutton;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.test_reflow_chipgroup = global::NotepadGps.Droid.Resource.Layout.test_reflow_chipgroup;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.test_toolbar = global::NotepadGps.Droid.Resource.Layout.test_toolbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.test_toolbar_custom_background = global::NotepadGps.Droid.Resource.Layout.test_toolbar_custom_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.test_toolbar_elevation = global::NotepadGps.Droid.Resource.Layout.test_toolbar_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.test_toolbar_surface = global::NotepadGps.Droid.Resource.Layout.test_toolbar_surface;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.text_view_without_line_height = global::NotepadGps.Droid.Resource.Layout.text_view_without_line_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.text_view_with_line_height_from_appearance = global::NotepadGps.Droid.Resource.Layout.text_view_with_line_height_from_appearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.text_view_with_line_height_from_layout = global::NotepadGps.Droid.Resource.Layout.text_view_with_line_height_from_layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.text_view_with_line_height_from_style = global::NotepadGps.Droid.Resource.Layout.text_view_with_line_height_from_style;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.text_view_with_theme_line_height = global::NotepadGps.Droid.Resource.Layout.text_view_with_theme_line_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Layout.Toolbar = global::NotepadGps.Droid.Resource.Layout.Toolbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Plurals.mtrl_badge_content_description = global::NotepadGps.Droid.Resource.Plurals.mtrl_badge_content_description;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_action_bar_home_description = global::NotepadGps.Droid.Resource.String.abc_action_bar_home_description;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_action_bar_up_description = global::NotepadGps.Droid.Resource.String.abc_action_bar_up_description;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_action_menu_overflow_description = global::NotepadGps.Droid.Resource.String.abc_action_menu_overflow_description;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_action_mode_done = global::NotepadGps.Droid.Resource.String.abc_action_mode_done;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_activitychooserview_choose_application = global::NotepadGps.Droid.Resource.String.abc_activitychooserview_choose_application;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_activity_chooser_view_see_all = global::NotepadGps.Droid.Resource.String.abc_activity_chooser_view_see_all;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_capital_off = global::NotepadGps.Droid.Resource.String.abc_capital_off;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_capital_on = global::NotepadGps.Droid.Resource.String.abc_capital_on;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_menu_alt_shortcut_label = global::NotepadGps.Droid.Resource.String.abc_menu_alt_shortcut_label;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_menu_ctrl_shortcut_label = global::NotepadGps.Droid.Resource.String.abc_menu_ctrl_shortcut_label;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_menu_delete_shortcut_label = global::NotepadGps.Droid.Resource.String.abc_menu_delete_shortcut_label;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_menu_enter_shortcut_label = global::NotepadGps.Droid.Resource.String.abc_menu_enter_shortcut_label;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_menu_function_shortcut_label = global::NotepadGps.Droid.Resource.String.abc_menu_function_shortcut_label;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_menu_meta_shortcut_label = global::NotepadGps.Droid.Resource.String.abc_menu_meta_shortcut_label;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_menu_shift_shortcut_label = global::NotepadGps.Droid.Resource.String.abc_menu_shift_shortcut_label;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_menu_space_shortcut_label = global::NotepadGps.Droid.Resource.String.abc_menu_space_shortcut_label;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_menu_sym_shortcut_label = global::NotepadGps.Droid.Resource.String.abc_menu_sym_shortcut_label;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_prepend_shortcut_label = global::NotepadGps.Droid.Resource.String.abc_prepend_shortcut_label;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_searchview_description_clear = global::NotepadGps.Droid.Resource.String.abc_searchview_description_clear;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_searchview_description_query = global::NotepadGps.Droid.Resource.String.abc_searchview_description_query;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_searchview_description_search = global::NotepadGps.Droid.Resource.String.abc_searchview_description_search;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_searchview_description_submit = global::NotepadGps.Droid.Resource.String.abc_searchview_description_submit;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_searchview_description_voice = global::NotepadGps.Droid.Resource.String.abc_searchview_description_voice;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_search_hint = global::NotepadGps.Droid.Resource.String.abc_search_hint;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_shareactionprovider_share_with = global::NotepadGps.Droid.Resource.String.abc_shareactionprovider_share_with;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_shareactionprovider_share_with_application = global::NotepadGps.Droid.Resource.String.abc_shareactionprovider_share_with_application;
-			global::Xamarin.Forms.Maps.Android.Resource.String.abc_toolbar_collapse_description = global::NotepadGps.Droid.Resource.String.abc_toolbar_collapse_description;
-			global::Xamarin.Forms.Maps.Android.Resource.String.appbar_scrolling_view_behavior = global::NotepadGps.Droid.Resource.String.appbar_scrolling_view_behavior;
-			global::Xamarin.Forms.Maps.Android.Resource.String.bottom_sheet_behavior = global::NotepadGps.Droid.Resource.String.bottom_sheet_behavior;
-			global::Xamarin.Forms.Maps.Android.Resource.String.character_counter_content_description = global::NotepadGps.Droid.Resource.String.character_counter_content_description;
-			global::Xamarin.Forms.Maps.Android.Resource.String.character_counter_overflowed_content_description = global::NotepadGps.Droid.Resource.String.character_counter_overflowed_content_description;
-			global::Xamarin.Forms.Maps.Android.Resource.String.character_counter_pattern = global::NotepadGps.Droid.Resource.String.character_counter_pattern;
-			global::Xamarin.Forms.Maps.Android.Resource.String.chip_text = global::NotepadGps.Droid.Resource.String.chip_text;
-			global::Xamarin.Forms.Maps.Android.Resource.String.clear_text_end_icon_content_description = global::NotepadGps.Droid.Resource.String.clear_text_end_icon_content_description;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_google_play_services_enable_button = global::NotepadGps.Droid.Resource.String.common_google_play_services_enable_button;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_google_play_services_enable_text = global::NotepadGps.Droid.Resource.String.common_google_play_services_enable_text;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_google_play_services_enable_title = global::NotepadGps.Droid.Resource.String.common_google_play_services_enable_title;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_google_play_services_install_button = global::NotepadGps.Droid.Resource.String.common_google_play_services_install_button;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_google_play_services_install_text = global::NotepadGps.Droid.Resource.String.common_google_play_services_install_text;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_google_play_services_install_title = global::NotepadGps.Droid.Resource.String.common_google_play_services_install_title;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_google_play_services_notification_channel_name = global::NotepadGps.Droid.Resource.String.common_google_play_services_notification_channel_name;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_google_play_services_notification_ticker = global::NotepadGps.Droid.Resource.String.common_google_play_services_notification_ticker;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_google_play_services_unknown_issue = global::NotepadGps.Droid.Resource.String.common_google_play_services_unknown_issue;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_google_play_services_unsupported_text = global::NotepadGps.Droid.Resource.String.common_google_play_services_unsupported_text;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_google_play_services_update_button = global::NotepadGps.Droid.Resource.String.common_google_play_services_update_button;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_google_play_services_update_text = global::NotepadGps.Droid.Resource.String.common_google_play_services_update_text;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_google_play_services_update_title = global::NotepadGps.Droid.Resource.String.common_google_play_services_update_title;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_google_play_services_updating_text = global::NotepadGps.Droid.Resource.String.common_google_play_services_updating_text;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_google_play_services_wear_update_text = global::NotepadGps.Droid.Resource.String.common_google_play_services_wear_update_text;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_open_on_phone = global::NotepadGps.Droid.Resource.String.common_open_on_phone;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_signin_button_text = global::NotepadGps.Droid.Resource.String.common_signin_button_text;
-			global::Xamarin.Forms.Maps.Android.Resource.String.common_signin_button_text_long = global::NotepadGps.Droid.Resource.String.common_signin_button_text_long;
-			global::Xamarin.Forms.Maps.Android.Resource.String.error_icon_content_description = global::NotepadGps.Droid.Resource.String.error_icon_content_description;
-			global::Xamarin.Forms.Maps.Android.Resource.String.exposed_dropdown_menu_content_description = global::NotepadGps.Droid.Resource.String.exposed_dropdown_menu_content_description;
-			global::Xamarin.Forms.Maps.Android.Resource.String.fab_transformation_scrim_behavior = global::NotepadGps.Droid.Resource.String.fab_transformation_scrim_behavior;
-			global::Xamarin.Forms.Maps.Android.Resource.String.fab_transformation_sheet_behavior = global::NotepadGps.Droid.Resource.String.fab_transformation_sheet_behavior;
-			global::Xamarin.Forms.Maps.Android.Resource.String.hide_bottom_view_on_scroll_behavior = global::NotepadGps.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
-			global::Xamarin.Forms.Maps.Android.Resource.String.icon_content_description = global::NotepadGps.Droid.Resource.String.icon_content_description;
-			global::Xamarin.Forms.Maps.Android.Resource.String.item_view_role_description = global::NotepadGps.Droid.Resource.String.item_view_role_description;
-			global::Xamarin.Forms.Maps.Android.Resource.String.material_slider_range_end = global::NotepadGps.Droid.Resource.String.material_slider_range_end;
-			global::Xamarin.Forms.Maps.Android.Resource.String.material_slider_range_start = global::NotepadGps.Droid.Resource.String.material_slider_range_start;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_badge_numberless_content_description = global::NotepadGps.Droid.Resource.String.mtrl_badge_numberless_content_description;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_chip_close_icon_content_description = global::NotepadGps.Droid.Resource.String.mtrl_chip_close_icon_content_description;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_exceed_max_badge_number_content_description = global::NotepadGps.Droid.Resource.String.mtrl_exceed_max_badge_number_content_description;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_exceed_max_badge_number_suffix = global::NotepadGps.Droid.Resource.String.mtrl_exceed_max_badge_number_suffix;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_a11y_next_month = global::NotepadGps.Droid.Resource.String.mtrl_picker_a11y_next_month;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_a11y_prev_month = global::NotepadGps.Droid.Resource.String.mtrl_picker_a11y_prev_month;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_announce_current_selection = global::NotepadGps.Droid.Resource.String.mtrl_picker_announce_current_selection;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_cancel = global::NotepadGps.Droid.Resource.String.mtrl_picker_cancel;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_confirm = global::NotepadGps.Droid.Resource.String.mtrl_picker_confirm;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_date_header_selected = global::NotepadGps.Droid.Resource.String.mtrl_picker_date_header_selected;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_date_header_title = global::NotepadGps.Droid.Resource.String.mtrl_picker_date_header_title;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_date_header_unselected = global::NotepadGps.Droid.Resource.String.mtrl_picker_date_header_unselected;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_day_of_week_column_header = global::NotepadGps.Droid.Resource.String.mtrl_picker_day_of_week_column_header;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_invalid_format = global::NotepadGps.Droid.Resource.String.mtrl_picker_invalid_format;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_invalid_format_example = global::NotepadGps.Droid.Resource.String.mtrl_picker_invalid_format_example;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_invalid_format_use = global::NotepadGps.Droid.Resource.String.mtrl_picker_invalid_format_use;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_invalid_range = global::NotepadGps.Droid.Resource.String.mtrl_picker_invalid_range;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_navigate_to_year_description = global::NotepadGps.Droid.Resource.String.mtrl_picker_navigate_to_year_description;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_out_of_range = global::NotepadGps.Droid.Resource.String.mtrl_picker_out_of_range;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_range_header_only_end_selected = global::NotepadGps.Droid.Resource.String.mtrl_picker_range_header_only_end_selected;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_range_header_only_start_selected = global::NotepadGps.Droid.Resource.String.mtrl_picker_range_header_only_start_selected;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_range_header_selected = global::NotepadGps.Droid.Resource.String.mtrl_picker_range_header_selected;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_range_header_title = global::NotepadGps.Droid.Resource.String.mtrl_picker_range_header_title;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_range_header_unselected = global::NotepadGps.Droid.Resource.String.mtrl_picker_range_header_unselected;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_save = global::NotepadGps.Droid.Resource.String.mtrl_picker_save;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_text_input_date_hint = global::NotepadGps.Droid.Resource.String.mtrl_picker_text_input_date_hint;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_text_input_date_range_end_hint = global::NotepadGps.Droid.Resource.String.mtrl_picker_text_input_date_range_end_hint;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_text_input_date_range_start_hint = global::NotepadGps.Droid.Resource.String.mtrl_picker_text_input_date_range_start_hint;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_text_input_day_abbr = global::NotepadGps.Droid.Resource.String.mtrl_picker_text_input_day_abbr;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_text_input_month_abbr = global::NotepadGps.Droid.Resource.String.mtrl_picker_text_input_month_abbr;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_text_input_year_abbr = global::NotepadGps.Droid.Resource.String.mtrl_picker_text_input_year_abbr;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_toggle_to_calendar_input_mode = global::NotepadGps.Droid.Resource.String.mtrl_picker_toggle_to_calendar_input_mode;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_toggle_to_day_selection = global::NotepadGps.Droid.Resource.String.mtrl_picker_toggle_to_day_selection;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_toggle_to_text_input_mode = global::NotepadGps.Droid.Resource.String.mtrl_picker_toggle_to_text_input_mode;
-			global::Xamarin.Forms.Maps.Android.Resource.String.mtrl_picker_toggle_to_year_selection = global::NotepadGps.Droid.Resource.String.mtrl_picker_toggle_to_year_selection;
-			global::Xamarin.Forms.Maps.Android.Resource.String.overflow_tab_title = global::NotepadGps.Droid.Resource.String.overflow_tab_title;
-			global::Xamarin.Forms.Maps.Android.Resource.String.password_toggle_content_description = global::NotepadGps.Droid.Resource.String.password_toggle_content_description;
-			global::Xamarin.Forms.Maps.Android.Resource.String.path_password_eye = global::NotepadGps.Droid.Resource.String.path_password_eye;
-			global::Xamarin.Forms.Maps.Android.Resource.String.path_password_eye_mask_strike_through = global::NotepadGps.Droid.Resource.String.path_password_eye_mask_strike_through;
-			global::Xamarin.Forms.Maps.Android.Resource.String.path_password_eye_mask_visible = global::NotepadGps.Droid.Resource.String.path_password_eye_mask_visible;
-			global::Xamarin.Forms.Maps.Android.Resource.String.path_password_strike_through = global::NotepadGps.Droid.Resource.String.path_password_strike_through;
-			global::Xamarin.Forms.Maps.Android.Resource.String.search_menu_title = global::NotepadGps.Droid.Resource.String.search_menu_title;
-			global::Xamarin.Forms.Maps.Android.Resource.String.status_bar_notification_info_overflow = global::NotepadGps.Droid.Resource.String.status_bar_notification_info_overflow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.AlertDialog_AppCompat = global::NotepadGps.Droid.Resource.Style.AlertDialog_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.AlertDialog_AppCompat_Light = global::NotepadGps.Droid.Resource.Style.AlertDialog_AppCompat_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.AndroidThemeColorAccentYellow = global::NotepadGps.Droid.Resource.Style.AndroidThemeColorAccentYellow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Animation_AppCompat_Dialog = global::NotepadGps.Droid.Resource.Style.Animation_AppCompat_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Animation_AppCompat_DropDownUp = global::NotepadGps.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Animation_AppCompat_Tooltip = global::NotepadGps.Droid.Resource.Style.Animation_AppCompat_Tooltip;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Animation_Design_BottomSheetDialog = global::NotepadGps.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Animation_MaterialComponents_BottomSheetDialog = global::NotepadGps.Droid.Resource.Style.Animation_MaterialComponents_BottomSheetDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.AppCompatDialogStyle = global::NotepadGps.Droid.Resource.Style.AppCompatDialogStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_AlertDialog_AppCompat = global::NotepadGps.Droid.Resource.Style.Base_AlertDialog_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_AlertDialog_AppCompat_Light = global::NotepadGps.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Animation_AppCompat_Dialog = global::NotepadGps.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::NotepadGps.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Animation_AppCompat_Tooltip = global::NotepadGps.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_CardView = global::NotepadGps.Droid.Resource.Style.Base_CardView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::NotepadGps.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::NotepadGps.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_MaterialAlertDialog_MaterialComponents_Title_Icon = global::NotepadGps.Droid.Resource.Style.Base_MaterialAlertDialog_MaterialComponents_Title_Icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_MaterialAlertDialog_MaterialComponents_Title_Panel = global::NotepadGps.Droid.Resource.Style.Base_MaterialAlertDialog_MaterialComponents_Title_Panel;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_MaterialAlertDialog_MaterialComponents_Title_Text = global::NotepadGps.Droid.Resource.Style.Base_MaterialAlertDialog_MaterialComponents_Title_Text;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Button = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Large = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Small = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Title = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_MaterialComponents_Badge = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_MaterialComponents_Badge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_MaterialComponents_Button = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_MaterialComponents_Button;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_MaterialComponents_Headline6 = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_MaterialComponents_Headline6;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_MaterialComponents_Subtitle2 = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_MaterialComponents_Subtitle2;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::NotepadGps.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::NotepadGps.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::NotepadGps.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::NotepadGps.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::NotepadGps.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::NotepadGps.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::NotepadGps.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::NotepadGps.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog = global::NotepadGps.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert = global::NotepadGps.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert_Framework = global::NotepadGps.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert_Framework;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_ThemeOverlay_MaterialComponents_Light_Dialog_Alert_Framework = global::NotepadGps.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Light_Dialog_Alert_Framework;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_ThemeOverlay_MaterialComponents_MaterialAlertDialog = global::NotepadGps.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_MaterialAlertDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_AppCompat = global::NotepadGps.Droid.Resource.Style.Base_Theme_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::NotepadGps.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::NotepadGps.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::NotepadGps.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::NotepadGps.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::NotepadGps.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::NotepadGps.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_AppCompat_Light = global::NotepadGps.Droid.Resource.Style.Base_Theme_AppCompat_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::NotepadGps.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::NotepadGps.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::NotepadGps.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::NotepadGps.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::NotepadGps.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::NotepadGps.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_Bridge = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_Light = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Bridge = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::NotepadGps.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::NotepadGps.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::NotepadGps.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_MaterialAlertDialog = global::NotepadGps.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_MaterialAlertDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V14_Theme_MaterialComponents = global::NotepadGps.Droid.Resource.Style.Base_V14_Theme_MaterialComponents;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge = global::NotepadGps.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog = global::NotepadGps.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog_Bridge = global::NotepadGps.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light = global::NotepadGps.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge = global::NotepadGps.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::NotepadGps.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog = global::NotepadGps.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog_Bridge = global::NotepadGps.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::NotepadGps.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V21_Theme_AppCompat = global::NotepadGps.Droid.Resource.Style.Base_V21_Theme_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::NotepadGps.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::NotepadGps.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::NotepadGps.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V21_Theme_MaterialComponents = global::NotepadGps.Droid.Resource.Style.Base_V21_Theme_MaterialComponents;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V21_Theme_MaterialComponents_Dialog = global::NotepadGps.Droid.Resource.Style.Base_V21_Theme_MaterialComponents_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V21_Theme_MaterialComponents_Light = global::NotepadGps.Droid.Resource.Style.Base_V21_Theme_MaterialComponents_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V21_Theme_MaterialComponents_Light_Dialog = global::NotepadGps.Droid.Resource.Style.Base_V21_Theme_MaterialComponents_Light_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V22_Theme_AppCompat = global::NotepadGps.Droid.Resource.Style.Base_V22_Theme_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::NotepadGps.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V23_Theme_AppCompat = global::NotepadGps.Droid.Resource.Style.Base_V23_Theme_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V23_Theme_AppCompat_Light = global::NotepadGps.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V26_Theme_AppCompat = global::NotepadGps.Droid.Resource.Style.Base_V26_Theme_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V26_Theme_AppCompat_Light = global::NotepadGps.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::NotepadGps.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V28_Theme_AppCompat = global::NotepadGps.Droid.Resource.Style.Base_V28_Theme_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V28_Theme_AppCompat_Light = global::NotepadGps.Droid.Resource.Style.Base_V28_Theme_AppCompat_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::NotepadGps.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V7_Theme_AppCompat = global::NotepadGps.Droid.Resource.Style.Base_V7_Theme_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::NotepadGps.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::NotepadGps.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::NotepadGps.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::NotepadGps.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::NotepadGps.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::NotepadGps.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ActionBar = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ActionButton = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ActionMode = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Button = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Button;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_EditText = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ImageButton = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ListView = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_RatingBar = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_SeekBar = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_TextView = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::NotepadGps.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_Design_TabLayout = global::NotepadGps.Droid.Resource.Style.Base_Widget_Design_TabLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_MaterialComponents_AutoCompleteTextView = global::NotepadGps.Droid.Resource.Style.Base_Widget_MaterialComponents_AutoCompleteTextView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_MaterialComponents_CheckedTextView = global::NotepadGps.Droid.Resource.Style.Base_Widget_MaterialComponents_CheckedTextView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_MaterialComponents_Chip = global::NotepadGps.Droid.Resource.Style.Base_Widget_MaterialComponents_Chip;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_MaterialComponents_PopupMenu = global::NotepadGps.Droid.Resource.Style.Base_Widget_MaterialComponents_PopupMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_ContextMenu = global::NotepadGps.Droid.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_ContextMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_ListPopupWindow = global::NotepadGps.Droid.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_ListPopupWindow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_Overflow = global::NotepadGps.Droid.Resource.Style.Base_Widget_MaterialComponents_PopupMenu_Overflow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_MaterialComponents_Slider = global::NotepadGps.Droid.Resource.Style.Base_Widget_MaterialComponents_Slider;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText = global::NotepadGps.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout = global::NotepadGps.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Base_Widget_MaterialComponents_TextView = global::NotepadGps.Droid.Resource.Style.Base_Widget_MaterialComponents_TextView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.CardView = global::NotepadGps.Droid.Resource.Style.CardView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.CardView_Dark = global::NotepadGps.Droid.Resource.Style.CardView_Dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.CardView_Light = global::NotepadGps.Droid.Resource.Style.CardView_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.collectionViewTheme = global::NotepadGps.Droid.Resource.Style.collectionViewTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.EmptyTheme = global::NotepadGps.Droid.Resource.Style.EmptyTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.MainTheme = global::NotepadGps.Droid.Resource.Style.MainTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.MainTheme_Base = global::NotepadGps.Droid.Resource.Style.MainTheme_Base;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.MaterialAlertDialog_MaterialComponents = global::NotepadGps.Droid.Resource.Style.MaterialAlertDialog_MaterialComponents;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.MaterialAlertDialog_MaterialComponents_Body_Text = global::NotepadGps.Droid.Resource.Style.MaterialAlertDialog_MaterialComponents_Body_Text;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.MaterialAlertDialog_MaterialComponents_Picker_Date_Calendar = global::NotepadGps.Droid.Resource.Style.MaterialAlertDialog_MaterialComponents_Picker_Date_Calendar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.MaterialAlertDialog_MaterialComponents_Picker_Date_Spinner = global::NotepadGps.Droid.Resource.Style.MaterialAlertDialog_MaterialComponents_Picker_Date_Spinner;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.MaterialAlertDialog_MaterialComponents_Title_Icon = global::NotepadGps.Droid.Resource.Style.MaterialAlertDialog_MaterialComponents_Title_Icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.MaterialAlertDialog_MaterialComponents_Title_Icon_CenterStacked = global::NotepadGps.Droid.Resource.Style.MaterialAlertDialog_MaterialComponents_Title_Icon_CenterStacked;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.MaterialAlertDialog_MaterialComponents_Title_Panel = global::NotepadGps.Droid.Resource.Style.MaterialAlertDialog_MaterialComponents_Title_Panel;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked = global::NotepadGps.Droid.Resource.Style.MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.MaterialAlertDialog_MaterialComponents_Title_Text = global::NotepadGps.Droid.Resource.Style.MaterialAlertDialog_MaterialComponents_Title_Text;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked = global::NotepadGps.Droid.Resource.Style.MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Platform_AppCompat = global::NotepadGps.Droid.Resource.Style.Platform_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Platform_AppCompat_Light = global::NotepadGps.Droid.Resource.Style.Platform_AppCompat_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Platform_MaterialComponents = global::NotepadGps.Droid.Resource.Style.Platform_MaterialComponents;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Platform_MaterialComponents_Dialog = global::NotepadGps.Droid.Resource.Style.Platform_MaterialComponents_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Platform_MaterialComponents_Light = global::NotepadGps.Droid.Resource.Style.Platform_MaterialComponents_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Platform_MaterialComponents_Light_Dialog = global::NotepadGps.Droid.Resource.Style.Platform_MaterialComponents_Light_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::NotepadGps.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::NotepadGps.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::NotepadGps.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Platform_V21_AppCompat = global::NotepadGps.Droid.Resource.Style.Platform_V21_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Platform_V21_AppCompat_Light = global::NotepadGps.Droid.Resource.Style.Platform_V21_AppCompat_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Platform_V25_AppCompat = global::NotepadGps.Droid.Resource.Style.Platform_V25_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Platform_V25_AppCompat_Light = global::NotepadGps.Droid.Resource.Style.Platform_V25_AppCompat_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Platform_Widget_AppCompat_Spinner = global::NotepadGps.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::NotepadGps.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::NotepadGps.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::NotepadGps.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::NotepadGps.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::NotepadGps.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = global::NotepadGps.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = global::NotepadGps.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::NotepadGps.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = global::NotepadGps.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::NotepadGps.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::NotepadGps.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::NotepadGps.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::NotepadGps.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::NotepadGps.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::NotepadGps.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::NotepadGps.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::NotepadGps.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.scrollViewScrollBars = global::NotepadGps.Droid.Resource.Style.scrollViewScrollBars;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.scrollViewTheme = global::NotepadGps.Droid.Resource.Style.scrollViewTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearanceOverlay = global::NotepadGps.Droid.Resource.Style.ShapeAppearanceOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearanceOverlay_BottomLeftDifferentCornerSize = global::NotepadGps.Droid.Resource.Style.ShapeAppearanceOverlay_BottomLeftDifferentCornerSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearanceOverlay_BottomRightCut = global::NotepadGps.Droid.Resource.Style.ShapeAppearanceOverlay_BottomRightCut;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearanceOverlay_Cut = global::NotepadGps.Droid.Resource.Style.ShapeAppearanceOverlay_Cut;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearanceOverlay_DifferentCornerSize = global::NotepadGps.Droid.Resource.Style.ShapeAppearanceOverlay_DifferentCornerSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearanceOverlay_MaterialComponents_BottomSheet = global::NotepadGps.Droid.Resource.Style.ShapeAppearanceOverlay_MaterialComponents_BottomSheet;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearanceOverlay_MaterialComponents_Chip = global::NotepadGps.Droid.Resource.Style.ShapeAppearanceOverlay_MaterialComponents_Chip;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearanceOverlay_MaterialComponents_ExtendedFloatingActionButton = global::NotepadGps.Droid.Resource.Style.ShapeAppearanceOverlay_MaterialComponents_ExtendedFloatingActionButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearanceOverlay_MaterialComponents_FloatingActionButton = global::NotepadGps.Droid.Resource.Style.ShapeAppearanceOverlay_MaterialComponents_FloatingActionButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day = global::NotepadGps.Droid.Resource.Style.ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Window_Fullscreen = global::NotepadGps.Droid.Resource.Style.ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Window_Fullscreen;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Year = global::NotepadGps.Droid.Resource.Style.ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Year;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearanceOverlay_MaterialComponents_TextInputLayout_FilledBox = global::NotepadGps.Droid.Resource.Style.ShapeAppearanceOverlay_MaterialComponents_TextInputLayout_FilledBox;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearanceOverlay_TopLeftCut = global::NotepadGps.Droid.Resource.Style.ShapeAppearanceOverlay_TopLeftCut;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearanceOverlay_TopRightDifferentCornerSize = global::NotepadGps.Droid.Resource.Style.ShapeAppearanceOverlay_TopRightDifferentCornerSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearance_MaterialComponents = global::NotepadGps.Droid.Resource.Style.ShapeAppearance_MaterialComponents;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearance_MaterialComponents_LargeComponent = global::NotepadGps.Droid.Resource.Style.ShapeAppearance_MaterialComponents_LargeComponent;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearance_MaterialComponents_MediumComponent = global::NotepadGps.Droid.Resource.Style.ShapeAppearance_MaterialComponents_MediumComponent;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearance_MaterialComponents_SmallComponent = global::NotepadGps.Droid.Resource.Style.ShapeAppearance_MaterialComponents_SmallComponent;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearance_MaterialComponents_Test = global::NotepadGps.Droid.Resource.Style.ShapeAppearance_MaterialComponents_Test;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ShapeAppearance_MaterialComponents_Tooltip = global::NotepadGps.Droid.Resource.Style.ShapeAppearance_MaterialComponents_Tooltip;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TestStyleWithLineHeight = global::NotepadGps.Droid.Resource.Style.TestStyleWithLineHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TestStyleWithLineHeightAppearance = global::NotepadGps.Droid.Resource.Style.TestStyleWithLineHeightAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TestStyleWithoutLineHeight = global::NotepadGps.Droid.Resource.Style.TestStyleWithoutLineHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TestStyleWithThemeLineHeightAttribute = global::NotepadGps.Droid.Resource.Style.TestStyleWithThemeLineHeightAttribute;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TestThemeWithLineHeight = global::NotepadGps.Droid.Resource.Style.TestThemeWithLineHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TestThemeWithLineHeightDisabled = global::NotepadGps.Droid.Resource.Style.TestThemeWithLineHeightDisabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Test_ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day = global::NotepadGps.Droid.Resource.Style.Test_ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Test_Theme_MaterialComponents_MaterialCalendar = global::NotepadGps.Droid.Resource.Style.Test_Theme_MaterialComponents_MaterialCalendar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Test_Widget_MaterialComponents_MaterialCalendar = global::NotepadGps.Droid.Resource.Style.Test_Widget_MaterialComponents_MaterialCalendar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Test_Widget_MaterialComponents_MaterialCalendar_Day = global::NotepadGps.Droid.Resource.Style.Test_Widget_MaterialComponents_MaterialCalendar_Day;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Test_Widget_MaterialComponents_MaterialCalendar_Day_Selected = global::NotepadGps.Droid.Resource.Style.Test_Widget_MaterialComponents_MaterialCalendar_Day_Selected;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Button = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Button;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Caption = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Display1 = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Display2 = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Display3 = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Display4 = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Headline = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Inverse = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Large = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Large;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Medium = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Menu = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Small = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Small;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Subhead = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Title = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Title;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Tooltip = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::NotepadGps.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Compat_Notification = global::NotepadGps.Droid.Resource.Style.TextAppearance_Compat_Notification;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Compat_Notification_Info = global::NotepadGps.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::NotepadGps.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::NotepadGps.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::NotepadGps.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Compat_Notification_Media = global::NotepadGps.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Compat_Notification_Time = global::NotepadGps.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::NotepadGps.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Compat_Notification_Title = global::NotepadGps.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::NotepadGps.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::NotepadGps.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Design_Counter = global::NotepadGps.Droid.Resource.Style.TextAppearance_Design_Counter;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Design_Counter_Overflow = global::NotepadGps.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Design_Error = global::NotepadGps.Droid.Resource.Style.TextAppearance_Design_Error;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Design_HelperText = global::NotepadGps.Droid.Resource.Style.TextAppearance_Design_HelperText;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Design_Hint = global::NotepadGps.Droid.Resource.Style.TextAppearance_Design_Hint;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Design_Placeholder = global::NotepadGps.Droid.Resource.Style.TextAppearance_Design_Placeholder;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Design_Prefix = global::NotepadGps.Droid.Resource.Style.TextAppearance_Design_Prefix;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Design_Snackbar_Message = global::NotepadGps.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Design_Suffix = global::NotepadGps.Droid.Resource.Style.TextAppearance_Design_Suffix;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Design_Tab = global::NotepadGps.Droid.Resource.Style.TextAppearance_Design_Tab;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_MaterialComponents_Badge = global::NotepadGps.Droid.Resource.Style.TextAppearance_MaterialComponents_Badge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_MaterialComponents_Body1 = global::NotepadGps.Droid.Resource.Style.TextAppearance_MaterialComponents_Body1;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_MaterialComponents_Body2 = global::NotepadGps.Droid.Resource.Style.TextAppearance_MaterialComponents_Body2;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_MaterialComponents_Button = global::NotepadGps.Droid.Resource.Style.TextAppearance_MaterialComponents_Button;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_MaterialComponents_Caption = global::NotepadGps.Droid.Resource.Style.TextAppearance_MaterialComponents_Caption;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_MaterialComponents_Chip = global::NotepadGps.Droid.Resource.Style.TextAppearance_MaterialComponents_Chip;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_MaterialComponents_Headline1 = global::NotepadGps.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline1;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_MaterialComponents_Headline2 = global::NotepadGps.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline2;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_MaterialComponents_Headline3 = global::NotepadGps.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline3;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_MaterialComponents_Headline4 = global::NotepadGps.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline4;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_MaterialComponents_Headline5 = global::NotepadGps.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline5;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_MaterialComponents_Headline6 = global::NotepadGps.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline6;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_MaterialComponents_Overline = global::NotepadGps.Droid.Resource.Style.TextAppearance_MaterialComponents_Overline;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_MaterialComponents_Subtitle1 = global::NotepadGps.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle1;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_MaterialComponents_Subtitle2 = global::NotepadGps.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle2;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_MaterialComponents_Tooltip = global::NotepadGps.Droid.Resource.Style.TextAppearance_MaterialComponents_Tooltip;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::NotepadGps.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::NotepadGps.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::NotepadGps.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlayColorAccentRed = global::NotepadGps.Droid.Resource.Style.ThemeOverlayColorAccentRed;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_AppCompat = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_Design_TextInputEditText = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_Design_TextInputEditText;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar_Primary = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar_Primary;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar_Surface = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar_Surface;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_AutoCompleteTextView = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_AutoCompleteTextView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_AutoCompleteTextView_FilledBox = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_AutoCompleteTextView_FilledBox;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_AutoCompleteTextView_FilledBox_Dense = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_AutoCompleteTextView_FilledBox_Dense;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_AutoCompleteTextView_OutlinedBox = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_AutoCompleteTextView_OutlinedBox;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_AutoCompleteTextView_OutlinedBox_Dense = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_AutoCompleteTextView_OutlinedBox_Dense;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_BottomAppBar_Primary = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_BottomAppBar_Primary;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_BottomAppBar_Surface = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_BottomAppBar_Surface;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_BottomSheetDialog = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_BottomSheetDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_Dark = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_DayNight_BottomSheetDialog = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_DayNight_BottomSheetDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_Dialog = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert_Framework = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert_Framework;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_Light = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_Light_BottomSheetDialog = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Light_BottomSheetDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_Light_Dialog_Alert_Framework = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Light_Dialog_Alert_Framework;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Centered = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Centered;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Calendar = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Calendar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Header_Text = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Header_Text;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Header_Text_Day = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Header_Text_Day;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Spinner = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Spinner;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_MaterialCalendar = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_MaterialCalendar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_MaterialCalendar_Fullscreen = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_MaterialCalendar_Fullscreen;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_Toolbar_Primary = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Toolbar_Primary;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.ThemeOverlay_MaterialComponents_Toolbar_Surface = global::NotepadGps.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Toolbar_Surface;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_DayNight = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_DayNight;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_Dialog = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_Empty = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_Empty;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_Light = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::NotepadGps.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_Design = global::NotepadGps.Droid.Resource.Style.Theme_Design;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::NotepadGps.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_Design_Light = global::NotepadGps.Droid.Resource.Style.Theme_Design_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::NotepadGps.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::NotepadGps.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_Design_NoActionBar = global::NotepadGps.Droid.Resource.Style.Theme_Design_NoActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_CompactMenu = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_DayNight = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_DayNight;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_DayNight_BottomSheetDialog = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_DayNight_BottomSheetDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_DayNight_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_DayNight_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_DayNight_DarkActionBar = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_DayNight_DarkActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_DayNight_DarkActionBar_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_DayNight_DarkActionBar_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_DayNight_Dialog = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_DayNight_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_DayNight_DialogWhenLarge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_DayNight_DialogWhenLarge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_DayNight_Dialog_Alert = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_DayNight_Dialog_Alert;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_DayNight_Dialog_Alert_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_DayNight_Dialog_Alert_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_DayNight_Dialog_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_DayNight_Dialog_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_DayNight_Dialog_FixedSize = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_DayNight_Dialog_FixedSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_DayNight_Dialog_FixedSize_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_DayNight_Dialog_FixedSize_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_DayNight_Dialog_MinWidth = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_DayNight_Dialog_MinWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_DayNight_Dialog_MinWidth_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_DayNight_Dialog_MinWidth_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_DayNight_NoActionBar = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_DayNight_NoActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_DayNight_NoActionBar_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_DayNight_NoActionBar_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Dialog = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Dialog_Alert_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Dialog_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Dialog_FixedSize = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Dialog_FixedSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Dialog_FixedSize_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Dialog_FixedSize_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light_BarSize = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light_BarSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_FixedSize = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_FixedSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_FixedSize_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_FixedSize_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light_LargeTouch = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light_LargeTouch;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_NoActionBar = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::NotepadGps.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ActionBar = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ActionButton = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ActionButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ActionMode = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ActionMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Button = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Button;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Button_Small = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Button_Small;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_EditText = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_EditText;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ImageButton = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ImageButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_ActionButton = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_SearchView = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ListMenuView = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ListPopupWindow = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ListView = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ListView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ListView_DropDown = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ListView_Menu = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_PopupMenu = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_PopupWindow = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ProgressBar = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_RatingBar = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_RatingBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_RatingBar_Small = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_SearchView = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_SearchView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_SeekBar = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_SeekBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Spinner = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Spinner;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_TextView = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_TextView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Toolbar = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Toolbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::NotepadGps.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_Compat_NotificationActionContainer = global::NotepadGps.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_Compat_NotificationActionText = global::NotepadGps.Droid.Resource.Style.Widget_Compat_NotificationActionText;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_Design_AppBarLayout = global::NotepadGps.Droid.Resource.Style.Widget_Design_AppBarLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_Design_BottomNavigationView = global::NotepadGps.Droid.Resource.Style.Widget_Design_BottomNavigationView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::NotepadGps.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::NotepadGps.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_Design_FloatingActionButton = global::NotepadGps.Droid.Resource.Style.Widget_Design_FloatingActionButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_Design_NavigationView = global::NotepadGps.Droid.Resource.Style.Widget_Design_NavigationView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::NotepadGps.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_Design_Snackbar = global::NotepadGps.Droid.Resource.Style.Widget_Design_Snackbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_Design_TabLayout = global::NotepadGps.Droid.Resource.Style.Widget_Design_TabLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_Design_TextInputEditText = global::NotepadGps.Droid.Resource.Style.Widget_Design_TextInputEditText;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_Design_TextInputLayout = global::NotepadGps.Droid.Resource.Style.Widget_Design_TextInputLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_ActionBar_Primary = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_ActionBar_Primary;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_ActionBar_PrimarySurface = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_ActionBar_PrimarySurface;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_ActionBar_Solid = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_ActionBar_Solid;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_ActionBar_Surface = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_ActionBar_Surface;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_AppBarLayout_Primary = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_AppBarLayout_Primary;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_AppBarLayout_PrimarySurface = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_AppBarLayout_PrimarySurface;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_AppBarLayout_Surface = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_AppBarLayout_Surface;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_AutoCompleteTextView_FilledBox = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_AutoCompleteTextView_FilledBox;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_AutoCompleteTextView_FilledBox_Dense = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_AutoCompleteTextView_FilledBox_Dense;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_AutoCompleteTextView_OutlinedBox = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_AutoCompleteTextView_OutlinedBox;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_AutoCompleteTextView_OutlinedBox_Dense = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_AutoCompleteTextView_OutlinedBox_Dense;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Badge = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Badge;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_BottomAppBar = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_BottomAppBar_PrimarySurface = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar_PrimarySurface;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_BottomNavigationView = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_BottomNavigationView_PrimarySurface = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView_PrimarySurface;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_BottomSheet = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_BottomSheet;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Button = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Button;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Button_Icon = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Button_Icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Button_TextButton = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Flush = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Flush;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Button_TextButton_Snackbar = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Snackbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_CardView = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_CardView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_CheckedTextView = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_CheckedTextView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_ChipGroup = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Chip_Action = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Chip_Action;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Chip_Choice = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Chip_Choice;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Chip_Entry = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Chip_Entry;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Chip_Filter = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Chip_Filter;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_CompoundButton_CheckBox = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_CompoundButton_CheckBox;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_CompoundButton_RadioButton = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_CompoundButton_RadioButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_CompoundButton_Switch = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_CompoundButton_Switch;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_ExtendedFloatingActionButton = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_ExtendedFloatingActionButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_ExtendedFloatingActionButton_Icon = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_ExtendedFloatingActionButton_Icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_FloatingActionButton = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_FloatingActionButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Light_ActionBar_Solid = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Light_ActionBar_Solid;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialButtonToggleGroup = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialButtonToggleGroup;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Day = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Day;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar_DayTextView = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_DayTextView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Day_Invalid = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Day_Invalid;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Day_Selected = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Day_Selected;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Day_Today = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Day_Today;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Fullscreen = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Fullscreen;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderConfirmButton = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderConfirmButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderDivider = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderDivider;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderLayout = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderSelection = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderSelection;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderSelection_Fullscreen = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderSelection_Fullscreen;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderTitle = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderTitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderToggleButton = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_HeaderToggleButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Item = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Item;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Year = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Year;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Year_Selected = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Year_Selected;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Year_Today = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_MaterialCalendar_Year_Today;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_NavigationView = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_NavigationView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_PopupMenu = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_PopupMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_PopupMenu_ContextMenu = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_PopupMenu_ContextMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_PopupMenu_ListPopupWindow = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_PopupMenu_ListPopupWindow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_PopupMenu_Overflow = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_PopupMenu_Overflow;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_ShapeableImageView = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_ShapeableImageView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Slider = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Slider;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Snackbar = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Snackbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Snackbar_TextView = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Snackbar_TextView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_TabLayout = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_TabLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_TabLayout_Colored = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_TabLayout_Colored;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_TabLayout_PrimarySurface = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_TabLayout_PrimarySurface;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense_ExposedDropdownMenu = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense_ExposedDropdownMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_ExposedDropdownMenu = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_ExposedDropdownMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense_ExposedDropdownMenu = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense_ExposedDropdownMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_ExposedDropdownMenu = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_ExposedDropdownMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_TextView = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_TextView;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Toolbar = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Toolbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Toolbar_Primary = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Toolbar_Primary;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Toolbar_PrimarySurface = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Toolbar_PrimarySurface;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Toolbar_Surface = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Toolbar_Surface;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_MaterialComponents_Tooltip = global::NotepadGps.Droid.Resource.Style.Widget_MaterialComponents_Tooltip;
-			global::Xamarin.Forms.Maps.Android.Resource.Style.Widget_Support_CoordinatorLayout = global::NotepadGps.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar = global::NotepadGps.Droid.Resource.Styleable.ActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBarLayout = global::NotepadGps.Droid.Resource.Styleable.ActionBarLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::NotepadGps.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_background = global::NotepadGps.Droid.Resource.Styleable.ActionBar_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_backgroundSplit = global::NotepadGps.Droid.Resource.Styleable.ActionBar_backgroundSplit;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_backgroundStacked = global::NotepadGps.Droid.Resource.Styleable.ActionBar_backgroundStacked;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_contentInsetEnd = global::NotepadGps.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::NotepadGps.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_contentInsetLeft = global::NotepadGps.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_contentInsetRight = global::NotepadGps.Droid.Resource.Styleable.ActionBar_contentInsetRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_contentInsetStart = global::NotepadGps.Droid.Resource.Styleable.ActionBar_contentInsetStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::NotepadGps.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_customNavigationLayout = global::NotepadGps.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_displayOptions = global::NotepadGps.Droid.Resource.Styleable.ActionBar_displayOptions;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_divider = global::NotepadGps.Droid.Resource.Styleable.ActionBar_divider;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_elevation = global::NotepadGps.Droid.Resource.Styleable.ActionBar_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_height = global::NotepadGps.Droid.Resource.Styleable.ActionBar_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_hideOnContentScroll = global::NotepadGps.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_homeAsUpIndicator = global::NotepadGps.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_homeLayout = global::NotepadGps.Droid.Resource.Styleable.ActionBar_homeLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_icon = global::NotepadGps.Droid.Resource.Styleable.ActionBar_icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::NotepadGps.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_itemPadding = global::NotepadGps.Droid.Resource.Styleable.ActionBar_itemPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_logo = global::NotepadGps.Droid.Resource.Styleable.ActionBar_logo;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_navigationMode = global::NotepadGps.Droid.Resource.Styleable.ActionBar_navigationMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_popupTheme = global::NotepadGps.Droid.Resource.Styleable.ActionBar_popupTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_progressBarPadding = global::NotepadGps.Droid.Resource.Styleable.ActionBar_progressBarPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_progressBarStyle = global::NotepadGps.Droid.Resource.Styleable.ActionBar_progressBarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_subtitle = global::NotepadGps.Droid.Resource.Styleable.ActionBar_subtitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::NotepadGps.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_title = global::NotepadGps.Droid.Resource.Styleable.ActionBar_title;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionBar_titleTextStyle = global::NotepadGps.Droid.Resource.Styleable.ActionBar_titleTextStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionMenuItemView = global::NotepadGps.Droid.Resource.Styleable.ActionMenuItemView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::NotepadGps.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionMenuView = global::NotepadGps.Droid.Resource.Styleable.ActionMenuView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionMode = global::NotepadGps.Droid.Resource.Styleable.ActionMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionMode_background = global::NotepadGps.Droid.Resource.Styleable.ActionMode_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionMode_backgroundSplit = global::NotepadGps.Droid.Resource.Styleable.ActionMode_backgroundSplit;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionMode_closeItemLayout = global::NotepadGps.Droid.Resource.Styleable.ActionMode_closeItemLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionMode_height = global::NotepadGps.Droid.Resource.Styleable.ActionMode_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionMode_subtitleTextStyle = global::NotepadGps.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActionMode_titleTextStyle = global::NotepadGps.Droid.Resource.Styleable.ActionMode_titleTextStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActivityChooserView = global::NotepadGps.Droid.Resource.Styleable.ActivityChooserView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::NotepadGps.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ActivityChooserView_initialActivityCount = global::NotepadGps.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AlertDialog = global::NotepadGps.Droid.Resource.Styleable.AlertDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AlertDialog_android_layout = global::NotepadGps.Droid.Resource.Styleable.AlertDialog_android_layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AlertDialog_buttonIconDimen = global::NotepadGps.Droid.Resource.Styleable.AlertDialog_buttonIconDimen;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::NotepadGps.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AlertDialog_listItemLayout = global::NotepadGps.Droid.Resource.Styleable.AlertDialog_listItemLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AlertDialog_listLayout = global::NotepadGps.Droid.Resource.Styleable.AlertDialog_listLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::NotepadGps.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AlertDialog_showTitle = global::NotepadGps.Droid.Resource.Styleable.AlertDialog_showTitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::NotepadGps.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AnimatedStateListDrawableCompat = global::NotepadGps.Droid.Resource.Styleable.AnimatedStateListDrawableCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize = global::NotepadGps.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither = global::NotepadGps.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration = global::NotepadGps.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration = global::NotepadGps.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding = global::NotepadGps.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible = global::NotepadGps.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AnimatedStateListDrawableItem = global::NotepadGps.Droid.Resource.Styleable.AnimatedStateListDrawableItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable = global::NotepadGps.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AnimatedStateListDrawableItem_android_id = global::NotepadGps.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_id;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AnimatedStateListDrawableTransition = global::NotepadGps.Droid.Resource.Styleable.AnimatedStateListDrawableTransition;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable = global::NotepadGps.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId = global::NotepadGps.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible = global::NotepadGps.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId = global::NotepadGps.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppBarLayout = global::NotepadGps.Droid.Resource.Styleable.AppBarLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppBarLayoutStates = global::NotepadGps.Droid.Resource.Styleable.AppBarLayoutStates;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::NotepadGps.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::NotepadGps.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppBarLayoutStates_state_liftable = global::NotepadGps.Droid.Resource.Styleable.AppBarLayoutStates_state_liftable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppBarLayoutStates_state_lifted = global::NotepadGps.Droid.Resource.Styleable.AppBarLayoutStates_state_lifted;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppBarLayout_android_background = global::NotepadGps.Droid.Resource.Styleable.AppBarLayout_android_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::NotepadGps.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::NotepadGps.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppBarLayout_elevation = global::NotepadGps.Droid.Resource.Styleable.AppBarLayout_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppBarLayout_expanded = global::NotepadGps.Droid.Resource.Styleable.AppBarLayout_expanded;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppBarLayout_Layout = global::NotepadGps.Droid.Resource.Styleable.AppBarLayout_Layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::NotepadGps.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::NotepadGps.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppBarLayout_liftOnScroll = global::NotepadGps.Droid.Resource.Styleable.AppBarLayout_liftOnScroll;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppBarLayout_liftOnScrollTargetViewId = global::NotepadGps.Droid.Resource.Styleable.AppBarLayout_liftOnScrollTargetViewId;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppBarLayout_statusBarForeground = global::NotepadGps.Droid.Resource.Styleable.AppBarLayout_statusBarForeground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatImageView = global::NotepadGps.Droid.Resource.Styleable.AppCompatImageView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatImageView_android_src = global::NotepadGps.Droid.Resource.Styleable.AppCompatImageView_android_src;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::NotepadGps.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatImageView_tint = global::NotepadGps.Droid.Resource.Styleable.AppCompatImageView_tint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatImageView_tintMode = global::NotepadGps.Droid.Resource.Styleable.AppCompatImageView_tintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatSeekBar = global::NotepadGps.Droid.Resource.Styleable.AppCompatSeekBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatSeekBar_android_thumb = global::NotepadGps.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatSeekBar_tickMark = global::NotepadGps.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::NotepadGps.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::NotepadGps.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextHelper = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextHelper;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_android_textAppearance = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_drawableEndCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_drawableRightCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_drawableStartCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_drawableTint = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_drawableTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_drawableTintMode = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_drawableTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_drawableTopCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_fontFamily = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_fontVariationSettings;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_lineHeight = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTextView_textLocale = global::NotepadGps.Droid.Resource.Styleable.AppCompatTextView_textLocale;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionBarSize = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionBarStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionBarTheme = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionModeBackground = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionModeStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_buttonStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_checkboxStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_colorAccent = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_colorControlActivated = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_colorControlNormal = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_colorError = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_colorError;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_colorPrimary = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_controlBackground = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_dialogCornerRadius = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_dialogCornerRadius;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_searchViewStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_seekBarStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_spinnerStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_switchStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_toolbarStyle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_viewInflaterClass = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_viewInflaterClass;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_windowActionBar = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.AppCompatTheme_windowNoTitle = global::NotepadGps.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Badge = global::NotepadGps.Droid.Resource.Styleable.Badge;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Badge_backgroundColor = global::NotepadGps.Droid.Resource.Styleable.Badge_backgroundColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Badge_badgeGravity = global::NotepadGps.Droid.Resource.Styleable.Badge_badgeGravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Badge_badgeTextColor = global::NotepadGps.Droid.Resource.Styleable.Badge_badgeTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Badge_horizontalOffset = global::NotepadGps.Droid.Resource.Styleable.Badge_horizontalOffset;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Badge_maxCharacterCount = global::NotepadGps.Droid.Resource.Styleable.Badge_maxCharacterCount;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Badge_number = global::NotepadGps.Droid.Resource.Styleable.Badge_number;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Badge_verticalOffset = global::NotepadGps.Droid.Resource.Styleable.Badge_verticalOffset;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomAppBar = global::NotepadGps.Droid.Resource.Styleable.BottomAppBar;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomAppBar_backgroundTint = global::NotepadGps.Droid.Resource.Styleable.BottomAppBar_backgroundTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomAppBar_elevation = global::NotepadGps.Droid.Resource.Styleable.BottomAppBar_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomAppBar_fabAlignmentMode = global::NotepadGps.Droid.Resource.Styleable.BottomAppBar_fabAlignmentMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomAppBar_fabAnimationMode = global::NotepadGps.Droid.Resource.Styleable.BottomAppBar_fabAnimationMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomAppBar_fabCradleMargin = global::NotepadGps.Droid.Resource.Styleable.BottomAppBar_fabCradleMargin;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius = global::NotepadGps.Droid.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset = global::NotepadGps.Droid.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomAppBar_hideOnScroll = global::NotepadGps.Droid.Resource.Styleable.BottomAppBar_hideOnScroll;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomAppBar_paddingBottomSystemWindowInsets = global::NotepadGps.Droid.Resource.Styleable.BottomAppBar_paddingBottomSystemWindowInsets;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomAppBar_paddingLeftSystemWindowInsets = global::NotepadGps.Droid.Resource.Styleable.BottomAppBar_paddingLeftSystemWindowInsets;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomAppBar_paddingRightSystemWindowInsets = global::NotepadGps.Droid.Resource.Styleable.BottomAppBar_paddingRightSystemWindowInsets;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomNavigationView = global::NotepadGps.Droid.Resource.Styleable.BottomNavigationView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomNavigationView_backgroundTint = global::NotepadGps.Droid.Resource.Styleable.BottomNavigationView_backgroundTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomNavigationView_elevation = global::NotepadGps.Droid.Resource.Styleable.BottomNavigationView_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomNavigationView_itemBackground = global::NotepadGps.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled = global::NotepadGps.Droid.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomNavigationView_itemIconSize = global::NotepadGps.Droid.Resource.Styleable.BottomNavigationView_itemIconSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomNavigationView_itemIconTint = global::NotepadGps.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomNavigationView_itemRippleColor = global::NotepadGps.Droid.Resource.Styleable.BottomNavigationView_itemRippleColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive = global::NotepadGps.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive = global::NotepadGps.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomNavigationView_itemTextColor = global::NotepadGps.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomNavigationView_labelVisibilityMode = global::NotepadGps.Droid.Resource.Styleable.BottomNavigationView_labelVisibilityMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomNavigationView_menu = global::NotepadGps.Droid.Resource.Styleable.BottomNavigationView_menu;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomSheetBehavior_Layout = global::NotepadGps.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomSheetBehavior_Layout_android_elevation = global::NotepadGps.Droid.Resource.Styleable.BottomSheetBehavior_Layout_android_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomSheetBehavior_Layout_backgroundTint = global::NotepadGps.Droid.Resource.Styleable.BottomSheetBehavior_Layout_backgroundTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_draggable = global::NotepadGps.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_draggable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_expandedOffset = global::NotepadGps.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_expandedOffset;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents = global::NotepadGps.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_halfExpandedRatio = global::NotepadGps.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_halfExpandedRatio;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::NotepadGps.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::NotepadGps.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_saveFlags = global::NotepadGps.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_saveFlags;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::NotepadGps.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomSheetBehavior_Layout_gestureInsetBottomIgnored = global::NotepadGps.Droid.Resource.Styleable.BottomSheetBehavior_Layout_gestureInsetBottomIgnored;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomSheetBehavior_Layout_shapeAppearance = global::NotepadGps.Droid.Resource.Styleable.BottomSheetBehavior_Layout_shapeAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.BottomSheetBehavior_Layout_shapeAppearanceOverlay = global::NotepadGps.Droid.Resource.Styleable.BottomSheetBehavior_Layout_shapeAppearanceOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ButtonBarLayout = global::NotepadGps.Droid.Resource.Styleable.ButtonBarLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ButtonBarLayout_allowStacking = global::NotepadGps.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CardView = global::NotepadGps.Droid.Resource.Styleable.CardView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CardView_android_minHeight = global::NotepadGps.Droid.Resource.Styleable.CardView_android_minHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CardView_android_minWidth = global::NotepadGps.Droid.Resource.Styleable.CardView_android_minWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CardView_cardBackgroundColor = global::NotepadGps.Droid.Resource.Styleable.CardView_cardBackgroundColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CardView_cardCornerRadius = global::NotepadGps.Droid.Resource.Styleable.CardView_cardCornerRadius;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CardView_cardElevation = global::NotepadGps.Droid.Resource.Styleable.CardView_cardElevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CardView_cardMaxElevation = global::NotepadGps.Droid.Resource.Styleable.CardView_cardMaxElevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CardView_cardPreventCornerOverlap = global::NotepadGps.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CardView_cardUseCompatPadding = global::NotepadGps.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CardView_contentPadding = global::NotepadGps.Droid.Resource.Styleable.CardView_contentPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CardView_contentPaddingBottom = global::NotepadGps.Droid.Resource.Styleable.CardView_contentPaddingBottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CardView_contentPaddingLeft = global::NotepadGps.Droid.Resource.Styleable.CardView_contentPaddingLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CardView_contentPaddingRight = global::NotepadGps.Droid.Resource.Styleable.CardView_contentPaddingRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CardView_contentPaddingTop = global::NotepadGps.Droid.Resource.Styleable.CardView_contentPaddingTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip = global::NotepadGps.Droid.Resource.Styleable.Chip;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ChipGroup = global::NotepadGps.Droid.Resource.Styleable.ChipGroup;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ChipGroup_checkedChip = global::NotepadGps.Droid.Resource.Styleable.ChipGroup_checkedChip;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ChipGroup_chipSpacing = global::NotepadGps.Droid.Resource.Styleable.ChipGroup_chipSpacing;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::NotepadGps.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ChipGroup_chipSpacingVertical = global::NotepadGps.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ChipGroup_selectionRequired = global::NotepadGps.Droid.Resource.Styleable.ChipGroup_selectionRequired;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ChipGroup_singleLine = global::NotepadGps.Droid.Resource.Styleable.ChipGroup_singleLine;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ChipGroup_singleSelection = global::NotepadGps.Droid.Resource.Styleable.ChipGroup_singleSelection;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_android_checkable = global::NotepadGps.Droid.Resource.Styleable.Chip_android_checkable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_android_ellipsize = global::NotepadGps.Droid.Resource.Styleable.Chip_android_ellipsize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_android_maxWidth = global::NotepadGps.Droid.Resource.Styleable.Chip_android_maxWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_android_text = global::NotepadGps.Droid.Resource.Styleable.Chip_android_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_android_textAppearance = global::NotepadGps.Droid.Resource.Styleable.Chip_android_textAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_android_textColor = global::NotepadGps.Droid.Resource.Styleable.Chip_android_textColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_checkedIcon = global::NotepadGps.Droid.Resource.Styleable.Chip_checkedIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_checkedIconEnabled = global::NotepadGps.Droid.Resource.Styleable.Chip_checkedIconEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_checkedIconTint = global::NotepadGps.Droid.Resource.Styleable.Chip_checkedIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_checkedIconVisible = global::NotepadGps.Droid.Resource.Styleable.Chip_checkedIconVisible;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_chipBackgroundColor = global::NotepadGps.Droid.Resource.Styleable.Chip_chipBackgroundColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_chipCornerRadius = global::NotepadGps.Droid.Resource.Styleable.Chip_chipCornerRadius;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_chipEndPadding = global::NotepadGps.Droid.Resource.Styleable.Chip_chipEndPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_chipIcon = global::NotepadGps.Droid.Resource.Styleable.Chip_chipIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_chipIconEnabled = global::NotepadGps.Droid.Resource.Styleable.Chip_chipIconEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_chipIconSize = global::NotepadGps.Droid.Resource.Styleable.Chip_chipIconSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_chipIconTint = global::NotepadGps.Droid.Resource.Styleable.Chip_chipIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_chipIconVisible = global::NotepadGps.Droid.Resource.Styleable.Chip_chipIconVisible;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_chipMinHeight = global::NotepadGps.Droid.Resource.Styleable.Chip_chipMinHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_chipMinTouchTargetSize = global::NotepadGps.Droid.Resource.Styleable.Chip_chipMinTouchTargetSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_chipStartPadding = global::NotepadGps.Droid.Resource.Styleable.Chip_chipStartPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_chipStrokeColor = global::NotepadGps.Droid.Resource.Styleable.Chip_chipStrokeColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_chipStrokeWidth = global::NotepadGps.Droid.Resource.Styleable.Chip_chipStrokeWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_chipSurfaceColor = global::NotepadGps.Droid.Resource.Styleable.Chip_chipSurfaceColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_closeIcon = global::NotepadGps.Droid.Resource.Styleable.Chip_closeIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_closeIconEnabled = global::NotepadGps.Droid.Resource.Styleable.Chip_closeIconEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_closeIconEndPadding = global::NotepadGps.Droid.Resource.Styleable.Chip_closeIconEndPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_closeIconSize = global::NotepadGps.Droid.Resource.Styleable.Chip_closeIconSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_closeIconStartPadding = global::NotepadGps.Droid.Resource.Styleable.Chip_closeIconStartPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_closeIconTint = global::NotepadGps.Droid.Resource.Styleable.Chip_closeIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_closeIconVisible = global::NotepadGps.Droid.Resource.Styleable.Chip_closeIconVisible;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_ensureMinTouchTargetSize = global::NotepadGps.Droid.Resource.Styleable.Chip_ensureMinTouchTargetSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_hideMotionSpec = global::NotepadGps.Droid.Resource.Styleable.Chip_hideMotionSpec;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_iconEndPadding = global::NotepadGps.Droid.Resource.Styleable.Chip_iconEndPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_iconStartPadding = global::NotepadGps.Droid.Resource.Styleable.Chip_iconStartPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_rippleColor = global::NotepadGps.Droid.Resource.Styleable.Chip_rippleColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_shapeAppearance = global::NotepadGps.Droid.Resource.Styleable.Chip_shapeAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_shapeAppearanceOverlay = global::NotepadGps.Droid.Resource.Styleable.Chip_shapeAppearanceOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_showMotionSpec = global::NotepadGps.Droid.Resource.Styleable.Chip_showMotionSpec;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_textEndPadding = global::NotepadGps.Droid.Resource.Styleable.Chip_textEndPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Chip_textStartPadding = global::NotepadGps.Droid.Resource.Styleable.Chip_textStartPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_Layout = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_maxLines = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_maxLines;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::NotepadGps.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ColorStateListItem = global::NotepadGps.Droid.Resource.Styleable.ColorStateListItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ColorStateListItem_alpha = global::NotepadGps.Droid.Resource.Styleable.ColorStateListItem_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ColorStateListItem_android_alpha = global::NotepadGps.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ColorStateListItem_android_color = global::NotepadGps.Droid.Resource.Styleable.ColorStateListItem_android_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CompoundButton = global::NotepadGps.Droid.Resource.Styleable.CompoundButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CompoundButton_android_button = global::NotepadGps.Droid.Resource.Styleable.CompoundButton_android_button;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CompoundButton_buttonCompat = global::NotepadGps.Droid.Resource.Styleable.CompoundButton_buttonCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CompoundButton_buttonTint = global::NotepadGps.Droid.Resource.Styleable.CompoundButton_buttonTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::NotepadGps.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CoordinatorLayout = global::NotepadGps.Droid.Resource.Styleable.CoordinatorLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CoordinatorLayout_keylines = global::NotepadGps.Droid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CoordinatorLayout_Layout = global::NotepadGps.Droid.Resource.Styleable.CoordinatorLayout_Layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::NotepadGps.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::NotepadGps.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::NotepadGps.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::NotepadGps.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::NotepadGps.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::NotepadGps.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::NotepadGps.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::NotepadGps.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.DrawerArrowToggle = global::NotepadGps.Droid.Resource.Styleable.DrawerArrowToggle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::NotepadGps.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::NotepadGps.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.DrawerArrowToggle_barLength = global::NotepadGps.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.DrawerArrowToggle_color = global::NotepadGps.Droid.Resource.Styleable.DrawerArrowToggle_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.DrawerArrowToggle_drawableSize = global::NotepadGps.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::NotepadGps.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.DrawerArrowToggle_spinBars = global::NotepadGps.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.DrawerArrowToggle_thickness = global::NotepadGps.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.DrawerLayout = global::NotepadGps.Droid.Resource.Styleable.DrawerLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.DrawerLayout_elevation = global::NotepadGps.Droid.Resource.Styleable.DrawerLayout_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ExtendedFloatingActionButton = global::NotepadGps.Droid.Resource.Styleable.ExtendedFloatingActionButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ExtendedFloatingActionButton_Behavior_Layout = global::NotepadGps.Droid.Resource.Styleable.ExtendedFloatingActionButton_Behavior_Layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide = global::NotepadGps.Droid.Resource.Styleable.ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink = global::NotepadGps.Droid.Resource.Styleable.ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ExtendedFloatingActionButton_elevation = global::NotepadGps.Droid.Resource.Styleable.ExtendedFloatingActionButton_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ExtendedFloatingActionButton_extendMotionSpec = global::NotepadGps.Droid.Resource.Styleable.ExtendedFloatingActionButton_extendMotionSpec;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ExtendedFloatingActionButton_hideMotionSpec = global::NotepadGps.Droid.Resource.Styleable.ExtendedFloatingActionButton_hideMotionSpec;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ExtendedFloatingActionButton_showMotionSpec = global::NotepadGps.Droid.Resource.Styleable.ExtendedFloatingActionButton_showMotionSpec;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ExtendedFloatingActionButton_shrinkMotionSpec = global::NotepadGps.Droid.Resource.Styleable.ExtendedFloatingActionButton_shrinkMotionSpec;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_android_enabled = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_android_enabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_elevation = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_ensureMinTouchTargetSize = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_ensureMinTouchTargetSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_fabCustomSize = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_fabCustomSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_fabSize = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_fabSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_hideMotionSpec = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_hideMotionSpec;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_maxImageSize = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_maxImageSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_shapeAppearance = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_shapeAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_shapeAppearanceOverlay = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_shapeAppearanceOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_showMotionSpec = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_showMotionSpec;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FloatingActionButton_useCompatPadding = global::NotepadGps.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FlowLayout = global::NotepadGps.Droid.Resource.Styleable.FlowLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FlowLayout_itemSpacing = global::NotepadGps.Droid.Resource.Styleable.FlowLayout_itemSpacing;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FlowLayout_lineSpacing = global::NotepadGps.Droid.Resource.Styleable.FlowLayout_lineSpacing;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamily = global::NotepadGps.Droid.Resource.Styleable.FontFamily;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamilyFont = global::NotepadGps.Droid.Resource.Styleable.FontFamilyFont;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamilyFont_android_font = global::NotepadGps.Droid.Resource.Styleable.FontFamilyFont_android_font;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamilyFont_android_fontStyle = global::NotepadGps.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::NotepadGps.Droid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamilyFont_android_fontWeight = global::NotepadGps.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::NotepadGps.Droid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamilyFont_font = global::NotepadGps.Droid.Resource.Styleable.FontFamilyFont_font;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamilyFont_fontStyle = global::NotepadGps.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::NotepadGps.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamilyFont_fontWeight = global::NotepadGps.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamilyFont_ttcIndex = global::NotepadGps.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamily_fontProviderAuthority = global::NotepadGps.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamily_fontProviderCerts = global::NotepadGps.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::NotepadGps.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::NotepadGps.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamily_fontProviderPackage = global::NotepadGps.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FontFamily_fontProviderQuery = global::NotepadGps.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ForegroundLinearLayout = global::NotepadGps.Droid.Resource.Styleable.ForegroundLinearLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::NotepadGps.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::NotepadGps.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::NotepadGps.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Fragment = global::NotepadGps.Droid.Resource.Styleable.Fragment;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FragmentContainerView = global::NotepadGps.Droid.Resource.Styleable.FragmentContainerView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FragmentContainerView_android_name = global::NotepadGps.Droid.Resource.Styleable.FragmentContainerView_android_name;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.FragmentContainerView_android_tag = global::NotepadGps.Droid.Resource.Styleable.FragmentContainerView_android_tag;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Fragment_android_id = global::NotepadGps.Droid.Resource.Styleable.Fragment_android_id;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Fragment_android_name = global::NotepadGps.Droid.Resource.Styleable.Fragment_android_name;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Fragment_android_tag = global::NotepadGps.Droid.Resource.Styleable.Fragment_android_tag;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.GradientColor = global::NotepadGps.Droid.Resource.Styleable.GradientColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.GradientColorItem = global::NotepadGps.Droid.Resource.Styleable.GradientColorItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.GradientColorItem_android_color = global::NotepadGps.Droid.Resource.Styleable.GradientColorItem_android_color;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.GradientColorItem_android_offset = global::NotepadGps.Droid.Resource.Styleable.GradientColorItem_android_offset;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.GradientColor_android_centerColor = global::NotepadGps.Droid.Resource.Styleable.GradientColor_android_centerColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.GradientColor_android_centerX = global::NotepadGps.Droid.Resource.Styleable.GradientColor_android_centerX;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.GradientColor_android_centerY = global::NotepadGps.Droid.Resource.Styleable.GradientColor_android_centerY;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.GradientColor_android_endColor = global::NotepadGps.Droid.Resource.Styleable.GradientColor_android_endColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.GradientColor_android_endX = global::NotepadGps.Droid.Resource.Styleable.GradientColor_android_endX;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.GradientColor_android_endY = global::NotepadGps.Droid.Resource.Styleable.GradientColor_android_endY;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.GradientColor_android_gradientRadius = global::NotepadGps.Droid.Resource.Styleable.GradientColor_android_gradientRadius;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.GradientColor_android_startColor = global::NotepadGps.Droid.Resource.Styleable.GradientColor_android_startColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.GradientColor_android_startX = global::NotepadGps.Droid.Resource.Styleable.GradientColor_android_startX;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.GradientColor_android_startY = global::NotepadGps.Droid.Resource.Styleable.GradientColor_android_startY;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.GradientColor_android_tileMode = global::NotepadGps.Droid.Resource.Styleable.GradientColor_android_tileMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.GradientColor_android_type = global::NotepadGps.Droid.Resource.Styleable.GradientColor_android_type;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Insets = global::NotepadGps.Droid.Resource.Styleable.Insets;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Insets_paddingBottomSystemWindowInsets = global::NotepadGps.Droid.Resource.Styleable.Insets_paddingBottomSystemWindowInsets;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Insets_paddingLeftSystemWindowInsets = global::NotepadGps.Droid.Resource.Styleable.Insets_paddingLeftSystemWindowInsets;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Insets_paddingRightSystemWindowInsets = global::NotepadGps.Droid.Resource.Styleable.Insets_paddingRightSystemWindowInsets;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ItemsViewRendererTheme = global::NotepadGps.Droid.Resource.Styleable.ItemsViewRendererTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ItemsViewRendererTheme_collectionViewStyle = global::NotepadGps.Droid.Resource.Styleable.ItemsViewRendererTheme_collectionViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LinearLayoutCompat = global::NotepadGps.Droid.Resource.Styleable.LinearLayoutCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::NotepadGps.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::NotepadGps.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LinearLayoutCompat_android_gravity = global::NotepadGps.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LinearLayoutCompat_android_orientation = global::NotepadGps.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::NotepadGps.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LinearLayoutCompat_divider = global::NotepadGps.Droid.Resource.Styleable.LinearLayoutCompat_divider;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::NotepadGps.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::NotepadGps.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::NotepadGps.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::NotepadGps.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::NotepadGps.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::NotepadGps.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::NotepadGps.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::NotepadGps.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ListPopupWindow = global::NotepadGps.Droid.Resource.Styleable.ListPopupWindow;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::NotepadGps.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::NotepadGps.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LoadingImageView = global::NotepadGps.Droid.Resource.Styleable.LoadingImageView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LoadingImageView_circleCrop = global::NotepadGps.Droid.Resource.Styleable.LoadingImageView_circleCrop;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LoadingImageView_imageAspectRatio = global::NotepadGps.Droid.Resource.Styleable.LoadingImageView_imageAspectRatio;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.LoadingImageView_imageAspectRatioAdjust = global::NotepadGps.Droid.Resource.Styleable.LoadingImageView_imageAspectRatioAdjust;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs = global::NotepadGps.Droid.Resource.Styleable.MapAttrs;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_ambientEnabled = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_ambientEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_cameraBearing = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_cameraBearing;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_cameraMaxZoomPreference = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_cameraMaxZoomPreference;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_cameraMinZoomPreference = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_cameraMinZoomPreference;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_cameraTargetLat = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_cameraTargetLat;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_cameraTargetLng = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_cameraTargetLng;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_cameraTilt = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_cameraTilt;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_cameraZoom = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_cameraZoom;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_latLngBoundsNorthEastLatitude = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_latLngBoundsNorthEastLatitude;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_latLngBoundsNorthEastLongitude = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_latLngBoundsNorthEastLongitude;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_latLngBoundsSouthWestLatitude = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_latLngBoundsSouthWestLatitude;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_latLngBoundsSouthWestLongitude = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_latLngBoundsSouthWestLongitude;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_liteMode = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_liteMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_mapType = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_mapType;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_uiCompass = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_uiCompass;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_uiMapToolbar = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_uiMapToolbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_uiRotateGestures = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_uiRotateGestures;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_uiScrollGestures = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_uiScrollGestures;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_uiScrollGesturesDuringRotateOrZoom = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_uiScrollGesturesDuringRotateOrZoom;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_uiTiltGestures = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_uiTiltGestures;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_uiZoomControls = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_uiZoomControls;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_uiZoomGestures = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_uiZoomGestures;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_useViewLifecycle = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_useViewLifecycle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MapAttrs_zOrderOnTop = global::NotepadGps.Droid.Resource.Styleable.MapAttrs_zOrderOnTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialAlertDialog = global::NotepadGps.Droid.Resource.Styleable.MaterialAlertDialog;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialAlertDialogTheme = global::NotepadGps.Droid.Resource.Styleable.MaterialAlertDialogTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialAlertDialogTheme_materialAlertDialogBodyTextStyle = global::NotepadGps.Droid.Resource.Styleable.MaterialAlertDialogTheme_materialAlertDialogBodyTextStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialAlertDialogTheme_materialAlertDialogTheme = global::NotepadGps.Droid.Resource.Styleable.MaterialAlertDialogTheme_materialAlertDialogTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialAlertDialogTheme_materialAlertDialogTitleIconStyle = global::NotepadGps.Droid.Resource.Styleable.MaterialAlertDialogTheme_materialAlertDialogTitleIconStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialAlertDialogTheme_materialAlertDialogTitlePanelStyle = global::NotepadGps.Droid.Resource.Styleable.MaterialAlertDialogTheme_materialAlertDialogTitlePanelStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialAlertDialogTheme_materialAlertDialogTitleTextStyle = global::NotepadGps.Droid.Resource.Styleable.MaterialAlertDialogTheme_materialAlertDialogTitleTextStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialAlertDialog_backgroundInsetBottom = global::NotepadGps.Droid.Resource.Styleable.MaterialAlertDialog_backgroundInsetBottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialAlertDialog_backgroundInsetEnd = global::NotepadGps.Droid.Resource.Styleable.MaterialAlertDialog_backgroundInsetEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialAlertDialog_backgroundInsetStart = global::NotepadGps.Droid.Resource.Styleable.MaterialAlertDialog_backgroundInsetStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialAlertDialog_backgroundInsetTop = global::NotepadGps.Droid.Resource.Styleable.MaterialAlertDialog_backgroundInsetTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialAutoCompleteTextView = global::NotepadGps.Droid.Resource.Styleable.MaterialAutoCompleteTextView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialAutoCompleteTextView_android_inputType = global::NotepadGps.Droid.Resource.Styleable.MaterialAutoCompleteTextView_android_inputType;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton = global::NotepadGps.Droid.Resource.Styleable.MaterialButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButtonToggleGroup = global::NotepadGps.Droid.Resource.Styleable.MaterialButtonToggleGroup;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButtonToggleGroup_checkedButton = global::NotepadGps.Droid.Resource.Styleable.MaterialButtonToggleGroup_checkedButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButtonToggleGroup_selectionRequired = global::NotepadGps.Droid.Resource.Styleable.MaterialButtonToggleGroup_selectionRequired;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButtonToggleGroup_singleSelection = global::NotepadGps.Droid.Resource.Styleable.MaterialButtonToggleGroup_singleSelection;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_android_background = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_android_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_android_checkable = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_android_checkable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_android_insetBottom = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_android_insetBottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_android_insetLeft = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_android_insetLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_android_insetRight = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_android_insetRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_android_insetTop = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_android_insetTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_backgroundTint = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_backgroundTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_backgroundTintMode = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_backgroundTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_cornerRadius = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_cornerRadius;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_elevation = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_icon = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_iconGravity = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_iconGravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_iconPadding = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_iconPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_iconSize = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_iconSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_iconTint = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_iconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_iconTintMode = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_iconTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_rippleColor = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_rippleColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_shapeAppearance = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_shapeAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_shapeAppearanceOverlay = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_shapeAppearanceOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_strokeColor = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_strokeColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialButton_strokeWidth = global::NotepadGps.Droid.Resource.Styleable.MaterialButton_strokeWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendar = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendar;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendarItem = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendarItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendarItem_android_insetBottom = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendarItem_android_insetBottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendarItem_android_insetLeft = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendarItem_android_insetLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendarItem_android_insetRight = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendarItem_android_insetRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendarItem_android_insetTop = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendarItem_android_insetTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendarItem_itemFillColor = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendarItem_itemFillColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendarItem_itemShapeAppearance = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendarItem_itemShapeAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendarItem_itemShapeAppearanceOverlay = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendarItem_itemShapeAppearanceOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendarItem_itemStrokeColor = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendarItem_itemStrokeColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendarItem_itemStrokeWidth = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendarItem_itemStrokeWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendarItem_itemTextColor = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendarItem_itemTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendar_android_windowFullscreen = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendar_android_windowFullscreen;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendar_dayInvalidStyle = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendar_dayInvalidStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendar_daySelectedStyle = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendar_daySelectedStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendar_dayStyle = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendar_dayStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendar_dayTodayStyle = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendar_dayTodayStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendar_rangeFillColor = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendar_rangeFillColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendar_yearSelectedStyle = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendar_yearSelectedStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendar_yearStyle = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendar_yearStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCalendar_yearTodayStyle = global::NotepadGps.Droid.Resource.Styleable.MaterialCalendar_yearTodayStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCardView = global::NotepadGps.Droid.Resource.Styleable.MaterialCardView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCardView_android_checkable = global::NotepadGps.Droid.Resource.Styleable.MaterialCardView_android_checkable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCardView_cardForegroundColor = global::NotepadGps.Droid.Resource.Styleable.MaterialCardView_cardForegroundColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCardView_checkedIcon = global::NotepadGps.Droid.Resource.Styleable.MaterialCardView_checkedIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCardView_checkedIconTint = global::NotepadGps.Droid.Resource.Styleable.MaterialCardView_checkedIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCardView_rippleColor = global::NotepadGps.Droid.Resource.Styleable.MaterialCardView_rippleColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCardView_shapeAppearance = global::NotepadGps.Droid.Resource.Styleable.MaterialCardView_shapeAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCardView_shapeAppearanceOverlay = global::NotepadGps.Droid.Resource.Styleable.MaterialCardView_shapeAppearanceOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCardView_state_dragged = global::NotepadGps.Droid.Resource.Styleable.MaterialCardView_state_dragged;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCardView_strokeColor = global::NotepadGps.Droid.Resource.Styleable.MaterialCardView_strokeColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCardView_strokeWidth = global::NotepadGps.Droid.Resource.Styleable.MaterialCardView_strokeWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCheckBox = global::NotepadGps.Droid.Resource.Styleable.MaterialCheckBox;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCheckBox_buttonTint = global::NotepadGps.Droid.Resource.Styleable.MaterialCheckBox_buttonTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialCheckBox_useMaterialThemeColors = global::NotepadGps.Droid.Resource.Styleable.MaterialCheckBox_useMaterialThemeColors;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialRadioButton = global::NotepadGps.Droid.Resource.Styleable.MaterialRadioButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialRadioButton_buttonTint = global::NotepadGps.Droid.Resource.Styleable.MaterialRadioButton_buttonTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialRadioButton_useMaterialThemeColors = global::NotepadGps.Droid.Resource.Styleable.MaterialRadioButton_useMaterialThemeColors;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialShape = global::NotepadGps.Droid.Resource.Styleable.MaterialShape;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialShape_shapeAppearance = global::NotepadGps.Droid.Resource.Styleable.MaterialShape_shapeAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialShape_shapeAppearanceOverlay = global::NotepadGps.Droid.Resource.Styleable.MaterialShape_shapeAppearanceOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialTextAppearance = global::NotepadGps.Droid.Resource.Styleable.MaterialTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialTextAppearance_android_lineHeight = global::NotepadGps.Droid.Resource.Styleable.MaterialTextAppearance_android_lineHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialTextAppearance_lineHeight = global::NotepadGps.Droid.Resource.Styleable.MaterialTextAppearance_lineHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialTextView = global::NotepadGps.Droid.Resource.Styleable.MaterialTextView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialTextView_android_lineHeight = global::NotepadGps.Droid.Resource.Styleable.MaterialTextView_android_lineHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialTextView_android_textAppearance = global::NotepadGps.Droid.Resource.Styleable.MaterialTextView_android_textAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MaterialTextView_lineHeight = global::NotepadGps.Droid.Resource.Styleable.MaterialTextView_lineHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuGroup = global::NotepadGps.Droid.Resource.Styleable.MenuGroup;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::NotepadGps.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuGroup_android_enabled = global::NotepadGps.Droid.Resource.Styleable.MenuGroup_android_enabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuGroup_android_id = global::NotepadGps.Droid.Resource.Styleable.MenuGroup_android_id;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuGroup_android_menuCategory = global::NotepadGps.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuGroup_android_orderInCategory = global::NotepadGps.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuGroup_android_visible = global::NotepadGps.Droid.Resource.Styleable.MenuGroup_android_visible;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem = global::NotepadGps.Droid.Resource.Styleable.MenuItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_actionLayout = global::NotepadGps.Droid.Resource.Styleable.MenuItem_actionLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_actionProviderClass = global::NotepadGps.Droid.Resource.Styleable.MenuItem_actionProviderClass;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_actionViewClass = global::NotepadGps.Droid.Resource.Styleable.MenuItem_actionViewClass;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_alphabeticModifiers = global::NotepadGps.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::NotepadGps.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_android_checkable = global::NotepadGps.Droid.Resource.Styleable.MenuItem_android_checkable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_android_checked = global::NotepadGps.Droid.Resource.Styleable.MenuItem_android_checked;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_android_enabled = global::NotepadGps.Droid.Resource.Styleable.MenuItem_android_enabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_android_icon = global::NotepadGps.Droid.Resource.Styleable.MenuItem_android_icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_android_id = global::NotepadGps.Droid.Resource.Styleable.MenuItem_android_id;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_android_menuCategory = global::NotepadGps.Droid.Resource.Styleable.MenuItem_android_menuCategory;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_android_numericShortcut = global::NotepadGps.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_android_onClick = global::NotepadGps.Droid.Resource.Styleable.MenuItem_android_onClick;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_android_orderInCategory = global::NotepadGps.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_android_title = global::NotepadGps.Droid.Resource.Styleable.MenuItem_android_title;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_android_titleCondensed = global::NotepadGps.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_android_visible = global::NotepadGps.Droid.Resource.Styleable.MenuItem_android_visible;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_contentDescription = global::NotepadGps.Droid.Resource.Styleable.MenuItem_contentDescription;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_iconTint = global::NotepadGps.Droid.Resource.Styleable.MenuItem_iconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_iconTintMode = global::NotepadGps.Droid.Resource.Styleable.MenuItem_iconTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_numericModifiers = global::NotepadGps.Droid.Resource.Styleable.MenuItem_numericModifiers;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_showAsAction = global::NotepadGps.Droid.Resource.Styleable.MenuItem_showAsAction;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuItem_tooltipText = global::NotepadGps.Droid.Resource.Styleable.MenuItem_tooltipText;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuView = global::NotepadGps.Droid.Resource.Styleable.MenuView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuView_android_headerBackground = global::NotepadGps.Droid.Resource.Styleable.MenuView_android_headerBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuView_android_horizontalDivider = global::NotepadGps.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuView_android_itemBackground = global::NotepadGps.Droid.Resource.Styleable.MenuView_android_itemBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::NotepadGps.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuView_android_itemTextAppearance = global::NotepadGps.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuView_android_verticalDivider = global::NotepadGps.Droid.Resource.Styleable.MenuView_android_verticalDivider;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuView_android_windowAnimationStyle = global::NotepadGps.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuView_preserveIconSpacing = global::NotepadGps.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.MenuView_subMenuArrow = global::NotepadGps.Droid.Resource.Styleable.MenuView_subMenuArrow;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView = global::NotepadGps.Droid.Resource.Styleable.NavigationView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_android_background = global::NotepadGps.Droid.Resource.Styleable.NavigationView_android_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::NotepadGps.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_android_maxWidth = global::NotepadGps.Droid.Resource.Styleable.NavigationView_android_maxWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_elevation = global::NotepadGps.Droid.Resource.Styleable.NavigationView_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_headerLayout = global::NotepadGps.Droid.Resource.Styleable.NavigationView_headerLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_itemBackground = global::NotepadGps.Droid.Resource.Styleable.NavigationView_itemBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_itemHorizontalPadding = global::NotepadGps.Droid.Resource.Styleable.NavigationView_itemHorizontalPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_itemIconPadding = global::NotepadGps.Droid.Resource.Styleable.NavigationView_itemIconPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_itemIconSize = global::NotepadGps.Droid.Resource.Styleable.NavigationView_itemIconSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_itemIconTint = global::NotepadGps.Droid.Resource.Styleable.NavigationView_itemIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_itemMaxLines = global::NotepadGps.Droid.Resource.Styleable.NavigationView_itemMaxLines;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_itemShapeAppearance = global::NotepadGps.Droid.Resource.Styleable.NavigationView_itemShapeAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_itemShapeAppearanceOverlay = global::NotepadGps.Droid.Resource.Styleable.NavigationView_itemShapeAppearanceOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_itemShapeFillColor = global::NotepadGps.Droid.Resource.Styleable.NavigationView_itemShapeFillColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_itemShapeInsetBottom = global::NotepadGps.Droid.Resource.Styleable.NavigationView_itemShapeInsetBottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_itemShapeInsetEnd = global::NotepadGps.Droid.Resource.Styleable.NavigationView_itemShapeInsetEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_itemShapeInsetStart = global::NotepadGps.Droid.Resource.Styleable.NavigationView_itemShapeInsetStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_itemShapeInsetTop = global::NotepadGps.Droid.Resource.Styleable.NavigationView_itemShapeInsetTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_itemTextAppearance = global::NotepadGps.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_itemTextColor = global::NotepadGps.Droid.Resource.Styleable.NavigationView_itemTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.NavigationView_menu = global::NotepadGps.Droid.Resource.Styleable.NavigationView_menu;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.PopupWindow = global::NotepadGps.Droid.Resource.Styleable.PopupWindow;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.PopupWindowBackgroundState = global::NotepadGps.Droid.Resource.Styleable.PopupWindowBackgroundState;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::NotepadGps.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::NotepadGps.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::NotepadGps.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::NotepadGps.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RangeSlider = global::NotepadGps.Droid.Resource.Styleable.RangeSlider;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RangeSlider_values = global::NotepadGps.Droid.Resource.Styleable.RangeSlider_values;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RecycleListView = global::NotepadGps.Droid.Resource.Styleable.RecycleListView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::NotepadGps.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::NotepadGps.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RecyclerView = global::NotepadGps.Droid.Resource.Styleable.RecyclerView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RecyclerView_android_clipToPadding = global::NotepadGps.Droid.Resource.Styleable.RecyclerView_android_clipToPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RecyclerView_android_descendantFocusability = global::NotepadGps.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RecyclerView_android_orientation = global::NotepadGps.Droid.Resource.Styleable.RecyclerView_android_orientation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RecyclerView_fastScrollEnabled = global::NotepadGps.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::NotepadGps.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::NotepadGps.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::NotepadGps.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::NotepadGps.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RecyclerView_layoutManager = global::NotepadGps.Droid.Resource.Styleable.RecyclerView_layoutManager;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RecyclerView_reverseLayout = global::NotepadGps.Droid.Resource.Styleable.RecyclerView_reverseLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RecyclerView_spanCount = global::NotepadGps.Droid.Resource.Styleable.RecyclerView_spanCount;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.RecyclerView_stackFromEnd = global::NotepadGps.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ScrimInsetsFrameLayout = global::NotepadGps.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::NotepadGps.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ScrollingViewBehavior_Layout = global::NotepadGps.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::NotepadGps.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ScrollViewRendererTheme = global::NotepadGps.Droid.Resource.Styleable.ScrollViewRendererTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ScrollViewRendererTheme_scrollViewStyle = global::NotepadGps.Droid.Resource.Styleable.ScrollViewRendererTheme_scrollViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView = global::NotepadGps.Droid.Resource.Styleable.SearchView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView_android_focusable = global::NotepadGps.Droid.Resource.Styleable.SearchView_android_focusable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView_android_imeOptions = global::NotepadGps.Droid.Resource.Styleable.SearchView_android_imeOptions;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView_android_inputType = global::NotepadGps.Droid.Resource.Styleable.SearchView_android_inputType;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView_android_maxWidth = global::NotepadGps.Droid.Resource.Styleable.SearchView_android_maxWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView_closeIcon = global::NotepadGps.Droid.Resource.Styleable.SearchView_closeIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView_commitIcon = global::NotepadGps.Droid.Resource.Styleable.SearchView_commitIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView_defaultQueryHint = global::NotepadGps.Droid.Resource.Styleable.SearchView_defaultQueryHint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView_goIcon = global::NotepadGps.Droid.Resource.Styleable.SearchView_goIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView_iconifiedByDefault = global::NotepadGps.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView_layout = global::NotepadGps.Droid.Resource.Styleable.SearchView_layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView_queryBackground = global::NotepadGps.Droid.Resource.Styleable.SearchView_queryBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView_queryHint = global::NotepadGps.Droid.Resource.Styleable.SearchView_queryHint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView_searchHintIcon = global::NotepadGps.Droid.Resource.Styleable.SearchView_searchHintIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView_searchIcon = global::NotepadGps.Droid.Resource.Styleable.SearchView_searchIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView_submitBackground = global::NotepadGps.Droid.Resource.Styleable.SearchView_submitBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::NotepadGps.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SearchView_voiceIcon = global::NotepadGps.Droid.Resource.Styleable.SearchView_voiceIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ShapeableImageView = global::NotepadGps.Droid.Resource.Styleable.ShapeableImageView;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ShapeableImageView_shapeAppearance = global::NotepadGps.Droid.Resource.Styleable.ShapeableImageView_shapeAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ShapeableImageView_shapeAppearanceOverlay = global::NotepadGps.Droid.Resource.Styleable.ShapeableImageView_shapeAppearanceOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ShapeableImageView_strokeColor = global::NotepadGps.Droid.Resource.Styleable.ShapeableImageView_strokeColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ShapeableImageView_strokeWidth = global::NotepadGps.Droid.Resource.Styleable.ShapeableImageView_strokeWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ShapeAppearance = global::NotepadGps.Droid.Resource.Styleable.ShapeAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ShapeAppearance_cornerFamily = global::NotepadGps.Droid.Resource.Styleable.ShapeAppearance_cornerFamily;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ShapeAppearance_cornerFamilyBottomLeft = global::NotepadGps.Droid.Resource.Styleable.ShapeAppearance_cornerFamilyBottomLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ShapeAppearance_cornerFamilyBottomRight = global::NotepadGps.Droid.Resource.Styleable.ShapeAppearance_cornerFamilyBottomRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ShapeAppearance_cornerFamilyTopLeft = global::NotepadGps.Droid.Resource.Styleable.ShapeAppearance_cornerFamilyTopLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ShapeAppearance_cornerFamilyTopRight = global::NotepadGps.Droid.Resource.Styleable.ShapeAppearance_cornerFamilyTopRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ShapeAppearance_cornerSize = global::NotepadGps.Droid.Resource.Styleable.ShapeAppearance_cornerSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ShapeAppearance_cornerSizeBottomLeft = global::NotepadGps.Droid.Resource.Styleable.ShapeAppearance_cornerSizeBottomLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ShapeAppearance_cornerSizeBottomRight = global::NotepadGps.Droid.Resource.Styleable.ShapeAppearance_cornerSizeBottomRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ShapeAppearance_cornerSizeTopLeft = global::NotepadGps.Droid.Resource.Styleable.ShapeAppearance_cornerSizeTopLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ShapeAppearance_cornerSizeTopRight = global::NotepadGps.Droid.Resource.Styleable.ShapeAppearance_cornerSizeTopRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SignInButton = global::NotepadGps.Droid.Resource.Styleable.SignInButton;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SignInButton_buttonSize = global::NotepadGps.Droid.Resource.Styleable.SignInButton_buttonSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SignInButton_colorScheme = global::NotepadGps.Droid.Resource.Styleable.SignInButton_colorScheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SignInButton_scopeUris = global::NotepadGps.Droid.Resource.Styleable.SignInButton_scopeUris;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider = global::NotepadGps.Droid.Resource.Styleable.Slider;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_android_enabled = global::NotepadGps.Droid.Resource.Styleable.Slider_android_enabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_android_stepSize = global::NotepadGps.Droid.Resource.Styleable.Slider_android_stepSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_android_value = global::NotepadGps.Droid.Resource.Styleable.Slider_android_value;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_android_valueFrom = global::NotepadGps.Droid.Resource.Styleable.Slider_android_valueFrom;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_android_valueTo = global::NotepadGps.Droid.Resource.Styleable.Slider_android_valueTo;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_haloColor = global::NotepadGps.Droid.Resource.Styleable.Slider_haloColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_haloRadius = global::NotepadGps.Droid.Resource.Styleable.Slider_haloRadius;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_labelBehavior = global::NotepadGps.Droid.Resource.Styleable.Slider_labelBehavior;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_labelStyle = global::NotepadGps.Droid.Resource.Styleable.Slider_labelStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_thumbColor = global::NotepadGps.Droid.Resource.Styleable.Slider_thumbColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_thumbElevation = global::NotepadGps.Droid.Resource.Styleable.Slider_thumbElevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_thumbRadius = global::NotepadGps.Droid.Resource.Styleable.Slider_thumbRadius;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_tickColor = global::NotepadGps.Droid.Resource.Styleable.Slider_tickColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_tickColorActive = global::NotepadGps.Droid.Resource.Styleable.Slider_tickColorActive;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_tickColorInactive = global::NotepadGps.Droid.Resource.Styleable.Slider_tickColorInactive;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_trackColor = global::NotepadGps.Droid.Resource.Styleable.Slider_trackColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_trackColorActive = global::NotepadGps.Droid.Resource.Styleable.Slider_trackColorActive;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_trackColorInactive = global::NotepadGps.Droid.Resource.Styleable.Slider_trackColorInactive;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Slider_trackHeight = global::NotepadGps.Droid.Resource.Styleable.Slider_trackHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Snackbar = global::NotepadGps.Droid.Resource.Styleable.Snackbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SnackbarLayout = global::NotepadGps.Droid.Resource.Styleable.SnackbarLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SnackbarLayout_actionTextColorAlpha = global::NotepadGps.Droid.Resource.Styleable.SnackbarLayout_actionTextColorAlpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::NotepadGps.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SnackbarLayout_animationMode = global::NotepadGps.Droid.Resource.Styleable.SnackbarLayout_animationMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SnackbarLayout_backgroundOverlayColorAlpha = global::NotepadGps.Droid.Resource.Styleable.SnackbarLayout_backgroundOverlayColorAlpha;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SnackbarLayout_backgroundTint = global::NotepadGps.Droid.Resource.Styleable.SnackbarLayout_backgroundTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SnackbarLayout_backgroundTintMode = global::NotepadGps.Droid.Resource.Styleable.SnackbarLayout_backgroundTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SnackbarLayout_elevation = global::NotepadGps.Droid.Resource.Styleable.SnackbarLayout_elevation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::NotepadGps.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Snackbar_snackbarButtonStyle = global::NotepadGps.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Snackbar_snackbarStyle = global::NotepadGps.Droid.Resource.Styleable.Snackbar_snackbarStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Snackbar_snackbarTextViewStyle = global::NotepadGps.Droid.Resource.Styleable.Snackbar_snackbarTextViewStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Spinner = global::NotepadGps.Droid.Resource.Styleable.Spinner;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::NotepadGps.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Spinner_android_entries = global::NotepadGps.Droid.Resource.Styleable.Spinner_android_entries;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Spinner_android_popupBackground = global::NotepadGps.Droid.Resource.Styleable.Spinner_android_popupBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Spinner_android_prompt = global::NotepadGps.Droid.Resource.Styleable.Spinner_android_prompt;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Spinner_popupTheme = global::NotepadGps.Droid.Resource.Styleable.Spinner_popupTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.StateListDrawable = global::NotepadGps.Droid.Resource.Styleable.StateListDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.StateListDrawableItem = global::NotepadGps.Droid.Resource.Styleable.StateListDrawableItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.StateListDrawableItem_android_drawable = global::NotepadGps.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.StateListDrawable_android_constantSize = global::NotepadGps.Droid.Resource.Styleable.StateListDrawable_android_constantSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.StateListDrawable_android_dither = global::NotepadGps.Droid.Resource.Styleable.StateListDrawable_android_dither;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.StateListDrawable_android_enterFadeDuration = global::NotepadGps.Droid.Resource.Styleable.StateListDrawable_android_enterFadeDuration;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.StateListDrawable_android_exitFadeDuration = global::NotepadGps.Droid.Resource.Styleable.StateListDrawable_android_exitFadeDuration;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.StateListDrawable_android_variablePadding = global::NotepadGps.Droid.Resource.Styleable.StateListDrawable_android_variablePadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.StateListDrawable_android_visible = global::NotepadGps.Droid.Resource.Styleable.StateListDrawable_android_visible;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwipeRefreshLayout = global::NotepadGps.Droid.Resource.Styleable.SwipeRefreshLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwipeRefreshLayout_swipeRefreshLayoutProgressSpinnerBackgroundColor = global::NotepadGps.Droid.Resource.Styleable.SwipeRefreshLayout_swipeRefreshLayoutProgressSpinnerBackgroundColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwitchCompat = global::NotepadGps.Droid.Resource.Styleable.SwitchCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwitchCompat_android_textOff = global::NotepadGps.Droid.Resource.Styleable.SwitchCompat_android_textOff;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwitchCompat_android_textOn = global::NotepadGps.Droid.Resource.Styleable.SwitchCompat_android_textOn;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwitchCompat_android_thumb = global::NotepadGps.Droid.Resource.Styleable.SwitchCompat_android_thumb;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwitchCompat_showText = global::NotepadGps.Droid.Resource.Styleable.SwitchCompat_showText;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwitchCompat_splitTrack = global::NotepadGps.Droid.Resource.Styleable.SwitchCompat_splitTrack;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwitchCompat_switchMinWidth = global::NotepadGps.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwitchCompat_switchPadding = global::NotepadGps.Droid.Resource.Styleable.SwitchCompat_switchPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwitchCompat_switchTextAppearance = global::NotepadGps.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwitchCompat_thumbTextPadding = global::NotepadGps.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwitchCompat_thumbTint = global::NotepadGps.Droid.Resource.Styleable.SwitchCompat_thumbTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwitchCompat_thumbTintMode = global::NotepadGps.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwitchCompat_track = global::NotepadGps.Droid.Resource.Styleable.SwitchCompat_track;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwitchCompat_trackTint = global::NotepadGps.Droid.Resource.Styleable.SwitchCompat_trackTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwitchCompat_trackTintMode = global::NotepadGps.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwitchMaterial = global::NotepadGps.Droid.Resource.Styleable.SwitchMaterial;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.SwitchMaterial_useMaterialThemeColors = global::NotepadGps.Droid.Resource.Styleable.SwitchMaterial_useMaterialThemeColors;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabItem = global::NotepadGps.Droid.Resource.Styleable.TabItem;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabItem_android_icon = global::NotepadGps.Droid.Resource.Styleable.TabItem_android_icon;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabItem_android_layout = global::NotepadGps.Droid.Resource.Styleable.TabItem_android_layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabItem_android_text = global::NotepadGps.Droid.Resource.Styleable.TabItem_android_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout = global::NotepadGps.Droid.Resource.Styleable.TabLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabBackground = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabBackground;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabContentStart = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabContentStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabGravity = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabGravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabIconTint = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabIconTintMode = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabIconTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabIndicator = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabIndicator;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabIndicatorColor = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabIndicatorFullWidth = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabIndicatorFullWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabIndicatorGravity = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabIndicatorGravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabIndicatorHeight = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabInlineLabel = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabInlineLabel;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabMaxWidth = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabMinWidth = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabMinWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabMode = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabPadding = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabPadding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabPaddingBottom = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabPaddingEnd = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabPaddingStart = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabPaddingTop = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabRippleColor = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabRippleColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabSelectedTextColor = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabTextAppearance = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabTextColor = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TabLayout_tabUnboundedRipple = global::NotepadGps.Droid.Resource.Styleable.TabLayout_tabUnboundedRipple;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextAppearance = global::NotepadGps.Droid.Resource.Styleable.TextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextAppearance_android_fontFamily = global::NotepadGps.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextAppearance_android_shadowColor = global::NotepadGps.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextAppearance_android_shadowDx = global::NotepadGps.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextAppearance_android_shadowDy = global::NotepadGps.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextAppearance_android_shadowRadius = global::NotepadGps.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextAppearance_android_textColor = global::NotepadGps.Droid.Resource.Styleable.TextAppearance_android_textColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextAppearance_android_textColorHint = global::NotepadGps.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextAppearance_android_textColorLink = global::NotepadGps.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextAppearance_android_textFontWeight = global::NotepadGps.Droid.Resource.Styleable.TextAppearance_android_textFontWeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextAppearance_android_textSize = global::NotepadGps.Droid.Resource.Styleable.TextAppearance_android_textSize;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextAppearance_android_textStyle = global::NotepadGps.Droid.Resource.Styleable.TextAppearance_android_textStyle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextAppearance_android_typeface = global::NotepadGps.Droid.Resource.Styleable.TextAppearance_android_typeface;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextAppearance_fontFamily = global::NotepadGps.Droid.Resource.Styleable.TextAppearance_fontFamily;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextAppearance_fontVariationSettings = global::NotepadGps.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextAppearance_textAllCaps = global::NotepadGps.Droid.Resource.Styleable.TextAppearance_textAllCaps;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextAppearance_textLocale = global::NotepadGps.Droid.Resource.Styleable.TextAppearance_textLocale;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputEditText = global::NotepadGps.Droid.Resource.Styleable.TextInputEditText;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputEditText_textInputLayoutFocusedRectEnabled = global::NotepadGps.Droid.Resource.Styleable.TextInputEditText_textInputLayoutFocusedRectEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_android_enabled = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_android_enabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_android_hint = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_android_hint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_boxBackgroundColor = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_boxBackgroundColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_boxBackgroundMode = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_boxBackgroundMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_boxStrokeColor = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_boxStrokeColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_boxStrokeErrorColor = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_boxStrokeErrorColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_boxStrokeWidth = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_boxStrokeWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_boxStrokeWidthFocused = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_boxStrokeWidthFocused;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_counterEnabled = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_counterMaxLength = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_counterOverflowTextColor = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_counterTextAppearance = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_counterTextColor = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_counterTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_endIconCheckable = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_endIconCheckable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_endIconContentDescription = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_endIconContentDescription;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_endIconDrawable = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_endIconDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_endIconMode = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_endIconMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_endIconTint = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_endIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_endIconTintMode = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_endIconTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_errorContentDescription = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_errorContentDescription;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_errorEnabled = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_errorIconDrawable = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_errorIconDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_errorIconTint = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_errorIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_errorIconTintMode = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_errorIconTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_errorTextAppearance = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_errorTextColor = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_errorTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_helperText = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_helperText;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_helperTextEnabled = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_helperTextEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_helperTextTextAppearance = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_helperTextTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_helperTextTextColor = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_helperTextTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_hintEnabled = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_hintTextAppearance = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_hintTextColor = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_hintTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_passwordToggleTint = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_placeholderText = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_placeholderText;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_placeholderTextAppearance = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_placeholderTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_placeholderTextColor = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_placeholderTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_prefixText = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_prefixText;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_prefixTextAppearance = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_prefixTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_prefixTextColor = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_prefixTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_shapeAppearance = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_shapeAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_shapeAppearanceOverlay = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_shapeAppearanceOverlay;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_startIconCheckable = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_startIconCheckable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_startIconContentDescription = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_startIconContentDescription;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_startIconDrawable = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_startIconDrawable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_startIconTint = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_startIconTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_startIconTintMode = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_startIconTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_suffixText = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_suffixText;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_suffixTextAppearance = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_suffixTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.TextInputLayout_suffixTextColor = global::NotepadGps.Droid.Resource.Styleable.TextInputLayout_suffixTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ThemeEnforcement = global::NotepadGps.Droid.Resource.Styleable.ThemeEnforcement;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ThemeEnforcement_android_textAppearance = global::NotepadGps.Droid.Resource.Styleable.ThemeEnforcement_android_textAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme = global::NotepadGps.Droid.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ThemeEnforcement_enforceTextAppearance = global::NotepadGps.Droid.Resource.Styleable.ThemeEnforcement_enforceTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar = global::NotepadGps.Droid.Resource.Styleable.Toolbar;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_android_gravity = global::NotepadGps.Droid.Resource.Styleable.Toolbar_android_gravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_android_minHeight = global::NotepadGps.Droid.Resource.Styleable.Toolbar_android_minHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_buttonGravity = global::NotepadGps.Droid.Resource.Styleable.Toolbar_buttonGravity;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_collapseContentDescription = global::NotepadGps.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_collapseIcon = global::NotepadGps.Droid.Resource.Styleable.Toolbar_collapseIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_contentInsetEnd = global::NotepadGps.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::NotepadGps.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_contentInsetLeft = global::NotepadGps.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_contentInsetRight = global::NotepadGps.Droid.Resource.Styleable.Toolbar_contentInsetRight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_contentInsetStart = global::NotepadGps.Droid.Resource.Styleable.Toolbar_contentInsetStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::NotepadGps.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_logo = global::NotepadGps.Droid.Resource.Styleable.Toolbar_logo;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_logoDescription = global::NotepadGps.Droid.Resource.Styleable.Toolbar_logoDescription;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::NotepadGps.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_menu = global::NotepadGps.Droid.Resource.Styleable.Toolbar_menu;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::NotepadGps.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_navigationIcon = global::NotepadGps.Droid.Resource.Styleable.Toolbar_navigationIcon;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_popupTheme = global::NotepadGps.Droid.Resource.Styleable.Toolbar_popupTheme;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_subtitle = global::NotepadGps.Droid.Resource.Styleable.Toolbar_subtitle;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_subtitleTextAppearance = global::NotepadGps.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_subtitleTextColor = global::NotepadGps.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_title = global::NotepadGps.Droid.Resource.Styleable.Toolbar_title;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_titleMargin = global::NotepadGps.Droid.Resource.Styleable.Toolbar_titleMargin;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::NotepadGps.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::NotepadGps.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_titleMargins = global::NotepadGps.Droid.Resource.Styleable.Toolbar_titleMargins;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_titleMarginStart = global::NotepadGps.Droid.Resource.Styleable.Toolbar_titleMarginStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_titleMarginTop = global::NotepadGps.Droid.Resource.Styleable.Toolbar_titleMarginTop;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::NotepadGps.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Toolbar_titleTextColor = global::NotepadGps.Droid.Resource.Styleable.Toolbar_titleTextColor;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Tooltip = global::NotepadGps.Droid.Resource.Styleable.Tooltip;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Tooltip_android_layout_margin = global::NotepadGps.Droid.Resource.Styleable.Tooltip_android_layout_margin;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Tooltip_android_minHeight = global::NotepadGps.Droid.Resource.Styleable.Tooltip_android_minHeight;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Tooltip_android_minWidth = global::NotepadGps.Droid.Resource.Styleable.Tooltip_android_minWidth;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Tooltip_android_padding = global::NotepadGps.Droid.Resource.Styleable.Tooltip_android_padding;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Tooltip_android_text = global::NotepadGps.Droid.Resource.Styleable.Tooltip_android_text;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Tooltip_android_textAppearance = global::NotepadGps.Droid.Resource.Styleable.Tooltip_android_textAppearance;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.Tooltip_backgroundTint = global::NotepadGps.Droid.Resource.Styleable.Tooltip_backgroundTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.View = global::NotepadGps.Droid.Resource.Styleable.View;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ViewBackgroundHelper = global::NotepadGps.Droid.Resource.Styleable.ViewBackgroundHelper;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::NotepadGps.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::NotepadGps.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::NotepadGps.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ViewPager2 = global::NotepadGps.Droid.Resource.Styleable.ViewPager2;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ViewPager2_android_orientation = global::NotepadGps.Droid.Resource.Styleable.ViewPager2_android_orientation;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ViewStubCompat = global::NotepadGps.Droid.Resource.Styleable.ViewStubCompat;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ViewStubCompat_android_id = global::NotepadGps.Droid.Resource.Styleable.ViewStubCompat_android_id;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::NotepadGps.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.ViewStubCompat_android_layout = global::NotepadGps.Droid.Resource.Styleable.ViewStubCompat_android_layout;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.View_android_focusable = global::NotepadGps.Droid.Resource.Styleable.View_android_focusable;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.View_android_theme = global::NotepadGps.Droid.Resource.Styleable.View_android_theme;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.View_paddingEnd = global::NotepadGps.Droid.Resource.Styleable.View_paddingEnd;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.View_paddingStart = global::NotepadGps.Droid.Resource.Styleable.View_paddingStart;
-			global::Xamarin.Forms.Maps.Android.Resource.Styleable.View_theme = global::NotepadGps.Droid.Resource.Styleable.View_theme;
-			global::Xamarin.Forms.Maps.Android.Resource.Xml.standalone_badge = global::NotepadGps.Droid.Resource.Xml.standalone_badge;
-			global::Xamarin.Forms.Maps.Android.Resource.Xml.standalone_badge_gravity_bottom_end = global::NotepadGps.Droid.Resource.Xml.standalone_badge_gravity_bottom_end;
-			global::Xamarin.Forms.Maps.Android.Resource.Xml.standalone_badge_gravity_bottom_start = global::NotepadGps.Droid.Resource.Xml.standalone_badge_gravity_bottom_start;
-			global::Xamarin.Forms.Maps.Android.Resource.Xml.standalone_badge_gravity_top_start = global::NotepadGps.Droid.Resource.Xml.standalone_badge_gravity_top_start;
-			global::Xamarin.Forms.Maps.Android.Resource.Xml.standalone_badge_offset = global::NotepadGps.Droid.Resource.Xml.standalone_badge_offset;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_in = global::NotepadGps.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_out = global::NotepadGps.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::NotepadGps.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -16147,79 +12398,76 @@ namespace NotepadGps.Droid
 			public const int uiScrollGestures = 2130903732;
 			
 			// aapt resource value: 0x7F0302B5
-			public const int uiScrollGesturesDuringRotateOrZoom = 2130903733;
+			public const int uiTiltGestures = 2130903733;
 			
 			// aapt resource value: 0x7F0302B6
-			public const int uiTiltGestures = 2130903734;
+			public const int uiZoomControls = 2130903734;
 			
 			// aapt resource value: 0x7F0302B7
-			public const int uiZoomControls = 2130903735;
+			public const int uiZoomGestures = 2130903735;
 			
 			// aapt resource value: 0x7F0302B8
-			public const int uiZoomGestures = 2130903736;
+			public const int useCompatPadding = 2130903736;
 			
 			// aapt resource value: 0x7F0302B9
-			public const int useCompatPadding = 2130903737;
+			public const int useMaterialThemeColors = 2130903737;
 			
 			// aapt resource value: 0x7F0302BA
-			public const int useMaterialThemeColors = 2130903738;
+			public const int useViewLifecycle = 2130903738;
 			
 			// aapt resource value: 0x7F0302BB
-			public const int useViewLifecycle = 2130903739;
+			public const int values = 2130903739;
 			
 			// aapt resource value: 0x7F0302BC
-			public const int values = 2130903740;
+			public const int verticalOffset = 2130903740;
 			
 			// aapt resource value: 0x7F0302BD
-			public const int verticalOffset = 2130903741;
+			public const int viewInflaterClass = 2130903741;
 			
 			// aapt resource value: 0x7F0302BE
-			public const int viewInflaterClass = 2130903742;
+			public const int voiceIcon = 2130903742;
 			
 			// aapt resource value: 0x7F0302BF
-			public const int voiceIcon = 2130903743;
+			public const int windowActionBar = 2130903743;
 			
 			// aapt resource value: 0x7F0302C0
-			public const int windowActionBar = 2130903744;
+			public const int windowActionBarOverlay = 2130903744;
 			
 			// aapt resource value: 0x7F0302C1
-			public const int windowActionBarOverlay = 2130903745;
+			public const int windowActionModeOverlay = 2130903745;
 			
 			// aapt resource value: 0x7F0302C2
-			public const int windowActionModeOverlay = 2130903746;
+			public const int windowFixedHeightMajor = 2130903746;
 			
 			// aapt resource value: 0x7F0302C3
-			public const int windowFixedHeightMajor = 2130903747;
+			public const int windowFixedHeightMinor = 2130903747;
 			
 			// aapt resource value: 0x7F0302C4
-			public const int windowFixedHeightMinor = 2130903748;
+			public const int windowFixedWidthMajor = 2130903748;
 			
 			// aapt resource value: 0x7F0302C5
-			public const int windowFixedWidthMajor = 2130903749;
+			public const int windowFixedWidthMinor = 2130903749;
 			
 			// aapt resource value: 0x7F0302C6
-			public const int windowFixedWidthMinor = 2130903750;
+			public const int windowMinWidthMajor = 2130903750;
 			
 			// aapt resource value: 0x7F0302C7
-			public const int windowMinWidthMajor = 2130903751;
+			public const int windowMinWidthMinor = 2130903751;
 			
 			// aapt resource value: 0x7F0302C8
-			public const int windowMinWidthMinor = 2130903752;
+			public const int windowNoTitle = 2130903752;
 			
 			// aapt resource value: 0x7F0302C9
-			public const int windowNoTitle = 2130903753;
+			public const int yearSelectedStyle = 2130903753;
 			
 			// aapt resource value: 0x7F0302CA
-			public const int yearSelectedStyle = 2130903754;
+			public const int yearStyle = 2130903754;
 			
 			// aapt resource value: 0x7F0302CB
-			public const int yearStyle = 2130903755;
+			public const int yearTodayStyle = 2130903755;
 			
 			// aapt resource value: 0x7F0302CC
-			public const int yearTodayStyle = 2130903756;
-			
-			// aapt resource value: 0x7F0302CD
-			public const int zOrderOnTop = 2130903757;
+			public const int zOrderOnTop = 2130903756;
 			
 			static Attribute()
 			{
@@ -18455,751 +14703,754 @@ namespace NotepadGps.Droid
 			public const int googleg_standard_color_18 = 2131165312;
 			
 			// aapt resource value: 0x7F070081
-			public const int ic_audiotrack_dark = 2131165313;
+			public const int GPS = 2131165313;
 			
 			// aapt resource value: 0x7F070082
-			public const int ic_audiotrack_light = 2131165314;
+			public const int ic_audiotrack_dark = 2131165314;
 			
 			// aapt resource value: 0x7F070083
-			public const int ic_checked_checkbox = 2131165315;
+			public const int ic_audiotrack_light = 2131165315;
 			
 			// aapt resource value: 0x7F070084
-			public const int ic_dialog_close_dark = 2131165316;
+			public const int ic_checked_checkbox = 2131165316;
 			
 			// aapt resource value: 0x7F070085
-			public const int ic_dialog_close_light = 2131165317;
+			public const int ic_dialog_close_dark = 2131165317;
 			
 			// aapt resource value: 0x7F070086
-			public const int ic_errorstatus = 2131165318;
+			public const int ic_dialog_close_light = 2131165318;
 			
 			// aapt resource value: 0x7F070087
-			public const int ic_group_collapse_00 = 2131165319;
+			public const int ic_errorstatus = 2131165319;
 			
 			// aapt resource value: 0x7F070088
-			public const int ic_group_collapse_01 = 2131165320;
+			public const int ic_group_collapse_00 = 2131165320;
 			
 			// aapt resource value: 0x7F070089
-			public const int ic_group_collapse_02 = 2131165321;
+			public const int ic_group_collapse_01 = 2131165321;
 			
 			// aapt resource value: 0x7F07008A
-			public const int ic_group_collapse_03 = 2131165322;
+			public const int ic_group_collapse_02 = 2131165322;
 			
 			// aapt resource value: 0x7F07008B
-			public const int ic_group_collapse_04 = 2131165323;
+			public const int ic_group_collapse_03 = 2131165323;
 			
 			// aapt resource value: 0x7F07008C
-			public const int ic_group_collapse_05 = 2131165324;
+			public const int ic_group_collapse_04 = 2131165324;
 			
 			// aapt resource value: 0x7F07008D
-			public const int ic_group_collapse_06 = 2131165325;
+			public const int ic_group_collapse_05 = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
-			public const int ic_group_collapse_07 = 2131165326;
+			public const int ic_group_collapse_06 = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int ic_group_collapse_08 = 2131165327;
+			public const int ic_group_collapse_07 = 2131165327;
 			
 			// aapt resource value: 0x7F070090
-			public const int ic_group_collapse_09 = 2131165328;
+			public const int ic_group_collapse_08 = 2131165328;
 			
 			// aapt resource value: 0x7F070091
-			public const int ic_group_collapse_10 = 2131165329;
+			public const int ic_group_collapse_09 = 2131165329;
 			
 			// aapt resource value: 0x7F070092
-			public const int ic_group_collapse_11 = 2131165330;
+			public const int ic_group_collapse_10 = 2131165330;
 			
 			// aapt resource value: 0x7F070093
-			public const int ic_group_collapse_12 = 2131165331;
+			public const int ic_group_collapse_11 = 2131165331;
 			
 			// aapt resource value: 0x7F070094
-			public const int ic_group_collapse_13 = 2131165332;
+			public const int ic_group_collapse_12 = 2131165332;
 			
 			// aapt resource value: 0x7F070095
-			public const int ic_group_collapse_14 = 2131165333;
+			public const int ic_group_collapse_13 = 2131165333;
 			
 			// aapt resource value: 0x7F070096
-			public const int ic_group_collapse_15 = 2131165334;
+			public const int ic_group_collapse_14 = 2131165334;
 			
 			// aapt resource value: 0x7F070097
-			public const int ic_group_expand_00 = 2131165335;
+			public const int ic_group_collapse_15 = 2131165335;
 			
 			// aapt resource value: 0x7F070098
-			public const int ic_group_expand_01 = 2131165336;
+			public const int ic_group_expand_00 = 2131165336;
 			
 			// aapt resource value: 0x7F070099
-			public const int ic_group_expand_02 = 2131165337;
+			public const int ic_group_expand_01 = 2131165337;
 			
 			// aapt resource value: 0x7F07009A
-			public const int ic_group_expand_03 = 2131165338;
+			public const int ic_group_expand_02 = 2131165338;
 			
 			// aapt resource value: 0x7F07009B
-			public const int ic_group_expand_04 = 2131165339;
+			public const int ic_group_expand_03 = 2131165339;
 			
 			// aapt resource value: 0x7F07009C
-			public const int ic_group_expand_05 = 2131165340;
+			public const int ic_group_expand_04 = 2131165340;
 			
 			// aapt resource value: 0x7F07009D
-			public const int ic_group_expand_06 = 2131165341;
+			public const int ic_group_expand_05 = 2131165341;
 			
 			// aapt resource value: 0x7F07009E
-			public const int ic_group_expand_07 = 2131165342;
+			public const int ic_group_expand_06 = 2131165342;
 			
 			// aapt resource value: 0x7F07009F
-			public const int ic_group_expand_08 = 2131165343;
+			public const int ic_group_expand_07 = 2131165343;
 			
 			// aapt resource value: 0x7F0700A0
-			public const int ic_group_expand_09 = 2131165344;
+			public const int ic_group_expand_08 = 2131165344;
 			
 			// aapt resource value: 0x7F0700A1
-			public const int ic_group_expand_10 = 2131165345;
+			public const int ic_group_expand_09 = 2131165345;
 			
 			// aapt resource value: 0x7F0700A2
-			public const int ic_group_expand_11 = 2131165346;
+			public const int ic_group_expand_10 = 2131165346;
 			
 			// aapt resource value: 0x7F0700A3
-			public const int ic_group_expand_12 = 2131165347;
+			public const int ic_group_expand_11 = 2131165347;
 			
 			// aapt resource value: 0x7F0700A4
-			public const int ic_group_expand_13 = 2131165348;
+			public const int ic_group_expand_12 = 2131165348;
 			
 			// aapt resource value: 0x7F0700A5
-			public const int ic_group_expand_14 = 2131165349;
+			public const int ic_group_expand_13 = 2131165349;
 			
 			// aapt resource value: 0x7F0700A6
-			public const int ic_group_expand_15 = 2131165350;
+			public const int ic_group_expand_14 = 2131165350;
 			
 			// aapt resource value: 0x7F0700A7
-			public const int ic_media_pause_dark = 2131165351;
+			public const int ic_group_expand_15 = 2131165351;
 			
 			// aapt resource value: 0x7F0700A8
-			public const int ic_media_pause_light = 2131165352;
+			public const int ic_media_pause_dark = 2131165352;
 			
 			// aapt resource value: 0x7F0700A9
-			public const int ic_media_play_dark = 2131165353;
+			public const int ic_media_pause_light = 2131165353;
 			
 			// aapt resource value: 0x7F0700AA
-			public const int ic_media_play_light = 2131165354;
+			public const int ic_media_play_dark = 2131165354;
 			
 			// aapt resource value: 0x7F0700AB
-			public const int ic_media_stop_dark = 2131165355;
+			public const int ic_media_play_light = 2131165355;
 			
 			// aapt resource value: 0x7F0700AC
-			public const int ic_media_stop_light = 2131165356;
+			public const int ic_media_stop_dark = 2131165356;
 			
 			// aapt resource value: 0x7F0700AD
-			public const int ic_mr_button_connected_00_dark = 2131165357;
+			public const int ic_media_stop_light = 2131165357;
 			
 			// aapt resource value: 0x7F0700AE
-			public const int ic_mr_button_connected_00_light = 2131165358;
+			public const int ic_mr_button_connected_00_dark = 2131165358;
 			
 			// aapt resource value: 0x7F0700AF
-			public const int ic_mr_button_connected_01_dark = 2131165359;
+			public const int ic_mr_button_connected_00_light = 2131165359;
 			
 			// aapt resource value: 0x7F0700B0
-			public const int ic_mr_button_connected_01_light = 2131165360;
+			public const int ic_mr_button_connected_01_dark = 2131165360;
 			
 			// aapt resource value: 0x7F0700B1
-			public const int ic_mr_button_connected_02_dark = 2131165361;
+			public const int ic_mr_button_connected_01_light = 2131165361;
 			
 			// aapt resource value: 0x7F0700B2
-			public const int ic_mr_button_connected_02_light = 2131165362;
+			public const int ic_mr_button_connected_02_dark = 2131165362;
 			
 			// aapt resource value: 0x7F0700B3
-			public const int ic_mr_button_connected_03_dark = 2131165363;
+			public const int ic_mr_button_connected_02_light = 2131165363;
 			
 			// aapt resource value: 0x7F0700B4
-			public const int ic_mr_button_connected_03_light = 2131165364;
+			public const int ic_mr_button_connected_03_dark = 2131165364;
 			
 			// aapt resource value: 0x7F0700B5
-			public const int ic_mr_button_connected_04_dark = 2131165365;
+			public const int ic_mr_button_connected_03_light = 2131165365;
 			
 			// aapt resource value: 0x7F0700B6
-			public const int ic_mr_button_connected_04_light = 2131165366;
+			public const int ic_mr_button_connected_04_dark = 2131165366;
 			
 			// aapt resource value: 0x7F0700B7
-			public const int ic_mr_button_connected_05_dark = 2131165367;
+			public const int ic_mr_button_connected_04_light = 2131165367;
 			
 			// aapt resource value: 0x7F0700B8
-			public const int ic_mr_button_connected_05_light = 2131165368;
+			public const int ic_mr_button_connected_05_dark = 2131165368;
 			
 			// aapt resource value: 0x7F0700B9
-			public const int ic_mr_button_connected_06_dark = 2131165369;
+			public const int ic_mr_button_connected_05_light = 2131165369;
 			
 			// aapt resource value: 0x7F0700BA
-			public const int ic_mr_button_connected_06_light = 2131165370;
+			public const int ic_mr_button_connected_06_dark = 2131165370;
 			
 			// aapt resource value: 0x7F0700BB
-			public const int ic_mr_button_connected_07_dark = 2131165371;
+			public const int ic_mr_button_connected_06_light = 2131165371;
 			
 			// aapt resource value: 0x7F0700BC
-			public const int ic_mr_button_connected_07_light = 2131165372;
+			public const int ic_mr_button_connected_07_dark = 2131165372;
 			
 			// aapt resource value: 0x7F0700BD
-			public const int ic_mr_button_connected_08_dark = 2131165373;
+			public const int ic_mr_button_connected_07_light = 2131165373;
 			
 			// aapt resource value: 0x7F0700BE
-			public const int ic_mr_button_connected_08_light = 2131165374;
+			public const int ic_mr_button_connected_08_dark = 2131165374;
 			
 			// aapt resource value: 0x7F0700BF
-			public const int ic_mr_button_connected_09_dark = 2131165375;
+			public const int ic_mr_button_connected_08_light = 2131165375;
 			
 			// aapt resource value: 0x7F0700C0
-			public const int ic_mr_button_connected_09_light = 2131165376;
+			public const int ic_mr_button_connected_09_dark = 2131165376;
 			
 			// aapt resource value: 0x7F0700C1
-			public const int ic_mr_button_connected_10_dark = 2131165377;
+			public const int ic_mr_button_connected_09_light = 2131165377;
 			
 			// aapt resource value: 0x7F0700C2
-			public const int ic_mr_button_connected_10_light = 2131165378;
+			public const int ic_mr_button_connected_10_dark = 2131165378;
 			
 			// aapt resource value: 0x7F0700C3
-			public const int ic_mr_button_connected_11_dark = 2131165379;
+			public const int ic_mr_button_connected_10_light = 2131165379;
 			
 			// aapt resource value: 0x7F0700C4
-			public const int ic_mr_button_connected_11_light = 2131165380;
+			public const int ic_mr_button_connected_11_dark = 2131165380;
 			
 			// aapt resource value: 0x7F0700C5
-			public const int ic_mr_button_connected_12_dark = 2131165381;
+			public const int ic_mr_button_connected_11_light = 2131165381;
 			
 			// aapt resource value: 0x7F0700C6
-			public const int ic_mr_button_connected_12_light = 2131165382;
+			public const int ic_mr_button_connected_12_dark = 2131165382;
 			
 			// aapt resource value: 0x7F0700C7
-			public const int ic_mr_button_connected_13_dark = 2131165383;
+			public const int ic_mr_button_connected_12_light = 2131165383;
 			
 			// aapt resource value: 0x7F0700C8
-			public const int ic_mr_button_connected_13_light = 2131165384;
+			public const int ic_mr_button_connected_13_dark = 2131165384;
 			
 			// aapt resource value: 0x7F0700C9
-			public const int ic_mr_button_connected_14_dark = 2131165385;
+			public const int ic_mr_button_connected_13_light = 2131165385;
 			
 			// aapt resource value: 0x7F0700CA
-			public const int ic_mr_button_connected_14_light = 2131165386;
+			public const int ic_mr_button_connected_14_dark = 2131165386;
 			
 			// aapt resource value: 0x7F0700CB
-			public const int ic_mr_button_connected_15_dark = 2131165387;
+			public const int ic_mr_button_connected_14_light = 2131165387;
 			
 			// aapt resource value: 0x7F0700CC
-			public const int ic_mr_button_connected_15_light = 2131165388;
+			public const int ic_mr_button_connected_15_dark = 2131165388;
 			
 			// aapt resource value: 0x7F0700CD
-			public const int ic_mr_button_connected_16_dark = 2131165389;
+			public const int ic_mr_button_connected_15_light = 2131165389;
 			
 			// aapt resource value: 0x7F0700CE
-			public const int ic_mr_button_connected_16_light = 2131165390;
+			public const int ic_mr_button_connected_16_dark = 2131165390;
 			
 			// aapt resource value: 0x7F0700CF
-			public const int ic_mr_button_connected_17_dark = 2131165391;
+			public const int ic_mr_button_connected_16_light = 2131165391;
 			
 			// aapt resource value: 0x7F0700D0
-			public const int ic_mr_button_connected_17_light = 2131165392;
+			public const int ic_mr_button_connected_17_dark = 2131165392;
 			
 			// aapt resource value: 0x7F0700D1
-			public const int ic_mr_button_connected_18_dark = 2131165393;
+			public const int ic_mr_button_connected_17_light = 2131165393;
 			
 			// aapt resource value: 0x7F0700D2
-			public const int ic_mr_button_connected_18_light = 2131165394;
+			public const int ic_mr_button_connected_18_dark = 2131165394;
 			
 			// aapt resource value: 0x7F0700D3
-			public const int ic_mr_button_connected_19_dark = 2131165395;
+			public const int ic_mr_button_connected_18_light = 2131165395;
 			
 			// aapt resource value: 0x7F0700D4
-			public const int ic_mr_button_connected_19_light = 2131165396;
+			public const int ic_mr_button_connected_19_dark = 2131165396;
 			
 			// aapt resource value: 0x7F0700D5
-			public const int ic_mr_button_connected_20_dark = 2131165397;
+			public const int ic_mr_button_connected_19_light = 2131165397;
 			
 			// aapt resource value: 0x7F0700D6
-			public const int ic_mr_button_connected_20_light = 2131165398;
+			public const int ic_mr_button_connected_20_dark = 2131165398;
 			
 			// aapt resource value: 0x7F0700D7
-			public const int ic_mr_button_connected_21_dark = 2131165399;
+			public const int ic_mr_button_connected_20_light = 2131165399;
 			
 			// aapt resource value: 0x7F0700D8
-			public const int ic_mr_button_connected_21_light = 2131165400;
+			public const int ic_mr_button_connected_21_dark = 2131165400;
 			
 			// aapt resource value: 0x7F0700D9
-			public const int ic_mr_button_connected_22_dark = 2131165401;
+			public const int ic_mr_button_connected_21_light = 2131165401;
 			
 			// aapt resource value: 0x7F0700DA
-			public const int ic_mr_button_connected_22_light = 2131165402;
+			public const int ic_mr_button_connected_22_dark = 2131165402;
 			
 			// aapt resource value: 0x7F0700DB
-			public const int ic_mr_button_connected_23_dark = 2131165403;
+			public const int ic_mr_button_connected_22_light = 2131165403;
 			
 			// aapt resource value: 0x7F0700DC
-			public const int ic_mr_button_connected_23_light = 2131165404;
+			public const int ic_mr_button_connected_23_dark = 2131165404;
 			
 			// aapt resource value: 0x7F0700DD
-			public const int ic_mr_button_connected_24_dark = 2131165405;
+			public const int ic_mr_button_connected_23_light = 2131165405;
 			
 			// aapt resource value: 0x7F0700DE
-			public const int ic_mr_button_connected_24_light = 2131165406;
+			public const int ic_mr_button_connected_24_dark = 2131165406;
 			
 			// aapt resource value: 0x7F0700DF
-			public const int ic_mr_button_connected_25_dark = 2131165407;
+			public const int ic_mr_button_connected_24_light = 2131165407;
 			
 			// aapt resource value: 0x7F0700E0
-			public const int ic_mr_button_connected_25_light = 2131165408;
+			public const int ic_mr_button_connected_25_dark = 2131165408;
 			
 			// aapt resource value: 0x7F0700E1
-			public const int ic_mr_button_connected_26_dark = 2131165409;
+			public const int ic_mr_button_connected_25_light = 2131165409;
 			
 			// aapt resource value: 0x7F0700E2
-			public const int ic_mr_button_connected_26_light = 2131165410;
+			public const int ic_mr_button_connected_26_dark = 2131165410;
 			
 			// aapt resource value: 0x7F0700E3
-			public const int ic_mr_button_connected_27_dark = 2131165411;
+			public const int ic_mr_button_connected_26_light = 2131165411;
 			
 			// aapt resource value: 0x7F0700E4
-			public const int ic_mr_button_connected_27_light = 2131165412;
+			public const int ic_mr_button_connected_27_dark = 2131165412;
 			
 			// aapt resource value: 0x7F0700E5
-			public const int ic_mr_button_connected_28_dark = 2131165413;
+			public const int ic_mr_button_connected_27_light = 2131165413;
 			
 			// aapt resource value: 0x7F0700E6
-			public const int ic_mr_button_connected_28_light = 2131165414;
+			public const int ic_mr_button_connected_28_dark = 2131165414;
 			
 			// aapt resource value: 0x7F0700E7
-			public const int ic_mr_button_connected_29_dark = 2131165415;
+			public const int ic_mr_button_connected_28_light = 2131165415;
 			
 			// aapt resource value: 0x7F0700E8
-			public const int ic_mr_button_connected_29_light = 2131165416;
+			public const int ic_mr_button_connected_29_dark = 2131165416;
 			
 			// aapt resource value: 0x7F0700E9
-			public const int ic_mr_button_connected_30_dark = 2131165417;
+			public const int ic_mr_button_connected_29_light = 2131165417;
 			
 			// aapt resource value: 0x7F0700EA
-			public const int ic_mr_button_connected_30_light = 2131165418;
+			public const int ic_mr_button_connected_30_dark = 2131165418;
 			
 			// aapt resource value: 0x7F0700EB
-			public const int ic_mr_button_connecting_00_dark = 2131165419;
+			public const int ic_mr_button_connected_30_light = 2131165419;
 			
 			// aapt resource value: 0x7F0700EC
-			public const int ic_mr_button_connecting_00_light = 2131165420;
+			public const int ic_mr_button_connecting_00_dark = 2131165420;
 			
 			// aapt resource value: 0x7F0700ED
-			public const int ic_mr_button_connecting_01_dark = 2131165421;
+			public const int ic_mr_button_connecting_00_light = 2131165421;
 			
 			// aapt resource value: 0x7F0700EE
-			public const int ic_mr_button_connecting_01_light = 2131165422;
+			public const int ic_mr_button_connecting_01_dark = 2131165422;
 			
 			// aapt resource value: 0x7F0700EF
-			public const int ic_mr_button_connecting_02_dark = 2131165423;
+			public const int ic_mr_button_connecting_01_light = 2131165423;
 			
 			// aapt resource value: 0x7F0700F0
-			public const int ic_mr_button_connecting_02_light = 2131165424;
+			public const int ic_mr_button_connecting_02_dark = 2131165424;
 			
 			// aapt resource value: 0x7F0700F1
-			public const int ic_mr_button_connecting_03_dark = 2131165425;
+			public const int ic_mr_button_connecting_02_light = 2131165425;
 			
 			// aapt resource value: 0x7F0700F2
-			public const int ic_mr_button_connecting_03_light = 2131165426;
+			public const int ic_mr_button_connecting_03_dark = 2131165426;
 			
 			// aapt resource value: 0x7F0700F3
-			public const int ic_mr_button_connecting_04_dark = 2131165427;
+			public const int ic_mr_button_connecting_03_light = 2131165427;
 			
 			// aapt resource value: 0x7F0700F4
-			public const int ic_mr_button_connecting_04_light = 2131165428;
+			public const int ic_mr_button_connecting_04_dark = 2131165428;
 			
 			// aapt resource value: 0x7F0700F5
-			public const int ic_mr_button_connecting_05_dark = 2131165429;
+			public const int ic_mr_button_connecting_04_light = 2131165429;
 			
 			// aapt resource value: 0x7F0700F6
-			public const int ic_mr_button_connecting_05_light = 2131165430;
+			public const int ic_mr_button_connecting_05_dark = 2131165430;
 			
 			// aapt resource value: 0x7F0700F7
-			public const int ic_mr_button_connecting_06_dark = 2131165431;
+			public const int ic_mr_button_connecting_05_light = 2131165431;
 			
 			// aapt resource value: 0x7F0700F8
-			public const int ic_mr_button_connecting_06_light = 2131165432;
+			public const int ic_mr_button_connecting_06_dark = 2131165432;
 			
 			// aapt resource value: 0x7F0700F9
-			public const int ic_mr_button_connecting_07_dark = 2131165433;
+			public const int ic_mr_button_connecting_06_light = 2131165433;
 			
 			// aapt resource value: 0x7F0700FA
-			public const int ic_mr_button_connecting_07_light = 2131165434;
+			public const int ic_mr_button_connecting_07_dark = 2131165434;
 			
 			// aapt resource value: 0x7F0700FB
-			public const int ic_mr_button_connecting_08_dark = 2131165435;
+			public const int ic_mr_button_connecting_07_light = 2131165435;
 			
 			// aapt resource value: 0x7F0700FC
-			public const int ic_mr_button_connecting_08_light = 2131165436;
+			public const int ic_mr_button_connecting_08_dark = 2131165436;
 			
 			// aapt resource value: 0x7F0700FD
-			public const int ic_mr_button_connecting_09_dark = 2131165437;
+			public const int ic_mr_button_connecting_08_light = 2131165437;
 			
 			// aapt resource value: 0x7F0700FE
-			public const int ic_mr_button_connecting_09_light = 2131165438;
+			public const int ic_mr_button_connecting_09_dark = 2131165438;
 			
 			// aapt resource value: 0x7F0700FF
-			public const int ic_mr_button_connecting_10_dark = 2131165439;
+			public const int ic_mr_button_connecting_09_light = 2131165439;
 			
 			// aapt resource value: 0x7F070100
-			public const int ic_mr_button_connecting_10_light = 2131165440;
+			public const int ic_mr_button_connecting_10_dark = 2131165440;
 			
 			// aapt resource value: 0x7F070101
-			public const int ic_mr_button_connecting_11_dark = 2131165441;
+			public const int ic_mr_button_connecting_10_light = 2131165441;
 			
 			// aapt resource value: 0x7F070102
-			public const int ic_mr_button_connecting_11_light = 2131165442;
+			public const int ic_mr_button_connecting_11_dark = 2131165442;
 			
 			// aapt resource value: 0x7F070103
-			public const int ic_mr_button_connecting_12_dark = 2131165443;
+			public const int ic_mr_button_connecting_11_light = 2131165443;
 			
 			// aapt resource value: 0x7F070104
-			public const int ic_mr_button_connecting_12_light = 2131165444;
+			public const int ic_mr_button_connecting_12_dark = 2131165444;
 			
 			// aapt resource value: 0x7F070105
-			public const int ic_mr_button_connecting_13_dark = 2131165445;
+			public const int ic_mr_button_connecting_12_light = 2131165445;
 			
 			// aapt resource value: 0x7F070106
-			public const int ic_mr_button_connecting_13_light = 2131165446;
+			public const int ic_mr_button_connecting_13_dark = 2131165446;
 			
 			// aapt resource value: 0x7F070107
-			public const int ic_mr_button_connecting_14_dark = 2131165447;
+			public const int ic_mr_button_connecting_13_light = 2131165447;
 			
 			// aapt resource value: 0x7F070108
-			public const int ic_mr_button_connecting_14_light = 2131165448;
+			public const int ic_mr_button_connecting_14_dark = 2131165448;
 			
 			// aapt resource value: 0x7F070109
-			public const int ic_mr_button_connecting_15_dark = 2131165449;
+			public const int ic_mr_button_connecting_14_light = 2131165449;
 			
 			// aapt resource value: 0x7F07010A
-			public const int ic_mr_button_connecting_15_light = 2131165450;
+			public const int ic_mr_button_connecting_15_dark = 2131165450;
 			
 			// aapt resource value: 0x7F07010B
-			public const int ic_mr_button_connecting_16_dark = 2131165451;
+			public const int ic_mr_button_connecting_15_light = 2131165451;
 			
 			// aapt resource value: 0x7F07010C
-			public const int ic_mr_button_connecting_16_light = 2131165452;
+			public const int ic_mr_button_connecting_16_dark = 2131165452;
 			
 			// aapt resource value: 0x7F07010D
-			public const int ic_mr_button_connecting_17_dark = 2131165453;
+			public const int ic_mr_button_connecting_16_light = 2131165453;
 			
 			// aapt resource value: 0x7F07010E
-			public const int ic_mr_button_connecting_17_light = 2131165454;
+			public const int ic_mr_button_connecting_17_dark = 2131165454;
 			
 			// aapt resource value: 0x7F07010F
-			public const int ic_mr_button_connecting_18_dark = 2131165455;
+			public const int ic_mr_button_connecting_17_light = 2131165455;
 			
 			// aapt resource value: 0x7F070110
-			public const int ic_mr_button_connecting_18_light = 2131165456;
+			public const int ic_mr_button_connecting_18_dark = 2131165456;
 			
 			// aapt resource value: 0x7F070111
-			public const int ic_mr_button_connecting_19_dark = 2131165457;
+			public const int ic_mr_button_connecting_18_light = 2131165457;
 			
 			// aapt resource value: 0x7F070112
-			public const int ic_mr_button_connecting_19_light = 2131165458;
+			public const int ic_mr_button_connecting_19_dark = 2131165458;
 			
 			// aapt resource value: 0x7F070113
-			public const int ic_mr_button_connecting_20_dark = 2131165459;
+			public const int ic_mr_button_connecting_19_light = 2131165459;
 			
 			// aapt resource value: 0x7F070114
-			public const int ic_mr_button_connecting_20_light = 2131165460;
+			public const int ic_mr_button_connecting_20_dark = 2131165460;
 			
 			// aapt resource value: 0x7F070115
-			public const int ic_mr_button_connecting_21_dark = 2131165461;
+			public const int ic_mr_button_connecting_20_light = 2131165461;
 			
 			// aapt resource value: 0x7F070116
-			public const int ic_mr_button_connecting_21_light = 2131165462;
+			public const int ic_mr_button_connecting_21_dark = 2131165462;
 			
 			// aapt resource value: 0x7F070117
-			public const int ic_mr_button_connecting_22_dark = 2131165463;
+			public const int ic_mr_button_connecting_21_light = 2131165463;
 			
 			// aapt resource value: 0x7F070118
-			public const int ic_mr_button_connecting_22_light = 2131165464;
+			public const int ic_mr_button_connecting_22_dark = 2131165464;
 			
 			// aapt resource value: 0x7F070119
-			public const int ic_mr_button_connecting_23_dark = 2131165465;
+			public const int ic_mr_button_connecting_22_light = 2131165465;
 			
 			// aapt resource value: 0x7F07011A
-			public const int ic_mr_button_connecting_23_light = 2131165466;
+			public const int ic_mr_button_connecting_23_dark = 2131165466;
 			
 			// aapt resource value: 0x7F07011B
-			public const int ic_mr_button_connecting_24_dark = 2131165467;
+			public const int ic_mr_button_connecting_23_light = 2131165467;
 			
 			// aapt resource value: 0x7F07011C
-			public const int ic_mr_button_connecting_24_light = 2131165468;
+			public const int ic_mr_button_connecting_24_dark = 2131165468;
 			
 			// aapt resource value: 0x7F07011D
-			public const int ic_mr_button_connecting_25_dark = 2131165469;
+			public const int ic_mr_button_connecting_24_light = 2131165469;
 			
 			// aapt resource value: 0x7F07011E
-			public const int ic_mr_button_connecting_25_light = 2131165470;
+			public const int ic_mr_button_connecting_25_dark = 2131165470;
 			
 			// aapt resource value: 0x7F07011F
-			public const int ic_mr_button_connecting_26_dark = 2131165471;
+			public const int ic_mr_button_connecting_25_light = 2131165471;
 			
 			// aapt resource value: 0x7F070120
-			public const int ic_mr_button_connecting_26_light = 2131165472;
+			public const int ic_mr_button_connecting_26_dark = 2131165472;
 			
 			// aapt resource value: 0x7F070121
-			public const int ic_mr_button_connecting_27_dark = 2131165473;
+			public const int ic_mr_button_connecting_26_light = 2131165473;
 			
 			// aapt resource value: 0x7F070122
-			public const int ic_mr_button_connecting_27_light = 2131165474;
+			public const int ic_mr_button_connecting_27_dark = 2131165474;
 			
 			// aapt resource value: 0x7F070123
-			public const int ic_mr_button_connecting_28_dark = 2131165475;
+			public const int ic_mr_button_connecting_27_light = 2131165475;
 			
 			// aapt resource value: 0x7F070124
-			public const int ic_mr_button_connecting_28_light = 2131165476;
+			public const int ic_mr_button_connecting_28_dark = 2131165476;
 			
 			// aapt resource value: 0x7F070125
-			public const int ic_mr_button_connecting_29_dark = 2131165477;
+			public const int ic_mr_button_connecting_28_light = 2131165477;
 			
 			// aapt resource value: 0x7F070126
-			public const int ic_mr_button_connecting_29_light = 2131165478;
+			public const int ic_mr_button_connecting_29_dark = 2131165478;
 			
 			// aapt resource value: 0x7F070127
-			public const int ic_mr_button_connecting_30_dark = 2131165479;
+			public const int ic_mr_button_connecting_29_light = 2131165479;
 			
 			// aapt resource value: 0x7F070128
-			public const int ic_mr_button_connecting_30_light = 2131165480;
+			public const int ic_mr_button_connecting_30_dark = 2131165480;
 			
 			// aapt resource value: 0x7F070129
-			public const int ic_mr_button_disabled_dark = 2131165481;
+			public const int ic_mr_button_connecting_30_light = 2131165481;
 			
 			// aapt resource value: 0x7F07012A
-			public const int ic_mr_button_disabled_light = 2131165482;
+			public const int ic_mr_button_disabled_dark = 2131165482;
 			
 			// aapt resource value: 0x7F07012B
-			public const int ic_mr_button_disconnected_dark = 2131165483;
+			public const int ic_mr_button_disabled_light = 2131165483;
 			
 			// aapt resource value: 0x7F07012C
-			public const int ic_mr_button_disconnected_light = 2131165484;
+			public const int ic_mr_button_disconnected_dark = 2131165484;
 			
 			// aapt resource value: 0x7F07012D
-			public const int ic_mr_button_grey = 2131165485;
+			public const int ic_mr_button_disconnected_light = 2131165485;
 			
 			// aapt resource value: 0x7F07012E
-			public const int ic_mtrl_checked_circle = 2131165486;
+			public const int ic_mr_button_grey = 2131165486;
 			
 			// aapt resource value: 0x7F07012F
-			public const int ic_mtrl_chip_checked_black = 2131165487;
+			public const int ic_mtrl_checked_circle = 2131165487;
 			
 			// aapt resource value: 0x7F070130
-			public const int ic_mtrl_chip_checked_circle = 2131165488;
+			public const int ic_mtrl_chip_checked_black = 2131165488;
 			
 			// aapt resource value: 0x7F070131
-			public const int ic_mtrl_chip_close_circle = 2131165489;
+			public const int ic_mtrl_chip_checked_circle = 2131165489;
 			
 			// aapt resource value: 0x7F070132
-			public const int ic_successstatus = 2131165490;
+			public const int ic_mtrl_chip_close_circle = 2131165490;
 			
 			// aapt resource value: 0x7F070133
-			public const int ic_unchecked_checkbox = 2131165491;
+			public const int ic_successstatus = 2131165491;
 			
 			// aapt resource value: 0x7F070134
-			public const int ic_vol_mute = 2131165492;
+			public const int ic_unchecked_checkbox = 2131165492;
 			
 			// aapt resource value: 0x7F070135
-			public const int ic_vol_type_speaker_dark = 2131165493;
+			public const int ic_vol_mute = 2131165493;
 			
 			// aapt resource value: 0x7F070136
-			public const int ic_vol_type_speaker_group_dark = 2131165494;
+			public const int ic_vol_type_speaker_dark = 2131165494;
 			
 			// aapt resource value: 0x7F070137
-			public const int ic_vol_type_speaker_group_light = 2131165495;
+			public const int ic_vol_type_speaker_group_dark = 2131165495;
 			
 			// aapt resource value: 0x7F070138
-			public const int ic_vol_type_speaker_light = 2131165496;
+			public const int ic_vol_type_speaker_group_light = 2131165496;
 			
 			// aapt resource value: 0x7F070139
-			public const int ic_vol_type_tv_dark = 2131165497;
+			public const int ic_vol_type_speaker_light = 2131165497;
 			
 			// aapt resource value: 0x7F07013A
-			public const int ic_vol_type_tv_light = 2131165498;
+			public const int ic_vol_type_tv_dark = 2131165498;
 			
 			// aapt resource value: 0x7F07013B
-			public const int ic_vol_unmute = 2131165499;
+			public const int ic_vol_type_tv_light = 2131165499;
 			
 			// aapt resource value: 0x7F07013C
-			public const int material_ic_calendar_black_24dp = 2131165500;
+			public const int ic_vol_unmute = 2131165500;
 			
 			// aapt resource value: 0x7F07013D
-			public const int material_ic_clear_black_24dp = 2131165501;
+			public const int material_ic_calendar_black_24dp = 2131165501;
 			
 			// aapt resource value: 0x7F07013E
-			public const int material_ic_edit_black_24dp = 2131165502;
+			public const int material_ic_clear_black_24dp = 2131165502;
 			
 			// aapt resource value: 0x7F07013F
-			public const int material_ic_keyboard_arrow_left_black_24dp = 2131165503;
+			public const int material_ic_edit_black_24dp = 2131165503;
 			
 			// aapt resource value: 0x7F070140
-			public const int material_ic_keyboard_arrow_right_black_24dp = 2131165504;
+			public const int material_ic_keyboard_arrow_left_black_24dp = 2131165504;
 			
 			// aapt resource value: 0x7F070141
-			public const int material_ic_menu_arrow_down_black_24dp = 2131165505;
+			public const int material_ic_keyboard_arrow_right_black_24dp = 2131165505;
 			
 			// aapt resource value: 0x7F070142
-			public const int material_ic_menu_arrow_up_black_24dp = 2131165506;
+			public const int material_ic_menu_arrow_down_black_24dp = 2131165506;
 			
 			// aapt resource value: 0x7F070143
-			public const int mr_button_connected_dark = 2131165507;
+			public const int material_ic_menu_arrow_up_black_24dp = 2131165507;
 			
 			// aapt resource value: 0x7F070144
-			public const int mr_button_connected_light = 2131165508;
+			public const int mr_button_connected_dark = 2131165508;
 			
 			// aapt resource value: 0x7F070145
-			public const int mr_button_connecting_dark = 2131165509;
+			public const int mr_button_connected_light = 2131165509;
 			
 			// aapt resource value: 0x7F070146
-			public const int mr_button_connecting_light = 2131165510;
+			public const int mr_button_connecting_dark = 2131165510;
 			
 			// aapt resource value: 0x7F070147
-			public const int mr_button_dark = 2131165511;
+			public const int mr_button_connecting_light = 2131165511;
 			
 			// aapt resource value: 0x7F070148
-			public const int mr_button_dark_static = 2131165512;
+			public const int mr_button_dark = 2131165512;
 			
 			// aapt resource value: 0x7F070149
-			public const int mr_button_light = 2131165513;
+			public const int mr_button_dark_static = 2131165513;
 			
 			// aapt resource value: 0x7F07014A
-			public const int mr_button_light_static = 2131165514;
+			public const int mr_button_light = 2131165514;
 			
 			// aapt resource value: 0x7F07014B
-			public const int mr_cast_checkbox = 2131165515;
+			public const int mr_button_light_static = 2131165515;
 			
 			// aapt resource value: 0x7F07014C
-			public const int mr_cast_group_seekbar_track = 2131165516;
+			public const int mr_cast_checkbox = 2131165516;
 			
 			// aapt resource value: 0x7F07014D
-			public const int mr_cast_mute_button = 2131165517;
+			public const int mr_cast_group_seekbar_track = 2131165517;
 			
 			// aapt resource value: 0x7F07014E
-			public const int mr_cast_route_seekbar_track = 2131165518;
+			public const int mr_cast_mute_button = 2131165518;
 			
 			// aapt resource value: 0x7F07014F
-			public const int mr_cast_stop = 2131165519;
+			public const int mr_cast_route_seekbar_track = 2131165519;
 			
 			// aapt resource value: 0x7F070150
-			public const int mr_cast_thumb = 2131165520;
+			public const int mr_cast_stop = 2131165520;
 			
 			// aapt resource value: 0x7F070151
-			public const int mr_dialog_close_dark = 2131165521;
+			public const int mr_cast_thumb = 2131165521;
 			
 			// aapt resource value: 0x7F070152
-			public const int mr_dialog_close_light = 2131165522;
+			public const int mr_dialog_close_dark = 2131165522;
 			
 			// aapt resource value: 0x7F070153
-			public const int mr_dialog_material_background_dark = 2131165523;
+			public const int mr_dialog_close_light = 2131165523;
 			
 			// aapt resource value: 0x7F070154
-			public const int mr_dialog_material_background_light = 2131165524;
+			public const int mr_dialog_material_background_dark = 2131165524;
 			
 			// aapt resource value: 0x7F070155
-			public const int mr_group_collapse = 2131165525;
+			public const int mr_dialog_material_background_light = 2131165525;
 			
 			// aapt resource value: 0x7F070156
-			public const int mr_group_expand = 2131165526;
+			public const int mr_group_collapse = 2131165526;
 			
 			// aapt resource value: 0x7F070157
-			public const int mr_media_pause_dark = 2131165527;
+			public const int mr_group_expand = 2131165527;
 			
 			// aapt resource value: 0x7F070158
-			public const int mr_media_pause_light = 2131165528;
+			public const int mr_media_pause_dark = 2131165528;
 			
 			// aapt resource value: 0x7F070159
-			public const int mr_media_play_dark = 2131165529;
+			public const int mr_media_pause_light = 2131165529;
 			
 			// aapt resource value: 0x7F07015A
-			public const int mr_media_play_light = 2131165530;
+			public const int mr_media_play_dark = 2131165530;
 			
 			// aapt resource value: 0x7F07015B
-			public const int mr_media_stop_dark = 2131165531;
+			public const int mr_media_play_light = 2131165531;
 			
 			// aapt resource value: 0x7F07015C
-			public const int mr_media_stop_light = 2131165532;
+			public const int mr_media_stop_dark = 2131165532;
 			
 			// aapt resource value: 0x7F07015D
-			public const int mr_vol_type_audiotrack_dark = 2131165533;
+			public const int mr_media_stop_light = 2131165533;
 			
 			// aapt resource value: 0x7F07015E
-			public const int mr_vol_type_audiotrack_light = 2131165534;
+			public const int mr_vol_type_audiotrack_dark = 2131165534;
 			
 			// aapt resource value: 0x7F07015F
-			public const int mtrl_dialog_background = 2131165535;
+			public const int mr_vol_type_audiotrack_light = 2131165535;
 			
 			// aapt resource value: 0x7F070160
-			public const int mtrl_dropdown_arrow = 2131165536;
+			public const int mtrl_dialog_background = 2131165536;
 			
 			// aapt resource value: 0x7F070161
-			public const int mtrl_ic_arrow_drop_down = 2131165537;
+			public const int mtrl_dropdown_arrow = 2131165537;
 			
 			// aapt resource value: 0x7F070162
-			public const int mtrl_ic_arrow_drop_up = 2131165538;
+			public const int mtrl_ic_arrow_drop_down = 2131165538;
 			
 			// aapt resource value: 0x7F070163
-			public const int mtrl_ic_cancel = 2131165539;
+			public const int mtrl_ic_arrow_drop_up = 2131165539;
 			
 			// aapt resource value: 0x7F070164
-			public const int mtrl_ic_error = 2131165540;
+			public const int mtrl_ic_cancel = 2131165540;
 			
 			// aapt resource value: 0x7F070165
-			public const int mtrl_popupmenu_background = 2131165541;
+			public const int mtrl_ic_error = 2131165541;
 			
 			// aapt resource value: 0x7F070166
-			public const int mtrl_popupmenu_background_dark = 2131165542;
+			public const int mtrl_popupmenu_background = 2131165542;
 			
 			// aapt resource value: 0x7F070167
-			public const int mtrl_tabs_default_indicator = 2131165543;
+			public const int mtrl_popupmenu_background_dark = 2131165543;
 			
 			// aapt resource value: 0x7F070168
-			public const int navigation_empty_icon = 2131165544;
+			public const int mtrl_tabs_default_indicator = 2131165544;
 			
 			// aapt resource value: 0x7F070169
-			public const int notification_action_background = 2131165545;
+			public const int navigation_empty_icon = 2131165545;
 			
 			// aapt resource value: 0x7F07016A
-			public const int notification_bg = 2131165546;
+			public const int notification_action_background = 2131165546;
 			
 			// aapt resource value: 0x7F07016B
-			public const int notification_bg_low = 2131165547;
+			public const int notification_bg = 2131165547;
 			
 			// aapt resource value: 0x7F07016C
-			public const int notification_bg_low_normal = 2131165548;
+			public const int notification_bg_low = 2131165548;
 			
 			// aapt resource value: 0x7F07016D
-			public const int notification_bg_low_pressed = 2131165549;
+			public const int notification_bg_low_normal = 2131165549;
 			
 			// aapt resource value: 0x7F07016E
-			public const int notification_bg_normal = 2131165550;
+			public const int notification_bg_low_pressed = 2131165550;
 			
 			// aapt resource value: 0x7F07016F
-			public const int notification_bg_normal_pressed = 2131165551;
+			public const int notification_bg_normal = 2131165551;
 			
 			// aapt resource value: 0x7F070170
-			public const int notification_icon_background = 2131165552;
+			public const int notification_bg_normal_pressed = 2131165552;
 			
 			// aapt resource value: 0x7F070171
-			public const int notification_template_icon_bg = 2131165553;
+			public const int notification_icon_background = 2131165553;
 			
 			// aapt resource value: 0x7F070172
-			public const int notification_template_icon_low_bg = 2131165554;
+			public const int notification_template_icon_bg = 2131165554;
 			
 			// aapt resource value: 0x7F070173
-			public const int notification_tile_bg = 2131165555;
+			public const int notification_template_icon_low_bg = 2131165555;
 			
 			// aapt resource value: 0x7F070174
-			public const int notify_panel_notification_icon_bg = 2131165556;
+			public const int notification_tile_bg = 2131165556;
 			
 			// aapt resource value: 0x7F070175
-			public const int roundedbg = 2131165557;
+			public const int notify_panel_notification_icon_bg = 2131165557;
 			
 			// aapt resource value: 0x7F070176
-			public const int roundedbgdark = 2131165558;
+			public const int roundedbg = 2131165558;
 			
 			// aapt resource value: 0x7F070177
-			public const int test_custom_background = 2131165559;
+			public const int roundedbgdark = 2131165559;
 			
 			// aapt resource value: 0x7F070178
-			public const int tooltip_frame_dark = 2131165560;
+			public const int test_custom_background = 2131165560;
 			
 			// aapt resource value: 0x7F070179
-			public const int tooltip_frame_light = 2131165561;
+			public const int tooltip_frame_dark = 2131165561;
+			
+			// aapt resource value: 0x7F07017A
+			public const int tooltip_frame_light = 2131165562;
 			
 			static Drawable()
 			{
@@ -21105,286 +17356,283 @@ namespace NotepadGps.Droid
 			public const int common_google_play_services_install_title = 2131623975;
 			
 			// aapt resource value: 0x7F0E0028
-			public const int common_google_play_services_notification_channel_name = 2131623976;
+			public const int common_google_play_services_notification_ticker = 2131623976;
 			
 			// aapt resource value: 0x7F0E0029
-			public const int common_google_play_services_notification_ticker = 2131623977;
+			public const int common_google_play_services_unknown_issue = 2131623977;
 			
 			// aapt resource value: 0x7F0E002A
-			public const int common_google_play_services_unknown_issue = 2131623978;
+			public const int common_google_play_services_unsupported_text = 2131623978;
 			
 			// aapt resource value: 0x7F0E002B
-			public const int common_google_play_services_unsupported_text = 2131623979;
+			public const int common_google_play_services_update_button = 2131623979;
 			
 			// aapt resource value: 0x7F0E002C
-			public const int common_google_play_services_update_button = 2131623980;
+			public const int common_google_play_services_update_text = 2131623980;
 			
 			// aapt resource value: 0x7F0E002D
-			public const int common_google_play_services_update_text = 2131623981;
+			public const int common_google_play_services_update_title = 2131623981;
 			
 			// aapt resource value: 0x7F0E002E
-			public const int common_google_play_services_update_title = 2131623982;
+			public const int common_google_play_services_updating_text = 2131623982;
 			
 			// aapt resource value: 0x7F0E002F
-			public const int common_google_play_services_updating_text = 2131623983;
+			public const int common_google_play_services_wear_update_text = 2131623983;
 			
 			// aapt resource value: 0x7F0E0030
-			public const int common_google_play_services_wear_update_text = 2131623984;
+			public const int common_open_on_phone = 2131623984;
 			
 			// aapt resource value: 0x7F0E0031
-			public const int common_open_on_phone = 2131623985;
+			public const int common_signin_button_text = 2131623985;
 			
 			// aapt resource value: 0x7F0E0032
-			public const int common_signin_button_text = 2131623986;
+			public const int common_signin_button_text_long = 2131623986;
 			
 			// aapt resource value: 0x7F0E0033
-			public const int common_signin_button_text_long = 2131623987;
+			public const int copy_toast_msg = 2131623987;
 			
 			// aapt resource value: 0x7F0E0034
-			public const int copy_toast_msg = 2131623988;
+			public const int error_icon_content_description = 2131623988;
 			
 			// aapt resource value: 0x7F0E0035
-			public const int error_icon_content_description = 2131623989;
+			public const int exposed_dropdown_menu_content_description = 2131623989;
 			
 			// aapt resource value: 0x7F0E0036
-			public const int exposed_dropdown_menu_content_description = 2131623990;
+			public const int fab_transformation_scrim_behavior = 2131623990;
 			
 			// aapt resource value: 0x7F0E0037
-			public const int fab_transformation_scrim_behavior = 2131623991;
+			public const int fab_transformation_sheet_behavior = 2131623991;
 			
 			// aapt resource value: 0x7F0E0038
-			public const int fab_transformation_sheet_behavior = 2131623992;
+			public const int fallback_menu_item_copy_link = 2131623992;
 			
 			// aapt resource value: 0x7F0E0039
-			public const int fallback_menu_item_copy_link = 2131623993;
+			public const int fallback_menu_item_open_in_browser = 2131623993;
 			
 			// aapt resource value: 0x7F0E003A
-			public const int fallback_menu_item_open_in_browser = 2131623994;
+			public const int fallback_menu_item_share_link = 2131623994;
 			
 			// aapt resource value: 0x7F0E003B
-			public const int fallback_menu_item_share_link = 2131623995;
+			public const int hide_bottom_view_on_scroll_behavior = 2131623995;
 			
 			// aapt resource value: 0x7F0E003C
-			public const int hide_bottom_view_on_scroll_behavior = 2131623996;
+			public const int icon_content_description = 2131623996;
 			
 			// aapt resource value: 0x7F0E003D
-			public const int icon_content_description = 2131623997;
+			public const int item_view_role_description = 2131623997;
 			
 			// aapt resource value: 0x7F0E003E
-			public const int item_view_role_description = 2131623998;
+			public const int library_name = 2131623998;
 			
 			// aapt resource value: 0x7F0E003F
-			public const int library_name = 2131623999;
+			public const int material_slider_range_end = 2131623999;
 			
 			// aapt resource value: 0x7F0E0040
-			public const int material_slider_range_end = 2131624000;
+			public const int material_slider_range_start = 2131624000;
 			
 			// aapt resource value: 0x7F0E0041
-			public const int material_slider_range_start = 2131624001;
+			public const int mr_button_content_description = 2131624001;
 			
 			// aapt resource value: 0x7F0E0042
-			public const int mr_button_content_description = 2131624002;
+			public const int mr_cast_button_connected = 2131624002;
 			
 			// aapt resource value: 0x7F0E0043
-			public const int mr_cast_button_connected = 2131624003;
+			public const int mr_cast_button_connecting = 2131624003;
 			
 			// aapt resource value: 0x7F0E0044
-			public const int mr_cast_button_connecting = 2131624004;
+			public const int mr_cast_button_disconnected = 2131624004;
 			
 			// aapt resource value: 0x7F0E0045
-			public const int mr_cast_button_disconnected = 2131624005;
+			public const int mr_cast_dialog_title_view_placeholder = 2131624005;
 			
 			// aapt resource value: 0x7F0E0046
-			public const int mr_cast_dialog_title_view_placeholder = 2131624006;
+			public const int mr_chooser_searching = 2131624006;
 			
 			// aapt resource value: 0x7F0E0047
-			public const int mr_chooser_searching = 2131624007;
+			public const int mr_chooser_title = 2131624007;
 			
 			// aapt resource value: 0x7F0E0048
-			public const int mr_chooser_title = 2131624008;
+			public const int mr_controller_album_art = 2131624008;
 			
 			// aapt resource value: 0x7F0E0049
-			public const int mr_controller_album_art = 2131624009;
+			public const int mr_controller_casting_screen = 2131624009;
 			
 			// aapt resource value: 0x7F0E004A
-			public const int mr_controller_casting_screen = 2131624010;
+			public const int mr_controller_close_description = 2131624010;
 			
 			// aapt resource value: 0x7F0E004B
-			public const int mr_controller_close_description = 2131624011;
+			public const int mr_controller_collapse_group = 2131624011;
 			
 			// aapt resource value: 0x7F0E004C
-			public const int mr_controller_collapse_group = 2131624012;
+			public const int mr_controller_disconnect = 2131624012;
 			
 			// aapt resource value: 0x7F0E004D
-			public const int mr_controller_disconnect = 2131624013;
+			public const int mr_controller_expand_group = 2131624013;
 			
 			// aapt resource value: 0x7F0E004E
-			public const int mr_controller_expand_group = 2131624014;
+			public const int mr_controller_no_info_available = 2131624014;
 			
 			// aapt resource value: 0x7F0E004F
-			public const int mr_controller_no_info_available = 2131624015;
+			public const int mr_controller_no_media_selected = 2131624015;
 			
 			// aapt resource value: 0x7F0E0050
-			public const int mr_controller_no_media_selected = 2131624016;
+			public const int mr_controller_pause = 2131624016;
 			
 			// aapt resource value: 0x7F0E0051
-			public const int mr_controller_pause = 2131624017;
+			public const int mr_controller_play = 2131624017;
 			
 			// aapt resource value: 0x7F0E0052
-			public const int mr_controller_play = 2131624018;
+			public const int mr_controller_stop = 2131624018;
 			
 			// aapt resource value: 0x7F0E0053
-			public const int mr_controller_stop = 2131624019;
+			public const int mr_controller_stop_casting = 2131624019;
 			
 			// aapt resource value: 0x7F0E0054
-			public const int mr_controller_stop_casting = 2131624020;
+			public const int mr_controller_volume_slider = 2131624020;
 			
 			// aapt resource value: 0x7F0E0055
-			public const int mr_controller_volume_slider = 2131624021;
+			public const int mr_dialog_default_group_name = 2131624021;
 			
 			// aapt resource value: 0x7F0E0056
-			public const int mr_dialog_default_group_name = 2131624022;
+			public const int mr_dialog_groupable_header = 2131624022;
 			
 			// aapt resource value: 0x7F0E0057
-			public const int mr_dialog_groupable_header = 2131624023;
+			public const int mr_dialog_transferable_header = 2131624023;
 			
 			// aapt resource value: 0x7F0E0058
-			public const int mr_dialog_transferable_header = 2131624024;
+			public const int mr_system_route_name = 2131624024;
 			
 			// aapt resource value: 0x7F0E0059
-			public const int mr_system_route_name = 2131624025;
+			public const int mr_user_route_category_name = 2131624025;
 			
 			// aapt resource value: 0x7F0E005A
-			public const int mr_user_route_category_name = 2131624026;
+			public const int mtrl_badge_numberless_content_description = 2131624026;
 			
 			// aapt resource value: 0x7F0E005B
-			public const int mtrl_badge_numberless_content_description = 2131624027;
+			public const int mtrl_chip_close_icon_content_description = 2131624027;
 			
 			// aapt resource value: 0x7F0E005C
-			public const int mtrl_chip_close_icon_content_description = 2131624028;
+			public const int mtrl_exceed_max_badge_number_content_description = 2131624028;
 			
 			// aapt resource value: 0x7F0E005D
-			public const int mtrl_exceed_max_badge_number_content_description = 2131624029;
+			public const int mtrl_exceed_max_badge_number_suffix = 2131624029;
 			
 			// aapt resource value: 0x7F0E005E
-			public const int mtrl_exceed_max_badge_number_suffix = 2131624030;
+			public const int mtrl_picker_a11y_next_month = 2131624030;
 			
 			// aapt resource value: 0x7F0E005F
-			public const int mtrl_picker_a11y_next_month = 2131624031;
+			public const int mtrl_picker_a11y_prev_month = 2131624031;
 			
 			// aapt resource value: 0x7F0E0060
-			public const int mtrl_picker_a11y_prev_month = 2131624032;
+			public const int mtrl_picker_announce_current_selection = 2131624032;
 			
 			// aapt resource value: 0x7F0E0061
-			public const int mtrl_picker_announce_current_selection = 2131624033;
+			public const int mtrl_picker_cancel = 2131624033;
 			
 			// aapt resource value: 0x7F0E0062
-			public const int mtrl_picker_cancel = 2131624034;
+			public const int mtrl_picker_confirm = 2131624034;
 			
 			// aapt resource value: 0x7F0E0063
-			public const int mtrl_picker_confirm = 2131624035;
+			public const int mtrl_picker_date_header_selected = 2131624035;
 			
 			// aapt resource value: 0x7F0E0064
-			public const int mtrl_picker_date_header_selected = 2131624036;
+			public const int mtrl_picker_date_header_title = 2131624036;
 			
 			// aapt resource value: 0x7F0E0065
-			public const int mtrl_picker_date_header_title = 2131624037;
+			public const int mtrl_picker_date_header_unselected = 2131624037;
 			
 			// aapt resource value: 0x7F0E0066
-			public const int mtrl_picker_date_header_unselected = 2131624038;
+			public const int mtrl_picker_day_of_week_column_header = 2131624038;
 			
 			// aapt resource value: 0x7F0E0067
-			public const int mtrl_picker_day_of_week_column_header = 2131624039;
+			public const int mtrl_picker_invalid_format = 2131624039;
 			
 			// aapt resource value: 0x7F0E0068
-			public const int mtrl_picker_invalid_format = 2131624040;
+			public const int mtrl_picker_invalid_format_example = 2131624040;
 			
 			// aapt resource value: 0x7F0E0069
-			public const int mtrl_picker_invalid_format_example = 2131624041;
+			public const int mtrl_picker_invalid_format_use = 2131624041;
 			
 			// aapt resource value: 0x7F0E006A
-			public const int mtrl_picker_invalid_format_use = 2131624042;
+			public const int mtrl_picker_invalid_range = 2131624042;
 			
 			// aapt resource value: 0x7F0E006B
-			public const int mtrl_picker_invalid_range = 2131624043;
+			public const int mtrl_picker_navigate_to_year_description = 2131624043;
 			
 			// aapt resource value: 0x7F0E006C
-			public const int mtrl_picker_navigate_to_year_description = 2131624044;
+			public const int mtrl_picker_out_of_range = 2131624044;
 			
 			// aapt resource value: 0x7F0E006D
-			public const int mtrl_picker_out_of_range = 2131624045;
+			public const int mtrl_picker_range_header_only_end_selected = 2131624045;
 			
 			// aapt resource value: 0x7F0E006E
-			public const int mtrl_picker_range_header_only_end_selected = 2131624046;
+			public const int mtrl_picker_range_header_only_start_selected = 2131624046;
 			
 			// aapt resource value: 0x7F0E006F
-			public const int mtrl_picker_range_header_only_start_selected = 2131624047;
+			public const int mtrl_picker_range_header_selected = 2131624047;
 			
 			// aapt resource value: 0x7F0E0070
-			public const int mtrl_picker_range_header_selected = 2131624048;
+			public const int mtrl_picker_range_header_title = 2131624048;
 			
 			// aapt resource value: 0x7F0E0071
-			public const int mtrl_picker_range_header_title = 2131624049;
+			public const int mtrl_picker_range_header_unselected = 2131624049;
 			
 			// aapt resource value: 0x7F0E0072
-			public const int mtrl_picker_range_header_unselected = 2131624050;
+			public const int mtrl_picker_save = 2131624050;
 			
 			// aapt resource value: 0x7F0E0073
-			public const int mtrl_picker_save = 2131624051;
+			public const int mtrl_picker_text_input_date_hint = 2131624051;
 			
 			// aapt resource value: 0x7F0E0074
-			public const int mtrl_picker_text_input_date_hint = 2131624052;
+			public const int mtrl_picker_text_input_date_range_end_hint = 2131624052;
 			
 			// aapt resource value: 0x7F0E0075
-			public const int mtrl_picker_text_input_date_range_end_hint = 2131624053;
+			public const int mtrl_picker_text_input_date_range_start_hint = 2131624053;
 			
 			// aapt resource value: 0x7F0E0076
-			public const int mtrl_picker_text_input_date_range_start_hint = 2131624054;
+			public const int mtrl_picker_text_input_day_abbr = 2131624054;
 			
 			// aapt resource value: 0x7F0E0077
-			public const int mtrl_picker_text_input_day_abbr = 2131624055;
+			public const int mtrl_picker_text_input_month_abbr = 2131624055;
 			
 			// aapt resource value: 0x7F0E0078
-			public const int mtrl_picker_text_input_month_abbr = 2131624056;
+			public const int mtrl_picker_text_input_year_abbr = 2131624056;
 			
 			// aapt resource value: 0x7F0E0079
-			public const int mtrl_picker_text_input_year_abbr = 2131624057;
+			public const int mtrl_picker_toggle_to_calendar_input_mode = 2131624057;
 			
 			// aapt resource value: 0x7F0E007A
-			public const int mtrl_picker_toggle_to_calendar_input_mode = 2131624058;
+			public const int mtrl_picker_toggle_to_day_selection = 2131624058;
 			
 			// aapt resource value: 0x7F0E007B
-			public const int mtrl_picker_toggle_to_day_selection = 2131624059;
+			public const int mtrl_picker_toggle_to_text_input_mode = 2131624059;
 			
 			// aapt resource value: 0x7F0E007C
-			public const int mtrl_picker_toggle_to_text_input_mode = 2131624060;
+			public const int mtrl_picker_toggle_to_year_selection = 2131624060;
 			
 			// aapt resource value: 0x7F0E007D
-			public const int mtrl_picker_toggle_to_year_selection = 2131624061;
+			public const int overflow_tab_title = 2131624061;
 			
 			// aapt resource value: 0x7F0E007E
-			public const int overflow_tab_title = 2131624062;
+			public const int password_toggle_content_description = 2131624062;
 			
 			// aapt resource value: 0x7F0E007F
-			public const int password_toggle_content_description = 2131624063;
+			public const int path_password_eye = 2131624063;
 			
 			// aapt resource value: 0x7F0E0080
-			public const int path_password_eye = 2131624064;
+			public const int path_password_eye_mask_strike_through = 2131624064;
 			
 			// aapt resource value: 0x7F0E0081
-			public const int path_password_eye_mask_strike_through = 2131624065;
+			public const int path_password_eye_mask_visible = 2131624065;
 			
 			// aapt resource value: 0x7F0E0082
-			public const int path_password_eye_mask_visible = 2131624066;
+			public const int path_password_strike_through = 2131624066;
 			
 			// aapt resource value: 0x7F0E0083
-			public const int path_password_strike_through = 2131624067;
+			public const int search_menu_title = 2131624067;
 			
 			// aapt resource value: 0x7F0E0084
-			public const int search_menu_title = 2131624068;
-			
-			// aapt resource value: 0x7F0E0085
-			public const int status_bar_notification_info_overflow = 2131624069;
+			public const int status_bar_notification_info_overflow = 2131624068;
 			
 			static String()
 			{
@@ -24060,7 +20308,7 @@ namespace NotepadGps.Droid
 			// aapt resource value: 20
 			public const int AppCompatTextView_textLocale = 20;
 			
-			// aapt resource value: { 0x1010057,0x10100AE,0x7F030000,0x7F030001,0x7F030002,0x7F030003,0x7F030004,0x7F030005,0x7F030006,0x7F030007,0x7F030008,0x7F030009,0x7F03000A,0x7F03000B,0x7F03000C,0x7F03000E,0x7F03000F,0x7F030010,0x7F030011,0x7F030012,0x7F030013,0x7F030014,0x7F030015,0x7F030016,0x7F030017,0x7F030018,0x7F030019,0x7F03001A,0x7F03001B,0x7F03001C,0x7F03001D,0x7F03001E,0x7F030022,0x7F03002F,0x7F030030,0x7F030031,0x7F030032,0x7F03003B,0x7F03005C,0x7F03006C,0x7F03006D,0x7F03006E,0x7F03006F,0x7F030070,0x7F030076,0x7F030077,0x7F030089,0x7F030090,0x7F0300B4,0x7F0300B5,0x7F0300B6,0x7F0300B7,0x7F0300B8,0x7F0300B9,0x7F0300BA,0x7F0300C1,0x7F0300C2,0x7F0300C9,0x7F0300D8,0x7F0300F1,0x7F0300F2,0x7F0300F3,0x7F0300F6,0x7F0300F8,0x7F030104,0x7F030105,0x7F030106,0x7F030107,0x7F030108,0x7F030155,0x7F030164,0x7F03019B,0x7F03019C,0x7F03019D,0x7F03019E,0x7F0301A1,0x7F0301A2,0x7F0301A3,0x7F0301A4,0x7F0301A5,0x7F0301A6,0x7F0301A7,0x7F0301A8,0x7F0301A9,0x7F0301E9,0x7F0301EA,0x7F0301EB,0x7F0301F5,0x7F0301F7,0x7F030201,0x7F030203,0x7F030204,0x7F030205,0x7F030210,0x7F030211,0x7F030212,0x7F030213,0x7F030229,0x7F03022A,0x7F03024B,0x7F030272,0x7F030274,0x7F030275,0x7F030276,0x7F030278,0x7F030279,0x7F03027A,0x7F03027B,0x7F03027E,0x7F03027F,0x7F0302A2,0x7F0302A3,0x7F0302A4,0x7F0302A5,0x7F0302BE,0x7F0302C0,0x7F0302C1,0x7F0302C2,0x7F0302C3,0x7F0302C4,0x7F0302C5,0x7F0302C6,0x7F0302C7,0x7F0302C8,0x7F0302C9 }
+			// aapt resource value: { 0x1010057,0x10100AE,0x7F030000,0x7F030001,0x7F030002,0x7F030003,0x7F030004,0x7F030005,0x7F030006,0x7F030007,0x7F030008,0x7F030009,0x7F03000A,0x7F03000B,0x7F03000C,0x7F03000E,0x7F03000F,0x7F030010,0x7F030011,0x7F030012,0x7F030013,0x7F030014,0x7F030015,0x7F030016,0x7F030017,0x7F030018,0x7F030019,0x7F03001A,0x7F03001B,0x7F03001C,0x7F03001D,0x7F03001E,0x7F030022,0x7F03002F,0x7F030030,0x7F030031,0x7F030032,0x7F03003B,0x7F03005C,0x7F03006C,0x7F03006D,0x7F03006E,0x7F03006F,0x7F030070,0x7F030076,0x7F030077,0x7F030089,0x7F030090,0x7F0300B4,0x7F0300B5,0x7F0300B6,0x7F0300B7,0x7F0300B8,0x7F0300B9,0x7F0300BA,0x7F0300C1,0x7F0300C2,0x7F0300C9,0x7F0300D8,0x7F0300F1,0x7F0300F2,0x7F0300F3,0x7F0300F6,0x7F0300F8,0x7F030104,0x7F030105,0x7F030106,0x7F030107,0x7F030108,0x7F030155,0x7F030164,0x7F03019B,0x7F03019C,0x7F03019D,0x7F03019E,0x7F0301A1,0x7F0301A2,0x7F0301A3,0x7F0301A4,0x7F0301A5,0x7F0301A6,0x7F0301A7,0x7F0301A8,0x7F0301A9,0x7F0301E9,0x7F0301EA,0x7F0301EB,0x7F0301F5,0x7F0301F7,0x7F030201,0x7F030203,0x7F030204,0x7F030205,0x7F030210,0x7F030211,0x7F030212,0x7F030213,0x7F030229,0x7F03022A,0x7F03024B,0x7F030272,0x7F030274,0x7F030275,0x7F030276,0x7F030278,0x7F030279,0x7F03027A,0x7F03027B,0x7F03027E,0x7F03027F,0x7F0302A2,0x7F0302A3,0x7F0302A4,0x7F0302A5,0x7F0302BD,0x7F0302BF,0x7F0302C0,0x7F0302C1,0x7F0302C2,0x7F0302C3,0x7F0302C4,0x7F0302C5,0x7F0302C6,0x7F0302C7,0x7F0302C8 }
 			public static int[] AppCompatTheme = new int[] {
 					16842839,
 					16842926,
@@ -24176,7 +20424,8 @@ namespace NotepadGps.Droid
 					2130903715,
 					2130903716,
 					2130903717,
-					2130903742,
+					2130903741,
+					2130903743,
 					2130903744,
 					2130903745,
 					2130903746,
@@ -24185,8 +20434,7 @@ namespace NotepadGps.Droid
 					2130903749,
 					2130903750,
 					2130903751,
-					2130903752,
-					2130903753};
+					2130903752};
 			
 			// aapt resource value: 2
 			public const int AppCompatTheme_actionBarDivider = 2;
@@ -24563,7 +20811,7 @@ namespace NotepadGps.Droid
 			// aapt resource value: 124
 			public const int AppCompatTheme_windowNoTitle = 124;
 			
-			// aapt resource value: { 0x7F030042,0x7F03004C,0x7F03004E,0x7F030157,0x7F0301C4,0x7F0301DF,0x7F0302BD }
+			// aapt resource value: { 0x7F030042,0x7F03004C,0x7F03004E,0x7F030157,0x7F0301C4,0x7F0301DF,0x7F0302BC }
 			public static int[] Badge = new int[] {
 					2130903106,
 					2130903116,
@@ -24571,7 +20819,7 @@ namespace NotepadGps.Droid
 					2130903383,
 					2130903492,
 					2130903519,
-					2130903741};
+					2130903740};
 			
 			// aapt resource value: 0
 			public const int Badge_backgroundColor = 0;
@@ -25241,7 +21489,7 @@ namespace NotepadGps.Droid
 			// aapt resource value: 4
 			public const int ExtendedFloatingActionButton_shrinkMotionSpec = 4;
 			
-			// aapt resource value: { 0x101000E,0x7F03004A,0x7F03004B,0x7F03005B,0x7F030109,0x7F030114,0x7F03012E,0x7F03012F,0x7F03014E,0x7F030158,0x7F0301C5,0x7F0301FC,0x7F030208,0x7F030215,0x7F030218,0x7F03021C,0x7F0302B9 }
+			// aapt resource value: { 0x101000E,0x7F03004A,0x7F03004B,0x7F03005B,0x7F030109,0x7F030114,0x7F03012E,0x7F03012F,0x7F03014E,0x7F030158,0x7F0301C5,0x7F0301FC,0x7F030208,0x7F030215,0x7F030218,0x7F03021C,0x7F0302B8 }
 			public static int[] FloatingActionButton = new int[] {
 					16842766,
 					2130903114,
@@ -25259,7 +21507,7 @@ namespace NotepadGps.Droid
 					2130903573,
 					2130903576,
 					2130903580,
-					2130903737};
+					2130903736};
 			
 			// aapt resource value: 0
 			public const int FloatingActionButton_android_enabled = 0;
@@ -25609,7 +21857,7 @@ namespace NotepadGps.Droid
 			// aapt resource value: 2
 			public const int LoadingImageView_imageAspectRatioAdjust = 2;
 			
-			// aapt resource value: { 0x7F030036,0x7F03007A,0x7F03007B,0x7F03007C,0x7F03007D,0x7F03007E,0x7F03007F,0x7F030080,0x7F030187,0x7F030188,0x7F030189,0x7F03018A,0x7F0301AA,0x7F0301AD,0x7F0302B1,0x7F0302B2,0x7F0302B3,0x7F0302B4,0x7F0302B5,0x7F0302B6,0x7F0302B7,0x7F0302B8,0x7F0302BB,0x7F0302CD }
+			// aapt resource value: { 0x7F030036,0x7F03007A,0x7F03007B,0x7F03007C,0x7F03007D,0x7F03007E,0x7F03007F,0x7F030080,0x7F030187,0x7F030188,0x7F030189,0x7F03018A,0x7F0301AA,0x7F0301AD,0x7F0302B1,0x7F0302B2,0x7F0302B3,0x7F0302B4,0x7F0302B5,0x7F0302B6,0x7F0302B7,0x7F0302BA,0x7F0302CC }
 			public static int[] MapAttrs = new int[] {
 					2130903094,
 					2130903162,
@@ -25632,9 +21880,8 @@ namespace NotepadGps.Droid
 					2130903733,
 					2130903734,
 					2130903735,
-					2130903736,
-					2130903739,
-					2130903757};
+					2130903738,
+					2130903756};
 			
 			// aapt resource value: 0
 			public const int MapAttrs_ambientEnabled = 0;
@@ -25691,22 +21938,19 @@ namespace NotepadGps.Droid
 			public const int MapAttrs_uiScrollGestures = 17;
 			
 			// aapt resource value: 18
-			public const int MapAttrs_uiScrollGesturesDuringRotateOrZoom = 18;
+			public const int MapAttrs_uiTiltGestures = 18;
 			
 			// aapt resource value: 19
-			public const int MapAttrs_uiTiltGestures = 19;
+			public const int MapAttrs_uiZoomControls = 19;
 			
 			// aapt resource value: 20
-			public const int MapAttrs_uiZoomControls = 20;
+			public const int MapAttrs_uiZoomGestures = 20;
 			
 			// aapt resource value: 21
-			public const int MapAttrs_uiZoomGestures = 21;
+			public const int MapAttrs_useViewLifecycle = 21;
 			
 			// aapt resource value: 22
-			public const int MapAttrs_useViewLifecycle = 22;
-			
-			// aapt resource value: 23
-			public const int MapAttrs_zOrderOnTop = 23;
+			public const int MapAttrs_zOrderOnTop = 22;
 			
 			// aapt resource value: { 0x7F030043,0x7F030044,0x7F030045,0x7F030046 }
 			public static int[] MaterialAlertDialog = new int[] {
@@ -25859,7 +22103,7 @@ namespace NotepadGps.Droid
 			// aapt resource value: 20
 			public const int MaterialButton_strokeWidth = 20;
 			
-			// aapt resource value: { 0x101020D,0x7F0300EC,0x7F0300ED,0x7F0300EE,0x7F0300EF,0x7F030202,0x7F0302CA,0x7F0302CB,0x7F0302CC }
+			// aapt resource value: { 0x101020D,0x7F0300EC,0x7F0300ED,0x7F0300EE,0x7F0300EF,0x7F030202,0x7F0302C9,0x7F0302CA,0x7F0302CB }
 			public static int[] MaterialCalendar = new int[] {
 					16843277,
 					2130903276,
@@ -25867,9 +22111,9 @@ namespace NotepadGps.Droid
 					2130903278,
 					2130903279,
 					2130903554,
+					2130903753,
 					2130903754,
-					2130903755,
-					2130903756};
+					2130903755};
 			
 			// aapt resource value: { 0x10101B7,0x10101B8,0x10101B9,0x10101BA,0x7F03016B,0x7F030174,0x7F030175,0x7F03017C,0x7F03017D,0x7F030181 }
 			public static int[] MaterialCalendarItem = new int[] {
@@ -25984,10 +22228,10 @@ namespace NotepadGps.Droid
 			// aapt resource value: 9
 			public const int MaterialCardView_strokeWidth = 9;
 			
-			// aapt resource value: { 0x7F030078,0x7F0302BA }
+			// aapt resource value: { 0x7F030078,0x7F0302B9 }
 			public static int[] MaterialCheckBox = new int[] {
 					2130903160,
-					2130903738};
+					2130903737};
 			
 			// aapt resource value: 0
 			public const int MaterialCheckBox_buttonTint = 0;
@@ -25995,10 +22239,10 @@ namespace NotepadGps.Droid
 			// aapt resource value: 1
 			public const int MaterialCheckBox_useMaterialThemeColors = 1;
 			
-			// aapt resource value: { 0x7F030078,0x7F0302BA }
+			// aapt resource value: { 0x7F030078,0x7F0302B9 }
 			public static int[] MaterialRadioButton = new int[] {
 					2130903160,
-					2130903738};
+					2130903737};
 			
 			// aapt resource value: 0
 			public const int MaterialRadioButton_buttonTint = 0;
@@ -26387,9 +22631,9 @@ namespace NotepadGps.Droid
 			// aapt resource value: 11
 			public const int ProgressWheel_ahTextSize = 11;
 			
-			// aapt resource value: { 0x7F0302BC }
+			// aapt resource value: { 0x7F0302BB }
 			public static int[] RangeSlider = new int[] {
-					2130903740};
+					2130903739};
 			
 			// aapt resource value: 0
 			public const int RangeSlider_values = 0;
@@ -26477,7 +22721,7 @@ namespace NotepadGps.Droid
 			// aapt resource value: 0
 			public const int ScrollViewRendererTheme_scrollViewStyle = 0;
 			
-			// aapt resource value: { 0x10100DA,0x101011F,0x1010220,0x1010264,0x7F0300A6,0x7F0300CA,0x7F0300F0,0x7F030145,0x7F030161,0x7F03018B,0x7F0301FF,0x7F030200,0x7F03020E,0x7F03020F,0x7F03023F,0x7F030247,0x7F0302BF }
+			// aapt resource value: { 0x10100DA,0x101011F,0x1010220,0x1010264,0x7F0300A6,0x7F0300CA,0x7F0300F0,0x7F030145,0x7F030161,0x7F03018B,0x7F0301FF,0x7F030200,0x7F03020E,0x7F03020F,0x7F03023F,0x7F030247,0x7F0302BE }
 			public static int[] SearchView = new int[] {
 					16842970,
 					16843039,
@@ -26495,7 +22739,7 @@ namespace NotepadGps.Droid
 					2130903567,
 					2130903615,
 					2130903623,
-					2130903743};
+					2130903742};
 			
 			// aapt resource value: 0
 			public const int SearchView_android_focusable = 0;
@@ -26877,9 +23121,9 @@ namespace NotepadGps.Droid
 			// aapt resource value: 13
 			public const int SwitchCompat_trackTintMode = 13;
 			
-			// aapt resource value: { 0x7F0302BA }
+			// aapt resource value: { 0x7F0302B9 }
 			public static int[] SwitchMaterial = new int[] {
-					2130903738};
+					2130903737};
 			
 			// aapt resource value: 0
 			public const int SwitchMaterial_useMaterialThemeColors = 0;

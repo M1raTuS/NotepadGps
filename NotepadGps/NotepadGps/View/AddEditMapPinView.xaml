@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:num="clr-namespace:NotepadGps.Behaviour;assembly=NotepadGps"
-             xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:gmap="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             xmlns:maps="clr-namespace:NotepadGps.Bindables;assembly=NotepadGps"
              xmlns:behaviours="clr-namespace:NotepadGps.Behaviour;assembly=NotepadGps"
              x:Class="NotepadGps.View.AddEditMapPinView">
 
@@ -68,22 +69,21 @@
                VerticalOptions="Center"
                Text="IsChosen?"/>
 
-        <map:Map Grid.Row="7" 
+        <gmap:Map Grid.Row="7" 
                  Grid.RowSpan="4"
                  Grid.Column="1"
                  x:Name="map"
                  MapType="Street" 
                  HasZoomEnabled="True" 
                  HasScrollEnabled="True" 
-                 IsShowingUser="True">
-            <map:Map.Behaviors>
-                <behaviours:BindableMapBehavior ItemsSource="{Binding MapPin}" />
+                 IsShowingUser="False"
+                 MyLocationEnabled="False">
+            <gmap:Map.Behaviors>
                 <behaviours:EventToCommandBehavior EventName="MapClicked" 
-                                                   Command="{Binding OnMapClicked}"/>
-
-            </map:Map.Behaviors>
-        </map:Map>
-        
+                                                   Command="{Binding MapClickedCommand}"
+                                                   EventArgsParameterPath="Point"/>
+            </gmap:Map.Behaviors>
+        </gmap:Map>
         
         <Button Grid.Row="11"
                 BackgroundColor="Red"

@@ -4,6 +4,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
+using Plugin.CurrentActivity;
 
 namespace NotepadGps.Droid
 {
@@ -29,7 +30,7 @@ namespace NotepadGps.Droid
             base.OnCreate(savedInstanceState);
 
             //Add maps
-            Xamarin.FormsMaps.Init(this, savedInstanceState);
+            Xamarin.FormsGoogleMaps.Init(this, savedInstanceState);
             //Add
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 

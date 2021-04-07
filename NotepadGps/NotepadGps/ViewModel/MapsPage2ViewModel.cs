@@ -9,6 +9,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Windows.Input;
 using Xamarin.Forms;
+using Xamarin.Forms.GoogleMaps;
 
 namespace NotepadGps.ViewModel
 {
@@ -34,7 +35,7 @@ namespace NotepadGps.ViewModel
             get => _mapPins;
             set => SetProperty(ref _mapPins, value);
         }
-
+        
         private ObservableCollection<MapPinModel> _selectedItem;
         public ObservableCollection<MapPinModel> SelectedItem
         {
@@ -65,8 +66,9 @@ namespace NotepadGps.ViewModel
 
         public ICommand AddMapPinFloatingButtonCommand => new Command(AddMapPinFloatingButton);
         public ICommand FindPinCommand => new Command(FindPin);
+        public ICommand SelectedCommand => new Command(SelectedPin);
 
-
+       
         #endregion
 
         #region -Methods-
@@ -75,28 +77,37 @@ namespace NotepadGps.ViewModel
         {
             await _navigationService.NavigateAsync(nameof(AddEditMapPinView));
         }
+        private async void SelectedPin(object pin)
+        {
+            var nav = new NavigationParameters();
+            nav.Add(nameof(MapPinModel), (MapPinModel)pin);
 
+            await _navigationService.NavigateAsync(nameof(MapsPage1),nav,false,true);
+            
+        }
         private void FindPin()
         {
-            if (SelectedItem == null)
+            if (SearchPin != null)
             {
-                SelectedItem = new ObservableCollection<MapPinModel>(MapPin);
+                if (SelectedItem == null)
+                {
+                    SelectedItem = new ObservableCollection<MapPinModel>(MapPin);
+                }
+                else
+                {
+                    MapPin = new ObservableCollection<MapPinModel>(SelectedItem);
+                }
+
+                try
+                {
+                    var pin = MapPin.Where(x => x.Latitude.ToString() == SearchPin || x.Longitude.ToString() == SearchPin || x.Description == SearchPin);
+                    MapPin = new ObservableCollection<MapPinModel>(pin);
+                }
+                catch (Exception e)
+                {
+                    Debug.WriteLine(e);
+                }
             }
-            else
-            {
-                MapPin = new ObservableCollection<MapPinModel>(SelectedItem);
-            }
-            
-            try
-            {
-                var pin = MapPin.Where(x => x.Latitude.ToString() == SearchPin || x.Longitude.ToString() == SearchPin || x.Description == SearchPin);
-                MapPin = new ObservableCollection<MapPinModel>(pin);
-            }
-            catch (Exception e)
-            {
-                Debug.WriteLine(e);   
-            }
-            
         }
 
         private void Load()

@@ -1,6 +1,6 @@
 ﻿using NotepadGps.Try;
 using System;
-using Xamarin.Forms.Maps;
+using Xamarin.Forms.GoogleMaps;
 
 namespace NotepadGps
 {

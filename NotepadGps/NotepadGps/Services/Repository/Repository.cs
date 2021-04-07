@@ -63,6 +63,5 @@ namespace NotepadGps.Services.Repository
         {
             return _database.Value.Table<T>().Where(pred).ToListAsync().Result;
         }
-
     }
 }

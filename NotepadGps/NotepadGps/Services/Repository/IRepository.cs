@@ -18,6 +18,5 @@ namespace NotepadGps.Services.Repository
         Task<List<T>> FindAsync<T>(Expression<Func<T, bool>> pred = null) where T : class, IEntityBase, new();
         List<T> Find<T>(Expression<Func<T, bool>> pred) where T : class, IEntityBase, new();
 
-
     }
 }

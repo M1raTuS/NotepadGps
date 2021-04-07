@@ -2,17 +2,13 @@
 using NotepadGps.Models;
 using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Profile;
-using NotepadGps.Services.Repository;
 using Prism.Navigation;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics;
-using System.Linq;
 using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.Maps;
+using Xamarin.Forms.GoogleMaps;
 
 namespace NotepadGps.ViewModel
 {
@@ -34,7 +30,9 @@ namespace NotepadGps.ViewModel
         #region -Public Properties-
 
         public ICommand AddButtonCommand => new Command(SaveCommand);
+        public ICommand MapClickedCommand => new Command<Position>(MapClicked);
 
+       
 
         private int _id;
         public int Id
@@ -80,11 +78,9 @@ namespace NotepadGps.ViewModel
 
         }
 
-
         #endregion
 
         #region -Methods-
-
 
         private async void SaveCommand()
         {
@@ -127,6 +123,15 @@ namespace NotepadGps.ViewModel
             return false;
         }
 
+        private void MapClicked(Position position)
+        {
+            Latitude = "";
+            Longitude = "";
+
+            Latitude = position.Latitude.ToString();
+            Longitude = position.Longitude.ToString();
+        }
+
         #endregion
 
         #region -Overrides-
@@ -144,34 +149,6 @@ namespace NotepadGps.ViewModel
             base.OnPropertyChanged(args);
         }
         #endregion
-        public ICommand OnMapClicked => new Command(MapClicked);
-
-        private async void MapClicked()
-        {
-
-            var location = await Geolocation.GetLastKnownLocationAsync();
-            if (location == null)
-            {
-                location = await Geolocation.GetLocationAsync(new GeolocationRequest
-            {
-                DesiredAccuracy=GeolocationAccuracy.Medium,
-                Timeout = TimeSpan.FromSeconds(30)
-            });
-            }
-
-           var fg = location.Latitude;
-           var jh = location.Longitude;
-
-
-            Position pos = new Position();
-            Xamarin.Forms.Maps.Map m = new Xamarin.Forms.Maps.Map();
-           var td = m.X;
-           var q = pos.Latitude;
-           var t = pos.Longitude;
-        }
-        public class TapEventArgs : EventArgs
-        {
-            public Position Position { get; set; }
-        }
+        
     }
 }

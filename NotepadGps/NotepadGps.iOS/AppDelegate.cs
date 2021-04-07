@@ -21,6 +21,7 @@ namespace NotepadGps.iOS
         {
             //Add maps
             Xamarin.FormsMaps.Init();
+            Xamarin.FormsGoogleMaps.Init("AIzaSyApdJg8Wg4pWWhJ2TZXJ3Ke_rf0d1OjdFw");
 
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
