@@ -1,5 +1,4 @@
 ﻿using Acr.UserDialogs;
-using NotepadGps.Bindables;
 using NotepadGps.Models;
 using NotepadGps.Services.Profile;
 using NotepadGps.Services.Settings;
@@ -12,23 +11,23 @@ using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
-using Map = Xamarin.Forms.GoogleMaps.Map;
 
 namespace NotepadGps.ViewModel
 {
-    public class MapsPage1ViewModel : BaseViewModel
+    public class MapsPageViewModel : BaseViewModel
     {
         private readonly INavigationService _navigationService;
         private readonly IProfileService _profile;
         private readonly ISettingsService _settingsService;
 
-        public MapsPage1ViewModel(INavigationService navigationService,
+        public MapsPageViewModel(INavigationService navigationService,
                                   IProfileService profile,
                                   ISettingsService settingsService)
         {
             _navigationService = navigationService;
             _profile = profile;
             _settingsService = settingsService;
+           // Load();
         }
 
         #region -Public properties-
@@ -66,6 +65,7 @@ namespace NotepadGps.ViewModel
                     });
                     CurrentCameraPosition = new CameraPosition(new Position(location.Latitude, location.Longitude), 18.0);
                 }
+                CurrentCameraPosition = new CameraPosition(new Position(location.Latitude, location.Longitude), 18.0);
             }
             catch (Exception e)
             {

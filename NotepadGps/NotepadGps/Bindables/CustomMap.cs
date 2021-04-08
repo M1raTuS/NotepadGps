@@ -12,47 +12,42 @@ namespace NotepadGps.Bindables
     {
 
         public CustomMap()
-        {
-            //PinsSource = new ObservableCollection<Pin>();
-            //PinsSource.CollectionChanged += PinsSourceOnCollectionChanged;
+         {
+            PinsSource = new ObservableCollection<MapPinModel>();
+            PinsSource.CollectionChanged += PinsSourceOnCollectionChanged;
         }
-        public IEnumerable PinsSource
-        {
-            get { return (IEnumerable)GetValue(PinsSourceProperty); }
-            set { SetValue(PinsSourceProperty, value); }
-        }
-
-        public static readonly BindableProperty PinsSourceProperty = BindableProperty.Create(
-                                                         propertyName: "PinsSource",
-                                                         returnType: typeof(IEnumerable),
-                                                         declaringType: typeof(CustomMap),
-                                                         defaultValue: null,
-                                                         defaultBindingMode: BindingMode.TwoWay,
-                                                         validateValue: null,
-                                                         propertyChanged: PinsSourcePropertyChanged);
-        
-        //public ObservableCollection<Pin> PinsSource
+        //public IEnumerable PinsSource
         //{
-        //    get { return (ObservableCollection<Pin>)GetValue(PinsSourceProperty); }
+        //    get { return (IEnumerable<MapPinModel>)GetValue(PinsSourceProperty); }
         //    set { SetValue(PinsSourceProperty, value); }
         //}
 
         //public static readonly BindableProperty PinsSourceProperty = BindableProperty.Create(
         //                                                 propertyName: "PinsSource",
-        //                                                 returnType: typeof(ObservableCollection<MapPinModel>),
+        //                                                 returnType: typeof(IEnumerable),
         //                                                 declaringType: typeof(CustomMap),
         //                                                 defaultValue: null,
         //                                                 defaultBindingMode: BindingMode.TwoWay,
         //                                                 validateValue: null,
         //                                                 propertyChanged: PinsSourcePropertyChanged);
 
+        public ObservableCollection<MapPinModel> PinsSource
+        {
+            get { return (ObservableCollection<MapPinModel>)GetValue(PinsSourceProperty); }
+            set { SetValue(PinsSourceProperty, value); }
+        }
 
-        public static  BindableProperty CurrentCameraPositionProperty = BindableProperty.Create(
-                                                        propertyName: nameof(CurrentCameraPosition),
-                                                        returnType: typeof(CameraPosition),
-                                                        declaringType: typeof(CustomMap),
-                                                        defaultValue: null,
-                                                        propertyChanged: CurrentCameraPositionPropertyChanged);
+        public static readonly BindableProperty PinsSourceProperty = BindableProperty.Create(
+                                                         propertyName: nameof(PinsSource),
+                                                         returnType: typeof(ObservableCollection<MapPinModel>),
+                                                         declaringType: typeof(CustomMap),
+                                                         defaultValue: null,
+                                                         defaultBindingMode: BindingMode.TwoWay,
+                                                         validateValue: null,
+                                                         propertyChanged: PinsSourcePropertyChanged);
+
+      
+
 
         private static void PinsSourcePropertyChanged(BindableObject bindable, object oldvalue, object newValue)
         {
@@ -65,22 +60,34 @@ namespace NotepadGps.Bindables
                 bindableMap.Pins.Clear();
                 try
                 {
-                    foreach (Pin pin in newPinsSource)
+                    foreach (MapPinModel pin in newPinsSource)
                     {
-                        bindableMap.Pins.Add(pin);
-
+                        var pins = new Pin
+                        {
+                            Label = pin.Title,
+                            Address = pin.Description,
+                            Type = PinType.SearchResult,
+                            Position = new Position(pin.Latitude, pin.Longitude)
+                            IsVisible = pin.Chosen
+                        };
+                        bindableMap.Pins.Add(pins);
                     }
                 }
                 catch (System.Exception e)
                 {
-
                     System.Console.WriteLine(e);
                 }
-              
             }
         }
 
+        #region --Camera--
 
+        public static BindableProperty CurrentCameraPositionProperty = BindableProperty.Create(
+                                                       propertyName: nameof(CurrentCameraPosition),
+                                                       returnType: typeof(CameraPosition),
+                                                       declaringType: typeof(CustomMap),
+                                                       defaultValue: null,
+                                                       propertyChanged: CurrentCameraPositionPropertyChanged);
 
         public CameraPosition CurrentCameraPosition
         {
@@ -96,9 +103,11 @@ namespace NotepadGps.Bindables
                 {
                     map.InitialCameraUpdate = cameraUpdate;
                 }
-                (bindable as CustomMap).MoveCamera(cameraUpdate); 
+                (bindable as CustomMap).MoveCamera(cameraUpdate);
             }
         }
+        #endregion
+
         //public MapSpan MapSpan
         //{
         //    get { return (MapSpan)GetValue(MapSpanProperty); }
@@ -133,21 +142,21 @@ namespace NotepadGps.Bindables
 
         //    UpdatePinsSource(thisInstance, newPinsSource);
         //}
-        
-        //private void PinsSourceOnCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
-        //{
-        //    UpdatePinsSource(this, sender as IEnumerable<Pin>);
-        //}
+
+        private void PinsSourceOnCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            UpdatePinsSource(this, sender as IEnumerable<Pin>);
+        }
         private void MapPinsSourceOnCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             UpdateMapPinsSource(this, sender as IEnumerable<MapPinModel>);
         }
-        //private static void UpdatePinsSource(Map bindableMap, IEnumerable<Pin> newSource)
-        //{
-        //    bindableMap.Pins.Clear();
-        //    foreach (var pin in newSource)
-        //        bindableMap.Pins.Add(pin);
-        //}
+        private static void UpdatePinsSource(Map bindableMap, IEnumerable<Pin> newSource)
+        {
+            bindableMap.Pins.Clear();
+            foreach (var pin in newSource)
+                bindableMap.Pins.Add(pin);
+        }
         private static void UpdateMapPinsSource(Map bindableMap, IEnumerable<MapPinModel> newSource)
         {
             bindableMap.Pins.Clear();

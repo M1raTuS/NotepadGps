@@ -20,7 +20,6 @@ namespace NotepadGps.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             //Add maps
-            Xamarin.FormsMaps.Init();
             Xamarin.FormsGoogleMaps.Init("AIzaSyApdJg8Wg4pWWhJ2TZXJ3Ke_rf0d1OjdFw");
 
             global::Xamarin.Forms.Forms.Init();

@@ -62,14 +62,6 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _latitude, value);
         }
 
-        private bool _chosen;
-        public bool Chosen
-        {
-            get => _chosen;
-            set => SetProperty(ref _chosen, value);
-
-        }
-
         private string _description;
         public string Description
         {
@@ -95,7 +87,6 @@ namespace NotepadGps.ViewModel
                         Title = Title,
                         Longitude = Convert.ToDouble(Longitude),
                         Latitude = Convert.ToDouble(Latitude),
-                        Chosen = Chosen,
                         Description = Description
                     };
 
