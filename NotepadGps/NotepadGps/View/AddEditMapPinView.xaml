@@ -5,13 +5,14 @@
              xmlns:gmap="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              xmlns:maps="clr-namespace:NotepadGps.Bindables;assembly=NotepadGps"
              xmlns:behaviours="clr-namespace:NotepadGps.Behaviour;assembly=NotepadGps"
-             x:Class="NotepadGps.View.AddEditMapPinView">
+             x:Class="NotepadGps.View.AddEditMapPinView"
+             Title="Edit">
 
     <Grid BackgroundColor="{DynamicResource BackgroundColor}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="40" />
+            <ColumnDefinition Width="10" />
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="40" />
+            <ColumnDefinition Width="10" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -28,18 +29,18 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Entry Grid.Row="1"
+        <Entry Grid.Row="0"
                Grid.Column="1"
                Text="{Binding Title}"
                Placeholder="Title"/>
 
-        <Entry Grid.Row="2"
+        <Entry Grid.Row="1"
                Grid.Column="1"
                Text="{Binding Latitude, StringFormat='{0:###.#######}'}"
                Placeholder="Latitude"
                Keyboard="Numeric"/>
 
-        <Entry Grid.Row="3"
+        <Entry Grid.Row="2"
                Grid.Column="1"
                Text="{Binding Longitude, StringFormat='{0:###.#######}'}"
                Placeholder="Longitude"
@@ -49,7 +50,7 @@
             </Entry.Behaviors>
         </Entry>
 
-            <Editor Grid.Row="4" 
+        <Editor Grid.Row="3" 
                     Grid.RowSpan="2"
                     Grid.Column="1"
                     BackgroundColor="Gray"
@@ -57,20 +58,10 @@
                     HeightRequest="120"
                     MaxLength="120"
                     Text="{Binding Description}"/>
-        
-        <CheckBox Grid.Row="5" 
-                  Grid.RowSpan="3"
-                  Grid.Column="1"
-                  IsChecked="{Binding Chosen}"/>
-        
-        <Label Grid.Row="6" 
-               Grid.Column="1"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"
-               Text="IsChosen?"/>
 
-        <gmap:Map Grid.Row="7" 
-                 Grid.RowSpan="4"
+
+        <gmap:Map Grid.Row="5" 
+                 Grid.RowSpan="6"
                  Grid.Column="1"
                  x:Name="map"
                  MapType="Street" 

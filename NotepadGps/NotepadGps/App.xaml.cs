@@ -35,8 +35,8 @@ namespace NotepadGps
             containerRegistry.RegisterForNavigation<SignInView, SignInViewModel>();
             containerRegistry.RegisterForNavigation<SignUpView, SignUpViewModel>();
             containerRegistry.RegisterForNavigation<MainListView, MainListViewModel>();
-            containerRegistry.RegisterForNavigation<MapsPage1,MapsPage1ViewModel>();
-            containerRegistry.RegisterForNavigation<MapsPage2,MapsPage2ViewModel>();
+            containerRegistry.RegisterForNavigation<MapsPage,MapsPageViewModel>();
+            containerRegistry.RegisterForNavigation<ListPage,ListPageViewModel>();
             containerRegistry.RegisterForNavigation<AddEditMapPinView, AddEditMapPinViewModel>();
 
         }

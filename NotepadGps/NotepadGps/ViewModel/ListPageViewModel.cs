@@ -13,12 +13,12 @@ using Xamarin.Forms.GoogleMaps;
 
 namespace NotepadGps.ViewModel
 {
-    public class MapsPage2ViewModel : BaseViewModel
+    public class ListPageViewModel : BaseViewModel
     {
         private readonly INavigationService _navigationService;
         private readonly IProfileService _profile;
 
-        public MapsPage2ViewModel(INavigationService navigationService,
+        public ListPageViewModel(INavigationService navigationService,
                                  IProfileService profile)
         {
             _navigationService = navigationService;
@@ -64,6 +64,13 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _searchPin, value);
         }
 
+        private bool _chosen;
+        public bool Chosen
+        {
+            get => _labelVisible;
+            set => SetProperty(ref _chosen, value);
+        }
+
         public ICommand AddMapPinFloatingButtonCommand => new Command(AddMapPinFloatingButton);
         public ICommand FindPinCommand => new Command(FindPin);
         public ICommand SelectedCommand => new Command(SelectedPin);
@@ -82,7 +89,7 @@ namespace NotepadGps.ViewModel
             var nav = new NavigationParameters();
             nav.Add(nameof(MapPinModel), (MapPinModel)pin);
 
-            await _navigationService.NavigateAsync(nameof(MapsPage1),nav,false,true);
+            await _navigationService.NavigateAsync(nameof(MapsPage),nav,false,true);
             
         }
         private void FindPin()

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NotepadGps.View.MapsPage1"    
-             Title="MapsPage 1"
+             x:Class="NotepadGps.View.MapsPage"    
+             Title="MapsPage"
              xmlns:gmaps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              xmlns:behaviours="clr-namespace:NotepadGps.Behaviour;assembly=NotepadGps"
              xmlns:maps="clr-namespace:NotepadGps.Bindables;assembly=NotepadGps"
@@ -48,6 +48,7 @@
                 <behaviours:EventToCommandBehavior EventName="PinClicked" 
                                                    Command="{Binding PinClickedCommand}"
                                                    EventArgsParameterPath="Pin"/>
+
             </maps:CustomMap.Behaviors>
         </maps:CustomMap>
         <!--<gmaps:Map Grid.Row="1"

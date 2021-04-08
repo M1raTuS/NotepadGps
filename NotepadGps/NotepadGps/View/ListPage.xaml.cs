@@ -4,9 +4,9 @@ using Xamarin.Forms.Xaml;
 namespace NotepadGps.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MapsPage2 : ContentPage
+    public partial class ListPage : ContentPage
     {
-        public MapsPage2()
+        public ListPage()
         {
             InitializeComponent();
         }

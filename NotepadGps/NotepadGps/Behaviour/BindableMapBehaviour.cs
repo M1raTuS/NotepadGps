@@ -40,7 +40,6 @@ namespace NotepadGps.Behaviour
             {
                 if (source.Chosen)
                 {
-
                     var pin = new Pin
                     {
                         Label = source.Title,
