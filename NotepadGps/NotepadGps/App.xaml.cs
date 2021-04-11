@@ -1,5 +1,6 @@
 ﻿using NotepadGps.Services.Autentification;
 using NotepadGps.Services.Autorization;
+using NotepadGps.Services.Map;
 using NotepadGps.Services.Profile;
 using NotepadGps.Services.Repository;
 using NotepadGps.Services.Settings;
@@ -13,7 +14,8 @@ namespace NotepadGps
 {
     public partial class App : PrismApplication
     {
-        private ISettingsService settingsService;
+        private IAutorizationService autorizationService;
+
         public App()
         {
 
@@ -21,12 +23,12 @@ namespace NotepadGps
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-
             //Services
             containerRegistry.RegisterInstance<IRepository>(Container.Resolve<Repository>());
             containerRegistry.RegisterInstance<ISettingsService>(Container.Resolve<SettingsService>());
             containerRegistry.RegisterInstance<IAutorizationService>(Container.Resolve<AutorizationService>());
             containerRegistry.RegisterInstance<IProfileService>(Container.Resolve<ProfileService>());
+            containerRegistry.RegisterInstance<IMapPinService>(Container.Resolve<MapPinService>());
             containerRegistry.RegisterInstance<IAutentificationService>(Container.Resolve<AutentificationService>());
             
 
@@ -38,15 +40,13 @@ namespace NotepadGps
             containerRegistry.RegisterForNavigation<MapsPage,MapsPageViewModel>();
             containerRegistry.RegisterForNavigation<ListPage,ListPageViewModel>();
             containerRegistry.RegisterForNavigation<AddEditMapPinView, AddEditMapPinViewModel>();
-
         }
 
         protected override void OnInitialized()
         {
-            //InitializeComponent();
-            settingsService = Container.Resolve<ISettingsService>();
+            autorizationService = Container.Resolve<IAutorizationService>();
 
-            if (settingsService.CurrentUser != -1)
+            if (autorizationService.GetCurrentId != -1)
             {
                 NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(MainListView)}");
             }

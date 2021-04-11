@@ -1,12 +1,10 @@
-﻿using Acr.UserDialogs;
-using NotepadGps.Models;
-using NotepadGps.Services.Profile;
+﻿using NotepadGps.Models;
+using NotepadGps.Services.Map;
 using NotepadGps.Services.Settings;
 using Prism.Navigation;
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using System.Linq;
 using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -17,17 +15,16 @@ namespace NotepadGps.ViewModel
     public class MapsPageViewModel : BaseViewModel
     {
         private readonly INavigationService _navigationService;
-        private readonly IProfileService _profile;
+        private readonly IMapPinService _mapPinService;
         private readonly ISettingsService _settingsService;
 
         public MapsPageViewModel(INavigationService navigationService,
-                                  IProfileService profile,
+                                  IMapPinService mapPinService,
                                   ISettingsService settingsService)
         {
             _navigationService = navigationService;
-            _profile = profile;
+            _mapPinService = mapPinService;
             _settingsService = settingsService;
-           // Load();
         }
 
         #region -Public properties-
@@ -39,7 +36,6 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _currentCameraPosition, value);
         }
 
-        public ICommand OnMapClicked => new Command(MapClicked);
         public ICommand FindMyLocationCommand => new Command(FindMyLocationAsync);
         #endregion
 
@@ -47,7 +43,7 @@ namespace NotepadGps.ViewModel
 
         private void Load()
         {
-            var mapPin = _profile.GetMapPinListById();
+            var mapPin = _mapPinService.GetMapPinListById();
             MapPin = new ObservableCollection<MapPinModel>(mapPin);
         }
 
@@ -73,30 +69,6 @@ namespace NotepadGps.ViewModel
             }
         }
 
-
-        public void PinSelected(object param)
-        {
-            var pin = param as Pin;
-
-            if (pin != null)
-            {
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    UserDialogs.Instance.Alert(pin.Label);
-                });
-            }
-        }
-
-        private void MapClicked()
-        {
-            //var map = new Map();
-            //map.MapClicked += OnMapClickeded;
-        }
-        void OnMapClickeded(object sender, MapClickedEventArgs e)
-        {
-            // Debug.WriteLine($"MapClick: {e.Position.Latitude}, {e.Position.Longitude}");
-        }
-
         #endregion
 
         #region -Overrides-
@@ -118,69 +90,6 @@ namespace NotepadGps.ViewModel
 
         #endregion
 
-
-
-
-        private string _customFrameLable;
-        public string CustomFrameLabel
-        {
-            get => _customFrameLable;
-
-            set => SetProperty(ref _customFrameLable, value);
-        }
-
-        private string _customFrameDescriptionLabel;
-        public string CustomFrameDescriptionLabel
-        {
-            get => _customFrameDescriptionLabel;
-
-            set => SetProperty(ref _customFrameDescriptionLabel, value);
-        }
-
-        private string _customFrameLatitude;
-        public string CustomFrameLatitude
-        {
-            get => _customFrameLatitude;
-
-            set => SetProperty(ref _customFrameLatitude, value);
-        }
-
-        private string _customframeLongitude;
-        public string CustomFrameLongitudeLabel
-        {
-            get => _customframeLongitude;
-
-            set => SetProperty(ref _customframeLongitude, value);
-        }
-
-        private bool _showedFrameData;
-        public bool ShowedFrameData
-        {
-            get => _showedFrameData;
-
-            set => SetProperty(ref _showedFrameData, value);
-        }
-
-        public ICommand PinClickedCommand => new Command<Pin>(PinClicked);
-
-        async private void PinClicked(Pin pin)
-        {
-            var items = _profile.GetMapPinListById();
-            var tappedPin = items.FirstOrDefault(x => x.Title == pin.Label);
-
-            if (tappedPin != null)
-            {
-                CustomFrameLabel = tappedPin.Title;
-                CustomFrameDescriptionLabel = tappedPin.Description;
-                CustomFrameLatitude = tappedPin.Latitude.ToString();
-                CustomFrameLongitudeLabel = tappedPin.Longitude.ToString();
-                ShowedFrameData = true;
-            }
-            else
-            {
-                await App.Current.MainPage.DisplayAlert("error", "pin=null", "Ok", null);
-            }
-        }
     }
 }
 

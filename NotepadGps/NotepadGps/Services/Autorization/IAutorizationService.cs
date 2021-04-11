@@ -4,6 +4,5 @@
     {
         bool IsAutorized { get; set; }
         int GetCurrentId { get; set; }
-        int GetCurrentUserId();
     }
 }

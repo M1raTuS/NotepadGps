@@ -1,12 +1,11 @@
 ﻿using Acr.UserDialogs;
 using NotepadGps.Models;
 using NotepadGps.Services.Autorization;
-using NotepadGps.Services.Profile;
+using NotepadGps.Services.Map;
 using Prism.Navigation;
 using System;
 using System.ComponentModel;
 using System.Windows.Input;
-using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
 
@@ -16,15 +15,15 @@ namespace NotepadGps.ViewModel
     {
         private readonly INavigationService _navigationService;
         private readonly IAutorizationService _autorization;
-        private readonly IProfileService _profile;
+        private readonly IMapPinService _mapPinService;
 
         public AddEditMapPinViewModel(INavigationService navigationService,
                                       IAutorizationService autorization,
-                                      IProfileService profile)
+                                      IMapPinService mapPinService)
         {
             _navigationService = navigationService;
             _autorization = autorization;
-            _profile = profile;
+            _mapPinService = mapPinService;
         }
 
         #region -Public Properties-
@@ -32,7 +31,7 @@ namespace NotepadGps.ViewModel
         public ICommand AddButtonCommand => new Command(SaveCommand);
         public ICommand MapClickedCommand => new Command<Position>(MapClicked);
 
-       
+
 
         private int _id;
         public int Id
@@ -89,9 +88,22 @@ namespace NotepadGps.ViewModel
                         Latitude = Convert.ToDouble(Latitude),
                         Description = Description
                     };
+                    if (Id > 0)
+                    {
+                        var nav = new NavigationParameters();
+                        nav.Add(nameof(MapPinModel), mapPin);
 
-                    await _profile.SaveMapPinAsync(mapPin);
-                    await _navigationService.GoBackAsync();
+                        await _mapPinService.UpdateMapPinAsync(mapPin);
+                        await _navigationService.GoBackAsync();
+                    }
+                    else
+                    {
+                        var nav = new NavigationParameters();
+                        nav.Add(nameof(MapPinModel), mapPin);
+
+                        await _mapPinService.SaveMapPinAsync(mapPin);
+                        await _navigationService.GoBackAsync();
+                    }
 
                 }
                 else
@@ -125,21 +137,20 @@ namespace NotepadGps.ViewModel
 
         #endregion
 
-        #region -Overrides-
+        #region --Overrides--
+
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            base.OnNavigatedTo(parameters);
             if (parameters.TryGetValue(nameof(MapPinModel), out MapPinModel mapPin))
             {
-                //mapPinModel = mapPin;
+                Id = mapPin.Id;
+                Title = mapPin.Title;
+                Latitude = mapPin.Latitude.ToString();
+                Longitude = mapPin.Longitude.ToString();
+                Description = mapPin.Description;
             }
         }
 
-        protected override void OnPropertyChanged(PropertyChangedEventArgs args)
-        {
-            base.OnPropertyChanged(args);
-        }
         #endregion
-        
     }
 }

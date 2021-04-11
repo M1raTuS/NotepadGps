@@ -1,4 +1,5 @@
 ﻿using NotepadGps.Models;
+using NotepadGps.Services.Map;
 using NotepadGps.Services.Profile;
 using NotepadGps.View;
 using Prism.Navigation;
@@ -9,20 +10,19 @@ using System.Diagnostics;
 using System.Linq;
 using System.Windows.Input;
 using Xamarin.Forms;
-using Xamarin.Forms.GoogleMaps;
 
 namespace NotepadGps.ViewModel
 {
     public class ListPageViewModel : BaseViewModel
     {
         private readonly INavigationService _navigationService;
-        private readonly IProfileService _profile;
+        private readonly IMapPinService _mapPinService;
 
         public ListPageViewModel(INavigationService navigationService,
-                                 IProfileService profile)
+                                 IMapPinService mapPinService)
         {
             _navigationService = navigationService;
-            _profile = profile;
+            _mapPinService = mapPinService;
 
             Load();
         }
@@ -35,7 +35,7 @@ namespace NotepadGps.ViewModel
             get => _mapPins;
             set => SetProperty(ref _mapPins, value);
         }
-        
+
         private ObservableCollection<MapPinModel> _selectedItem;
         public ObservableCollection<MapPinModel> SelectedItem
         {
@@ -74,8 +74,10 @@ namespace NotepadGps.ViewModel
         public ICommand AddMapPinFloatingButtonCommand => new Command(AddMapPinFloatingButton);
         public ICommand FindPinCommand => new Command(FindPin);
         public ICommand SelectedCommand => new Command(SelectedPin);
+        public ICommand EditContext => new Command(EditContextMenu);
+        public ICommand DeleteContext => new Command(DeleteContextMenu);
 
-       
+
         #endregion
 
         #region -Methods-
@@ -84,14 +86,16 @@ namespace NotepadGps.ViewModel
         {
             await _navigationService.NavigateAsync(nameof(AddEditMapPinView));
         }
+
         private async void SelectedPin(object pin)
         {
             var nav = new NavigationParameters();
             nav.Add(nameof(MapPinModel), (MapPinModel)pin);
 
-            await _navigationService.NavigateAsync(nameof(MapsPage),nav,false,true);
-            
+            await _navigationService.NavigateAsync(nameof(MapsPage), nav, false, true);
+
         }
+
         private void FindPin()
         {
             if (SearchPin != null)
@@ -117,12 +121,28 @@ namespace NotepadGps.ViewModel
             }
         }
 
-        private void Load()
+        private async void EditContextMenu(object obj)
         {
-            var mapPin = _profile.GetMapPinListById();
-            MapPin = new ObservableCollection<MapPinModel>(mapPin);
+            var nav = new NavigationParameters();
+            nav.Add(nameof(MapPinModel), (MapPinModel)obj);
+
+            await _navigationService.NavigateAsync(nameof(AddEditMapPinView), nav, false, true);
+        }
+        private async void DeleteContextMenu(object obj)
+        {
+            if (await Application.Current.MainPage.DisplayAlert("Alert", "Подтверждаете ли вы удаление?", "Ok", "Cancel"))
+            {
+                await _mapPinService.DeleteMapPinAsync((MapPinModel)obj);
+
+                Load();
+            }
         }
 
+        private void Load()
+        {
+            var mapPin = _mapPinService.GetMapPinListById();
+            MapPin = new ObservableCollection<MapPinModel>(mapPin);
+        }
 
         #endregion
 

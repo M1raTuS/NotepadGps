@@ -67,7 +67,7 @@ namespace NotepadGps.Bindables
                             Label = pin.Title,
                             Address = pin.Description,
                             Type = PinType.SearchResult,
-                            Position = new Position(pin.Latitude, pin.Longitude)
+                            Position = new Position(pin.Latitude, pin.Longitude),
                             IsVisible = pin.Chosen
                         };
                         bindableMap.Pins.Add(pins);
@@ -79,7 +79,30 @@ namespace NotepadGps.Bindables
                 }
             }
         }
-
+        private void PinsSourceOnCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            UpdatePinsSource(this, sender as IEnumerable<Pin>);
+        }
+        private void MapPinsSourceOnCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            UpdateMapPinsSource(this, sender as IEnumerable<MapPinModel>);
+        }
+        private static void UpdatePinsSource(Map bindableMap, IEnumerable<Pin> newSource)
+        {
+            bindableMap.Pins.Clear();
+            foreach (var pin in newSource)
+                bindableMap.Pins.Add(pin);
+        }
+        private static void UpdateMapPinsSource(Map bindableMap, IEnumerable<MapPinModel> newSource)
+        {
+            bindableMap.Pins.Clear();
+            foreach (var pin in newSource)
+                bindableMap.Pins.Add(new Pin
+                {
+                    Label = pin.Title,
+                    Position = new Position(pin.Latitude, pin.Longitude)
+                });
+        }
         #region --Camera--
 
         public static BindableProperty CurrentCameraPositionProperty = BindableProperty.Create(
@@ -108,65 +131,7 @@ namespace NotepadGps.Bindables
         }
         #endregion
 
-        //public MapSpan MapSpan
-        //{
-        //    get { return (MapSpan)GetValue(MapSpanProperty); }
-        //    set { SetValue(MapSpanProperty, value); }
-        //}
-
-        //public static readonly BindableProperty MapSpanProperty = BindableProperty.Create(
-        //                                                 propertyName: "MapSpan",
-        //                                                 returnType: typeof(MapSpan),
-        //                                                 declaringType: typeof(CustomMap),
-        //                                                 defaultValue: null,
-        //                                                 defaultBindingMode: BindingMode.TwoWay,
-        //                                                 validateValue: null,
-        //                                                 propertyChanged: MapSpanPropertyChanged);
-
-        //private static void MapSpanPropertyChanged(BindableObject bindable, object oldValue, object newValue)
-        //{
-        //    var thisInstance = bindable as CustomMap;
-        //    var newMapSpan = newValue as MapSpan;
-
-        //    thisInstance?.MoveToRegion(newMapSpan);
-        //}
-
-        //private static void PinsSourcePropertyChanged(BindableObject bindable, object oldvalue, object newValue)
-        //{
-        //    var thisInstance = bindable as CustomMap;
-        //    var newPinsSource = newValue as ObservableCollection<Pin>;
-
-        //    if (thisInstance == null ||
-        //        newPinsSource == null)
-        //        return;
-
-        //    UpdatePinsSource(thisInstance, newPinsSource);
-        //}
-
-        private void PinsSourceOnCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
-        {
-            UpdatePinsSource(this, sender as IEnumerable<Pin>);
-        }
-        private void MapPinsSourceOnCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
-        {
-            UpdateMapPinsSource(this, sender as IEnumerable<MapPinModel>);
-        }
-        private static void UpdatePinsSource(Map bindableMap, IEnumerable<Pin> newSource)
-        {
-            bindableMap.Pins.Clear();
-            foreach (var pin in newSource)
-                bindableMap.Pins.Add(pin);
-        }
-        private static void UpdateMapPinsSource(Map bindableMap, IEnumerable<MapPinModel> newSource)
-        {
-            bindableMap.Pins.Clear();
-            foreach (var pin in newSource)
-                bindableMap.Pins.Add(new Pin
-                {
-                    Label = pin.Title,
-                    Position = new Position(pin.Latitude, pin.Longitude)
-                });
-        }
+        
     }
 }
 

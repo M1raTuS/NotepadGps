@@ -26,10 +26,5 @@ namespace NotepadGps.Services.Autorization
             get => _isAutorized;
             set => SetProperty(ref _isAutorized, value);
         }
-
-        public int GetCurrentUserId()
-        {
-            return GetCurrentId;
-        }
     }
 }
