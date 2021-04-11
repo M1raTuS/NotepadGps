@@ -64,6 +64,12 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _searchPin, value);
         }
 
+        private string _imgPath;
+        public string ImgPath
+        {
+            get => _imgPath;
+            set => SetProperty(ref _imgPath, value);
+        }
         private bool _chosen;
         public bool Chosen
         {
@@ -72,10 +78,10 @@ namespace NotepadGps.ViewModel
         }
 
         public ICommand AddMapPinFloatingButtonCommand => new Command(AddMapPinFloatingButton);
-        public ICommand FindPinCommand => new Command(FindPin);
         public ICommand SelectedCommand => new Command(SelectedPin);
         public ICommand EditContext => new Command(EditContextMenu);
-        public ICommand DeleteContext => new Command(DeleteContextMenu);
+        public ICommand DeleteContext => new Command(DeleteContextMenu); 
+        public ICommand CheckPinCommand => new Command<MapPinModel>(OnCheckPinCommand);
 
 
         #endregion
@@ -96,31 +102,6 @@ namespace NotepadGps.ViewModel
 
         }
 
-        private void FindPin()
-        {
-            if (SearchPin != null)
-            {
-                if (SelectedItem == null)
-                {
-                    SelectedItem = new ObservableCollection<MapPinModel>(MapPin);
-                }
-                else
-                {
-                    MapPin = new ObservableCollection<MapPinModel>(SelectedItem);
-                }
-
-                try
-                {
-                    var pin = MapPin.Where(x => x.Latitude.ToString() == SearchPin || x.Longitude.ToString() == SearchPin || x.Description == SearchPin);
-                    MapPin = new ObservableCollection<MapPinModel>(pin);
-                }
-                catch (Exception e)
-                {
-                    Debug.WriteLine(e);
-                }
-            }
-        }
-
         private async void EditContextMenu(object obj)
         {
             var nav = new NavigationParameters();
@@ -128,6 +109,7 @@ namespace NotepadGps.ViewModel
 
             await _navigationService.NavigateAsync(nameof(AddEditMapPinView), nav, false, true);
         }
+
         private async void DeleteContextMenu(object obj)
         {
             if (await Application.Current.MainPage.DisplayAlert("Alert", "Подтверждаете ли вы удаление?", "Ok", "Cancel"))
@@ -136,6 +118,23 @@ namespace NotepadGps.ViewModel
 
                 Load();
             }
+        }
+
+        private void OnCheckPinCommand(MapPinModel pin)
+        {
+            if (pin.IsFavorite)
+            {
+                pin.ImgPath = "EmptyStar.png";
+                pin.IsFavorite = false;
+            }
+            else
+            {
+                pin.ImgPath = "FullStar.jpg";
+                pin.IsFavorite = true;
+            }
+
+            _mapPinService.UpdateMapPinAsync(pin);
+            Load();
         }
 
         private void Load()
@@ -149,7 +148,6 @@ namespace NotepadGps.ViewModel
         #region -Overrides-
         protected override void OnPropertyChanged(PropertyChangedEventArgs args)
         {
-            base.OnPropertyChanged(args);
             if (args.PropertyName == nameof(MapPin))
             {
                 if (MapPin.Count > 0)
@@ -163,12 +161,32 @@ namespace NotepadGps.ViewModel
                     ListEnabled = false;
                 }
             }
+
             if (args.PropertyName == nameof(SearchPin))
             {
-                if (SearchPin.Length == 0)
+                if (SearchPin.Length == 0 || String.IsNullOrEmpty(SearchPin))
                 {
                     Load();
                 }
+                else
+                {
+                    try
+                    {
+                        Load();
+                        var pin = MapPin.Where(x => x.Title.ToLower().Contains(SearchPin.ToLower()) || x.Latitude.ToString().ToLower().Contains(SearchPin.ToLower()) || x.Longitude.ToString().ToLower().Contains(SearchPin.ToLower()));
+                        MapPin = new ObservableCollection<MapPinModel>(pin);
+                    }
+                    catch (Exception e)
+                    {
+                        Debug.WriteLine(e);
+                    }
+                 
+                }
+            }
+
+            if (args.PropertyName == nameof(Chosen))
+            {
+
             }
         }
 

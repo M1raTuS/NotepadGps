@@ -16,20 +16,6 @@ namespace NotepadGps.Bindables
             PinsSource = new ObservableCollection<MapPinModel>();
             PinsSource.CollectionChanged += PinsSourceOnCollectionChanged;
         }
-        //public IEnumerable PinsSource
-        //{
-        //    get { return (IEnumerable<MapPinModel>)GetValue(PinsSourceProperty); }
-        //    set { SetValue(PinsSourceProperty, value); }
-        //}
-
-        //public static readonly BindableProperty PinsSourceProperty = BindableProperty.Create(
-        //                                                 propertyName: "PinsSource",
-        //                                                 returnType: typeof(IEnumerable),
-        //                                                 declaringType: typeof(CustomMap),
-        //                                                 defaultValue: null,
-        //                                                 defaultBindingMode: BindingMode.TwoWay,
-        //                                                 validateValue: null,
-        //                                                 propertyChanged: PinsSourcePropertyChanged);
 
         public ObservableCollection<MapPinModel> PinsSource
         {
@@ -45,9 +31,6 @@ namespace NotepadGps.Bindables
                                                          defaultBindingMode: BindingMode.TwoWay,
                                                          validateValue: null,
                                                          propertyChanged: PinsSourcePropertyChanged);
-
-      
-
 
         private static void PinsSourcePropertyChanged(BindableObject bindable, object oldvalue, object newValue)
         {
@@ -68,7 +51,7 @@ namespace NotepadGps.Bindables
                             Address = pin.Description,
                             Type = PinType.SearchResult,
                             Position = new Position(pin.Latitude, pin.Longitude),
-                            IsVisible = pin.Chosen
+                            IsVisible = pin.IsFavorite
                         };
                         bindableMap.Pins.Add(pins);
                     }
@@ -103,6 +86,7 @@ namespace NotepadGps.Bindables
                     Position = new Position(pin.Latitude, pin.Longitude)
                 });
         }
+
         #region --Camera--
 
         public static BindableProperty CurrentCameraPositionProperty = BindableProperty.Create(
