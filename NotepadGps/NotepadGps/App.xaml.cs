@@ -40,6 +40,7 @@ namespace NotepadGps
             containerRegistry.RegisterForNavigation<MapsPage,MapsPageViewModel>();
             containerRegistry.RegisterForNavigation<ListPage,ListPageViewModel>();
             containerRegistry.RegisterForNavigation<AddEditMapPinView, AddEditMapPinViewModel>();
+            containerRegistry.RegisterForNavigation<PopUpView, PopUpViewModel>();
         }
 
         protected override void OnInitialized()

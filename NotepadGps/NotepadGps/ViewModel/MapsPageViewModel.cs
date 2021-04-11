@@ -1,6 +1,7 @@
 ﻿using NotepadGps.Models;
 using NotepadGps.Services.Map;
 using NotepadGps.Services.Settings;
+using NotepadGps.View;
 using Prism.Navigation;
 using System;
 using System.Collections.ObjectModel;
@@ -37,6 +38,8 @@ namespace NotepadGps.ViewModel
         }
 
         public ICommand FindMyLocationCommand => new Command(FindMyLocationAsync);
+        public ICommand PinClickedCommand => new Command<Pin>(OnPinClickedCommand);
+
         #endregion
 
         #region -Methods-
@@ -69,13 +72,19 @@ namespace NotepadGps.ViewModel
             }
         }
 
+        private async void OnPinClickedCommand(Pin  pin)
+        {
+            var nav = new NavigationParameters();
+            nav.Add(nameof(Pin), (Pin)pin);
+
+            await _navigationService.NavigateAsync(nameof(PopUpView), nav, true, true);
+        }
+
         #endregion
 
         #region -Overrides-
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            base.OnNavigatedTo(parameters);
-
             if (parameters.TryGetValue(nameof(MapPinModel), out MapPinModel pin))
             {
                 CurrentCameraPosition = new CameraPosition(new Position(pin.Latitude, pin.Longitude), 12.0);
