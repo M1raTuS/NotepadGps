@@ -86,7 +86,10 @@ namespace NotepadGps.ViewModel
                         Title = Title,
                         Longitude = Convert.ToDouble(Longitude),
                         Latitude = Convert.ToDouble(Latitude),
-                        Description = Description
+                        Description = Description,
+                        Chosen = true,
+                        ImgPath = "FullStar.jpg"
+                        
                     };
                     if (Id > 0)
                     {

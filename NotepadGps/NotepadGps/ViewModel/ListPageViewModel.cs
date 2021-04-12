@@ -75,6 +75,7 @@ namespace NotepadGps.ViewModel
         public ICommand SelectedCommand => new Command(SelectedPin);
         public ICommand EditContext => new Command(EditContextMenu);
         public ICommand DeleteContext => new Command(DeleteContextMenu);
+        public ICommand CheckedPinCommand => new Command<MapPinModel>(OnCheckedPinCommand);
 
 
         #endregion
@@ -113,12 +114,28 @@ namespace NotepadGps.ViewModel
             }
         }
 
+        private void OnCheckedPinCommand(MapPinModel mapPin)
+        {
+            if (mapPin.Chosen)
+            {
+                mapPin.ImgPath = "EmptyStar.png";
+                mapPin.Chosen = false;
+            }
+            else
+            {
+                mapPin.ImgPath = "FullStar.jpg";
+                mapPin.Chosen = true;
+            }
+
+            _mapPinService.UpdateMapPinAsync(mapPin);
+            Load();
+        }
+
         private void Load()
         {
             var mapPin = _mapPinService.GetMapPinListById();
             MapPin = new ObservableCollection<MapPinModel>(mapPin);
         }
-
         #endregion
 
         #region -Overrides-
