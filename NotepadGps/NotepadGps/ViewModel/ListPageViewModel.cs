@@ -3,6 +3,7 @@ using NotepadGps.Services.Map;
 using NotepadGps.View;
 using Prism.Navigation;
 using System;
+using Prism.Navigation.TabbedPages;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -90,8 +91,8 @@ namespace NotepadGps.ViewModel
             var nav = new NavigationParameters();
             nav.Add(nameof(MapPinModel), (MapPinModel)pin);
 
-            await _navigationService.NavigateAsync(nameof(MapsPage), nav, false, true);
-
+            //await _navigationService.SelectTabAsync("MapsPage", nav);
+            await _navigationService.NavigateAsync($"/{nameof(NavigationPage)}/MainListView?selectedTab=MapsPage", nav);
         }
 
         private async void EditContextMenu(object obj)

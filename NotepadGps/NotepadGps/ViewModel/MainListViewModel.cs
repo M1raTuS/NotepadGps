@@ -6,7 +6,7 @@ using Xamarin.Forms;
 
 namespace NotepadGps.ViewModel
 {
-    public class MainListViewModel
+    public class MainListViewModel : BaseViewModel
     {
         private readonly INavigationService _navigationService;
         private readonly ISettingsService _settingsService;
