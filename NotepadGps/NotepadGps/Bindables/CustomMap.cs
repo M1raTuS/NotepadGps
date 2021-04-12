@@ -16,20 +16,8 @@ namespace NotepadGps.Bindables
             PinsSource = new ObservableCollection<MapPinModel>();
             PinsSource.CollectionChanged += PinsSourceOnCollectionChanged;
         }
-        //public IEnumerable PinsSource
-        //{
-        //    get { return (IEnumerable<MapPinModel>)GetValue(PinsSourceProperty); }
-        //    set { SetValue(PinsSourceProperty, value); }
-        //}
 
-        //public static readonly BindableProperty PinsSourceProperty = BindableProperty.Create(
-        //                                                 propertyName: "PinsSource",
-        //                                                 returnType: typeof(IEnumerable),
-        //                                                 declaringType: typeof(CustomMap),
-        //                                                 defaultValue: null,
-        //                                                 defaultBindingMode: BindingMode.TwoWay,
-        //                                                 validateValue: null,
-        //                                                 propertyChanged: PinsSourcePropertyChanged);
+        #region --Map--
 
         public ObservableCollection<MapPinModel> PinsSource
         {
@@ -45,9 +33,6 @@ namespace NotepadGps.Bindables
                                                          defaultBindingMode: BindingMode.TwoWay,
                                                          validateValue: null,
                                                          propertyChanged: PinsSourcePropertyChanged);
-
-      
-
 
         private static void PinsSourcePropertyChanged(BindableObject bindable, object oldvalue, object newValue)
         {
@@ -79,20 +64,24 @@ namespace NotepadGps.Bindables
                 }
             }
         }
+
         private void PinsSourceOnCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             UpdatePinsSource(this, sender as IEnumerable<Pin>);
         }
+
         private void MapPinsSourceOnCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             UpdateMapPinsSource(this, sender as IEnumerable<MapPinModel>);
         }
+
         private static void UpdatePinsSource(Map bindableMap, IEnumerable<Pin> newSource)
         {
             bindableMap.Pins.Clear();
             foreach (var pin in newSource)
                 bindableMap.Pins.Add(pin);
         }
+
         private static void UpdateMapPinsSource(Map bindableMap, IEnumerable<MapPinModel> newSource)
         {
             bindableMap.Pins.Clear();
@@ -103,6 +92,9 @@ namespace NotepadGps.Bindables
                     Position = new Position(pin.Latitude, pin.Longitude)
                 });
         }
+
+        #endregion  
+
         #region --Camera--
 
         public static BindableProperty CurrentCameraPositionProperty = BindableProperty.Create(

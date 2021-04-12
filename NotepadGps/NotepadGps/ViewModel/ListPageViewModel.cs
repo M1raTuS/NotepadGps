@@ -1,6 +1,5 @@
 ﻿using NotepadGps.Models;
 using NotepadGps.Services.Map;
-using NotepadGps.Services.Profile;
 using NotepadGps.View;
 using Prism.Navigation;
 using System;
@@ -72,7 +71,6 @@ namespace NotepadGps.ViewModel
         }
 
         public ICommand AddMapPinFloatingButtonCommand => new Command(AddMapPinFloatingButton);
-        public ICommand FindPinCommand => new Command(FindPin);
         public ICommand SelectedCommand => new Command(SelectedPin);
         public ICommand EditContext => new Command(EditContextMenu);
         public ICommand DeleteContext => new Command(DeleteContextMenu);
@@ -96,31 +94,6 @@ namespace NotepadGps.ViewModel
 
         }
 
-        private void FindPin()
-        {
-            if (SearchPin != null)
-            {
-                if (SelectedItem == null)
-                {
-                    SelectedItem = new ObservableCollection<MapPinModel>(MapPin);
-                }
-                else
-                {
-                    MapPin = new ObservableCollection<MapPinModel>(SelectedItem);
-                }
-
-                try
-                {
-                    var pin = MapPin.Where(x => x.Latitude.ToString() == SearchPin || x.Longitude.ToString() == SearchPin || x.Description == SearchPin);
-                    MapPin = new ObservableCollection<MapPinModel>(pin);
-                }
-                catch (Exception e)
-                {
-                    Debug.WriteLine(e);
-                }
-            }
-        }
-
         private async void EditContextMenu(object obj)
         {
             var nav = new NavigationParameters();
@@ -128,6 +101,7 @@ namespace NotepadGps.ViewModel
 
             await _navigationService.NavigateAsync(nameof(AddEditMapPinView), nav, false, true);
         }
+
         private async void DeleteContextMenu(object obj)
         {
             if (await Application.Current.MainPage.DisplayAlert("Alert", "Подтверждаете ли вы удаление?", "Ok", "Cancel"))
@@ -147,6 +121,7 @@ namespace NotepadGps.ViewModel
         #endregion
 
         #region -Overrides-
+
         protected override void OnPropertyChanged(PropertyChangedEventArgs args)
         {
             base.OnPropertyChanged(args);
@@ -163,11 +138,22 @@ namespace NotepadGps.ViewModel
                     ListEnabled = false;
                 }
             }
+
             if (args.PropertyName == nameof(SearchPin))
             {
-                if (SearchPin.Length == 0)
+                Load();
+
+                if (!(SearchPin.Length == 0 || String.IsNullOrEmpty(SearchPin)))
                 {
-                    Load();
+                    try
+                    {
+                        var pin = MapPin.Where(x => x.Title.ToLower().Contains(SearchPin.ToLower()) || x.Latitude.ToString().ToLower().Contains(SearchPin.ToLower()) || x.Longitude.ToString().ToLower().Contains(SearchPin.ToLower()));
+                        MapPin = new ObservableCollection<MapPinModel>(pin);
+                    }
+                    catch (Exception e)
+                    {
+                        Debug.WriteLine(e);
+                    }
                 }
             }
         }
