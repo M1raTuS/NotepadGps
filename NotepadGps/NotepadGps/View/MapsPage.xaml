@@ -3,12 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NotepadGps.View.MapsPage"    
              Title="MapsPage"
-             xmlns:gmaps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              xmlns:behaviours="clr-namespace:NotepadGps.Behaviour;assembly=NotepadGps"
              xmlns:maps="clr-namespace:NotepadGps.Bindables;assembly=NotepadGps"
              xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"  
              mvvm:ViewModelLocator.AutowireViewModel="True">
-    <!--xmlns:myMap="clr-namespace:NotepadGps.Bindable" -->
 
     <Grid>
         <Grid.RowDefinitions>
@@ -20,19 +18,18 @@
             <ColumnDefinition Width="80" />
         </Grid.ColumnDefinitions>
 
-        <SearchBar x:Name="Search"
-                           CancelButtonColor="Blue"
-                           TextColor="Blue"
-                           Placeholder="Search"
-                           Grid.Row="0"
-                           Grid.Column="0"
-                           Text="{Binding SearchPin}"/>
+        <SearchBar CancelButtonColor="Blue"
+                   TextColor="Blue"
+                   Placeholder="Search"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Text="{Binding SearchPin}"/>
 
         <Button Grid.Row="0"
-                        Grid.Column="1"
-                        HorizontalOptions="End"
-                        Text="Find"
-                        Command="{Binding FindPinCommand}"/>
+                Grid.Column="1"
+                HorizontalOptions="End"
+                Text="Find"
+                Command="{Binding FindPinCommand}"/>
 
         <maps:CustomMap Grid.Row="1"
                         Grid.ColumnSpan="2"
@@ -51,36 +48,18 @@
 
             </maps:CustomMap.Behaviors>
         </maps:CustomMap>
-        <!--<gmaps:Map Grid.Row="1"
-                          Grid.ColumnSpan="2"
-                   x:Name="map"
-                         MapType="Street" 
-                         HasZoomEnabled="True" 
-                         HasScrollEnabled="True" 
-                         IsShowingUser="True">
-            <gmaps:Map.ItemTemplate>
-                <DataTemplate>
-                    <gmaps:Pin Position="{Binding Position}"/>
-                </DataTemplate>
-            </gmaps:Map.ItemTemplate>
-            <gmaps:Map.Behaviors>
-                <behaviours:BindableMapBehavior ItemsSource="{Binding MapPin}" />
-            </gmaps:Map.Behaviors>
-        </gmaps:Map>
--->
-        <ImageButton 
-            Grid.Row="1"
-                          Grid.ColumnSpan="2"
-            CornerRadius="50" 
+        
+        <ImageButton Grid.Row="1"
+                     Grid.ColumnSpan="2"
+                     CornerRadius="50" 
                      HorizontalOptions="End" 
                      VerticalOptions="Start" 
                      HeightRequest="30" 
                      WidthRequest="30"
-            BackgroundColor="Red"
-                Source="GPS.jpg"
-            Margin="20,20"
-            Command="{Binding FindMyLocationCommand}"
-            />
+                     BackgroundColor="Red"
+                     Source="GPS.jpg"
+                     Margin="20,20"
+                     Command="{Binding FindMyLocationCommand}"/>
     </Grid>
 
 </ContentPage>

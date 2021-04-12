@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:num="clr-namespace:NotepadGps.Behaviour;assembly=NotepadGps"
              xmlns:gmap="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
-             xmlns:maps="clr-namespace:NotepadGps.Bindables;assembly=NotepadGps"
              xmlns:behaviours="clr-namespace:NotepadGps.Behaviour;assembly=NotepadGps"
              x:Class="NotepadGps.View.AddEditMapPinView"
              Title="Edit">
@@ -14,20 +13,6 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="10" />
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
 
         <Entry Grid.Row="0"
                Grid.Column="1"
@@ -51,24 +36,24 @@
         </Entry>
 
         <Editor Grid.Row="3" 
-                    Grid.RowSpan="2"
-                    Grid.Column="1"
-                    BackgroundColor="Gray"
-                    Placeholder="Description"
-                    HeightRequest="120"
-                    MaxLength="120"
-                    Text="{Binding Description}"/>
+                Grid.RowSpan="2"
+                Grid.Column="1"
+                BackgroundColor="Gray"
+                Placeholder="Description"
+                HeightRequest="120"
+                MaxLength="120"
+                Text="{Binding Description}"/>
 
 
         <gmap:Map Grid.Row="5" 
-                 Grid.RowSpan="6"
-                 Grid.Column="1"
-                 x:Name="map"
-                 MapType="Street" 
-                 HasZoomEnabled="True" 
-                 HasScrollEnabled="True" 
-                 IsShowingUser="False"
-                 MyLocationEnabled="False">
+                  Grid.RowSpan="6"
+                  Grid.Column="1"
+                  x:Name="map"
+                  MapType="Street" 
+                  HasZoomEnabled="True" 
+                  HasScrollEnabled="True" 
+                  IsShowingUser="False"
+                  MyLocationEnabled="False">
             <gmap:Map.Behaviors>
                 <behaviours:EventToCommandBehavior EventName="MapClicked" 
                                                    Command="{Binding MapClickedCommand}"

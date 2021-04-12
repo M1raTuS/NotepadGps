@@ -13,24 +13,13 @@
                     <RowDefinition Height="50" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="80" />
-                </Grid.ColumnDefinitions>
 
                 <SearchBar x:Name="Search"
                            CancelButtonColor="Blue"
                            TextColor="Blue"
                            Placeholder="Search"
                            Grid.Row="0"
-                           Grid.Column="0"
                            Text="{Binding SearchPin}"/>
-
-                <Button Grid.Row="0"
-                        Grid.Column="1"
-                        HorizontalOptions="End"
-                        Text="Find"
-                        Command="{Binding FindPinCommand}"/>
                 
                 <ListView x:Name="MapPinListView"
                           ItemsSource="{Binding MapPin}"
@@ -38,24 +27,23 @@
                           IsEnabled="{Binding ListEnabled}"
                           HasUnevenRows="True"
                           SelectionMode="None"
-                          Grid.Row="1"
-                          Grid.ColumnSpan="2">
+                          Grid.Row="1">
                     <ListView.Behaviors>
                         <b:EventToCommandBehavior EventName="ItemTapped"
-                                              Command="{Binding SelectedCommand}"
-                                              EventArgsParameterPath="Item" />
+                                                  Command="{Binding SelectedCommand}"
+                                                  EventArgsParameterPath="Item" />
                     </ListView.Behaviors>
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
                                 <ViewCell.ContextActions>
                                     <MenuItem Text="Edit"
-                                          Command="{Binding Path=BindingContext.EditContext, Source={Reference MapPinListView}}"
-                                          CommandParameter="{Binding .}"/>
+                                              Command="{Binding Path=BindingContext.EditContext, Source={Reference MapPinListView}}"
+                                              CommandParameter="{Binding .}"/>
                                     <MenuItem Text="Delete"
-                                          Command="{Binding Path=BindingContext.DeleteContext, Source={Reference MapPinListView}}"
-                                          CommandParameter="{Binding .}"
-                                          IsDestructive="True"/>
+                                              Command="{Binding Path=BindingContext.DeleteContext, Source={Reference MapPinListView}}"
+                                              CommandParameter="{Binding .}"
+                                              IsDestructive="True"/>
                                 </ViewCell.ContextActions>
                                 <ViewCell.View>
                                     <StackLayout Orientation="Horizontal">
@@ -83,8 +71,7 @@
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
                        TextColor="Red"
-                       Grid.Row="1"
-                       Grid.ColumnSpan="2"/>
+                       Grid.Row="1"/>
 
                 <Button HorizontalOptions="End"
                         VerticalOptions="End"
@@ -96,8 +83,7 @@
                         BorderColor="Blue"
                         BackgroundColor="Red"
                         Text="Add"
-                        Grid.Row="1"
-                        Grid.ColumnSpan="2"/>
+                        Grid.Row="1"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>
