@@ -4,7 +4,6 @@
              x:Class="NotepadGps.View.SignInView"
              Title="SignIn">
 
-
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10" />
@@ -12,19 +11,18 @@
             <ColumnDefinition Width="10" />
         </Grid.ColumnDefinitions>
 
-
-        <Entry  Grid.Row="3"
+        <Entry  Grid.Row="4"
                 Grid.Column="1"
                 Text="{Binding Email}"
                 Placeholder="Email"/>
 
-        <Entry  Grid.Row="4"
+        <Entry  Grid.Row="5"
                 Grid.Column="1"
                 Text="{Binding Password}"
                 IsPassword="True"
                 Placeholder="Password"/>
 
-        <Button  Grid.Row="7"
+        <Button  Grid.Row="10"
                  Grid.Column="1"
                  Text="SignIn"  
                  BackgroundColor="DarkOrange" 
@@ -32,14 +30,14 @@
                  IsEnabled="{Binding ButtonEnabled}" 
                  CornerRadius="20"/>
 
-        <Button Grid.Row="8"
-               Grid.Column="1"
-               Text = "SignUp"
-               BackgroundColor="DarkOrange" 
-               Command="{Binding SignUpCommand}" 
-               CornerRadius="20"/>
+        <Button Grid.Row="11"
+                Grid.Column="1"
+                Text = "SignUp"
+                BackgroundColor="DarkOrange" 
+                Command="{Binding SignUpCommand}" 
+                CornerRadius="20"/>
 
-        <Grid Grid.Row="9"/>
+        <Grid Grid.Row="12"/>
     </Grid>
 
 </ContentPage>

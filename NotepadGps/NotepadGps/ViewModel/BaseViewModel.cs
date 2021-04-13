@@ -7,67 +7,69 @@ using System.Collections.ObjectModel;
 
 namespace NotepadGps.ViewModel
 {
-    public class BaseViewModel : BindableBase, IInitialize, INavigationAware, IDisposable, IActiveAware
+    public class BaseViewModel : BindableBase, IInitialize, INavigationAware, IActiveAware
     {
-        public UserModel _user;
-        public MapPinModel _mapPin;
+        #region -- Public properties --
 
-
-        public ObservableCollection<UserModel> User;
-
-        #region -Public properties-
-
-        private ObservableCollection<UserModel> users;
-        public ObservableCollection<UserModel> Users
+        private ObservableCollection<UserModel> user;
+        public ObservableCollection<UserModel> User
         {
-            get => users;
-            set => SetProperty(ref users, value);
+            get => user;
+            set => SetProperty(ref user, value);
         }
 
-
         private ObservableCollection<MapPinModel> mapPin;
-
         public ObservableCollection<MapPinModel> MapPin
         {
             get => mapPin;
             set => SetProperty(ref mapPin, value);
         }
-        
-        #endregion
-        public void Dispose()
-        {
-        }
-
-        public virtual void Initialize(INavigationParameters parameters)
-        {
-            
-        }
-
-        public virtual void OnNavigatedFrom(INavigationParameters parameters)
-        {
-            
-        }
-
-        public virtual void OnNavigatedTo(INavigationParameters parameters)
-        {
-            
-        }
-
 
         public event EventHandler IsActiveChanged;
+
         private bool _isActive;
         public bool IsActive
         {
             get => _isActive;
-            set
-            {
-                SetProperty(ref _isActive, value, RaiseIsActiveChanged);
-            }
+            set => SetProperty(ref _isActive, value, RaiseIsActiveChanged);
         }
+
+        #endregion
+
+        #region -- Initialize implementation --
+
+        public virtual void Initialize(INavigationParameters parameters)
+        {
+
+        }
+
+        #endregion
+
+        #region -- OnNavigatedFrom implementation --
+
+        public virtual void OnNavigatedFrom(INavigationParameters parameters)
+        {
+
+        }
+
+        #endregion
+
+        #region -- OnNavigatedTo implementation --
+
+        public virtual void OnNavigatedTo(INavigationParameters parameters)
+        {
+
+        }
+
+        #endregion
+
+        #region -- RaiseIsActiveChanged implementation --
 
         protected virtual void RaiseIsActiveChanged()
         {
             IsActiveChanged?.Invoke(this, EventArgs.Empty);
         }
+
+        #endregion
     }
 }

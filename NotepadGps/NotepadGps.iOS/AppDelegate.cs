@@ -1,5 +1,4 @@
-﻿
-using Foundation;
+﻿using Foundation;
 using UIKit;
 
 namespace NotepadGps.iOS
@@ -20,7 +19,7 @@ namespace NotepadGps.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             //Add maps
-            Xamarin.FormsGoogleMaps.Init("AIzaSyApdJg8Wg4pWWhJ2TZXJ3Ke_rf0d1OjdFw");
+            Xamarin.FormsGoogleMaps.Init("AIzaSyAf7rljVibHW7F1neBavieHa9UZ5t3Co5s");
 
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());

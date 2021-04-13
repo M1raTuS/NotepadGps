@@ -18,10 +18,9 @@ namespace NotepadGps.ViewModel
             _settingsService = settingsService;
         }
 
-        #region -Methods-
+        #region -- Private helpers --        
 
         public ICommand LogOutTapCommand => new Command(OnLogOutCommandAsync);
-
 
         private async void OnLogOutCommandAsync()
         {

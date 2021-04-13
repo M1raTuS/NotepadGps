@@ -2,6 +2,7 @@
 {
     public interface IAutentificationService
     {
-        void Authorizate(string email, string password);
+        int GetCurrentId { get; set; }
+        bool CheckEmail(string email);
     }
 }

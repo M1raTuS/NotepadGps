@@ -31,8 +31,7 @@ namespace NotepadGps.ViewModel
             _autentification = autentification;
         }
 
-
-        #region -Public properties-
+        #region -- Public properties --
 
         private string _email;
         public string Email
@@ -60,11 +59,12 @@ namespace NotepadGps.ViewModel
 
         #endregion
 
-        #region -Methods-
+        #region -- Private helpers --        
 
         private async void SignInUser()
         {
-            _autentification.Authorizate(Email, Password);
+            _autorization.Authorizate(Email, Password);
+
             if (_autorization.IsAutorized)
             {
                 await _navigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(MainListView)}");
@@ -90,7 +90,7 @@ namespace NotepadGps.ViewModel
             return false;
         }
 
-        private async void Load()
+        private async void MapPinLoad()
         {
             var _user = await _profileService.GetAllUserListAsync();
             User = new ObservableCollection<UserModel>(_user);
@@ -98,7 +98,7 @@ namespace NotepadGps.ViewModel
 
         #endregion
 
-        #region -Overrides-
+        #region -- Overrides --
 
         protected override void OnPropertyChanged(PropertyChangedEventArgs args)
         {
@@ -120,10 +120,9 @@ namespace NotepadGps.ViewModel
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            base.OnNavigatedTo(parameters);
-
-            Load();
+            MapPinLoad();
         }
+
         #endregion
     }
 }

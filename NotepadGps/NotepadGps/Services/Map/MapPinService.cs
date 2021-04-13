@@ -1,5 +1,5 @@
 ﻿using NotepadGps.Models;
-using NotepadGps.Services.Autorization;
+using NotepadGps.Services.Autentification;
 using NotepadGps.Services.Repository;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -9,13 +9,13 @@ namespace NotepadGps.Services.Map
     public class MapPinService : IMapPinService
     {
         private readonly IRepository _repository;
-        private readonly IAutorizationService _autorization;
+        private readonly IAutentificationService _autentification;
 
         public MapPinService(IRepository repository,
-                             IAutorizationService autorization)
+                             IAutentificationService autentification)
         {
             _repository = repository;
-            _autorization = autorization;
+            _autentification = autentification;
         }
 
         public async Task DeleteMapPinAsync(MapPinModel mapPin)
@@ -26,7 +26,7 @@ namespace NotepadGps.Services.Map
         public async Task<List<MapPinModel>> GetMapPinListByIdAsync()
         {
             var mapPin = new List<MapPinModel>();
-            var Id = _autorization.GetCurrentId;
+            var Id = _autentification.GetCurrentId;
             var list = await _repository.FindAsync<MapPinModel>(c => c.UserId == Id);
             if (list.Count > 0)
             {
@@ -38,7 +38,7 @@ namespace NotepadGps.Services.Map
         public List<MapPinModel> GetMapPinListById()
         {
             var mapPin = new List<MapPinModel>();
-            var Id = _autorization.GetCurrentId;
+            var Id = _autentification.GetCurrentId;
             var list = _repository.Find<MapPinModel>(c => c.UserId == Id);
             if (list.Count > 0)
             {

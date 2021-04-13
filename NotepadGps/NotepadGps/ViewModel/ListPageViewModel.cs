@@ -3,7 +3,6 @@ using NotepadGps.Services.Map;
 using NotepadGps.View;
 using Prism.Navigation;
 using System;
-using Prism.Navigation.TabbedPages;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -23,11 +22,9 @@ namespace NotepadGps.ViewModel
         {
             _navigationService = navigationService;
             _mapPinService = mapPinService;
-
-            Load();
         }
 
-        #region -Public properties-
+        #region -- Public properties --
 
         private ObservableCollection<MapPinModel> _mapPins;
         public ObservableCollection<MapPinModel> MapPins
@@ -50,13 +47,6 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _labelVisible, value);
         }
 
-        private bool _listEnabled;
-        public bool ListEnabled
-        {
-            get => _listEnabled;
-            set => SetProperty(ref _listEnabled, value);
-        }
-
         private string _searchPin;
         public string SearchPin
         {
@@ -77,10 +67,9 @@ namespace NotepadGps.ViewModel
         public ICommand DeleteContext => new Command(DeleteContextMenu);
         public ICommand CheckedPinCommand => new Command<MapPinModel>(OnCheckedPinCommand);
 
-
         #endregion
 
-        #region -Methods-
+        #region -- Private helpers --        
 
         private async void AddMapPinFloatingButton()
         {
@@ -92,7 +81,6 @@ namespace NotepadGps.ViewModel
             var nav = new NavigationParameters();
             nav.Add(nameof(MapPinModel), (MapPinModel)pin);
 
-            //await _navigationService.SelectTabAsync("MapsPage", nav);
             await _navigationService.NavigateAsync($"/{nameof(NavigationPage)}/MainListView?selectedTab=MapsPage", nav);
         }
 
@@ -110,11 +98,11 @@ namespace NotepadGps.ViewModel
             {
                 await _mapPinService.DeleteMapPinAsync((MapPinModel)obj);
 
-                Load();
+                MapPinLoad();
             }
         }
 
-        private void OnCheckedPinCommand(MapPinModel mapPin)
+        private async void OnCheckedPinCommand(MapPinModel mapPin)
         {
             if (mapPin.Chosen)
             {
@@ -123,49 +111,50 @@ namespace NotepadGps.ViewModel
             }
             else
             {
-                mapPin.ImgPath = "FullStar.jpg";
+                mapPin.ImgPath = "FullStar.png";
                 mapPin.Chosen = true;
             }
 
-            _mapPinService.UpdateMapPinAsync(mapPin);
-            Load();
+            await _mapPinService.UpdateMapPinAsync(mapPin);
+
+            MapPinLoad();
         }
 
-        private void Load()
+        private void MapPinLoad()
         {
             var mapPin = _mapPinService.GetMapPinListById();
             MapPin = new ObservableCollection<MapPinModel>(mapPin);
         }
+
         #endregion
 
-        #region -Overrides-
+        #region -- Overrides --
 
         protected override void OnPropertyChanged(PropertyChangedEventArgs args)
         {
             base.OnPropertyChanged(args);
             if (args.PropertyName == nameof(MapPin))
             {
-                if (MapPin.Count > 0)
-                {
-                    LabelVisible = false;
-                    ListEnabled = true;
-                }
-                else
+                LabelVisible = false;
+
+                if (MapPin.Count < 1)
                 {
                     LabelVisible = true;
-                    ListEnabled = false;
                 }
             }
 
             if (args.PropertyName == nameof(SearchPin))
             {
-                Load();
+                MapPinLoad();
 
                 if (!(SearchPin.Length == 0 || String.IsNullOrEmpty(SearchPin)))
                 {
                     try
                     {
-                        var pin = MapPin.Where(x => x.Title.ToLower().Contains(SearchPin.ToLower()) || x.Latitude.ToString().ToLower().Contains(SearchPin.ToLower()) || x.Longitude.ToString().ToLower().Contains(SearchPin.ToLower()));
+                        var pin = MapPin.Where(x => x.Title.ToLower().Contains(SearchPin.ToLower()) ||
+                        x.Latitude.ToString().ToLower().Contains(SearchPin.ToLower()) ||
+                        x.Longitude.ToString().ToLower().Contains(SearchPin.ToLower()) ||
+                        x.Description.ToLower().Contains(SearchPin.ToLower()));
                         MapPin = new ObservableCollection<MapPinModel>(pin);
                     }
                     catch (Exception e)
@@ -176,9 +165,14 @@ namespace NotepadGps.ViewModel
             }
         }
 
+        public override void Initialize(INavigationParameters parameters)
+        {
+            MapPinLoad();
+        }
+
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            Load();
+            MapPinLoad();
         }
 
         #endregion

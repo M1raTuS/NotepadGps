@@ -60,7 +60,7 @@
                                                    EventArgsParameterPath="Point"/>
             </gmap:Map.Behaviors>
         </gmap:Map>
-        
+
         <Button Grid.Row="11"
                 BackgroundColor="Red"
                 Grid.Column="1"

@@ -9,57 +9,75 @@
              mvvm:ViewModelLocator.AutowireViewModel="True">
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="80" />
-        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="{Binding RowHeight}" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
-        <SearchBar CancelButtonColor="Blue"
-                   TextColor="Blue"
-                   Placeholder="Search"
-                   Grid.Row="0"
-                   Grid.Column="0"
-                   Text="{Binding SearchPin}"/>
+            <SearchBar TextColor="#FF464859" 
+                       FontSize="16" 
+                       PlaceholderColor="#646b7a" 
+                       Placeholder="Search..." 
+                       Text="{Binding SearchText}">
+            </SearchBar>
 
-        <Button Grid.Row="0"
-                Grid.Column="1"
-                HorizontalOptions="End"
-                Text="Find"
-                Command="{Binding FindPinCommand}"/>
+            <maps:CustomMap Grid.Row="1"
+                            Grid.RowSpan="2"
+                            x:Name="map"
+                            MapType="Street" 
+                            HasZoomEnabled="True" 
+                            HasScrollEnabled="True" 
+                            IsShowingUser="True"
+                            MyLocationEnabled="True"
+                            PinsSource="{Binding MapPin}"
+                            MapSpan="{Binding MapSpan}"
+                            CurrentCameraPosition="{Binding CurrentCameraPosition}">
+                <maps:CustomMap.Behaviors>
+                    <behaviours:EventToCommandBehavior EventName="PinClicked" 
+                                                       Command="{Binding PinClickedCommand}"
+                                                       EventArgsParameterPath="Pin"/>
 
-        <maps:CustomMap Grid.Row="1"
-                        Grid.ColumnSpan="2"
-                        x:Name="map"
-                        MapType="Street" 
-                        HasZoomEnabled="True" 
-                        HasScrollEnabled="True" 
-                        IsShowingUser="True"
-                        MyLocationEnabled="True"
-                        PinsSource="{Binding MapPin}"
-                        CurrentCameraPosition="{Binding CurrentCameraPosition}">
-            <maps:CustomMap.Behaviors>
-                <behaviours:EventToCommandBehavior EventName="PinClicked" 
-                                                   Command="{Binding PinClickedCommand}"
-                                                   EventArgsParameterPath="Pin"/>
+                    <behaviours:EventToCommandBehavior EventName="MapClicked" 
+                                                       Command="{Binding MapClickedCommand}"/>
+                </maps:CustomMap.Behaviors>
+            </maps:CustomMap>
 
-            </maps:CustomMap.Behaviors>
-        </maps:CustomMap>
-        
-        <ImageButton Grid.Row="1"
-                     Grid.ColumnSpan="2"
-                     CornerRadius="50" 
-                     HorizontalOptions="End" 
-                     VerticalOptions="Start" 
-                     HeightRequest="30" 
-                     WidthRequest="30"
-                     BackgroundColor="Red"
-                     Source="GPS.jpg"
-                     Margin="20,20"
-                     Command="{Binding FindMyLocationCommand}"/>
+            <ImageButton Grid.Row="2"
+                         CornerRadius="50" 
+                         HorizontalOptions="End" 
+                         VerticalOptions="Start"
+                         HeightRequest="30" 
+                         WidthRequest="30"
+                         Source="GPS.jpg"
+                         Margin="20,0"
+                         Command="{Binding FindMyLocationCommand}"/>
+
+            <ListView IsVisible="{Binding ListViewIsVisible}"  
+                      BackgroundColor="Transparent"
+                      ItemsSource="{Binding MapPins}"
+                      Grid.Row="1">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="5">
+                                <StackLayout BackgroundColor="White">
+                                    <Label Text="{Binding Title}" 
+                                           FontSize="16" 
+                                           TextColor="#FF464859"
+                                           HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.Behaviors>
+                    <behaviours:EventToCommandBehavior EventName="ItemTapped" 
+                                                       Command="{Binding SelectedListViewCommand}"
+                                                       EventArgsParameterPath="Item"/>
+                </ListView.Behaviors>
+            </ListView>
+        </Grid>
     </Grid>
-
 </ContentPage>

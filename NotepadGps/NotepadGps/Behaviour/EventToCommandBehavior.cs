@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Globalization;
-using System.Linq;
-using System.Linq.Expressions;
 using System.Reflection;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -145,7 +143,9 @@ namespace NotepadGps.Behaviour
                 {
                     var propInfo = propertyValue.GetType().GetRuntimeProperty(propertyPathPart);
                     if (propInfo == null)
+                    {
                         throw new MissingMemberException($"Unable to find {EventArgsParameterPath}");
+                    }
 
                     propertyValue = propInfo.GetValue(propertyValue);
                     if (propertyValue == null)

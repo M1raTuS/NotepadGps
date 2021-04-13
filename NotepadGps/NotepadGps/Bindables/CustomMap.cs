@@ -12,12 +12,12 @@ namespace NotepadGps.Bindables
     {
 
         public CustomMap()
-         {
+        {
             PinsSource = new ObservableCollection<MapPinModel>();
             PinsSource.CollectionChanged += PinsSourceOnCollectionChanged;
         }
 
-        #region --Map--
+        #region -- Map --
 
         public ObservableCollection<MapPinModel> PinsSource
         {
@@ -39,8 +39,7 @@ namespace NotepadGps.Bindables
             var bindableMap = bindable as CustomMap;
             var newPinsSource = newValue as IEnumerable;
 
-            if (bindableMap != null &&
-                newPinsSource != null)
+            if (bindableMap != null && newPinsSource != null)
             {
                 bindableMap.Pins.Clear();
                 try
@@ -93,7 +92,34 @@ namespace NotepadGps.Bindables
                 });
         }
 
-        #endregion  
+        #endregion
+
+        #region -- MapSpan --
+
+        public MapSpan MapSpan
+        {
+            get { return (MapSpan)GetValue(MapSpanProperty); }
+            set { SetValue(MapSpanProperty, value); }
+        }
+
+        public static readonly BindableProperty MapSpanProperty = BindableProperty.Create(
+                                                         propertyName: nameof(MapSpan),
+                                                         returnType: typeof(MapSpan),
+                                                         declaringType: typeof(CustomMap),
+                                                         defaultValue: null,
+                                                         defaultBindingMode: BindingMode.TwoWay,
+                                                         validateValue: null,
+                                                         propertyChanged: MapSpanPropertyChanged);
+
+        private static void MapSpanPropertyChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            var thisInstance = bindable as CustomMap;
+            var newMapSpan = newValue as MapSpan;
+
+            thisInstance?.MoveToRegion(newMapSpan);
+        }
+
+        #endregion
 
         #region --Camera--
 
@@ -109,6 +135,7 @@ namespace NotepadGps.Bindables
             get { return (CameraPosition)GetValue(CurrentCameraPositionProperty); }
             set { SetValue(CurrentCameraPositionProperty, value); }
         }
+
         private static void CurrentCameraPositionPropertyChanged(BindableObject bindable, object oldvalue, object newValue)
         {
             if (newValue != null)
@@ -121,9 +148,10 @@ namespace NotepadGps.Bindables
                 (bindable as CustomMap).MoveCamera(cameraUpdate);
             }
         }
+
         #endregion
 
-        
+
     }
 }
 

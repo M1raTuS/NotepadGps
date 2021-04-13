@@ -1,5 +1,8 @@
-﻿using NotepadGps.Models;
+﻿using Acr.UserDialogs;
+using NotepadGps.Models;
+using NotepadGps.Services.Autentification;
 using NotepadGps.Services.Profile;
+using NotepadGps.Services.Validation;
 using Prism.Navigation;
 using System;
 using System.Collections.ObjectModel;
@@ -13,18 +16,20 @@ namespace NotepadGps.ViewModel
     {
         private readonly INavigationService _navigationService;
         private readonly IProfileService _profile;
+        private readonly IAutentificationService _autentification;
 
         public SignUpViewModel(INavigationService navigationService,
-                                IProfileService profile)
+                               IProfileService profile,
+                               IAutentificationService autentification)
         {
             _navigationService = navigationService;
             _profile = profile;
+            _autentification = autentification;
 
             User = new ObservableCollection<UserModel>();
         }
 
-
-        #region -Public properties-
+        #region -- Public properties --
 
         private string _name;
         public string Name
@@ -46,6 +51,7 @@ namespace NotepadGps.ViewModel
             get => _email;
             set => SetProperty(ref _email, value);
         }
+
         private bool _buttonEnabled;
         public bool ButtonEnabled
         {
@@ -57,20 +63,42 @@ namespace NotepadGps.ViewModel
 
         #endregion
 
-        #region -Methods-
+        #region -- Private helpers --     
+
         private async void AddUserAsync(object obj)
         {
-            var user = new UserModel()
+            var NamelValidation = Validator.StringValid(Name, Validator.Name);
+            var EmailValidation = Validator.StringValid(Email, Validator.Email);
+            var PasswordValidation = Validator.StringValid(Password, Validator.Password);
+
+            if (!NamelValidation)
             {
-                Name = Name,
-                Email = Email,
-                Password = Password
-            };
+                UserDialogs.Instance.Alert("Имя должно быть не менее 4 и не более 16 символов. Имя не должно начинаться с цифер", "Alert", "Ok");
+            }
+            else if (!EmailValidation)
+            {
+                UserDialogs.Instance.Alert("Введите корректный почтовый адрес", "Alert", "Ok");
+            }
+            else if (!PasswordValidation)
+            {
+                UserDialogs.Instance.Alert("Пароль должен быть не менее 8 и не более 16 символов. Пароль должен содержать минимум одну заглавную букву, одну строчную букву и одну цифру", "Alert", "Ok");
+            }
+            else if (_autentification.CheckEmail(Email))
+            {
+                UserDialogs.Instance.Alert("Эта почта уже занята", "Alert", "Ok");
+            }
+            else
+            {
+                var user = new UserModel()
+                {
+                    Name = Name,
+                    Email = Email,
+                    Password = Password
+                };
 
-            await _profile.SaveUserAsync(user);
-
-            await _navigationService.GoBackAsync();
-
+                await _profile.SaveUserAsync(user);
+                await _navigationService.GoBackAsync();
+            }
         }
 
         private bool CanSignIn()
@@ -84,7 +112,7 @@ namespace NotepadGps.ViewModel
 
         #endregion
 
-        #region -Overrides-
+        #region -- Overrides --
 
         protected override void OnPropertyChanged(PropertyChangedEventArgs args)
         {

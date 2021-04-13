@@ -2,9 +2,9 @@
 
 namespace NotepadGps.View
 {
-    public partial class AddEditMapPinView : ContentPage
+    public partial class PopUpView : ContentPage
     {
-        public AddEditMapPinView()
+        public PopUpView()
         {
             InitializeComponent();
         }

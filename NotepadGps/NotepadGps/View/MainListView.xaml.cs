@@ -1,15 +1,12 @@
-﻿
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace NotepadGps.View
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MainListView : TabbedPage
-	{
-		public MainListView()
-		{
-			InitializeComponent();
-		}
-	}
+    public partial class MainListView : TabbedPage
+    {
+        public MainListView()
+        {
+            InitializeComponent();
+        }
+    }
 }

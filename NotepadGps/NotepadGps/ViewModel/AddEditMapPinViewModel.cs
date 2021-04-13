@@ -1,10 +1,10 @@
 ﻿using Acr.UserDialogs;
 using NotepadGps.Models;
+using NotepadGps.Services.Autentification;
 using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Map;
 using Prism.Navigation;
 using System;
-using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
@@ -16,22 +16,20 @@ namespace NotepadGps.ViewModel
         private readonly INavigationService _navigationService;
         private readonly IAutorizationService _autorization;
         private readonly IMapPinService _mapPinService;
+        private readonly IAutentificationService _autentification;
 
         public AddEditMapPinViewModel(INavigationService navigationService,
                                       IAutorizationService autorization,
-                                      IMapPinService mapPinService)
+                                      IMapPinService mapPinService,
+                                      IAutentificationService autentification)
         {
             _navigationService = navigationService;
             _autorization = autorization;
             _mapPinService = mapPinService;
+            _autentification = autentification;
         }
 
-        #region -Public Properties-
-
-        public ICommand AddButtonCommand => new Command(SaveCommand);
-        public ICommand MapClickedCommand => new Command<Position>(MapClicked);
-
-
+        #region -- Public properties --
 
         private int _id;
         public int Id
@@ -69,9 +67,12 @@ namespace NotepadGps.ViewModel
 
         }
 
+        public ICommand AddButtonCommand => new Command(SaveCommand);
+        public ICommand MapClickedCommand => new Command<Position>(OnMapClickedCommand);
+
         #endregion
 
-        #region -Methods-
+        #region -- Private helpers --        
 
         private async void SaveCommand()
         {
@@ -82,14 +83,13 @@ namespace NotepadGps.ViewModel
                     var mapPin = new MapPinModel()
                     {
                         Id = Id,
-                        UserId = _autorization.GetCurrentId,
+                        UserId = _autentification.GetCurrentId,
                         Title = Title,
                         Longitude = Convert.ToDouble(Longitude),
                         Latitude = Convert.ToDouble(Latitude),
                         Description = Description,
                         Chosen = true,
-                        ImgPath = "FullStar.jpg"
-                        
+                        ImgPath = "FullStar.png"
                     };
                     if (Id > 0)
                     {
@@ -111,7 +111,7 @@ namespace NotepadGps.ViewModel
                 }
                 else
                 {
-                    UserDialogs.Instance.Alert("Заполните поля Title, Longitude и Latitude", "Alert", "Ok");
+                    UserDialogs.Instance.Alert("Заполните поля Title, Longitude, Latitude и Description", "Alert", "Ok");
                 }
             }
             catch (Exception e)
@@ -122,14 +122,14 @@ namespace NotepadGps.ViewModel
 
         private bool CanSave()
         {
-            if (!String.IsNullOrEmpty(Title) && !String.IsNullOrEmpty(Longitude) && !String.IsNullOrEmpty(Latitude))
+            if (!String.IsNullOrEmpty(Title) && !String.IsNullOrEmpty(Longitude) && !String.IsNullOrEmpty(Latitude) && !String.IsNullOrEmpty(Description))
             {
                 return true;
             }
             return false;
         }
 
-        private void MapClicked(Position position)
+        private void OnMapClickedCommand(Position position)
         {
             Latitude = "";
             Longitude = "";
@@ -140,7 +140,7 @@ namespace NotepadGps.ViewModel
 
         #endregion
 
-        #region --Overrides--
+        #region -- Overrides --
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {

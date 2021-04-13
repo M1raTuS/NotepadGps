@@ -4,7 +4,6 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
-using Plugin.CurrentActivity;
 
 namespace NotepadGps.Droid
 {
@@ -12,7 +11,6 @@ namespace NotepadGps.Droid
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         const int RequestLocationId = 0;
-
 
         readonly string[] LocationPermissions =
         {

@@ -4,15 +4,15 @@
             xmlns:local="clr-namespace:NotepadGps.View;assembly=NotepadGps"  
             x:Class="NotepadGps.View.MainListView"
             Title="Maps">
-    
+
     <TabbedPage.ToolbarItems>
         <ToolbarItem Command="{Binding LogOutTapCommand}"
                      Text="LogOut"/>
     </TabbedPage.ToolbarItems>
-    
+
     <TabbedPage.Children>
         <local:MapsPage />
         <local:ListPage/>
     </TabbedPage.Children>
-    
+
 </TabbedPage>

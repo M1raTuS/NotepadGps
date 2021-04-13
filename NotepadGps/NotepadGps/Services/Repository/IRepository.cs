@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace NotepadGps.Services.Repository
 {
-
-    public interface IRepository 
+    public interface IRepository
     {
         Task<int> InsertAsync<T>(T entity) where T : IEntityBase, new();
         Task<int> UpdateAsync<T>(T entity) where T : IEntityBase, new();
@@ -17,6 +16,5 @@ namespace NotepadGps.Services.Repository
         Task<T> GetOneAsync<T>(int Id) where T : IEntityBase, new();
         Task<List<T>> FindAsync<T>(Expression<Func<T, bool>> pred = null) where T : class, IEntityBase, new();
         List<T> Find<T>(Expression<Func<T, bool>> pred) where T : class, IEntityBase, new();
-
     }
 }

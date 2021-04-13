@@ -131,7 +131,7 @@
     <AndroidResource Include="Resources\drawable\EmptyStar.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\FullStar.jpg" />
+    <AndroidResource Include="Resources\drawable\FullStar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>

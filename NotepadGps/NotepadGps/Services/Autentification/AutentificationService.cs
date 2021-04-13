@@ -1,42 +1,45 @@
-﻿using NotepadGps.Services.Autorization;
-using NotepadGps.Services.Profile;
-using NotepadGps.Services.Settings;
-using System;
-using System.Linq;
+﻿using NotepadGps.Models;
+using NotepadGps.Services.Repository;
+using NotepadGps.ViewModel;
+using System.Collections.ObjectModel;
 
 namespace NotepadGps.Services.Autentification
 {
-    public class AutentificationService : IAutentificationService
+    public class AutentificationService : BaseViewModel, IAutentificationService
     {
-        private readonly IProfileService _profile;
-        private readonly IAutorizationService _autorization;
-        private readonly ISettingsService _settings;
+        private readonly IRepository _repository;
 
-        public AutentificationService(IProfileService profile,
-                                      IAutorizationService autorization,
-                                      ISettingsService settings)
+        public AutentificationService(IRepository repository)
         {
-            _profile = profile;
-            _autorization = autorization;
-            _settings = settings;
+            _repository = repository;
         }
-        public void Authorizate(string email, string password)
-        {
-            _autorization.IsAutorized = false;
 
-            var user = _profile.GetAllUserList();
-            user = user.Where(x => x.Email == email && x.Password == password).ToList();
-            
-            if (user != null && user.Count > 0)
+        private int _getCurrentId;
+        public int GetCurrentId
+        {
+            get => _getCurrentId;
+            set => SetProperty(ref _getCurrentId, value);
+        }
+
+        public void LoadProfile()
+        {
+            var user = _repository.GetAll<UserModel>();
+            User = new ObservableCollection<UserModel>(user);
+        }
+
+        public bool CheckEmail(string email)
+        {
+            LoadProfile();
+
+            foreach (var item in User)
             {
-                foreach (var item in user)
+                if (item.Email == email.ToString())
                 {
-                    _autorization.GetCurrentId =  item.Id;
+                    return true;
                 }
-                
-                _settings.CurrentUser = _autorization.GetCurrentId;
-                _autorization.IsAutorized= true;
             }
+
+            return false;
         }
     }
 }

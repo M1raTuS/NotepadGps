@@ -1,22 +1,21 @@
 ﻿using NotepadGps.Models;
-using NotepadGps.Services.Autorization;
+using NotepadGps.Services.Autentification;
 using NotepadGps.Services.Repository;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace NotepadGps.Services.Profile
 {
-
     public class ProfileService : IProfileService
     {
         private readonly IRepository _repository;
-        private readonly IAutorizationService _autorization;
+        private readonly IAutentificationService _autentification;
 
         public ProfileService(IRepository repository,
-                              IAutorizationService autorization)
+                              IAutentificationService autentification)
         {
             _repository = repository;
-            _autorization = autorization;
+            _autentification = autentification;
         }
 
         public async Task<List<UserModel>> GetAllUserListAsync()
@@ -44,7 +43,7 @@ namespace NotepadGps.Services.Profile
         public async Task<List<UserModel>> GetUserListByIdAsync()
         {
             var users = new List<UserModel>();
-            var Id = _autorization.GetCurrentId;
+            var Id = _autentification.GetCurrentId;
             var list = await _repository.FindAsync<UserModel>(c => c.Id == Id);
             if (list.Count > 0)
             {

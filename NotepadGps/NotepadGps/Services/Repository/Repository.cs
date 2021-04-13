@@ -8,16 +8,17 @@ using System.Threading.Tasks;
 
 namespace NotepadGps.Services.Repository
 {
-
     public class Repository : IRepository
     {
+        private const string DbPath = "notepadgps.db3";
 
         private readonly Lazy<SQLiteAsyncConnection> _database;
+
         public Repository()
         {
             _database = new Lazy<SQLiteAsyncConnection>(() =>
             {
-                var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "notepadgps.db3");
+                var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), DbPath);
                 var database = new SQLiteAsyncConnection(path);
 
                 database.CreateTableAsync<UserModel>().Wait();
@@ -36,6 +37,7 @@ namespace NotepadGps.Services.Repository
         {
             return await _database.Value.Table<T>().ToListAsync();
         }
+
         public List<T> GetAll<T>() where T : IEntityBase, new()
         {
             return _database.Value.Table<T>().ToListAsync().Result;
@@ -55,10 +57,12 @@ namespace NotepadGps.Services.Repository
         {
             return await _database.Value.UpdateAsync(entity);
         }
+
         public async Task<List<T>> FindAsync<T>(Expression<Func<T, bool>> pred) where T : class, IEntityBase, new()
         {
             return await _database.Value.Table<T>().Where(pred).ToListAsync();
         }
+
         public List<T> Find<T>(Expression<Func<T, bool>> pred) where T : class, IEntityBase, new()
         {
             return _database.Value.Table<T>().Where(pred).ToListAsync().Result;
