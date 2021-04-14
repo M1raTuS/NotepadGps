@@ -71,24 +71,24 @@ namespace NotepadGps.ViewModel
             var EmailValidation = Validator.StringValid(Email, Validator.Email);
             var PasswordValidation = Validator.StringValid(Password, Validator.Password);
 
-            if (!NamelValidation)
-            {
-                UserDialogs.Instance.Alert("Имя должно быть не менее 4 и не более 16 символов. Имя не должно начинаться с цифер", "Alert", "Ok");
-            }
-            else if (!EmailValidation)
-            {
-                UserDialogs.Instance.Alert("Введите корректный почтовый адрес", "Alert", "Ok");
-            }
-            else if (!PasswordValidation)
-            {
-                UserDialogs.Instance.Alert("Пароль должен быть не менее 8 и не более 16 символов. Пароль должен содержать минимум одну заглавную букву, одну строчную букву и одну цифру", "Alert", "Ok");
-            }
-            else if (_autentification.CheckEmail(Email))
-            {
-                UserDialogs.Instance.Alert("Эта почта уже занята", "Alert", "Ok");
-            }
-            else
-            {
+            //if (!NamelValidation)
+            //{
+            //    UserDialogs.Instance.Alert("Имя должно быть не менее 4 и не более 16 символов. Имя не должно начинаться с цифер", "Alert", "Ok");
+            //}
+            //else if (!EmailValidation)
+            //{
+            //    UserDialogs.Instance.Alert("Введите корректный почтовый адрес", "Alert", "Ok");
+            //}
+            //else if (!PasswordValidation)
+            //{
+            //    UserDialogs.Instance.Alert("Пароль должен быть не менее 8 и не более 16 символов. Пароль должен содержать минимум одну заглавную букву, одну строчную букву и одну цифру", "Alert", "Ok");
+            //}
+            //else if (_autentification.CheckEmail(Email))
+            //{
+            //    UserDialogs.Instance.Alert("Эта почта уже занята", "Alert", "Ok");
+            //}
+            //else
+            //{
                 var user = new UserModel()
                 {
                     Name = Name,
@@ -98,7 +98,7 @@ namespace NotepadGps.ViewModel
 
                 await _profile.SaveUserAsync(user);
                 await _navigationService.GoBackAsync();
-            }
+           // }
         }
 
         private bool CanSignIn()

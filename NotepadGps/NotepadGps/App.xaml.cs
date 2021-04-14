@@ -1,5 +1,6 @@
 ﻿using NotepadGps.Services.Autentification;
 using NotepadGps.Services.Autorization;
+using NotepadGps.Services.Image;
 using NotepadGps.Services.Map;
 using NotepadGps.Services.Profile;
 using NotepadGps.Services.Repository;
@@ -31,6 +32,7 @@ namespace NotepadGps
             containerRegistry.RegisterInstance<IProfileService>(Container.Resolve<ProfileService>());
             containerRegistry.RegisterInstance<IMapPinService>(Container.Resolve<MapPinService>());
             containerRegistry.RegisterInstance<IAutorizationService>(Container.Resolve<AutorizationService>());
+            containerRegistry.RegisterInstance<IImageService>(Container.Resolve<ImageService>());
 
             //Navigation
             containerRegistry.RegisterForNavigation<NavigationPage>();

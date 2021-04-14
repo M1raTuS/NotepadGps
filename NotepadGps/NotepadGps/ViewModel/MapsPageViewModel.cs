@@ -115,17 +115,26 @@ namespace NotepadGps.ViewModel
 
         private async void OnPinClickedCommand(Pin pin)
         {
-            MapPins.Clear();
+            PinsCheck();
+
             ListViewIsVisible = false;
             var nav = new NavigationParameters();
-            nav.Add(nameof(Pin), (Pin)pin);
+            nav.Add(nameof(Pin), pin);
 
             await _navigationService.NavigateAsync(nameof(PopUpView), nav, true, true);
         }
 
+        private void PinsCheck()
+        {
+            if (MapPins != null)
+            {
+                MapPins.Clear();
+            }
+        }
+
         private void OnMapClickedCommand()
         {
-            MapPins.Clear();
+            PinsCheck();
             ListViewIsVisible = false;
         }
 
@@ -140,7 +149,7 @@ namespace NotepadGps.ViewModel
                 };
 
                 CurrentCameraPosition = new CameraPosition(pin.Position, 15);
-                MapPins.Clear();
+                PinsCheck();
                 ListViewIsVisible = false;
             }
         }
