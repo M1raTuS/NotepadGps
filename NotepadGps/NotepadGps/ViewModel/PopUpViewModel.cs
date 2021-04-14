@@ -7,6 +7,7 @@ using Plugin.Media.Abstractions;
 using Prism.Navigation;
 using System;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Windows.Input;
@@ -81,6 +82,13 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _imagePins, value);
         }
 
+        private bool _imgVisible;
+        public bool ImgVisible
+        {
+            get => _imgVisible;
+            set => SetProperty(ref _imgVisible, value);
+        }
+
         public ICommand TapCommand => new Command(TapCommands);
         public ICommand ImageCommand => new Command(OnImageCommand);
 
@@ -118,6 +126,7 @@ namespace NotepadGps.ViewModel
                 if (CrossMedia.Current.IsPickPhotoSupported)
                 {
                     MediaFile img = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions());
+
                     if (img != null)
                     {
                         var image = new ImageModel()
@@ -128,10 +137,10 @@ namespace NotepadGps.ViewModel
                             ImagePins = img.Path
                         };
 
-
                         await _imageService.SaveMapPinAsync(image);
                     }
                     ImageLoad();
+                    SearchImg();
                 }
             }
             catch (Exception e)
@@ -157,17 +166,35 @@ namespace NotepadGps.ViewModel
                         RotateImage = Device.RuntimePlatform == Device.Android ? true : false,
                         Name = $"{DateTime.Now}.jpg"
                     });
+
                     if (img != null)
                     {
-                        ImagePins = img.Path;
-                    }
+                        var image = new ImageModel()
+                        {
+                            UserId = _autentification.GetCurrentId,
+                            Latitude = Latitude,
+                            Longitude = Longitude,
+                            ImagePins = img.Path
+                        };
 
+                        await _imageService.SaveMapPinAsync(image);
+                    }
+                    ImageLoad();
+                    SearchImg();
                 }
             }
             catch (Exception e)
             {
                 Debug.WriteLine(e.Message);
             }
+        }
+
+        private void SearchImg()
+        {
+            var img = ImageList.Where(x => x.Latitude.ToString() == Latitude.ToString() &&
+            x.Longitude.ToString() == Longitude.ToString());
+
+            ImageList = new ObservableCollection<ImageModel>(img);
         }
 
         #endregion
@@ -186,16 +213,23 @@ namespace NotepadGps.ViewModel
 
             ImageLoad();
 
-            try
-            {
-                var img = ImageList.Where(x => x.Latitude.ToString() == Latitude.ToString() &&
-                x.Longitude.ToString() == Longitude.ToString());
+            SearchImg();
+        }
 
-                ImageList = new ObservableCollection<ImageModel>(img);
-            }
-            catch (Exception e)
+        protected override void OnPropertyChanged(PropertyChangedEventArgs args)
+        {
+            base.OnPropertyChanged(args);
+
+            if (args.PropertyName == nameof(ImageList))
             {
-                Debug.WriteLine(e);
+                if (ImageList.Count < 1 || ImageList == null)
+                {
+                    ImgVisible = true;
+                }
+                else
+                {
+                    ImgVisible = false;
+                }
             }
         }
 

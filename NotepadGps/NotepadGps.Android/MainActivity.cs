@@ -4,6 +4,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
+using Plugin.Media;
 
 namespace NotepadGps.Droid
 {
@@ -18,7 +19,7 @@ namespace NotepadGps.Droid
             Manifest.Permission.AccessFineLocation
         };
 
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override async void OnCreate(Bundle savedInstanceState)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
@@ -27,15 +28,19 @@ namespace NotepadGps.Droid
 
             base.OnCreate(savedInstanceState);
 
+            //Add
+            await CrossMedia.Current.Initialize();
             //Add maps
             Xamarin.FormsGoogleMaps.Init(this, savedInstanceState);
             //Add
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-
+            //add
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
 
             LoadApplication(new App());
+
         }
 
         protected override void OnStart()

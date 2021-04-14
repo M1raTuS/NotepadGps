@@ -22,8 +22,8 @@ namespace NotepadGps.ViewModel
         private readonly ISettingsService _settingsService;
 
         public MapsPageViewModel(INavigationService navigationService,
-                                  IMapPinService mapPinService,
-                                  ISettingsService settingsService)
+                                 IMapPinService mapPinService,
+                                 ISettingsService settingsService)
         {
             _navigationService = navigationService;
             _mapPinService = mapPinService;
@@ -193,15 +193,13 @@ namespace NotepadGps.ViewModel
                         switch (MapPins.Count)
                         {
                             case 1:
-                                RowHeight = 50;
+                                RowHeight = 45;
                                 break;
                             case 2:
-                                RowHeight = 100;
-                                break; ;
-                            case 3:
-                                RowHeight = 150;
+                                RowHeight = 90;
                                 break; ;
                             default:
+                                RowHeight = 135;
                                 break;
                         }
                     }

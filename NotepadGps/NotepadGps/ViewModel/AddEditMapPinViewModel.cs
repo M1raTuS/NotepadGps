@@ -107,7 +107,6 @@ namespace NotepadGps.ViewModel
                         await _mapPinService.SaveMapPinAsync(mapPin);
                         await _navigationService.GoBackAsync();
                     }
-
                 }
                 else
                 {
