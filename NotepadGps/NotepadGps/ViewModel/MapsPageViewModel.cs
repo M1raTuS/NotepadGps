@@ -1,13 +1,18 @@
-﻿using NotepadGps.Models;
+﻿using Acr.UserDialogs;
+using NotepadGps.Interface;
+using NotepadGps.Models;
 using NotepadGps.Services.Map;
 using NotepadGps.Services.Settings;
 using NotepadGps.View;
 using Prism.Navigation;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -218,6 +223,78 @@ namespace NotepadGps.ViewModel
         }
 
         #endregion
+
+        #region MyRegion
+
+        public ICommand SaveCommand => new Command(SaveLocalNotification);
+
+        DateTime _selectedDate = DateTime.Today;
+        public DateTime SelectedDate
+        {
+            get => _selectedDate;
+            set
+            {
+                if (_selectedDate < DateTime.Now)
+                {
+                    UserDialogs.Instance.Alert("Нельзя чтобы дата была меньше текущей даты", "Alert", "Ok");
+                }
+                else { SetProperty(ref _selectedDate, value); }
+            }
+        }
+
+        TimeSpan _selectedTime = DateTime.Now.TimeOfDay;
+        public TimeSpan SelectedTime
+        {
+            get => _selectedTime;
+            set => SetProperty(ref _selectedTime, value);
+        }
+
+        string _messageText;
+        public string MessageText
+        {
+            get => _messageText;
+            set => SetProperty(ref _messageText, value);
+        }
+
+        void SaveLocalNotification()
+        {
+            var date = (SelectedDate.Date.Month.ToString("00") + "-" + SelectedDate.Date.Day.ToString("00") + "-" + SelectedDate.Date.Year.ToString());
+            var time = Convert.ToDateTime(SelectedTime.ToString()).ToString("HH:mm");
+            var dateTime = date + " " + time;
+            var selectedDateTime = DateTime.ParseExact(dateTime, "MM-dd-yyyy HH:mm", CultureInfo.InvariantCulture);
+            if (!string.IsNullOrEmpty(MessageText))
+            {
+                DependencyService.Get<ILocalNotificationService>().Cancel(0);
+                DependencyService.Get<ILocalNotificationService>().LocalNotification("Local Notification", MessageText, 0, selectedDateTime);
+                App.Current.MainPage.DisplayAlert("LocalNotificationDemo", "Notification details saved successfully ", "Ok");
+            }
+            else
+            {
+                App.Current.MainPage.DisplayAlert("LocalNotificationDemo", "Please enter meassage", "OK");
+            }
+        }
+
+        protected bool SetProperty<T>(ref T backingStore, T value, [CallerMemberName] string propertyName = "", Action onChanged = null)
+        {
+            if (EqualityComparer<T>.Default.Equals(backingStore, value))
+            { return false; }
+
+            backingStore = value;
+            onChanged?.Invoke();
+            OnPropertyChanged(propertyName);
+            return true;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            var changed = PropertyChanged;
+            if (changed == null)
+                return;
+            changed.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
+    #endregion
 }
+
 

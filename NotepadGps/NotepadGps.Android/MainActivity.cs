@@ -1,14 +1,18 @@
 ﻿using Acr.UserDialogs;
 using Android;
 using Android.App;
+using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
+using NotepadGps.Interface;
 using Plugin.Media;
+using System;
+using Xamarin.Forms;
 
 namespace NotepadGps.Droid
 {
-    [Activity(Label = "NotepadGps", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "NotepadGps", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, LaunchMode = LaunchMode.SingleTop)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         const int RequestLocationId = 0;
@@ -40,7 +44,6 @@ namespace NotepadGps.Droid
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
 
             LoadApplication(new App());
-
         }
 
         protected override void OnStart()
