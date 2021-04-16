@@ -13,17 +13,17 @@ namespace NotepadGps.ViewModel
 {
     public class AddEditMapPinViewModel : BaseViewModel
     {
-        private readonly INavigationService _navigationService;
         private readonly IAutorizationService _autorization;
         private readonly IMapPinService _mapPinService;
         private readonly IAutentificationService _autentification;
 
-        public AddEditMapPinViewModel(INavigationService navigationService,
-                                      IAutorizationService autorization,
-                                      IMapPinService mapPinService,
-                                      IAutentificationService autentification)
+        public AddEditMapPinViewModel(
+            INavigationService navigationService,
+            IAutorizationService autorization,
+            IMapPinService mapPinService,
+            IAutentificationService autentification)
+            : base (navigationService)
         {
-            _navigationService = navigationService;
             _autorization = autorization;
             _mapPinService = mapPinService;
             _autentification = autentification;
@@ -67,7 +67,7 @@ namespace NotepadGps.ViewModel
 
         }
 
-        public ICommand AddButtonCommand => new Command(SaveCommand);
+        public ICommand AddButtonCommand => new Command(SaveCommand);//TODO: ONCommandNameAsync
         public ICommand MapClickedCommand => new Command<Position>(OnMapClickedCommand);
 
         #endregion
@@ -78,12 +78,12 @@ namespace NotepadGps.ViewModel
         {
             try
             {
-                if (CanSave())
+                if (CanSave())//TODO: move up
                 {
                     var mapPin = new MapPinModel()
                     {
                         Id = Id,
-                        UserId = _autentification.GetCurrentId,
+                        UserId = _autentification.GetCurrentId, //TODO: rework
                         Title = Title,
                         Longitude = Convert.ToDouble(Longitude),
                         Latitude = Convert.ToDouble(Latitude),
@@ -97,7 +97,7 @@ namespace NotepadGps.ViewModel
                         nav.Add(nameof(MapPinModel), mapPin);
 
                         await _mapPinService.UpdateMapPinAsync(mapPin);
-                        await _navigationService.GoBackAsync();
+                        await NavigationService.GoBackAsync();
                     }
                     else
                     {
@@ -105,7 +105,7 @@ namespace NotepadGps.ViewModel
                         nav.Add(nameof(MapPinModel), mapPin);
 
                         await _mapPinService.SaveMapPinAsync(mapPin);
-                        await _navigationService.GoBackAsync();
+                        await NavigationService.GoBackAsync();
                     }
                 }
                 else
@@ -121,11 +121,7 @@ namespace NotepadGps.ViewModel
 
         private bool CanSave()
         {
-            if (!String.IsNullOrEmpty(Title) && !String.IsNullOrEmpty(Longitude) && !String.IsNullOrEmpty(Latitude) && !String.IsNullOrEmpty(Description))
-            {
-                return true;
-            }
-            return false;
+            return !string.IsNullOrEmpty(Title) && !String.IsNullOrEmpty(Longitude) && !String.IsNullOrEmpty(Latitude) && !String.IsNullOrEmpty(Description);
         }
 
         private void OnMapClickedCommand(Position position)

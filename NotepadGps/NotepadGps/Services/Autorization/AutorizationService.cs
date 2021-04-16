@@ -1,53 +1,47 @@
-﻿using NotepadGps.Services.Autentification;
-using NotepadGps.Services.Profile;
+﻿using NotepadGps.Services.Profile;
 using NotepadGps.Services.Settings;
-using NotepadGps.ViewModel;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace NotepadGps.Services.Autorization
 {
-    public class AutorizationService : BaseViewModel, IAutorizationService
+    public class AutorizationService : IAutorizationService
     {
-
         private readonly IProfileService _profile;
-        private readonly IAutentificationService _autentification;
-        private readonly ISettingsService _settings;
+        private readonly ISettingsService _settingsService;
 
-        public AutorizationService(IProfileService profile,
-                                      ISettingsService settings,
-                                      IAutentificationService autentification)
+        public AutorizationService(
+            IProfileService profile,
+            ISettingsService settingsService)
         {
             _profile = profile;
-            _settings = settings;
-            _autentification = autentification;
-
-            _autentification.GetCurrentId = _settings.CurrentUser;
+            _settingsService = settingsService;
         }
 
-        private bool _isAutorized;
+        #region -- IAutorizationService implementation --
+
         public bool IsAutorized
         {
-            get => _isAutorized;
-            set => SetProperty(ref _isAutorized, value);
+            get => _settingsService.CurrentUser != -1;
         }
 
-        public void Authorizate(string email, string password)
+        public async Task<bool> TryToAuthorizeAsync(string email, string password)
         {
-            IsAutorized = false;
+            var isAuthorized = false;
+            var user = await _profile.GetAllUserListAsync();
+            var foundUser = user.Where(x => x.Email == email && x.Password == password)?.FirstOrDefault();
 
-            var user = _profile.GetAllUserList();
-            user = user.Where(x => x.Email == email && x.Password == password).ToList();
-
-            if (user != null && user.Count > 0)
+            if (foundUser != null)
             {
-                foreach (var item in user)
-                {
-                    _autentification.GetCurrentId = item.Id;
-                }
-
-                _settings.CurrentUser = _autentification.GetCurrentId;
-                IsAutorized = true;
+                _settingsService.CurrentUser = foundUser.Id;
+                isAuthorized = true;
             }
+
+            return isAuthorized;
         }
+
+        //TODO: getauthorizeduser method
+
+        #endregion
     }
 }

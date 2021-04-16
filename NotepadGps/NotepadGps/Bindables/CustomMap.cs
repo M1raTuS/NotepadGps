@@ -17,11 +17,11 @@ namespace NotepadGps.Bindables
             PinsSource.CollectionChanged += PinsSourceOnCollectionChanged;
         }
 
-        #region -- Map --
+        #region -- Public properties --
 
         public ObservableCollection<MapPinModel> PinsSource
         {
-            get { return (ObservableCollection<MapPinModel>)GetValue(PinsSourceProperty); }
+            get { return (ObservableCollection<MapPinModel>)GetValue(PinsSourceProperty); } //TODO: =>
             set { SetValue(PinsSourceProperty, value); }
         }
 
@@ -29,12 +29,9 @@ namespace NotepadGps.Bindables
                                                          propertyName: nameof(PinsSource),
                                                          returnType: typeof(ObservableCollection<MapPinModel>),
                                                          declaringType: typeof(CustomMap),
-                                                         defaultValue: null,
-                                                         defaultBindingMode: BindingMode.TwoWay,
-                                                         validateValue: null,
                                                          propertyChanged: PinsSourcePropertyChanged);
 
-        private static void PinsSourcePropertyChanged(BindableObject bindable, object oldvalue, object newValue)
+        private static void PinsSourcePropertyChanged(BindableObject bindable, object oldvalue, object newValue) //TODO: onproperty changed
         {
             var bindableMap = bindable as CustomMap;
             var newPinsSource = newValue as IEnumerable;
@@ -42,7 +39,7 @@ namespace NotepadGps.Bindables
             if (bindableMap != null && newPinsSource != null)
             {
                 bindableMap.Pins.Clear();
-                try
+                try //todo: remove
                 {
                     foreach (MapPinModel pin in newPinsSource)
                     {
@@ -78,7 +75,9 @@ namespace NotepadGps.Bindables
         {
             bindableMap.Pins.Clear();
             foreach (var pin in newSource)
+            {
                 bindableMap.Pins.Add(pin);
+            }
         }
 
         private static void UpdateMapPinsSource(Map bindableMap, IEnumerable<MapPinModel> newSource)
@@ -92,9 +91,6 @@ namespace NotepadGps.Bindables
                 });
         }
 
-        #endregion
-
-        #region -- MapSpan --
 
         public MapSpan MapSpan
         {
@@ -119,10 +115,6 @@ namespace NotepadGps.Bindables
             thisInstance?.MoveToRegion(newMapSpan);
         }
 
-        #endregion
-
-        #region --Camera--
-
         public static BindableProperty CurrentCameraPositionProperty = BindableProperty.Create(
                                                        propertyName: nameof(CurrentCameraPosition),
                                                        returnType: typeof(CameraPosition),
@@ -141,11 +133,12 @@ namespace NotepadGps.Bindables
             if (newValue != null)
             {
                 CameraUpdate cameraUpdate = CameraUpdateFactory.NewCameraPosition((CameraPosition)newValue);
+
                 if (bindable is CustomMap map)
                 {
                     map.InitialCameraUpdate = cameraUpdate;
                 }
-                (bindable as CustomMap).MoveCamera(cameraUpdate);
+                (bindable as CustomMap).MoveCamera(cameraUpdate); //TODO: to variable
             }
         }
 

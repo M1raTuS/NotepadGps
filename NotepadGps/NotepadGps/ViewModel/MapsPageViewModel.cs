@@ -1,18 +1,15 @@
-﻿using Acr.UserDialogs;
-using NotepadGps.Interface;
-using NotepadGps.Models;
+﻿using NotepadGps.Models;
 using NotepadGps.Services.Map;
 using NotepadGps.Services.Settings;
 using NotepadGps.View;
+using Plugin.Permissions;
 using Prism.Navigation;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Globalization;
 using System.Linq;
-using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -22,15 +19,15 @@ namespace NotepadGps.ViewModel
 {
     public class MapsPageViewModel : BaseViewModel
     {
-        private readonly INavigationService _navigationService;
         private readonly IMapPinService _mapPinService;
         private readonly ISettingsService _settingsService;
 
-        public MapsPageViewModel(INavigationService navigationService,
-                                 IMapPinService mapPinService,
-                                 ISettingsService settingsService)
+        public MapsPageViewModel(
+            INavigationService navigationService,
+            IMapPinService mapPinService,
+            ISettingsService settingsService)
+            : base(navigationService)
         {
-            _navigationService = navigationService;
             _mapPinService = mapPinService;
             _settingsService = settingsService;
         }
@@ -66,14 +63,14 @@ namespace NotepadGps.ViewModel
         }
 
         private bool _listViewIsVisible;
-        public bool ListViewIsVisible
+        public bool ListViewIsVisible //TODo: is
         {
             get => _listViewIsVisible;
             set => SetProperty(ref _listViewIsVisible, value);
         }
 
         private int _rowHeight;
-        public int RowHeight
+        public int RowHeight //TODO: remove
         {
             get => _rowHeight;
             set => SetProperty(ref _rowHeight, value);
@@ -88,9 +85,10 @@ namespace NotepadGps.ViewModel
 
         #region -- Private helpers --        
 
-        private void MapPinLoad()
+        private async Task MapPinLoadAsync()
         {
-            var mapPin = _mapPinService.GetMapPinListById();
+            var mapPin = await _mapPinService.GetMapPinListByIdAsync();
+
             MapPin = new ObservableCollection<MapPinModel>(mapPin);
         }
 
@@ -118,7 +116,7 @@ namespace NotepadGps.ViewModel
             }
         }
 
-        private async void OnPinClickedCommand(Pin pin)
+        private async void OnPinClickedCommand(Pin pin)//TODO: async
         {
             PinsCheck();
 
@@ -126,10 +124,10 @@ namespace NotepadGps.ViewModel
             var nav = new NavigationParameters();
             nav.Add(nameof(Pin), pin);
 
-            await _navigationService.NavigateAsync(nameof(PopUpView), nav, true, true);
+            await NavigationService.NavigateAsync(nameof(PopUpView), nav, true, true);
         }
 
-        private void PinsCheck()
+        private void PinsCheck()//TODO: rename
         {
             if (MapPins != null)
             {
@@ -173,12 +171,13 @@ namespace NotepadGps.ViewModel
             }
         }
 
-        protected override void OnPropertyChanged(PropertyChangedEventArgs args)
+        protected async override void OnPropertyChanged(PropertyChangedEventArgs args)
         {
             base.OnPropertyChanged(args);
+
             if (args.PropertyName == nameof(SearchText))
             {
-                MapPinLoad();
+                await MapPinLoadAsync();
                 ListViewIsVisible = false;
                 RowHeight = 0;
 
@@ -189,13 +188,13 @@ namespace NotepadGps.ViewModel
                     try
                     {
                         MapPins = MapPin;
-                        var data = MapPins.Where(x => x.Title.ToLower().Contains(SearchText.ToLower()) ||
+                        var data = MapPins.Where(x => x.Title.ToLower().Contains(SearchText.ToLower()) || //TODO: to service
                         x.Latitude.ToString().ToLower().Contains(SearchText.ToLower()) ||
                         x.Longitude.ToString().ToLower().Contains(SearchText.ToLower()) ||
                         x.Description.ToLower().Contains(SearchText.ToLower()));
                         MapPins = new ObservableCollection<MapPinModel>(data);
 
-                        switch (MapPins.Count)
+                        switch (MapPins.Count) //TODO: remove
                         {
                             case 1:
                                 RowHeight = 45;
@@ -216,10 +215,11 @@ namespace NotepadGps.ViewModel
             }
         }
 
-        protected override void RaiseIsActiveChanged()
+        protected async override void RaiseIsActiveChanged()
         {
             base.RaiseIsActiveChanged();
-            MapPinLoad();
+
+            await MapPinLoadAsync();
         }
 
         #endregion
@@ -228,72 +228,92 @@ namespace NotepadGps.ViewModel
 
         public ICommand SaveCommand => new Command(SaveLocalNotification);
 
-        DateTime _selectedDate = DateTime.Today;
-        public DateTime SelectedDate
+
+
+
+        //DateTime _selectedDate = DateTime.Today;
+        //public DateTime SelectedDate
+        //{
+        //    get => _selectedDate;
+        //    set
+        //    {
+        //        if (_selectedDate < DateTime.Now)
+        //        {
+        //            UserDialogs.Instance.Alert("Нельзя чтобы дата была меньше текущей даты", "Alert", "Ok");
+        //        }
+        //        else { SetProperty(ref _selectedDate, value); }
+        //    }
+        //}
+
+        //TimeSpan _selectedTime = DateTime.Now.TimeOfDay;
+        //public TimeSpan SelectedTime
+        //{
+        //    get => _selectedTime;
+        //    set => SetProperty(ref _selectedTime, value);
+        //}
+
+        //string _messageText;
+        //public string MessageText
+        //{
+        //    get => _messageText;
+        //    set => SetProperty(ref _messageText, value);
+        //}
+
+        private async void SaveLocalNotification()
         {
-            get => _selectedDate;
-            set
+            var status = await CrossPermissions.Current.CheckPermissionStatusAsync<CalendarPermission>();
+            if (status != Plugin.Permissions.Abstractions.PermissionStatus.Granted)
             {
-                if (_selectedDate < DateTime.Now)
+                status = await CrossPermissions.Current.RequestPermissionAsync<CalendarPermission>();
+
+                if (status == Plugin.Permissions.Abstractions.PermissionStatus.Granted)
                 {
-                    UserDialogs.Instance.Alert("Нельзя чтобы дата была меньше текущей даты", "Alert", "Ok");
+                    await DependencyService.Get<NotepadGps.Services.Calendar.ICalendarService>().AddEventToCalendar();
                 }
-                else { SetProperty(ref _selectedDate, value); }
-            }
-        }
-
-        TimeSpan _selectedTime = DateTime.Now.TimeOfDay;
-        public TimeSpan SelectedTime
-        {
-            get => _selectedTime;
-            set => SetProperty(ref _selectedTime, value);
-        }
-
-        string _messageText;
-        public string MessageText
-        {
-            get => _messageText;
-            set => SetProperty(ref _messageText, value);
-        }
-
-        void SaveLocalNotification()
-        {
-            var date = (SelectedDate.Date.Month.ToString("00") + "-" + SelectedDate.Date.Day.ToString("00") + "-" + SelectedDate.Date.Year.ToString());
-            var time = Convert.ToDateTime(SelectedTime.ToString()).ToString("HH:mm");
-            var dateTime = date + " " + time;
-            var selectedDateTime = DateTime.ParseExact(dateTime, "MM-dd-yyyy HH:mm", CultureInfo.InvariantCulture);
-            if (!string.IsNullOrEmpty(MessageText))
-            {
-                DependencyService.Get<ILocalNotificationService>().Cancel(0);
-                DependencyService.Get<ILocalNotificationService>().LocalNotification("Local Notification", MessageText, 0, selectedDateTime);
-                App.Current.MainPage.DisplayAlert("LocalNotificationDemo", "Notification details saved successfully ", "Ok");
             }
             else
             {
-                App.Current.MainPage.DisplayAlert("LocalNotificationDemo", "Please enter meassage", "OK");
+                await DependencyService.Get<NotepadGps.Services.Calendar.ICalendarService>().AddEventToCalendar();
             }
+
+
+
+            //    var date = (SelectedDate.Date.Month.ToString("00") + "-" + SelectedDate.Date.Day.ToString("00") + "-" + SelectedDate.Date.Year.ToString());
+            //    var time = Convert.ToDateTime(SelectedTime.ToString()).ToString("HH:mm");
+            //    var dateTime = date + " " + time;
+            //    var selectedDateTime = DateTime.ParseExact(dateTime, "MM-dd-yyyy HH:mm", CultureInfo.InvariantCulture);
+            //    if (!string.IsNullOrEmpty(MessageText))
+            //    {
+            //        DependencyService.Get<ILocalNotificationService>().Cancel(0);
+            //        DependencyService.Get<ILocalNotificationService>().LocalNotification("Local Notification", MessageText, 0, selectedDateTime);
+            //        App.Current.MainPage.DisplayAlert("LocalNotificationDemo", "Notification details saved successfully ", "Ok");
+            //    }
+            //    else
+            //    {
+            //        App.Current.MainPage.DisplayAlert("LocalNotificationDemo", "Please enter meassage", "OK");
+            //    }
         }
 
-        protected bool SetProperty<T>(ref T backingStore, T value, [CallerMemberName] string propertyName = "", Action onChanged = null)
-        {
-            if (EqualityComparer<T>.Default.Equals(backingStore, value))
-            { return false; }
+            //protected bool SetProperty<T>(ref T backingStore, T value, [CallerMemberName] string propertyName = "", Action onChanged = null)
+            //{
+            //    if (EqualityComparer<T>.Default.Equals(backingStore, value))
+            //    { return false; }
 
-            backingStore = value;
-            onChanged?.Invoke();
-            OnPropertyChanged(propertyName);
-            return true;
-        }
+            //    backingStore = value;
+            //    onChanged?.Invoke();
+            //    OnPropertyChanged(propertyName);
+            //    return true;
+            //}
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            var changed = PropertyChanged;
-            if (changed == null)
-                return;
-            changed.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            //public event PropertyChangedEventHandler PropertyChanged;
+            //protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
+            //{
+            //    var changed = PropertyChanged;
+            //    if (changed == null)
+            //        return;
+            //    changed.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            //}
         }
-    }
     #endregion
 }
 

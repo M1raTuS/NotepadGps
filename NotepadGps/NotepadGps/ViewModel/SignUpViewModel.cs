@@ -14,19 +14,18 @@ namespace NotepadGps.ViewModel
 {
     public class SignUpViewModel : BaseViewModel
     {
-        private readonly INavigationService _navigationService;
-        private readonly IProfileService _profile;
-        private readonly IAutentificationService _autentification;
+        private readonly IProfileService _profileService;
+        private readonly IAutentificationService _autentificationService;
 
-        public SignUpViewModel(INavigationService navigationService,
-                               IProfileService profile,
-                               IAutentificationService autentification)
+        public SignUpViewModel(
+            INavigationService navigationService,
+            IProfileService profile,
+            IAutentificationService autentification)
+            : base(navigationService)//TODO: rename
         {
             _navigationService = navigationService;
-            _profile = profile;
-            _autentification = autentification;
-
-            User = new ObservableCollection<UserModel>();
+            _profileService = profile;
+            _autentificationService = autentification;
         }
 
         #region -- Public properties --
@@ -59,36 +58,37 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _buttonEnabled, value);
         }
 
-        public ICommand AddCommand => new Command(AddUserAsync);
+        public ICommand AddCommand => new Command(OnAddCommandAsync);
 
         #endregion
 
         #region -- Private helpers --     
 
-        private async void AddUserAsync(object obj)
+        private async void OnAddCommandAsync(object obj)
         {
             var NamelValidation = Validator.StringValid(Name, Validator.Name);
             var EmailValidation = Validator.StringValid(Email, Validator.Email);
             var PasswordValidation = Validator.StringValid(Password, Validator.Password);
+            var isEmailExist = await _autentificationService.CheckEmailAsync(Email);
 
-            //if (!NamelValidation)
-            //{
-            //    UserDialogs.Instance.Alert("Имя должно быть не менее 4 и не более 16 символов. Имя не должно начинаться с цифер", "Alert", "Ok");
-            //}
-            //else if (!EmailValidation)
-            //{
-            //    UserDialogs.Instance.Alert("Введите корректный почтовый адрес", "Alert", "Ok");
-            //}
-            //else if (!PasswordValidation)
-            //{
-            //    UserDialogs.Instance.Alert("Пароль должен быть не менее 8 и не более 16 символов. Пароль должен содержать минимум одну заглавную букву, одну строчную букву и одну цифру", "Alert", "Ok");
-            //}
-            //else if (_autentification.CheckEmail(Email))
-            //{
-            //    UserDialogs.Instance.Alert("Эта почта уже занята", "Alert", "Ok");
-            //}
-            //else
-            //{
+            if (!NamelValidation)
+            {
+                UserDialogs.Instance.Alert("Имя должно быть не менее 4 и не более 16 символов. Имя не должно начинаться с цифер", "Alert", "Ok"); //TODO: to resources
+            }
+            else if (!EmailValidation)
+            {
+                UserDialogs.Instance.Alert("Введите корректный почтовый адрес", "Alert", "Ok");
+            }
+            else if (!PasswordValidation)
+            {
+                UserDialogs.Instance.Alert("Пароль должен быть не менее 8 и не более 16 символов. Пароль должен содержать минимум одну заглавную букву, одну строчную букву и одну цифру", "Alert", "Ok");
+            }
+            else if (isEmailExist)
+            {
+                UserDialogs.Instance.Alert("Эта почта уже занята", "Alert", "Ok");
+            }
+            else
+            {
                 var user = new UserModel()
                 {
                     Name = Name,
@@ -96,18 +96,14 @@ namespace NotepadGps.ViewModel
                     Password = Password
                 };
 
-                await _profile.SaveUserAsync(user);
-                await _navigationService.GoBackAsync();
-           // }
+                await _profileService.SaveUserAsync(user);
+                await NavigationService.GoBackAsync();
+            }
         }
 
         private bool CanSignIn()
         {
-            if (!String.IsNullOrEmpty(Name) && !String.IsNullOrEmpty(Password) && !String.IsNullOrEmpty(Email))
-            {
-                return true;
-            }
-            return false;
+            return !String.IsNullOrEmpty(Name) && !String.IsNullOrEmpty(Password) && !String.IsNullOrEmpty(Email); //TODO: isnullorwhitespace
         }
 
         #endregion
@@ -122,7 +118,7 @@ namespace NotepadGps.ViewModel
                 args.PropertyName == nameof(Password) ||
                 args.PropertyName == nameof(Email))
             {
-                if (CanSignIn())
+                if (CanSignIn()) //TODO: variable
                 {
                     ButtonEnabled = true;
                 }
@@ -131,12 +127,6 @@ namespace NotepadGps.ViewModel
                     ButtonEnabled = false;
                 }
             }
-        }
-
-        public async override void OnNavigatedTo(INavigationParameters parameters)
-        {
-            var _user = await _profile.GetAllUserListAsync();
-            User = new ObservableCollection<UserModel>(_user);
         }
 
         #endregion

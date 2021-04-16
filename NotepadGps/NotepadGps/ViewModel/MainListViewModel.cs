@@ -11,8 +11,10 @@ namespace NotepadGps.ViewModel
         private readonly INavigationService _navigationService;
         private readonly ISettingsService _settingsService;
 
-        public MainListViewModel(INavigationService navigationService,
-                                 ISettingsService settingsService)
+        public MainListViewModel(
+            INavigationService navigationService,
+            ISettingsService settingsService)
+            : base(navigationService)
         {
             _navigationService = navigationService;
             _settingsService = settingsService;
@@ -24,7 +26,7 @@ namespace NotepadGps.ViewModel
 
         private async void OnLogOutCommandAsync()
         {
-            _settingsService.CurrentUser = -1;
+            _settingsService.CurrentUser = -1; //TODO: to authorization service
             await _navigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(SignInView)}");
         }
 

@@ -20,8 +20,9 @@ namespace NotepadGps.Services.Image
         public new List<ImageModel> GetImageListById()
         {
             var image = new List<ImageModel>();
-            var Id = _autentification.GetCurrentId;
-            var list =  _repository.Find<ImageModel>(c => c.UserId == Id);
+            // var Id = _autentification.CurentUserId;
+            var id = 1; //TODO: rework
+            var list =  _repository.Find<ImageModel>(c => c.UserId == id);
             if (list.Count > 0)
             {
                 image.AddRange(list);

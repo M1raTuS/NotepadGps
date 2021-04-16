@@ -56,7 +56,8 @@
                                                 </ImageButton.Behaviors>
                                             </ImageButton>
                                         </Grid>
-                                        <StackLayout VerticalOptions="Center" Margin="10,10">
+                                        <StackLayout VerticalOptions="Center" 
+                                                     Margin="10,10">
                                             <Label Text="{Binding Title}" 
                                                    FontSize="Medium" />
                                             <Label Text="{Binding Latitude}" 

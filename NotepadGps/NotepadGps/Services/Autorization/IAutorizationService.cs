@@ -1,8 +1,10 @@
-﻿namespace NotepadGps.Services.Autorization
+﻿using System.Threading.Tasks;
+
+namespace NotepadGps.Services.Autorization
 {
     public interface IAutorizationService
     {
-        bool IsAutorized { get; set; }
-        void Authorizate(string email, string password);
+        bool IsAutorized { get; }
+        Task<bool> TryToAuthorizeAsync(string email, string password);
     }
 }

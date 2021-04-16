@@ -6,14 +6,17 @@
              BackgroundColor="Transparent">
 
     <Grid>
+        
         <Frame Opacity="0.85" 
-              Grid.Column="0" Grid.Row="0"  
+              Grid.Column="0" 
+               Grid.Row="0"  
               VerticalOptions="End" 
               HorizontalOptions="Center"
               HeightRequest="300"
               WidthRequest="300"
               CornerRadius="20">
             <Grid>
+                
                 <Label Grid.Row="0" 
                        HorizontalOptions="Start" 
                        Text="Label"/>
@@ -55,22 +58,31 @@
                 <CarouselView ItemsSource="{Binding ImageList}"
                               Grid.Row="4"
                               Grid.RowSpan="2">
+                    
                     <CarouselView.ItemTemplate>
+                        
                         <DataTemplate>
+                            
                             <StackLayout HorizontalOptions="Center">
-                                <ffimageloading:CachedImage 
-                                     Source="{Binding ImagePins}"
-                                     VerticalOptions="Center"
-                                     HorizontalOptions="Center"
-                                     WidthRequest="200"
-                                     HeightRequest="100"
-                                     Aspect="AspectFit"
-                                     DownsampleToViewSize = "true">
+                                
+                                <ffimageloading:CachedImage Source="{Binding ImagePins}"
+                                                            VerticalOptions="Center"
+                                                            HorizontalOptions="Center"
+                                                            WidthRequest="200"
+                                                            HeightRequest="100"
+                                                            Aspect="AspectFit"
+                                                            DownsampleToViewSize = "true">
+                                    
                                 </ffimageloading:CachedImage>
+                                
                             </StackLayout>
+                            
                         </DataTemplate>
+                        
                     </CarouselView.ItemTemplate>
+                    
                 </CarouselView>
+                
                 <Button Grid.Row="6"
                         Command="{Binding ImageCommand}"
                         Text="Add picture"
@@ -80,5 +92,6 @@
         <Grid.GestureRecognizers>
             <TapGestureRecognizer Command="{Binding TapCommand}"/>
         </Grid.GestureRecognizers>
+        
     </Grid>
 </ContentPage>

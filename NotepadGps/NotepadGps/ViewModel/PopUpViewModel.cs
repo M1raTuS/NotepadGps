@@ -18,15 +18,15 @@ namespace NotepadGps.ViewModel
 {
     public class PopUpViewModel : BaseViewModel
     {
-        private readonly INavigationService _navigationService;
         private readonly IImageService _imageService;
-        private readonly IAutentificationService _autentification;
+        private readonly IAutentificationService _autentification; //TODO: remove
 
-        public PopUpViewModel(INavigationService navigationService,
-                              IAutentificationService autentification,
-                              IImageService imageService)
+        public PopUpViewModel(
+            INavigationService navigationService,
+            IAutentificationService autentification,
+            IImageService imageService)
+            : base (navigationService)
         {
-            _navigationService = navigationService;
             _autentification = autentification;
             _imageService = imageService;
         }
@@ -83,119 +83,14 @@ namespace NotepadGps.ViewModel
         }
 
         private bool _imgVisible;
-        public bool ImgVisible
+        public bool ImgVisible //TODO: is
         {
             get => _imgVisible;
             set => SetProperty(ref _imgVisible, value);
         }
 
-        public ICommand TapCommand => new Command(TapCommands);
+        public ICommand TapCommand => new Command(OnTapCommandAsync);
         public ICommand ImageCommand => new Command(OnImageCommand);
-
-        #endregion
-
-        #region -- Private helpers --
-
-        private void TapCommands()
-        {
-            NavigationParameters nav = new NavigationParameters();
-            _navigationService.GoBackAsync(nav, true, true);
-        }
-
-        private void ImageLoad()
-        {
-            var image = _imageService.GetImageListById();
-            ImageList = new ObservableCollection<ImageModel>(image);
-        }
-
-        private void OnImageCommand()
-        {
-            var file = new ActionSheetConfig()
-                .SetTitle("Choose your action")
-                .Add("Camera", () => OpenCamera())
-                .Add("Gallery", () => OpenGalery())
-                .SetCancel();
-
-            UserDialogs.Instance.ActionSheet(file);
-        }
-
-        private async void OpenGalery()
-        {
-            try
-            {
-                if (CrossMedia.Current.IsPickPhotoSupported)
-                {
-                    MediaFile img = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions());
-
-                    if (img != null)
-                    {
-                        var image = new ImageModel()
-                        {
-                            UserId = _autentification.GetCurrentId,
-                            Latitude = Latitude,
-                            Longitude = Longitude,
-                            ImagePins = img.Path
-                        };
-
-                        await _imageService.SaveMapPinAsync(image);
-                    }
-                    ImageLoad();
-                    SearchImg();
-                }
-            }
-            catch (Exception e)
-            {
-                Debug.WriteLine(e.Message);
-            }
-        }
-
-        private async void OpenCamera()
-        {
-            try
-            {
-                if (CrossMedia.Current.IsCameraAvailable && CrossMedia.Current.IsPickPhotoSupported)
-                {
-                    MediaFile img = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
-                    {
-                        PhotoSize = PhotoSize.Medium,
-                        SaveToAlbum = true,
-                        SaveMetaData = true,
-                        Directory = "temp",
-                        MaxWidthHeight = 1500,
-                        CompressionQuality = 75,
-                        RotateImage = Device.RuntimePlatform == Device.Android ? true : false,
-                        Name = $"{DateTime.Now}.jpg"
-                    });
-
-                    if (img != null)
-                    {
-                        var image = new ImageModel()
-                        {
-                            UserId = _autentification.GetCurrentId,
-                            Latitude = Latitude,
-                            Longitude = Longitude,
-                            ImagePins = img.Path
-                        };
-
-                        await _imageService.SaveMapPinAsync(image);
-                    }
-                    ImageLoad();
-                    SearchImg();
-                }
-            }
-            catch (Exception e)
-            {
-                Debug.WriteLine(e.Message);
-            }
-        }
-
-        private void SearchImg()
-        {
-            var img = ImageList.Where(x => x.Latitude.ToString() == Latitude.ToString() &&
-            x.Longitude.ToString() == Longitude.ToString());
-
-            ImageList = new ObservableCollection<ImageModel>(img);
-        }
 
         #endregion
 
@@ -203,12 +98,14 @@ namespace NotepadGps.ViewModel
 
         public override void Initialize(INavigationParameters parameters)
         {
+            base.Initialize(parameters);
+
             if (parameters.TryGetValue(nameof(Pin), out Pin pin))
             {
                 Title = pin.Label;
                 Latitude = pin.Position.Latitude.ToString();
                 Longitude = pin.Position.Longitude.ToString();
-                Description = pin.Address is null ? "{null}" : pin.Address;
+                Description = pin.Address;
             }
 
             ImageLoad();
@@ -234,5 +131,111 @@ namespace NotepadGps.ViewModel
         }
 
         #endregion
+
+        #region -- Private helpers --
+
+        private async void OnTapCommandAsync()
+        {
+            await NavigationService.GoBackAsync(new NavigationParameters(), true, true);
+        }
+
+        private void ImageLoad()//TODO: task and async
+        {
+            var image = _imageService.GetImageListById(); //TODO: async
+            ImageList = new ObservableCollection<ImageModel>(image);
+        }
+
+        private void OnImageCommand()
+        {
+            var file = new ActionSheetConfig()
+                .SetTitle("Choose your action")
+                .Add("Camera", () => OpenCamera())
+                .Add("Gallery", () => OpenGalery())
+                .SetCancel();
+
+            UserDialogs.Instance.ActionSheet(file); //TODO: move to baseViewModel
+        }
+
+        private async void OpenGalery()
+        {
+            try //TODO: move to service
+            {
+                if (CrossMedia.Current.IsPickPhotoSupported)
+                {
+                    MediaFile img = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions());
+
+                    if (img != null)
+                    {
+                        //var image = new ImageModel()
+                        //{
+                        //    UserId = _autentification.GetCurrentId,
+                        //    Latitude = Latitude,
+                        //    Longitude = Longitude,
+                        //    ImagePins = img.Path
+                        //};
+
+                        //await _imageService.SaveMapPinAsync(image);
+                    }
+                    ImageLoad();
+                    SearchImg();
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.Message);
+            }
+        }
+
+        private async void OpenCamera()
+        {
+            try //TODO: move t service
+            {
+                if (CrossMedia.Current.IsCameraAvailable && CrossMedia.Current.IsPickPhotoSupported)
+                {
+                    MediaFile img = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
+                    {
+                        PhotoSize = PhotoSize.Medium,
+                        SaveToAlbum = true,
+                        SaveMetaData = true,
+                        Directory = "temp",
+                        MaxWidthHeight = 1500,
+                        CompressionQuality = 75,
+                        RotateImage = Device.RuntimePlatform == Device.Android ? true : false,
+                        Name = $"{DateTime.Now}.jpg"
+                    });
+
+                    if (img != null)
+                    {
+                        //var image = new ImageModel()
+                        //{
+                        //    UserId = _autentification.GetCurrentId,
+                        //    Latitude = Latitude,
+                        //    Longitude = Longitude,
+                        //    ImagePins = img.Path
+                        //};
+
+                        //await _imageService.SaveMapPinAsync(image);
+                    }
+                    ImageLoad();
+                    SearchImg();
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.Message);
+            }
+        }
+
+        private void SearchImg()
+        {
+            var img = ImageList.Where(x => x.Latitude.ToString() == Latitude.ToString() && //TODO: to service
+            x.Longitude.ToString() == Longitude.ToString());
+
+            ImageList = new ObservableCollection<ImageModel>(img);
+        }
+
+        #endregion
+
+       
     }
 }

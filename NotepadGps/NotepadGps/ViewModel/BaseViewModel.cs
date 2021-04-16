@@ -9,9 +9,14 @@ namespace NotepadGps.ViewModel
 {
     public class BaseViewModel : BindableBase, IInitialize, INavigationAware, IActiveAware
     {
+        public BaseViewModel(INavigationService navigationService)
+        {
+            NavigationService = navigationService;
+        }
+
         #region -- Public properties --
 
-        private ObservableCollection<UserModel> user;
+        private ObservableCollection<UserModel> user; //TODO: remove
         public ObservableCollection<UserModel> User
         {
             get => user;
@@ -33,6 +38,8 @@ namespace NotepadGps.ViewModel
             get => _isActive;
             set => SetProperty(ref _isActive, value, RaiseIsActiveChanged);
         }
+
+        public INavigationService NavigationService { get;  }
 
         #endregion
 

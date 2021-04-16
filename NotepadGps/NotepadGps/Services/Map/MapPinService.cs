@@ -26,20 +26,22 @@ namespace NotepadGps.Services.Map
         public async Task<List<MapPinModel>> GetMapPinListByIdAsync()
         {
             var mapPin = new List<MapPinModel>();
-            var Id = _autentification.GetCurrentId;
-            var list = await _repository.FindAsync<MapPinModel>(c => c.UserId == Id);
+            var id = 1; //TODO: rework
+            var list = await _repository.FindAsync<MapPinModel>(c => c.UserId == id);
+
             if (list.Count > 0)
             {
-                mapPin.AddRange(list);
+                mapPin = list;
             }
+
             return mapPin;
         }
 
         public List<MapPinModel> GetMapPinListById()
         {
             var mapPin = new List<MapPinModel>();
-            var Id = _autentification.GetCurrentId;
-            var list = _repository.Find<MapPinModel>(c => c.UserId == Id);
+            var id = 1; //TODO: rework
+            var list = _repository.Find<MapPinModel>(c => c.UserId == id);
             if (list.Count > 0)
             {
                 mapPin.AddRange(list);

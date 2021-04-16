@@ -5,6 +5,7 @@
              Title="SignIn">
 
     <Grid>
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10" />
             <ColumnDefinition Width="*" />
@@ -38,6 +39,7 @@
                 CornerRadius="20"/>
 
         <Grid Grid.Row="12"/>
+        
     </Grid>
 
 </ContentPage>

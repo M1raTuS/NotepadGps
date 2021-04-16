@@ -1,11 +1,10 @@
 ﻿using NotepadGps.Models;
 using NotepadGps.Services.Repository;
-using NotepadGps.ViewModel;
-using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 
 namespace NotepadGps.Services.Autentification
 {
-    public class AutentificationService : BaseViewModel, IAutentificationService
+    public class AutentificationService : IAutentificationService
     {
         private readonly IRepository _repository;
 
@@ -14,32 +13,24 @@ namespace NotepadGps.Services.Autentification
             _repository = repository;
         }
 
-        private int _getCurrentId;
-        public int GetCurrentId
-        {
-            get => _getCurrentId;
-            set => SetProperty(ref _getCurrentId, value);
-        }
+        #region -- IAutentificationService implementation --
 
-        public void LoadProfile()
+        public async Task<bool> CheckEmailAsync(string email)
         {
-            var user = _repository.GetAll<UserModel>();
-            User = new ObservableCollection<UserModel>(user);
-        }
+            var isUserExist = false;
+            var users = await _repository.GetAllAsync<UserModel>();
 
-        public bool CheckEmail(string email)
-        {
-            LoadProfile();
-
-            foreach (var item in User)
+            foreach (var item in users)
             {
                 if (item.Email == email.ToString())
                 {
-                    return true;
+                    isUserExist = true;
                 }
             }
 
-            return false;
+            return isUserExist;
         }
+
+        #endregion
     }
 }

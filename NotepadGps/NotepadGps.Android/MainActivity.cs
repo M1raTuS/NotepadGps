@@ -1,14 +1,11 @@
 ﻿using Acr.UserDialogs;
 using Android;
 using Android.App;
-using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
-using NotepadGps.Interface;
 using Plugin.Media;
-using System;
-using Xamarin.Forms;
+using Plugin.Permissions;
 
 namespace NotepadGps.Droid
 {
@@ -16,6 +13,7 @@ namespace NotepadGps.Droid
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         const int RequestLocationId = 0;
+        public static MainActivity Instance;
 
         readonly string[] LocationPermissions =
         {
@@ -44,6 +42,8 @@ namespace NotepadGps.Droid
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
 
             LoadApplication(new App());
+
+            Instance = this;
         }
 
         protected override void OnStart()
@@ -65,8 +65,7 @@ namespace NotepadGps.Droid
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
         {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
+            PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
             if (requestCode == RequestLocationId)
@@ -85,5 +84,6 @@ namespace NotepadGps.Droid
                 base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             }
         }
+
     }
 }

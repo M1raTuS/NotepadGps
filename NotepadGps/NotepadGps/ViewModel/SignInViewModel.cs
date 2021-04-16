@@ -1,12 +1,8 @@
 ﻿using Acr.UserDialogs;
-using NotepadGps.Models;
-using NotepadGps.Services.Autentification;
 using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Profile;
 using NotepadGps.View;
 using Prism.Navigation;
-using System;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -15,20 +11,17 @@ namespace NotepadGps.ViewModel
 {
     public class SignInViewModel : BaseViewModel
     {
-        private readonly INavigationService _navigationService;
         private readonly IAutorizationService _autorization;
         private readonly IProfileService _profileService;
-        private readonly IAutentificationService _autentification;
 
-        public SignInViewModel(INavigationService navigationService,
-                               IAutorizationService autorization,
-                               IProfileService profileService,
-                               IAutentificationService autentification)
+        public SignInViewModel(
+            INavigationService navigationService,
+            IAutorizationService autorization,
+            IProfileService profileService)
+            : base(navigationService)
         {
-            _navigationService = navigationService;
             _autorization = autorization;
             _profileService = profileService;
-            _autentification = autentification;
         }
 
         #region -- Public properties --
@@ -54,47 +47,8 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _buttonEnabled, value);
         }
 
-        public ICommand SignInCommand => new Command(SignInUser);
-        public ICommand SignUpCommand => new Command(SignUpUser);
-
-        #endregion
-
-        #region -- Private helpers --        
-
-        private async void SignInUser()
-        {
-            _autorization.Authorizate(Email, Password);
-
-            if (_autorization.IsAutorized)
-            {
-                await _navigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(MainListView)}");
-            }
-            else
-            {
-                UserDialogs.Instance.Alert("Invalid email or password!", "Alert", "Ok");
-                Password = "";
-            }
-        }
-
-        async void SignUpUser()
-        {
-            await _navigationService.NavigateAsync($"{nameof(SignUpView)}");
-        }
-
-        private bool CanSignIn()
-        {
-            if (!String.IsNullOrEmpty(Email) && !String.IsNullOrEmpty(Password))
-            {
-                return true;
-            }
-            return false;
-        }
-
-        private async void MapPinLoad()
-        {
-            var _user = await _profileService.GetAllUserListAsync();
-            User = new ObservableCollection<UserModel>(_user);
-        }
+        public ICommand SignInCommand => new Command(OnSignInCommandAsync);
+        public ICommand SignUpCommand => new Command(OnSignUpCommandAsync);
 
         #endregion
 
@@ -104,10 +58,11 @@ namespace NotepadGps.ViewModel
         {
             base.OnPropertyChanged(args);
 
-            if (args.PropertyName == nameof(Email) ||
-                args.PropertyName == nameof(Password))
+            if (args.PropertyName == nameof(Email) || args.PropertyName == nameof(Password))
             {
-                if (CanSignIn())
+                var isNotEmpty = CanSignIn();
+
+                if (isNotEmpty)
                 {
                     ButtonEnabled = true;
                 }
@@ -118,9 +73,33 @@ namespace NotepadGps.ViewModel
             }
         }
 
-        public override void OnNavigatedTo(INavigationParameters parameters)
+        #endregion
+
+        #region -- Private helpers --        
+
+        private async void OnSignInCommandAsync()
         {
-            MapPinLoad();
+            var isAuthorized = await _autorization.TryToAuthorizeAsync(Email, Password);
+
+            if (isAuthorized)
+            {
+                await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(MainListView)}");
+            }
+            else
+            {
+                UserDialogs.Instance.Alert("Invalid email or password!", "Alert", "Ok");
+                Password = string.Empty;
+            }
+        }
+
+        private async void OnSignUpCommandAsync()
+        {
+            await NavigationService.NavigateAsync($"{nameof(SignUpView)}");
+        }
+
+        private bool CanSignIn()
+        {
+            return !string.IsNullOrWhiteSpace(Email) && !string.IsNullOrWhiteSpace(Password);
         }
 
         #endregion

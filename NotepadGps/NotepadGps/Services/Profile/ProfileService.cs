@@ -43,13 +43,20 @@ namespace NotepadGps.Services.Profile
         public async Task<List<UserModel>> GetUserListByIdAsync()
         {
             var users = new List<UserModel>();
-            var Id = _autentification.GetCurrentId;
+            //var Id = _autentification.CurentUserId;
             var list = await _repository.FindAsync<UserModel>(c => c.Id == Id);
             if (list.Count > 0)
             {
                 users.AddRange(list);
             }
             return users;
+        }
+
+        public async Task<UserModel> GetUserByIdAsync(int id)
+        {
+            //TODO: get user by id
+
+            return new UserModel();
         }
 
         public async Task SaveUserAsync(UserModel user)
