@@ -40,7 +40,15 @@ namespace NotepadGps.Services.Autorization
             return isAuthorized;
         }
 
-        //TODO: getauthorizeduser method
+        public int GetAutorizedUserId
+        {
+            get => _settingsService.CurrentUser;
+        }
+
+        public void Unautorize()
+        { 
+           _settingsService.CurrentUser = -1;
+        }
 
         #endregion
     }

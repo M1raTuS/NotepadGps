@@ -1,12 +1,13 @@
 ﻿using NotepadGps.Models;
+using NotepadGps.Resource;
+using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Map;
 using NotepadGps.View;
 using Prism.Navigation;
-using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -14,30 +15,31 @@ namespace NotepadGps.ViewModel
 {
     public class ListPageViewModel : BaseViewModel
     {
+        private const string ImgEmptyStar = "EmptyStar.png";
+        private const string ImgFullStar = "FullStar.png";
+
         private readonly IMapPinService _mapPinService;
+        private readonly IAutorizationService _autorizationService;
 
         public ListPageViewModel(
             INavigationService navigationService,
-            IMapPinService mapPinService)
+            IMapPinService mapPinService,
+            IAutorizationService autorizationService)
             : base(navigationService)
         {
             _mapPinService = mapPinService;
+            _autorizationService = autorizationService;
+
+            MapPinLoadAsync();
         }
 
         #region -- Public properties --
 
-        private ObservableCollection<MapPinModel> _mapPins;
-        public ObservableCollection<MapPinModel> MapPins
+        private ObservableCollection<MapPinModel> mapPin;
+        public ObservableCollection<MapPinModel> MapPin
         {
-            get => _mapPins;
-            set => SetProperty(ref _mapPins, value);
-        }
-
-        private ObservableCollection<MapPinModel> _selectedItem;
-        public ObservableCollection<MapPinModel> SelectedItem //TODO: remove
-        {
-            get => _selectedItem;
-            set => SetProperty(ref _selectedItem, value);
+            get => mapPin;
+            set => SetProperty(ref mapPin, value);
         }
 
         private bool _labelVisible;
@@ -54,29 +56,29 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _searchPin, value);
         }
 
-        private bool _chosen;
-        public bool Chosen //TODO: is
+        private bool _isChosen;
+        public bool IsChosen
         {
             get => _labelVisible;
-            set => SetProperty(ref _chosen, value);
+            set => SetProperty(ref _isChosen, value);
         }
 
-        public ICommand AddMapPinFloatingButtonCommand => new Command(AddMapPinFloatingButton);
-        public ICommand SelectedCommand => new Command(SelectedPin); //TODO: OnCommandNameAsync
-        public ICommand EditContext => new Command(EditContextMenu);
-        public ICommand DeleteContext => new Command(DeleteContextMenu);
-        public ICommand CheckedPinCommand => new Command<MapPinModel>(OnCheckedPinCommand);
+        public ICommand AddMapPinFloatingButtonCommand => new Command(AddMapPinFloatingButtonAsync);
+        public ICommand SelectedCommand => new Command(OnSelectedCommandAsync);
+        public ICommand EditContext => new Command(EditContextMenuAsync);
+        public ICommand DeleteContext => new Command(DeleteContextMenuAsync);
+        public ICommand CheckedPinCommand => new Command<MapPinModel>(OnCheckedPinCommandAsync);
 
         #endregion
 
         #region -- Private helpers --        
 
-        private async void AddMapPinFloatingButton()
+        private async void AddMapPinFloatingButtonAsync()
         {
             await NavigationService.NavigateAsync(nameof(AddEditMapPinView));
         }
 
-        private async void SelectedPin(object pin)
+        private async void OnSelectedCommandAsync(object pin)
         {
             var nav = new NavigationParameters();
             nav.Add(nameof(MapPinModel), (MapPinModel)pin);
@@ -84,7 +86,7 @@ namespace NotepadGps.ViewModel
             await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/MainListView?selectedTab=MapsPage", nav);
         }
 
-        private async void EditContextMenu(object obj)
+        private async void EditContextMenuAsync(object obj)
         {
             var nav = new NavigationParameters();
             nav.Add(nameof(MapPinModel), (MapPinModel)obj);
@@ -92,45 +94,48 @@ namespace NotepadGps.ViewModel
             await NavigationService.NavigateAsync(nameof(AddEditMapPinView), nav, false, true);
         }
 
-        private async void DeleteContextMenu(object obj)
+        private async void DeleteContextMenuAsync(object obj)
         {
-            if (await Application.Current.MainPage.DisplayAlert("Alert", "Подтверждаете ли вы удаление?", "Ok", "Cancel"))//TODO: remove
+            bool del = await Application.Current.MainPage.DisplayAlert(StringResource.Alert, StringResource.DeleteAccept, StringResource.Ok, StringResource.Cancel);
+
+            if (del)
             {
                 await _mapPinService.DeleteMapPinAsync((MapPinModel)obj);
 
-                MapPinLoad();
+                await MapPinLoadAsync();
             }
         }
 
-        private async void OnCheckedPinCommand(MapPinModel mapPin)
+        private async void OnCheckedPinCommandAsync(MapPinModel mapPin)
         {
-            if (mapPin.Chosen)
+            if (mapPin.IsChosen)
             {
-                mapPin.ImgPath = "EmptyStar.png"; //TODO: constants
-                mapPin.Chosen = false;
+                mapPin.ImgPath = ImgEmptyStar;
+                mapPin.IsChosen = false;
             }
             else
             {
-                mapPin.ImgPath = "FullStar.png";
-                mapPin.Chosen = true;
+                mapPin.ImgPath = ImgFullStar;
+                mapPin.IsChosen = true;
             }
 
             await _mapPinService.UpdateMapPinAsync(mapPin);
 
-            MapPinLoad();
+            await MapPinLoadAsync();
         }
 
-        private void MapPinLoad()
+        private async Task<ObservableCollection<MapPinModel>> MapPinLoadAsync()
         {
-            var mapPin = _mapPinService.GetMapPinListById();
+            var mapPin = await _mapPinService.GetMapPinListByIdAsync(_autorizationService.GetAutorizedUserId);
             MapPin = new ObservableCollection<MapPinModel>(mapPin);
+            return MapPin;
         }
 
         #endregion
 
         #region -- Overrides --
 
-        protected override void OnPropertyChanged(PropertyChangedEventArgs args)
+        protected async override void OnPropertyChanged(PropertyChangedEventArgs args)
         {
             base.OnPropertyChanged(args);
             if (args.PropertyName == nameof(MapPin))
@@ -145,34 +150,22 @@ namespace NotepadGps.ViewModel
 
             if (args.PropertyName == nameof(SearchPin))
             {
-                MapPinLoad();
+                await MapPinLoadAsync();
 
                 if (!(SearchPin.Length == 0 || string.IsNullOrEmpty(SearchPin)))
                 {
-                    try //TODO: to service
-                    {
-                        var pin = MapPin.Where(x => x.Title.ToLower().Contains(SearchPin.ToLower()) ||
-                        x.Latitude.ToString().ToLower().Contains(SearchPin.ToLower()) ||
-                        x.Longitude.ToString().ToLower().Contains(SearchPin.ToLower()) ||
-                        x.Description.ToLower().Contains(SearchPin.ToLower()));
-                        MapPin = new ObservableCollection<MapPinModel>(pin);
-                    }
-                    catch (Exception e)
-                    {
-                        Debug.WriteLine(e);
-                    }
+                    var pin = MapPin.Where(x => x.Title.ToLower().Contains(SearchPin.ToLower()) || //TODO: to service
+                    x.Latitude.ToString().ToLower().Contains(SearchPin.ToLower()) ||
+                    x.Longitude.ToString().ToLower().Contains(SearchPin.ToLower()) ||
+                    x.Description.ToLower().Contains(SearchPin.ToLower()));
+                    MapPin = new ObservableCollection<MapPinModel>(pin);
                 }
             }
         }
 
-        public override void Initialize(INavigationParameters parameters)
+        public async override void OnNavigatedTo(INavigationParameters parameters)
         {
-            MapPinLoad(); //TODO: rework
-        }
-
-        public override void OnNavigatedTo(INavigationParameters parameters)
-        {
-            MapPinLoad();
+            await MapPinLoadAsync();
         }
 
         #endregion

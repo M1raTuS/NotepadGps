@@ -8,56 +8,51 @@
     <Grid>
         
         <Frame Opacity="0.85" 
-              Grid.Column="0" 
+               Grid.Column="0" 
                Grid.Row="0"  
-              VerticalOptions="End" 
-              HorizontalOptions="Center"
-              HeightRequest="300"
-              WidthRequest="300"
-              CornerRadius="20">
+               VerticalOptions="End" 
+               HorizontalOptions="Center"
+               HeightRequest="300"
+               WidthRequest="300"
+               CornerRadius="20">
+            
             <Grid>
                 
-                <Label Grid.Row="0" 
-                       HorizontalOptions="Start" 
-                       Text="Label"/>
-
                 <Label Grid.Row="0"
-                       HorizontalOptions="End"
+                       HorizontalOptions="Start"
+                       FontAttributes="Bold"
+                       FontSize="20"
+                       Grid.ColumnSpan="2"
                        Text="{Binding Title}" />
 
                 <Label Grid.Row="1"
-                       HorizontalOptions="Start"
-                       Text="Latitude" />
-
-                <Label Grid.Row="1"
-                       HorizontalOptions="End" 
+                       HorizontalOptions="Start" 
+                       Grid.Column="0"
                        Text="{Binding Latitude}" />
-
-                <Label Grid.Row="2"
-                       HorizontalOptions="Start"
-                       Text="Longitude"/>
-
-                <Label Grid.Row="2"
-                       HorizontalOptions="End" 
+                
+                <Label Grid.Row="1"
+                       HorizontalOptions="Start" 
+                       Grid.Column="1"
                        Text="{Binding Longitude}" />
 
-                <Label Grid.Row="3" 
+                <Label Grid.Row="2"
                        HorizontalOptions="Start"
-                       Text="Description"/>
-
-                <Label Grid.Row="3"
-                       HorizontalOptions="End"
+                       Grid.ColumnSpan="2"
                        Text="{Binding Description}" />
+                
                 <Image Source="NoImage.jpg"
-                                       HeightRequest="100"
-                                       WidthRequest="300"
-                       Grid.Row="4"
+                       HeightRequest="100"
+                       WidthRequest="300"
+                       Grid.Row="3"
                        Grid.RowSpan="2"
-                       IsVisible="{Binding ImgVisible}"/>
+                       Grid.ColumnSpan="2"
+                       IsVisible="{Binding IsImgVisible}"/>
 
                 <CarouselView ItemsSource="{Binding ImageList}"
-                              Grid.Row="4"
-                              Grid.RowSpan="2">
+                              Grid.Row="3"
+                              Grid.RowSpan="2"
+                              Grid.ColumnSpan="2"
+                              IsVisible="{Binding IsCarouselVisible}">
                     
                     <CarouselView.ItemTemplate>
                         
@@ -83,14 +78,26 @@
                     
                 </CarouselView>
                 
-                <Button Grid.Row="6"
+                <Button Grid.Row="5"
+                        Grid.Column="0"
                         Command="{Binding ImageCommand}"
                         Text="Add picture"
                         CornerRadius="20"/>
+
+                <Button Grid.Row="5"
+                        Grid.Column="1"
+                        Command="{Binding NotifyCommand}"
+                        Text="Add notify"
+                        CornerRadius="20"/>
+                
             </Grid>
+            
         </Frame>
+        
         <Grid.GestureRecognizers>
+            
             <TapGestureRecognizer Command="{Binding TapCommand}"/>
+            
         </Grid.GestureRecognizers>
         
     </Grid>

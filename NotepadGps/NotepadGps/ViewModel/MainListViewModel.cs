@@ -1,4 +1,4 @@
-﻿using NotepadGps.Services.Settings;
+﻿using NotepadGps.Services.Autorization;
 using NotepadGps.View;
 using Prism.Navigation;
 using System.Windows.Input;
@@ -9,15 +9,15 @@ namespace NotepadGps.ViewModel
     public class MainListViewModel : BaseViewModel
     {
         private readonly INavigationService _navigationService;
-        private readonly ISettingsService _settingsService;
+        private readonly IAutorizationService _autorizationService;
 
         public MainListViewModel(
             INavigationService navigationService,
-            ISettingsService settingsService)
+            IAutorizationService autorizationService)
             : base(navigationService)
         {
             _navigationService = navigationService;
-            _settingsService = settingsService;
+            _autorizationService = autorizationService;
         }
 
         #region -- Private helpers --        
@@ -26,7 +26,7 @@ namespace NotepadGps.ViewModel
 
         private async void OnLogOutCommandAsync()
         {
-            _settingsService.CurrentUser = -1; //TODO: to authorization service
+            _autorizationService.Unautorize();
             await _navigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(SignInView)}");
         }
 

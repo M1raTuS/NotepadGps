@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotepadGps.View.ListPageView"
+             Title="ListPage"
+             xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+             xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             mvvm:ViewModelLocator.AutowireViewModel="True">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                
+                <SearchBar TextColor="#FF464859" 
+                           FontSize="16" 
+                           PlaceholderColor="#646b7a" 
+                           Placeholder="Search..." 
+                           Grid.Row="0"
+                           Text="{Binding SearchPin}"/>
+
+                <ListView x:Name="MapPinListView"
+                          ItemsSource="{Binding MapPin}"
+                          HasUnevenRows="True"
+                          SelectionMode="None"
+                          Grid.Row="1">
+                    <ListView.Behaviors>
+                        <b:EventToCommandBehavior EventName="ItemTapped"
+                                                  Command="{Binding SelectedCommand}"
+                                                  EventArgsParameterPath="Item" />
+                    </ListView.Behaviors>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.ContextActions>
+                                    <MenuItem Text="Edit"
+                                              Command="{Binding Path=BindingContext.EditContext, Source={Reference MapPinListView}}"
+                                              CommandParameter="{Binding .}"/>
+                                    <MenuItem Text="Delete"
+                                              Command="{Binding Path=BindingContext.DeleteContext, Source={Reference MapPinListView}}"
+                                              CommandParameter="{Binding .}"
+                                              IsDestructive="True"/>
+                                </ViewCell.ContextActions>
+                                <ViewCell.View>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Grid HeightRequest="100"
+                                              WidthRequest="100">
+                                            <ImageButton Source="{Binding ImgPath}"
+                                                         BackgroundColor="Transparent">
+                                                <ImageButton.Behaviors>
+                                                    <b:EventToCommandBehavior EventName="Clicked"
+                                                                              Command="{Binding  Path=BindingContext.CheckedPinCommand, Source={Reference MapPinListView}}"
+                                                                              CommandParameter="{Binding .}"/>
+                                                </ImageButton.Behaviors>
+                                            </ImageButton>
+                                        </Grid>
+                                        <StackLayout VerticalOptions="Center" 
+                                                     Margin="10,10">
+                                            <Label Text="{Binding Title}" 
+                                                   FontSize="Medium" />
+                                            <Label Text="{Binding Latitude}" 
+                                                   FontSize="Medium" />
+                                            <Label Text="{Binding Longitude}" 
+                                                   FontSize="Medium" />
+                                            <Label Text="{Binding Description}" 
+                                                   FontSize="Medium" />
+                                        </StackLayout>
+                                    </StackLayout>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <Label Text="NoMapPins" 
+                       IsVisible="{Binding LabelVisible}"
+                       FontSize="30" 
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="Red"
+                       Grid.Row="1"/>
+
+                <Button HorizontalOptions="End"
+                        VerticalOptions="End"
+                        Command="{Binding AddMapPinFloatingButtonCommand}" 
+                        CornerRadius="100"
+                        BorderWidth="10"
+                        Padding="0 , 32"
+                        Margin="30,30"
+                        BorderColor="Blue"
+                        BackgroundColor="Red"
+                        Text="Add"
+                        Grid.Row="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

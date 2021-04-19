@@ -14,15 +14,15 @@ using Xamarin.Forms;
 
 namespace NotepadGps
 {
-    public partial class App : PrismApplication
+    public partial class CalendarHelper : PrismApplication
     {
 
-        public App() { }
+        public CalendarHelper() { }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             //Services
-            containerRegistry.RegisterInstance<IRepository>(Container.Resolve<Repository>());
+            containerRegistry.RegisterInstance<IRepositoryService>(Container.Resolve<RepositoryService>());
             containerRegistry.RegisterInstance<ISettingsService>(Container.Resolve<SettingsService>());
             containerRegistry.RegisterInstance<IAutentificationService>(Container.Resolve<AutentificationService>());
             containerRegistry.RegisterInstance<IProfileService>(Container.Resolve<ProfileService>());
@@ -35,10 +35,11 @@ namespace NotepadGps
             containerRegistry.RegisterForNavigation<SignInView, SignInViewModel>();
             containerRegistry.RegisterForNavigation<SignUpView, SignUpViewModel>();
             containerRegistry.RegisterForNavigation<MainListView, MainListViewModel>();
-            containerRegistry.RegisterForNavigation<MapsPage, MapsPageViewModel>();
-            containerRegistry.RegisterForNavigation<ListPage, ListPageViewModel>();
+            containerRegistry.RegisterForNavigation<MapsPageView, MapsPageViewModel>();
+            containerRegistry.RegisterForNavigation<ListPageView, ListPageViewModel>();
             containerRegistry.RegisterForNavigation<AddEditMapPinView, AddEditMapPinViewModel>();
             containerRegistry.RegisterForNavigation<PopUpView, PopUpViewModel>();
+            containerRegistry.RegisterForNavigation<NotifyPageView, NotifyViewModel>();
 
             //Packages
             containerRegistry.RegisterInstance(CrossMedia.Current); //TODO: register all packages

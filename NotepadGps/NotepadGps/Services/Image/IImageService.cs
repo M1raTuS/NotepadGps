@@ -6,7 +6,8 @@ namespace NotepadGps.Services.Image
 {
     public interface IImageService
     {
-        List<ImageModel> GetImageListById();
+        Task<List<ImageModel>> GetImageListByIdAsync(int id);
         Task SaveMapPinAsync(ImageModel imageModel);
+        Task<List<ImageModel>> FindImgAsync(string lat, string lon);
     }
 }

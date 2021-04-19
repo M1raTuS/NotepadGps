@@ -22,9 +22,9 @@ namespace NotepadGps.iOS
             Xamarin.FormsGoogleMaps.Init("AIzaSyAf7rljVibHW7F1neBavieHa9UZ5t3Co5s");
 
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+            LoadApplication(new CalendarHelper());
             //Add
-            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(); LoadApplication(new App());
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(); LoadApplication(new CalendarHelper());
 
             return base.FinishedLaunching(app, options);
         }

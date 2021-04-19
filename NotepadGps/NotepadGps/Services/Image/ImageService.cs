@@ -1,5 +1,4 @@
 ﻿using NotepadGps.Models;
-using NotepadGps.Services.Autentification;
 using NotepadGps.Services.Repository;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -8,31 +7,50 @@ namespace NotepadGps.Services.Image
 {
     public class ImageService : IImageService
     {
-        private readonly IRepository _repository;
-        private readonly IAutentificationService _autentification;
+        private readonly IRepositoryService _repositoryService;
 
-        public ImageService(IRepository repository,
-                            IAutentificationService autentification)
+        public ImageService(
+            IRepositoryService repositoryService)
         {
-            _repository = repository;
-            _autentification = autentification;
+            _repositoryService = repositoryService;
         }
-        public new List<ImageModel> GetImageListById()
+
+        #region -- IImageService implementation --
+
+        public async Task<List<ImageModel>> GetImageListByIdAsync(int id)
         {
             var image = new List<ImageModel>();
-            // var Id = _autentification.CurentUserId;
-            var id = 1; //TODO: rework
-            var list =  _repository.Find<ImageModel>(c => c.UserId == id);
+            var list = await _repositoryService.FindAsync<ImageModel>(c => c.UserId == id);
+
             if (list.Count > 0)
             {
                 image.AddRange(list);
             }
+
             return image;
         }
 
         public async Task SaveMapPinAsync(ImageModel imageModel)
         {
-            await _repository.InsertAsync(imageModel);
+            await _repositoryService.InsertAsync(imageModel);
         }
+
+        public async Task<List<ImageModel>> FindImgAsync(string lat, string lon)
+        {
+            var img = new List<ImageModel>();
+            var list = await _repositoryService.FindAsync<ImageModel>(
+                x => x.Latitude == lat && 
+                     x.Longitude == lon);
+
+            if (list.Count > 0)
+            {
+                img.AddRange(list);
+            }
+
+            return img;
+        }
+
+        #endregion
+
     }
 }

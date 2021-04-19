@@ -6,9 +6,9 @@ namespace NotepadGps.Services.Autentification
 {
     public class AutentificationService : IAutentificationService
     {
-        private readonly IRepository _repository;
+        private readonly IRepositoryService _repository;
 
-        public AutentificationService(IRepository repository)
+        public AutentificationService(IRepositoryService repository)
         {
             _repository = repository;
         }
@@ -17,18 +17,18 @@ namespace NotepadGps.Services.Autentification
 
         public async Task<bool> CheckEmailAsync(string email)
         {
-            var isUserExist = false;
+            var isEmailExist = false;
             var users = await _repository.GetAllAsync<UserModel>();
 
             foreach (var item in users)
             {
                 if (item.Email == email.ToString())
                 {
-                    isUserExist = true;
+                    isEmailExist = true;
                 }
             }
 
-            return isUserExist;
+            return isEmailExist;
         }
 
         #endregion

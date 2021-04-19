@@ -1,11 +1,11 @@
 ﻿using Acr.UserDialogs;
 using NotepadGps.Models;
+using NotepadGps.Resource;
 using NotepadGps.Services.Autentification;
 using NotepadGps.Services.Profile;
 using NotepadGps.Services.Validation;
 using Prism.Navigation;
 using System;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -19,13 +19,11 @@ namespace NotepadGps.ViewModel
 
         public SignUpViewModel(
             INavigationService navigationService,
-            IProfileService profile,
-            IAutentificationService autentification)
-            : base(navigationService)//TODO: rename
+            IProfileService profileService,
+            IAutentificationService autentificationService) : base(navigationService)
         {
-            _navigationService = navigationService;
-            _profileService = profile;
-            _autentificationService = autentification;
+            _profileService = profileService;
+            _autentificationService = autentificationService;
         }
 
         #region -- Public properties --
@@ -62,51 +60,6 @@ namespace NotepadGps.ViewModel
 
         #endregion
 
-        #region -- Private helpers --     
-
-        private async void OnAddCommandAsync(object obj)
-        {
-            var NamelValidation = Validator.StringValid(Name, Validator.Name);
-            var EmailValidation = Validator.StringValid(Email, Validator.Email);
-            var PasswordValidation = Validator.StringValid(Password, Validator.Password);
-            var isEmailExist = await _autentificationService.CheckEmailAsync(Email);
-
-            if (!NamelValidation)
-            {
-                UserDialogs.Instance.Alert("Имя должно быть не менее 4 и не более 16 символов. Имя не должно начинаться с цифер", "Alert", "Ok"); //TODO: to resources
-            }
-            else if (!EmailValidation)
-            {
-                UserDialogs.Instance.Alert("Введите корректный почтовый адрес", "Alert", "Ok");
-            }
-            else if (!PasswordValidation)
-            {
-                UserDialogs.Instance.Alert("Пароль должен быть не менее 8 и не более 16 символов. Пароль должен содержать минимум одну заглавную букву, одну строчную букву и одну цифру", "Alert", "Ok");
-            }
-            else if (isEmailExist)
-            {
-                UserDialogs.Instance.Alert("Эта почта уже занята", "Alert", "Ok");
-            }
-            else
-            {
-                var user = new UserModel()
-                {
-                    Name = Name,
-                    Email = Email,
-                    Password = Password
-                };
-
-                await _profileService.SaveUserAsync(user);
-                await NavigationService.GoBackAsync();
-            }
-        }
-
-        private bool CanSignIn()
-        {
-            return !String.IsNullOrEmpty(Name) && !String.IsNullOrEmpty(Password) && !String.IsNullOrEmpty(Email); //TODO: isnullorwhitespace
-        }
-
-        #endregion
 
         #region -- Overrides --
 
@@ -118,17 +71,57 @@ namespace NotepadGps.ViewModel
                 args.PropertyName == nameof(Password) ||
                 args.PropertyName == nameof(Email))
             {
-                if (CanSignIn()) //TODO: variable
-                {
-                    ButtonEnabled = true;
-                }
-                else
-                {
-                    ButtonEnabled = false;
-                }
+                ButtonEnabled = CanSignIn();
             }
         }
 
         #endregion
+
+        #region -- Private helpers --     
+
+        private async void OnAddCommandAsync(object obj)
+        {
+            var NamelValidation = Validator.StringValid(Name, Validator.Name);
+            var EmailValidation = Validator.StringValid(Email, Validator.Email);
+            var PasswordValidation = Validator.StringValid(Password, Validator.Password);
+            var isEmailExist = await _autentificationService.CheckEmailAsync(Email);
+
+            //if (!NamelValidation)
+            //{
+            //    UserDialogs.Instance.Alert(StringResource.NameAlert, StringResource.Alert, StringResource.Ok);
+            //}
+            //else if (!EmailValidation)
+            //{
+            //    UserDialogs.Instance.Alert(StringResource.MailAlert, StringResource.Alert, StringResource.Ok);
+            //}
+            //else if (!PasswordValidation)
+            //{
+            //    UserDialogs.Instance.Alert(StringResource.PasswordAlert, StringResource.Alert, StringResource.Ok);
+            //}
+            //else if (isEmailExist)
+            //{
+            //    UserDialogs.Instance.Alert(StringResource.MailConflict,StringResource.Alert,StringResource.Ok);
+            //}
+            //else
+            //{
+            var user = new UserModel()
+                {
+                    Name = Name,
+                    Email = Email,
+                    Password = Password
+                };
+                
+                await _profileService.SaveUserAsync(user);
+                await NavigationService.GoBackAsync();
+            //}
+        }
+
+        private bool CanSignIn()
+        {
+            return !string.IsNullOrWhiteSpace(Name) && !string.IsNullOrWhiteSpace(Password) && !string.IsNullOrWhiteSpace(Email); 
+        }
+
+        #endregion
+
     }
 }

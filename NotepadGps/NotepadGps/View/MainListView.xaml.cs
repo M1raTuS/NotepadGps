@@ -6,7 +6,8 @@ namespace NotepadGps.View
     {
         public MainListView()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
     }
 }
+

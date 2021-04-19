@@ -2,8 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:num="clr-namespace:NotepadGps.Behaviour;assembly=NotepadGps"
-             xmlns:gmap="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
-             xmlns:behaviours="clr-namespace:NotepadGps.Behaviour;assembly=NotepadGps"
+             xmlns:behaviours="clr-namespace:NotepadGps.Behaviour;assembly=NotepadGps" 
+             xmlns:maps="clr-namespace:NotepadGps.Controls"
              x:Class="NotepadGps.View.AddEditMapPinView"
              Title="Edit">
 
@@ -44,22 +44,22 @@
                 MaxLength="120"
                 Text="{Binding Description}"/>
 
-
-        <gmap:Map Grid.Row="5" 
-                  Grid.RowSpan="6"
-                  Grid.Column="1"
-                  x:Name="map"
-                  MapType="Street" 
-                  HasZoomEnabled="True" 
-                  HasScrollEnabled="True" 
-                  IsShowingUser="False"
-                  MyLocationEnabled="False">
-            <gmap:Map.Behaviors>
+        <maps:CustomMap Grid.Row="5" 
+                        Grid.RowSpan="6"
+                        Grid.Column="1"
+                        MapType="Street" 
+                        HasZoomEnabled="True" 
+                        HasScrollEnabled="True" 
+                        IsShowingUser="False"
+                        MyLocationEnabled="False"
+                        PinsSource="{Binding MapPin}">
+            <maps:CustomMap.Behaviors>
                 <behaviours:EventToCommandBehavior EventName="MapClicked" 
                                                    Command="{Binding MapClickedCommand}"
                                                    EventArgsParameterPath="Point"/>
-            </gmap:Map.Behaviors>
-        </gmap:Map>
+            </maps:CustomMap.Behaviors>
+
+        </maps:CustomMap>
 
         <Button Grid.Row="11"
                 BackgroundColor="Red"

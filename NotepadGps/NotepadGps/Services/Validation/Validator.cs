@@ -23,7 +23,7 @@ namespace NotepadGps.Services.Validation
 
         public static bool StringValid(string input, Validator valid)
         {
-            return !String.IsNullOrEmpty(input) &&
+            return !string.IsNullOrEmpty(input) &&
                 Regex.IsMatch(input, valid.Pattern);
         }
 

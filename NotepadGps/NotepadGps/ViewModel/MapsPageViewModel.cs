@@ -1,4 +1,7 @@
-﻿using NotepadGps.Models;
+﻿using Acr.UserDialogs;
+using NotepadGps.Models;
+using NotepadGps.Resource;
+using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Map;
 using NotepadGps.Services.Settings;
 using NotepadGps.View;
@@ -21,15 +24,18 @@ namespace NotepadGps.ViewModel
     {
         private readonly IMapPinService _mapPinService;
         private readonly ISettingsService _settingsService;
+        private readonly IAutorizationService _autorizationService;
 
         public MapsPageViewModel(
             INavigationService navigationService,
             IMapPinService mapPinService,
-            ISettingsService settingsService)
+            ISettingsService settingsService,
+            IAutorizationService autorizationService)
             : base(navigationService)
         {
             _mapPinService = mapPinService;
             _settingsService = settingsService;
+            _autorizationService = autorizationService;
         }
 
         #region -- Public properties --
@@ -41,11 +47,18 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _currentCameraPosition, value);
         }
 
-        private ObservableCollection<MapPinModel> _mapPins;
-        public ObservableCollection<MapPinModel> MapPins
+        private ObservableCollection<MapPinModel> mapPin;
+        public ObservableCollection<MapPinModel> MapPin
         {
-            get => _mapPins;
-            set => SetProperty(ref _mapPins, value);
+            get => mapPin;
+            set => SetProperty(ref mapPin, value);
+        }
+
+        private ObservableCollection<MapPinModel> _pinSearchList;
+        public ObservableCollection<MapPinModel> PinSearchList
+        {
+            get => _pinSearchList;
+            set => SetProperty(ref _pinSearchList, value);
         }
 
         private MapSpan _mapSpan;
@@ -62,100 +75,24 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _searchText, value);
         }
 
-        private bool _listViewIsVisible;
-        public bool ListViewIsVisible //TODo: is
+        private bool _isListViewIsVisible;
+        public bool IsListViewIsVisible
         {
-            get => _listViewIsVisible;
-            set => SetProperty(ref _listViewIsVisible, value);
+            get => _isListViewIsVisible;
+            set => SetProperty(ref _isListViewIsVisible, value);
         }
 
-        private int _rowHeight;
-        public int RowHeight //TODO: remove
+        private int _listViewHeight;
+        public int ListViewHeight
         {
-            get => _rowHeight;
-            set => SetProperty(ref _rowHeight, value);
+            get => _listViewHeight;
+            set => SetProperty(ref _listViewHeight, value);
         }
 
-        public ICommand FindMyLocationCommand => new Command(FindMyLocationAsync);
-        public ICommand PinClickedCommand => new Command<Pin>(OnPinClickedCommand);
+        public ICommand FindMyLocationCommand => new Command(OnFindMyLocationAsync);
+        public ICommand PinClickedCommand => new Command<Pin>(OnPinClickedCommandAsync);
         public ICommand SelectedListViewCommand => new Command<MapPinModel>(OnSelectedListViewCommand);
         public ICommand MapClickedCommand => new Command(OnMapClickedCommand);
-
-        #endregion
-
-        #region -- Private helpers --        
-
-        private async Task MapPinLoadAsync()
-        {
-            var mapPin = await _mapPinService.GetMapPinListByIdAsync();
-
-            MapPin = new ObservableCollection<MapPinModel>(mapPin);
-        }
-
-        private async void FindMyLocationAsync()
-        {
-            try
-            {
-                var location = await Geolocation.GetLastKnownLocationAsync();
-                if (location == null)
-                {
-                    location = await Geolocation.GetLocationAsync(new GeolocationRequest
-                    {
-                        DesiredAccuracy = GeolocationAccuracy.Medium,
-                        Timeout = TimeSpan.FromSeconds(10)
-                    });
-                    MapSpan = new MapSpan(new Position(location.Latitude, location.Longitude), 1, 1);
-                    CurrentCameraPosition = new CameraPosition(new Position(location.Latitude, location.Longitude), 18.0);
-                }
-                MapSpan = new MapSpan(new Position(location.Latitude, location.Longitude), 1, 1);
-                CurrentCameraPosition = new CameraPosition(new Position(location.Latitude, location.Longitude), 18.0);
-            }
-            catch (Exception e)
-            {
-                Debug.WriteLine(e.Message);
-            }
-        }
-
-        private async void OnPinClickedCommand(Pin pin)//TODO: async
-        {
-            PinsCheck();
-
-            ListViewIsVisible = false;
-            var nav = new NavigationParameters();
-            nav.Add(nameof(Pin), pin);
-
-            await NavigationService.NavigateAsync(nameof(PopUpView), nav, true, true);
-        }
-
-        private void PinsCheck()//TODO: rename
-        {
-            if (MapPins != null)
-            {
-                MapPins.Clear();
-            }
-        }
-
-        private void OnMapClickedCommand()
-        {
-            PinsCheck();
-            ListViewIsVisible = false;
-        }
-
-        private void OnSelectedListViewCommand(MapPinModel mapPin)
-        {
-            if (mapPin != null)
-            {
-                Pin pin = new Pin
-                {
-                    Label = mapPin.Description,
-                    Position = new Position(Convert.ToDouble(mapPin.Latitude), Convert.ToDouble(mapPin.Longitude))
-                };
-
-                CurrentCameraPosition = new CameraPosition(pin.Position, 15);
-                PinsCheck();
-                ListViewIsVisible = false;
-            }
-        }
 
         #endregion
 
@@ -178,32 +115,33 @@ namespace NotepadGps.ViewModel
             if (args.PropertyName == nameof(SearchText))
             {
                 await MapPinLoadAsync();
-                ListViewIsVisible = false;
-                RowHeight = 0;
 
-                if (!(SearchText.Length == 0 || String.IsNullOrEmpty(SearchText)))
+                IsListViewIsVisible = false;
+                ListViewHeight = 0;
+
+                if (!(SearchText.Length == 0 || string.IsNullOrEmpty(SearchText)))
                 {
-                    ListViewIsVisible = true;
+                    IsListViewIsVisible = true;
 
                     try
                     {
-                        MapPins = MapPin;
-                        var data = MapPins.Where(x => x.Title.ToLower().Contains(SearchText.ToLower()) || //TODO: to service
+                        PinSearchList = MapPin;
+                        var data = PinSearchList.Where(x => x.Title.ToLower().Contains(SearchText.ToLower()) || //TODO: to service
                         x.Latitude.ToString().ToLower().Contains(SearchText.ToLower()) ||
                         x.Longitude.ToString().ToLower().Contains(SearchText.ToLower()) ||
                         x.Description.ToLower().Contains(SearchText.ToLower()));
-                        MapPins = new ObservableCollection<MapPinModel>(data);
+                        PinSearchList = new ObservableCollection<MapPinModel>(data);
 
-                        switch (MapPins.Count) //TODO: remove
+                        switch (PinSearchList.Count)
                         {
                             case 1:
-                                RowHeight = 45;
+                                ListViewHeight = 45;
                                 break;
                             case 2:
-                                RowHeight = 90;
+                                ListViewHeight = 90;
                                 break; ;
                             default:
-                                RowHeight = 135;
+                                ListViewHeight = 135;
                                 break;
                         }
                     }
@@ -224,97 +162,107 @@ namespace NotepadGps.ViewModel
 
         #endregion
 
-        #region MyRegion
+        #region -- Private helpers --        
 
-        public ICommand SaveCommand => new Command(SaveLocalNotification);
-
-
-
-
-        //DateTime _selectedDate = DateTime.Today;
-        //public DateTime SelectedDate
-        //{
-        //    get => _selectedDate;
-        //    set
-        //    {
-        //        if (_selectedDate < DateTime.Now)
-        //        {
-        //            UserDialogs.Instance.Alert("Нельзя чтобы дата была меньше текущей даты", "Alert", "Ok");
-        //        }
-        //        else { SetProperty(ref _selectedDate, value); }
-        //    }
-        //}
-
-        //TimeSpan _selectedTime = DateTime.Now.TimeOfDay;
-        //public TimeSpan SelectedTime
-        //{
-        //    get => _selectedTime;
-        //    set => SetProperty(ref _selectedTime, value);
-        //}
-
-        //string _messageText;
-        //public string MessageText
-        //{
-        //    get => _messageText;
-        //    set => SetProperty(ref _messageText, value);
-        //}
-
-        private async void SaveLocalNotification()
+        private async Task<ObservableCollection<MapPinModel>> MapPinLoadAsync()
         {
-            var status = await CrossPermissions.Current.CheckPermissionStatusAsync<CalendarPermission>();
+            var mapPin = await _mapPinService.GetMapPinListByIdAsync(_autorizationService.GetAutorizedUserId);
+            MapPin = new ObservableCollection<MapPinModel>(mapPin);
+
+            return MapPin;
+        }
+
+        private async void OnFindMyLocationAsync()
+        {
+            var status = await CrossPermissions.Current.CheckPermissionStatusAsync<LocationPermission>();
+
             if (status != Plugin.Permissions.Abstractions.PermissionStatus.Granted)
             {
-                status = await CrossPermissions.Current.RequestPermissionAsync<CalendarPermission>();
+                status = await CrossPermissions.Current.RequestPermissionAsync<LocationPermission>();
 
                 if (status == Plugin.Permissions.Abstractions.PermissionStatus.Granted)
                 {
-                    await DependencyService.Get<NotepadGps.Services.Calendar.ICalendarService>().AddEventToCalendar();
+                    var location = await Geolocation.GetLastKnownLocationAsync();
+
+                    if (location == null)
+                    {
+                        location = await Geolocation.GetLocationAsync(new GeolocationRequest
+                        {
+                            DesiredAccuracy = GeolocationAccuracy.Medium,
+                            Timeout = TimeSpan.FromSeconds(10)
+                        });
+                        MapSpan = new MapSpan(new Position(location.Latitude, location.Longitude), 1, 1);
+                        CurrentCameraPosition = new CameraPosition(new Position(location.Latitude, location.Longitude), 18.0);
+                    }
+
+                    MapSpan = new MapSpan(new Position(location.Latitude, location.Longitude), 1, 1);
+                    CurrentCameraPosition = new CameraPosition(new Position(location.Latitude, location.Longitude), 18.0);
                 }
             }
             else
             {
-                await DependencyService.Get<NotepadGps.Services.Calendar.ICalendarService>().AddEventToCalendar();
+                var location = await Geolocation.GetLastKnownLocationAsync();
+
+                if (location == null)
+                {
+                    location = await Geolocation.GetLocationAsync(new GeolocationRequest
+                    {
+                        DesiredAccuracy = GeolocationAccuracy.Medium,
+                        Timeout = TimeSpan.FromSeconds(10)
+                    });
+                    MapSpan = new MapSpan(new Position(location.Latitude, location.Longitude), 1, 1);
+                    CurrentCameraPosition = new CameraPosition(new Position(location.Latitude, location.Longitude), 18.0);
+                }
+
+                MapSpan = new MapSpan(new Position(location.Latitude, location.Longitude), 1, 1);
+                CurrentCameraPosition = new CameraPosition(new Position(location.Latitude, location.Longitude), 18.0);
             }
-
-
-
-            //    var date = (SelectedDate.Date.Month.ToString("00") + "-" + SelectedDate.Date.Day.ToString("00") + "-" + SelectedDate.Date.Year.ToString());
-            //    var time = Convert.ToDateTime(SelectedTime.ToString()).ToString("HH:mm");
-            //    var dateTime = date + " " + time;
-            //    var selectedDateTime = DateTime.ParseExact(dateTime, "MM-dd-yyyy HH:mm", CultureInfo.InvariantCulture);
-            //    if (!string.IsNullOrEmpty(MessageText))
-            //    {
-            //        DependencyService.Get<ILocalNotificationService>().Cancel(0);
-            //        DependencyService.Get<ILocalNotificationService>().LocalNotification("Local Notification", MessageText, 0, selectedDateTime);
-            //        App.Current.MainPage.DisplayAlert("LocalNotificationDemo", "Notification details saved successfully ", "Ok");
-            //    }
-            //    else
-            //    {
-            //        App.Current.MainPage.DisplayAlert("LocalNotificationDemo", "Please enter meassage", "OK");
-            //    }
         }
 
-            //protected bool SetProperty<T>(ref T backingStore, T value, [CallerMemberName] string propertyName = "", Action onChanged = null)
-            //{
-            //    if (EqualityComparer<T>.Default.Equals(backingStore, value))
-            //    { return false; }
+        private async void OnPinClickedCommandAsync(Pin pin)
+        {
+            MapPinsCheck();
 
-            //    backingStore = value;
-            //    onChanged?.Invoke();
-            //    OnPropertyChanged(propertyName);
-            //    return true;
-            //}
+            IsListViewIsVisible = false;
 
-            //public event PropertyChangedEventHandler PropertyChanged;
-            //protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
-            //{
-            //    var changed = PropertyChanged;
-            //    if (changed == null)
-            //        return;
-            //    changed.Invoke(this, new PropertyChangedEventArgs(propertyName));
-            //}
+            var nav = new NavigationParameters();
+            nav.Add(nameof(Pin), pin);
+
+            await NavigationService.NavigateAsync(nameof(PopUpView), nav, true, true);
         }
-    #endregion
+
+        private void MapPinsCheck()
+        {
+            if (PinSearchList != null)
+            {
+                PinSearchList.Clear();
+            }
+        }
+
+        private void OnMapClickedCommand()
+        {
+            MapPinsCheck();
+            IsListViewIsVisible = false;
+        }
+
+        private void OnSelectedListViewCommand(MapPinModel mapPin)
+        {
+            if (mapPin != null)
+            {
+                Pin pin = new Pin
+                {
+                    Label = mapPin.Description,
+                    Position = new Position(Convert.ToDouble(mapPin.Latitude), Convert.ToDouble(mapPin.Longitude))
+                };
+
+                CurrentCameraPosition = new CameraPosition(pin.Position, 15);
+                MapPinsCheck();
+                IsListViewIsVisible = false;
+            }
+        }
+
+        #endregion
+    }
 }
 
 

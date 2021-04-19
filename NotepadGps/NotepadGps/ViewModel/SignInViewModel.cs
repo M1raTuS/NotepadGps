@@ -1,4 +1,5 @@
 ﻿using Acr.UserDialogs;
+using NotepadGps.Resource;
 using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Profile;
 using NotepadGps.View;
@@ -87,7 +88,7 @@ namespace NotepadGps.ViewModel
             }
             else
             {
-                UserDialogs.Instance.Alert("Invalid email or password!", "Alert", "Ok");
+                UserDialogs.Instance.Alert(StringResource.MailPasswordAlert, StringResource.Alert, StringResource.Ok);
                 Password = string.Empty;
             }
         }

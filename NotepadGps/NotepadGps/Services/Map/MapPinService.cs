@@ -1,5 +1,4 @@
 ﻿using NotepadGps.Models;
-using NotepadGps.Services.Autentification;
 using NotepadGps.Services.Repository;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -8,25 +7,24 @@ namespace NotepadGps.Services.Map
 {
     public class MapPinService : IMapPinService
     {
-        private readonly IRepository _repository;
-        private readonly IAutentificationService _autentification;
+        private readonly IRepositoryService _repository;
 
-        public MapPinService(IRepository repository,
-                             IAutentificationService autentification)
+        public MapPinService(
+            IRepositoryService repository)
         {
             _repository = repository;
-            _autentification = autentification;
         }
+
+        #region -- IMapPinService implementation --
 
         public async Task DeleteMapPinAsync(MapPinModel mapPin)
         {
             await _repository.DeleteAsync(mapPin);
         }
 
-        public async Task<List<MapPinModel>> GetMapPinListByIdAsync()
+        public async Task<List<MapPinModel>> GetMapPinListByIdAsync(int id)
         {
             var mapPin = new List<MapPinModel>();
-            var id = 1; //TODO: rework
             var list = await _repository.FindAsync<MapPinModel>(c => c.UserId == id);
 
             if (list.Count > 0)
@@ -37,15 +35,16 @@ namespace NotepadGps.Services.Map
             return mapPin;
         }
 
-        public List<MapPinModel> GetMapPinListById()
+        public List<MapPinModel> GetMapPinListById(int id)
         {
             var mapPin = new List<MapPinModel>();
-            var id = 1; //TODO: rework
             var list = _repository.Find<MapPinModel>(c => c.UserId == id);
+
             if (list.Count > 0)
             {
                 mapPin.AddRange(list);
             }
+
             return mapPin;
         }
 
@@ -58,5 +57,8 @@ namespace NotepadGps.Services.Map
         {
             await _repository.UpdateAsync(mapPin);
         }
+
+        #endregion
+
     }
 }

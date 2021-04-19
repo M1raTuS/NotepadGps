@@ -1,5 +1,6 @@
 ﻿using Acr.UserDialogs;
 using NotepadGps.Models;
+using NotepadGps.Resource;
 using NotepadGps.Services.Autentification;
 using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Map;
@@ -13,6 +14,8 @@ namespace NotepadGps.ViewModel
 {
     public class AddEditMapPinViewModel : BaseViewModel
     {
+        private const string imgString = "FullStar.png";
+
         private readonly IAutorizationService _autorization;
         private readonly IMapPinService _mapPinService;
         private readonly IAutentificationService _autentification;
@@ -22,7 +25,7 @@ namespace NotepadGps.ViewModel
             IAutorizationService autorization,
             IMapPinService mapPinService,
             IAutentificationService autentification)
-            : base (navigationService)
+            : base(navigationService)
         {
             _autorization = autorization;
             _mapPinService = mapPinService;
@@ -67,71 +70,8 @@ namespace NotepadGps.ViewModel
 
         }
 
-        public ICommand AddButtonCommand => new Command(SaveCommand);//TODO: ONCommandNameAsync
+        public ICommand AddButtonCommand => new Command(OnAddButtonCommandAsync);
         public ICommand MapClickedCommand => new Command<Position>(OnMapClickedCommand);
-
-        #endregion
-
-        #region -- Private helpers --        
-
-        private async void SaveCommand()
-        {
-            try
-            {
-                if (CanSave())//TODO: move up
-                {
-                    var mapPin = new MapPinModel()
-                    {
-                        Id = Id,
-                        UserId = _autentification.GetCurrentId, //TODO: rework
-                        Title = Title,
-                        Longitude = Convert.ToDouble(Longitude),
-                        Latitude = Convert.ToDouble(Latitude),
-                        Description = Description,
-                        Chosen = true,
-                        ImgPath = "FullStar.png"
-                    };
-                    if (Id > 0)
-                    {
-                        var nav = new NavigationParameters();
-                        nav.Add(nameof(MapPinModel), mapPin);
-
-                        await _mapPinService.UpdateMapPinAsync(mapPin);
-                        await NavigationService.GoBackAsync();
-                    }
-                    else
-                    {
-                        var nav = new NavigationParameters();
-                        nav.Add(nameof(MapPinModel), mapPin);
-
-                        await _mapPinService.SaveMapPinAsync(mapPin);
-                        await NavigationService.GoBackAsync();
-                    }
-                }
-                else
-                {
-                    UserDialogs.Instance.Alert("Заполните поля Title, Longitude, Latitude и Description", "Alert", "Ok");
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
-        }
-
-        private bool CanSave()
-        {
-            return !string.IsNullOrEmpty(Title) && !String.IsNullOrEmpty(Longitude) && !String.IsNullOrEmpty(Latitude) && !String.IsNullOrEmpty(Description);
-        }
-
-        private void OnMapClickedCommand(Position position)
-        {
-            Latitude = "";
-            Longitude = "";
-
-            Latitude = position.Latitude.ToString();
-            Longitude = position.Longitude.ToString();
-        }
 
         #endregion
 
@@ -150,5 +90,60 @@ namespace NotepadGps.ViewModel
         }
 
         #endregion
+
+        #region -- Private helpers --        
+
+        private async void OnAddButtonCommandAsync()
+        {
+            bool isCanSave = !string.IsNullOrWhiteSpace(Title) && !string.IsNullOrWhiteSpace(Longitude) && !string.IsNullOrWhiteSpace(Latitude) && !string.IsNullOrWhiteSpace(Description);
+
+            if (isCanSave)
+            {
+                var mapPin = new MapPinModel()
+                {
+                    Id = Id,
+                    UserId = _autorization.GetAutorizedUserId,
+                    Title = Title,
+                    Longitude = Convert.ToDouble(Longitude),
+                    Latitude = Convert.ToDouble(Latitude),
+                    Description = Description,
+                    IsChosen = true,
+                    ImgPath = imgString
+                };
+
+                if (Id > 0)
+                {
+                    var nav = new NavigationParameters();
+                    nav.Add(nameof(MapPinModel), mapPin);
+
+                    await _mapPinService.UpdateMapPinAsync(mapPin);
+                    await NavigationService.GoBackAsync();
+                }
+                else
+                {
+                    var nav = new NavigationParameters();
+                    nav.Add(nameof(MapPinModel), mapPin);
+
+                    await _mapPinService.SaveMapPinAsync(mapPin);
+                    await NavigationService.GoBackAsync();
+                }
+            }
+            else
+            {
+                UserDialogs.Instance.Alert(StringResource.FieldsAlert, StringResource.Alert, StringResource.Ok);
+            }
+        }
+
+        private void OnMapClickedCommand(Position position)
+        {
+            Latitude = "";
+            Longitude = "";
+
+            Latitude = position.Latitude.ToString();
+            Longitude = position.Longitude.ToString();
+        }
+
+        #endregion
+
     }
 }

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotepadGps.View.MapsPageView"    
+             Title="MapsPage"
+             xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
+             xmlns:maps="clr-namespace:NotepadGps.Controls" 
+             xmlns:behaviours="http://prismlibrary.com"
+             mvvm:ViewModelLocator.AutowireViewModel="True">
+
+    <Grid>
+        
+        <Grid Grid.Row="0">
+            
+            <Grid.RowDefinitions>
+                
+                <RowDefinition Height="50" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+                
+            </Grid.RowDefinitions>
+
+            <SearchBar TextColor="#FF464859" 
+                       FontSize="16" 
+                       PlaceholderColor="#646b7a" 
+                       CancelButtonColor="Blue"
+                       Placeholder="Search..." 
+                       Text="{Binding SearchText}">
+            </SearchBar>
+
+            <maps:CustomMap Grid.Row="1"
+                            Grid.RowSpan="2"
+                            MapType="Street" 
+                            HasZoomEnabled="True" 
+                            HasScrollEnabled="True" 
+                            IsShowingUser="True"
+                            MyLocationEnabled="True"
+                            PinsSource="{Binding MapPin}"
+                            MapSpan="{Binding MapSpan}"
+                            CurrentCameraPosition="{Binding CurrentCameraPosition}">
+                
+                <maps:CustomMap.Behaviors>
+                    
+                    <behaviours:EventToCommandBehavior EventName="PinClicked" 
+                                                       Command="{Binding PinClickedCommand}"
+                                                       EventArgsParameterPath="Pin"/>
+
+                    <behaviours:EventToCommandBehavior EventName="MapClicked" 
+                                                       Command="{Binding MapClickedCommand}"/>
+                    
+                </maps:CustomMap.Behaviors>
+                
+            </maps:CustomMap>
+
+            <ImageButton Grid.Row="2"
+                         CornerRadius="50" 
+                         HorizontalOptions="End" 
+                         VerticalOptions="Start"
+                         HeightRequest="30" 
+                         WidthRequest="30"
+                         Source="GPS.jpg"
+                         Margin="20,0"
+                         Command="{Binding FindMyLocationCommand}"/>
+
+            <ListView IsVisible="{Binding IsListViewIsVisible}"  
+                      BackgroundColor="Transparent"
+                      ItemsSource="{Binding MapPins}"
+                      Grid.Row="1"
+                      HeightRequest="{Binding ListViewHeight}">
+                
+                <ListView.ItemTemplate>
+                    
+                    <DataTemplate>
+                        
+                        <ViewCell>
+                            
+                            <Frame CornerRadius="5">
+                                
+                                <StackLayout BackgroundColor="White">
+                                    
+                                    <Label Text="{Binding Title}" 
+                                           FontSize="16" 
+                                           TextColor="#FF464859"
+                                           HorizontalOptions="Center"/>
+                                    
+                                </StackLayout>
+                                
+                            </Frame>
+                            
+                        </ViewCell>
+                        
+                    </DataTemplate>
+                    
+                </ListView.ItemTemplate>
+                
+                <ListView.Behaviors>
+                    
+                    <behaviours:EventToCommandBehavior EventName="ItemTapped" 
+                                                       Command="{Binding SelectedListViewCommand}"
+                                                       EventArgsParameterPath="Item"/>
+                    
+                </ListView.Behaviors>
+                
+            </ListView>
+            
+        </Grid>
+        
+    </Grid>
+</ContentPage>

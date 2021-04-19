@@ -3,7 +3,7 @@ using Xamarin.Forms;
 
 namespace NotepadGps.Behaviour
 {
-    public class NumericValidationBehavior : BehaviorBase<Entry>
+    public class NumericValidationBehavior : Behavior<Entry>
     {
         protected override void OnAttachedTo(Entry entry)
         {

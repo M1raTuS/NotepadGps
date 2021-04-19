@@ -1,5 +1,4 @@
 ﻿using NotepadGps.Models;
-using NotepadGps.Services.Autentification;
 using NotepadGps.Services.Repository;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -8,60 +7,67 @@ namespace NotepadGps.Services.Profile
 {
     public class ProfileService : IProfileService
     {
-        private readonly IRepository _repository;
-        private readonly IAutentificationService _autentification;
+        private readonly IRepositoryService _repositoryService;
 
-        public ProfileService(IRepository repository,
-                              IAutentificationService autentification)
+        public ProfileService(
+            IRepositoryService repositoryService)
         {
-            _repository = repository;
-            _autentification = autentification;
+            _repositoryService = repositoryService;
         }
+
+        #region -- IProfileService implementation --
 
         public async Task<List<UserModel>> GetAllUserListAsync()
         {
             var users = new List<UserModel>();
-            var list = await _repository.GetAllAsync<UserModel>();
+            var list = await _repositoryService.GetAllAsync<UserModel>();
+
             if (list.Count > 0)
             {
                 users.AddRange(list);
             }
+
             return users;
         }
 
         public List<UserModel> GetAllUserList()
         {
             var users = new List<UserModel>();
-            var list = _repository.GetAll<UserModel>();
+            var list = _repositoryService.GetAll<UserModel>();
+
             if (list.Count > 0)
             {
                 users.AddRange(list);
             }
+
             return users;
         }
 
-        public async Task<List<UserModel>> GetUserListByIdAsync()
+        public async Task<List<UserModel>> GetUserListByIdAsync(int id)
         {
             var users = new List<UserModel>();
-            //var Id = _autentification.CurentUserId;
-            var list = await _repository.FindAsync<UserModel>(c => c.Id == Id);
+            var list = await _repositoryService.FindAsync<UserModel>(c => c.Id == id);
+
             if (list.Count > 0)
             {
                 users.AddRange(list);
             }
+
             return users;
         }
 
         public async Task<UserModel> GetUserByIdAsync(int id)
         {
-            //TODO: get user by id
-
-            return new UserModel();
+            var user = await _repositoryService.FindUserAsync<UserModel>(c => c.Id == id);
+            return user;
         }
 
         public async Task SaveUserAsync(UserModel user)
         {
-            await _repository.InsertAsync(user);
+            await _repositoryService.InsertAsync(user);
         }
+
+        #endregion
+
     }
 }

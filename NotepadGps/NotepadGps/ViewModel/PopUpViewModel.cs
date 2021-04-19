@@ -1,15 +1,16 @@
 ﻿using Acr.UserDialogs;
 using NotepadGps.Models;
-using NotepadGps.Services.Autentification;
+using NotepadGps.Resource;
+using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Image;
+using NotepadGps.View;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using Prism.Navigation;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Diagnostics;
-using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
@@ -19,15 +20,15 @@ namespace NotepadGps.ViewModel
     public class PopUpViewModel : BaseViewModel
     {
         private readonly IImageService _imageService;
-        private readonly IAutentificationService _autentification; //TODO: remove
+        private readonly IAutorizationService _autorizationService;
 
         public PopUpViewModel(
             INavigationService navigationService,
-            IAutentificationService autentification,
+            IAutorizationService autorizationService,
             IImageService imageService)
-            : base (navigationService)
+            : base(navigationService)
         {
-            _autentification = autentification;
+            _autorizationService = autorizationService;
             _imageService = imageService;
         }
 
@@ -82,21 +83,29 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _imagePins, value);
         }
 
-        private bool _imgVisible;
-        public bool ImgVisible //TODO: is
+        private bool _isImgVisible;
+        public bool IsImgVisible
         {
-            get => _imgVisible;
-            set => SetProperty(ref _imgVisible, value);
+            get => _isImgVisible;
+            set => SetProperty(ref _isImgVisible, value);
+        }
+
+        private bool _isCarouselVisible;
+        public bool IsCarouselVisible
+        {
+            get => _isCarouselVisible;
+            set => SetProperty(ref _isCarouselVisible, value);
         }
 
         public ICommand TapCommand => new Command(OnTapCommandAsync);
-        public ICommand ImageCommand => new Command(OnImageCommand);
+        public ICommand ImageCommand => new Command(OnImageCommand); 
+        public ICommand NotifyCommand => new Command<Pin>(OnNotifyCommand); 
 
         #endregion
 
         #region -- Overrides --
 
-        public override void Initialize(INavigationParameters parameters)
+        public async override void Initialize(INavigationParameters parameters)
         {
             base.Initialize(parameters);
 
@@ -108,9 +117,9 @@ namespace NotepadGps.ViewModel
                 Description = pin.Address;
             }
 
-            ImageLoad();
+            await ImageLoadAsync();
 
-            SearchImg();
+            SearchImgAsync();
         }
 
         protected override void OnPropertyChanged(PropertyChangedEventArgs args)
@@ -121,11 +130,13 @@ namespace NotepadGps.ViewModel
             {
                 if (ImageList.Count < 1 || ImageList == null)
                 {
-                    ImgVisible = true;
+                    IsImgVisible = true;
+                    IsCarouselVisible = false;
                 }
                 else
                 {
-                    ImgVisible = false;
+                    IsImgVisible = false;
+                    IsCarouselVisible = true;
                 }
             }
         }
@@ -139,103 +150,100 @@ namespace NotepadGps.ViewModel
             await NavigationService.GoBackAsync(new NavigationParameters(), true, true);
         }
 
-        private void ImageLoad()//TODO: task and async
+        private async Task<ObservableCollection<ImageModel>> ImageLoadAsync()
         {
-            var image = _imageService.GetImageListById(); //TODO: async
+            var image = await _imageService.GetImageListByIdAsync(_autorizationService.GetAutorizedUserId);
             ImageList = new ObservableCollection<ImageModel>(image);
+            return ImageList;
         }
 
         private void OnImageCommand()
         {
             var file = new ActionSheetConfig()
-                .SetTitle("Choose your action")
-                .Add("Camera", () => OpenCamera())
-                .Add("Gallery", () => OpenGalery())
+                .SetTitle(StringResource.ImgSourceChoose)
+                .Add(StringResource.Camera, () => OpenCamera())
+                .Add(StringResource.Gallery, () => OpenGalery())
                 .SetCancel();
 
             UserDialogs.Instance.ActionSheet(file); //TODO: move to baseViewModel
         }
 
+        private async void OnNotifyCommand(Pin pin)
+        {
+            var nav = new NavigationParameters();
+            nav.Add(nameof(Pin), pin);
+
+            await NavigationService.NavigateAsync(nameof(NotifyPageView), nav);
+        }
+
         private async void OpenGalery()
         {
-            try //TODO: move to service
+            if (CrossMedia.Current.IsPickPhotoSupported) //TODO: move to service
             {
-                if (CrossMedia.Current.IsPickPhotoSupported)
+                MediaFile img = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions());
+
+                if (img != null)
                 {
-                    MediaFile img = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions());
-
-                    if (img != null)
+                    var image = new ImageModel()
                     {
-                        //var image = new ImageModel()
-                        //{
-                        //    UserId = _autentification.GetCurrentId,
-                        //    Latitude = Latitude,
-                        //    Longitude = Longitude,
-                        //    ImagePins = img.Path
-                        //};
+                        UserId = _autorizationService.GetAutorizedUserId,
+                        Latitude = Latitude,
+                        Longitude = Longitude,
+                        ImagePins = img.Path
+                    };
 
-                        //await _imageService.SaveMapPinAsync(image);
-                    }
-                    ImageLoad();
-                    SearchImg();
+                    await _imageService.SaveMapPinAsync(image);
                 }
-            }
-            catch (Exception e)
-            {
-                Debug.WriteLine(e.Message);
+
+                await ImageLoadAsync();
+
+                SearchImgAsync();
             }
         }
 
         private async void OpenCamera()
         {
-            try //TODO: move t service
+            if (CrossMedia.Current.IsCameraAvailable && CrossMedia.Current.IsPickPhotoSupported) //TODO: move t service
             {
-                if (CrossMedia.Current.IsCameraAvailable && CrossMedia.Current.IsPickPhotoSupported)
+                MediaFile img = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
                 {
-                    MediaFile img = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
-                    {
-                        PhotoSize = PhotoSize.Medium,
-                        SaveToAlbum = true,
-                        SaveMetaData = true,
-                        Directory = "temp",
-                        MaxWidthHeight = 1500,
-                        CompressionQuality = 75,
-                        RotateImage = Device.RuntimePlatform == Device.Android ? true : false,
-                        Name = $"{DateTime.Now}.jpg"
-                    });
+                    PhotoSize = PhotoSize.Medium,
+                    SaveToAlbum = true,
+                    SaveMetaData = true,
+                    Directory = "temp",
+                    MaxWidthHeight = 1500,
+                    CompressionQuality = 75,
+                    RotateImage = Device.RuntimePlatform == Device.Android ? true : false,
+                    Name = $"{DateTime.Now}.jpg"
+                });
 
-                    if (img != null)
+                if (img != null)
+                {
+                    var image = new ImageModel()
                     {
-                        //var image = new ImageModel()
-                        //{
-                        //    UserId = _autentification.GetCurrentId,
-                        //    Latitude = Latitude,
-                        //    Longitude = Longitude,
-                        //    ImagePins = img.Path
-                        //};
+                        UserId = _autorizationService.GetAutorizedUserId,
+                        Latitude = Latitude,
+                        Longitude = Longitude,
+                        ImagePins = img.Path
+                    };
 
-                        //await _imageService.SaveMapPinAsync(image);
-                    }
-                    ImageLoad();
-                    SearchImg();
+                    await _imageService.SaveMapPinAsync(image);
                 }
-            }
-            catch (Exception e)
-            {
-                Debug.WriteLine(e.Message);
+
+                await ImageLoadAsync();
+                SearchImgAsync();
             }
         }
 
-        private void SearchImg()
+        private async void SearchImgAsync()
         {
-            var img = ImageList.Where(x => x.Latitude.ToString() == Latitude.ToString() && //TODO: to service
-            x.Longitude.ToString() == Longitude.ToString());
-
-            ImageList = new ObservableCollection<ImageModel>(img);
+            if (ImageList != null)
+            {
+                var img = await _imageService.FindImgAsync(Latitude, Longitude);
+                ImageList = new ObservableCollection<ImageModel>(img);
+            }
         }
 
         #endregion
-
-       
     }
 }
