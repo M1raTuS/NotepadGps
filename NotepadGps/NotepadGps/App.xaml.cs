@@ -14,10 +14,10 @@ using Xamarin.Forms;
 
 namespace NotepadGps
 {
-    public partial class CalendarHelper : PrismApplication
+    public partial class App : PrismApplication
     {
 
-        public CalendarHelper() { }
+        public App() { }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
@@ -57,7 +57,6 @@ namespace NotepadGps
             {
                 NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(SignInView)}");
             }
-
         }
 
         protected override void OnStart()

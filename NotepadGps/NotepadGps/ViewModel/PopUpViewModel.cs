@@ -170,10 +170,7 @@ namespace NotepadGps.ViewModel
 
         private async void OnNotifyCommand(Pin pin)
         {
-            var nav = new NavigationParameters();
-            nav.Add(nameof(Pin), pin);
-
-            await NavigationService.NavigateAsync(nameof(NotifyPageView), nav);
+            await NavigationService.NavigateAsync(nameof(NotifyPageView));
         }
 
         private async void OpenGalery()

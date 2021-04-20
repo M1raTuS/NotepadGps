@@ -20,7 +20,8 @@ namespace NotepadGps.ViewModel
         public SignUpViewModel(
             INavigationService navigationService,
             IProfileService profileService,
-            IAutentificationService autentificationService) : base(navigationService)
+            IAutentificationService autentificationService) 
+            : base(navigationService)
         {
             _profileService = profileService;
             _autentificationService = autentificationService;
@@ -59,7 +60,6 @@ namespace NotepadGps.ViewModel
         public ICommand AddCommand => new Command(OnAddCommandAsync);
 
         #endregion
-
 
         #region -- Overrides --
 

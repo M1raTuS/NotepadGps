@@ -25,6 +25,7 @@ namespace NotepadGps.ViewModel
         }
 
         #endregion
+
         #region MyRegion
 
         public ICommand SaveCommand => new Command(SaveLocalNotification);

@@ -41,7 +41,7 @@ namespace NotepadGps.Droid
             //add
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
 
-            LoadApplication(new CalendarHelper());
+            LoadApplication(new App());
 
             Instance = this;
         }
