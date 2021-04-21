@@ -1,6 +1,4 @@
-﻿using Acr.UserDialogs;
-using NotepadGps.Models;
-using NotepadGps.Resource;
+﻿using NotepadGps.Models;
 using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Map;
 using NotepadGps.Services.Settings;

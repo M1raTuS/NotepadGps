@@ -6,6 +6,7 @@ using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Map;
 using Prism.Navigation;
 using System;
+using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
@@ -14,7 +15,7 @@ namespace NotepadGps.ViewModel
 {
     public class AddEditMapPinViewModel : BaseViewModel
     {
-        private const string imgString = "FullStar.png";
+        private const string imgString = "ic_like_blue";
 
         private readonly IAutorizationService _autorization;
         private readonly IMapPinService _mapPinService;
@@ -68,6 +69,13 @@ namespace NotepadGps.ViewModel
             get => _description;
             set => SetProperty(ref _description, value);
 
+        }
+
+        private ObservableCollection<MapPinModel> mapPins;
+        public ObservableCollection<MapPinModel> MapPins
+        {
+            get => mapPins;
+            set => SetProperty(ref mapPins, value);
         }
 
         public ICommand AddButtonCommand => new Command(OnAddButtonCommandAsync);
@@ -139,8 +147,17 @@ namespace NotepadGps.ViewModel
             Latitude = "";
             Longitude = "";
 
-            Latitude = position.Latitude.ToString();
-            Longitude = position.Longitude.ToString();
+            MapPinModel Pin = new MapPinModel
+            {
+                Title = "test",
+                Latitude = position.Latitude,
+                Longitude = position.Longitude
+            };
+
+            MapPins = new ObservableCollection<MapPinModel> { Pin };
+
+            Latitude = string.Format("{0:f8}", position.Latitude);
+            Longitude = string.Format("{0:f8}", position.Longitude);
         }
 
         #endregion

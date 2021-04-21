@@ -15969,19 +15969,22 @@ namespace NotepadGps.Droid
 			public const int pic_enter_page = 2131165586;
 			
 			// aapt resource value: 0x7F070193
-			public const int roundedbg = 2131165587;
+			public const int pic_enter_page3x = 2131165587;
 			
 			// aapt resource value: 0x7F070194
-			public const int roundedbgdark = 2131165588;
+			public const int roundedbg = 2131165588;
 			
 			// aapt resource value: 0x7F070195
-			public const int test_custom_background = 2131165589;
+			public const int roundedbgdark = 2131165589;
 			
 			// aapt resource value: 0x7F070196
-			public const int tooltip_frame_dark = 2131165590;
+			public const int test_custom_background = 2131165590;
 			
 			// aapt resource value: 0x7F070197
-			public const int tooltip_frame_light = 2131165591;
+			public const int tooltip_frame_dark = 2131165591;
+			
+			// aapt resource value: 0x7F070198
+			public const int tooltip_frame_light = 2131165592;
 			
 			static Drawable()
 			{

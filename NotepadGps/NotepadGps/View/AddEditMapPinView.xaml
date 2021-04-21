@@ -2,12 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:num="clr-namespace:NotepadGps.Behaviour;assembly=NotepadGps"
-             xmlns:behaviours="clr-namespace:NotepadGps.Behaviour;assembly=NotepadGps" 
+             xmlns:behaviours="http://prismlibrary.com"
              xmlns:maps="clr-namespace:NotepadGps.Controls"
              x:Class="NotepadGps.View.AddEditMapPinView"
              Title="Edit">
 
+    <ContentPage.ToolbarItems>
+
+        <ToolbarItem Text="" Command="{Binding AddButtonCommand}" 
+                     IconImageSource="ic_save"/>
+        
+    </ContentPage.ToolbarItems>
+    
     <Grid BackgroundColor="{DynamicResource BackgroundColor}">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10" />
             <ColumnDefinition Width="*" />
@@ -17,17 +31,18 @@
         <Entry Grid.Row="0"
                Grid.Column="1"
                Text="{Binding Title}"
-               Placeholder="Title"/>
+               Placeholder="Title"
+               MaxLength="30"/>
 
         <Entry Grid.Row="1"
                Grid.Column="1"
-               Text="{Binding Latitude, StringFormat='{0:###.#######}'}"
+               Text="{Binding Latitude}"
                Placeholder="Latitude"
                Keyboard="Numeric"/>
 
         <Entry Grid.Row="2"
                Grid.Column="1"
-               Text="{Binding Longitude, StringFormat='{0:###.#######}'}"
+               Text="{Binding Longitude}"
                Placeholder="Longitude"
                Keyboard="Numeric">
             <Entry.Behaviors>
@@ -52,11 +67,14 @@
                         HasScrollEnabled="True" 
                         IsShowingUser="False"
                         MyLocationEnabled="False"
-                        PinsSource="{Binding MapPin}">
+                        PinsSource="{Binding MapPins}">
+            
             <maps:CustomMap.Behaviors>
+                
                 <behaviours:EventToCommandBehavior EventName="MapClicked" 
                                                    Command="{Binding MapClickedCommand}"
                                                    EventArgsParameterPath="Point"/>
+                
             </maps:CustomMap.Behaviors>
 
         </maps:CustomMap>

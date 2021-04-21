@@ -32,8 +32,10 @@ namespace NotepadGps
 
             //Navigation
             containerRegistry.RegisterForNavigation<NavigationPage>();
+            containerRegistry.RegisterForNavigation<MainPageView, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<SignInView, SignInViewModel>();
             containerRegistry.RegisterForNavigation<SignUpView, SignUpViewModel>();
+            containerRegistry.RegisterForNavigation<SignUpPwCheckView, SignUpPwCheckViewModel>();
             containerRegistry.RegisterForNavigation<MainListView, MainListViewModel>();
             containerRegistry.RegisterForNavigation<MapsPageView, MapsPageViewModel>();
             containerRegistry.RegisterForNavigation<ListPageView, ListPageViewModel>();
@@ -55,7 +57,7 @@ namespace NotepadGps
             }
             else
             {
-                NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(SignInView)}");
+                NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(MainPageView)}");
             }
         }
 

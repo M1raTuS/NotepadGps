@@ -97,6 +97,15 @@ namespace NotepadGps.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Password do not match.
+        /// </summary>
+        internal static string ConfirmPasswordAlert {
+            get {
+                return ResourceManager.GetString("ConfirmPasswordAlert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Подтверждаете ли вы удаление?.
         /// </summary>
         internal static string DeleteAccept {
@@ -142,7 +151,7 @@ namespace NotepadGps.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Эта почта уже занята.
+        ///   Looks up a localized string similar to This email is already taken.
         /// </summary>
         internal static string MailConflict {
             get {
@@ -183,6 +192,42 @@ namespace NotepadGps.Resource {
         internal static string PasswordAlert {
             get {
                 return ResourceManager.GetString("PasswordAlert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wrong Email.
+        /// </summary>
+        internal static string SignInMailAlert {
+            get {
+                return ResourceManager.GetString("SignInMailAlert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The password is incorrect.
+        /// </summary>
+        internal static string SignInPasswordAlert {
+            get {
+                return ResourceManager.GetString("SignInPasswordAlert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter email.
+        /// </summary>
+        internal static string SignUpMailAlert {
+            get {
+                return ResourceManager.GetString("SignUpMailAlert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter your name.
+        /// </summary>
+        internal static string SignUpNameAlert {
+            get {
+                return ResourceManager.GetString("SignUpNameAlert", resourceCulture);
             }
         }
     }

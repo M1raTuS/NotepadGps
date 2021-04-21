@@ -19,7 +19,6 @@ namespace NotepadGps.Behaviour
 
         private static void OnEntryTextChanged(object sender, TextChangedEventArgs args)
         {
-
             if (!string.IsNullOrWhiteSpace(args.NewTextValue))
             {
                 bool isValid = args.NewTextValue.ToCharArray().All(x => char.IsDigit(x) || char.IsPunctuation(x));

@@ -1,15 +1,14 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:controls="clr-namespace:NotepadGps.Controls"
-             x:Class="NotepadGps.View.SignInView"
-             Title="Log in">
+             x:Class="NotepadGps.View.SignUpPwCheckView"
+             Title="Create an account">
 
     <Grid>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="20" />
-            <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
@@ -21,23 +20,23 @@
             <ColumnDefinition Width="16" />
         </Grid.ColumnDefinitions>
 
-        <controls:CustomEntry  Grid.Row="1" 
-                               Grid.Column="1"
-                               LblText="Email" 
-                               Placeholder="Enter Email"
-                               errorText="{Binding EmailError}"
-                               Text="{Binding Email}"
-                               PlaceholderColor="#858E9E"
-                               isErrorVisible="{Binding IsEmailErrorVisible}"/>
-
-        <controls:PasswordEntry  Grid.Row="2" 
+        <controls:PasswordEntry  Grid.Row="1" 
                                  Grid.Column="1"
                                  LblText="Password" 
-                                 Placeholder="Enter password"
+                                 Placeholder="Create password"
                                  errorText="{Binding PasswordError}"
                                  Text="{Binding Password}"
                                  PlaceholderColor="#858E9E"
                                  isErrorVisible="{Binding IsPasswordErrorVisible}"/>
+
+        <controls:PasswordEntry  Grid.Row="2" 
+                                 Grid.Column="1"
+                                 LblText="Confirm password" 
+                                 Placeholder="Repeat password"
+                                 errorText="{Binding ConfirmPasswordError}"
+                                 Text="{Binding ConfirmPassword}"
+                                 PlaceholderColor="#858E9E"
+                                 isErrorVisible="{Binding IsConfirmPasswordErrorVisible}"/>
 
         <Frame Grid.Row="4"
                Grid.Column="1"
@@ -46,7 +45,7 @@
                CornerRadius="2">
 
             <Frame.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding LogInCommand}"/>
+                <TapGestureRecognizer Command="{Binding SignUpCommand}"/>
             </Frame.GestureRecognizers>
 
             <Label TextColor="#FEFEFD"
@@ -60,10 +59,10 @@
 
                     <FormattedString>
 
-                        <Span Text="Log in">
+                        <Span Text="Create account">
 
                             <Span.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding LogInCommand}" />
+                                <TapGestureRecognizer Command="{Binding SignUpCommand}" />
                             </Span.GestureRecognizers>
 
                         </Span>

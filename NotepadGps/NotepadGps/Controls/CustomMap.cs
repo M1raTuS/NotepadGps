@@ -1,9 +1,6 @@
 ﻿using NotepadGps.Models;
 using System.Collections;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Collections.Specialized;
-using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
 
@@ -15,7 +12,6 @@ namespace NotepadGps.Controls
         public CustomMap()
         {
             PinsSource = new ObservableCollection<MapPinModel>();
-            PinsSource.CollectionChanged += PinsSourceOnCollectionChanged;
         }
 
         #region -- Public properties --
@@ -32,12 +28,6 @@ namespace NotepadGps.Controls
                                                          declaringType: typeof(CustomMap),
                                                          propertyChanged: PinsSourcePropertyChanged);
 
-        public MapSpan MapSpan
-        {
-            get { return (MapSpan)GetValue(MapSpanProperty); }
-            set { SetValue(MapSpanProperty, value); }
-        }
-
         public static readonly BindableProperty MapSpanProperty = BindableProperty.Create(
                                                          propertyName: nameof(MapSpan),
                                                          returnType: typeof(MapSpan),
@@ -53,6 +43,12 @@ namespace NotepadGps.Controls
                                                        declaringType: typeof(CustomMap),
                                                        defaultValue: null,
                                                        propertyChanged: CurrentCameraPositionPropertyChanged);
+
+        public MapSpan MapSpan
+        {
+            get { return (MapSpan)GetValue(MapSpanProperty); }
+            set { SetValue(MapSpanProperty, value); }
+        }
 
         public CameraPosition CurrentCameraPosition
         {
@@ -100,36 +96,6 @@ namespace NotepadGps.Controls
                     bindableMap.Pins.Add(pins);
                 }
             }
-        }
-
-        private void PinsSourceOnCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
-        {
-            UpdatePinsSource(this, sender as IEnumerable<Pin>);
-        }
-
-        private void MapPinsSourceOnCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
-        {
-            UpdateMapPinsSource(this, sender as IEnumerable<MapPinModel>);
-        }
-
-        private static void UpdatePinsSource(Map bindableMap, IEnumerable<Pin> newSource)
-        {
-            bindableMap.Pins.Clear();
-            foreach (var pin in newSource)
-            {
-                bindableMap.Pins.Add(pin);
-            }
-        }
-
-        private static void UpdateMapPinsSource(Map bindableMap, IEnumerable<MapPinModel> newSource)
-        {
-            bindableMap.Pins.Clear();
-            foreach (var pin in newSource)
-                bindableMap.Pins.Add(new Pin
-                {
-                    Label = pin.Title,
-                    Position = new Position(pin.Latitude, pin.Longitude)
-                });
         }
 
         private static void MapSpanPropertyChanged(BindableObject bindable, object oldValue, object newValue)

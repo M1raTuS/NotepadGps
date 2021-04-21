@@ -41,45 +41,45 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _password, value);
         }
 
-        private bool _buttonEnabled;
-        public bool ButtonEnabled
+        private string _passwordError;
+        public string PasswordError
         {
-            get => _buttonEnabled;
-            set => SetProperty(ref _buttonEnabled, value);
+            get => _passwordError;
+            set => SetProperty(ref _passwordError, value);
         }
 
-        public ICommand SignInCommand => new Command(OnSignInCommandAsync);
-        public ICommand SignUpCommand => new Command(OnSignUpCommandAsync);
-
-        #endregion
-
-        #region -- Overrides --
-
-        protected override void OnPropertyChanged(PropertyChangedEventArgs args)
+        private string _emailError;
+        public string EmailError
         {
-            base.OnPropertyChanged(args);
-
-            if (args.PropertyName == nameof(Email) || args.PropertyName == nameof(Password))
-            {
-                var isNotEmpty = CanSignIn();
-
-                if (isNotEmpty)
-                {
-                    ButtonEnabled = true;
-                }
-                else
-                {
-                    ButtonEnabled = false;
-                }
-            }
+            get => _emailError;
+            set => SetProperty(ref _emailError, value);
         }
+
+        private bool _isEmailErrorVisible;
+        public bool IsEmailErrorVisible
+        {
+            get => _isEmailErrorVisible;
+            set => SetProperty(ref _isEmailErrorVisible, value);
+        }
+
+        private bool _isPasswordErrorVisible;
+        public bool IsPasswordErrorVisible
+        {
+            get => _isPasswordErrorVisible;
+            set => SetProperty(ref _isPasswordErrorVisible, value);
+        }
+
+        public ICommand LogInCommand => new Command(OnLogInCommandAsync);
 
         #endregion
 
         #region -- Private helpers --        
 
-        private async void OnSignInCommandAsync()
+        private async void OnLogInCommandAsync()
         {
+            IsEmailErrorVisible = false;
+            IsPasswordErrorVisible = false;
+
             var isAuthorized = await _autorization.TryToAuthorizeAsync(Email, Password);
 
             if (isAuthorized)
@@ -88,19 +88,30 @@ namespace NotepadGps.ViewModel
             }
             else
             {
-                UserDialogs.Instance.Alert(StringResource.MailPasswordAlert, StringResource.Alert, StringResource.Ok);
+                if (!_autorization.IsMailTrue())
+                {
+                    EmailError = StringResource.SignInMailAlert;
+                    IsEmailErrorVisible = true;
+                }
+
+                if (!_autorization.IsPasswordTrue())
+                {
+                    PasswordError = StringResource.SignInPasswordAlert;
+                    IsPasswordErrorVisible = true;
+                }
+
                 Password = string.Empty;
             }
         }
 
         private async void OnSignUpCommandAsync()
         {
-            await NavigationService.NavigateAsync($"{nameof(SignUpView)}");
+            await NavigationService.NavigateAsync(nameof(SignUpView));
         }
 
         private bool CanSignIn()
         {
-            return !string.IsNullOrWhiteSpace(Email) && !string.IsNullOrWhiteSpace(Password);
+            return !string.IsNullOrWhiteSpace(Email) && !string.IsNullOrWhiteSpace(Password);//todo: test 
         }
 
         #endregion

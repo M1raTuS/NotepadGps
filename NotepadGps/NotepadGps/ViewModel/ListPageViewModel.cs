@@ -15,8 +15,8 @@ namespace NotepadGps.ViewModel
 {
     public class ListPageViewModel : BaseViewModel
     {
-        private const string ImgEmptyStar = "EmptyStar.png";
-        private const string ImgFullStar = "FullStar.png";
+        private const string ImgFull = "ic_like_blue";
+        private const string ImgEmpty = "ic_like_gray";
 
         private readonly IMapPinService _mapPinService;
         private readonly IAutorizationService _autorizationService;
@@ -66,8 +66,9 @@ namespace NotepadGps.ViewModel
         public ICommand AddMapPinFloatingButtonCommand => new Command(AddMapPinFloatingButtonAsync);
         public ICommand SelectedCommand => new Command(OnSelectedCommandAsync);
         public ICommand EditContext => new Command(EditContextMenuAsync);
-        public ICommand DeleteContext => new Command(DeleteContextMenuAsync);
+        public ICommand DeleteContext => new Command(DeleteContextMenuAsync); 
         public ICommand CheckedPinCommand => new Command<MapPinModel>(OnCheckedPinCommandAsync);
+        public ICommand AddEvents => new Command<MapPinModel>(OnAddEvents);
 
         #endregion
 
@@ -110,18 +111,26 @@ namespace NotepadGps.ViewModel
         {
             if (mapPin.IsChosen)
             {
-                mapPin.ImgPath = ImgEmptyStar;
+                mapPin.ImgPath = ImgEmpty;
                 mapPin.IsChosen = false;
             }
             else
             {
-                mapPin.ImgPath = ImgFullStar;
+                mapPin.ImgPath = ImgFull;
                 mapPin.IsChosen = true;
             }
 
             await _mapPinService.UpdateMapPinAsync(mapPin);
 
             await MapPinLoadAsync();
+        }
+
+        private async void OnAddEvents(object obj)
+        {
+            var nav = new NavigationParameters();
+            nav.Add(nameof(MapPinModel), (MapPinModel)obj);
+
+            await NavigationService.NavigateAsync(nameof(NotifyPageView), nav);
         }
 
         private async Task<ObservableCollection<MapPinModel>> MapPinLoadAsync()
@@ -166,6 +175,11 @@ namespace NotepadGps.ViewModel
         public async override void OnNavigatedTo(INavigationParameters parameters)
         {
             await MapPinLoadAsync();
+        }
+
+        protected async override void RaiseIsActiveChanged()
+        {
+            base.RaiseIsActiveChanged();
         }
 
         #endregion

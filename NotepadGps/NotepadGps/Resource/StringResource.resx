@@ -129,6 +129,9 @@
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
+  <data name="ConfirmPasswordAlert" xml:space="preserve">
+    <value>Password do not match</value>
+  </data>
   <data name="DeleteAccept" xml:space="preserve">
     <value>Подтверждаете ли вы удаление?</value>
   </data>
@@ -145,7 +148,7 @@
     <value>Введите корректный почтовый адрес</value>
   </data>
   <data name="MailConflict" xml:space="preserve">
-    <value>Эта почта уже занята</value>
+    <value>This email is already taken</value>
   </data>
   <data name="MailPasswordAlert" xml:space="preserve">
     <value>Invalid email or password!</value>
@@ -158,5 +161,17 @@
   </data>
   <data name="PasswordAlert" xml:space="preserve">
     <value>Пароль должен быть не менее 8 и не более 16 символов. Пароль должен содержать минимум одну заглавную букву, одну строчную букву и одну цифру</value>
+  </data>
+  <data name="SignInMailAlert" xml:space="preserve">
+    <value>Wrong Email</value>
+  </data>
+  <data name="SignInPasswordAlert" xml:space="preserve">
+    <value>The password is incorrect</value>
+  </data>
+  <data name="SignUpMailAlert" xml:space="preserve">
+    <value>Enter email</value>
+  </data>
+  <data name="SignUpNameAlert" xml:space="preserve">
+    <value>Enter your name</value>
   </data>
 </root>

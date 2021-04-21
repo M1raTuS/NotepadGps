@@ -8,5 +8,7 @@ namespace NotepadGps.Services.Autorization
         Task<bool> TryToAuthorizeAsync(string email, string password);
         int GetAutorizedUserId { get; }
         void Unautorize();
+        bool IsMailTrue();
+        bool IsPasswordTrue();
     }
 }

@@ -1,44 +1,84 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:controls="clr-namespace:NotepadGps.Controls"
              x:Class="NotepadGps.View.SignUpView"
-             Title="SignUp">
+             Title="Create an account">
 
     <Grid>
-        
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="16" />
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="16" />
         </Grid.ColumnDefinitions>
 
-        <Entry Grid.Row="3"
+        <controls:CustomEntry  Grid.Row="1" 
+                               Grid.Column="1"
+                               LblText="Name" 
+                               Placeholder="Enter your name"
+                               errorText="{Binding NameError}"
+                               Text="{Binding Name}"
+                               isErrorVisible="{Binding IsNameErrorVisible}"
+                               PlaceholderColor="#858E9E"/>
+
+        <controls:CustomEntry  Grid.Row="2" 
+                               Grid.Column="1"
+                               LblText="Email" 
+                               Placeholder="Enter email"
+                               errorText="{Binding EmailError}"
+                               Text="{Binding Email}"
+                               isErrorVisible="{Binding IsEmailErrorVisible}"
+                               PlaceholderColor="#858E9E"/>
+
+        <Frame Grid.Row="4"
                Grid.Column="1"
-               Placeholder="Name" 
-               Text="{Binding Name}"/>
+               VerticalOptions="End"
+               BackgroundColor="#596EFB"
+               CornerRadius="2">
 
-        <Entry Grid.Row="4"
-               Grid.Column="1"
-               Placeholder="Email" 
-               Text="{Binding Email}" 
-               IsPassword="True"/>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding NextPageCommand}"/>
+            </Frame.GestureRecognizers>
 
-        <Entry Grid.Row="5"
-               Grid.Column="1"
-               Placeholder="Password" 
-               Text="{Binding Password}" 
-               IsPassword="True"/>
+            <Label TextColor="#FEFEFD"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontFamily="Montserrat"
+                   FontSize="21"
+                   FontAttributes="Bold">
 
-        <Button Grid.Row="10"
-                Grid.Column="1"
-                BackgroundColor="DarkOrange" 
-                Text="SignUp" 
-                Command="{Binding AddCommand}" 
-                IsEnabled="{Binding ButtonEnabled}"
-                CornerRadius="20"/>
+                <Label.FormattedText>
 
-        <Grid Grid.Row="11"/>
+                    <FormattedString>
+
+                        <Span Text="Next">
+
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding NextPageCommand}" />
+                            </Span.GestureRecognizers>
+
+                        </Span>
+
+                    </FormattedString>
+
+                </Label.FormattedText>
+
+            </Label>
+
+        </Frame>
+
+        <Grid Grid.Row="6"/>
 
     </Grid>
-    
+
+
 </ContentPage>

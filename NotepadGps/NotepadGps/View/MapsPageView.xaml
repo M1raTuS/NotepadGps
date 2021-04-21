@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NotepadGps.View.MapsPageView"    
-             Title="MapsPage"
+             Title="Map"
+             IconImageSource="ic_map"
              xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
              xmlns:maps="clr-namespace:NotepadGps.Controls" 
              xmlns:behaviours="http://prismlibrary.com"
@@ -29,7 +30,7 @@
             </SearchBar>
 
             <maps:CustomMap Grid.Row="1"
-                            Grid.RowSpan="2"
+                            Grid.RowSpan="3"
                             MapType="Street" 
                             HasZoomEnabled="True" 
                             HasScrollEnabled="True" 
@@ -51,14 +52,25 @@
                 </maps:CustomMap.Behaviors>
                 
             </maps:CustomMap>
-
-            <ImageButton Grid.Row="2"
+            
+            <ImageButton Grid.Row="3"
                          CornerRadius="50" 
                          HorizontalOptions="End" 
                          VerticalOptions="Start"
                          HeightRequest="30" 
                          WidthRequest="30"
-                         Source="GPS.jpg"
+                         BorderWidth="40"
+                         Source="ic_location"
+                         Margin="20,0"
+                         BorderColor="White"/>
+            
+            <ImageButton Grid.Row="3"
+                         HorizontalOptions="End" 
+                         VerticalOptions="Start"
+                         HeightRequest="30" 
+                         WidthRequest="30"
+                         BorderWidth="0"
+                         Source="ic_location"
                          Margin="20,0"
                          Command="{Binding FindMyLocationCommand}"/>
 
