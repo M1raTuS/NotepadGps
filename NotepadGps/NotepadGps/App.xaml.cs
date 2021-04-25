@@ -29,6 +29,7 @@ namespace NotepadGps
             containerRegistry.RegisterInstance<IAutorizationService>(Container.Resolve<AutorizationService>());
             containerRegistry.RegisterInstance<IMapPinService>(Container.Resolve<MapPinService>());
             containerRegistry.RegisterInstance<IImageService>(Container.Resolve<ImageService>());
+            containerRegistry.RegisterInstance<IEventService>(Container.Resolve<EventService>());
 
             //Navigation
             containerRegistry.RegisterForNavigation<NavigationPage>();
@@ -37,14 +38,13 @@ namespace NotepadGps
             containerRegistry.RegisterForNavigation<SignUpView, SignUpViewModel>();
             containerRegistry.RegisterForNavigation<SignUpPwCheckView, SignUpPwCheckViewModel>();
             containerRegistry.RegisterForNavigation<MainListView, MainListViewModel>();
+            containerRegistry.RegisterForNavigation<EventsPinsView, EventsPinsViewModel>();
             containerRegistry.RegisterForNavigation<MapsPageView, MapsPageViewModel>();
             containerRegistry.RegisterForNavigation<ListPageView, ListPageViewModel>();
             containerRegistry.RegisterForNavigation<AddEditMapPinView, AddEditMapPinViewModel>();
             containerRegistry.RegisterForNavigation<PopUpView, PopUpViewModel>();
+            containerRegistry.RegisterForNavigation<EventsView, EventsViewModel>();
             containerRegistry.RegisterForNavigation<NotifyPageView, NotifyViewModel>();
-
-            //Packages
-            containerRegistry.RegisterInstance(CrossMedia.Current); //TODO: register all packages
         }
 
         protected override void OnInitialized()

@@ -2,7 +2,7 @@
 
 namespace NotepadGps.Controls
 {
-    public sealed class StandartEntry : Entry
+    public class StandartEntry : Entry
     {
     }
 }

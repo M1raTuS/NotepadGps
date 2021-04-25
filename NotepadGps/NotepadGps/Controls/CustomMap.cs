@@ -23,26 +23,22 @@ namespace NotepadGps.Controls
         }
 
         public static readonly BindableProperty PinsSourceProperty = BindableProperty.Create(
-                                                         propertyName: nameof(PinsSource),
-                                                         returnType: typeof(ObservableCollection<MapPinModel>),
-                                                         declaringType: typeof(CustomMap),
-                                                         propertyChanged: PinsSourcePropertyChanged);
+                                                                     propertyName: nameof(PinsSource),
+                                                                     returnType: typeof(ObservableCollection<MapPinModel>),
+                                                                     declaringType: typeof(CustomMap),
+                                                                     propertyChanged: PinsSourcePropertyChanged);
 
         public static readonly BindableProperty MapSpanProperty = BindableProperty.Create(
-                                                         propertyName: nameof(MapSpan),
-                                                         returnType: typeof(MapSpan),
-                                                         declaringType: typeof(CustomMap),
-                                                         defaultValue: null,
-                                                         defaultBindingMode: BindingMode.TwoWay,
-                                                         validateValue: null,
-                                                         propertyChanged: MapSpanPropertyChanged);
+                                                                  propertyName: nameof(MapSpan),
+                                                                  returnType: typeof(MapSpan),
+                                                                  declaringType: typeof(CustomMap),
+                                                                  propertyChanged: MapSpanPropertyChanged);
 
         public static BindableProperty CurrentCameraPositionProperty = BindableProperty.Create(
-                                                       propertyName: nameof(CurrentCameraPosition),
-                                                       returnType: typeof(CameraPosition),
-                                                       declaringType: typeof(CustomMap),
-                                                       defaultValue: null,
-                                                       propertyChanged: CurrentCameraPositionPropertyChanged);
+                                                                       propertyName: nameof(CurrentCameraPosition),
+                                                                       returnType: typeof(CameraPosition),
+                                                                       declaringType: typeof(CustomMap),
+                                                                       propertyChanged: CurrentCameraPositionPropertyChanged);
 
         public MapSpan MapSpan
         {
@@ -66,6 +62,7 @@ namespace NotepadGps.Controls
                 {
                     map.InitialCameraUpdate = cameraUpdate;
                 }
+
                 ((CustomMap)bindable).MoveCamera(cameraUpdate);
             }
         }
@@ -74,17 +71,17 @@ namespace NotepadGps.Controls
 
         #region -- Private properties --
 
-        private static void PinsSourcePropertyChanged(BindableObject bindable, object oldvalue, object newValue) //TODO: onproperty changed
+        private static void PinsSourcePropertyChanged(BindableObject bindable, object oldvalue, object newValue)
         {
             var bindableMap = (CustomMap)bindable;
-            var newPinsSource = newValue as IEnumerable;
+            var newPinsSource = (IEnumerable)newValue;
 
             if (bindableMap != null && newPinsSource != null)
             {
                 bindableMap.Pins.Clear();
-
                 foreach (MapPinModel pin in newPinsSource)
                 {
+
                     var pins = new Pin
                     {
                         Label = pin.Title,
@@ -93,6 +90,7 @@ namespace NotepadGps.Controls
                         Position = new Position(pin.Latitude, pin.Longitude),
                         IsVisible = pin.IsChosen
                     };
+
                     bindableMap.Pins.Add(pins);
                 }
             }
@@ -100,20 +98,13 @@ namespace NotepadGps.Controls
 
         private static void MapSpanPropertyChanged(BindableObject bindable, object oldValue, object newValue)
         {
-            var thisInstance = bindable as CustomMap;
-            var newMapSpan = newValue as MapSpan;
+            var thisInstance = (CustomMap)bindable;
+            var newMapSpan = (MapSpan)newValue;
 
             thisInstance?.MoveToRegion(newMapSpan);
         }
 
         #endregion
-        //public void OnPropertyChanged(PropertyChangedEventArgs args)
-        //{
-        //    if (args.PropertyName == nameof(PinsSourceProperty))
-        //    {
-
-        //    }
-        //}
 
     }
 }

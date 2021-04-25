@@ -12,7 +12,6 @@
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -25,18 +24,18 @@
                                Grid.Column="1"
                                LblText="Name" 
                                Placeholder="Enter your name"
-                               errorText="{Binding NameError}"
+                               ErrorText="{Binding NameError}"
                                Text="{Binding Name}"
-                               isErrorVisible="{Binding IsNameErrorVisible}"
+                               IsErrorVisible="{Binding IsNameErrorVisible}"
                                PlaceholderColor="#858E9E"/>
 
         <controls:CustomEntry  Grid.Row="2" 
                                Grid.Column="1"
                                LblText="Email" 
                                Placeholder="Enter email"
-                               errorText="{Binding EmailError}"
+                               ErrorText="{Binding EmailError}"
                                Text="{Binding Email}"
-                               isErrorVisible="{Binding IsEmailErrorVisible}"
+                               IsErrorVisible="{Binding IsEmailErrorVisible}"
                                PlaceholderColor="#858E9E"/>
 
         <Frame Grid.Row="4"
@@ -46,7 +45,9 @@
                CornerRadius="2">
 
             <Frame.GestureRecognizers>
+                
                 <TapGestureRecognizer Command="{Binding NextPageCommand}"/>
+                
             </Frame.GestureRecognizers>
 
             <Label TextColor="#FEFEFD"
@@ -63,7 +64,9 @@
                         <Span Text="Next">
 
                             <Span.GestureRecognizers>
+                                
                                 <TapGestureRecognizer Command="{Binding NextPageCommand}" />
+                                
                             </Span.GestureRecognizers>
 
                         </Span>

@@ -3,7 +3,6 @@ using NotepadGps.Models;
 using NotepadGps.Resource;
 using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Image;
-using NotepadGps.View;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using Prism.Navigation;
@@ -98,8 +97,6 @@ namespace NotepadGps.ViewModel
         }
 
         public ICommand TapCommand => new Command(OnTapCommandAsync);
-        public ICommand ImageCommand => new Command(OnImageCommand); 
-        public ICommand NotifyCommand => new Command<Pin>(OnNotifyCommand); 
 
         #endregion
 
@@ -155,81 +152,6 @@ namespace NotepadGps.ViewModel
             var image = await _imageService.GetImageListByIdAsync(_autorizationService.GetAutorizedUserId);
             ImageList = new ObservableCollection<ImageModel>(image);
             return ImageList;
-        }
-
-        private void OnImageCommand()
-        {
-            var file = new ActionSheetConfig()
-                .SetTitle(StringResource.ImgSourceChoose)
-                .Add(StringResource.Camera, () => OpenCamera())
-                .Add(StringResource.Gallery, () => OpenGalery())
-                .SetCancel();
-
-            UserDialogs.Instance.ActionSheet(file); //TODO: move to baseViewModel
-        }
-
-        private async void OnNotifyCommand(Pin pin)
-        {
-            await NavigationService.NavigateAsync(nameof(NotifyPageView));
-        }
-
-        private async void OpenGalery()
-        {
-            if (CrossMedia.Current.IsPickPhotoSupported) //TODO: move to service
-            {
-                MediaFile img = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions());
-
-                if (img != null)
-                {
-                    var image = new ImageModel()
-                    {
-                        UserId = _autorizationService.GetAutorizedUserId,
-                        Latitude = Latitude,
-                        Longitude = Longitude,
-                        ImagePins = img.Path
-                    };
-
-                    await _imageService.SaveMapPinAsync(image);
-                }
-
-                await ImageLoadAsync();
-
-                SearchImgAsync();
-            }
-        }
-
-        private async void OpenCamera()
-        {
-            if (CrossMedia.Current.IsCameraAvailable && CrossMedia.Current.IsPickPhotoSupported) //TODO: move t service
-            {
-                MediaFile img = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
-                {
-                    PhotoSize = PhotoSize.Medium,
-                    SaveToAlbum = true,
-                    SaveMetaData = true,
-                    Directory = "temp",
-                    MaxWidthHeight = 1500,
-                    CompressionQuality = 75,
-                    RotateImage = Device.RuntimePlatform == Device.Android ? true : false,
-                    Name = $"{DateTime.Now}.jpg"
-                });
-
-                if (img != null)
-                {
-                    var image = new ImageModel()
-                    {
-                        UserId = _autorizationService.GetAutorizedUserId,
-                        Latitude = Latitude,
-                        Longitude = Longitude,
-                        ImagePins = img.Path
-                    };
-
-                    await _imageService.SaveMapPinAsync(image);
-                }
-
-                await ImageLoadAsync();
-                SearchImgAsync();
-            }
         }
 
         private async void SearchImgAsync()

@@ -3,119 +3,117 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NotepadGps.View.MapsPageView"    
              Title="Map"
-             IconImageSource="ic_map"
              xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
-             xmlns:maps="clr-namespace:NotepadGps.Controls" 
+             xmlns:controls="clr-namespace:NotepadGps.Controls" 
              xmlns:behaviours="http://prismlibrary.com"
              mvvm:ViewModelLocator.AutowireViewModel="True">
 
     <Grid>
-        
-        <Grid Grid.Row="0">
-            
+
+        <Grid>
+
             <Grid.RowDefinitions>
-                
-                <RowDefinition Height="50" />
                 <RowDefinition Height="auto" />
-                <RowDefinition Height="*" />
-                
             </Grid.RowDefinitions>
 
-            <SearchBar TextColor="#FF464859" 
-                       FontSize="16" 
-                       PlaceholderColor="#646b7a" 
-                       CancelButtonColor="Blue"
-                       Placeholder="Search..." 
-                       Text="{Binding SearchText}">
-            </SearchBar>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
 
-            <maps:CustomMap Grid.Row="1"
-                            Grid.RowSpan="3"
-                            MapType="Street" 
-                            HasZoomEnabled="True" 
-                            HasScrollEnabled="True" 
-                            IsShowingUser="True"
-                            MyLocationEnabled="True"
-                            PinsSource="{Binding MapPin}"
-                            MapSpan="{Binding MapSpan}"
-                            CurrentCameraPosition="{Binding CurrentCameraPosition}">
-                
-                <maps:CustomMap.Behaviors>
-                    
+            <controls:CustomMap Grid.Row="0"
+                                Grid.RowSpan="4"
+                                Grid.ColumnSpan="3"
+                                MapType="Street" 
+                                HasZoomEnabled="False" 
+                                HasScrollEnabled="False" 
+                                IsShowingUser="True"
+                                MyLocationEnabled="True"
+                                PinsSource="{Binding MapPin}"
+                                MapSpan="{Binding MapSpan}"
+                                CurrentCameraPosition="{Binding CurrentCameraPosition}">
+
+                <controls:CustomMap.Behaviors>
+
                     <behaviours:EventToCommandBehavior EventName="PinClicked" 
                                                        Command="{Binding PinClickedCommand}"
                                                        EventArgsParameterPath="Pin"/>
 
                     <behaviours:EventToCommandBehavior EventName="MapClicked" 
                                                        Command="{Binding MapClickedCommand}"/>
-                    
-                </maps:CustomMap.Behaviors>
-                
-            </maps:CustomMap>
-            
+
+                </controls:CustomMap.Behaviors>
+
+            </controls:CustomMap>
+
             <ImageButton Grid.Row="3"
+                         Grid.ColumnSpan="3"
                          CornerRadius="50" 
                          HorizontalOptions="End" 
-                         VerticalOptions="Start"
+                         VerticalOptions="End"
                          HeightRequest="30" 
                          WidthRequest="30"
                          BorderWidth="40"
-                         Source="ic_location"
-                         Margin="20,0"
+                         Margin="20,30"
                          BorderColor="White"/>
-            
+
             <ImageButton Grid.Row="3"
+                         Grid.ColumnSpan="3"
                          HorizontalOptions="End" 
-                         VerticalOptions="Start"
+                         VerticalOptions="End"
                          HeightRequest="30" 
                          WidthRequest="30"
                          BorderWidth="0"
                          Source="ic_location"
-                         Margin="20,0"
+                         Margin="20,30"
                          Command="{Binding FindMyLocationCommand}"/>
 
             <ListView IsVisible="{Binding IsListViewIsVisible}"  
-                      BackgroundColor="Transparent"
-                      ItemsSource="{Binding MapPins}"
-                      Grid.Row="1"
+                      BackgroundColor="White"
+                      ItemsSource="{Binding PinSearchList}"
+                      Grid.Row="0"
+                      Grid.ColumnSpan="3"
                       HeightRequest="{Binding ListViewHeight}">
-                
+
                 <ListView.ItemTemplate>
-                    
+
                     <DataTemplate>
-                        
+
                         <ViewCell>
-                            
-                            <Frame CornerRadius="5">
-                                
+
+                            <Frame>
+
                                 <StackLayout BackgroundColor="White">
-                                    
+
                                     <Label Text="{Binding Title}" 
                                            FontSize="16" 
                                            TextColor="#FF464859"
-                                           HorizontalOptions="Center"/>
-                                    
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center"/>
+
                                 </StackLayout>
-                                
+
                             </Frame>
-                            
+
                         </ViewCell>
-                        
+
                     </DataTemplate>
-                    
+
                 </ListView.ItemTemplate>
-                
+
                 <ListView.Behaviors>
-                    
+
                     <behaviours:EventToCommandBehavior EventName="ItemTapped" 
                                                        Command="{Binding SelectedListViewCommand}"
                                                        EventArgsParameterPath="Item"/>
-                    
+
                 </ListView.Behaviors>
-                
+
             </ListView>
-            
+
         </Grid>
-        
+
     </Grid>
+    
 </ContentPage>

@@ -22,13 +22,16 @@
                Text="{Binding LblText, Source={x:Reference customEntry}}"
                TextColor="#3D4E61"/>
 
-        <Frame CornerRadius="2"
-               Grid.Row="1"
+        <Frame Grid.Row="1"
+               Padding="2,2"
                BackgroundColor="Transparent"
                BorderColor="Gray">
 
-            <Grid ColumnDefinitions="*, 30">
-
+            <Grid ColumnDefinitions="*,30">
+                
+                <Label BackgroundColor="white"
+                       Grid.ColumnSpan="2"/>
+                
                 <controls:StandartEntry Grid.Column="0"
                                         Placeholder="{Binding Placeholder, Source={x:Reference customEntry}}"
                                         PlaceholderColor="{Binding PlaceholderColor, Source={x:Reference customEntry}}"
@@ -56,8 +59,8 @@
 
         <Label Grid.Row="2"
                FontSize="15"
-               Text="{Binding errorText, Source={x:Reference customEntry}}"
-               IsVisible="{Binding isErrorVisible, Source={x:Reference customEntry}}"
+               Text="{Binding ErrorText, Source={x:Reference customEntry}}"
+               IsVisible="{Binding IsErrorVisible, Source={x:Reference customEntry}}"
                TextColor="#F24545"/>
 
     </Grid>

@@ -24,19 +24,19 @@
                                  Grid.Column="1"
                                  LblText="Password" 
                                  Placeholder="Create password"
-                                 errorText="{Binding PasswordError}"
+                                 ErrorText="{Binding PasswordError}"
                                  Text="{Binding Password}"
                                  PlaceholderColor="#858E9E"
-                                 isErrorVisible="{Binding IsPasswordErrorVisible}"/>
+                                 IsErrorVisible="{Binding IsPasswordErrorVisible}"/>
 
         <controls:PasswordEntry  Grid.Row="2" 
                                  Grid.Column="1"
                                  LblText="Confirm password" 
                                  Placeholder="Repeat password"
-                                 errorText="{Binding ConfirmPasswordError}"
+                                 ErrorText="{Binding ConfirmPasswordError}"
                                  Text="{Binding ConfirmPassword}"
                                  PlaceholderColor="#858E9E"
-                                 isErrorVisible="{Binding IsConfirmPasswordErrorVisible}"/>
+                                 IsErrorVisible="{Binding IsConfirmPasswordErrorVisible}"/>
 
         <Frame Grid.Row="4"
                Grid.Column="1"
@@ -45,7 +45,9 @@
                CornerRadius="2">
 
             <Frame.GestureRecognizers>
+                
                 <TapGestureRecognizer Command="{Binding SignUpCommand}"/>
+                
             </Frame.GestureRecognizers>
 
             <Label TextColor="#FEFEFD"
@@ -62,7 +64,9 @@
                         <Span Text="Create account">
 
                             <Span.GestureRecognizers>
+                                
                                 <TapGestureRecognizer Command="{Binding SignUpCommand}" />
+                                
                             </Span.GestureRecognizers>
 
                         </Span>

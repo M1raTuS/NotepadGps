@@ -8,7 +8,7 @@ namespace NotepadGps.Controls
     {
         public CustomEntry()
         {
-            InitializeComponent(); 
+            InitializeComponent();
             img.IsVisible = false;
         }
 
@@ -17,7 +17,7 @@ namespace NotepadGps.Controls
         public static readonly BindableProperty TextProperty = BindableProperty.Create(
                                                                propertyName: nameof(Text),
                                                                returnType: typeof(string),
-                                                               declaringType: typeof(CustomEntry),
+                                                               declaringType: typeof(StandartEntry),
                                                                defaultBindingMode: BindingMode.TwoWay);
 
         public string Text
@@ -29,7 +29,7 @@ namespace NotepadGps.Controls
         public static readonly BindableProperty PlaceholderProperty = BindableProperty.Create(
                                                                       propertyName: nameof(Placeholder),
                                                                       returnType: typeof(string),
-                                                                      declaringType: typeof(CustomEntry));
+                                                                      declaringType: typeof(StandartEntry));
 
         public string Placeholder
         {
@@ -40,7 +40,7 @@ namespace NotepadGps.Controls
         public static readonly BindableProperty PlaceholderColorProperty = BindableProperty.Create(
                                                                            propertyName: nameof(PlaceholderColor),
                                                                            returnType: typeof(string),
-                                                                           declaringType: typeof(CustomEntry));
+                                                                           declaringType: typeof(StandartEntry));
 
         public string PlaceholderColor
         {
@@ -51,7 +51,8 @@ namespace NotepadGps.Controls
         public static readonly BindableProperty LblTextProperty = BindableProperty.Create(
                                                                   propertyName: nameof(LblText),
                                                                   returnType: typeof(string),
-                                                                  declaringType: typeof(CustomEntry));
+                                                                  declaringType: typeof(StandartEntry));
+
 
         public string LblText
         {
@@ -59,32 +60,32 @@ namespace NotepadGps.Controls
             set => SetValue(LblTextProperty, value);
         }
 
-        public static readonly BindableProperty errorTextProperty = BindableProperty.Create(
-                                                                    propertyName: nameof(errorText),
+        public static readonly BindableProperty ErrorTextProperty = BindableProperty.Create(
+                                                                    propertyName: nameof(ErrorText),
                                                                     returnType: typeof(string),
-                                                                    declaringType: typeof(CustomEntry));
+                                                                    declaringType: typeof(StandartEntry));
 
-        public string errorText
+        public string ErrorText
         {
-            get => (string)GetValue(errorTextProperty);
-            set => SetValue(errorTextProperty, value);
+            get => (string)GetValue(ErrorTextProperty);
+            set => SetValue(ErrorTextProperty, value);
         }
 
-        public static readonly BindableProperty isErrorVisibleProperty = BindableProperty.Create(
-                                                                   propertyName: nameof(isErrorVisible),
-                                                                   returnType: typeof(bool),
-                                                                   declaringType: typeof(CustomEntry));
+        public static readonly BindableProperty IsErrorVisibleProperty = BindableProperty.Create(
+                                                                         propertyName: nameof(IsErrorVisible),
+                                                                         returnType: typeof(bool),
+                                                                         declaringType: typeof(StandartEntry));
 
-        public bool isErrorVisible
+        public bool IsErrorVisible
         {
-            get => (bool)GetValue(isErrorVisibleProperty);
-            set => SetValue(isErrorVisibleProperty, value);
+            get => (bool)GetValue(IsErrorVisibleProperty);
+            set => SetValue(IsErrorVisibleProperty, value);
         }
 
         public static readonly BindableProperty CancelButtonProperty = BindableProperty.Create(
-            propertyName: nameof(CancelButton),
-            returnType: typeof(bool),
-            declaringType: typeof(CustomEntry));
+                                                                       propertyName: nameof(CancelButton),
+                                                                       returnType: typeof(bool),
+                                                                       declaringType: typeof(StandartEntry));
 
         public bool CancelButton
         {

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms"
+      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+      xmlns:controls="clr-namespace:NotepadGps.Controls"
+      x:Class="NotepadGps.Controls.CustomSearchBarEntry"
+      x:Name="customSearchBar">
+
+    <Frame CornerRadius="5"
+           Padding="3,3"
+           BorderColor="Gray">
+
+        <Grid RowDefinitions="*"
+              ColumnDefinitions="*,25">
+
+            <controls:CustomSearchBar Grid.Column="0"
+                                      Placeholder="{Binding Placeholder, Source={x:Reference customSearchBar}}"
+                                      PlaceholderColor="{Binding PlaceholderColor, Source={x:Reference customSearchBar}}"
+                                      Text="{Binding Text, Source={x:Reference customSearchBar}}"
+                                      HorizontalOptions="Fill"
+                                      x:Name="custom"/>
+            
+            <Image Grid.Column="1"
+                   x:Name="img"
+                   Source="ic_clear"
+                   VerticalOptions="Fill"
+                   HorizontalOptions="Fill">
+
+                <Image.GestureRecognizers>
+
+                    <TapGestureRecognizer Command="{Binding TapGestureRecognizer,Source={x:Reference customSearchBar}}" />
+
+                </Image.GestureRecognizers>
+            </Image>
+
+        </Grid>
+
+    </Frame>
+
+</Grid>

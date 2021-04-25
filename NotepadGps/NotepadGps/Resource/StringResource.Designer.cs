@@ -70,11 +70,38 @@ namespace NotepadGps.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Заполните все поля.
+        /// </summary>
+        internal static string AlertAll {
+            get {
+                return ResourceManager.GetString("AlertAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Нельзя чтобы заданная дата была меньше текущей даты.
         /// </summary>
         internal static string AlertDate {
             get {
                 return ResourceManager.GetString("AlertDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Нельзя чтобы заданное время было меньше текущего времени.
+        /// </summary>
+        internal static string AlertTime {
+            get {
+                return ResourceManager.GetString("AlertTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Требуется разрешение на использование календаря.
+        /// </summary>
+        internal static string CalendarAlert {
+            get {
+                return ResourceManager.GetString("CalendarAlert", resourceCulture);
             }
         }
         
@@ -115,6 +142,15 @@ namespace NotepadGps.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Permission Denied.
+        /// </summary>
+        internal static string Deny {
+            get {
+                return ResourceManager.GetString("Deny", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Заполните поля Title, Longitude, Latitude и Description.
         /// </summary>
         internal static string FieldsAlert {
@@ -129,6 +165,15 @@ namespace NotepadGps.Resource {
         internal static string Gallery {
             get {
                 return ResourceManager.GetString("Gallery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Требуется разрешение на использование геолокации.
+        /// </summary>
+        internal static string GeoAlert {
+            get {
+                return ResourceManager.GetString("GeoAlert", resourceCulture);
             }
         }
         
@@ -165,6 +210,15 @@ namespace NotepadGps.Resource {
         internal static string MailPasswordAlert {
             get {
                 return ResourceManager.GetString("MailPasswordAlert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Требуется доступ к папкам.
+        /// </summary>
+        internal static string MediaAlert {
+            get {
+                return ResourceManager.GetString("MediaAlert", resourceCulture);
             }
         }
         

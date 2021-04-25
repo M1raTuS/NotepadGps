@@ -7,88 +7,85 @@
 
     <Grid>
         
-        <Frame Opacity="0.85" 
-               Grid.Column="0" 
+        <Frame Grid.Column="0" 
                Grid.Row="0"  
                VerticalOptions="End" 
-               HorizontalOptions="Center"
-               HeightRequest="300"
-               WidthRequest="300"
-               CornerRadius="20">
+               HorizontalOptions="Fill"
+               HeightRequest="300">
             
-            <Grid>
-                
-                <Label Grid.Row="0"
-                       HorizontalOptions="Start"
-                       FontAttributes="Bold"
-                       FontSize="20"
-                       Grid.ColumnSpan="2"
-                       Text="{Binding Title}" />
-
-                <Label Grid.Row="1"
-                       HorizontalOptions="Start" 
-                       Grid.Column="0"
-                       Text="{Binding Latitude}" />
-                
-                <Label Grid.Row="1"
-                       HorizontalOptions="Start" 
-                       Grid.Column="1"
-                       Text="{Binding Longitude}" />
-
-                <Label Grid.Row="2"
-                       HorizontalOptions="Start"
-                       Grid.ColumnSpan="2"
-                       Text="{Binding Description}" />
+            <Grid RowDefinitions="*"
+                  BackgroundColor="Transparent">
                 
                 <Image Source="NoImage.jpg"
                        HeightRequest="100"
-                       WidthRequest="300"
-                       Grid.Row="3"
+                       WidthRequest="200"
+                       Grid.Row="0"
                        Grid.RowSpan="2"
                        Grid.ColumnSpan="2"
                        IsVisible="{Binding IsImgVisible}"/>
 
                 <CarouselView ItemsSource="{Binding ImageList}"
-                              Grid.Row="3"
+                              Grid.Row="0"
                               Grid.RowSpan="2"
                               Grid.ColumnSpan="2"
                               IsVisible="{Binding IsCarouselVisible}">
-                    
+
                     <CarouselView.ItemTemplate>
-                        
+
                         <DataTemplate>
-                            
+
                             <StackLayout HorizontalOptions="Center">
-                                
+
                                 <ffimageloading:CachedImage Source="{Binding ImagePins}"
                                                             VerticalOptions="Center"
                                                             HorizontalOptions="Center"
-                                                            WidthRequest="200"
+                                                            WidthRequest="150"
                                                             HeightRequest="100"
-                                                            Aspect="AspectFit"
+                                                            Aspect="Fill"
                                                             DownsampleToViewSize = "true">
-                                    
+
                                 </ffimageloading:CachedImage>
-                                
+
                             </StackLayout>
-                            
+
                         </DataTemplate>
-                        
+
                     </CarouselView.ItemTemplate>
-                    
+
                 </CarouselView>
                 
-                <Button Grid.Row="5"
-                        Grid.Column="0"
-                        Command="{Binding ImageCommand}"
-                        Text="Add picture"
-                        CornerRadius="20"/>
+                <Label Grid.Row="2"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Start"
+                       FontAttributes="Bold"
+                       FontSize="20"
+                       FontFamily="Montserrat"
+                       Grid.ColumnSpan="2"
+                       Text="{Binding Title}" />
 
-                <Button Grid.Row="5"
-                        Grid.Column="1"
-                        Command="{Binding NotifyCommand}"
-                        Text="Add notify"
-                        CornerRadius="20"/>
+                <Label Grid.Row="3"
+                       HorizontalOptions="Start" 
+                       VerticalOptions="Start"
+                       FontSize="16"
+                       FontFamily="Montserrat"
+                       Grid.Column="1"
+                       Text="{Binding Latitude}" />
+                
+                <Label Grid.Row="3"
+                       HorizontalOptions="Start" 
+                       VerticalOptions="Start"
+                       FontSize="16"
+                       FontFamily="Montserrat"
+                       Grid.Column="0"
+                       Text="{Binding Longitude}" />
+
+                <Label Grid.Row="4"
+                       HorizontalOptions="Fill"
+                       VerticalOptions="Start"
+                       FontSize="18"
+                       FontFamily="Montserrat"
+                       Grid.ColumnSpan="2"
+                       Text="{Binding Description}" />
                 
             </Grid>
             

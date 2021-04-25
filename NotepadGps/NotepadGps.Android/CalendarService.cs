@@ -15,9 +15,10 @@ namespace NotepadGps.Droid
     {
         private const string timeZone = "UTC";
 
-        public async Task<bool> AddEventToCalendar(string eventTitle, string eventDescription)
+        public async Task<bool> AddEventToCalendar(string eventTitle, DateTime dateTime, TimeSpan timeSpan)
         {
             var calendarsId = GetCalendarList();
+            var newTime = timeSpan.Add(new TimeSpan(1, 0, 0));
 
             foreach (var calendarId in calendarsId)
             {
@@ -25,14 +26,15 @@ namespace NotepadGps.Droid
 
                 eventValues.Put(CalendarContract.Events.InterfaceConsts.CalendarId,calendarId);
                 eventValues.Put(CalendarContract.Events.InterfaceConsts.Title,eventTitle);
-                eventValues.Put(CalendarContract.Events.InterfaceConsts.Description,eventDescription);
-                eventValues.Put(CalendarContract.Events.InterfaceConsts.Dtstart,GetDateTimeMS(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Hour, DateTime.Now.Minute));
-                eventValues.Put(CalendarContract.Events.InterfaceConsts.Dtend, GetDateTimeMS(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.AddHours(1).Hour, DateTime.Now.Minute));
-
+                eventValues.Put(CalendarContract.Events.InterfaceConsts.Description, eventTitle);
+                eventValues.Put(CalendarContract.Events.InterfaceConsts.Dtstart,GetDateTimeMS(dateTime.Year, dateTime.Month, dateTime.Day,
+                                                                                              timeSpan.Hours, timeSpan.Minutes));
+                eventValues.Put(CalendarContract.Events.InterfaceConsts.Dtend, GetDateTimeMS(dateTime.Year, dateTime.Month, dateTime.Day,
+                                                                                              newTime.Hours, timeSpan.Minutes));
                 eventValues.Put(CalendarContract.Events.InterfaceConsts.EventTimezone,timeZone);
                 eventValues.Put(CalendarContract.Events.InterfaceConsts.EventEndTimezone,timeZone);
 
-                var uri = MainActivity.Instance.ContentResolver.Insert(CalendarContract.Events.ContentUri,
+                MainActivity.Instance.ContentResolver.Insert(CalendarContract.Events.ContentUri,
                     eventValues);
             }
 

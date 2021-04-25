@@ -1,14 +1,16 @@
-﻿using NotepadGps.Models;
+﻿using Acr.UserDialogs;
+using NotepadGps.Models;
+using NotepadGps.Resource;
 using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Map;
 using NotepadGps.Services.Settings;
 using NotepadGps.View;
 using Plugin.Permissions;
+using Plugin.Permissions.Abstractions;
 using Prism.Navigation;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -34,6 +36,11 @@ namespace NotepadGps.ViewModel
             _mapPinService = mapPinService;
             _settingsService = settingsService;
             _autorizationService = autorizationService;
+
+            MessagingCenter.Subscribe<MainListViewModel, string>(this, "SearchTextChanged", (obj, e) =>
+            {
+                SearchText = e;
+            });
         }
 
         #region -- Public properties --
@@ -91,6 +98,7 @@ namespace NotepadGps.ViewModel
         public ICommand PinClickedCommand => new Command<Pin>(OnPinClickedCommandAsync);
         public ICommand SelectedListViewCommand => new Command<MapPinModel>(OnSelectedListViewCommand);
         public ICommand MapClickedCommand => new Command(OnMapClickedCommand);
+        public ICommand LogOutTapCommand => new Command(OnLogOutCommandAsync);
 
         #endregion
 
@@ -112,40 +120,38 @@ namespace NotepadGps.ViewModel
 
             if (args.PropertyName == nameof(SearchText))
             {
-                await MapPinLoadAsync();
-
-                IsListViewIsVisible = false;
-                ListViewHeight = 0;
-
-                if (!(SearchText.Length == 0 || string.IsNullOrEmpty(SearchText)))
+                if (IsActive)
                 {
-                    IsListViewIsVisible = true;
+                    await MapPinLoadAsync();
 
-                    try
+                    IsListViewIsVisible = false;
+                    ListViewHeight = 0;
+
+                    if (!string.IsNullOrWhiteSpace(SearchText))
                     {
+                        IsListViewIsVisible = true;
+
                         PinSearchList = MapPin;
-                        var data = PinSearchList.Where(x => x.Title.ToLower().Contains(SearchText.ToLower()) || //TODO: to service
+
+                        var data = PinSearchList.Where(x => x.Title.ToLower().Contains(SearchText.ToLower()) ||
                         x.Latitude.ToString().ToLower().Contains(SearchText.ToLower()) ||
                         x.Longitude.ToString().ToLower().Contains(SearchText.ToLower()) ||
                         x.Description.ToLower().Contains(SearchText.ToLower()));
+
                         PinSearchList = new ObservableCollection<MapPinModel>(data);
 
-                        switch (PinSearchList.Count)
+                        if (PinSearchList.Count == 0)
                         {
-                            case 1:
-                                ListViewHeight = 45;
-                                break;
-                            case 2:
-                                ListViewHeight = 90;
-                                break; ;
-                            default:
-                                ListViewHeight = 135;
-                                break;
+                            IsListViewIsVisible = false;
                         }
-                    }
-                    catch (Exception e)
-                    {
-                        Debug.WriteLine(e);
+                        else if (PinSearchList.Count > 3)
+                        {
+                            ListViewHeight = 135;
+                        }
+                        else
+                        {
+                            ListViewHeight = 45 * PinSearchList.Count;
+                        }
                     }
                 }
             }
@@ -155,12 +161,23 @@ namespace NotepadGps.ViewModel
         {
             base.RaiseIsActiveChanged();
 
-            await MapPinLoadAsync();
+            if (IsActive)
+            {
+                await MapPinLoadAsync();
+            }
+
+            IsListViewIsVisible = false;
         }
 
         #endregion
 
-        #region -- Private helpers --        
+        #region -- Private helpers --    
+
+        private async void OnLogOutCommandAsync()
+        {
+            _autorizationService.Unautorize();
+            await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(MainPageView)}");
+        }
 
         private async Task<ObservableCollection<MapPinModel>> MapPinLoadAsync()
         {
@@ -176,9 +193,18 @@ namespace NotepadGps.ViewModel
 
             if (status != Plugin.Permissions.Abstractions.PermissionStatus.Granted)
             {
+                if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.Location))
+                {
+                    UserDialogs.Instance.Alert(StringResource.GeoAlert, StringResource.Alert, StringResource.Ok);
+                }
+
                 status = await CrossPermissions.Current.RequestPermissionAsync<LocationPermission>();
 
-                if (status == Plugin.Permissions.Abstractions.PermissionStatus.Granted)
+            }
+
+            if (status == Plugin.Permissions.Abstractions.PermissionStatus.Granted)
+            {
+                try
                 {
                     var location = await Geolocation.GetLastKnownLocationAsync();
 
@@ -189,6 +215,7 @@ namespace NotepadGps.ViewModel
                             DesiredAccuracy = GeolocationAccuracy.Medium,
                             Timeout = TimeSpan.FromSeconds(10)
                         });
+
                         MapSpan = new MapSpan(new Position(location.Latitude, location.Longitude), 1, 1);
                         CurrentCameraPosition = new CameraPosition(new Position(location.Latitude, location.Longitude), 18.0);
                     }
@@ -196,24 +223,13 @@ namespace NotepadGps.ViewModel
                     MapSpan = new MapSpan(new Position(location.Latitude, location.Longitude), 1, 1);
                     CurrentCameraPosition = new CameraPosition(new Position(location.Latitude, location.Longitude), 18.0);
                 }
-            }
-            else
-            {
-                var location = await Geolocation.GetLastKnownLocationAsync();
-
-                if (location == null)
+                catch 
                 {
-                    location = await Geolocation.GetLocationAsync(new GeolocationRequest
-                    {
-                        DesiredAccuracy = GeolocationAccuracy.Medium,
-                        Timeout = TimeSpan.FromSeconds(10)
-                    });
-                    MapSpan = new MapSpan(new Position(location.Latitude, location.Longitude), 1, 1);
-                    CurrentCameraPosition = new CameraPosition(new Position(location.Latitude, location.Longitude), 18.0);
                 }
-
-                MapSpan = new MapSpan(new Position(location.Latitude, location.Longitude), 1, 1);
-                CurrentCameraPosition = new CameraPosition(new Position(location.Latitude, location.Longitude), 18.0);
+            }
+            else if (status != Plugin.Permissions.Abstractions.PermissionStatus.Unknown)
+            {
+                CrossPermissions.Current.OpenAppSettings();
             }
         }
 

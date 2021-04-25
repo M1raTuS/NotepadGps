@@ -30,15 +30,11 @@ namespace NotepadGps.Droid
 
             base.OnCreate(savedInstanceState);
 
-            //Add
             await CrossMedia.Current.Initialize();
-            //Add maps
             Xamarin.FormsGoogleMaps.Init(this, savedInstanceState);
-            //Add
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            //add
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
 
             LoadApplication(new App());
@@ -56,10 +52,6 @@ namespace NotepadGps.Droid
                 {
                     RequestPermissions(LocationPermissions, RequestLocationId);
                 }
-                else
-                {
-                    // Permissions already granted - display a message.
-                }
             }
         }
 
@@ -70,20 +62,11 @@ namespace NotepadGps.Droid
 
             if (requestCode == RequestLocationId)
             {
-                if ((grantResults.Length == 1) && (grantResults[0] == (int)Permission.Granted))
-                {
-                    // Permissions granted - display a message.
-                }
-                else
-                {
-                    // Permissions denied - display a message.
-                }
             }
             else
             {
                 base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             }
         }
-
     }
 }

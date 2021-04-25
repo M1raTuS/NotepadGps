@@ -1,10 +1,8 @@
-﻿using Acr.UserDialogs;
-using NotepadGps.Resource;
+﻿using NotepadGps.Resource;
 using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Profile;
 using NotepadGps.View;
 using Prism.Navigation;
-using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -107,11 +105,6 @@ namespace NotepadGps.ViewModel
         private async void OnSignUpCommandAsync()
         {
             await NavigationService.NavigateAsync(nameof(SignUpView));
-        }
-
-        private bool CanSignIn()
-        {
-            return !string.IsNullOrWhiteSpace(Email) && !string.IsNullOrWhiteSpace(Password);//todo: test 
         }
 
         #endregion

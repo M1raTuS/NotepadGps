@@ -42,7 +42,7 @@ namespace NotepadGps.Services.Map
 
             if (list.Count > 0)
             {
-                mapPin.AddRange(list);
+                mapPin = list;
             }
 
             return mapPin;

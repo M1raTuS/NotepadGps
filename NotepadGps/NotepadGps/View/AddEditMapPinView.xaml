@@ -3,20 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:num="clr-namespace:NotepadGps.Behaviour;assembly=NotepadGps"
              xmlns:behaviours="http://prismlibrary.com"
-             xmlns:maps="clr-namespace:NotepadGps.Controls"
+             xmlns:controls="clr-namespace:NotepadGps.Controls"
              x:Class="NotepadGps.View.AddEditMapPinView"
-             Title="Edit">
+             Title="Add pin">
 
     <ContentPage.ToolbarItems>
 
-        <ToolbarItem Text="" Command="{Binding AddButtonCommand}" 
+        <ToolbarItem Command="{Binding AddButtonCommand}" 
                      IconImageSource="ic_save"/>
         
     </ContentPage.ToolbarItems>
     
-    <Grid BackgroundColor="{DynamicResource BackgroundColor}">
+    <Grid>
         
         <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
@@ -25,65 +27,99 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10" />
             <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
             <ColumnDefinition Width="10" />
         </Grid.ColumnDefinitions>
 
-        <Entry Grid.Row="0"
-               Grid.Column="1"
-               Text="{Binding Title}"
-               Placeholder="Title"
-               MaxLength="30"/>
+        <controls:CustomEntry  Grid.Row="0" 
+                               Grid.Column="1"
+                               Grid.ColumnSpan="2"
+                               LblText="Label" 
+                               Placeholder="Enter the label"
+                               ErrorText="{Binding TitleError}"
+                               Text="{Binding Title}"
+                               PlaceholderColor="#858E9E"
+                               IsErrorVisible="{Binding IsTitleErrorVisible}"/>
 
-        <Entry Grid.Row="1"
-               Grid.Column="1"
-               Text="{Binding Latitude}"
-               Placeholder="Latitude"
-               Keyboard="Numeric"/>
+        <controls:CustomEntry  Grid.Row="1" 
+                               Grid.Column="1"
+                               Grid.ColumnSpan="2"
+                               LblText="Description" 
+                               Placeholder="Write a description"
+                               ErrorText="{Binding DescriptionError}"
+                               Text="{Binding Description}"
+                               PlaceholderColor="#858E9E"
+                               IsErrorVisible="{Binding IsDescriptionErrorVisible}"/>
 
-        <Entry Grid.Row="2"
-               Grid.Column="1"
-               Text="{Binding Longitude}"
-               Placeholder="Longitude"
-               Keyboard="Numeric">
-            <Entry.Behaviors>
-                <num:NumericValidationBehavior/>
-            </Entry.Behaviors>
-        </Entry>
+        <controls:CustomEntry  Grid.Row="2" 
+                               Grid.Column="1"
+                               LblText="Coordinates" 
+                               Placeholder="Longitude"
+                               ErrorText="{Binding LongitudeError}"
+                               Text="{Binding Longitude}"
+                               PlaceholderColor="#858E9E"
+                               IsErrorVisible="{Binding IsLongitudeErrorVisible}"/>
 
-        <Editor Grid.Row="3" 
-                Grid.RowSpan="2"
+        <controls:CustomEntry  Grid.Row="2" 
+                               Grid.Column="2"
+                               LblText=" " 
+                               Placeholder="Latitude"
+                               ErrorText="{Binding LatitudeError}"
+                               Text="{Binding Latitude}"
+                               PlaceholderColor="#858E9E"
+                               IsErrorVisible="{Binding IsLatitudeErrorVisible}"/>
+
+        <Button Grid.Row="4"
                 Grid.Column="1"
-                BackgroundColor="Gray"
-                Placeholder="Description"
-                HeightRequest="120"
-                MaxLength="120"
-                Text="{Binding Description}"/>
-
-        <maps:CustomMap Grid.Row="5" 
-                        Grid.RowSpan="6"
-                        Grid.Column="1"
-                        MapType="Street" 
-                        HasZoomEnabled="True" 
-                        HasScrollEnabled="True" 
-                        IsShowingUser="False"
-                        MyLocationEnabled="False"
-                        PinsSource="{Binding MapPins}">
+                Grid.ColumnSpan="2"
+                BackgroundColor="Transparent"
+                TextColor="#596EFB"
+                BorderColor="#596EFB"
+                BorderWidth="2"
+                Text="Add photo"
+                Command="{Binding PictureButtonCommand}" />
+        
+        <controls:CustomMap Grid.Row="5" 
+                            Grid.Column="0"
+                            Grid.ColumnSpan="4"
+                            MapType="Street" 
+                            HasZoomEnabled="False" 
+                            HasScrollEnabled="False" 
+                            IsShowingUser="True"
+                            MyLocationEnabled="False"
+                            PinsSource="{Binding MapPins}">
             
-            <maps:CustomMap.Behaviors>
+            <controls:CustomMap.Behaviors>
                 
                 <behaviours:EventToCommandBehavior EventName="MapClicked" 
                                                    Command="{Binding MapClickedCommand}"
                                                    EventArgsParameterPath="Point"/>
                 
-            </maps:CustomMap.Behaviors>
+            </controls:CustomMap.Behaviors>
 
-        </maps:CustomMap>
+        </controls:CustomMap>
 
-        <Button Grid.Row="11"
-                BackgroundColor="Red"
-                Grid.Column="1"
-                Text="Add"
-                Command="{Binding AddButtonCommand}" 
-                CornerRadius="20"/>
+        <ImageButton Grid.Row="5"
+                     Grid.ColumnSpan="4"
+                     CornerRadius="50" 
+                     HorizontalOptions="End" 
+                     VerticalOptions="End"
+                     HeightRequest="30" 
+                     WidthRequest="30"
+                     BorderWidth="40"
+                     Margin="20,30"
+                     BorderColor="White"/>
+
+        <ImageButton Grid.Row="5"
+                     Grid.ColumnSpan="4"
+                     HorizontalOptions="End" 
+                     VerticalOptions="End"
+                     HeightRequest="30" 
+                     WidthRequest="30"
+                     BorderWidth="0"
+                     Source="ic_location"
+                     Margin="20,30"
+                     Command="{Binding FindMyLocationCommand}"/>
+        
     </Grid>
 </ContentPage>

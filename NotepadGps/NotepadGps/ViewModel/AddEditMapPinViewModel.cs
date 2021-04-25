@@ -3,10 +3,16 @@ using NotepadGps.Models;
 using NotepadGps.Resource;
 using NotepadGps.Services.Autentification;
 using NotepadGps.Services.Autorization;
+using NotepadGps.Services.Image;
 using NotepadGps.Services.Map;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
+using Plugin.Permissions;
+using Plugin.Permissions.Abstractions;
 using Prism.Navigation;
 using System;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
@@ -17,20 +23,23 @@ namespace NotepadGps.ViewModel
     {
         private const string imgString = "ic_like_blue";
 
-        private readonly IAutorizationService _autorization;
+        private readonly IAutorizationService _autorizationService;
         private readonly IMapPinService _mapPinService;
-        private readonly IAutentificationService _autentification;
+        private readonly IImageService _imageService;
+        private readonly IAutentificationService _autentificationService;
 
         public AddEditMapPinViewModel(
             INavigationService navigationService,
-            IAutorizationService autorization,
+            IAutorizationService autorizationService,
             IMapPinService mapPinService,
-            IAutentificationService autentification)
+            IImageService imageService,
+            IAutentificationService autentificationService)
             : base(navigationService)
         {
-            _autorization = autorization;
+            _autorizationService = autorizationService;
             _mapPinService = mapPinService;
-            _autentification = autentification;
+            _imageService = imageService;
+            _autentificationService = autentificationService;
         }
 
         #region -- Public properties --
@@ -71,6 +80,14 @@ namespace NotepadGps.ViewModel
 
         }
 
+        private bool _isListViewShow;
+        public bool IsListViewShow
+        {
+            get => _isListViewShow;
+            set => SetProperty(ref _isListViewShow, value);
+
+        }
+
         private ObservableCollection<MapPinModel> mapPins;
         public ObservableCollection<MapPinModel> MapPins
         {
@@ -78,7 +95,15 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref mapPins, value);
         }
 
+        private ObservableCollection<ImageModel> _listImg;
+        public ObservableCollection<ImageModel> ListImg
+        {
+            get => _listImg;
+            set => SetProperty(ref _listImg, value);
+        }
+
         public ICommand AddButtonCommand => new Command(OnAddButtonCommandAsync);
+        public ICommand PictureButtonCommand => new Command(OnPictureButtonCommand);
         public ICommand MapClickedCommand => new Command<Position>(OnMapClickedCommand);
 
         #endregion
@@ -103,14 +128,16 @@ namespace NotepadGps.ViewModel
 
         private async void OnAddButtonCommandAsync()
         {
-            bool isCanSave = !string.IsNullOrWhiteSpace(Title) && !string.IsNullOrWhiteSpace(Longitude) && !string.IsNullOrWhiteSpace(Latitude) && !string.IsNullOrWhiteSpace(Description);
+            bool isCanSave = !string.IsNullOrWhiteSpace(Title) && !string.IsNullOrWhiteSpace(Longitude)
+                                                               && !string.IsNullOrWhiteSpace(Latitude)
+                                                               && !string.IsNullOrWhiteSpace(Description);
 
             if (isCanSave)
             {
                 var mapPin = new MapPinModel()
                 {
                     Id = Id,
-                    UserId = _autorization.GetAutorizedUserId,
+                    UserId = _autorizationService.GetAutorizedUserId,
                     Title = Title,
                     Longitude = Convert.ToDouble(Longitude),
                     Latitude = Convert.ToDouble(Latitude),
@@ -125,6 +152,7 @@ namespace NotepadGps.ViewModel
                     nav.Add(nameof(MapPinModel), mapPin);
 
                     await _mapPinService.UpdateMapPinAsync(mapPin);
+                    await AddImgAsync();
                     await NavigationService.GoBackAsync();
                 }
                 else
@@ -133,6 +161,7 @@ namespace NotepadGps.ViewModel
                     nav.Add(nameof(MapPinModel), mapPin);
 
                     await _mapPinService.SaveMapPinAsync(mapPin);
+                    await AddImgAsync();
                     await NavigationService.GoBackAsync();
                 }
             }
@@ -140,6 +169,133 @@ namespace NotepadGps.ViewModel
             {
                 UserDialogs.Instance.Alert(StringResource.FieldsAlert, StringResource.Alert, StringResource.Ok);
             }
+        }
+
+        private async Task AddImgAsync()
+        {
+            if (ListImg?.Count > 0)
+            {
+                foreach (var item in ListImg)
+                {
+                    await _imageService.SaveMapPinAsync(item);
+                }
+            }
+        }
+
+        private void OnPictureButtonCommand()
+        {
+            bool isCanSave = !string.IsNullOrWhiteSpace(Title) && !string.IsNullOrWhiteSpace(Longitude)
+                                                                  && !string.IsNullOrWhiteSpace(Latitude)
+                                                                  && !string.IsNullOrWhiteSpace(Description);
+
+            if (isCanSave)
+            {
+                var file = new ActionSheetConfig()
+                .SetTitle(StringResource.ImgSourceChoose)
+                .Add(StringResource.Gallery, () => OpenGalery())
+                .Add(StringResource.Camera, () => OpenCamera())
+                .SetCancel();
+
+                UserDialogs.Instance.ActionSheet(file);
+            }
+            else
+            {
+                UserDialogs.Instance.Alert(StringResource.FieldsAlert, StringResource.Alert, StringResource.Ok);
+            }
+        }
+
+        private async void OpenGalery()
+        {
+            var status = await CrossPermissions.Current.CheckPermissionStatusAsync<StoragePermission>();
+
+            if (status != PermissionStatus.Granted)
+            {
+                if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.Storage))
+                {
+                    UserDialogs.Instance.Alert(StringResource.MediaAlert, StringResource.Alert, StringResource.Ok);
+                }
+
+                status = await CrossPermissions.Current.RequestPermissionAsync<StoragePermission>();
+
+            }
+            
+            if (status == PermissionStatus.Granted)
+            {
+                if (CrossMedia.Current.IsPickPhotoSupported)
+                {
+                    MediaFile img = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions());
+
+                    if (img != null)
+                    {
+                        var image = new ImageModel()
+                        {
+                            UserId = _autorizationService.GetAutorizedUserId,
+                            Latitude = Latitude,
+                            Longitude = Longitude,
+                            ImagePins = img.Path
+                        };
+
+                        ListImg = new ObservableCollection<ImageModel> { image };
+                    }
+                }
+            }
+            else if (status != PermissionStatus.Unknown)
+            {
+                CrossPermissions.Current.OpenAppSettings();
+            }
+        }
+
+        private async void OpenCamera()
+        {
+            var status = await CrossPermissions.Current.CheckPermissionStatusAsync<CameraPermission>();
+
+            if (status != PermissionStatus.Granted)
+            {
+
+                if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.Camera))
+                {
+                    UserDialogs.Instance.Alert(StringResource.MediaAlert, StringResource.Alert, StringResource.Ok);
+                }
+
+                status = await CrossPermissions.Current.RequestPermissionAsync<CameraPermission>();
+
+            }
+
+            if (status == PermissionStatus.Granted)
+            {
+                if (CrossMedia.Current.IsCameraAvailable && CrossMedia.Current.IsPickPhotoSupported)
+                {
+                    MediaFile img = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
+                    {
+                        PhotoSize = PhotoSize.Medium,
+                        SaveToAlbum = true,
+                        SaveMetaData = true,
+                        Directory = "temp",
+                        MaxWidthHeight = 1500,
+                        CompressionQuality = 75,
+                        RotateImage = Device.RuntimePlatform == Device.Android ? true : false,
+                        Name = $"{DateTime.Now}.jpg"
+                    });
+
+                    if (img != null)
+                    {
+                        var image = new ImageModel()
+                        {
+                            UserId = _autorizationService.GetAutorizedUserId,
+                            Latitude = Latitude,
+                            Longitude = Longitude,
+                            ImagePins = img.Path
+                        };
+
+                        ListImg = new ObservableCollection<ImageModel> { image };
+                    }
+                }
+            }
+            else if (status != PermissionStatus.Unknown)
+            {
+                CrossPermissions.Current.OpenAppSettings();
+            }
+
         }
 
         private void OnMapClickedCommand(Position position)
@@ -151,7 +307,9 @@ namespace NotepadGps.ViewModel
             {
                 Title = "test",
                 Latitude = position.Latitude,
-                Longitude = position.Longitude
+                Longitude = position.Longitude,
+                IsChosen = true
+
             };
 
             MapPins = new ObservableCollection<MapPinModel> { Pin };

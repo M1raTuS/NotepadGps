@@ -25,7 +25,7 @@ namespace NotepadGps.View
         #region -- Public properties --
 
         public ICommand LogInCommand => new Command(OnLogInCommandAsync);
-        public ICommand LogOutCommand => new Command(OnLogOutCommandAsync);
+        public ICommand LogUpCommand => new Command(OnLogUpCommandAsync);
 
         #endregion
 
@@ -36,9 +36,9 @@ namespace NotepadGps.View
             await NavigationService.NavigateAsync(nameof(SignInView));
         }
 
-        private async void OnLogOutCommandAsync()
+        private async void OnLogUpCommandAsync()
         {
-            await NavigationService.NavigateAsync(nameof(MainPageView));
+            await NavigationService.NavigateAsync(nameof(SignUpView));
         }
 
         #endregion

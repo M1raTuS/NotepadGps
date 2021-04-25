@@ -59,26 +59,26 @@ namespace NotepadGps.Controls
             set => SetValue(LblTextProperty, value);
         }
 
-        public static readonly BindableProperty errorTextProperty = BindableProperty.Create(
-                                                                    propertyName: nameof(errorText),
+        public static readonly BindableProperty ErrorTextProperty = BindableProperty.Create(
+                                                                    propertyName: nameof(ErrorText),
                                                                     returnType: typeof(string),
                                                                     declaringType: typeof(PasswordEntry));
 
-        public string errorText
+        public string ErrorText
         {
-            get => (string)GetValue(errorTextProperty);
-            set => SetValue(errorTextProperty, value);
+            get => (string)GetValue(ErrorTextProperty);
+            set => SetValue(ErrorTextProperty, value);
         }
 
-        public static readonly BindableProperty isErrorVisibleProperty = BindableProperty.Create(
-                                                                  propertyName: nameof(isErrorVisible),
+        public static readonly BindableProperty IsErrorVisibleProperty = BindableProperty.Create(
+                                                                  propertyName: nameof(IsErrorVisible),
                                                                   returnType: typeof(bool),
-                                                                  declaringType: typeof(CustomEntry));
+                                                                  declaringType: typeof(StandartEntry));
 
-        public bool isErrorVisible
+        public bool IsErrorVisible
         {
-            get => (bool)GetValue(isErrorVisibleProperty);
-            set => SetValue(isErrorVisibleProperty, value);
+            get => (bool)GetValue(IsErrorVisibleProperty);
+            set => SetValue(IsErrorVisibleProperty, value);
         }
 
         public ICommand TapGestureRecognizer => new Command(OnTapGestureRecognizer);

@@ -31,6 +31,11 @@ namespace NotepadGps.ViewModel
             _autorizationService = autorizationService;
 
             MapPinLoadAsync();
+
+            MessagingCenter.Subscribe<MainListViewModel, string>(this, "SearchTextChanged", (obj, e) =>
+            {
+                SearchText = e;
+            });
         }
 
         #region -- Public properties --
@@ -49,11 +54,18 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _labelVisible, value);
         }
 
-        private string _searchPin;
-        public string SearchPin
+        private bool _listIsVisible;
+        public bool ListIsVisible
         {
-            get => _searchPin;
-            set => SetProperty(ref _searchPin, value);
+            get => _listIsVisible;
+            set => SetProperty(ref _listIsVisible, value);
+        }
+
+        private string _searchText;
+        public string SearchText
+        {
+            get => _searchText;
+            set => SetProperty(ref _searchText, value);
         }
 
         private bool _isChosen;
@@ -66,9 +78,56 @@ namespace NotepadGps.ViewModel
         public ICommand AddMapPinFloatingButtonCommand => new Command(AddMapPinFloatingButtonAsync);
         public ICommand SelectedCommand => new Command(OnSelectedCommandAsync);
         public ICommand EditContext => new Command(EditContextMenuAsync);
-        public ICommand DeleteContext => new Command(DeleteContextMenuAsync); 
+        public ICommand DeleteContext => new Command(DeleteContextMenuAsync);
         public ICommand CheckedPinCommand => new Command<MapPinModel>(OnCheckedPinCommandAsync);
-        public ICommand AddEvents => new Command<MapPinModel>(OnAddEvents);
+
+        #endregion
+
+        #region -- Overrides --
+
+        protected async override void OnPropertyChanged(PropertyChangedEventArgs args)
+        {
+            base.OnPropertyChanged(args);
+
+            if (args.PropertyName == nameof(MapPin))
+            {
+                LabelVisible = false;
+                ListIsVisible = true;
+
+                if (MapPin.Count < 1)
+                {
+                    LabelVisible = true;
+                    ListIsVisible = false;
+                }
+            }
+
+            if (args.PropertyName == nameof(SearchText))
+            {
+                if (IsActive)
+                {
+                    await MapPinLoadAsync();
+
+                    if (!(SearchText.Length == 0 || string.IsNullOrEmpty(SearchText)))
+                    {
+                        var pin = MapPin.Where(x => x.Title.ToLower().Contains(SearchText.ToLower()) || 
+                        x.Latitude.ToString().ToLower().Contains(SearchText.ToLower()) ||
+                        x.Longitude.ToString().ToLower().Contains(SearchText.ToLower()) ||
+                        x.Description.ToLower().Contains(SearchText.ToLower()));
+                        MapPin = new ObservableCollection<MapPinModel>(pin);
+                    }
+                }
+            }
+        }
+
+        public async override void OnNavigatedTo(INavigationParameters parameters)
+        {
+            await MapPinLoadAsync();
+        }
+
+        protected override void RaiseIsActiveChanged()
+        {
+            base.RaiseIsActiveChanged();
+        }
 
         #endregion
 
@@ -84,7 +143,7 @@ namespace NotepadGps.ViewModel
             var nav = new NavigationParameters();
             nav.Add(nameof(MapPinModel), (MapPinModel)pin);
 
-            await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/MainListView?selectedTab=MapsPage", nav);
+            await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/MainListView?selectedTab=MapsPageView", nav);
         }
 
         private async void EditContextMenuAsync(object obj)
@@ -125,14 +184,6 @@ namespace NotepadGps.ViewModel
             await MapPinLoadAsync();
         }
 
-        private async void OnAddEvents(object obj)
-        {
-            var nav = new NavigationParameters();
-            nav.Add(nameof(MapPinModel), (MapPinModel)obj);
-
-            await NavigationService.NavigateAsync(nameof(NotifyPageView), nav);
-        }
-
         private async Task<ObservableCollection<MapPinModel>> MapPinLoadAsync()
         {
             var mapPin = await _mapPinService.GetMapPinListByIdAsync(_autorizationService.GetAutorizedUserId);
@@ -142,46 +193,5 @@ namespace NotepadGps.ViewModel
 
         #endregion
 
-        #region -- Overrides --
-
-        protected async override void OnPropertyChanged(PropertyChangedEventArgs args)
-        {
-            base.OnPropertyChanged(args);
-            if (args.PropertyName == nameof(MapPin))
-            {
-                LabelVisible = false;
-
-                if (MapPin.Count < 1)
-                {
-                    LabelVisible = true;
-                }
-            }
-
-            if (args.PropertyName == nameof(SearchPin))
-            {
-                await MapPinLoadAsync();
-
-                if (!(SearchPin.Length == 0 || string.IsNullOrEmpty(SearchPin)))
-                {
-                    var pin = MapPin.Where(x => x.Title.ToLower().Contains(SearchPin.ToLower()) || //TODO: to service
-                    x.Latitude.ToString().ToLower().Contains(SearchPin.ToLower()) ||
-                    x.Longitude.ToString().ToLower().Contains(SearchPin.ToLower()) ||
-                    x.Description.ToLower().Contains(SearchPin.ToLower()));
-                    MapPin = new ObservableCollection<MapPinModel>(pin);
-                }
-            }
-        }
-
-        public async override void OnNavigatedTo(INavigationParameters parameters)
-        {
-            await MapPinLoadAsync();
-        }
-
-        protected async override void RaiseIsActiveChanged()
-        {
-            base.RaiseIsActiveChanged();
-        }
-
-        #endregion
     }
 }

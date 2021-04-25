@@ -1,63 +1,105 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:controls="clr-namespace:NotepadGps.Controls" 
              x:Class="NotepadGps.View.NotifyPageView"
-             Title="Notify">
+             Title="Add event">
+
+    <ContentPage.ToolbarItems>
+
+        <ToolbarItem Command="{Binding SaveCommand}" 
+                     IconImageSource="ic_save"/>
+
+    </ContentPage.ToolbarItems>
 
     <Grid>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+
+        </Grid.RowDefinitions>
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="30" />
+
+            <ColumnDefinition Width="10" />
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="30" />
+            <ColumnDefinition Width="10" />
+
         </Grid.ColumnDefinitions>
-        
-        <Grid Grid.Row="6"
-              Grid.Column="1">
-            <StackLayout HorizontalOptions="FillAndExpand" 
-                         Orientation="Horizontal">
-                <Label Text="SET TIME" 
-                       HorizontalOptions="StartAndExpand" 
-                       FontSize="15"  
-                       VerticalOptions="Center"/>
-                <TimePicker HorizontalOptions="EndAndExpand" 
-                            Time="{Binding SelectedTime}" 
-                            BackgroundColor="Transparent" 
-                            Format="t"/>
-            </StackLayout>
-        </Grid>
-        <Grid Grid.Row="7"
-              Grid.Column="1">
-            <StackLayout HorizontalOptions="FillAndExpand" 
-                         Orientation="Horizontal">
-                <Label Text="SET DATE"  
-                       FontSize="15" 
-                       VerticalOptions="Center" 
-                       HorizontalOptions="StartAndExpand"/>
-                <DatePicker HorizontalOptions="EndAndExpand" 
-                            Date="{Binding SelectedDate}"   
-                            Format="MM-dd-yyyy"/>
-            </StackLayout>
-        </Grid>
-        <Grid Grid.Row="8"
-              Grid.Column="1">
-            <StackLayout HorizontalOptions="FillAndExpand" 
-                         Spacing="10">
-                
-                <Editor HeightRequest="120" 
-                        Text="{Binding MessageText}"
-                        Placeholder="Enter Message"
-                        HorizontalOptions="FillAndExpand"/>
-            </StackLayout>
-        </Grid>
-        <Grid Grid.Row="12"
-              Grid.Column="1">
-            <Button Text="Save" 
-                    Command="{Binding SaveCommand}" 
-                    FontSize="15"  
-                    BackgroundColor="Blue"  
-                    HorizontalOptions="FillAndExpand" 
-                    BorderRadius="15"/>
-        </Grid>
+
+        <controls:CustomEntry  Grid.Row="0" 
+                               Grid.Column="1"
+                               LblText="Label" 
+                               Placeholder="Enter the label"
+                               ErrorText="{Binding TitleError}"
+                               Text="{Binding Title}"
+                               PlaceholderColor="#858E9E"
+                               IsErrorVisible="{Binding IsTitleErrorVisible}" />
+
+        <Label Grid.Row="1"
+               Grid.Column="1"
+               VerticalOptions="End"
+               Text="Date and time"
+               FontFamily="Montserrat"
+               FontSize="18"
+               FontAttributes="Bold"
+               TextColor="#3D4E61"/>
+
+        <DatePicker Grid.Row="2"
+                    Grid.Column="1"
+                    HorizontalOptions="Fill" 
+                    VerticalOptions="Start"
+                    Date="{Binding SelectedDate}"   
+                    Format="MM-dd-yyyy" />
+
+        <TimePicker Grid.Row="3"
+                    Grid.Column="1"
+                    HorizontalOptions="Fill" 
+                    VerticalOptions="Start"
+                    Time="{Binding SelectedTime}" 
+                    BackgroundColor="Transparent" 
+                    Format="t"/>
+
+        <controls:CustomMap Grid.Row="4"
+                            Grid.RowSpan="3"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"
+                            MapType="Street" 
+                            HasZoomEnabled="False" 
+                            HasScrollEnabled="True" 
+                            IsShowingUser="True"
+                            MyLocationEnabled="True"
+                            PinsSource="{Binding MapPin}"
+                            CurrentCameraPosition="{Binding CurrentCameraPosition}"/>
+
+        <ImageButton Grid.Row="4"
+                     Grid.RowSpan="3"
+                     Grid.ColumnSpan="3"
+                     CornerRadius="50" 
+                     HorizontalOptions="End" 
+                     VerticalOptions="End"
+                     HeightRequest="30" 
+                     WidthRequest="30"
+                     BorderWidth="40"
+                     Margin="20,30"
+                     BorderColor="White"/>
+
+        <ImageButton Grid.Row="4"
+                     Grid.RowSpan="3"
+                     Grid.ColumnSpan="3"
+                     HorizontalOptions="End" 
+                     VerticalOptions="End"
+                     HeightRequest="30" 
+                     WidthRequest="30"
+                     BorderWidth="0"
+                     Source="ic_location"
+                     Margin="20,30"
+                     Command="{Binding FindMyLocationCommand}"/>
+
     </Grid>
-    
+
 </ContentPage>

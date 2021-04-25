@@ -3,19 +3,60 @@
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:local="clr-namespace:NotepadGps.View;assembly=NotepadGps"
             x:Class="NotepadGps.View.MainListView"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" 
+            xmlns:controls="clr-namespace:NotepadGps.Controls"
+            android:TabbedPage.ToolbarPlacement="Bottom"
             Title="Maps">
 
-    <TabbedPage.ToolbarItems>
-        
-        <ToolbarItem Command="{Binding LogOutTapCommand}"
-                     IconImageSource="ic_exid.png"
-                     Text="LogOut" />
-        
-    </TabbedPage.ToolbarItems>
 
+    <NavigationPage.TitleView>
+
+        <StackLayout>
+            
+            <Grid>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="30"/>
+                </Grid.ColumnDefinitions>
+                
+                <ImageButton Grid.Column="0"
+                             Grid.Row="0"
+                             Source="ic_settings"
+                             HorizontalOptions="Start"
+                             VerticalOptions="FillAndExpand"
+                             BackgroundColor="Transparent"/>
+
+                <controls:CustomSearchBarEntry Placeholder="  Search ..."
+                                               Text="{Binding SearchText}"
+                                               PlaceholderColor="#858E9E"
+                                               Grid.Row="0"
+                                               Padding="0,2"
+                                               Grid.Column="1">
+                </controls:CustomSearchBarEntry>
+
+                <ImageButton Grid.Column="2"
+                             Source="ic_exid"
+                             HorizontalOptions="End"
+                             VerticalOptions="Center"
+                             BackgroundColor="Transparent"
+                             Command="{Binding LogOutTapCommand}"/>
+                </Grid>
+            
+        </StackLayout>
+        
+    </NavigationPage.TitleView>
+    
     <TabbedPage.Children>
-        <local:MapsPageView />
-        <local:ListPageView/>
+        
+        <local:MapsPageView IconImageSource="ic_map"/>
+        <local:EventsPinsView IconImageSource="ic_pin"/>
+        
     </TabbedPage.Children>
-
+    
 </TabbedPage>

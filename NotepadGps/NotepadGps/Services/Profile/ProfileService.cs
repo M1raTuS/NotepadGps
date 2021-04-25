@@ -24,7 +24,7 @@ namespace NotepadGps.Services.Profile
 
             if (list.Count > 0)
             {
-                users.AddRange(list);
+                users = list;
             }
 
             return users;
@@ -37,7 +37,7 @@ namespace NotepadGps.Services.Profile
 
             if (list.Count > 0)
             {
-                users.AddRange(list);
+                users = list;
             }
 
             return users;
@@ -50,7 +50,7 @@ namespace NotepadGps.Services.Profile
 
             if (list.Count > 0)
             {
-                users.AddRange(list);
+                users = list;
             }
 
             return users;

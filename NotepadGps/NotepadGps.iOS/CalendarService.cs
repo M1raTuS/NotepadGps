@@ -5,6 +5,7 @@ using System;
 using System.Threading.Tasks;
 using UIKit;
 
+[assembly: Xamarin.Forms.Dependency(typeof(NotepadGps.iOS.CalendarService))]
 namespace NotepadGps.iOS
 {
     public class CalendarService : ICalendarService
@@ -16,17 +17,20 @@ namespace NotepadGps.iOS
             eventStore = new EKEventStore();
         }
 
-        public async Task<bool> AddEventToCalendar(string eventTitle, string eventDescription)
+        public async Task<bool> AddEventToCalendar(string eventTitle, DateTime dateTime, TimeSpan timeSpan)
         {
             var granted = await eventStore.RequestAccessAsync(EKEntityType.Event);
+
             if (granted.Item1)
             {
                 EKEvent newEvent = EKEvent.FromStore(eventStore);
-                newEvent.StartDate = DateTimeToNSDate(DateTime.Now);
-                newEvent.EndDate = DateTimeToNSDate(DateTime.Now.AddHours(1));
+                newEvent.StartDate = DateTimeToNSDate(new DateTime(dateTime.Year, dateTime.Month, dateTime.Day, timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds));
+                newEvent.EndDate = DateTimeToNSDate(new DateTime(dateTime.Year, dateTime.Month, dateTime.Day, timeSpan.Hours + 1, timeSpan.Minutes, timeSpan.Seconds));
                 newEvent.Title = eventTitle;
-                newEvent.Notes = eventDescription;
                 newEvent.Calendar = eventStore.DefaultCalendarForNewEvents;
+
+                newEvent.AddAlarm(EKAlarm.FromDate(newEvent.StartDate.AddSeconds(-3600)));
+
                 NSError e;
                 eventStore.SaveEvent(newEvent, EKSpan.ThisEvent, out e);
 

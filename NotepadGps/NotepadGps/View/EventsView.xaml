@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotepadGps.View.EventsView"
+             Title="Events"
+             xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             mvvm:ViewModelLocator.AutowireViewModel="True">
+    
+    <Grid>
+
+        <ListView ItemsSource="{Binding EventList}"
+                  HasUnevenRows="True"
+                  SelectionMode="None"
+                  IsVisible="{Binding IsListVisible}">
+
+            <ListView.ItemTemplate>
+
+                <DataTemplate>
+
+                    <ViewCell>
+
+                        <ViewCell.View>
+
+                            <Grid RowDefinitions="auto"
+                                  ColumnDefinitions ="*,40">
+                                
+                                <Label Text="{Binding Title}" 
+                                       FontSize="21" 
+                                       FontFamily="Montserrat"
+                                       TextColor="#1E242B"
+                                       Grid.Row="0"
+                                       Grid.Column="0"/>
+
+                                <Label Text="{Binding Date, StringFormat='{0:dd MMMM, yyyy}'}" 
+                                       FontSize="18" 
+                                       FontFamily="Montserrat"
+                                       TextColor="#3D4E61"
+                                       Grid.Row="1"
+                                       Grid.Column="0"/>
+
+                                <Label Text="{Binding Time ,StringFormat='{}{0:hh\\:mm}'}" 
+                                       FontSize="18" 
+                                       FontFamily="Montserrat"
+                                       TextColor="#3D4E61"
+                                       Grid.Row="2"/>
+
+                                <ImageButton Source="ic_left_gray"
+                                             Grid.Row="0"
+                                             Grid.RowSpan="3"
+                                             Grid.Column="1"
+                                             HorizontalOptions="End"
+                                             VerticalOptions="Center"
+                                             WidthRequest="50"
+                                             HeightRequest="50"
+                                             BackgroundColor="Transparent"/>
+
+                            </Grid>
+
+                        </ViewCell.View>
+
+                    </ViewCell>
+
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+            
+        </ListView>
+        
+        <Label Text="NoEvent" 
+               IsVisible="{Binding IsLabelVisible}"
+               FontSize="30" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+        
+        <Button HorizontalOptions="End"
+                VerticalOptions="End"
+                Command="{Binding AddEventCommand}" 
+                CornerRadius="35"
+                Margin="15,15"
+                HeightRequest="70"
+                WidthRequest="70"
+                BackgroundColor="#596EFB"
+                ImageSource="ic_plus"/>
+        
+    </Grid>
+
+</ContentPage>

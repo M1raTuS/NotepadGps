@@ -18,13 +18,14 @@ namespace NotepadGps.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            //Add maps
-            Xamarin.FormsGoogleMaps.Init("AIzaSyAf7rljVibHW7F1neBavieHa9UZ5t3Co5s");
 
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new CalendarHelper());
-            //Add
-            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(); LoadApplication(new CalendarHelper());
+
+            Xamarin.FormsGoogleMaps.Init("AIzaSyAf7rljVibHW7F1neBavieHa9UZ5t3Co5s");
+
+            LoadApplication(new App());
+
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
 
             return base.FinishedLaunching(app, options);
         }

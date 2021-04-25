@@ -1,8 +1,15 @@
 ﻿using Acr.UserDialogs;
+using NotepadGps.Models;
 using NotepadGps.Resource;
+using NotepadGps.Services.Autorization;
+using NotepadGps.Services.Image;
+using NotepadGps.Services.Map;
 using Plugin.Permissions;
+using Plugin.Permissions.Abstractions;
 using Prism.Navigation;
 using System;
+using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -10,73 +17,140 @@ namespace NotepadGps.ViewModel
 {
     public class NotifyViewModel : BaseViewModel
     {
+        private readonly IEventService _eventService;
+        private readonly IMapPinService _mapPinService;
+        private readonly IAutorizationService _autorizationService;
+
         public NotifyViewModel(
-            INavigationService navigationService)
+            INavigationService navigationService,
+            IMapPinService mapPinService,
+            IEventService eventService,
+            IAutorizationService autorizationService)
             : base(navigationService)
         {
+            _mapPinService = mapPinService;
+            _eventService = eventService;
+            _autorizationService = autorizationService;
 
+            MapPinLoadAsync();
         }
 
-        #region -- Overrides --
+        #region -- Public properties --
 
-        public async override void Initialize(INavigationParameters parameters)
+        private ObservableCollection<MapPinModel> mapPin;
+        public ObservableCollection<MapPinModel> MapPin
         {
-            base.Initialize(parameters);
+            get => mapPin;
+            set => SetProperty(ref mapPin, value);
         }
 
-        #endregion
+        private ObservableCollection<EventModel> eventList;
+        public ObservableCollection<EventModel> EventList
+        {
+            get => eventList;
+            set => SetProperty(ref eventList, value);
+        }
 
-        #region MyRegion
-
-        public ICommand SaveCommand => new Command(SaveLocalNotification);
-
-        DateTime _selectedDate = DateTime.Today;
+        private DateTime _selectedDate = DateTime.Now.AddSeconds(10);
         public DateTime SelectedDate
         {
             get => _selectedDate;
             set
             {
-                if (_selectedDate < DateTime.Now)
+                SetProperty(ref _selectedDate, value);
+
+                if (_selectedDate.AddSeconds(10) < DateTime.Now)
                 {
                     UserDialogs.Instance.Alert(StringResource.AlertDate, StringResource.Alert, StringResource.Ok);
+                    SetProperty(ref _selectedDate, DateTime.Now.AddSeconds(10));
                 }
-                else { SetProperty(ref _selectedDate, value); }
             }
         }
 
-        TimeSpan _selectedTime = DateTime.Now.TimeOfDay;
+        private TimeSpan _selectedTime = DateTime.Now.TimeOfDay;
         public TimeSpan SelectedTime
         {
             get => _selectedTime;
-            set => SetProperty(ref _selectedTime, value);
+            set
+            {
+                SetProperty(ref _selectedTime, value);
+
+                if (_selectedTime.Add(new TimeSpan(0, 0, 20)) < DateTime.Now.TimeOfDay)
+                {
+                    UserDialogs.Instance.Alert(StringResource.AlertTime, StringResource.Alert, StringResource.Ok);
+                    SetProperty(ref _selectedTime, DateTime.Now.TimeOfDay);
+                }
+            }
         }
 
-        string _messageText;
-        public string MessageText
+        private string _title;
+        public string Title
         {
-            get => _messageText;
-            set => SetProperty(ref _messageText, value);
+            get => _title;
+            set => SetProperty(ref _title, value);
+        }
+
+        public ICommand SaveCommand => new Command(SaveLocalNotification);
+
+        #endregion
+
+        #region -- Private helpers --
+
+        private async Task<ObservableCollection<MapPinModel>> MapPinLoadAsync()
+        {
+            var mapPin = await _mapPinService.GetMapPinListByIdAsync(_autorizationService.GetAutorizedUserId);
+            MapPin = new ObservableCollection<MapPinModel>(mapPin);
+            return MapPin;
         }
 
         private async void SaveLocalNotification()
         {
-            var status = await CrossPermissions.Current.CheckPermissionStatusAsync<CalendarPermission>();
-
-            if (status != Plugin.Permissions.Abstractions.PermissionStatus.Granted)
+            if (!string.IsNullOrWhiteSpace(Title) && !string.IsNullOrWhiteSpace(SelectedDate.ToString()) && !string.IsNullOrWhiteSpace(SelectedTime.ToString()))
             {
-                status = await CrossPermissions.Current.RequestPermissionAsync<CalendarPermission>();
+                var status = await CrossPermissions.Current.CheckPermissionStatusAsync<CalendarPermission>();
 
-                if (status == Plugin.Permissions.Abstractions.PermissionStatus.Granted)
+                if (status != PermissionStatus.Granted)
                 {
-                    await DependencyService.Get<NotepadGps.Services.Calendar.ICalendarService>().AddEventToCalendar(MessageText, MessageText);
+                    if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.Calendar))
+                    {
+                        UserDialogs.Instance.Alert(StringResource.CalendarAlert, StringResource.Alert, StringResource.Ok);
+                    }
+
+                    status = await CrossPermissions.Current.RequestPermissionAsync<CalendarPermission>();
+                }
+
+                if (status == PermissionStatus.Granted)
+                {
+                    await AddedEvent();
+                }
+                else if(status != PermissionStatus.Unknown)
+                {
+                    CrossPermissions.Current.OpenAppSettings();
                 }
             }
             else
             {
-                await DependencyService.Get<NotepadGps.Services.Calendar.ICalendarService>().AddEventToCalendar(MessageText, MessageText);
+                UserDialogs.Instance.Alert(StringResource.AlertAll, StringResource.Alert, StringResource.Ok);
             }
         }
+
+        private async Task AddedEvent()
+        {
+            await DependencyService.Get<Services.Calendar.ICalendarService>().AddEventToCalendar(Title, SelectedDate, SelectedTime);
+
+            var events = new EventModel
+            {
+                UserId = _autorizationService.GetAutorizedUserId,
+                Title = Title,
+                Date = SelectedDate,
+                Time = SelectedTime
+            };
+
+            await _eventService.SaveEventAsync(events);
+            await NavigationService.GoBackAsync();
+        }
     }
+
     #endregion
 
 }

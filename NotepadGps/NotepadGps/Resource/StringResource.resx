@@ -120,8 +120,17 @@
   <data name="Alert" xml:space="preserve">
     <value>Alert</value>
   </data>
+  <data name="AlertAll" xml:space="preserve">
+    <value>Заполните все поля</value>
+  </data>
   <data name="AlertDate" xml:space="preserve">
     <value>Нельзя чтобы заданная дата была меньше текущей даты</value>
+  </data>
+  <data name="AlertTime" xml:space="preserve">
+    <value>Нельзя чтобы заданное время было меньше текущего времени</value>
+  </data>
+  <data name="CalendarAlert" xml:space="preserve">
+    <value>Требуется разрешение на использование календаря</value>
   </data>
   <data name="Camera" xml:space="preserve">
     <value>Camera</value>
@@ -135,11 +144,17 @@
   <data name="DeleteAccept" xml:space="preserve">
     <value>Подтверждаете ли вы удаление?</value>
   </data>
+  <data name="Deny" xml:space="preserve">
+    <value>Permission Denied</value>
+  </data>
   <data name="FieldsAlert" xml:space="preserve">
     <value>Заполните поля Title, Longitude, Latitude и Description</value>
   </data>
   <data name="Gallery" xml:space="preserve">
     <value>Gallery</value>
+  </data>
+  <data name="GeoAlert" xml:space="preserve">
+    <value>Требуется разрешение на использование геолокации</value>
   </data>
   <data name="ImgSourceChoose" xml:space="preserve">
     <value>Choose your action</value>
@@ -152,6 +167,9 @@
   </data>
   <data name="MailPasswordAlert" xml:space="preserve">
     <value>Invalid email or password!</value>
+  </data>
+  <data name="MediaAlert" xml:space="preserve">
+    <value>Требуется доступ к папкам</value>
   </data>
   <data name="NameAlert" xml:space="preserve">
     <value>Имя должно быть не менее 4 и не более 16 символов. Имя не должно начинаться с цифер</value>
