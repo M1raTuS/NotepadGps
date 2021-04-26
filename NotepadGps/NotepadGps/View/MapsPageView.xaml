@@ -26,11 +26,8 @@
                                 Grid.RowSpan="4"
                                 Grid.ColumnSpan="3"
                                 MapType="Street" 
-<<<<<<< HEAD
-=======
                                 HasZoomEnabled="False" 
                                 HasScrollEnabled="True" 
->>>>>>> e6a746682176846e9d2060160bbc2195675fcd5f
                                 IsShowingUser="True"
                                 MyLocationEnabled="True"
                                 PinsSource="{Binding MapPin}"

@@ -326,10 +326,6 @@ namespace NotepadGps.ViewModel
             {
                 if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.Storage))
                 {
-<<<<<<< HEAD
-=======
-                   
->>>>>>> e6a746682176846e9d2060160bbc2195675fcd5f
                 }
 
                 status = await CrossPermissions.Current.RequestPermissionAsync<StoragePermission>();
@@ -366,10 +362,8 @@ namespace NotepadGps.ViewModel
 
         private async void OpenCamera()
         {
-<<<<<<< HEAD
-=======
-            //var status = await CrossPermissions.Current.CheckPermissionStatusAsync<CameraPermission>();
->>>>>>> e6a746682176846e9d2060160bbc2195675fcd5f
+ //var status = await CrossPermissions.Current.CheckPermissionStatusAsync<CameraPermission>();
+
             var status = await CrossPermissions.Current.CheckPermissionStatusAsync<MediaLibraryPermission>();
 
             if (status != PermissionStatus.Granted)

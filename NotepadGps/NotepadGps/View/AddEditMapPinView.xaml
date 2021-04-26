@@ -138,13 +138,8 @@
                             Grid.ColumnSpan="4"
                             MapType="Street" 
                             HasZoomEnabled="False" 
-<<<<<<< HEAD
                             HasScrollEnabled="False" 
                             IsShowingUser="False"
-=======
-                            HasScrollEnabled="True" 
-                            IsShowingUser="True"
->>>>>>> e6a746682176846e9d2060160bbc2195675fcd5f
                             MyLocationEnabled="False"
                             PinsSource="{Binding MapPins}">
 
