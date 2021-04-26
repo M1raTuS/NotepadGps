@@ -108,6 +108,7 @@ namespace NotepadGps.ViewModel
                         x.Latitude.ToString().ToLower().Contains(SearchText.ToLower()) ||
                         x.Longitude.ToString().ToLower().Contains(SearchText.ToLower()) ||
                         x.Description.ToLower().Contains(SearchText.ToLower()));
+
                         MapPin = new ObservableCollection<MapPinModel>(pin);
                     }
                 }

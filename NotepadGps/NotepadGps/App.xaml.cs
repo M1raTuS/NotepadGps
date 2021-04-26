@@ -7,7 +7,6 @@ using NotepadGps.Services.Repository;
 using NotepadGps.Services.Settings;
 using NotepadGps.View;
 using NotepadGps.ViewModel;
-using Plugin.Media;
 using Prism.Ioc;
 using Prism.Unity;
 using Xamarin.Forms;
@@ -16,7 +15,6 @@ namespace NotepadGps
 {
     public partial class App : PrismApplication
     {
-
         public App() { }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -45,6 +43,7 @@ namespace NotepadGps
             containerRegistry.RegisterForNavigation<PopUpView, PopUpViewModel>();
             containerRegistry.RegisterForNavigation<EventsView, EventsViewModel>();
             containerRegistry.RegisterForNavigation<NotifyPageView, NotifyViewModel>();
+            containerRegistry.RegisterForNavigation<SettingsView, SettingsViewModel>();
         }
 
         protected override void OnInitialized()
@@ -63,7 +62,8 @@ namespace NotepadGps
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            var settingsService = Container.Resolve<ISettingsService>();
+            settingsService.LoadTheme();
         }
 
         protected override void OnSleep()

@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:num="clr-namespace:NotepadGps.Behaviour;assembly=NotepadGps"
              xmlns:behaviours="http://prismlibrary.com"
              xmlns:controls="clr-namespace:NotepadGps.Controls"
              x:Class="NotepadGps.View.AddEditMapPinView"
@@ -11,19 +10,20 @@
 
         <ToolbarItem Command="{Binding AddButtonCommand}" 
                      IconImageSource="ic_save"/>
-        
+
     </ContentPage.ToolbarItems>
-    
+
     <Grid>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10" />
             <ColumnDefinition Width="*" />
@@ -36,10 +36,10 @@
                                Grid.ColumnSpan="2"
                                LblText="Label" 
                                Placeholder="Enter the label"
-                               ErrorText="{Binding TitleError}"
-                               Text="{Binding Title}"
+                               ErrorText="{Binding LabelError}"
+                               Text="{Binding Label}"
                                PlaceholderColor="#858E9E"
-                               IsErrorVisible="{Binding IsTitleErrorVisible}"/>
+                               IsErrorVisible="{Binding IsLabelErrorVisible}"/>
 
         <controls:CustomEntry  Grid.Row="1" 
                                Grid.Column="1"
@@ -69,7 +69,62 @@
                                PlaceholderColor="#858E9E"
                                IsErrorVisible="{Binding IsLatitudeErrorVisible}"/>
 
-        <Button Grid.Row="4"
+        <Label Grid.Row="3"
+               Grid.Column="1"
+               Text="Add photo"/>
+
+        <ListView x:Name="ListViewImg"
+                  ItemsSource="{Binding ListImg}"
+                  Grid.Row="4"
+                  Grid.Column="1"
+                  Grid.ColumnSpan="2"
+                  HasUnevenRows="True"
+                  SelectionMode="None"
+                  HeightRequest="20">
+
+            <ListView.ItemTemplate>
+
+                <DataTemplate>
+
+                    <ViewCell>
+
+                        <ViewCell.View>
+
+                            <Grid RowDefinitions="auto"
+                                  ColumnDefinitions="auto">
+
+                                <Label Text="{Binding ImagePins}"
+                                       Grid.Column="0"/>
+
+                                <ImageButton Grid.Column="1"
+                                             Source="ic_clear"
+                                             VerticalOptions="Center"
+                                             HorizontalOptions="Start"
+                                             BackgroundColor="Transparent">
+
+                                    <ImageButton.Behaviors>
+
+                                        <behaviours:EventToCommandBehavior EventName="Clicked"
+                                                                           Command="{Binding  Path=BindingContext.OnClick, Source={Reference ListViewImg}}"
+                                                                           CommandParameter="{Binding .}" />
+
+                                    </ImageButton.Behaviors>
+
+                                </ImageButton>
+
+                            </Grid>
+
+                        </ViewCell.View>
+
+                    </ViewCell>
+
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+        <Button Grid.Row="5"
                 Grid.Column="1"
                 Grid.ColumnSpan="2"
                 BackgroundColor="Transparent"
@@ -78,28 +133,32 @@
                 BorderWidth="2"
                 Text="Add photo"
                 Command="{Binding PictureButtonCommand}" />
-        
-        <controls:CustomMap Grid.Row="5" 
-                            Grid.Column="0"
+
+        <controls:CustomMap Grid.Row="6" 
                             Grid.ColumnSpan="4"
                             MapType="Street" 
                             HasZoomEnabled="False" 
+<<<<<<< HEAD
+                            HasScrollEnabled="False" 
+                            IsShowingUser="False"
+=======
                             HasScrollEnabled="True" 
                             IsShowingUser="True"
+>>>>>>> e6a746682176846e9d2060160bbc2195675fcd5f
                             MyLocationEnabled="False"
                             PinsSource="{Binding MapPins}">
-            
+
             <controls:CustomMap.Behaviors>
-                
+
                 <behaviours:EventToCommandBehavior EventName="MapClicked" 
                                                    Command="{Binding MapClickedCommand}"
                                                    EventArgsParameterPath="Point"/>
-                
+
             </controls:CustomMap.Behaviors>
 
         </controls:CustomMap>
 
-        <ImageButton Grid.Row="5"
+        <ImageButton Grid.Row="6"
                      Grid.ColumnSpan="4"
                      CornerRadius="50" 
                      HorizontalOptions="End" 
@@ -107,19 +166,20 @@
                      HeightRequest="30" 
                      WidthRequest="30"
                      BorderWidth="40"
-                     Margin="20,30"
+                     Margin="20,20"
                      BorderColor="White"/>
 
-        <ImageButton Grid.Row="5"
+        <ImageButton Grid.Row="6"
                      Grid.ColumnSpan="4"
                      HorizontalOptions="End" 
                      VerticalOptions="End"
                      HeightRequest="30" 
                      WidthRequest="30"
                      BorderWidth="0"
+                     BackgroundColor="Transparent"
                      Source="ic_location"
-                     Margin="20,30"
+                     Margin="20,20"
                      Command="{Binding FindMyLocationCommand}"/>
-        
+
     </Grid>
 </ContentPage>

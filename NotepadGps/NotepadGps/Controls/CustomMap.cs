@@ -79,9 +79,9 @@ namespace NotepadGps.Controls
             if (bindableMap != null && newPinsSource != null)
             {
                 bindableMap.Pins.Clear();
+
                 foreach (MapPinModel pin in newPinsSource)
                 {
-
                     var pins = new Pin
                     {
                         Label = pin.Title,

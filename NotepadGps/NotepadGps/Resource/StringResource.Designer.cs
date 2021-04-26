@@ -151,6 +151,15 @@ namespace NotepadGps.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enter description.
+        /// </summary>
+        internal static string DescriptionError {
+            get {
+                return ResourceManager.GetString("DescriptionError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Заполните поля Title, Longitude, Latitude и Description.
         /// </summary>
         internal static string FieldsAlert {
@@ -183,6 +192,33 @@ namespace NotepadGps.Resource {
         internal static string ImgSourceChoose {
             get {
                 return ResourceManager.GetString("ImgSourceChoose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter label.
+        /// </summary>
+        internal static string LabelError {
+            get {
+                return ResourceManager.GetString("LabelError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter latitude.
+        /// </summary>
+        internal static string LatitudeError {
+            get {
+                return ResourceManager.GetString("LatitudeError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter longitude.
+        /// </summary>
+        internal static string LongitudeError {
+            get {
+                return ResourceManager.GetString("LongitudeError", resourceCulture);
             }
         }
         

@@ -11,7 +11,10 @@ using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
 using Prism.Navigation;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -40,6 +43,11 @@ namespace NotepadGps.ViewModel
             _mapPinService = mapPinService;
             _imageService = imageService;
             _autentificationService = autentificationService;
+
+            LabelError = StringResource.LabelError;
+            DescriptionError = StringResource.DescriptionError;
+            LongitudeError = StringResource.LongitudeError;
+            LatitudeError = StringResource.LatitudeError;
         }
 
         #region -- Public properties --
@@ -51,11 +59,18 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _id, value);
         }
 
-        private string _title;
-        public string Title
+        private string _label;
+        public string Label
         {
-            get => _title;
-            set => SetProperty(ref _title, value);
+            get => _label;
+            set => SetProperty(ref _label, value);
+        }
+
+        private string _labelError;
+        public string LabelError
+        {
+            get => _labelError;
+            set => SetProperty(ref _labelError, value);
         }
 
         private string _longitude;
@@ -65,6 +80,13 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _longitude, value);
         }
 
+        private string _longitudeError;
+        public string LongitudeError
+        {
+            get => _longitudeError;
+            set => SetProperty(ref _longitudeError, value);
+        }
+
         private string _latitude;
         public string Latitude
         {
@@ -72,12 +94,36 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _latitude, value);
         }
 
+        private string _latitudeError;
+        public string LatitudeError
+        {
+            get => _latitudeError;
+            set => SetProperty(ref _latitudeError, value);
+        }
+
         private string _description;
         public string Description
         {
             get => _description;
             set => SetProperty(ref _description, value);
+        }
 
+        private string _descriptionError;
+        public string DescriptionError
+        {
+            get => _descriptionError;
+            set => SetProperty(ref _descriptionError, value);
+        }
+
+        private string _imagePins;
+        public string ImagePins
+        {
+            get => _imagePins;
+            set
+            {
+                var strArray = value.Split('/');
+                SetProperty(ref _imagePins, strArray.Last());
+            }
         }
 
         private bool _isListViewShow;
@@ -85,7 +131,34 @@ namespace NotepadGps.ViewModel
         {
             get => _isListViewShow;
             set => SetProperty(ref _isListViewShow, value);
+        }
 
+        private bool _isLabelErrorVisible;
+        public bool IsLabelErrorVisible
+        {
+            get => _isLabelErrorVisible;
+            set => SetProperty(ref _isLabelErrorVisible, value);
+        }
+
+        private bool _isDescriptionErrorVisible;
+        public bool IsDescriptionErrorVisible
+        {
+            get => _isDescriptionErrorVisible;
+            set => SetProperty(ref _isDescriptionErrorVisible, value);
+        }
+
+        private bool _isLongitudeErrorVisible;
+        public bool IsLongitudeErrorVisible
+        {
+            get => _isLongitudeErrorVisible;
+            set => SetProperty(ref _isLongitudeErrorVisible, value);
+        }
+
+        private bool _isLatitudeErrorVisible;
+        public bool IsLatitudeErrorVisible
+        {
+            get => _isLatitudeErrorVisible;
+            set => SetProperty(ref _isLatitudeErrorVisible, value);
         }
 
         private ObservableCollection<MapPinModel> mapPins;
@@ -95,16 +168,22 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref mapPins, value);
         }
 
-        private ObservableCollection<ImageModel> _listImg;
+        private ObservableCollection<ImageModel> _listImg = new ObservableCollection<ImageModel>();
         public ObservableCollection<ImageModel> ListImg
         {
             get => _listImg;
-            set => SetProperty(ref _listImg, value);
+        }
+
+        private ObservableCollection<ImageModel> _tempImg = new ObservableCollection<ImageModel>();
+        public ObservableCollection<ImageModel> TempImg
+        {
+            get => _tempImg;
         }
 
         public ICommand AddButtonCommand => new Command(OnAddButtonCommandAsync);
         public ICommand PictureButtonCommand => new Command(OnPictureButtonCommand);
         public ICommand MapClickedCommand => new Command<Position>(OnMapClickedCommand);
+        public ICommand OnClick => new Command(OnClicks);
 
         #endregion
 
@@ -115,7 +194,7 @@ namespace NotepadGps.ViewModel
             if (parameters.TryGetValue(nameof(MapPinModel), out MapPinModel mapPin))
             {
                 Id = mapPin.Id;
-                Title = mapPin.Title;
+                Label = mapPin.Title;
                 Latitude = mapPin.Latitude.ToString();
                 Longitude = mapPin.Longitude.ToString();
                 Description = mapPin.Description;
@@ -128,9 +207,15 @@ namespace NotepadGps.ViewModel
 
         private async void OnAddButtonCommandAsync()
         {
-            bool isCanSave = !string.IsNullOrWhiteSpace(Title) && !string.IsNullOrWhiteSpace(Longitude)
-                                                               && !string.IsNullOrWhiteSpace(Latitude)
-                                                               && !string.IsNullOrWhiteSpace(Description);
+            bool isCanSave = !string.IsNullOrWhiteSpace(Label) &&
+                             !string.IsNullOrWhiteSpace(Longitude) &&
+                             !string.IsNullOrWhiteSpace(Latitude) &&
+                             !string.IsNullOrWhiteSpace(Description);
+
+            IsLabelErrorVisible = false;
+            IsLongitudeErrorVisible = false;
+            IsLatitudeErrorVisible = false;
+            IsDescriptionErrorVisible = false;
 
             if (isCanSave)
             {
@@ -138,7 +223,7 @@ namespace NotepadGps.ViewModel
                 {
                     Id = Id,
                     UserId = _autorizationService.GetAutorizedUserId,
-                    Title = Title,
+                    Title = Label,
                     Longitude = Convert.ToDouble(Longitude),
                     Latitude = Convert.ToDouble(Latitude),
                     Description = Description,
@@ -167,7 +252,30 @@ namespace NotepadGps.ViewModel
             }
             else
             {
-                UserDialogs.Instance.Alert(StringResource.FieldsAlert, StringResource.Alert, StringResource.Ok);
+                ErrorMessageVisible();
+            }
+        }
+
+        private void ErrorMessageVisible()
+        {
+            if (string.IsNullOrWhiteSpace(Label))
+            {
+                IsLabelErrorVisible = true;
+            }
+
+            if (string.IsNullOrWhiteSpace(Longitude))
+            {
+                IsLongitudeErrorVisible = true;
+            }
+
+            if (string.IsNullOrWhiteSpace(Latitude))
+            {
+                IsLatitudeErrorVisible = true;
+            }
+
+            if (string.IsNullOrWhiteSpace(Description))
+            {
+                IsDescriptionErrorVisible = true;
             }
         }
 
@@ -184,9 +292,15 @@ namespace NotepadGps.ViewModel
 
         private void OnPictureButtonCommand()
         {
-            bool isCanSave = !string.IsNullOrWhiteSpace(Title) && !string.IsNullOrWhiteSpace(Longitude)
-                                                                  && !string.IsNullOrWhiteSpace(Latitude)
-                                                                  && !string.IsNullOrWhiteSpace(Description);
+            bool isCanSave = !string.IsNullOrWhiteSpace(Label) &&
+                             !string.IsNullOrWhiteSpace(Longitude) &&
+                             !string.IsNullOrWhiteSpace(Latitude) &&
+                             !string.IsNullOrWhiteSpace(Description);
+
+            IsLabelErrorVisible = false;
+            IsLongitudeErrorVisible = false;
+            IsLatitudeErrorVisible = false;
+            IsDescriptionErrorVisible = false;
 
             if (isCanSave)
             {
@@ -200,7 +314,7 @@ namespace NotepadGps.ViewModel
             }
             else
             {
-                UserDialogs.Instance.Alert(StringResource.FieldsAlert, StringResource.Alert, StringResource.Ok);
+                ErrorMessageVisible();
             }
         }
 
@@ -212,13 +326,16 @@ namespace NotepadGps.ViewModel
             {
                 if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.Storage))
                 {
+<<<<<<< HEAD
+=======
                    
+>>>>>>> e6a746682176846e9d2060160bbc2195675fcd5f
                 }
 
                 status = await CrossPermissions.Current.RequestPermissionAsync<StoragePermission>();
 
             }
-            
+
             if (status == PermissionStatus.Granted)
             {
                 if (CrossMedia.Current.IsPickPhotoSupported)
@@ -235,7 +352,9 @@ namespace NotepadGps.ViewModel
                             ImagePins = img.Path
                         };
 
-                        ListImg = new ObservableCollection<ImageModel> { image };
+                        var imgd = image;
+                        imgd.ImagePins = imgd.ImagePins.Split('/').Last();
+                        ListImg.Add(imgd);
                     }
                 }
             }
@@ -247,7 +366,10 @@ namespace NotepadGps.ViewModel
 
         private async void OpenCamera()
         {
+<<<<<<< HEAD
+=======
             //var status = await CrossPermissions.Current.CheckPermissionStatusAsync<CameraPermission>();
+>>>>>>> e6a746682176846e9d2060160bbc2195675fcd5f
             var status = await CrossPermissions.Current.CheckPermissionStatusAsync<MediaLibraryPermission>();
 
             if (status != PermissionStatus.Granted)
@@ -255,10 +377,10 @@ namespace NotepadGps.ViewModel
 
                 if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.MediaLibrary))
                 {
-                    UserDialogs.Instance.Alert(StringResource.MediaAlert, StringResource.Alert, StringResource.Ok);
+
                 }
 
-                status = await CrossPermissions.Current.RequestPermissionAsync<CameraPermission>();
+                status = await CrossPermissions.Current.RequestPermissionAsync<MediaLibraryPermission>();
 
             }
 
@@ -288,7 +410,9 @@ namespace NotepadGps.ViewModel
                             ImagePins = img.Path
                         };
 
-                        ListImg = new ObservableCollection<ImageModel> { image };
+                        var imgd = image;
+                        imgd.ImagePins = imgd.ImagePins.Split('/').Last();
+                        ListImg.Add(imgd);
                     }
                 }
             }
@@ -310,13 +434,17 @@ namespace NotepadGps.ViewModel
                 Latitude = position.Latitude,
                 Longitude = position.Longitude,
                 IsChosen = true
-
             };
 
             MapPins = new ObservableCollection<MapPinModel> { Pin };
 
             Latitude = string.Format("{0:f8}", position.Latitude);
             Longitude = string.Format("{0:f8}", position.Longitude);
+        }
+
+        private void OnClicks(object obj)
+        {
+            ListImg.Remove((ImageModel)obj);
         }
 
         #endregion

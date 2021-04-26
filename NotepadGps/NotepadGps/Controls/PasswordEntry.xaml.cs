@@ -107,7 +107,7 @@ namespace NotepadGps.Controls
 
             if (propertyName == nameof(Text))
             {
-                if (string.IsNullOrEmpty(Text))
+                if (string.IsNullOrWhiteSpace(Text))
                 {
                     img.IsVisible = false;
                 }

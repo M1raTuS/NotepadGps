@@ -81,7 +81,7 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _isListViewIsVisible, value);
         }
 
-        private int _listViewHeight;
+        private int _listViewHeight; 
         public int ListViewHeight
         {
             get => _listViewHeight;
@@ -198,6 +198,10 @@ namespace NotepadGps.ViewModel
             {
                 if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.Location))
                 {
+<<<<<<< HEAD
+
+=======
+>>>>>>> e6a746682176846e9d2060160bbc2195675fcd5f
                 }
 
                 status = await CrossPermissions.Current.RequestPermissionAsync<LocationPermission>();

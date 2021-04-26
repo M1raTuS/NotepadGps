@@ -147,6 +147,9 @@
   <data name="Deny" xml:space="preserve">
     <value>Permission Denied</value>
   </data>
+  <data name="DescriptionError" xml:space="preserve">
+    <value>Enter description</value>
+  </data>
   <data name="FieldsAlert" xml:space="preserve">
     <value>Заполните поля Title, Longitude, Latitude и Description</value>
   </data>
@@ -158,6 +161,15 @@
   </data>
   <data name="ImgSourceChoose" xml:space="preserve">
     <value>Choose your action</value>
+  </data>
+  <data name="LabelError" xml:space="preserve">
+    <value>Enter label</value>
+  </data>
+  <data name="LatitudeError" xml:space="preserve">
+    <value>Enter latitude</value>
+  </data>
+  <data name="LongitudeError" xml:space="preserve">
+    <value>Enter longitude</value>
   </data>
   <data name="MailAlert" xml:space="preserve">
     <value>Введите корректный почтовый адрес</value>

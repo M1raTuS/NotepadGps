@@ -30,7 +30,8 @@
                              Source="ic_settings"
                              HorizontalOptions="Start"
                              VerticalOptions="FillAndExpand"
-                             BackgroundColor="Transparent"/>
+                             BackgroundColor="Transparent"
+                             Command="{Binding OpenSettings}"/>
 
                 <controls:CustomSearchBarEntry Placeholder="  Search ..."
                                                Text="{Binding SearchText}"
