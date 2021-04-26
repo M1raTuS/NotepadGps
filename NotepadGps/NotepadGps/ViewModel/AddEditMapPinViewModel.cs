@@ -212,7 +212,7 @@ namespace NotepadGps.ViewModel
             {
                 if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.Storage))
                 {
-                    UserDialogs.Instance.Alert(StringResource.MediaAlert, StringResource.Alert, StringResource.Ok);
+                   
                 }
 
                 status = await CrossPermissions.Current.RequestPermissionAsync<StoragePermission>();
@@ -247,12 +247,13 @@ namespace NotepadGps.ViewModel
 
         private async void OpenCamera()
         {
-            var status = await CrossPermissions.Current.CheckPermissionStatusAsync<CameraPermission>();
+            //var status = await CrossPermissions.Current.CheckPermissionStatusAsync<CameraPermission>();
+            var status = await CrossPermissions.Current.CheckPermissionStatusAsync<MediaLibraryPermission>();
 
             if (status != PermissionStatus.Granted)
             {
 
-                if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.Camera))
+                if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.MediaLibrary))
                 {
                     UserDialogs.Instance.Alert(StringResource.MediaAlert, StringResource.Alert, StringResource.Ok);
                 }

@@ -31,11 +31,6 @@ namespace NotepadGps.ViewModel
             _autorizationService = autorizationService;
 
             MapPinLoadAsync();
-
-            MessagingCenter.Subscribe<MainListViewModel, string>(this, "SearchTextChanged", (obj, e) =>
-            {
-                SearchText = e;
-            });
         }
 
         #region -- Public properties --
@@ -109,7 +104,7 @@ namespace NotepadGps.ViewModel
 
                     if (!(SearchText.Length == 0 || string.IsNullOrEmpty(SearchText)))
                     {
-                        var pin = MapPin.Where(x => x.Title.ToLower().Contains(SearchText.ToLower()) || 
+                        var pin = MapPin.Where(x => x.Title.ToLower().Contains(SearchText.ToLower()) ||
                         x.Latitude.ToString().ToLower().Contains(SearchText.ToLower()) ||
                         x.Longitude.ToString().ToLower().Contains(SearchText.ToLower()) ||
                         x.Description.ToLower().Contains(SearchText.ToLower()));
@@ -127,6 +122,18 @@ namespace NotepadGps.ViewModel
         protected override void RaiseIsActiveChanged()
         {
             base.RaiseIsActiveChanged();
+
+            if (IsActive)
+            {
+                MessagingCenter.Subscribe<MainListViewModel, string>(this, "SearchTextChanged", (obj, e) =>
+                {
+                    SearchText = e;
+                });
+            }
+            else
+            {
+                MessagingCenter.Unsubscribe<MainListViewModel>(this, "SearchTextChanged");
+            }
         }
 
         #endregion

@@ -6,15 +6,15 @@
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" 
             xmlns:controls="clr-namespace:NotepadGps.Controls"
             android:TabbedPage.ToolbarPlacement="Bottom"
+            NavigationPage.HasBackButton="False"
             Title="Maps">
-
 
     <NavigationPage.TitleView>
 
-        <StackLayout>
-            
+        <StackLayout BackgroundColor="White">
+
             <Grid>
-                
+
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
@@ -24,7 +24,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="30"/>
                 </Grid.ColumnDefinitions>
-                
+
                 <ImageButton Grid.Column="0"
                              Grid.Row="0"
                              Source="ic_settings"
@@ -46,10 +46,10 @@
                              VerticalOptions="Center"
                              BackgroundColor="Transparent"
                              Command="{Binding LogOutTapCommand}"/>
-                </Grid>
-            
+            </Grid>
+
         </StackLayout>
-        
+
     </NavigationPage.TitleView>
     
     <TabbedPage.Children>

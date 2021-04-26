@@ -84,7 +84,7 @@
                             Grid.ColumnSpan="4"
                             MapType="Street" 
                             HasZoomEnabled="False" 
-                            HasScrollEnabled="False" 
+                            HasScrollEnabled="True" 
                             IsShowingUser="True"
                             MyLocationEnabled="False"
                             PinsSource="{Binding MapPins}">

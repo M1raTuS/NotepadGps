@@ -1,6 +1,4 @@
-﻿using Acr.UserDialogs;
-using NotepadGps.Models;
-using NotepadGps.Resource;
+﻿using NotepadGps.Models;
 using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Map;
 using NotepadGps.Services.Settings;
@@ -37,10 +35,6 @@ namespace NotepadGps.ViewModel
             _settingsService = settingsService;
             _autorizationService = autorizationService;
 
-            MessagingCenter.Subscribe<MainListViewModel, string>(this, "SearchTextChanged", (obj, e) =>
-            {
-                SearchText = e;
-            });
         }
 
         #region -- Public properties --
@@ -164,6 +158,15 @@ namespace NotepadGps.ViewModel
             if (IsActive)
             {
                 await MapPinLoadAsync();
+
+                MessagingCenter.Subscribe<MainListViewModel, string>(this, "SearchTextChanged", (obj, e) =>
+                {
+                    SearchText = e;
+                });
+            }
+            else
+            {
+                MessagingCenter.Unsubscribe<MainListViewModel>(this, "SearchTextChanged");
             }
 
             IsListViewIsVisible = false;
@@ -195,14 +198,12 @@ namespace NotepadGps.ViewModel
             {
                 if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.Location))
                 {
-                    UserDialogs.Instance.Alert(StringResource.GeoAlert, StringResource.Alert, StringResource.Ok);
                 }
 
                 status = await CrossPermissions.Current.RequestPermissionAsync<LocationPermission>();
 
             }
-
-            if (status == Plugin.Permissions.Abstractions.PermissionStatus.Granted)
+            else if (status == Plugin.Permissions.Abstractions.PermissionStatus.Granted)
             {
                 try
                 {
@@ -223,7 +224,7 @@ namespace NotepadGps.ViewModel
                     MapSpan = new MapSpan(new Position(location.Latitude, location.Longitude), 1, 1);
                     CurrentCameraPosition = new CameraPosition(new Position(location.Latitude, location.Longitude), 18.0);
                 }
-                catch 
+                catch
                 {
                 }
             }

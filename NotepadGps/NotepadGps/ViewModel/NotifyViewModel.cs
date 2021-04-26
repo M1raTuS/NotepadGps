@@ -113,12 +113,12 @@ namespace NotepadGps.ViewModel
                 {
                     if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.Calendar))
                     {
-                        UserDialogs.Instance.Alert(StringResource.CalendarAlert, StringResource.Alert, StringResource.Ok);
+                       
                     }
 
                     status = await CrossPermissions.Current.RequestPermissionAsync<CalendarPermission>();
                 }
-
+                
                 if (status == PermissionStatus.Granted)
                 {
                     await AddedEvent();
