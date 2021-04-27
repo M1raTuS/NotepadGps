@@ -59,6 +59,13 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _id, value);
         }
 
+        private int _listViewHeights;
+        public int ListViewHeights
+        {
+            get => _listViewHeights;
+            set => SetProperty(ref _listViewHeights, value);
+        }
+
         private string _label;
         public string Label
         {
@@ -174,12 +181,6 @@ namespace NotepadGps.ViewModel
             get => _listImg;
         }
 
-        private ObservableCollection<ImageModel> _tempImg = new ObservableCollection<ImageModel>();
-        public ObservableCollection<ImageModel> TempImg
-        {
-            get => _tempImg;
-        }
-
         public ICommand AddButtonCommand => new Command(OnAddButtonCommandAsync);
         public ICommand PictureButtonCommand => new Command(OnPictureButtonCommand);
         public ICommand MapClickedCommand => new Command<Position>(OnMapClickedCommand);
@@ -279,7 +280,7 @@ namespace NotepadGps.ViewModel
             }
         }
 
-        private async Task AddImgAsync()
+        private async Task<bool> AddImgAsync()
         {
             if (ListImg?.Count > 0)
             {
@@ -288,6 +289,8 @@ namespace NotepadGps.ViewModel
                     await _imageService.SaveMapPinAsync(item);
                 }
             }
+
+            return true;
         }
 
         private void OnPictureButtonCommand()
@@ -345,12 +348,12 @@ namespace NotepadGps.ViewModel
                             UserId = _autorizationService.GetAutorizedUserId,
                             Latitude = Latitude,
                             Longitude = Longitude,
-                            ImagePins = img.Path
+                            ImagePins = img.Path,
+                            ImgShortPath = img.Path.Split('/').Last()
                         };
 
-                        var imgd = image;
-                        imgd.ImagePins = imgd.ImagePins.Split('/').Last();
-                        ListImg.Add(imgd);
+                        ListImg.Add(image);
+                        CheckListHeight();
                     }
                 }
             }
@@ -362,8 +365,7 @@ namespace NotepadGps.ViewModel
 
         private async void OpenCamera()
         {
- //var status = await CrossPermissions.Current.CheckPermissionStatusAsync<CameraPermission>();
-
+            //var status = await CrossPermissions.Current.CheckPermissionStatusAsync<CameraPermission>();
             var status = await CrossPermissions.Current.CheckPermissionStatusAsync<MediaLibraryPermission>();
 
             if (status != PermissionStatus.Granted)
@@ -401,12 +403,12 @@ namespace NotepadGps.ViewModel
                             UserId = _autorizationService.GetAutorizedUserId,
                             Latitude = Latitude,
                             Longitude = Longitude,
-                            ImagePins = img.Path
+                            ImagePins = img.Path,
+                            ImgShortPath = img.Path.Split('/').Last()
                         };
 
-                        var imgd = image;
-                        imgd.ImagePins = imgd.ImagePins.Split('/').Last();
-                        ListImg.Add(imgd);
+                        ListImg.Add(image);
+                        CheckListHeight();
                     }
                 }
             }
@@ -439,6 +441,20 @@ namespace NotepadGps.ViewModel
         private void OnClicks(object obj)
         {
             ListImg.Remove((ImageModel)obj);
+
+            CheckListHeight();
+        }
+
+        private void CheckListHeight()
+        {
+            if (ListImg?.Count > 3)
+            {
+                ListViewHeights = 75;
+            }
+            else
+            {
+                ListViewHeights = 25 * ListImg.Count();
+            }
         }
 
         #endregion

@@ -96,6 +96,13 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _isCarouselVisible, value);
         }
 
+        private int _frameHeight;
+        public int FrameHeight
+        {
+            get => _frameHeight;
+            set => SetProperty(ref _frameHeight, value);
+        }
+        
         public ICommand TapCommand => new Command(OnTapCommandAsync);
 
         #endregion
@@ -125,15 +132,15 @@ namespace NotepadGps.ViewModel
 
             if (args.PropertyName == nameof(ImageList))
             {
-                if (ImageList.Count < 1 || ImageList == null)
+                if (ImageList?.Count < 1)
                 {
-                    IsImgVisible = true;
                     IsCarouselVisible = false;
+                    FrameHeight = 150;
                 }
                 else
                 {
-                    IsImgVisible = false;
                     IsCarouselVisible = true;
+                    FrameHeight = 250;
                 }
             }
         }
@@ -144,7 +151,7 @@ namespace NotepadGps.ViewModel
 
         private async void OnTapCommandAsync()
         {
-            await NavigationService.GoBackAsync(new NavigationParameters(), true, true);
+            await NavigationService.GoBackAsync(new NavigationParameters(), true, false);
         }
 
         private async Task<ObservableCollection<ImageModel>> ImageLoadAsync()

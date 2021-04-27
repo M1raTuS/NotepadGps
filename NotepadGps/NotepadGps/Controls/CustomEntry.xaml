@@ -20,22 +20,24 @@
         <Label Grid.Row="0"
                FontSize="18"
                Text="{Binding LblText, Source={x:Reference customEntry}}"
-               TextColor="#3D4E61"/>
+               TextColor="{DynamicResource EntryTextColor}"
+               BackgroundColor="{DynamicResource BackgroundColor}"/>
 
         <Frame Grid.Row="1"
                Padding="2,2"
                BackgroundColor="Transparent"
-               BorderColor="Gray">
+               BorderColor="{DynamicResource BorderColor}">
 
             <Grid ColumnDefinitions="*,30">
-                
-                <Label BackgroundColor="white"
+
+                <Label BackgroundColor="{DynamicResource BackgroundColor}"
                        Grid.ColumnSpan="2"/>
-                
+
                 <controls:StandartEntry Grid.Column="0"
                                         Placeholder="{Binding Placeholder, Source={x:Reference customEntry}}"
                                         PlaceholderColor="{Binding PlaceholderColor, Source={x:Reference customEntry}}"
                                         Text="{Binding Text, Source={x:Reference customEntry}}" 
+                                        TextColor="{Binding TextColor, Source={x:Reference customEntry}}"
                                         FontSize="21"
                                         x:Name="cusEntry"/>
 

@@ -6,12 +6,11 @@
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" 
             xmlns:controls="clr-namespace:NotepadGps.Controls"
             android:TabbedPage.ToolbarPlacement="Bottom"
-            NavigationPage.HasBackButton="False"
             Title="Maps">
 
     <NavigationPage.TitleView>
-
-        <StackLayout BackgroundColor="White">
+        
+        <StackLayout>
 
             <Grid>
 

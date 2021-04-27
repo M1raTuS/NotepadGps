@@ -243,7 +243,7 @@ namespace NotepadGps.ViewModel
             var nav = new NavigationParameters();
             nav.Add(nameof(Pin), pin);
 
-            await NavigationService.NavigateAsync(nameof(PopUpView), nav, true, true);
+            await NavigationService.NavigateAsync(nameof(PopUpView), nav, true, false);
         }
 
         private void MapPinsCheck()

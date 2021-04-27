@@ -10,5 +10,6 @@ namespace NotepadGps.Models
         public string Latitude { get; set; }
         public string Longitude { get; set; }
         public int UserId { get; set; }
+        public string ImgShortPath { get; set; }
     }
 }

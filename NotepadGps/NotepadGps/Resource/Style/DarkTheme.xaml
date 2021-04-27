@@ -3,7 +3,16 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"    
                     x:Class="NotepadGps.Resource.Style.DarkTheme">
 
-    <Color x:Key="BackgroundColor">#FF000000</Color>
+    <Color x:Key="BackgroundColor">#1E242B</Color>
+    <Color x:Key="PlaceholderColor">#858E9E</Color>
+    <Color x:Key="EntryTextColor">#FEFEFD</Color>
+    <Color x:Key="LabelTextColor">#FEFEFD</Color>
+    <Color x:Key="WhiteDarkColor">#1E242B</Color>
+    <Color x:Key="BorderColor">#FEFEFD</Color>
+    <Color x:Key="ButtonColor">#7485FB</Color>
+    <Color x:Key="MapButtonColor">#1E242B</Color>
+
+
     <Color x:Key="FrameColor">#FF1f1f1f</Color>
     <Color x:Key="TextPrimaryColor">#B0FFFFFF</Color>
     <Color x:Key="TextSecondaryColor">#eFeFeF</Color>

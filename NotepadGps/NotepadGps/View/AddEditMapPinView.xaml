@@ -13,65 +13,74 @@
 
     </ContentPage.ToolbarItems>
 
-    <Grid>
+    <Grid BackgroundColor="{DynamicResource BackgroundColor}">
 
         <Grid.RowDefinitions>
+            
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
+            
             <ColumnDefinition Width="10" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="10" />
+            
         </Grid.ColumnDefinitions>
 
         <controls:CustomEntry  Grid.Row="0" 
                                Grid.Column="1"
                                Grid.ColumnSpan="2"
                                LblText="Label" 
+                               TextColor="{DynamicResource EntryTextColor}"
                                Placeholder="Enter the label"
                                ErrorText="{Binding LabelError}"
                                Text="{Binding Label}"
-                               PlaceholderColor="#858E9E"
+                               PlaceholderColor="{DynamicResource PlaceholderColor}"
                                IsErrorVisible="{Binding IsLabelErrorVisible}"/>
 
         <controls:CustomEntry  Grid.Row="1" 
                                Grid.Column="1"
                                Grid.ColumnSpan="2"
                                LblText="Description" 
+                               TextColor="{DynamicResource EntryTextColor}"
                                Placeholder="Write a description"
                                ErrorText="{Binding DescriptionError}"
                                Text="{Binding Description}"
-                               PlaceholderColor="#858E9E"
+                               PlaceholderColor="{DynamicResource PlaceholderColor}"
                                IsErrorVisible="{Binding IsDescriptionErrorVisible}"/>
 
         <controls:CustomEntry  Grid.Row="2" 
                                Grid.Column="1"
                                LblText="Coordinates" 
                                Placeholder="Longitude"
+                               TextColor="{DynamicResource EntryTextColor}"
                                ErrorText="{Binding LongitudeError}"
                                Text="{Binding Longitude}"
-                               PlaceholderColor="#858E9E"
+                               PlaceholderColor="{DynamicResource PlaceholderColor}"
                                IsErrorVisible="{Binding IsLongitudeErrorVisible}"/>
 
         <controls:CustomEntry  Grid.Row="2" 
                                Grid.Column="2"
                                LblText=" " 
                                Placeholder="Latitude"
+                               TextColor="{DynamicResource EntryTextColor}"
                                ErrorText="{Binding LatitudeError}"
                                Text="{Binding Latitude}"
-                               PlaceholderColor="#858E9E"
+                               PlaceholderColor="{DynamicResource PlaceholderColor}"
                                IsErrorVisible="{Binding IsLatitudeErrorVisible}"/>
 
         <Label Grid.Row="3"
                Grid.Column="1"
-               Text="Add photo"/>
+               Text="Add photo"
+               TextColor="{DynamicResource EntryTextColor}"/>
 
         <ListView x:Name="ListViewImg"
                   ItemsSource="{Binding ListImg}"
@@ -80,7 +89,8 @@
                   Grid.ColumnSpan="2"
                   HasUnevenRows="True"
                   SelectionMode="None"
-                  HeightRequest="20">
+                  BackgroundColor="Transparent"
+                  HeightRequest="{Binding ListViewHeights}">
 
             <ListView.ItemTemplate>
 
@@ -93,8 +103,9 @@
                             <Grid RowDefinitions="auto"
                                   ColumnDefinitions="auto">
 
-                                <Label Text="{Binding ImagePins}"
-                                       Grid.Column="0"/>
+                                <Label Text="{Binding ImgShortPath}"
+                                       Grid.Column="0"
+                                       TextColor="{DynamicResource EntryTextColor}"/>
 
                                 <ImageButton Grid.Column="1"
                                              Source="ic_clear"
@@ -128,8 +139,8 @@
                 Grid.Column="1"
                 Grid.ColumnSpan="2"
                 BackgroundColor="Transparent"
-                TextColor="#596EFB"
-                BorderColor="#596EFB"
+                TextColor="{DynamicResource ButtonColor}"
+                BorderColor="{DynamicResource ButtonColor}"
                 BorderWidth="2"
                 Text="Add photo"
                 Command="{Binding PictureButtonCommand}" />
@@ -162,7 +173,7 @@
                      WidthRequest="30"
                      BorderWidth="40"
                      Margin="20,20"
-                     BorderColor="White"/>
+                     BorderColor="{DynamicResource MapButtonColor}"/>
 
         <ImageButton Grid.Row="6"
                      Grid.ColumnSpan="4"

@@ -39,12 +39,12 @@ namespace NotepadGps.Controls
 
         public static readonly BindableProperty PlaceholderColorProperty = BindableProperty.Create(
                                                                            propertyName: nameof(PlaceholderColor),
-                                                                           returnType: typeof(string),
+                                                                           returnType: typeof(Color),
                                                                            declaringType: typeof(StandartEntry));
 
-        public string PlaceholderColor
+        public Color PlaceholderColor
         {
-            get => (string)GetValue(PlaceholderColorProperty);
+            get => (Color)GetValue(PlaceholderColorProperty);
             set => SetValue(PlaceholderColorProperty, value);
         }
 
@@ -91,6 +91,28 @@ namespace NotepadGps.Controls
         {
             get => (bool)GetValue(CancelButtonProperty);
             set => SetValue(CancelButtonProperty, value);
+        }
+
+        public static readonly BindableProperty FrameBorderColorProperty = BindableProperty.Create(
+                                                                           propertyName: nameof(FrameBorderColor),
+                                                                           returnType: typeof(Color),
+                                                                           declaringType: typeof(CustomEntry));
+
+        public Color FrameBorderColor
+        {
+            get => (Color)GetValue(FrameBorderColorProperty);
+            set => SetValue(FrameBorderColorProperty, value);
+        }
+
+        public static readonly BindableProperty TextColorProperty = BindableProperty.Create(
+                                                                    propertyName: nameof(TextColor),
+                                                                    returnType: typeof(Color),
+                                                                    declaringType: typeof(CustomEntry));
+
+        public Color TextColor
+        {
+            get => (Color)GetValue(TextColorProperty);
+            set => SetValue(TextColorProperty, value);
         }
 
         public ICommand TapGestureRecognizer => new Command(OnTapGestureRecognizer);

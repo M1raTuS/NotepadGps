@@ -7,27 +7,23 @@
 
     <Grid>
         
-        <Frame Grid.Column="0" 
-               Grid.Row="0"  
-               VerticalOptions="End" 
+        <Grid BackgroundColor="Gray" Opacity="0.7" 
+              Grid.Column="0" Grid.Row="0"/>
+        
+        <Frame VerticalOptions="End" 
                HorizontalOptions="Fill"
-               HeightRequest="300">
-            
-            <Grid RowDefinitions="*"
+               HeightRequest="{Binding FrameHeight}"
+               BackgroundColor="White">
+
+            <Grid RowDefinitions="auto,auto,auto,*"
+                  ColumnDefinitions="auto,auto"
                   BackgroundColor="Transparent">
                 
-                <Image Source="NoImage.jpg"
-                       HeightRequest="100"
-                       WidthRequest="200"
-                       Grid.Row="0"
-                       Grid.RowSpan="2"
-                       Grid.ColumnSpan="2"
-                       IsVisible="{Binding IsImgVisible}"/>
-
                 <CarouselView ItemsSource="{Binding ImageList}"
                               Grid.Row="0"
-                              Grid.RowSpan="2"
-                              Grid.ColumnSpan="2"
+                              Grid.RowSpan="1"
+                              Grid.ColumnSpan="3"
+                              HeightRequest="100"
                               IsVisible="{Binding IsCarouselVisible}">
 
                     <CarouselView.ItemTemplate>
@@ -54,37 +50,45 @@
 
                 </CarouselView>
                 
-                <Label Grid.Row="2"
+                <Label Grid.Row="1"
                        HorizontalOptions="Start"
                        VerticalOptions="Start"
                        FontAttributes="Bold"
                        FontSize="20"
                        FontFamily="Montserrat"
-                       Grid.ColumnSpan="2"
+                       Grid.ColumnSpan="3"
                        Text="{Binding Title}" />
 
-                <Label Grid.Row="3"
-                       HorizontalOptions="Start" 
-                       VerticalOptions="Start"
-                       FontSize="16"
-                       FontFamily="Montserrat"
-                       Grid.Column="1"
-                       Text="{Binding Latitude}" />
-                
-                <Label Grid.Row="3"
+                <Label Grid.Row="2"
                        HorizontalOptions="Start" 
                        VerticalOptions="Start"
                        FontSize="16"
                        FontFamily="Montserrat"
                        Grid.Column="0"
                        Text="{Binding Longitude}" />
-
-                <Label Grid.Row="4"
+                
+                <Label Grid.Row="2"
+                       HorizontalOptions="Start" 
+                       VerticalOptions="Start"
+                       FontSize="16"
+                       FontFamily="Montserrat"
+                       Grid.Column="1"
+                       Text="," />
+                
+                <Label Grid.Row="2"
+                       HorizontalOptions="Start" 
+                       VerticalOptions="Start"
+                       FontSize="16"
+                       FontFamily="Montserrat"
+                       Grid.Column="2"
+                       Text="{Binding Latitude}" />
+                
+                <Label Grid.Row="3"
                        HorizontalOptions="Fill"
                        VerticalOptions="Start"
                        FontSize="18"
                        FontFamily="Montserrat"
-                       Grid.ColumnSpan="2"
+                       Grid.ColumnSpan="3"
                        Text="{Binding Description}" />
                 
             </Grid>
