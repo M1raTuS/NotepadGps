@@ -26,7 +26,7 @@
         <Frame Grid.Row="1"
                Padding="2,2"
                BackgroundColor="Transparent"
-               BorderColor="{DynamicResource BorderColor}">
+               BorderColor="{Binding FrameBorderColor, Source={x:Reference customEntry}}">
 
             <Grid ColumnDefinitions="*,30">
 

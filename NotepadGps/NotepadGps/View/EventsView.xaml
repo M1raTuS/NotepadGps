@@ -5,8 +5,8 @@
              Title="Events"
              xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              mvvm:ViewModelLocator.AutowireViewModel="True">
-    
-    <Grid>
+
+    <Grid BackgroundColor="{DynamicResource BackgroundColor}">
 
         <ListView ItemsSource="{Binding EventList}"
                   HasUnevenRows="True"
@@ -27,21 +27,21 @@
                                 <Label Text="{Binding Title}" 
                                        FontSize="21" 
                                        FontFamily="Montserrat"
-                                       TextColor="#1E242B"
+                                       TextColor="{DynamicResource LabelTextColor}"
                                        Grid.Row="0"
                                        Grid.Column="0"/>
 
                                 <Label Text="{Binding Date, StringFormat='{0:dd MMMM, yyyy}'}" 
                                        FontSize="18" 
                                        FontFamily="Montserrat"
-                                       TextColor="#3D4E61"
+                                       TextColor="{DynamicResource LabelTextColor}"
                                        Grid.Row="1"
                                        Grid.Column="0"/>
 
                                 <Label Text="{Binding Time ,StringFormat='{}{0:hh\\:mm}'}" 
                                        FontSize="18" 
                                        FontFamily="Montserrat"
-                                       TextColor="#3D4E61"
+                                       TextColor="{DynamicResource LabelTextColor}"
                                        Grid.Row="2"/>
 
                                 <ImageButton Source="ic_left_gray"
@@ -69,6 +69,7 @@
         <Label Text="NoEvent" 
                IsVisible="{Binding IsLabelVisible}"
                FontSize="30" 
+               TextColor="{DynamicResource LabelTextColor}"
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
         

@@ -12,7 +12,7 @@
 
     </ContentPage.ToolbarItems>
 
-    <Grid>
+    <Grid BackgroundColor="{DynamicResource BackgroundColor}">
 
         <Grid.RowDefinitions>
 
@@ -37,7 +37,8 @@
                                Placeholder="Enter the label"
                                ErrorText="{Binding TitleError}"
                                Text="{Binding Title}"
-                               PlaceholderColor="#858E9E"
+                               PlaceholderColor="{DynamicResource PlaceholderColor}"
+                               FrameBorderColor="{DynamicResource BorderColor}"
                                IsErrorVisible="{Binding IsTitleErrorVisible}" />
 
         <Label Grid.Row="1"
@@ -47,14 +48,16 @@
                FontFamily="Montserrat"
                FontSize="18"
                FontAttributes="Bold"
-               TextColor="#3D4E61"/>
+               TextColor="{DynamicResource EntryTextColor}"/>
 
         <DatePicker Grid.Row="2"
                     Grid.Column="1"
                     HorizontalOptions="Fill" 
                     VerticalOptions="Start"
                     Date="{Binding SelectedDate}"   
-                    Format="MM-dd-yyyy" />
+                    Format="MM-dd-yyyy" 
+                    TextColor="{DynamicResource EntryTextColor}"
+                    BackgroundColor="{DynamicResource BackgroundColor}"/>
 
         <TimePicker Grid.Row="3"
                     Grid.Column="1"
@@ -62,7 +65,8 @@
                     VerticalOptions="Start"
                     Time="{Binding SelectedTime}" 
                     BackgroundColor="Transparent" 
-                    Format="t"/>
+                    Format="t"
+                    TextColor="{DynamicResource EntryTextColor}"/>
 
         <controls:CustomMap Grid.Row="4"
                             Grid.RowSpan="3"
@@ -86,7 +90,7 @@
                      WidthRequest="30"
                      BorderWidth="40"
                      Margin="20,30"
-                     BorderColor="White"/>
+                     BorderColor="{DynamicResource ImgBackgroundColor}"/>
 
         <ImageButton Grid.Row="4"
                      Grid.RowSpan="3"
@@ -98,6 +102,7 @@
                      BorderWidth="0"
                      Source="ic_location"
                      Margin="20,30"
+                     BackgroundColor="Transparent"
                      Command="{Binding FindMyLocationCommand}"/>
 
     </Grid>

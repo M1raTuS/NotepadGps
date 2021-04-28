@@ -6,12 +6,14 @@
              BackgroundColor="{DynamicResource NavigationBarColor}">
 
     <Grid RowDefinitions="auto"
-          Padding="20,20">
+          Padding="20,20"
+          BackgroundColor="{DynamicResource BackgroundColor}">
         
         <Label Grid.Row="0"  
                VerticalOptions="Center"
                Text="Dark theme"
-               TextColor="{DynamicResource TextPrimaryColor}"/>
+               FontSize="20"
+               TextColor="{DynamicResource EntryTextColor}"/>
 
         <Switch Grid.Row="0"
                 VerticalOptions="Center"

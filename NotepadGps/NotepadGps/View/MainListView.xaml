@@ -6,7 +6,12 @@
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" 
             xmlns:controls="clr-namespace:NotepadGps.Controls"
             android:TabbedPage.ToolbarPlacement="Bottom"
-            Title="Maps">
+            Title="Maps"
+            BackgroundColor="{DynamicResource BackgroundColor}"
+            SelectedTabColor="#7485FB"
+            BarBackgroundColor="red"
+            BarTextColor="AliceBlue"
+            UnselectedTabColor="Aqua">
 
     <NavigationPage.TitleView>
         

@@ -10,13 +10,6 @@
             
             <ResourceDictionary Source="Resource/Style/LightTheme.xaml"/>
 
-            <Style TargetType="NavigationPage">
-                
-                <Setter Property="BackgroundColor" Value="{DynamicResource NavigationBarColor}"/>
-                <Setter Property="BarTextColor" Value="{DynamicResource SecondaryColor}"/>
-                
-            </Style>
-            
         </ResourceDictionary>
         
     </Application.Resources>

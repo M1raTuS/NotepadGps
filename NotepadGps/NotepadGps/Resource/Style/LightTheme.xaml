@@ -11,7 +11,9 @@
     <Color x:Key="BorderColor">#858E9E</Color>
     <Color x:Key="ButtonColor">#596EFB</Color>
     <Color x:Key="MapButtonColor">#FEFEFD</Color>
-
+    <Color x:Key="ImgBackgroundColor">#F1F3FD</Color>
+    <Color x:Key="CoordBackgroundColor">#3D4E61</Color>
+    
 
     <Color x:Key="FrameColor">#FFe0e0e0</Color>
     <Color x:Key="TextPrimaryColor">#B0000000</Color>

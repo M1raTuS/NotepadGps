@@ -6,7 +6,7 @@
              xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              mvvm:ViewModelLocator.AutowireViewModel="True">
-
+    
     <Grid>
 
         <Grid>
@@ -15,7 +15,8 @@
                       ItemsSource="{Binding MapPin}"
                       HasUnevenRows="True"
                       SelectionMode="None"
-                      IsVisible="{Binding ListIsVisible}">
+                      IsVisible="{Binding ListIsVisible}"
+                      BackgroundColor="{DynamicResource BackgroundColor}">
 
                 <ListView.Behaviors>
                     <b:EventToCommandBehavior EventName="ItemTapped"
@@ -61,7 +62,7 @@
                                         <ColumnDefinition Width="auto"/>
                                     </Grid.ColumnDefinitions>
 
-                                    <ImageButton BackgroundColor="#F1F3FD"
+                                    <ImageButton BackgroundColor="{DynamicResource ImgBackgroundColor}"
                                                  Grid.Row="1"
                                                  Grid.RowSpan="2"
                                                  Grid.Column="1"
@@ -95,7 +96,7 @@
                                     <Label Text="{Binding Title}" 
                                            FontSize="21" 
                                            FontFamily="Montserrat"
-                                           TextColor="#1E242B"
+                                           TextColor="{DynamicResource LabelTextColor}"
                                            Grid.Row="1"
                                            Grid.RowSpan="2"
                                            Grid.Column="2"
@@ -105,7 +106,7 @@
                                     <Label Text="{Binding Latitude}" 
                                            FontSize="18" 
                                            FontFamily="Montserrat"
-                                           TextColor="{DynamicResource TextSecondaryColor}"
+                                           TextColor="{DynamicResource CoordBackgroundColor}"
                                            Grid.Row="2"
                                            Grid.Column="2"
                                            HorizontalOptions="Start"
@@ -114,7 +115,7 @@
                                     <Label Text="{Binding Longitude}" 
                                            FontSize="18" 
                                            FontFamily="Montserrat"
-                                           TextColor="#3D4E61"
+                                           TextColor="{DynamicResource CoordBackgroundColor}"
                                            Grid.Row="2"
                                            Grid.Column="3"
                                            HorizontalOptions="Center"

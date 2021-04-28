@@ -28,6 +28,7 @@
                                ErrorText="{Binding EmailError}"
                                Text="{Binding Email}"
                                PlaceholderColor="#858E9E"
+                               FrameBorderColor="#858E9E"
                                IsErrorVisible="{Binding IsEmailErrorVisible}"/>
 
         <controls:PasswordEntry  Grid.Row="2" 
