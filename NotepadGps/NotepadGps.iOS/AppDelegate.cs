@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using CarouselView.FormsPlugin.iOS;
+using Foundation;
 using UIKit;
 
 namespace NotepadGps.iOS
@@ -24,6 +25,8 @@ namespace NotepadGps.iOS
             Xamarin.FormsGoogleMaps.Init("AIzaSyAf7rljVibHW7F1neBavieHa9UZ5t3Co5s");
 
             LoadApplication(new App());
+
+            CarouselViewRenderer.Init();
 
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
 

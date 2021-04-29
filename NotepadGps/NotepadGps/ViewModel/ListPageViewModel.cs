@@ -71,7 +71,7 @@ namespace NotepadGps.ViewModel
         }
 
         public ICommand AddMapPinFloatingButtonCommand => new Command(AddMapPinFloatingButtonAsync);
-        public ICommand SelectedCommand => new Command(OnSelectedCommandAsync);
+        public ICommand AddPin => new Command(OnAddPinAsync);
         public ICommand EditContext => new Command(EditContextMenuAsync);
         public ICommand DeleteContext => new Command(DeleteContextMenuAsync);
         public ICommand CheckedPinCommand => new Command<MapPinModel>(OnCheckedPinCommandAsync);
@@ -146,7 +146,7 @@ namespace NotepadGps.ViewModel
             await NavigationService.NavigateAsync(nameof(AddEditMapPinView));
         }
 
-        private async void OnSelectedCommandAsync(object pin)
+        private async void OnAddPinAsync(object pin)
         {
             var nav = new NavigationParameters();
             nav.Add(nameof(MapPinModel), (MapPinModel)pin);

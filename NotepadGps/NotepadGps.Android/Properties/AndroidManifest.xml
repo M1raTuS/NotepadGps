@@ -10,11 +10,12 @@
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
 	<uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+	<uses-permission android:name="android.permission.INTERNET" />
 	<application android:label="NotepadGps.Android">
 		<provider android:name="xamarin.essentials.fileProvider" android:authorities="com.companyname.NotepadGps.fileprovider" android:exported="false" android:grantUriPermissions="true">
 			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
 		</provider>
-    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyApdJg8Wg4pWWhJ2TZXJ3Ke_rf0d1OjdFw" />
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyApdJg8Wg4pWWhJ2TZXJ3Ke_rf0d1OjdFw" />
 		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 		<uses-library android:name="org.apache.http.legacy" android:required="false" />
 	</application>

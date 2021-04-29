@@ -5,6 +5,7 @@ using NotepadGps.Services.Map;
 using NotepadGps.Services.Profile;
 using NotepadGps.Services.Repository;
 using NotepadGps.Services.Settings;
+using NotepadGps.Services.Theme;
 using NotepadGps.View;
 using NotepadGps.ViewModel;
 using Prism.Ioc;
@@ -27,7 +28,8 @@ namespace NotepadGps
             containerRegistry.RegisterInstance<IAutorizationService>(Container.Resolve<AutorizationService>());
             containerRegistry.RegisterInstance<IMapPinService>(Container.Resolve<MapPinService>());
             containerRegistry.RegisterInstance<IImageService>(Container.Resolve<ImageService>());
-            containerRegistry.RegisterInstance<IEventService>(Container.Resolve<EventService>());
+            containerRegistry.RegisterInstance<IEventService>(Container.Resolve<EventService>()); 
+            containerRegistry.RegisterInstance<IThemeService>(Container.Resolve<ThemeService>()); 
 
             //Navigation
             containerRegistry.RegisterForNavigation<NavigationPage>();
@@ -62,8 +64,8 @@ namespace NotepadGps
 
         protected override void OnStart()
         {
-            var settingsService = Container.Resolve<ISettingsService>();
-            settingsService.LoadTheme();
+            var themeService = Container.Resolve<IThemeService>();
+            themeService.LoadTheme();
         }
 
         protected override void OnSleep()

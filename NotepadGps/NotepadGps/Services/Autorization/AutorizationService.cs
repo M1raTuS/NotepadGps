@@ -68,7 +68,6 @@ namespace NotepadGps.Services.Autorization
         public void Unautorize()
         { 
            _settingsService.CurrentUser = -1;
-            _settingsService.LoadTheme();
         }
 
         #endregion

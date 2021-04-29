@@ -62,9 +62,9 @@ namespace NotepadGps.Controls
         }
 
         public static readonly BindableProperty ErrorMessageProperty = BindableProperty.Create(
-                                                            propertyName: nameof(ErrorMessage),
-                                                            returnType: typeof(string),
-                                                            declaringType: typeof(CustomSearchBarEntry));
+                                                                       propertyName: nameof(ErrorMessage),
+                                                                       returnType: typeof(string),
+                                                                       declaringType: typeof(CustomSearchBarEntry));
 
         public string ErrorMessage
         {
@@ -73,9 +73,9 @@ namespace NotepadGps.Controls
         }
 
         public static readonly BindableProperty CancelButtonProperty = BindableProperty.Create(
-                                                            propertyName: nameof(CancelButton),
-                                                            returnType: typeof(bool),
-                                                             declaringType: typeof(CustomSearchBarEntry));
+                                                                       propertyName: nameof(CancelButton),
+                                                                       returnType: typeof(bool),
+                                                                       declaringType: typeof(CustomSearchBarEntry));
 
         public bool CancelButton
         {
@@ -84,14 +84,25 @@ namespace NotepadGps.Controls
         }
 
         public static readonly BindableProperty FrameBorderColorProperty = BindableProperty.Create(
-                                                             propertyName: nameof(FrameBorderColor),
-                                                            returnType: typeof(Color),
-                                                            declaringType: typeof(CustomSearchBarEntry));
+                                                                           propertyName: nameof(FrameBorderColor),
+                                                                           returnType: typeof(Color),
+                                                                           declaringType: typeof(CustomSearchBarEntry));
 
         public Color FrameBorderColor
         {
             get => (Color)GetValue(FrameBorderColorProperty);
             set => SetValue(FrameBorderColorProperty, value);
+        }
+
+        public static readonly BindableProperty TextColorProperty = BindableProperty.Create(
+                                                                    propertyName: nameof(TextColor),
+                                                                    returnType: typeof(Color),
+                                                                    declaringType: typeof(CustomSearchBarEntry));
+
+        public Color TextColor
+        {
+            get => (Color)GetValue(TextColorProperty);
+            set => SetValue(TextColorProperty, value);
         }
 
         public ICommand TapGestureRecognizer => new Command(OnTapGestureRecognizer);

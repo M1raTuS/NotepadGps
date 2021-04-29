@@ -11,7 +11,8 @@
         <ListView ItemsSource="{Binding EventList}"
                   HasUnevenRows="True"
                   SelectionMode="None"
-                  IsVisible="{Binding IsListVisible}">
+                  IsVisible="{Binding IsListVisible}"
+                  BackgroundColor="{DynamicResource BackgroundColor}">
 
             <ListView.ItemTemplate>
 
@@ -23,7 +24,7 @@
 
                             <Grid RowDefinitions="auto"
                                   ColumnDefinitions ="*,40">
-                                
+
                                 <Label Text="{Binding Title}" 
                                        FontSize="21" 
                                        FontFamily="Montserrat"
@@ -63,16 +64,16 @@
                 </DataTemplate>
 
             </ListView.ItemTemplate>
-            
+
         </ListView>
-        
+
         <Label Text="NoEvent" 
                IsVisible="{Binding IsLabelVisible}"
                FontSize="30" 
                TextColor="{DynamicResource LabelTextColor}"
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
-        
+
         <Button HorizontalOptions="End"
                 VerticalOptions="End"
                 Command="{Binding AddEventCommand}" 
@@ -82,7 +83,7 @@
                 WidthRequest="70"
                 BackgroundColor="#596EFB"
                 ImageSource="ic_plus"/>
-        
+
     </Grid>
 
 </ContentPage>

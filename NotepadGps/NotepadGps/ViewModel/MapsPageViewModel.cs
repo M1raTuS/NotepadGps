@@ -2,6 +2,7 @@
 using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Map;
 using NotepadGps.Services.Settings;
+using NotepadGps.Services.Theme;
 using NotepadGps.View;
 using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
@@ -22,16 +23,19 @@ namespace NotepadGps.ViewModel
     {
         private readonly IMapPinService _mapPinService;
         private readonly ISettingsService _settingsService;
+        private readonly IThemeService _themeService;
         private readonly IAutorizationService _autorizationService;
 
         public MapsPageViewModel(
             INavigationService navigationService,
             IMapPinService mapPinService,
+            IThemeService themeService,
             ISettingsService settingsService,
             IAutorizationService autorizationService)
             : base(navigationService)
         {
             _mapPinService = mapPinService;
+            _themeService = themeService;
             _settingsService = settingsService;
             _autorizationService = autorizationService;
 
@@ -86,6 +90,13 @@ namespace NotepadGps.ViewModel
         {
             get => _listViewHeight;
             set => SetProperty(ref _listViewHeight, value);
+        }
+
+        private MapStyle _mapTheme;
+        public MapStyle MapTheme
+        {
+            get => _mapTheme;
+            set => SetProperty(ref _mapTheme, value);
         }
 
         public ICommand FindMyLocationCommand => new Command(OnFindMyLocationAsync);
@@ -163,6 +174,8 @@ namespace NotepadGps.ViewModel
                 {
                     SearchText = e;
                 });
+
+               // ShowedMapTheme();
             }
             else
             {
@@ -273,6 +286,18 @@ namespace NotepadGps.ViewModel
                 CurrentCameraPosition = new CameraPosition(pin.Position, 15);
                 MapPinsCheck();
                 IsListViewIsVisible = false;
+            }
+        }
+
+        private void ShowedMapTheme()
+        {
+            if (_themeService.SelectedTheme == 1)
+            {
+                MapTheme = _themeService.ShowMapTheme("NotepadGps.NightThemeClassicMap.json");
+            }
+            else
+            {
+                MapTheme = _themeService.ShowMapTheme("NotepadGps.DayThemeRetroMap.json");
             }
         }
 

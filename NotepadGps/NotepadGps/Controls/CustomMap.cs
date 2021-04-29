@@ -39,6 +39,18 @@ namespace NotepadGps.Controls
                                                                        returnType: typeof(CameraPosition),
                                                                        declaringType: typeof(CustomMap),
                                                                        propertyChanged: CurrentCameraPositionPropertyChanged);
+        
+        public static BindableProperty MapStyleThemeProperty = BindableProperty.Create(
+                                                               propertyName: nameof(MapStyleTheme),
+                                                               returnType: typeof(MapStyle),
+                                                               declaringType: typeof(CustomMap),
+                                                               propertyChanged: MapStyleCurentTheme);
+
+        public MapStyle MapStyleTheme
+        {
+            get { return (MapStyle)GetValue(MapStyleThemeProperty); }
+            set { SetValue(MapStyleThemeProperty, value); }
+        }
 
         public MapSpan MapSpan
         {
@@ -102,6 +114,13 @@ namespace NotepadGps.Controls
             var newMapSpan = (MapSpan)newValue;
 
             thisInstance?.MoveToRegion(newMapSpan);
+        }
+
+        private static void MapStyleCurentTheme(BindableObject bindable, object oldvalue, object newValue)
+        {
+            var style = (CustomMap)bindable;
+            var newStyle = (MapStyle)newValue;
+            style.MapStyle = newStyle;
         }
 
         #endregion

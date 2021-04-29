@@ -3,22 +3,57 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NotepadGps.View.SettingsView"
              Title="Settings"
-             BackgroundColor="{DynamicResource NavigationBarColor}">
+             BackgroundColor="{DynamicResource NavigationBarColor}"
+             NavigationPage.HasNavigationBar="False">
 
     <Grid RowDefinitions="auto"
-          Padding="20,20"
           BackgroundColor="{DynamicResource BackgroundColor}">
-        
-        <Label Grid.Row="0"  
-               VerticalOptions="Center"
-               Text="Dark theme"
-               FontSize="20"
-               TextColor="{DynamicResource EntryTextColor}"/>
 
-        <Switch Grid.Row="0"
-                VerticalOptions="Center"
-                HorizontalOptions="End"
-                IsToggled="{Binding IsSwitchToggled}"/>
+        <Grid ColumnDefinitions="30,*"
+              RowDefinitions="50"
+              Grid.ColumnSpan="2"
+              Grid.Row="0"
+              BackgroundColor="{DynamicResource BackgroundColor}">
+
+            <ImageButton Grid.Column="0"
+                         Grid.Row="0"
+                         VerticalOptions="Fill"
+                         HorizontalOptions="Fill"
+                         Source="ic_left_blue"
+                         BackgroundColor="Transparent"
+                         Command="{Binding BackCommand}"/>
+
+            <Label Grid.Column="1"
+                   Grid.Row="0"
+                   Text="Settings"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   FontFamily="Montserrat"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="{DynamicResource EntryTextColor}"/>
+
+        </Grid>
+        
+        <Grid RowDefinitions="auto"
+              Grid.Row="1"
+              Grid.ColumnSpan="2"
+              Padding="20,20"
+              BackgroundColor="{DynamicResource BackgroundColor}">
+
+            <Label Grid.Row="0"  
+                   VerticalOptions="Center"
+                   Text="Dark theme"
+                   FontSize="20"
+                   TextColor="{DynamicResource EntryTextColor}"/>
+
+            <Switch Grid.Row="0"
+                    VerticalOptions="Center"
+                    HorizontalOptions="End"
+                    IsToggled="{Binding IsSwitchToggled}"/>
+
+        </Grid>
+            
     </Grid>
-    
+
 </ContentPage>

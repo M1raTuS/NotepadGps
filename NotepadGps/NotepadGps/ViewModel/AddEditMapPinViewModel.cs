@@ -5,15 +5,14 @@ using NotepadGps.Services.Autentification;
 using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Image;
 using NotepadGps.Services.Map;
+using NotepadGps.Services.Theme;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
 using Prism.Navigation;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -30,17 +29,20 @@ namespace NotepadGps.ViewModel
         private readonly IMapPinService _mapPinService;
         private readonly IImageService _imageService;
         private readonly IAutentificationService _autentificationService;
+        private readonly IThemeService _themeService;
 
         public AddEditMapPinViewModel(
             INavigationService navigationService,
             IAutorizationService autorizationService,
             IMapPinService mapPinService,
+            IThemeService themeService,
             IImageService imageService,
             IAutentificationService autentificationService)
             : base(navigationService)
         {
             _autorizationService = autorizationService;
             _mapPinService = mapPinService;
+            _themeService = themeService;
             _imageService = imageService;
             _autentificationService = autentificationService;
 
@@ -168,6 +170,13 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _isLatitudeErrorVisible, value);
         }
 
+        private MapStyle _mapTheme;
+        public MapStyle MapTheme
+        {
+            get => _mapTheme; 
+            set => SetProperty(ref _mapTheme, value); 
+        }
+
         private ObservableCollection<MapPinModel> mapPins;
         public ObservableCollection<MapPinModel> MapPins
         {
@@ -185,6 +194,8 @@ namespace NotepadGps.ViewModel
         public ICommand PictureButtonCommand => new Command(OnPictureButtonCommand);
         public ICommand MapClickedCommand => new Command<Position>(OnMapClickedCommand);
         public ICommand OnClick => new Command(OnClicks);
+        public ICommand BackCommand => new Command(OnBackCommand);
+
 
         #endregion
 
@@ -200,6 +211,7 @@ namespace NotepadGps.ViewModel
                 Longitude = mapPin.Longitude.ToString();
                 Description = mapPin.Description;
             }
+            ShowedMapTheme();
         }
 
         #endregion
@@ -455,6 +467,23 @@ namespace NotepadGps.ViewModel
             {
                 ListViewHeights = 25 * ListImg.Count();
             }
+        }
+
+        private void ShowedMapTheme()
+        {
+            if (_themeService.SelectedTheme == 1)
+            {
+                MapTheme = _themeService.ShowMapTheme("NotepadGps.NightThemeClassicMap.json");
+            }
+            else
+            {
+                MapTheme = _themeService.ShowMapTheme("NotepadGps.DayThemeRetroMap.json");
+            }
+        }
+
+        private void OnBackCommand()
+        {
+            NavigationService.GoBackAsync();
         }
 
         #endregion

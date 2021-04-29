@@ -12,6 +12,7 @@ using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
+using Xamarin.Forms.GoogleMaps;
 
 namespace NotepadGps.ViewModel
 {
@@ -90,7 +91,15 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _title, value);
         }
 
+        private MapStyle _mapTheme;
+        public MapStyle MapTheme
+        {
+            get => _mapTheme;
+            set => SetProperty(ref _mapTheme, value);
+        }
+
         public ICommand SaveCommand => new Command(SaveLocalNotification);
+        public ICommand BackCommand => new Command(OnBackCommand);
 
         #endregion
 
@@ -149,6 +158,12 @@ namespace NotepadGps.ViewModel
             await _eventService.SaveEventAsync(events);
             await NavigationService.GoBackAsync();
         }
+
+        private void OnBackCommand()
+        {
+            NavigationService.GoBackAsync();
+        }
+
     }
 
     #endregion

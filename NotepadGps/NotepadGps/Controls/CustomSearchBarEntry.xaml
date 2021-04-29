@@ -5,17 +5,23 @@
       x:Class="NotepadGps.Controls.CustomSearchBarEntry"
       x:Name="customSearchBar">
 
-    <Frame CornerRadius="5"
-           Padding="3,3"
-           BorderColor="Gray">
+    <Frame CornerRadius="7"
+           Padding="5,5"
+           BorderColor="{DynamicResource SearchBackgroundColor}"
+           BackgroundColor="{DynamicResource SearchBackgroundColor}">
 
         <Grid RowDefinitions="*"
-              ColumnDefinitions="*,25">
+              ColumnDefinitions="*,25"
+              BackgroundColor="{DynamicResource BackgroundColor}">
 
+            <Label BackgroundColor="{DynamicResource SearchBackgroundColor}"
+                   Grid.ColumnSpan="2"/>
+            
             <controls:CustomSearchBar Grid.Column="0"
                                       Placeholder="{Binding Placeholder, Source={x:Reference customSearchBar}}"
                                       PlaceholderColor="{Binding PlaceholderColor, Source={x:Reference customSearchBar}}"
                                       Text="{Binding Text, Source={x:Reference customSearchBar}}"
+                                      TextColor="{Binding TextColor, Source={x:Reference customSearchBar}}"
                                       HorizontalOptions="Fill"
                                       x:Name="custom"/>
             
@@ -30,6 +36,7 @@
                     <TapGestureRecognizer Command="{Binding TapGestureRecognizer,Source={x:Reference customSearchBar}}" />
 
                 </Image.GestureRecognizers>
+                
             </Image>
 
         </Grid>

@@ -1,12 +1,7 @@
-﻿using Acr.UserDialogs;
-using NotepadGps.Models;
-using NotepadGps.Resource;
+﻿using NotepadGps.Models;
 using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Image;
-using Plugin.Media;
-using Plugin.Media.Abstractions;
 using Prism.Navigation;
-using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Threading.Tasks;
@@ -102,7 +97,7 @@ namespace NotepadGps.ViewModel
             get => _frameHeight;
             set => SetProperty(ref _frameHeight, value);
         }
-        
+
         public ICommand TapCommand => new Command(OnTapCommandAsync);
 
         #endregion

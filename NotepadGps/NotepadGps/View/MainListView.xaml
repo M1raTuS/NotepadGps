@@ -1,32 +1,35 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            xmlns:local="clr-namespace:NotepadGps.View;assembly=NotepadGps"
-            x:Class="NotepadGps.View.MainListView"
-            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" 
-            xmlns:controls="clr-namespace:NotepadGps.Controls"
-            android:TabbedPage.ToolbarPlacement="Bottom"
-            Title="Maps"
-            BackgroundColor="{DynamicResource BackgroundColor}"
-            SelectedTabColor="#7485FB"
-            BarBackgroundColor="red"
-            BarTextColor="AliceBlue"
-            UnselectedTabColor="Aqua">
+<controls:CustomBottomTabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+                                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                                 xmlns:local="clr-namespace:NotepadGps.View;assembly=NotepadGps"
+                                 x:Class="NotepadGps.View.MainListView"
+                                 xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" 
+                                 xmlns:controls="clr-namespace:NotepadGps.Controls"
+                                 android:TabbedPage.ToolbarPlacement="Bottom"
+                                 android:TabbedPage.BarItemColor="Blue"
+                                 Title="Maps"
+                                 BackgroundColor="{DynamicResource BackgroundColor}"
+                                 NavigationPage.HasNavigationBar="True"
+                                 NavigationPage.BarBackgroundColor="{DynamicResource BackgroundColor}">
 
     <NavigationPage.TitleView>
-        
-        <StackLayout>
 
-            <Grid>
+        <StackLayout BackgroundColor="{DynamicResource BackgroundColor}">
+
+            <Grid BackgroundColor="{DynamicResource BackgroundColor}">
 
                 <Grid.RowDefinitions>
+                    
                     <RowDefinition Height="*" />
+                    
                 </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
+                    
                     <ColumnDefinition Width="30"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="30"/>
+                    
                 </Grid.ColumnDefinitions>
 
                 <ImageButton Grid.Column="0"
@@ -39,11 +42,11 @@
 
                 <controls:CustomSearchBarEntry Placeholder="  Search ..."
                                                Text="{Binding SearchText}"
-                                               PlaceholderColor="#858E9E"
+                                               PlaceholderColor="{DynamicResource PlaceholderColor}"
                                                Grid.Row="0"
-                                               Padding="0,2"
-                                               Grid.Column="1">
-                </controls:CustomSearchBarEntry>
+                                               Padding="0,-5"
+                                               Grid.Column="1"
+                                               TextColor="{DynamicResource EntryTextColor}"/>
 
                 <ImageButton Grid.Column="2"
                              Source="ic_exid"
@@ -51,12 +54,13 @@
                              VerticalOptions="Center"
                              BackgroundColor="Transparent"
                              Command="{Binding LogOutTapCommand}"/>
+                
             </Grid>
 
         </StackLayout>
-
+        
     </NavigationPage.TitleView>
-    
+
     <TabbedPage.Children>
         
         <local:MapsPageView IconImageSource="ic_map"/>
@@ -64,4 +68,4 @@
         
     </TabbedPage.Children>
     
-</TabbedPage>
+</controls:CustomBottomTabbedPage>

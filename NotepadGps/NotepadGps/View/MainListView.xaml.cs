@@ -1,8 +1,9 @@
-﻿using Xamarin.Forms;
+﻿using NotepadGps.Controls;
+using Xamarin.Forms;
 
 namespace NotepadGps.View
 {
-    public partial class MainListView : TabbedPage
+    public partial class MainListView : CustomBottomTabbedPage
     {
         public MainListView()
         {

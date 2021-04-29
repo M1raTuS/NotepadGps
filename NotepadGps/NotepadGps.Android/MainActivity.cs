@@ -4,6 +4,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
+using CarouselView.FormsPlugin.Droid;
 using Plugin.Media;
 using Plugin.Permissions;
 
@@ -21,7 +22,7 @@ namespace NotepadGps.Droid
             Manifest.Permission.AccessFineLocation
         };
 
-        protected override async void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle savedInstanceState)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
@@ -30,12 +31,14 @@ namespace NotepadGps.Droid
 
             base.OnCreate(savedInstanceState);
 
-            await CrossMedia.Current.Initialize();
+            CrossMedia.Current.Initialize();
             Xamarin.FormsGoogleMaps.Init(this, savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
+
+            CarouselViewRenderer.Init();
 
             LoadApplication(new App());
 

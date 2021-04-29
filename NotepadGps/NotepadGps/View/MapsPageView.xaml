@@ -32,6 +32,7 @@
                                 MyLocationEnabled="True"
                                 PinsSource="{Binding MapPin}"
                                 MapSpan="{Binding MapSpan}"
+                                MapStyleTheme="{Binding MapTheme}"
                                 CurrentCameraPosition="{Binding CurrentCameraPosition}">
 
                 <controls:CustomMap.Behaviors>
@@ -56,7 +57,7 @@
                          WidthRequest="30"
                          BorderWidth="40"
                          Margin="20,30"
-                         BorderColor="White"/>
+                         BorderColor="{DynamicResource BackgroundColor}"/>
 
             <ImageButton Grid.Row="3"
                          Grid.ColumnSpan="3"
@@ -71,7 +72,7 @@
                          Command="{Binding FindMyLocationCommand}"/>
 
             <ListView IsVisible="{Binding IsListViewIsVisible}"  
-                      BackgroundColor="White"
+                      BackgroundColor="{DynamicResource BackgroundColor}"
                       ItemsSource="{Binding PinSearchList}"
                       Grid.Row="0"
                       Grid.ColumnSpan="3"
@@ -85,7 +86,7 @@
 
                             <Frame>
 
-                                <StackLayout BackgroundColor="White">
+                                <StackLayout>
 
                                     <Label Text="{Binding Title}" 
                                            FontSize="16" 

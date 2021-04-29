@@ -5,15 +5,17 @@
              x:Class="NotepadGps.View.PopUpView"
              BackgroundColor="Transparent">
 
-    <Grid>
+    <Grid Padding="0,0,0,55">
         
-        <Grid BackgroundColor="Gray" Opacity="0.7" 
-              Grid.Column="0" Grid.Row="0"/>
+        <Grid BackgroundColor="Gray" 
+              Opacity="0.7" 
+              Grid.Column="0" 
+              Grid.Row="0"/>
         
         <Frame VerticalOptions="End" 
                HorizontalOptions="Fill"
                HeightRequest="{Binding FrameHeight}"
-               BackgroundColor="White">
+               BackgroundColor="{DynamicResource BackgroundColor}">
 
             <Grid RowDefinitions="auto,auto,auto,*"
                   ColumnDefinitions="auto,auto"
@@ -57,7 +59,8 @@
                        FontSize="20"
                        FontFamily="Montserrat"
                        Grid.ColumnSpan="3"
-                       Text="{Binding Title}" />
+                       Text="{Binding Title}" 
+                       TextColor="{DynamicResource EntryTextColor}"/>
 
                 <Label Grid.Row="2"
                        HorizontalOptions="Start" 
@@ -65,7 +68,8 @@
                        FontSize="16"
                        FontFamily="Montserrat"
                        Grid.Column="0"
-                       Text="{Binding Longitude}" />
+                       Text="{Binding Longitude}" 
+                       TextColor="{DynamicResource EntryTextColor}"/>
                 
                 <Label Grid.Row="2"
                        HorizontalOptions="Start" 
@@ -73,7 +77,8 @@
                        FontSize="16"
                        FontFamily="Montserrat"
                        Grid.Column="1"
-                       Text="," />
+                       Text="," 
+                       TextColor="{DynamicResource EntryTextColor}"/>
                 
                 <Label Grid.Row="2"
                        HorizontalOptions="Start" 
@@ -81,7 +86,8 @@
                        FontSize="16"
                        FontFamily="Montserrat"
                        Grid.Column="2"
-                       Text="{Binding Latitude}" />
+                       Text="{Binding Latitude}" 
+                       TextColor="{DynamicResource EntryTextColor}"/>
                 
                 <Label Grid.Row="3"
                        HorizontalOptions="Fill"
@@ -89,11 +95,14 @@
                        FontSize="18"
                        FontFamily="Montserrat"
                        Grid.ColumnSpan="3"
-                       Text="{Binding Description}" />
+                       Text="{Binding Description}" 
+                       TextColor="{DynamicResource EntryTextColor}"/>
                 
             </Grid>
             
         </Frame>
+        
+        
         
         <Grid.GestureRecognizers>
             
@@ -102,4 +111,5 @@
         </Grid.GestureRecognizers>
         
     </Grid>
+    
 </ContentPage>

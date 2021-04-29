@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NotepadGps.View.ListPageView"
              Title="Added"
+             xmlns:controls="clr-namespace:NotepadGps.Controls"
              xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              mvvm:ViewModelLocator.AutowireViewModel="True">
@@ -17,13 +18,6 @@
                       SelectionMode="None"
                       IsVisible="{Binding ListIsVisible}"
                       BackgroundColor="{DynamicResource BackgroundColor}">
-
-                <ListView.Behaviors>
-                    <b:EventToCommandBehavior EventName="ItemTapped"
-                                              Command="{Binding SelectedCommand}"
-                                              EventArgsParameterPath="Item" />
-
-                </ListView.Behaviors>
 
                 <ListView.ItemTemplate>
 
@@ -134,7 +128,7 @@
                                         <ImageButton.Behaviors>
 
                                             <b:EventToCommandBehavior EventName="Clicked"
-                                                                      Command="{Binding Path=BindingContext.AddEvents, Source={Reference MapPinListView}}"
+                                                                      Command="{Binding Path=BindingContext.AddPin, Source={Reference MapPinListView}}"
                                                                       CommandParameter="{Binding .}"/>
 
                                         </ImageButton.Behaviors>

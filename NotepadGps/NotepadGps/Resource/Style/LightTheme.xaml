@@ -13,6 +13,7 @@
     <Color x:Key="MapButtonColor">#FEFEFD</Color>
     <Color x:Key="ImgBackgroundColor">#F1F3FD</Color>
     <Color x:Key="CoordBackgroundColor">#3D4E61</Color>
+    <Color x:Key="SearchBackgroundColor">#F1F3FD</Color>
     
 
     <Color x:Key="FrameColor">#FFe0e0e0</Color>
