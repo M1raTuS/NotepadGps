@@ -3,49 +3,66 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NotepadGps.View.EventsView"
              Title="Events"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
              xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              mvvm:ViewModelLocator.AutowireViewModel="True">
 
     <Grid BackgroundColor="{DynamicResource BackgroundColor}">
 
-        <ListView ItemsSource="{Binding EventList}"
+        <Grid Grid.Row="0"
+              RowDefinitions="auto"
+              BackgroundColor="{DynamicResource BackgroundColor}">
+            <Button Text="1"
+                        Grid.Column="0"
+                        Grid.Row="0"/>
+            <Button Text="2"
+                        Grid.Column="1"
+                        Grid.Row="0"/>
+
+        </Grid>
+
+        <Grid Grid.Row="1"
+              RowDefinitions="*">
+
+            <ListView ItemsSource="{Binding EventList}"
                   HasUnevenRows="True"
                   SelectionMode="None"
                   IsVisible="{Binding IsListVisible}"
                   BackgroundColor="{DynamicResource BackgroundColor}">
 
-            <ListView.ItemTemplate>
+                <ListView.ItemTemplate>
 
-                <DataTemplate>
+                    <DataTemplate>
 
-                    <ViewCell>
+                        <ViewCell>
 
-                        <ViewCell.View>
+                            <ViewCell.View>
 
-                            <Grid RowDefinitions="auto"
+                                <Grid RowDefinitions="auto"
                                   ColumnDefinitions ="*,40">
 
-                                <Label Text="{Binding Title}" 
+                                    <Label Text="{Binding Title}" 
                                        FontSize="21" 
                                        FontFamily="Montserrat"
                                        TextColor="{DynamicResource LabelTextColor}"
                                        Grid.Row="0"
                                        Grid.Column="0"/>
 
-                                <Label Text="{Binding Date, StringFormat='{0:dd MMMM, yyyy}'}" 
+                                    <Label Text="{Binding Date, StringFormat='{0:dd MMMM, yyyy}'}" 
                                        FontSize="18" 
                                        FontFamily="Montserrat"
                                        TextColor="{DynamicResource LabelTextColor}"
                                        Grid.Row="1"
                                        Grid.Column="0"/>
 
-                                <Label Text="{Binding Time ,StringFormat='{}{0:hh\\:mm}'}" 
+                                    <Label Text="{Binding Time ,StringFormat='{}{0:hh\\:mm}'}" 
                                        FontSize="18" 
                                        FontFamily="Montserrat"
                                        TextColor="{DynamicResource LabelTextColor}"
                                        Grid.Row="2"/>
 
-                                <ImageButton Source="ic_left_gray"
+                                    <ImageButton Source="ic_left_gray"
                                              Grid.Row="0"
                                              Grid.RowSpan="3"
                                              Grid.Column="1"
@@ -55,26 +72,26 @@
                                              HeightRequest="50"
                                              BackgroundColor="Transparent"/>
 
-                            </Grid>
+                                </Grid>
 
-                        </ViewCell.View>
+                            </ViewCell.View>
 
-                    </ViewCell>
+                        </ViewCell>
 
-                </DataTemplate>
+                    </DataTemplate>
 
-            </ListView.ItemTemplate>
+                </ListView.ItemTemplate>
 
-        </ListView>
+            </ListView>
 
-        <Label Text="NoEvent" 
+            <Label Text="NoEvent" 
                IsVisible="{Binding IsLabelVisible}"
                FontSize="30" 
                TextColor="{DynamicResource LabelTextColor}"
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
 
-        <Button HorizontalOptions="End"
+            <Button HorizontalOptions="End"
                 VerticalOptions="End"
                 Command="{Binding AddEventCommand}" 
                 CornerRadius="35"
@@ -84,6 +101,7 @@
                 BackgroundColor="#596EFB"
                 ImageSource="ic_plus"/>
 
+        </Grid>
     </Grid>
 
 </ContentPage>

@@ -4,6 +4,8 @@
              x:Class="NotepadGps.View.SettingsView"
              Title="Settings"
              BackgroundColor="{DynamicResource NavigationBarColor}"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
              NavigationPage.HasNavigationBar="False">
 
     <Grid RowDefinitions="auto"
@@ -34,7 +36,7 @@
                    TextColor="{DynamicResource EntryTextColor}"/>
 
         </Grid>
-        
+
         <Grid RowDefinitions="auto"
               Grid.Row="1"
               Grid.ColumnSpan="2"
@@ -53,7 +55,7 @@
                     IsToggled="{Binding IsSwitchToggled}"/>
 
         </Grid>
-            
+
     </Grid>
 
 </ContentPage>

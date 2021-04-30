@@ -1,14 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NotepadGps.View.MainPageView">
-    
+             x:Class="NotepadGps.View.MainPageView"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true">
+
     <Grid>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
-        
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="16" />
             <ColumnDefinition Width="*" />
@@ -23,8 +25,8 @@
 
             <Image Grid.Row="0" 
                    Source="pic_enter_page"/>
-            
-        <Label Grid.Row="1"
+
+            <Label Grid.Row="1"
                Text="MapNotepad"
                FontSize="27"
                FontAttributes="Bold"
@@ -32,98 +34,98 @@
                TextColor="#596EFB"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="StartAndExpand"/>
-            
+
         </Grid>
 
         <Grid Grid.Row="7"
               Grid.Column="1">
-            
-        <Frame BackgroundColor="#596EFB"
+
+            <Frame BackgroundColor="#596EFB"
                CornerRadius="2"
                Padding="2,2">
-            
-            <Frame.GestureRecognizers>
-                
-                <TapGestureRecognizer Command="{Binding LogInCommand}"/>
-                
-            </Frame.GestureRecognizers>
-            
-            <Label TextColor="#FEFEFD"
+
+                <Frame.GestureRecognizers>
+
+                    <TapGestureRecognizer Command="{Binding LogInCommand}"/>
+
+                </Frame.GestureRecognizers>
+
+                <Label TextColor="#FEFEFD"
                    VerticalOptions="Center"
                    HorizontalOptions="Center"
                    FontFamily="Montserrat"
                    FontSize="21"
                    FontAttributes="Bold">
-                
-                <Label.FormattedText>
-                    
-                    <FormattedString>
-                        
-                        <Span Text="Log in">
-                            
-                            <Span.GestureRecognizers>
-                                
-                                <TapGestureRecognizer Command="{Binding LogInCommand}" />
-                                
-                            </Span.GestureRecognizers>
-                            
-                        </Span>
-                        
-                    </FormattedString>
-                    
-                </Label.FormattedText>
-                
-            </Label>
-            
-        </Frame>
+
+                    <Label.FormattedText>
+
+                        <FormattedString>
+
+                            <Span Text="Log in">
+
+                                <Span.GestureRecognizers>
+
+                                    <TapGestureRecognizer Command="{Binding LogInCommand}" />
+
+                                </Span.GestureRecognizers>
+
+                            </Span>
+
+                        </FormattedString>
+
+                    </Label.FormattedText>
+
+                </Label>
+
+            </Frame>
 
         </Grid>
-        
+
         <Grid Grid.Row="8"
               Grid.Column="1">
-            
-        <Frame BorderColor="#596EFB"
+
+            <Frame BorderColor="#596EFB"
                CornerRadius="2"
                Padding="2,2"
                Margin="0,0,0,10">
-            
-            <Frame.GestureRecognizers>
-                
-                <TapGestureRecognizer Command="{Binding LogUpCommand}"/>
-                
-            </Frame.GestureRecognizers>
 
-            <Label TextColor="#596EFB"
+                <Frame.GestureRecognizers>
+
+                    <TapGestureRecognizer Command="{Binding LogUpCommand}"/>
+
+                </Frame.GestureRecognizers>
+
+                <Label TextColor="#596EFB"
                    VerticalOptions="Center"
                    HorizontalOptions="Center"
                    FontFamily="Montserrat"
                    FontSize="21"
                    FontAttributes="Bold">
 
-                <Label.FormattedText>
-                    
-                    <FormattedString>
-                        
-                        <Span Text="Create account">
-                            
-                            <Span.GestureRecognizers>
-                                
-                                <TapGestureRecognizer Command="{Binding LogUpCommand}" />
-                                
-                            </Span.GestureRecognizers>
-                            
-                        </Span>
-                        
-                    </FormattedString>
-                    
-                </Label.FormattedText>
+                    <Label.FormattedText>
 
-            </Label>
-            
-        </Frame>
-            
+                        <FormattedString>
+
+                            <Span Text="Create account">
+
+                                <Span.GestureRecognizers>
+
+                                    <TapGestureRecognizer Command="{Binding LogUpCommand}" />
+
+                                </Span.GestureRecognizers>
+
+                            </Span>
+
+                        </FormattedString>
+
+                    </Label.FormattedText>
+
+                </Label>
+
+            </Frame>
+
         </Grid>
-        
+
     </Grid>
 
 </ContentPage>

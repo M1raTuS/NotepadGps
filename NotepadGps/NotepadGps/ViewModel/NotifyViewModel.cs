@@ -4,6 +4,7 @@ using NotepadGps.Resource;
 using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Image;
 using NotepadGps.Services.Map;
+using NotepadGps.Services.Theme;
 using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
 using Prism.Navigation;
@@ -19,17 +20,20 @@ namespace NotepadGps.ViewModel
     public class NotifyViewModel : BaseViewModel
     {
         private readonly IEventService _eventService;
+        private readonly IThemeService _themeService;
         private readonly IMapPinService _mapPinService;
         private readonly IAutorizationService _autorizationService;
 
         public NotifyViewModel(
             INavigationService navigationService,
             IMapPinService mapPinService,
+            IThemeService themeService,
             IEventService eventService,
             IAutorizationService autorizationService)
             : base(navigationService)
         {
             _mapPinService = mapPinService;
+            _themeService = themeService;
             _eventService = eventService;
             _autorizationService = autorizationService;
 
@@ -103,6 +107,15 @@ namespace NotepadGps.ViewModel
 
         #endregion
 
+        #region -- Overrides --
+
+        public override void OnNavigatedTo(INavigationParameters parameters)
+        {
+            ShowedMapTheme();
+        }
+
+        #endregion
+
         #region -- Private helpers --
 
         private async Task<ObservableCollection<MapPinModel>> MapPinLoadAsync()
@@ -122,17 +135,17 @@ namespace NotepadGps.ViewModel
                 {
                     if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.Calendar))
                     {
-                       
+
                     }
 
                     status = await CrossPermissions.Current.RequestPermissionAsync<CalendarPermission>();
                 }
-                
+
                 if (status == PermissionStatus.Granted)
                 {
                     await AddedEvent();
                 }
-                else if(status != PermissionStatus.Unknown)
+                else if (status != PermissionStatus.Unknown)
                 {
                     CrossPermissions.Current.OpenAppSettings();
                 }
@@ -164,6 +177,17 @@ namespace NotepadGps.ViewModel
             NavigationService.GoBackAsync();
         }
 
+        private void ShowedMapTheme()
+        {
+            if (_themeService.SelectedTheme == 1)
+            {
+                MapTheme = _themeService.ShowMapTheme("NotepadGps.NightThemeClassicMap.json");
+            }
+            else
+            {
+                MapTheme = _themeService.ShowMapTheme("NotepadGps.DayThemeRetroMap.json");
+            }
+        }
     }
 
     #endregion

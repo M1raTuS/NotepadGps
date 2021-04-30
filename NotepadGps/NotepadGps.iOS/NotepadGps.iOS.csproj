@@ -134,6 +134,15 @@
     <ImageAsset Include="Assets.xcassets\ic_eye_off.imageset\ic_eye_off@3x.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_left_blue.imageset\ic_left_blue.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_left_blue.imageset\ic_left_blue@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_left_blue.imageset\ic_left_blue@3x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\ic_left_gray.imageset\ic_left_gray.png">
       <Visible>false</Visible>
     </ImageAsset>
@@ -231,6 +240,9 @@
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\ic_placeholder.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_left_blue.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\NoImage.imageset\Contents.json">

@@ -8,6 +8,8 @@
                                  android:TabbedPage.ToolbarPlacement="Bottom"
                                  android:TabbedPage.BarItemColor="Blue"
                                  Title="Maps"
+                                 xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+                                 ios:Page.UseSafeArea="true"
                                  BackgroundColor="{DynamicResource BackgroundColor}"
                                  NavigationPage.HasNavigationBar="True"
                                  NavigationPage.BarBackgroundColor="{DynamicResource BackgroundColor}">
@@ -19,17 +21,17 @@
             <Grid BackgroundColor="{DynamicResource BackgroundColor}">
 
                 <Grid.RowDefinitions>
-                    
+
                     <RowDefinition Height="*" />
-                    
+
                 </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
-                    
+
                     <ColumnDefinition Width="30"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="30"/>
-                    
+
                 </Grid.ColumnDefinitions>
 
                 <ImageButton Grid.Column="0"
@@ -54,18 +56,18 @@
                              VerticalOptions="Center"
                              BackgroundColor="Transparent"
                              Command="{Binding LogOutTapCommand}"/>
-                
+
             </Grid>
 
         </StackLayout>
-        
+
     </NavigationPage.TitleView>
 
     <TabbedPage.Children>
-        
+
         <local:MapsPageView IconImageSource="ic_map"/>
         <local:EventsPinsView IconImageSource="ic_pin"/>
-        
+
     </TabbedPage.Children>
-    
+
 </controls:CustomBottomTabbedPage>

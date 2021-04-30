@@ -3,15 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NotepadGps.View.ListPageView"
              Title="Added"
-             xmlns:controls="clr-namespace:NotepadGps.Controls"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
              xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              mvvm:ViewModelLocator.AutowireViewModel="True">
-    
-    <Grid>
 
-        <Grid>
-
+    <Grid RowDefinitions="auto">
+        
+        <Grid Grid.Row="0"
+              RowDefinitions="auto"
+              BackgroundColor="{DynamicResource BackgroundColor}">
+                <Button Text="1"
+                        Grid.Column="0"
+                        Grid.Row="0"/>
+                <Button Text="2"
+                        Grid.Column="1"
+                        Grid.Row="0"/>
+            
+        </Grid>
+        
+        <Grid Grid.Row="1"
+              RowDefinitions="*">
+            
             <ListView x:Name="MapPinListView"
                       ItemsSource="{Binding MapPin}"
                       HasUnevenRows="True"
@@ -114,7 +128,7 @@
                                            Grid.Column="3"
                                            HorizontalOptions="Center"
                                            VerticalOptions="Center"/>
-                                    
+
                                     <ImageButton Source="ic_left_gray"
                                                  Grid.Row="0"
                                                  Grid.RowSpan="3"
@@ -151,8 +165,10 @@
         <Label Text="NoMapPins" 
                IsVisible="{Binding LabelVisible}"
                FontSize="30" 
+               TextColor="{DynamicResource LabelTextColor}"
                HorizontalOptions="Center"
-               VerticalOptions="Center"/>
+               VerticalOptions="Center"
+               Grid.Row="1"/>
 
         <Button HorizontalOptions="End"
                 VerticalOptions="End"
@@ -162,7 +178,8 @@
                 HeightRequest="70"
                 WidthRequest="70"
                 BackgroundColor="#596EFB"
-                ImageSource="ic_plus"/>
+                ImageSource="ic_plus"
+                Grid.Row="1"/>
 
     </Grid>
 

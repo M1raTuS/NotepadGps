@@ -1,18 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<controls:CustomTopTabbedPage  xmlns:controls="clr-namespace:NotepadGps.Controls"
+<CarouselPage  xmlns:controls="clr-namespace:NotepadGps.Controls"
                                xmlns="http://xamarin.com/schemas/2014/forms" 
                                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                                xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" 
                                xmlns:local="clr-namespace:NotepadGps.View;assembly=NotepadGps" 
+                               xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+                               ios:Page.UseSafeArea="true"
                                x:Class="NotepadGps.View.EventsPinsView"
-                               Title="Pins"
-                               android:TabbedPage.BarItemColor="{DynamicResource BackgroundColor}">
-
-    <TabbedPage.Children>
-
+                               Title="Pins">
+    
+    <CarouselPage.Children>
+     
         <local:ListPageView />
         <local:EventsView />
-        
-    </TabbedPage.Children>
 
-</controls:CustomTopTabbedPage>
+    </CarouselPage.Children>
+
+</CarouselPage>

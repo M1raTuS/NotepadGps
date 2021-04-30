@@ -2,16 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.ModalPresentationStyle="OverFullScreen"
              x:Class="NotepadGps.View.PopUpView"
              BackgroundColor="Transparent">
 
     <Grid Padding="0,0,0,55">
-        
+
         <Grid BackgroundColor="Gray" 
               Opacity="0.7" 
               Grid.Column="0" 
               Grid.Row="0"/>
-        
+
         <Frame VerticalOptions="End" 
                HorizontalOptions="Fill"
                HeightRequest="{Binding FrameHeight}"
@@ -20,7 +22,7 @@
             <Grid RowDefinitions="auto,auto,auto,*"
                   ColumnDefinitions="auto,auto"
                   BackgroundColor="Transparent">
-                
+
                 <CarouselView ItemsSource="{Binding ImageList}"
                               Grid.Row="0"
                               Grid.RowSpan="1"
@@ -51,7 +53,7 @@
                     </CarouselView.ItemTemplate>
 
                 </CarouselView>
-                
+
                 <Label Grid.Row="1"
                        HorizontalOptions="Start"
                        VerticalOptions="Start"
@@ -70,7 +72,7 @@
                        Grid.Column="0"
                        Text="{Binding Longitude}" 
                        TextColor="{DynamicResource EntryTextColor}"/>
-                
+
                 <Label Grid.Row="2"
                        HorizontalOptions="Start" 
                        VerticalOptions="Start"
@@ -79,7 +81,7 @@
                        Grid.Column="1"
                        Text="," 
                        TextColor="{DynamicResource EntryTextColor}"/>
-                
+
                 <Label Grid.Row="2"
                        HorizontalOptions="Start" 
                        VerticalOptions="Start"
@@ -88,7 +90,7 @@
                        Grid.Column="2"
                        Text="{Binding Latitude}" 
                        TextColor="{DynamicResource EntryTextColor}"/>
-                
+
                 <Label Grid.Row="3"
                        HorizontalOptions="Fill"
                        VerticalOptions="Start"
@@ -97,19 +99,19 @@
                        Grid.ColumnSpan="3"
                        Text="{Binding Description}" 
                        TextColor="{DynamicResource EntryTextColor}"/>
-                
+
             </Grid>
-            
+
         </Frame>
-        
-        
-        
+
+
+
         <Grid.GestureRecognizers>
-            
+
             <TapGestureRecognizer Command="{Binding TapCommand}"/>
-            
+
         </Grid.GestureRecognizers>
-        
+
     </Grid>
-    
+
 </ContentPage>

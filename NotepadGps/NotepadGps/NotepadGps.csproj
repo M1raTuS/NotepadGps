@@ -10,6 +10,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Resource\Map\**" />
+    <EmbeddedResource Remove="Resource\Map\**" />
+    <None Remove="Resource\Map\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="DayThemeRetroMap.json" />
+    <None Remove="NightThemeClassicMap.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="DayThemeRetroMap.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NightThemeClassicMap.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Acr.UserDialogs" Version="7.1.0.483" />
     <PackageReference Include="CarouselView.FormsPlugin" Version="6.0.0" />
     <PackageReference Include="Plugin.Permissions" Version="6.0.1" />
@@ -105,21 +125,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Resource\Map\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="DayThemeRetroMap.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="NightThemeClassicMap.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="DayThemeRetroMap.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 </Project>

@@ -175,7 +175,7 @@ namespace NotepadGps.ViewModel
                     SearchText = e;
                 });
 
-               // ShowedMapTheme();
+                ShowedMapTheme();
             }
             else
             {

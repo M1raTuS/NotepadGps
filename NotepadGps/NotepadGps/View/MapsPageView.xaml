@@ -6,7 +6,9 @@
              xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
              xmlns:controls="clr-namespace:NotepadGps.Controls" 
              xmlns:behaviours="http://prismlibrary.com"
-             mvvm:ViewModelLocator.AutowireViewModel="True">
+             mvvm:ViewModelLocator.AutowireViewModel="True"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true">
 
     <Grid>
 
@@ -117,5 +119,5 @@
         </Grid>
 
     </Grid>
-    
+
 </ContentPage>
