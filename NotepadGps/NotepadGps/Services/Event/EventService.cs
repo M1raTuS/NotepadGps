@@ -36,6 +36,5 @@ namespace NotepadGps.Services.Image
         }
 
         #endregion
-
     }
 }

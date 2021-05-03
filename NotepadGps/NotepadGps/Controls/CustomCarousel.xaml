@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:control="clr-namespace:NotepadGps.Controls;assembly=NotepadGps"
+             xmlns:local="clr-namespace:NotepadGps.View;assembly=NotepadGps" 
+              xmlns:locals="clr-namespace:NotepadGps.ViewModel;assembly=NotepadGps" 
+             x:Class="NotepadGps.Controls.CustomCarousel"
+             x:Name="customCarousel">
+
+
+    <!--   -->
+    <Grid RowDefinitions="auto">
+        <Grid Grid.Row="0" RowDefinitions="auto">
+            <control:CustomSearchBarEntry />
+        </Grid>
+        <Grid Grid.Row="1" RowDefinitions="auto">
+            <Button Text="1" Grid.Column="0"/>
+            <Button Text="2" Grid.Column="1"/>
+        </Grid>
+        <Grid Grid.Row="2" RowDefinitions="auto">
+
+            <control:StandartCarouselPage Grid.Column="0"
+                                          ItemsSource="{Binding ItemSource, Source={x:Reference customCarousel}}">
+                
+                <control:StandartCarouselPage.ItemTemplate>
+                    <DataTemplate>
+                        <local:ListPageView/>
+                    </DataTemplate>
+                </control:StandartCarouselPage.ItemTemplate>
+            </control:StandartCarouselPage>
+        </Grid>
+        
+    </Grid>
+
+    <!-- -->
+   
+    
+    
+    
+    
+    
+    
+</ContentView>

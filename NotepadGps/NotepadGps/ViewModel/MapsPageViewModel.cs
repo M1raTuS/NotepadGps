@@ -85,7 +85,7 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _isListViewIsVisible, value);
         }
 
-        private int _listViewHeight; 
+        private int _listViewHeight;
         public int ListViewHeight
         {
             get => _listViewHeight;
@@ -214,32 +214,26 @@ namespace NotepadGps.ViewModel
                 }
 
                 status = await CrossPermissions.Current.RequestPermissionAsync<LocationPermission>();
-
             }
-            else if (status == Plugin.Permissions.Abstractions.PermissionStatus.Granted)
+
+            if (status == Plugin.Permissions.Abstractions.PermissionStatus.Granted)
             {
-                try
+                var location = await Geolocation.GetLastKnownLocationAsync();
+
+                if (location == null)
                 {
-                    var location = await Geolocation.GetLastKnownLocationAsync();
-
-                    if (location == null)
+                    location = await Geolocation.GetLocationAsync(new GeolocationRequest
                     {
-                        location = await Geolocation.GetLocationAsync(new GeolocationRequest
-                        {
-                            DesiredAccuracy = GeolocationAccuracy.Medium,
-                            Timeout = TimeSpan.FromSeconds(10)
-                        });
-
-                        MapSpan = new MapSpan(new Position(location.Latitude, location.Longitude), 1, 1);
-                        CurrentCameraPosition = new CameraPosition(new Position(location.Latitude, location.Longitude), 18.0);
-                    }
+                        DesiredAccuracy = GeolocationAccuracy.Medium,
+                        Timeout = TimeSpan.FromSeconds(10)
+                    });
 
                     MapSpan = new MapSpan(new Position(location.Latitude, location.Longitude), 1, 1);
                     CurrentCameraPosition = new CameraPosition(new Position(location.Latitude, location.Longitude), 18.0);
                 }
-                catch
-                {
-                }
+
+                MapSpan = new MapSpan(new Position(location.Latitude, location.Longitude), 1, 1);
+                CurrentCameraPosition = new CameraPosition(new Position(location.Latitude, location.Longitude), 18.0);
             }
             else if (status != Plugin.Permissions.Abstractions.PermissionStatus.Unknown)
             {

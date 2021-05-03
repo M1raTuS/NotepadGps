@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             x:Class="NotepadGps.View.PhotoCheckView">
+
+    <Grid>
+
+        <Grid ColumnDefinitions="30,*"
+              RowDefinitions="50"
+              Grid.Row="0"
+              BackgroundColor="{DynamicResource BackgroundColor}">
+
+            <ImageButton Grid.Column="0"
+                         Grid.Row="0"
+                         VerticalOptions="Fill"
+                         HorizontalOptions="Fill"
+                         Source="ic_left_blue"
+                         BackgroundColor="Transparent"
+                         Command="{Binding BackCommand}"/>
+
+            <Label Grid.Column="1"
+                   Grid.Row="0"
+                   Text="Add pin"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   FontFamily="Montserrat"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="{DynamicResource EntryTextColor}"/>
+
+        </Grid>
+
+        <Grid Grid.Row="1">
+
+            <ffimageloading:CachedImage Source="{Binding ImageModel}"
+                                        VerticalOptions="Center"
+                                        HorizontalOptions="Center"
+                                        WidthRequest="400"
+                                        HeightRequest="400"
+                                        Aspect="AspectFit"
+                                        LoadingPlaceholder= "pic_profile.png"
+                                        ErrorPlaceholder= "pic_profile.png"
+                                        DownsampleToViewSize = "true">
+
+            </ffimageloading:CachedImage>
+
+        </Grid>
+
+        <Grid Grid.Row="2"/>
+
+    </Grid>
+
+</ContentPage>

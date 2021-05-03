@@ -64,7 +64,7 @@ namespace NotepadGps.ViewModel
             {
                 SetProperty(ref _selectedDate, value);
 
-                if (_selectedDate.AddSeconds(10) < DateTime.Now)
+                if (_selectedDate.AddSeconds(30) < DateTime.Now)
                 {
                     UserDialogs.Instance.Alert(StringResource.AlertDate, StringResource.Alert, StringResource.Ok);
                     SetProperty(ref _selectedDate, DateTime.Now.AddSeconds(10));
@@ -93,6 +93,20 @@ namespace NotepadGps.ViewModel
         {
             get => _title;
             set => SetProperty(ref _title, value);
+        }
+
+        private string _titleError;
+        public string TitleError
+        {
+            get => _titleError;
+            set => SetProperty(ref _titleError, value);
+        }
+
+        private bool _isTitleErrorVisible;
+        public bool IsTitleErrorVisible
+        {
+            get => _isTitleErrorVisible;
+            set => SetProperty(ref _isTitleErrorVisible, value);
         }
 
         private MapStyle _mapTheme;
@@ -127,7 +141,13 @@ namespace NotepadGps.ViewModel
 
         private async void SaveLocalNotification()
         {
-            if (!string.IsNullOrWhiteSpace(Title) && !string.IsNullOrWhiteSpace(SelectedDate.ToString()) && !string.IsNullOrWhiteSpace(SelectedTime.ToString()))
+            bool isCanSave = !string.IsNullOrWhiteSpace(Title) &&
+                             !string.IsNullOrWhiteSpace(SelectedDate.ToString()) &&
+                             !string.IsNullOrWhiteSpace(SelectedTime.ToString());
+
+            IsTitleErrorVisible = false;
+
+            if (isCanSave)
             {
                 var status = await CrossPermissions.Current.CheckPermissionStatusAsync<CalendarPermission>();
 
@@ -152,12 +172,15 @@ namespace NotepadGps.ViewModel
             }
             else
             {
-                UserDialogs.Instance.Alert(StringResource.AlertAll, StringResource.Alert, StringResource.Ok);
+                TitleError = StringResource.LabelError;
+                IsTitleErrorVisible = true;
             }
+
         }
 
         private async Task AddedEvent()
         {
+
             await DependencyService.Get<Services.Calendar.ICalendarService>().AddEventToCalendar(Title, SelectedDate, SelectedTime);
 
             var events = new EventModel
@@ -191,5 +214,4 @@ namespace NotepadGps.ViewModel
     }
 
     #endregion
-
 }

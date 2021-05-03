@@ -44,24 +44,6 @@ namespace NotepadGps.iOS
             }
         }
 
-        public DateTime NSDateToDateTime(NSDate date)
-        {
-            double secs = date.SecondsSinceReferenceDate;
-            {
-                if (secs < -63113904000)
-                {
-                    return DateTime.MinValue;
-                }
-
-                if (secs > 252423993599)
-                {
-                    return DateTime.MaxValue;
-                }
-
-                return (DateTime)date;
-            }
-        }
-
         public NSDate DateTimeToNSDate(DateTime date)
         {
             if (date.Kind == DateTimeKind.Unspecified)

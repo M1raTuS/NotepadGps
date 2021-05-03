@@ -4,7 +4,6 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
-using CarouselView.FormsPlugin.Droid;
 using Plugin.Media;
 using Plugin.Permissions;
 
@@ -37,8 +36,6 @@ namespace NotepadGps.Droid
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
-
-            CarouselViewRenderer.Init();
 
             LoadApplication(new App());
 

@@ -5,85 +5,123 @@
              x:Class="NotepadGps.View.SignUpView"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="true"
-             Title="Create an account">
+             NavigationPage.HasNavigationBar="False">
 
-    <Grid>
+    <Grid RowDefinitions="auto"
+          BackgroundColor="{DynamicResource BackgroundColor}">
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="20" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
-        </Grid.RowDefinitions>
+        <Grid ColumnDefinitions="30,*,30"
+              RowDefinitions="50,1"
+              Grid.ColumnSpan="2"
+              Grid.Row="0"
+              BackgroundColor="{DynamicResource BackgroundColor}">
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="16" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="16" />
-        </Grid.ColumnDefinitions>
+            <ImageButton Grid.Column="0"
+                         Grid.Row="0"
+                         VerticalOptions="Fill"
+                         HorizontalOptions="Fill"
+                         Source="ic_left_blue"
+                         BackgroundColor="Transparent"
+                         Command="{Binding BackCommand}"/>
 
-        <controls:CustomEntry  Grid.Row="1" 
-                               Grid.Column="1"
-                               LblText="Name" 
-                               Placeholder="Enter your name"
-                               ErrorText="{Binding NameError}"
-                               Text="{Binding Name}"
-                               IsErrorVisible="{Binding IsNameErrorVisible}"
-                               PlaceholderColor="#858E9E"/>
-
-        <controls:CustomEntry  Grid.Row="2" 
-                               Grid.Column="1"
-                               LblText="Email" 
-                               Placeholder="Enter email"
-                               ErrorText="{Binding EmailError}"
-                               Text="{Binding Email}"
-                               IsErrorVisible="{Binding IsEmailErrorVisible}"
-                               PlaceholderColor="#858E9E"/>
-
-        <Frame Grid.Row="4"
-               Grid.Column="1"
-               VerticalOptions="End"
-               BackgroundColor="#596EFB"
-               CornerRadius="2">
-
-            <Frame.GestureRecognizers>
-
-                <TapGestureRecognizer Command="{Binding NextPageCommand}"/>
-
-            </Frame.GestureRecognizers>
-
-            <Label TextColor="#FEFEFD"
-                   VerticalOptions="Center"
-                   HorizontalOptions="Center"
+            <Label Grid.Column="1"
+                   Grid.Row="0"
+                   Text="Create an account"
+                   FontSize="16"
+                   FontAttributes="Bold"
                    FontFamily="Montserrat"
-                   FontSize="21"
-                   FontAttributes="Bold">
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="{DynamicResource EntryTextColor}"/>
 
-                <Label.FormattedText>
+        </Grid>
 
-                    <FormattedString>
+        <Grid BackgroundColor="{DynamicResource BackgroundColor}"
+              Grid.ColumnSpan="2"
+              Grid.Row="1">
 
-                        <Span Text="Next">
+            <Grid.RowDefinitions>
+                
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                
+            </Grid.RowDefinitions>
 
-                            <Span.GestureRecognizers>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="16"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="16"/>
+            </Grid.ColumnDefinitions>
 
-                                <TapGestureRecognizer Command="{Binding NextPageCommand}" />
+            <controls:CustomEntry  Grid.Row="1" 
+                                   Grid.Column="1"
+                                   LblText="Name" 
+                                   Placeholder="Enter your name"
+                                   ErrorText="{Binding NameError}"
+                                   Text="{Binding Name}"
+                                   TextColor="{DynamicResource LabelTextColor}"
+                                   IsErrorVisible="{Binding IsNameErrorVisible}"
+                                   PlaceholderColor="{DynamicResource PlaceholderColor}"
+                                   FrameBorderColor="{DynamicResource BorderColor}"/>
 
-                            </Span.GestureRecognizers>
+            <controls:CustomEntry  Grid.Row="2" 
+                                   Grid.Column="1"
+                                   LblText="Email" 
+                                   Placeholder="Enter email"
+                                   ErrorText="{Binding EmailError}"
+                                   Text="{Binding Email}"
+                                   TextColor="{DynamicResource LabelTextColor}"
+                                   IsErrorVisible="{Binding IsEmailErrorVisible}"
+                                   PlaceholderColor="{DynamicResource PlaceholderColor}"
+                                   FrameBorderColor="{DynamicResource BorderColor}"/>
 
-                        </Span>
+            <Frame Grid.Row="4"
+                   Grid.Column="1"
+                   VerticalOptions="End"
+                   BackgroundColor="{DynamicResource ButtonColor}"
+                   CornerRadius="2">
 
-                    </FormattedString>
+                <Frame.GestureRecognizers>
 
-                </Label.FormattedText>
+                    <TapGestureRecognizer Command="{Binding NextPageCommand}"/>
 
-            </Label>
+                </Frame.GestureRecognizers>
 
-        </Frame>
+                <Label TextColor="#FEFEFD"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       FontFamily="Montserrat"
+                       FontSize="21"
+                       FontAttributes="Bold">
 
-        <Grid Grid.Row="6"/>
+                    <Label.FormattedText>
+
+                        <FormattedString>
+
+                            <Span Text="Next">
+
+                                <Span.GestureRecognizers>
+
+                                    <TapGestureRecognizer Command="{Binding NextPageCommand}" />
+
+                                </Span.GestureRecognizers>
+
+                            </Span>
+
+                        </FormattedString>
+
+                    </Label.FormattedText>
+
+                </Label>
+
+            </Frame>
+
+            <Grid Grid.Row="6"/>
+
+        </Grid>
 
     </Grid>
-
 
 </ContentPage>

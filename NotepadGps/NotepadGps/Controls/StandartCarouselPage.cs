@@ -2,7 +2,7 @@
 
 namespace NotepadGps.Controls
 {
-    public sealed class StandartButton : Button
+    public class StandartCarouselPage : CarouselView
     {
     }
 }

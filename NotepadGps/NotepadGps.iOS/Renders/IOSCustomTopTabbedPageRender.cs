@@ -37,5 +37,31 @@ namespace NotepadGps.iOS.Renders
             UITabBarItem.Appearance.SetTitleTextAttributes(new UITextAttributes { TextColor = UIColor.White }, UIControlState.Normal);
             UITabBarItem.Appearance.SetTitleTextAttributes(new UITextAttributes { TextColor = UIColor.Black }, UIControlState.Selected);
         }
+
+        //public override void ViewWillLayoutSubviews()
+        //{
+        //    base.ViewWillLayoutSubviews();
+
+        //    nfloat tabSize = 44.0f;
+
+        //    UIInterfaceOrientation orientation = UIApplication.SharedApplication.StatusBarOrientation;
+
+        //    if (UIInterfaceOrientation.LandscapeLeft == orientation || UIInterfaceOrientation.LandscapeRight == orientation)
+        //    {
+        //        tabSize = 32.0f;
+        //    }
+
+        //    CGRect rect = this.View.Frame;
+        //    rect.Y = this.NavigationController != null ? tabSize : tabSize + 20;
+        //    this.View.Frame = rect;
+
+        //    if (TabBarController != null)
+        //    {
+        //        CGRect tabFrame = this.TabBarController.TabBar.Frame;
+        //        tabFrame.Height = tabSize;
+        //        tabFrame.Y = this.NavigationController != null ? 64 : 20;
+        //        this.TabBarController.TabBar.Frame = tabFrame;
+        //    }
+        //}
     }
 }

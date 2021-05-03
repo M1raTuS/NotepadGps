@@ -9,23 +9,11 @@
              xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              mvvm:ViewModelLocator.AutowireViewModel="True">
 
-    <Grid RowDefinitions="auto">
-        
-        <Grid Grid.Row="0"
-              RowDefinitions="auto"
+    <Grid BackgroundColor="{DynamicResource BackgroundColor}">
+
+        <Grid RowDefinitions="*"
               BackgroundColor="{DynamicResource BackgroundColor}">
-                <Button Text="1"
-                        Grid.Column="0"
-                        Grid.Row="0"/>
-                <Button Text="2"
-                        Grid.Column="1"
-                        Grid.Row="0"/>
-            
-        </Grid>
-        
-        <Grid Grid.Row="1"
-              RowDefinitions="*">
-            
+
             <ListView x:Name="MapPinListView"
                       ItemsSource="{Binding MapPin}"
                       HasUnevenRows="True"
@@ -57,17 +45,21 @@
                                 <Grid>
 
                                     <Grid.RowDefinitions>
+                                        
                                         <RowDefinition Height="auto"/>
                                         <RowDefinition Height="auto"/>
                                         <RowDefinition Height="auto"/>
                                         <RowDefinition Height="auto"/>
+                                        
                                     </Grid.RowDefinitions>
 
                                     <Grid.ColumnDefinitions>
+                                        
                                         <ColumnDefinition Width="5"/>
                                         <ColumnDefinition Width="auto"/>
                                         <ColumnDefinition Width="auto"/>
                                         <ColumnDefinition Width="auto"/>
+                                        
                                     </Grid.ColumnDefinitions>
 
                                     <ImageButton BackgroundColor="{DynamicResource ImgBackgroundColor}"
@@ -160,6 +152,7 @@
                 </ListView.ItemTemplate>
 
             </ListView>
+            
         </Grid>
 
         <Label Text="NoMapPins" 
@@ -168,7 +161,7 @@
                TextColor="{DynamicResource LabelTextColor}"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-               Grid.Row="1"/>
+               Grid.Row="0"/>
 
         <Button HorizontalOptions="End"
                 VerticalOptions="End"
@@ -179,7 +172,7 @@
                 WidthRequest="70"
                 BackgroundColor="#596EFB"
                 ImageSource="ic_plus"
-                Grid.Row="1"/>
+                Grid.Row="0"/>
 
     </Grid>
 

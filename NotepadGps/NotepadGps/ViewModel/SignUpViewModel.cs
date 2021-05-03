@@ -1,7 +1,5 @@
 ﻿using NotepadGps.Models;
-using NotepadGps.Resource;
 using NotepadGps.Services.Autentification;
-using NotepadGps.Services.Validation;
 using NotepadGps.View;
 using Prism.Navigation;
 using System.Windows.Input;
@@ -66,6 +64,7 @@ namespace NotepadGps.ViewModel
         }
 
         public ICommand NextPageCommand => new Command(OnNextPageCommand);
+        public ICommand BackCommand => new Command(OnBackCommandAsync);
 
         #endregion
 
@@ -111,7 +110,11 @@ namespace NotepadGps.ViewModel
             //}
         }
 
-        #endregion
+        private async void OnBackCommandAsync()
+        {
+            await NavigationService.GoBackAsync();
+        }
 
+        #endregion
     }
 }

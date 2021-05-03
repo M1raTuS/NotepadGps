@@ -28,8 +28,8 @@ namespace NotepadGps
             containerRegistry.RegisterInstance<IAutorizationService>(Container.Resolve<AutorizationService>());
             containerRegistry.RegisterInstance<IMapPinService>(Container.Resolve<MapPinService>());
             containerRegistry.RegisterInstance<IImageService>(Container.Resolve<ImageService>());
-            containerRegistry.RegisterInstance<IEventService>(Container.Resolve<EventService>()); 
-            containerRegistry.RegisterInstance<IThemeService>(Container.Resolve<ThemeService>()); 
+            containerRegistry.RegisterInstance<IEventService>(Container.Resolve<EventService>());
+            containerRegistry.RegisterInstance<IThemeService>(Container.Resolve<ThemeService>());
 
             //Navigation
             containerRegistry.RegisterForNavigation<NavigationPage>();
@@ -50,6 +50,8 @@ namespace NotepadGps
 
         protected override void OnInitialized()
         {
+            base.Initialize();
+
             var autorizationService = Container.Resolve<IAutorizationService>();
 
             if (autorizationService.IsAutorized)

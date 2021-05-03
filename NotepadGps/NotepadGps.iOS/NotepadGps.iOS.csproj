@@ -188,6 +188,15 @@
     <ImageAsset Include="Assets.xcassets\ic_pin.imageset\ic_pin@3x.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_pin_gray.imageset\ic_pin_gray.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_pin_gray.imageset\ic_pin_gray@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_pin_gray.imageset\ic_pin_gray@3x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\ic_placeholder.imageset\ic_placeholder.png">
       <Visible>false</Visible>
     </ImageAsset>
@@ -243,6 +252,9 @@
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\ic_left_blue.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_pin_gray.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\NoImage.imageset\Contents.json">
@@ -371,9 +383,6 @@
     <PackageReference Include="Acr.UserDialogs">
       <Version>7.1.0.483</Version>
     </PackageReference>
-    <PackageReference Include="CarouselView.FormsPlugin">
-      <Version>6.0.0</Version>
-    </PackageReference>
     <PackageReference Include="Plugin.Permissions">
       <Version>6.0.1</Version>
     </PackageReference>
@@ -388,9 +397,6 @@
     </PackageReference>
     <PackageReference Include="Xam.Plugin.Media">
       <Version>5.0.1</Version>
-    </PackageReference>
-    <PackageReference Include="Xam.Plugin.TabView">
-      <Version>1.1.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Essentials">
       <Version>1.6.1</Version>

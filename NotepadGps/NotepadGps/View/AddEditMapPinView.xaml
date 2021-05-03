@@ -10,224 +10,231 @@
 
     <Grid RowDefinitions="auto"
           BackgroundColor="{DynamicResource BackgroundColor}">
-        
-    <Grid ColumnDefinitions="30,*,30"
-          RowDefinitions="50"
-          Grid.ColumnSpan="2"
-          Grid.Row="0"
-          BackgroundColor="{DynamicResource BackgroundColor}">
 
-        <ImageButton Grid.Column="0"
-                     Grid.Row="0"
-                     VerticalOptions="Fill"
-                     HorizontalOptions="Fill"
-                     Source="ic_left_blue"
-                     BackgroundColor="Transparent"
-                     Command="{Binding BackCommand}"/>
+        <Grid ColumnDefinitions="30,*,30"
+              RowDefinitions="50"
+              Grid.ColumnSpan="2"
+              Grid.Row="0"
+              BackgroundColor="{DynamicResource BackgroundColor}">
 
-        <Label Grid.Column="1"
-               Grid.Row="0"
-               Text="Add pin"
-               FontSize="16"
-               FontAttributes="Bold"
-               FontFamily="Montserrat"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"
-               TextColor="{DynamicResource EntryTextColor}"/>
+            <ImageButton Grid.Column="0"
+                         Grid.Row="0"
+                         VerticalOptions="Fill"
+                         HorizontalOptions="Fill"
+                         Source="ic_left_blue"
+                         BackgroundColor="Transparent"
+                         Command="{Binding BackCommand}"/>
+
+            <Label Grid.Column="1"
+                   Grid.Row="0"
+                   Text="Add pin"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   FontFamily="Montserrat"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="{DynamicResource EntryTextColor}"/>
 
             <ImageButton Grid.Column="2"
-                     Grid.Row="0"
-                     VerticalOptions="Fill"
-                     HorizontalOptions="Fill"
-                     Source="ic_save"
-                     BackgroundColor="Transparent"
-                     Command="{Binding AddButtonCommand}"/>
+                         Grid.Row="0"
+                         VerticalOptions="Fill"
+                         HorizontalOptions="Fill"
+                         Source="ic_save"
+                         BackgroundColor="Transparent"
+                         Command="{Binding AddButtonCommand}"/>
+
+            <BoxView Grid.Row="0"
+                     Grid.ColumnSpan="3"
+                     HeightRequest="1"
+                     Color="{DynamicResource Line}"
+                     HorizontalOptions="FillAndExpand" 
+                     VerticalOptions="End"/>
 
         </Grid>
-    
-    <Grid BackgroundColor="{DynamicResource BackgroundColor}"
-          Grid.ColumnSpan="2"
-          Grid.Row="1">
 
-        <Grid.RowDefinitions>
-            
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            
-        </Grid.RowDefinitions>
+        <Grid BackgroundColor="{DynamicResource BackgroundColor}"
+              Grid.ColumnSpan="2"
+              Grid.Row="1">
 
-        <Grid.ColumnDefinitions>
-            
-            <ColumnDefinition Width="10" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="10" />
-            
-        </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
 
-        <controls:CustomEntry  Grid.Row="0" 
-                               Grid.Column="1"
-                               Grid.ColumnSpan="2"
-                               LblText="Label" 
-                               TextColor="{DynamicResource EntryTextColor}"
-                               FrameBorderColor="{DynamicResource BorderColor}"
-                               Placeholder="Enter the label"
-                               ErrorText="{Binding LabelError}"
-                               Text="{Binding Label}"
-                               PlaceholderColor="{DynamicResource PlaceholderColor}"
-                               IsErrorVisible="{Binding IsLabelErrorVisible}"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
 
-        <controls:CustomEntry  Grid.Row="1" 
-                               Grid.Column="1"
-                               Grid.ColumnSpan="2"
-                               LblText="Description" 
-                               TextColor="{DynamicResource EntryTextColor}"
-                               FrameBorderColor="{DynamicResource BorderColor}"
-                               Placeholder="Write a description"
-                               ErrorText="{Binding DescriptionError}"
-                               Text="{Binding Description}"
-                               PlaceholderColor="{DynamicResource PlaceholderColor}"
-                               IsErrorVisible="{Binding IsDescriptionErrorVisible}"/>
+            </Grid.RowDefinitions>
 
-        <controls:CustomEntry  Grid.Row="2" 
-                               Grid.Column="1"
-                               LblText="Coordinates" 
-                               Placeholder="Longitude"
-                               TextColor="{DynamicResource EntryTextColor}"
-                               FrameBorderColor="{DynamicResource BorderColor}"
-                               ErrorText="{Binding LongitudeError}"
-                               Text="{Binding Longitude}"
-                               PlaceholderColor="{DynamicResource PlaceholderColor}"
-                               IsErrorVisible="{Binding IsLongitudeErrorVisible}"/>
+            <Grid.ColumnDefinitions>
 
-        <controls:CustomEntry  Grid.Row="2" 
-                               Grid.Column="2"
-                               LblText=" " 
-                               Placeholder="Latitude"
-                               TextColor="{DynamicResource EntryTextColor}"
-                               FrameBorderColor="{DynamicResource BorderColor}"
-                               ErrorText="{Binding LatitudeError}"
-                               Text="{Binding Latitude}"
-                               PlaceholderColor="{DynamicResource PlaceholderColor}"
-                               IsErrorVisible="{Binding IsLatitudeErrorVisible}"/>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" />
 
-        <Label Grid.Row="3"
-               Grid.Column="1"
-               Text="Add photo"
-               TextColor="{DynamicResource EntryTextColor}"/>
+            </Grid.ColumnDefinitions>
 
-        <ListView x:Name="ListViewImg"
-                  ItemsSource="{Binding ListImg}"
-                  Grid.Row="4"
-                  Grid.Column="1"
-                  Grid.ColumnSpan="2"
-                  HasUnevenRows="True"
-                  SelectionMode="None"
-                  BackgroundColor="Transparent"
-                  HeightRequest="{Binding ListViewHeights}">
+            <controls:CustomEntry  Grid.Row="0" 
+                                   Grid.Column="1"
+                                   Grid.ColumnSpan="2"
+                                   LblText="Label" 
+                                   TextColor="{DynamicResource EntryTextColor}"
+                                   FrameBorderColor="{DynamicResource BorderColor}"
+                                   Placeholder="Enter the label"
+                                   ErrorText="{Binding LabelError}"
+                                   Text="{Binding Label}"
+                                   PlaceholderColor="{DynamicResource PlaceholderColor}"
+                                   IsErrorVisible="{Binding IsLabelErrorVisible}"/>
 
-            <ListView.ItemTemplate>
+            <controls:CustomEntry  Grid.Row="1" 
+                                   Grid.Column="1"
+                                   Grid.ColumnSpan="2"
+                                   LblText="Description" 
+                                   TextColor="{DynamicResource EntryTextColor}"
+                                   FrameBorderColor="{DynamicResource BorderColor}"
+                                   Placeholder="Write a description"
+                                   ErrorText="{Binding DescriptionError}"
+                                   Text="{Binding Description}"
+                                   PlaceholderColor="{DynamicResource PlaceholderColor}"
+                                   IsErrorVisible="{Binding IsDescriptionErrorVisible}"/>
 
-                <DataTemplate>
+            <controls:CustomEntry  Grid.Row="2" 
+                                   Grid.Column="1"
+                                   LblText="Coordinates" 
+                                   Placeholder="Longitude"
+                                   TextColor="{DynamicResource EntryTextColor}"
+                                   FrameBorderColor="{DynamicResource BorderColor}"
+                                   ErrorText="{Binding LongitudeError}"
+                                   Text="{Binding Longitude}"
+                                   PlaceholderColor="{DynamicResource PlaceholderColor}"
+                                   IsErrorVisible="{Binding IsLongitudeErrorVisible}"/>
 
-                    <ViewCell>
+            <controls:CustomEntry  Grid.Row="2" 
+                                   Grid.Column="2"
+                                   LblText=" " 
+                                   Placeholder="Latitude"
+                                   TextColor="{DynamicResource EntryTextColor}"
+                                   FrameBorderColor="{DynamicResource BorderColor}"
+                                   ErrorText="{Binding LatitudeError}"
+                                   Text="{Binding Latitude}"
+                                   PlaceholderColor="{DynamicResource PlaceholderColor}"
+                                   IsErrorVisible="{Binding IsLatitudeErrorVisible}"/>
 
-                        <ViewCell.View>
+            <Label Grid.Row="3"
+                   Grid.Column="1"
+                   Text="Add photo"
+                   TextColor="{DynamicResource EntryTextColor}"/>
 
-                            <Grid RowDefinitions="auto"
-                                  ColumnDefinitions="auto">
+            <ListView x:Name="ListViewImg"
+                      ItemsSource="{Binding ListImg}"
+                      Grid.Row="4"
+                      Grid.Column="1"
+                      Grid.ColumnSpan="2"
+                      HasUnevenRows="True"
+                      SelectionMode="None"
+                      BackgroundColor="Transparent"
+                      HeightRequest="{Binding ListViewHeights}">
 
-                                <Label Text="{Binding ImgShortPath}"
-                                       Grid.Column="0"
-                                       TextColor="{DynamicResource EntryTextColor}"/>
+                <ListView.ItemTemplate>
 
-                                <ImageButton Grid.Column="1"
-                                             Source="ic_clear"
-                                             VerticalOptions="Center"
-                                             HorizontalOptions="Start"
-                                             BackgroundColor="Transparent">
+                    <DataTemplate>
 
-                                    <ImageButton.Behaviors>
+                        <ViewCell>
 
-                                        <behaviours:EventToCommandBehavior EventName="Clicked"
-                                                                           Command="{Binding  Path=BindingContext.OnClick, Source={Reference ListViewImg}}"
-                                                                           CommandParameter="{Binding .}" />
+                            <ViewCell.View>
 
-                                    </ImageButton.Behaviors>
+                                <Grid RowDefinitions="25"
+                                      ColumnDefinitions="auto,30">
 
-                                </ImageButton>
+                                    <Label Text="{Binding ImgShortPath}"
+                                           Grid.Column="0"
+                                           TextColor="{DynamicResource EntryTextColor}"/>
 
-                            </Grid>
+                                    <ImageButton Grid.Column="1"
+                                                 Source="ic_clear"
+                                                 VerticalOptions="Fill"
+                                                 HorizontalOptions="Fill"
+                                                 BackgroundColor="Transparent">
 
-                        </ViewCell.View>
+                                        <ImageButton.Behaviors>
 
-                    </ViewCell>
+                                            <behaviours:EventToCommandBehavior EventName="Clicked"
+                                                                               Command="{Binding  Path=BindingContext.OnClick, Source={Reference ListViewImg}}"
+                                                                               CommandParameter="{Binding .}" />
 
-                </DataTemplate>
+                                        </ImageButton.Behaviors>
 
-            </ListView.ItemTemplate>
+                                    </ImageButton>
 
-        </ListView>
+                                </Grid>
 
-        <Button Grid.Row="5"
-                Grid.Column="1"
-                Grid.ColumnSpan="2"
-                BackgroundColor="Transparent"
-                TextColor="{DynamicResource ButtonColor}"
-                BorderColor="{DynamicResource ButtonColor}"
-                BorderWidth="2"
-                Text="Add photo"
-                Command="{Binding PictureButtonCommand}" />
+                            </ViewCell.View>
 
-        <controls:CustomMap Grid.Row="6" 
-                            Grid.ColumnSpan="4"
-                            MapType="Street" 
-                            HasZoomEnabled="False" 
-                            HasScrollEnabled="False" 
-                            IsShowingUser="False"
-                            MyLocationEnabled="False"
-                            MapStyleTheme="{Binding MapTheme}"
-                            PinsSource="{Binding MapPins}">
+                        </ViewCell>
 
-            <controls:CustomMap.Behaviors>
+                    </DataTemplate>
 
-                <behaviours:EventToCommandBehavior EventName="MapClicked" 
-                                                   Command="{Binding MapClickedCommand}"
-                                                   EventArgsParameterPath="Point"/>
+                </ListView.ItemTemplate>
 
-            </controls:CustomMap.Behaviors>
+            </ListView>
 
-        </controls:CustomMap>
+            <Button Grid.Row="5"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    BackgroundColor="Transparent"
+                    TextColor="{DynamicResource ButtonColor}"
+                    BorderColor="{DynamicResource ButtonColor}"
+                    BorderWidth="2"
+                    Text="Add photo"
+                    Command="{Binding PictureButtonCommand}" />
 
-        <ImageButton Grid.Row="6"
-                     Grid.ColumnSpan="4"
-                     CornerRadius="50" 
-                     HorizontalOptions="End" 
-                     VerticalOptions="End"
-                     HeightRequest="30" 
-                     WidthRequest="30"
-                     BorderWidth="40"
-                     Margin="20,20"
-                     BorderColor="{DynamicResource MapButtonColor}"/>
+            <controls:CustomMap Grid.Row="6" 
+                                Grid.ColumnSpan="4"
+                                MapType="Street" 
+                                HasZoomEnabled="False" 
+                                HasScrollEnabled="False" 
+                                IsShowingUser="False"
+                                MyLocationEnabled="False"
+                                MapStyleTheme="{Binding MapTheme}"
+                                PinsSource="{Binding MapPins}">
 
-        <ImageButton Grid.Row="6"
-                     Grid.ColumnSpan="4"
-                     HorizontalOptions="End" 
-                     VerticalOptions="End"
-                     HeightRequest="30" 
-                     WidthRequest="30"
-                     BorderWidth="0"
-                     BackgroundColor="Transparent"
-                     Source="ic_location"
-                     Margin="20,20"
-                     Command="{Binding FindMyLocationCommand}"/>
+                <controls:CustomMap.Behaviors>
+
+                    <behaviours:EventToCommandBehavior EventName="MapClicked" 
+                                                       Command="{Binding MapClickedCommand}"
+                                                       EventArgsParameterPath="Point"/>
+
+                </controls:CustomMap.Behaviors>
+
+            </controls:CustomMap>
+
+            <ImageButton Grid.Row="6"
+                         Grid.ColumnSpan="4"
+                         CornerRadius="50" 
+                         HorizontalOptions="End" 
+                         VerticalOptions="End"
+                         HeightRequest="30" 
+                         WidthRequest="30"
+                         BorderWidth="40"
+                         Margin="20,20"
+                         BorderColor="{DynamicResource MapButtonColor}"/>
+
+            <ImageButton Grid.Row="6"
+                         Grid.ColumnSpan="4"
+                         HorizontalOptions="End" 
+                         VerticalOptions="End"
+                         HeightRequest="30" 
+                         WidthRequest="30"
+                         BorderWidth="0"
+                         BackgroundColor="Transparent"
+                         Source="ic_location"
+                         Margin="20,20"
+                         Command="{Binding FindMyLocationCommand}"/>
+
+        </Grid>
 
     </Grid>
-        
-    </Grid>
-    
+
 </ContentPage>

@@ -8,13 +8,17 @@
     <Grid>
 
         <Grid.RowDefinitions>
+
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
+
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
+
             <ColumnDefinition Width="*" />
+
         </Grid.ColumnDefinitions>
 
         <Label Grid.Row="0"
@@ -23,7 +27,8 @@
                TextColor="{DynamicResource EntryTextColor}"
                BackgroundColor="{DynamicResource BackgroundColor}"/>
 
-        <Frame Grid.Row="1"
+        <Frame CornerRadius="1"
+               Grid.Row="1"
                Padding="2,2"
                BackgroundColor="Transparent"
                BorderColor="{Binding FrameBorderColor, Source={x:Reference customEntry}}">

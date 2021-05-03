@@ -15,13 +15,17 @@
         <Grid>
 
             <Grid.RowDefinitions>
+
                 <RowDefinition Height="auto" />
+
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
+
                 <ColumnDefinition Width="30"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="30"/>
+
             </Grid.ColumnDefinitions>
 
             <controls:CustomMap Grid.Row="0"
@@ -86,19 +90,41 @@
 
                         <ViewCell>
 
-                            <Frame>
+                            <ViewCell.View>
 
                                 <StackLayout>
 
-                                    <Label Text="{Binding Title}" 
-                                           FontSize="16" 
-                                           TextColor="#FF464859"
-                                           HorizontalOptions="Center"
-                                           VerticalOptions="Center"/>
+                                    <Grid ColumnDefinitions="40,*"
+                                          RowDefinitions="auto,auto">
+
+                                        <Grid Grid.Column="0">
+
+                                            <Image Grid.Column="0"
+                                                   Grid.RowSpan="2"
+                                                   HeightRequest="40"
+                                                   WidthRequest="40"
+                                                   Source="ic_pin_gray"
+                                                   BackgroundColor="Transparent" />
+
+                                        </Grid>
+
+                                        <Grid Grid.Column="1">
+
+                                            <Label Grid.Row="0"
+                                                   TextColor="{DynamicResource EntryTextColor}"
+                                                   Text="{Binding Title}" />
+
+                                            <Label Grid.Row="1"
+                                                   TextColor="{DynamicResource LabelTextColor}"
+                                                   Text="{Binding Description}"/>
+
+                                        </Grid>
+
+                                    </Grid>
 
                                 </StackLayout>
 
-                            </Frame>
+                            </ViewCell.View>
 
                         </ViewCell>
 

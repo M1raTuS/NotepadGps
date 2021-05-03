@@ -59,6 +59,5 @@ namespace NotepadGps.Services.Map
         }
 
         #endregion
-
     }
 }

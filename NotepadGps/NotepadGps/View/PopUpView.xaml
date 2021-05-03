@@ -2,12 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" xmlns:behaviours="http://prismlibrary.com"
              ios:Page.ModalPresentationStyle="OverFullScreen"
              x:Class="NotepadGps.View.PopUpView"
              BackgroundColor="Transparent">
 
-    <Grid Padding="0,0,0,55">
+    <Grid Padding="0,0,0,51">
 
         <Grid BackgroundColor="Gray" 
               Opacity="0.7" 
@@ -19,8 +19,9 @@
                HeightRequest="{Binding FrameHeight}"
                BackgroundColor="{DynamicResource BackgroundColor}">
 
-            <Grid RowDefinitions="auto,auto,auto,*"
+            <Grid RowDefinitions="auto,auto,auto,1,*"
                   ColumnDefinitions="auto,auto"
+                  Padding="0,-20"
                   BackgroundColor="Transparent">
 
                 <CarouselView ItemsSource="{Binding ImageList}"
@@ -28,21 +29,30 @@
                               Grid.RowSpan="1"
                               Grid.ColumnSpan="3"
                               HeightRequest="100"
+                              WidthRequest="150"
+                              Loop="False"
                               IsVisible="{Binding IsCarouselVisible}">
 
                     <CarouselView.ItemTemplate>
 
                         <DataTemplate>
 
-                            <StackLayout HorizontalOptions="Center">
+                            <StackLayout HorizontalOptions="Center"
+                                         VerticalOptions="Center">
 
                                 <ffimageloading:CachedImage Source="{Binding ImagePins}"
-                                                            VerticalOptions="Center"
-                                                            HorizontalOptions="Center"
+                                                            VerticalOptions="CenterAndExpand"
+                                                            HorizontalOptions="CenterAndExpand"
                                                             WidthRequest="150"
                                                             HeightRequest="100"
                                                             Aspect="Fill"
                                                             DownsampleToViewSize = "true">
+
+                                    <ffimageloading:CachedImage.GestureRecognizers>
+
+                                        <TapGestureRecognizer Command="{Binding ImageTappedCommand}"/>
+
+                                    </ffimageloading:CachedImage.GestureRecognizers>
 
                                 </ffimageloading:CachedImage>
 
@@ -91,7 +101,13 @@
                        Text="{Binding Latitude}" 
                        TextColor="{DynamicResource EntryTextColor}"/>
 
-                <Label Grid.Row="3"
+                <BoxView Grid.Row="3"
+                         Grid.ColumnSpan="3"
+                         Color="{DynamicResource Line}"
+                         HorizontalOptions="FillAndExpand" 
+                         VerticalOptions="FillAndExpand"/>
+
+                <Label Grid.Row="4"
                        HorizontalOptions="Fill"
                        VerticalOptions="Start"
                        FontSize="18"
@@ -103,8 +119,6 @@
             </Grid>
 
         </Frame>
-
-
 
         <Grid.GestureRecognizers>
 

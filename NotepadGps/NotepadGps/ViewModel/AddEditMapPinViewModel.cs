@@ -173,8 +173,8 @@ namespace NotepadGps.ViewModel
         private MapStyle _mapTheme;
         public MapStyle MapTheme
         {
-            get => _mapTheme; 
-            set => SetProperty(ref _mapTheme, value); 
+            get => _mapTheme;
+            set => SetProperty(ref _mapTheme, value);
         }
 
         private ObservableCollection<MapPinModel> mapPins;
@@ -194,8 +194,7 @@ namespace NotepadGps.ViewModel
         public ICommand PictureButtonCommand => new Command(OnPictureButtonCommand);
         public ICommand MapClickedCommand => new Command<Position>(OnMapClickedCommand);
         public ICommand OnClick => new Command(OnClicks);
-        public ICommand BackCommand => new Command(OnBackCommand);
-
+        public ICommand BackCommand => new Command(OnBackCommandAsync);
 
         #endregion
 
@@ -211,6 +210,7 @@ namespace NotepadGps.ViewModel
                 Longitude = mapPin.Longitude.ToString();
                 Description = mapPin.Description;
             }
+
             ShowedMapTheme();
         }
 
@@ -344,7 +344,6 @@ namespace NotepadGps.ViewModel
                 }
 
                 status = await CrossPermissions.Current.RequestPermissionAsync<StoragePermission>();
-
             }
 
             if (status == PermissionStatus.Granted)
@@ -377,22 +376,23 @@ namespace NotepadGps.ViewModel
 
         private async void OpenCamera()
         {
-            //var status = await CrossPermissions.Current.CheckPermissionStatusAsync<CameraPermission>();
-            var status = await CrossPermissions.Current.CheckPermissionStatusAsync<MediaLibraryPermission>();
+            var status = await CrossPermissions.Current.CheckPermissionStatusAsync<CameraPermission>();
+            var status2 = await CrossPermissions.Current.CheckPermissionStatusAsync<MediaLibraryPermission>();
 
-            if (status != PermissionStatus.Granted)
+            if (status != PermissionStatus.Granted || status2 != PermissionStatus.Granted)
             {
+                if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.Camera))
+                {
+                }
 
                 if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.MediaLibrary))
                 {
-
                 }
 
                 status = await CrossPermissions.Current.RequestPermissionAsync<MediaLibraryPermission>();
-
             }
 
-            if (status == PermissionStatus.Granted)
+            if (status == PermissionStatus.Granted && status2 == PermissionStatus.Granted)
             {
                 if (CrossMedia.Current.IsCameraAvailable && CrossMedia.Current.IsPickPhotoSupported)
                 {
@@ -424,7 +424,7 @@ namespace NotepadGps.ViewModel
                     }
                 }
             }
-            else if (status != PermissionStatus.Unknown)
+            else if (status != PermissionStatus.Unknown || status2 != PermissionStatus.Unknown)
             {
                 CrossPermissions.Current.OpenAppSettings();
             }
@@ -481,12 +481,11 @@ namespace NotepadGps.ViewModel
             }
         }
 
-        private void OnBackCommand()
+        private async void OnBackCommandAsync()
         {
-            NavigationService.GoBackAsync();
+            await NavigationService.GoBackAsync();
         }
 
         #endregion
-
     }
 }

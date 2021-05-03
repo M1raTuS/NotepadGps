@@ -1,6 +1,5 @@
 ﻿using NotepadGps.Services.Theme;
 using Prism.Navigation;
-using System;
 using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;

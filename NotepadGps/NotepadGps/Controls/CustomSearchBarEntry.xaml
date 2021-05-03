@@ -16,7 +16,7 @@
 
             <Label BackgroundColor="{DynamicResource SearchBackgroundColor}"
                    Grid.ColumnSpan="2"/>
-            
+
             <controls:CustomSearchBar Grid.Column="0"
                                       Placeholder="{Binding Placeholder, Source={x:Reference customSearchBar}}"
                                       PlaceholderColor="{Binding PlaceholderColor, Source={x:Reference customSearchBar}}"
@@ -24,7 +24,7 @@
                                       TextColor="{Binding TextColor, Source={x:Reference customSearchBar}}"
                                       HorizontalOptions="Fill"
                                       x:Name="custom"/>
-            
+
             <Image Grid.Column="1"
                    x:Name="img"
                    Source="ic_clear"
@@ -36,7 +36,7 @@
                     <TapGestureRecognizer Command="{Binding TapGestureRecognizer,Source={x:Reference customSearchBar}}" />
 
                 </Image.GestureRecognizers>
-                
+
             </Image>
 
         </Grid>

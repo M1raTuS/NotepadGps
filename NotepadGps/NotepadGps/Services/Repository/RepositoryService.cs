@@ -77,6 +77,5 @@ namespace NotepadGps.Services.Repository
         }
 
         #endregion
-
     }
 }

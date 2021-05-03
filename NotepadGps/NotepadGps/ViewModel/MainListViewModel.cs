@@ -34,7 +34,7 @@ namespace NotepadGps.ViewModel
             set => SetProperty(ref _searchText, value);
         }
 
-        public ICommand LogOutTapCommand => new Command(OnLogOutCommandAsync); 
+        public ICommand LogOutTapCommand => new Command(OnLogOutCommandAsync);
         public ICommand OpenSettings => new Command(OnOpenSettingsAsync);
 
         #endregion
@@ -65,8 +65,7 @@ namespace NotepadGps.ViewModel
         {
             await _navigationService.NavigateAsync(nameof(SettingsView));
         }
+
         #endregion
-
-
     }
 }

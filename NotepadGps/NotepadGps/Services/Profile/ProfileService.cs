@@ -68,6 +68,5 @@ namespace NotepadGps.Services.Profile
         }
 
         #endregion
-
     }
 }

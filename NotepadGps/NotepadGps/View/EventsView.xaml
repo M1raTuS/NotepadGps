@@ -11,25 +11,13 @@
     <Grid BackgroundColor="{DynamicResource BackgroundColor}">
 
         <Grid Grid.Row="0"
-              RowDefinitions="auto"
-              BackgroundColor="{DynamicResource BackgroundColor}">
-            <Button Text="1"
-                        Grid.Column="0"
-                        Grid.Row="0"/>
-            <Button Text="2"
-                        Grid.Column="1"
-                        Grid.Row="0"/>
-
-        </Grid>
-
-        <Grid Grid.Row="1"
               RowDefinitions="*">
 
             <ListView ItemsSource="{Binding EventList}"
-                  HasUnevenRows="True"
-                  SelectionMode="None"
-                  IsVisible="{Binding IsListVisible}"
-                  BackgroundColor="{DynamicResource BackgroundColor}">
+                      HasUnevenRows="True"
+                      SelectionMode="None"
+                      IsVisible="{Binding IsListVisible}"
+                      BackgroundColor="{DynamicResource BackgroundColor}">
 
                 <ListView.ItemTemplate>
 
@@ -40,37 +28,37 @@
                             <ViewCell.View>
 
                                 <Grid RowDefinitions="auto"
-                                  ColumnDefinitions ="*,40">
+                                      ColumnDefinitions ="*,40">
 
                                     <Label Text="{Binding Title}" 
-                                       FontSize="21" 
-                                       FontFamily="Montserrat"
-                                       TextColor="{DynamicResource LabelTextColor}"
-                                       Grid.Row="0"
-                                       Grid.Column="0"/>
+                                           FontSize="21" 
+                                           FontFamily="Montserrat"
+                                           TextColor="{DynamicResource LabelTextColor}"
+                                           Grid.Row="0"
+                                           Grid.Column="0"/>
 
                                     <Label Text="{Binding Date, StringFormat='{0:dd MMMM, yyyy}'}" 
-                                       FontSize="18" 
-                                       FontFamily="Montserrat"
-                                       TextColor="{DynamicResource LabelTextColor}"
-                                       Grid.Row="1"
-                                       Grid.Column="0"/>
+                                           FontSize="18" 
+                                           FontFamily="Montserrat"
+                                           TextColor="{DynamicResource LabelTextColor}"
+                                           Grid.Row="1"
+                                           Grid.Column="0"/>
 
                                     <Label Text="{Binding Time ,StringFormat='{}{0:hh\\:mm}'}" 
-                                       FontSize="18" 
-                                       FontFamily="Montserrat"
-                                       TextColor="{DynamicResource LabelTextColor}"
-                                       Grid.Row="2"/>
+                                           FontSize="18" 
+                                           FontFamily="Montserrat"
+                                           TextColor="{DynamicResource LabelTextColor}"
+                                           Grid.Row="2"/>
 
                                     <ImageButton Source="ic_left_gray"
-                                             Grid.Row="0"
-                                             Grid.RowSpan="3"
-                                             Grid.Column="1"
-                                             HorizontalOptions="End"
-                                             VerticalOptions="Center"
-                                             WidthRequest="50"
-                                             HeightRequest="50"
-                                             BackgroundColor="Transparent"/>
+                                                 Grid.Row="0"
+                                                 Grid.RowSpan="3"
+                                                 Grid.Column="1"
+                                                 HorizontalOptions="End"
+                                                 VerticalOptions="Center"
+                                                 WidthRequest="50"
+                                                 HeightRequest="50"
+                                                 BackgroundColor="Transparent"/>
 
                                 </Grid>
 
@@ -85,23 +73,24 @@
             </ListView>
 
             <Label Text="NoEvent" 
-               IsVisible="{Binding IsLabelVisible}"
-               FontSize="30" 
-               TextColor="{DynamicResource LabelTextColor}"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"/>
+                   IsVisible="{Binding IsLabelVisible}"
+                   FontSize="30" 
+                   TextColor="{DynamicResource LabelTextColor}"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
 
             <Button HorizontalOptions="End"
-                VerticalOptions="End"
-                Command="{Binding AddEventCommand}" 
-                CornerRadius="35"
-                Margin="15,15"
-                HeightRequest="70"
-                WidthRequest="70"
-                BackgroundColor="#596EFB"
-                ImageSource="ic_plus"/>
+                    VerticalOptions="End"
+                    Command="{Binding AddEventCommand}" 
+                    CornerRadius="35"
+                    Margin="15,15"
+                    HeightRequest="70"
+                    WidthRequest="70"
+                    BackgroundColor="#596EFB"
+                    ImageSource="ic_plus"/>
 
         </Grid>
+        
     </Grid>
 
 </ContentPage>

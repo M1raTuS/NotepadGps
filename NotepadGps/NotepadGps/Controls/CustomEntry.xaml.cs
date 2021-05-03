@@ -53,7 +53,6 @@ namespace NotepadGps.Controls
                                                                   returnType: typeof(string),
                                                                   declaringType: typeof(StandartEntry));
 
-
         public string LblText
         {
             get => (string)GetValue(LblTextProperty);

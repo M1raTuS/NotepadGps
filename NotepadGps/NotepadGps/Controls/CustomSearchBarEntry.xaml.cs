@@ -14,7 +14,6 @@ namespace NotepadGps.Controls
 
         #region -- Public properties --
 
-
         public static readonly BindableProperty TextProperty = BindableProperty.Create(
                                                                propertyName: nameof(Text),
                                                                returnType: typeof(string),
@@ -48,7 +47,6 @@ namespace NotepadGps.Controls
             get => (string)GetValue(PlaceholderColorProperty);
             set => SetValue(PlaceholderColorProperty, value);
         }
-
 
         public static readonly BindableProperty LblTextProperty = BindableProperty.Create(
                                                             propertyName: nameof(LblText),

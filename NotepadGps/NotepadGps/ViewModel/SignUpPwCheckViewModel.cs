@@ -54,7 +54,7 @@ namespace NotepadGps.ViewModel
             get => _email;
             set => SetProperty(ref _email, value);
         }
-        
+
         private string _passwordError;
         public string PasswordError
         {
@@ -84,6 +84,7 @@ namespace NotepadGps.ViewModel
         }
 
         public ICommand SignUpCommand => new Command(OnSignUpCommandAsync);
+        public ICommand BackCommand => new Command(OnBackCommandAsync);
 
         #endregion
 
@@ -125,15 +126,15 @@ namespace NotepadGps.ViewModel
                 //}
                 //else
                 //{
-                    var user = new UserModel()
-                    {
-                        Name = Name,
-                        Email = Email,
-                        Password = Password
-                    };
+                var user = new UserModel()
+                {
+                    Name = Name,
+                    Email = Email,
+                    Password = Password
+                };
 
-                    await _profileService.SaveUserAsync(user);
-                    await NavigationService.GoBackToRootAsync();
+                await _profileService.SaveUserAsync(user);
+                await NavigationService.GoBackToRootAsync();
                 //}
             }
             else
@@ -148,8 +149,12 @@ namespace NotepadGps.ViewModel
             return !string.IsNullOrWhiteSpace(Name) && !string.IsNullOrWhiteSpace(Password) && !string.IsNullOrWhiteSpace(Email);
         }
 
-        #endregion
+        private async void OnBackCommandAsync()
+        {
+            await NavigationService.GoBackAsync();
+        }
 
+        #endregion
     }
 
 }

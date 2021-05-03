@@ -14,20 +14,7 @@
     <Color x:Key="ImgBackgroundColor">#F1F3FD</Color>
     <Color x:Key="CoordBackgroundColor">#3D4E61</Color>
     <Color x:Key="SearchBackgroundColor">#F1F3FD</Color>
-    
+    <Color x:Key="Line">#F1F3FD</Color>
+    <Color x:Key="BarItemColor">#596EFB</Color>
 
-    <Color x:Key="FrameColor">#FFe0e0e0</Color>
-    <Color x:Key="TextPrimaryColor">#B0000000</Color>
-    <Color x:Key="TextSecondaryColor">#858585</Color>
-    <Color x:Key="FloatButtonColor">#000000</Color>
-    <Color x:Key="NavigationBarColor">White</Color>
-    <Color x:Key="SecondaryColor">Red</Color>
-   
-    <Style x:Key="Title" TargetType="Label">
-        
-        <Setter Property="TextColor" Value="{StaticResource TextPrimaryColor}"/>
-        <Setter Property="FontSize" Value="Large"/>
-        
-    </Style>
-    
 </ResourceDictionary>    

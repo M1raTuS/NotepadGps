@@ -1,6 +1,7 @@
 ﻿using NotepadGps.Models;
 using NotepadGps.Services.Autorization;
 using NotepadGps.Services.Image;
+using NotepadGps.View;
 using Prism.Navigation;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -99,6 +100,7 @@ namespace NotepadGps.ViewModel
         }
 
         public ICommand TapCommand => new Command(OnTapCommandAsync);
+        public ICommand ImageTappedCommand => new Command(OnImageTappedCommandAsync);
 
         #endregion
 
@@ -147,6 +149,14 @@ namespace NotepadGps.ViewModel
         private async void OnTapCommandAsync()
         {
             await NavigationService.GoBackAsync(new NavigationParameters(), true, false);
+        }
+
+        private async void OnImageTappedCommandAsync(object img)
+        {
+            var nav = new NavigationParameters();
+            nav.Add(nameof(ImageModel), (ImageModel)img);
+
+            await NavigationService.NavigateAsync(nameof(PhotoCheckView), nav, false, false);
         }
 
         private async Task<ObservableCollection<ImageModel>> ImageLoadAsync()

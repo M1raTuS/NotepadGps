@@ -4,6 +4,5 @@ namespace NotepadGps.Controls
 {
     public class CustomTopTabbedPage : TabbedPage
     {
-
     }
 }

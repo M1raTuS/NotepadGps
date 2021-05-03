@@ -57,6 +57,7 @@ namespace NotepadGps.Services.Theme
                 else
                 {
                     SelectedTheme = 0;
+                    dictionary.Add(new LightTheme());
                 }
             }
         }

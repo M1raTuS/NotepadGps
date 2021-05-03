@@ -121,6 +121,5 @@ namespace NotepadGps.ViewModel
         }
 
         #endregion
-
     }
 }

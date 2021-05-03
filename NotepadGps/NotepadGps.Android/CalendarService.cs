@@ -24,18 +24,17 @@ namespace NotepadGps.Droid
             {
                 ContentValues eventValues = new ContentValues();
 
-                eventValues.Put(CalendarContract.Events.InterfaceConsts.CalendarId,calendarId);
-                eventValues.Put(CalendarContract.Events.InterfaceConsts.Title,eventTitle);
+                eventValues.Put(CalendarContract.Events.InterfaceConsts.CalendarId, calendarId);
+                eventValues.Put(CalendarContract.Events.InterfaceConsts.Title, eventTitle);
                 eventValues.Put(CalendarContract.Events.InterfaceConsts.Description, eventTitle);
-                eventValues.Put(CalendarContract.Events.InterfaceConsts.Dtstart,GetDateTimeMS(dateTime.Year, dateTime.Month, dateTime.Day,
+                eventValues.Put(CalendarContract.Events.InterfaceConsts.Dtstart, GetDateTimeMS(dateTime.Year, dateTime.Month, dateTime.Day,
                                                                                               timeSpan.Hours, timeSpan.Minutes));
                 eventValues.Put(CalendarContract.Events.InterfaceConsts.Dtend, GetDateTimeMS(dateTime.Year, dateTime.Month, dateTime.Day,
                                                                                               newTime.Hours, timeSpan.Minutes));
-                eventValues.Put(CalendarContract.Events.InterfaceConsts.EventTimezone,timeZone);
-                eventValues.Put(CalendarContract.Events.InterfaceConsts.EventEndTimezone,timeZone);
+                eventValues.Put(CalendarContract.Events.InterfaceConsts.EventTimezone, timeZone);
+                eventValues.Put(CalendarContract.Events.InterfaceConsts.EventEndTimezone, timeZone);
 
-                MainActivity.Instance.ContentResolver.Insert(CalendarContract.Events.ContentUri,
-                    eventValues);
+                MainActivity.Instance.ContentResolver.Insert(CalendarContract.Events.ContentUri, eventValues);
             }
 
             return await Task.FromResult(true);

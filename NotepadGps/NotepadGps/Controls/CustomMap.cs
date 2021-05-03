@@ -8,7 +8,6 @@ namespace NotepadGps.Controls
 {
     public class CustomMap : Map
     {
-
         public CustomMap()
         {
             PinsSource = new ObservableCollection<MapPinModel>();
@@ -16,17 +15,17 @@ namespace NotepadGps.Controls
 
         #region -- Public properties --
 
-        public ObservableCollection<MapPinModel> PinsSource
-        {
-            get => (ObservableCollection<MapPinModel>)GetValue(PinsSourceProperty);
-            set => SetValue(PinsSourceProperty, value);
-        }
-
         public static readonly BindableProperty PinsSourceProperty = BindableProperty.Create(
                                                                      propertyName: nameof(PinsSource),
                                                                      returnType: typeof(ObservableCollection<MapPinModel>),
                                                                      declaringType: typeof(CustomMap),
                                                                      propertyChanged: PinsSourcePropertyChanged);
+
+        public ObservableCollection<MapPinModel> PinsSource
+        {
+            get => (ObservableCollection<MapPinModel>)GetValue(PinsSourceProperty);
+            set => SetValue(PinsSourceProperty, value);
+        }
 
         public static readonly BindableProperty MapSpanProperty = BindableProperty.Create(
                                                                   propertyName: nameof(MapSpan),
@@ -34,12 +33,24 @@ namespace NotepadGps.Controls
                                                                   declaringType: typeof(CustomMap),
                                                                   propertyChanged: MapSpanPropertyChanged);
 
+        public MapSpan MapSpan
+        {
+            get { return (MapSpan)GetValue(MapSpanProperty); }
+            set { SetValue(MapSpanProperty, value); }
+        }
+
         public static BindableProperty CurrentCameraPositionProperty = BindableProperty.Create(
                                                                        propertyName: nameof(CurrentCameraPosition),
                                                                        returnType: typeof(CameraPosition),
                                                                        declaringType: typeof(CustomMap),
                                                                        propertyChanged: CurrentCameraPositionPropertyChanged);
-        
+
+        public CameraPosition CurrentCameraPosition
+        {
+            get { return (CameraPosition)GetValue(CurrentCameraPositionProperty); }
+            set { SetValue(CurrentCameraPositionProperty, value); }
+        }
+
         public static BindableProperty MapStyleThemeProperty = BindableProperty.Create(
                                                                propertyName: nameof(MapStyleTheme),
                                                                returnType: typeof(MapStyle),
@@ -52,17 +63,9 @@ namespace NotepadGps.Controls
             set { SetValue(MapStyleThemeProperty, value); }
         }
 
-        public MapSpan MapSpan
-        {
-            get { return (MapSpan)GetValue(MapSpanProperty); }
-            set { SetValue(MapSpanProperty, value); }
-        }
+        #endregion
 
-        public CameraPosition CurrentCameraPosition
-        {
-            get { return (CameraPosition)GetValue(CurrentCameraPositionProperty); }
-            set { SetValue(CurrentCameraPositionProperty, value); }
-        }
+        #region -- Private properties --
 
         private static void CurrentCameraPositionPropertyChanged(BindableObject bindable, object oldvalue, object newValue)
         {
@@ -78,10 +81,6 @@ namespace NotepadGps.Controls
                 ((CustomMap)bindable).MoveCamera(cameraUpdate);
             }
         }
-
-        #endregion
-
-        #region -- Private properties --
 
         private static void PinsSourcePropertyChanged(BindableObject bindable, object oldvalue, object newValue)
         {

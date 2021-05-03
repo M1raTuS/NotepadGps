@@ -6,19 +6,18 @@
                                  xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" 
                                  xmlns:controls="clr-namespace:NotepadGps.Controls"
                                  android:TabbedPage.ToolbarPlacement="Bottom"
-                                 android:TabbedPage.BarItemColor="Blue"
                                  Title="Maps"
                                  xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
                                  ios:Page.UseSafeArea="true"
+                                 NavigationPage.BarBackgroundColor="{DynamicResource BackgroundColor}"
                                  BackgroundColor="{DynamicResource BackgroundColor}"
-                                 NavigationPage.HasNavigationBar="True"
-                                 NavigationPage.BarBackgroundColor="{DynamicResource BackgroundColor}">
+                                 NavigationPage.HasNavigationBar="True">
 
     <NavigationPage.TitleView>
 
-        <StackLayout BackgroundColor="{DynamicResource BackgroundColor}">
+        <StackLayout>
 
-            <Grid BackgroundColor="{DynamicResource BackgroundColor}">
+            <Grid>
 
                 <Grid.RowDefinitions>
 

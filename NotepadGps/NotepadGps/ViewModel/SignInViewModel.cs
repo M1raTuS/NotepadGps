@@ -68,6 +68,7 @@ namespace NotepadGps.ViewModel
         }
 
         public ICommand LogInCommand => new Command(OnLogInCommandAsync);
+        public ICommand BackCommand => new Command(OnBackCommandAsync);
 
         #endregion
 
@@ -105,6 +106,11 @@ namespace NotepadGps.ViewModel
         private async void OnSignUpCommandAsync()
         {
             await NavigationService.NavigateAsync(nameof(SignUpView));
+        }
+
+        private async void OnBackCommandAsync()
+        {
+            await NavigationService.GoBackAsync();
         }
 
         #endregion

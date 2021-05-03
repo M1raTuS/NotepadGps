@@ -1,8 +1,8 @@
-﻿using Xamarin.Forms;
+﻿using NotepadGps.Controls;
 
 namespace NotepadGps.View
 {
-    public partial class EventsPinsView : CarouselPage
+    public partial class EventsPinsView : CustomTopTabbedPage
     {
         public EventsPinsView()
         {

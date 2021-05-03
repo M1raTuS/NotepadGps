@@ -39,7 +39,7 @@ namespace NotepadGps.Services.Image
         {
             var img = new List<ImageModel>();
             var list = await _repositoryService.FindAsync<ImageModel>(
-                x => x.Latitude == lat && 
+                x => x.Latitude == lat &&
                      x.Longitude == lon);
 
             if (list.Count > 0)
@@ -51,6 +51,5 @@ namespace NotepadGps.Services.Image
         }
 
         #endregion
-
     }
 }
