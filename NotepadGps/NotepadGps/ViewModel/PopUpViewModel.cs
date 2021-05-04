@@ -151,10 +151,10 @@ namespace NotepadGps.ViewModel
             await NavigationService.GoBackAsync(new NavigationParameters(), true, false);
         }
 
-        private async void OnImageTappedCommandAsync(object img)
+        private async void OnImageTappedCommandAsync()
         {
             var nav = new NavigationParameters();
-            nav.Add(nameof(ImageModel), (ImageModel)img);
+            //nav.Add(nameof(ImageModel), (ImageModel)img);
 
             await NavigationService.NavigateAsync(nameof(PhotoCheckView), nav, false, false);
         }

@@ -4,10 +4,26 @@
              xmlns:control="clr-namespace:NotepadGps.Controls;assembly=NotepadGps"
              xmlns:local="clr-namespace:NotepadGps.View;assembly=NotepadGps" 
               xmlns:locals="clr-namespace:NotepadGps.ViewModel;assembly=NotepadGps" 
+             xmlns:selectors="clr-namespace:NotepadGps.Template"
              x:Class="NotepadGps.Controls.CustomCarousel"
              x:Name="customCarousel">
-
-
+    
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="addEditPinViews">
+                <local:AddEditMapPinView/>
+            </DataTemplate>
+            <DataTemplate x:Key="eventViews">
+                <local:EventsView/>
+            </DataTemplate>
+            <selectors:TemplateSelector x:Key="DataTemplateSelector"
+                AddEditPinViews="{StaticResource addEditPinViews}"
+                EventViews="{StaticResource eventViews}" />
+        </ResourceDictionary>
+    </ContentView.Resources>
+    
+    
+    <ContentView.Content>
     <!--   -->
     <Grid RowDefinitions="auto">
         <Grid Grid.Row="0" RowDefinitions="auto">
@@ -18,26 +34,35 @@
             <Button Text="2" Grid.Column="1"/>
         </Grid>
         <Grid Grid.Row="2" RowDefinitions="auto">
+                <CarouselView ItemsSource="{Binding ItemSource, Source={x:Reference customCarousel}}">
+                <CarouselView.ItemTemplate>
+                        <selectors:TemplateSelector>
+                            <selectors:TemplateSelector.AddEditPinViews>
+                                <DataTemplate>
+                                    <local:AddEditMapPinView/>
+                                </DataTemplate>
+                            </selectors:TemplateSelector.AddEditPinViews>
 
-            <control:StandartCarouselPage Grid.Column="0"
-                                          ItemsSource="{Binding ItemSource, Source={x:Reference customCarousel}}">
-                
-                <control:StandartCarouselPage.ItemTemplate>
-                    <DataTemplate>
-                        <local:ListPageView/>
-                    </DataTemplate>
-                </control:StandartCarouselPage.ItemTemplate>
-            </control:StandartCarouselPage>
+                            <selectors:TemplateSelector.EventViews>
+                                <DataTemplate>
+                                    <local:EventsView/>
+                                </DataTemplate>
+                            </selectors:TemplateSelector.EventViews>
+                        </selectors:TemplateSelector>
+                    </CarouselView.ItemTemplate>
+            </CarouselView>
+
+
         </Grid>
         
     </Grid>
 
     <!-- -->
-   
-    
-    
-    
-    
-    
-    
+
+
+
+    </ContentView.Content>
+
+
+
 </ContentView>

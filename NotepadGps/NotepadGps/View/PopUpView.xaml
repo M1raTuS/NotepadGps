@@ -5,6 +5,7 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" xmlns:behaviours="http://prismlibrary.com"
              ios:Page.ModalPresentationStyle="OverFullScreen"
              x:Class="NotepadGps.View.PopUpView"
+             x:Name="popUpView"
              BackgroundColor="Transparent">
 
     <Grid Padding="0,0,0,51">
@@ -15,7 +16,7 @@
               Grid.Row="0"/>
 
         <Frame VerticalOptions="End" 
-               HorizontalOptions="Fill"
+               HorizontalOptions="Fill"               
                HeightRequest="{Binding FrameHeight}"
                BackgroundColor="{DynamicResource BackgroundColor}">
 
@@ -31,6 +32,8 @@
                               HeightRequest="100"
                               WidthRequest="150"
                               Loop="False"
+                              x:Name="imageCarousel"
+                              PeekAreaInsets="100"
                               IsVisible="{Binding IsCarouselVisible}">
 
                     <CarouselView.ItemTemplate>
@@ -50,7 +53,7 @@
 
                                     <ffimageloading:CachedImage.GestureRecognizers>
 
-                                        <TapGestureRecognizer Command="{Binding ImageTappedCommand}"/>
+                                        <TapGestureRecognizer Command="{Binding ImageTappedCommand, Source={x:Reference imageCarousel}}"/>
 
                                     </ffimageloading:CachedImage.GestureRecognizers>
 

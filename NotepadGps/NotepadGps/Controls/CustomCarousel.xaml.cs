@@ -53,15 +53,13 @@ namespace NotepadGps.Controls
 
         public static BindableProperty ItemSourceProperty = BindableProperty.Create(
                                                           propertyName: nameof(ItemSource),
-                                                          returnType: typeof(IList),
-                                                          declaringType: typeof(StandartCarouselPage),
-                                                          defaultBindingMode: BindingMode.TwoWay,
-                                                          propertyChanged: UpdateList);
+                                                          returnType: typeof(IEnumerable),
+                                                          declaringType: typeof(CustomCarousel),
+                                                          defaultBindingMode: BindingMode.TwoWay);
 
-
-        public IList ItemSource
+        public IEnumerable ItemSource
         {
-            get { return (IList)GetValue(ItemSourceProperty); }
+            get { return (IEnumerable)GetValue(ItemSourceProperty); }
             set { SetValue(ItemSourceProperty, value); }
         }
 
@@ -81,8 +79,7 @@ namespace NotepadGps.Controls
                                                                 propertyName: nameof(Child),
                                                                 returnType: typeof(IList<Page>),
                                                                 declaringType: typeof(CustomCarousel),
-                                                                defaultBindingMode: BindingMode.TwoWay,
-                                                                propertyChanged: UpdateList);
+                                                                defaultBindingMode: BindingMode.TwoWay);
 
         public IList<Page> Child
         {
@@ -91,9 +88,5 @@ namespace NotepadGps.Controls
         }
 
         #endregion
-        private static void UpdateList(BindableObject bindable, object oldvalue, object newValue)
-        {
-            
-        }
     }
 }
