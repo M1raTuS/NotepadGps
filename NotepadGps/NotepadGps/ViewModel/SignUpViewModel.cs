@@ -1,5 +1,7 @@
 ﻿using NotepadGps.Models;
+using NotepadGps.Resource;
 using NotepadGps.Services.Autentification;
+using NotepadGps.Services.Validation;
 using NotepadGps.View;
 using Prism.Navigation;
 using System.Windows.Input;
@@ -72,42 +74,41 @@ namespace NotepadGps.ViewModel
 
         private async void OnNextPageCommand(object obj)
         {
-            //var NamelValidation = Validator.StringValid(Name, Validator.Name);
-            //var EmailValidation = Validator.StringValid(Email, Validator.Email);
-            //var isEmailExist = await _autentificationService.CheckEmailAsync(Email);
+            var NamelValidation = Validator.StringValid(Name, Validator.Name);
+            var EmailValidation = Validator.StringValid(Email, Validator.Email);
+            var isEmailExist = await _autentificationService.CheckEmailAsync(Email);
 
-            //IsEmailErrorVisible = false;
-            //IsNameErrorVisible = false;
+            IsEmailErrorVisible = false;
+            IsNameErrorVisible = false;
 
-            //if (!NamelValidation)
-            //{
-            //    IsNameErrorVisible = true;
-            //    NameError = StringResource.NameAlert;
-            //}
-            //else if (!EmailValidation)
-            //{
-            //    IsEmailErrorVisible = true;
-            //    EmailError = StringResource.MailAlert;
-            //}
-            //else if (isEmailExist)
-            //{
-            //    IsEmailErrorVisible = true;
-            //    EmailError = StringResource.MailConflict;
-            //}
-            //else
-            //{
-            var user = new UserModel()
+            if (!NamelValidation)
             {
-                Name = Name,
-                Email = Email
-            };
+                IsNameErrorVisible = true;
+                NameError = StringResource.NameAlert;
+            }
+            else if (!EmailValidation)
+            {
+                IsEmailErrorVisible = true;
+                EmailError = StringResource.MailAlert;
+            }
+            else if (isEmailExist)
+            {
+                IsEmailErrorVisible = true;
+                EmailError = StringResource.MailConflict;
+            }
+            else
+            {
+                var user = new UserModel()
+                {
+                    Name = Name,
+                    Email = Email
+                };
 
-            var nav = new NavigationParameters();
-            nav.Add(nameof(UserModel), user);
+                var nav = new NavigationParameters();
+                nav.Add(nameof(UserModel), user);
 
-            await NavigationService.NavigateAsync(nameof(SignUpPwCheckView), nav);
-            //await NavigationService.NavigateAsync(nameof(SignUpPwCheckView));
-            //}
+                await NavigationService.NavigateAsync(nameof(SignUpPwCheckView), nav);
+            }
         }
 
         private async void OnBackCommandAsync()

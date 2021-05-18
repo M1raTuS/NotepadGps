@@ -119,23 +119,23 @@ namespace NotepadGps.ViewModel
 
             if (Password == ConfirmPassword)
             {
-                //if (!PasswordValidation)
-                //{
-                //    IsPasswordErrorVisible = true;
-                //    PasswordError = StringResource.PasswordAlert;
-                //}
-                //else
-                //{
-                var user = new UserModel()
+                if (!PasswordValidation)
                 {
-                    Name = Name,
-                    Email = Email,
-                    Password = Password
-                };
+                    IsPasswordErrorVisible = true;
+                    PasswordError = StringResource.PasswordAlert;
+                }
+                else
+                {
+                    var user = new UserModel()
+                    {
+                        Name = Name,
+                        Email = Email,
+                        Password = Password
+                    };
 
-                await _profileService.SaveUserAsync(user);
-                await NavigationService.GoBackToRootAsync();
-                //}
+                    await _profileService.SaveUserAsync(user);
+                    await NavigationService.GoBackToRootAsync();
+                }
             }
             else
             {

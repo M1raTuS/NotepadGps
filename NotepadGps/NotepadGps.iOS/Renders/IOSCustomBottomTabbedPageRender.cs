@@ -17,7 +17,7 @@ namespace NotepadGps.iOS.Renders
 
             using (CGContext context = UIGraphics.GetCurrentContext())
             {
-                context.SetFillColor(UIColor.LightGray.CGColor);
+                context.SetFillColor(UIColor.Blue.CGColor);
                 context.FillRect(rect);
             }
 
